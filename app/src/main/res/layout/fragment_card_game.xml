@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/article" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/webviewRelativeLayout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webview" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_loading" />
+    <ImageView android:id="@id/web_back" android:background="@drawable/bg_card_game_back" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/icon_nav_back" />
+</RelativeLayout>

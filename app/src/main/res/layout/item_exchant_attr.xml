@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/cb_attr_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未知" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/btn_attr_lv_down" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/sl_level_down" android:layout_toLeftOf="@id/tv_attr_level" android:layout_centerVertical="true" />
+    <TextView android:id="@id/tv_attr_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0" android:layout_toLeftOf="@id/btn_attr_lv_up" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/btn_attr_lv_up" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/sl_level_plus" android:layout_toLeftOf="@id/tv_attr_intro" android:layout_centerVertical="true" />
+    <TextView android:id="@id/tv_attr_intro" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="说明" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/value_button_float_common_style01" />
+</RelativeLayout>

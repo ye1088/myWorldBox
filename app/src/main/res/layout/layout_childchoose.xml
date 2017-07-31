@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="248.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/ChildChooseTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="TITLE" android:layout_alignParentTop="true" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/ChildChooseTextDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="DESC" android:layout_below="@id/ChildChooseTextView" />
+    <LinearLayout android:id="@id/ChildChooseBtnLayout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/ChildChooseTextDesc">
+        <Button android:id="@id/ChildChooseBtnLeft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="left" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <TextView android:id="@id/ChildChooseBtnLine" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/ChildChooseBtnRight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="right" android:layout_weight="1.0" style="@style/value_button_green_all" />
+    </LinearLayout>
+    <Button android:id="@id/ChildChooseBtnMiddle" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="middle" android:layout_below="@id/ChildChooseBtnLayout" android:layout_centerHorizontal="true" style="@style/value_button_green_all" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/ChildChooseTextTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="170.0dip" android:layout_marginRight="10.0dip" android:text="Tips" android:layout_alignParentLeft="true" />
+</RelativeLayout>

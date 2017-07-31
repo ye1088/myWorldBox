@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/root_view" android:background="?backgroundCornerDialog" android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?dialog_title_label_color" android:gravity="center_horizontal" android:id="@id/title" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" />
+        <View android:id="@id/title_div" android:background="?splitColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="?dialog_msg_label_color" android:gravity="center|left" android:id="@id/message" android:background="@color/transparent" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="29.0dip" android:layout_marginRight="29.0dip" android:text="message" android:minLines="2" android:lineSpacingExtra="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/custom_container" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    <View android:gravity="center" android:orientation="horizontal" android:id="@id/v1" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/btn_ok" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="?textColorLocMapItemName" android:gravity="center" android:id="@id/btn_cancel" android:background="?listSelectorButtonLeft" android:layout_width="0.0dip" android:layout_height="43.0dip" android:text="取消" android:layout_weight="1.0" />
+        <View android:gravity="center" android:orientation="horizontal" android:background="?splitColor" android:layout_width="1.0dip" android:layout_height="43.0dip" />
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/btn_other" android:background="?listSelectorSecond" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="43.0dip" android:text="其他" android:layout_weight="1.0" />
+        <View android:gravity="center" android:orientation="horizontal" android:id="@id/split_other" android:background="?splitColor" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="43.0dip" />
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/btn_ok" android:background="?listSelectorButtonRight" android:layout_width="0.0dip" android:layout_height="43.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

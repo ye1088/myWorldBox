@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/float_bg" android:padding="20.0dip" android:paddingTop="15.0dip" android:scrollbars="none" android:layout_width="280.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="备份后请在游戏外地图管理中还原" />
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huluxia.widget.RoundImageView android:id="@id/floatBtnBackupImageAuto" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/backup_shot" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <CheckBox android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatChkBackupNameAuto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="自动" android:layout_toRightOf="@id/floatBtnBackupImageAuto" style="@style/value_checkbox_switch4" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupTimeAuto" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImageAuto" android:layout_below="@id/floatChkBackupNameAuto" />
+            <TextView android:textSize="12.0sp" android:gravity="center|left" android:id="@id/floatTextBackupTimeInterval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间间隔:1m" android:layout_toRightOf="@id/floatBtnBackupImageAuto" android:layout_below="@id/floatTextBackupTimeAuto" />
+            <SeekBar android:id="@id/floatSeekBackupTimeInterVal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="2" android:layout_toRightOf="@id/floatBtnBackupImageAuto" android:layout_below="@id/floatTextBackupTimeInterval" style="@style/value_seekbar_base_float" />
+        </RelativeLayout>
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+            <com.huluxia.widget.RoundImageView android:id="@id/floatBtnBackupImage1" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/backup_shot" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupName1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="备份1" android:layout_toRightOf="@id/floatBtnBackupImage1" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupTime1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage1" android:layout_below="@id/floatTextBackupName1" />
+            <TextView android:id="@id/floatBtnBackupGoto1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage1" android:layout_below="@id/floatTextBackupTime1" style="@style/value_button_float_common_style01" />
+        </RelativeLayout>
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+            <com.huluxia.widget.RoundImageView android:id="@id/floatBtnBackupImage2" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/backup_shot" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupName2" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="备份2" android:layout_toRightOf="@id/floatBtnBackupImage2" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupTime2" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage2" android:layout_below="@id/floatTextBackupName2" />
+            <TextView android:id="@id/floatBtnBackupGoto2" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage2" android:layout_below="@id/floatTextBackupTime2" style="@style/value_button_float_common_style01" />
+        </RelativeLayout>
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+            <com.huluxia.widget.RoundImageView android:id="@id/floatBtnBackupImage3" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/backup_shot" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupName3" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="备份3" android:layout_toRightOf="@id/floatBtnBackupImage3" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupTime3" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage3" android:layout_below="@id/floatTextBackupName3" />
+            <TextView android:id="@id/floatBtnBackupGoto3" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage3" android:layout_below="@id/floatTextBackupTime3" style="@style/value_button_float_common_style01" />
+        </RelativeLayout>
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+            <com.huluxia.widget.RoundImageView android:id="@id/floatBtnBackupImage4" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/backup_shot" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupName4" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="备份4" android:layout_toRightOf="@id/floatBtnBackupImage4" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextBackupTime4" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage4" android:layout_below="@id/floatTextBackupName4" />
+            <TextView android:id="@id/floatBtnBackupGoto4" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/text" android:layout_toRightOf="@id/floatBtnBackupImage4" android:layout_below="@id/floatTextBackupTime4" style="@style/value_button_float_common_style01" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

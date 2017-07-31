@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/online_header" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_all" android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/rly_all_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="?mapName" android:gravity="center" android:layout_gravity="center" android:id="@id/all_category" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部分类" android:drawableRight="?down" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+            <View android:id="@id/vertical_dividing_line" android:background="?splitZoneCategory" android:layout_width="1.0dip" android:layout_height="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rly_all_version" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="?mapName" android:gravity="center" android:id="@id/all_version" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部版本" android:drawableRight="?down" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/dividing_line" android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

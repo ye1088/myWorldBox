@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimaryInverse" android:ellipsize="marquee" android:gravity="center" android:id="@id/msg_banner" android:background="?backgroundMsgBanner" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="收到1条新消息，点击查看" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/online_header" layout="@layout/onlien_header" />
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:background="@color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:layout_below="@id/online_header" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip" />
+        <Button android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/ic_create_room" android:background="?bg_online_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="创建" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

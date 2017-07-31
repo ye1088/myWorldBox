@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="?label" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.framework.base.image.PaintView android:id="@id/image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/common_checkbox" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:id="@id/all_category" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部分类" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.huluxia.mctool" >
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.huluxia.mctool"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <permission android:name="com.huluxia.mctool.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.huluxia.mctool.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <permission android:name="android.permission.FLASHLIGHT" android:permissionGroup="android.permission-group.HARDWARE_CONTROLS" android:protectionLevel="normal"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.huluxia.McApplication" android:persistent="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="product_name" android:value="mctool"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="mctool_web"/>
+        <service android:exported="true" android:name="com.huluxia.login.LoginService" android:process="@string/login_process_name">
+            <intent-filter>
+                <action android:name="com.huluxia.login.LoginService"/>
+            </intent-filter>
+            <meta-data android:name="version" android:value="1"/>
+        </service>
+        <activity android:label="@string/app_name" android:name="hlx.home.main.MCStartActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.huluxia.mojang.MyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="hlx.home.main.HomeActivity" android:screenOrientation="portrait" android:theme="@style/appRestartGameTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="hlx.home.activity.GameOptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.MapSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.JsSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.WoodSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.SkinSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapPackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapPackAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.MapImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.MapPreExportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.MapExportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapPackModifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapEntityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapEntityAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapEntityModifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.maptool.MapToolMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.launch.game.MCPreLauncherActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="hlx.launch.game.MCLauncherActivity105" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="android.app.lib_name" android:value="minecraftpe"/>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="hlx.launch.game.MCLauncherActivity110" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="android.app.lib_name" android:value="minecroftpe"/>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="hlx.launch.game.MCLauncherActivity121" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="android.app.lib_name" android:value="minecraftpo"/>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="hlx.launch.game.MCLauncherActivity130" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="android.app.lib_name" android:value="minecraftpo"/>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="hlx.launch.game.MCLauncherActivity143" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize|stateVisible">
+            <meta-data android:name="android.app.lib_name" android:value="minecraftpe"/>
+        </activity>
+        <activity android:name="com.huluxia.ui.mctool.JsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.JsImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.SkinImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.WoodImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.localresmgr.backupmanager.MapBackupManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.localresmgr.backupmanager.SpecifyMapBackupManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.ServerDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.ServerListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.ServerListExActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.mapseed.MapSeedDownActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.mapseed.MapSeedDetatilActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.discovery.CardGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.mconline.activity.RoomCreateActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/pref_zz_manage_scripts" android:name="com.huluxia.ui.mctool.ImportScriptActivity">
+            <intent-filter>
+                <action android:name="net.zhuoweizhang.mcpelauncher.action.IMPORT_SCRIPT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.js"/>
+                <data android:pathPattern=".*\\..*\\.js"/>
+                <data android:pathPattern=".*\\..*\\..*\\.js"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.js"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent100580922"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.huluxia.ui.base.WapActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huluxia.widget.picviewer.PictureViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.discovery.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.huluxia.ui.bbs.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.PublishTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.PublishTopicWishActivity" android:screenOrientation="portrait" android:theme="@style/Dialog"/>
+        <activity android:name="com.huluxia.ui.bbs.CommentTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.ModifyTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.MoveTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.TopicSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.huluxia.ui.loginAndRegister.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="hlx.ui.personalstudio.PersonalStudioActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.StudioActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.StudioMembersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.PastRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.StudioAnnounceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.EditAnnounceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.AnnounceDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.studio.ResourceChoiceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.FollowerListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.FollowingListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.FollowingResActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.MessageHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileCommentListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileExchangeCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileFavorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileTopicListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileFavoriteListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.UploadPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileScoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.loginAndRegister.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.loginAndRegister.ForgetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.loginAndRegister.PolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.CategoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.CategoryDarenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.other.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.other.FeedbackGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.CategorySubscribeAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.widget.cropimage.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.loginAndRegister.RegisterByMiActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.huluxia.ui.other.WarningWapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.ResTopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.JsTopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.SkinTopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.WoodTopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.FileSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.publishres.PublishResourceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.ProfileResListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.mcstorymode.MCStoryModeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="hlx.ui.redpacket.SnatchRedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.redpacket.SnatchRedDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.MapCateListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.MapRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.MapSubjectListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.JsCateListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.JsRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.JsSubjectListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.SkinCateListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.SkinRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.SkinSubjectListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.WoodCateListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.WoodRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.mctool.subject.WoodSubjectListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.launch.ui.MCVersionSelectGuide" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="hlx.launch.ui.MCVersionSelect" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="hlx.ui.resources.ResourceDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="hlx.ui.localresmgr.LocResListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="hlx.ui.heroslist.HerosListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.recommendapp.RecommendAppListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.mcstorymode.storyselect.StoryListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="hlx.ui.userguide.UserGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.userguide.UserGuideListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="hlx.ui.online.CreateRoomActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="true" android:label="@string/redpacket" android:name="hlx.ui.redpacket.RedpacketService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/redpacket_service_config"/>
+        </service>
+        <receiver android:name="com.huluxia.receiver.APKInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="Baidu_Api_Key" android:value="iIZmYtz2MUPODEG3vUA1hmrg"/>
+        <meta-data android:name="Mi_Api_Id" android:value="2.88230376E18"/>
+        <meta-data android:name="Mi_Api_Key" android:value="5.5317318E12"/>
+        <meta-data android:name="APPKEY" android:value="10263654"/>
+        <service android:name="com.huluxia.controller.resource.DownloadService"/>
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true"/>
+        <receiver android:name="com.huluxia.service.PackAddOrRmReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="iIZmYtz2MUPODEG3vUA1hmrg"/>
+        <activity android:name="com.huluxia.ui.discovery.MsgSettingsActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.huluxia.service.HlxPushService"/>
+        <activity android:name="com.huluxia.ui.bbs.TopicListDrawerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.CreditListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.FriendListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.picture.PhotoViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileExchangeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileExchangeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileExchangeSubmitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.DarenRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.addzone.ChooseZoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.widget.x5web.BrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.bbs.CategoryVoteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.UserAlbumsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.ProfileReadTopicListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.SpaceStyleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.huluxia.ui.picture.PictureChooserActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.huluxia.ACTION_PICK"/>
+                <action android:name="com.huluxia.ACTION_MULTI_CHOICE"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.huluxia.ui.picture.PictureCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.SpaceStyleDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.area.news.NewsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.area.news.NewsCommentListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.StudioEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.StudioAuditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.mctool.PlayerArchieveDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huluxia.ui.profile.AchieveActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.huluxia.mipush.HlxXiaomiMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":mipushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":mipushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":mipushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huluxia.hwpush.HlxHuaweiPushReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+                <action android:name="com.huawei.android.push.plugin.RESPONSE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_ablitity" android:value="@string/hwpush_ability_value"/>
+        </receiver>
+        <receiver android:name="com.huawei.android.pushagent.PushEventReceiver" android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+                <action android:name="com.huawei.intent.action.PUSH_ON"/>
+                <action android:name="com.huawei.android.push.PLUGIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.android.pushagent.PushBootReceiver" android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_version" android:value="2705"/>
+        </receiver>
+        <service android:name="com.huawei.android.pushagent.PushService" android:process=":hwpushservice"/>
+        <activity android:configChanges="locale|layoutDirection|orientation|screenSize" android:name="com.huawei.android.pushselfshow.richpush.RichPushActivity" android:process=":hwpushservice" android:screenOrientation="portrait" android:theme="@style/hwpush_NoActionBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui"/>
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.RICHPUSH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.huawei.android.pushselfshow.permission.RequestPermissionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

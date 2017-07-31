@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_bar" android:background="?backgroundTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center_vertical" android:id="@id/btn_back" android:background="?backgroundTitleBarButton" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:fadingEdge="none" android:layout_width="50.0dip" android:layout_height="48.0dip" android:scaleType="centerInside" android:singleLine="true" android:drawableLeft="?drawableTitleBack" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/text_spinner" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/all" />
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/ic_more_pic" />
+    </LinearLayout>
+    <ViewAnimator android:id="@id/animator" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <include layout="@layout/include_view_loading" />
+        <GridView android:gravity="center" android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:columnWidth="@dimen/min_grid_item_size" android:numColumns="auto_fit" />
+        <android.support.v4.view.ViewPager android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewAnimator>
+</RelativeLayout>

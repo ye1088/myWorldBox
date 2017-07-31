@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rlySharePopDlgItem" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivSharePopDlgItemImage" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_launcher" />
+    <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="@color/common_menu_dialog_unfocus_btn_color" android:gravity="center" android:id="@id/tvSharePopDlgItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:text="朋友圈" android:singleLine="true" />
+</LinearLayout>

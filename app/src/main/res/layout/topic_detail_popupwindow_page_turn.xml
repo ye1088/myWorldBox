@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?pageturn_head_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="?textFirstPageBtn" android:id="@id/tvFirstPageBtn" android:background="?drawable_pageturn_btn_edge" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff6c6c6c" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="翻页" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="?textFirstPageBtn" android:id="@id/tvEndPageBtn" android:background="?drawable_pageturn_btn_edge" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="末页" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="?pageturn_split_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/pstsLocalResMgrTabs" android:background="?pageturn_head_color" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <com.huluxia.widget.viewpager.WrapContentHeightViewPager android:id="@id/vpLocalResMgrViewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

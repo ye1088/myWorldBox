@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?game_option_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rly_show_no_announce" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?studio_announce_no_msg" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_no_announce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="暂无公告" android:layout_below="@id/iv_temp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" android:id="@id/lv_announce" android:background="@android:color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" app:ptrHeaderBackground="@color/transparent" app:ptrShowIndicator="false" app:ptrAnimationStyle="flip" />
+</RelativeLayout>

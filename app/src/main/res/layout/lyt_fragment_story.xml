@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huluxia.widget.title.TitleBar android:id="@id/title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/green_tag" />
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_story_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <ImageView android:id="@id/ivStoryPageBack" android:padding="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:src="@mipmap/ic_story_back_press" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivStoryResDel" android:padding="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/ivStoryPageBack" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivStoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_story_fragment_title" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/ivStoryContribute" android:background="@drawable/bg_story_contribute_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/ivStoryFeedback" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivStoryFeedback" android:background="@drawable/bg_story_feedback_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="30.0sp" android:textColor="#ff442312" android:gravity="center" android:id="@id/tvStoryResCheckTips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="资源检测中..." />
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/lvStoryChapterSelected" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@color/transparent" android:dividerHeight="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

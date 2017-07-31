@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rly_header_left_img" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip">
+        <ImageView android:id="@id/sys_header_left_img" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?drawableTitleLogo" android:scaleType="centerInside" android:contentDescription="@null" style="@style/TopBarImageButton" />
+        <TextView android:id="@id/tv_msg_tip" android:background="@drawable/unread_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/header_title" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxWidth="200.0dip" android:text="@string/app_name" android:singleLine="true" android:drawableLeft="?drawableTitleLogo" android:drawablePadding="8.0dip" android:layout_centerVertical="true" />
+</LinearLayout>

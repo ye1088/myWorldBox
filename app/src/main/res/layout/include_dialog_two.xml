@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:background="?backgroundDialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="?android:textColorSecondary" android:gravity="left" android:id="@id/tv_msg" android:paddingLeft="25.0dip" android:paddingTop="30.0dip" android:paddingRight="25.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细消息" />
+    <View android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ly_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_cancel" android:background="?listSelectorButtonLeft" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:singleLine="true" android:layout_weight="1.0" />
+        <View android:textColor="@color/black" android:gravity="center" android:background="?splitColor" android:clickable="false" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_confirm" android:background="?listSelectorButtonRight" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确定" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

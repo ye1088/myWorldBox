@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/float_bg" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="280.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lyTop" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="可用的附魔 " />
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/lyBottom" android:layout_below="@id/lyTop">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="vertical" android:id="@id/floatEnchants" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lyBottom" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/floatEnchantOptionCancel" android:background="@drawable/btn_daren" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="取消 " android:layout_weight="1.0" style="@style/value_button_float_common" />
+        <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/floatEnchantOptionOK" android:background="@drawable/btn_daren" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="确定" android:layout_weight="1.0" style="@style/value_button_float_common" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?game_option_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="112.0dip">
+        <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?game_option_game_mode_tip" android:gravity="center_horizontal" android:id="@id/tvHomePageGameModeTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="17.0dip" android:text="不加载" android:singleLine="true" />
+        <RadioGroup android:orientation="horizontal" android:background="?game_option_mode_bg" android:padding="0.5dip" android:layout_width="324.0dip" android:layout_height="37.0dip" android:layout_below="@id/tvHomePageGameModeTips" android:layout_centerHorizontal="true">
+            <RadioButton android:id="@id/rdobtnGameLaunchModeSecurity" android:background="?game_option_mode_rdo_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="安全模式" android:layout_weight="1.0" style="@style/game_option_radio_btn" />
+            <RadioButton android:id="@id/rdobtnGameLaunchModeLimited" android:background="?game_option_mode_rdo_center_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="限制模式" android:layout_weight="1.0" style="@style/game_option_radio_btn" />
+            <RadioButton android:id="@id/rdobtnGameLaunchModeUnlimited" android:background="?game_option_mode_rdo_right_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="无限模式" android:layout_weight="1.0" style="@style/game_option_radio_btn" />
+        </RadioGroup>
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:background="?home_interval_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rlyVersionSelect" android:background="?game_option_version_choice_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?home_common_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="版本选择" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_version_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?game_option_version_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?game_option_version_choice_text_color" android:id="@id/tvVersionSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V0.11.1" android:layout_toLeftOf="@id/iv_version_choice" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?home_common_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="开启悬浮窗" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/chkOpenFloatWindow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:button="?game_option_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?home_common_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="开启帮助小精灵" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/chkOpenHelpFairy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:button="?game_option_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?home_common_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="黑屏修复" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/chkOpenBlackPack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:button="?game_option_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/common_text_size_15sp" android:textColor="?home_common_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="优化加速" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/chkEnableClearSystemMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:button="?game_option_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

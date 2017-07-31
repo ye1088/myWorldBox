@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.widget.InterceptViewPager android:id="@id/vp_studio_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rly_bottom_tabs" />
+    <View android:id="@id/view_studio_split" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_above="@id/rly_bottom_tabs" />
+    <RelativeLayout android:id="@id/rly_bottom_tabs" android:background="?backgroundDim" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_bottom_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_tabs" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rly_recommend_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_recommend_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="推荐" android:drawableTop="?studio_recommend" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rly_month_review_top_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_month_review_top_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="月评榜" android:drawableTop="?month_review_rank" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rly_download_top_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_download_top_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="下载榜" android:drawableTop="?download_rank" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rly_all_studio_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_all_studio_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="全部工作室" android:drawableTop="?all_studio" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_past_tabs" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/rly_month_review_past_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_month_review_past_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="月评榜" android:drawableTop="?month_review_rank" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/rly_download_past_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_download_past_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="下载榜" android:drawableTop="?download_rank" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/noDataFragment" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/no_data_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_centerInParent="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/no_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="暂无数据" android:layout_below="@id/no_data_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

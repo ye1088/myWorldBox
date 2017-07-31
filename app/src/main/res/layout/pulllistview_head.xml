@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/head_refresh_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/dark_gray" android:id="@id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pullRefersh" />
+            <ImageView android:layout_gravity="center" android:id="@id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_arrow_down" android:layout_toRightOf="@id/head_tipsTextView" android:layout_alignTop="@id/head_tipsTextView" android:layout_alignBottom="@id/head_tipsTextView" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="center" android:id="@id/head_progressBar" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_margin="3.0dip" android:src="@drawable/common_loading3" android:layout_toRightOf="@id/head_tipsTextView" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

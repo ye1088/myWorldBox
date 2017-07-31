@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tp" android:layout_width="fill_parent" android:layout_height="7.5dip" />
+    <RelativeLayout android:id="@id/click_view" android:background="?item_studio_announce_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/tp">
+        <com.huluxia.widget.textview.EmojiTextView android:textSize="18.0sp" android:textColor="?room_number" android:id="@id/tv_announce_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="公告" android:singleLine="true" />
+        <com.huluxia.widget.textview.EmojiTextView android:textSize="12.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_announcer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="CC" android:maxEms="12" android:singleLine="true" android:layout_below="@id/tv_announce_title" android:layout_alignLeft="@id/tv_announce_title" />
+        <TextView android:textSize="12.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_publish_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="10月23日 14：32" android:singleLine="true" android:layout_toRightOf="@id/tv_announcer" android:layout_alignBaseline="@id/tv_announcer" />
+        <View android:id="@id/split" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_announcer" android:layout_alignLeft="@id/tv_announce_title" />
+        <com.huluxia.widget.textview.EmojiTextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/tv_announce_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="15.0dip" android:text="内容" android:maxLines="3" android:minLines="3" android:layout_below="@id/split" android:layout_alignLeft="@id/tv_announce_title" android:layout_alignRight="@id/split" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="7.5dip" android:layout_below="@id/click_view" />
+</RelativeLayout>

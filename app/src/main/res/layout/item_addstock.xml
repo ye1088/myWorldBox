@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_cate" android:background="@drawable/bglistitem_selector_stock" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_icon" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生牛肉" android:layout_below="@id/logo" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/hook" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_hook" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="1.0sp" android:textColor="@color/black" android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="13.0sp" android:textColor="?categoryText" android:id="@id/radio_recommend" android:background="?categoryBackground" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="4.0dip" android:text="@string/map_recommend" style="@style/MapFilterRadioButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/q1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daren_quest_1" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/a1" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/daren_answer_1" android:lineSpacingExtra="3.0dip" />
+        <View android:id="@id/split1" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/q2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/daren_quest_2" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/a2" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/daren_answer_2" android:lineSpacingExtra="3.0dip" />
+        <View android:id="@id/split2" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/q3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/daren_quest_3" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/a3" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/daren_answer_3" android:lineSpacingExtra="3.0dip" />
+    </LinearLayout>
+</ScrollView>

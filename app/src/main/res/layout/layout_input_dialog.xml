@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_rounded_corner_white" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="29.0dip" android:lineSpacingExtra="5.0dip" />
+    <View android:background="#ffa8a8a8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+    <EditText android:id="@id/et_input_text" android:background="@drawable/bg_password_input_green" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="@drawable/btn_cancel_color_selector" android:gravity="center" android:id="@id/btn_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="@drawable/dialog_btn_color" android:gravity="center" android:id="@id/btn_ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/btn_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

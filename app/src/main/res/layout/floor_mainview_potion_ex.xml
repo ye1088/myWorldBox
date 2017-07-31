@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/float_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/floatLayoutItemPotionTypeEx" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMainPotionBuffMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/buff" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
+            <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMainPotionDebuffMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/debuff" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
+            <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMainPotionAttack" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/potion_attack_off" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
+        </RadioGroup>
+        <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/floatLayoutItemPotionType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textColor="@color/blue" android:id="@id/value_button_all_potion" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/check_all" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+            <TextView android:textColor="@color/red" android:id="@id/value_button_best_potion" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/max" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+            <TextView android:textColor="@color/blue" android:id="@id/value_button_eat_potion" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/potion_eat" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+            <TextView android:id="@id/value_button_cancel_potion" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/potion_remove" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/floatLinearLayoutPotionTime" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:gravity="center|left" android:id="@id/floatTextPotionTime" android:layout_width="65.0dip" android:layout_height="fill_parent" android:text="@string/potion_continued_time" />
+            <SeekBar android:id="@id/floatSeekPotionTime" android:layout_width="0.0dip" android:layout_height="fill_parent" android:max="60" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+            <TextView android:gravity="center|right" android:id="@id/floatTextShowPotionTime" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/floatLinearLayoutOption" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/floatChkMainAttackOption" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/potion_attack_switch" android:layout_weight="1.0" style="@style/value_checkbox_switch4" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/floatListPotionAttrList" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/value_listview_base" />
+</LinearLayout>

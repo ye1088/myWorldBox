@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/sliding_tab" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/split_top" />
+    <com.huluxia.framework.base.widget.pager.SelectedViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sliding_tab" />
+</RelativeLayout>

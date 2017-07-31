@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/potion_attr_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未知" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/floatLinearLayoutPotionLevelEx" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_toLeftOf="@id/potion_attr_intro" android:layout_toRightOf="@id/potion_attr_open" android:layout_centerVertical="true">
+        <SeekBar android:id="@id/floatSeekPotionLevelEx" android:layout_width="0.0dip" android:layout_height="fill_parent" android:max="60" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+        <TextView android:gravity="center|right" android:id="@id/floatTextShowPotionLevelEx" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/text" />
+    </LinearLayout>
+    <TextView android:id="@id/potion_attr_intro" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="说明" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/value_button_float_common_style01" />
+</RelativeLayout>

@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="FloatAdd128">+128</string>
+    <string name="FloatAdd16">+16</string>
+    <string name="FloatAdd64">+64</string>
+    <string name="FloatChkDeadLost">死亡不掉落</string>
+    <string name="FloatChkFly">飞行(双击跳跃飞行)</string>
+    <string name="FloatChkFullBlood">无敌</string>
+    <string name="FloatChkGameMode">创造(2秒内不可重复切换)</string>
+    <string name="FloatChkGameTime">白天</string>
+    <string name="FloatChkRunSpeed">疾跑</string>
+    <string name="FloatChkShowBlood">生物显血</string>
+    <string name="FloatChkSmallMap">小地图</string>
+    <string name="FloatGetCoordinate">传送</string>
+    <string name="FloatGetCoordinate2">传送</string>
+    <string name="FloatGetCoordinate3">传送</string>
+    <string name="FloatGetSpawn">返回重生点</string>
+    <string name="FloatSaveCoordinate">保存坐标点1</string>
+    <string name="FloatSaveCoordinate2">保存坐标点2</string>
+    <string name="FloatSaveCoordinate3">保存坐标点3</string>
+    <string name="FloatSetSpawn">设置重生点</string>
+    <string name="FloatSlotBlock">方块</string>
+    <string name="FloatSlotCrop">植物</string>
+    <string name="FloatSlotDyes">染色</string>
+    <string name="FloatSlotFood">食物</string>
+    <string name="FloatSlotJs">ＪＳ</string>
+    <string name="FloatSlotMiscellaneous">杂项</string>
+    <string name="FloatSlotOreitems">矿物</string>
+    <string name="FloatSlotSave">保存</string>
+    <string name="FloatSlotSpawn">蛋</string>
+    <string name="FloatSlotTools">工具</string>
+    <string name="FloatTipCoordinate">还未保存坐标</string>
+    <string name="Float_InsZones">副本模式</string>
+    <string name="Float_InsZones_Breakthrough">闯关模式</string>
+    <string name="Float_InsZones_Breakthrough_Tips">来挑战各式各样的关卡吧！</string>
+    <string name="Float_InsZones_Bulletin">"欢迎向我们反馈更多您宝贵的建议与意见！
+官方QQ群：433180551"</string>
+    <string name="Float_InsZones_Enter">进入</string>
+    <string name="Float_InsZones_Experience">体验版</string>
+    <string name="Float_InsZones_Experience_Tips">请到平坦地面开启哟！</string>
+    <string name="Float_InsZones_Maze">迷宫逃亡</string>
+    <string name="Float_InsZones_Maze_Tips">快来找到出口吧！</string>
+    <string name="Float_InsZones_Parkour">跑酷</string>
+    <string name="Float_InsZones_Parkour_Tips">奔跑吧，通关之后你就是跑酷大神！</string>
+    <string name="Float_InsZones_Tips">Tips:</string>
+    <string name="Float_InsZones_TobeExpected">敬请期待</string>
+    <string name="Float_InsZones_Training">新手训练营</string>
+    <string name="Float_InsZones_Training_Tips">欢迎来新手训练营学习！</string>
+    <string name="Float_InsZones_Trap">红石陷阱</string>
+    <string name="Float_InsZones_Trap_Tips">运用风骚的步伐，快速闯出陷阱吧！</string>
+    <string name="Float_InsZones_UnExhaustible">无尽模式</string>
+    <string name="Float_InsZones_UnExhaustible_Tips">无尽的战斗在等待着你！</string>
+    <string name="MenuBackup">复制</string>
+    <string name="MenuBackupMap">复制地图</string>
+    <string name="MenuCancle">取消</string>
+    <string name="MenuClose">关闭</string>
+    <string name="MenuDel">删除</string>
+    <string name="MenuDetail">详情</string>
+    <string name="MenuExport">导出</string>
+    <string name="MenuExportMapToZip">导出为压缩包</string>
+    <string name="MenuOpen">开启</string>
+    <string name="MenuRecover">还原</string>
+    <string name="MenuRename">重命名</string>
+    <string name="MenuShare">分享给朋友</string>
+    <string name="RealNameSharing_ErrorChangeRemove">11</string>
+    <string name="ResJsDown">ＪＳ下载</string>
+    <string name="ResJsImport">ＪＳ导入</string>
+    <string name="ResJsMgr">ＪＳ管理</string>
+    <string name="ResMapCate">分类</string>
+    <string name="ResMapDown">地图下载</string>
+    <string name="ResMapExport">地图导出</string>
+    <string name="ResMapImport">地图导入</string>
+    <string name="ResMapMgr">地图管理</string>
+    <string name="ResMapRank">排行</string>
+    <string name="ResSkinDown">皮肤下载</string>
+    <string name="ResSkinImport">皮肤导入</string>
+    <string name="ResSkinMgr">皮肤管理</string>
+    <string name="ResWoodDown">材质下载</string>
+    <string name="ResWoodImport">材质导入</string>
+    <string name="ResWoodMgr">材质管理</string>
+    <string name="TipMC012Down">将为您下载插件(15MB)以支持最新功能</string>
+    <string name="TipMCDownload">"您还没安装‘我的世界’这款游戏。
+赶紧来下载吧~"</string>
+    <string name="TipMCNoneJs">"您还没有下载过ＪＳ，
+
+赶紧来下载吧~"</string>
+    <string name="TipMCNoneMap">"您还没有下载过地图，
+
+赶紧来下载吧~"</string>
+    <string name="TipMCNoneSkin">"您还没有下载过皮肤，
+
+赶紧来下载吧~"</string>
+    <string name="TipMCNoneWood">"您还没有下载过材质，
+
+赶紧来下载吧~"</string>
+    <string name="TipMCOldMap">"0.11.0的build1版使用0.10.5的地图会闪退。
+请更换版本再下载地图！"</string>
+    <string name="TipMCOldVerDown">将为您下载插件(14MB)以支持最新功能</string>
+    <string name="TipMCOldVerInstall">将安装插件以支持最新功能。</string>
+    <string name="accessibility_description">启动抢红包服务（使用QQ，微信）</string>
+    <string name="account_lock">账户已被锁，不能进行此操作！</string>
+    <string name="achievement_answer_1">成就榜是葫芦丝在葫芦侠我的世界获得所有成就数的排行榜，是葫芦丝的荣耀。</string>
+    <string name="achievement_answer_2">成就榜能看到整个葫芦侠我的世界的成就排名，能看到你当前所处的排名位置，装逼必备神器。</string>
+    <string name="achievement_answer_3">通过完成日常任务获得成就，目前可以获得成就的地方有登陆、游戏、副本、联机、挖掘、附魔、击杀、死亡、地图、插件、皮肤、材质；成就榜只显示1000名成就最高的用户。</string>
+    <string name="achievement_quest_1">成就榜是什么？</string>
+    <string name="achievement_quest_2">成就榜有什么用？</string>
+    <string name="achievement_quest_3">成就榜怎么上？</string>
+    <string name="achievement_rule">成就榜说明</string>
+    <string name="action_article">工具专题</string>
+    <string name="action_card">买定离手</string>
+    <string name="action_download">下载中心</string>
+    <string name="action_help">帮助中心</string>
+    <string name="action_home">三楼主页</string>
+    <string name="action_message">消息中心</string>
+    <string name="action_movie">快播影视导航</string>
+    <string name="action_navigator">导航</string>
+    <string name="action_profile">个人中心</string>
+    <string name="action_setting">系统设置</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_photo">添加照片</string>
+    <string name="album_no_modified">没有修改相册</string>
+    <string name="album_photo_count_max">最多只能选%d张图片</string>
+    <string name="all">全部</string>
+    <string name="all_categories">全部版块</string>
+    <item type="string" name="ampm_circle_radius_multiplier">0.19</item>
+    <string name="app_guide">工具使用指南</string>
+    <string name="app_name">葫芦侠我的世界</string>
+    <string name="app_name_short">Minecraft PE</string>
+    <string name="app_name_short_demo">Minecraft PE Demo</string>
+    <string name="app_text">text</string>
+    <string name="app_title">葫芦侠我的世界</string>
+    <string name="apply_space_style_failed">设置失败，网络问题</string>
+    <string name="apply_space_style_succ">设置个性模版成功</string>
+    <string name="arc_path">"街机游戏文件存储路径为
+内置存储卡/0roms/ARC"</string>
+    <string name="audit">待处理申请</string>
+    <string name="audit_list">审核中</string>
+    <string name="audit_ok">已通过</string>
+    <string name="audit_reject">审核不过</string>
+    <string name="auditing">待审核</string>
+    <string name="author">作者 ：</string>
+    <string name="author_noless_tips">作者不能少于2个字符</string>
+    <string name="author_nomore_tips">作者不能多于8个字符</string>
+    <string name="back">返回</string>
+    <string name="backup">备份</string>
+    <string name="be_big">变成大家伙</string>
+    <string name="be_small">变成小不点</string>
+    <string name="blank" />
+    <string name="btn_cancel">取消</string>
+    <string name="btn_cdn">图片诊断</string>
+    <string name="btn_commit">确定</string>
+    <string name="btn_confirm">朕知道了</string>
+    <string name="btn_download">网速诊断</string>
+    <string name="btn_ping">域名诊断</string>
+    <string name="bucket_name">%1$s(%2$d)</string>
+    <string name="bucket_name_all">全部(%1$d)</string>
+    <string name="buff">增益</string>
+    <string name="bug_describe">描述有误</string>
+    <string name="bug_download">无法下载</string>
+    <string name="bug_fare">恶意扣费</string>
+    <string name="bug_install">无法安装</string>
+    <string name="bug_privacy">隐私泄露</string>
+    <string name="bug_quality">质量较差</string>
+    <string name="bug_update">无法更新</string>
+    <string name="bug_version">版本较旧</string>
+    <string name="button_cancel_download">取消</string>
+    <string name="button_queue_for_wifi">排队</string>
+    <string name="button_start_now">立即开始</string>
+    <string name="buy_space_style_failed">购买失败，网络问题</string>
+    <string name="buy_space_style_succ">购买成功，正在应用模版</string>
+    <string name="by_followed">关注</string>
+    <string name="byte_0">0 K</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_potion_tips">解除药水效果完毕...</string>
+    <string name="cancel_running_download">取消</string>
+    <string name="cancle">取消</string>
+    <string name="cate_desc">版块介绍</string>
+    <string name="cate_rule">版块规定</string>
+    <string name="category">分类</string>
+    <string name="category_desc">版块简介</string>
+    <string name="category_rules">版块规则</string>
+    <string name="category_title">版块名称</string>
+    <string name="chat_item_time">mon月day日 hour:min</string>
+    <string name="check_all">全选</string>
+    <string name="choose_js">选择插件</string>
+    <string name="choose_js_file_tips">请选择要上传的JS文件</string>
+    <string name="choose_map">选择地图</string>
+    <string name="choose_map_folder_tips">请选择要上传的地图文件夹</string>
+    <string name="choose_skin">选择皮肤</string>
+    <string name="choose_skin_file_tips">请选择要上传的皮肤文件</string>
+    <string name="choose_wood">选择材质</string>
+    <string name="choose_wood_file_tips">请选择要上传的材质文件</string>
+    <item type="string" name="circle_radius_multiplier">0.82</item>
+    <item type="string" name="circle_radius_multiplier_24HourMode">0.85</item>
+    <string name="classes">类别</string>
+    <string name="clear">清空</string>
+    <string name="clear_record">清空记录</string>
+    <string name="clear_record_sucess">清空记录成功</string>
+    <string name="clear_system_memory">优化加速</string>
+    <string name="click_button_reload">重新加载</string>
+    <string name="click_or_pull_refresh">点击或者下拉尝试刷新</string>
+    <string name="click_screen_reload">点击刷新</string>
+    <string name="click_to_login_in">点击登录</string>
+    <string name="click_to_set_paswd_tip">设置密码</string>
+    <string name="cloudpush_app_name">Push Service</string>
+    <string name="comfirm">确定</string>
+    <string name="comment_hint1">你说的才是头条...</string>
+    <string name="comment_hint2">写评论...</string>
+    <string name="comment_hint3">我们有底线</string>
+    <string name="comment_more">查看更多评论</string>
+    <string name="comments">评论</string>
+    <string name="complaint">举报</string>
+    <string name="confirm">确定</string>
+    <string name="connect_error_button">网络设置</string>
+    <string name="connect_error_line_one">网络不给力，点击屏幕刷新</string>
+    <string name="connect_error_line_two">请检查网络设置后重新尝试</string>
+    <string name="content_shrinkup">收起</string>
+    <string name="content_spread">全文</string>
+    <string name="contribution">贡献</string>
+    <string name="create_game_room_txt">创建房间</string>
+    <string name="create_studio">创建工作室</string>
+    <string name="crop">裁剪</string>
+    <string name="custom">自定义</string>
+    <string name="customerPhotoTxt">图片数量4~8张，第一张为封面</string>
+    <string name="daren">达人堂</string>
+    <string name="daren_answer_1">达人堂是葫芦丝在某一个版块获得葫芦数的排行榜，装逼必备的东西。</string>
+    <string name="daren_answer_2">在某一版块排名高高的有一定的荣誉感和归属感，重点是每个葫芦丝都能在达人堂的排名中看到你哦!</string>
+    <string name="daren_answer_3">在相应版块获得他人赠送的葫芦便可以入驻达人堂，并且获得的数量累积越多，达人堂的排名也就越高。达人堂每周更新一次。</string>
+    <string name="daren_quest_1">达人堂是什么？</string>
+    <string name="daren_quest_2">达人堂有什么用？</string>
+    <string name="daren_quest_3">排名怎么获得？</string>
+    <string name="daren_ranking">第%d名</string>
+    <string name="daren_rule">达人堂说明</string>
+    <string name="data_package">_数据包</string>
+    <string name="day_mode">白天模式</string>
+    <string name="day_of_week_label_typeface">sans-serif</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="debuff">减益</string>
+    <string name="default_five_players_text">5人</string>
+    <string name="delete">删除</string>
+    <string name="delete_album_photo_succ">删除图片成功</string>
+    <string name="delete_download">删除</string>
+    <string name="deleted_key">" "<g example="4" id="key">%1$s</g>" deleted "</string>
+    <string name="deselect_all">清除所选项</string>
+    <string name="detail_noless_five">内容不能少于5个字符</string>
+    <string name="di">第</string>
+    <string name="dialog_cannot_resume">下载中断，无法继续进行。</string>
+    <string name="dialog_failed_body">您想要稍后重新尝试下载该文件，还是将其从队列中删除？</string>
+    <string name="dialog_file_already_exists">无法下载，目标文件已存在。</string>
+    <string name="dialog_file_missing_body">未找到已下载的文件。</string>
+    <string name="dialog_insufficient_space_on_cache">无法完成下载，内部下载存储器的空间不足。</string>
+    <string name="dialog_insufficient_space_on_external">无法完成下载，外部存储器的空间不足。</string>
+    <string name="dialog_media_not_found">无法下载，未安装外部媒体。</string>
+    <string name="dialog_msg_nick_change_free">你拥有一次免费改名的机会，本次改名免费，以后每次改名将花费100葫芦，是否改名？</string>
+    <string name="dialog_msg_nick_change_nofree">你的免费改名次数已用完，本次改名将花费100葫芦，是否改名？</string>
+    <string name="dialog_paused_body">您想要继续下载该文件，还是将其从队列中删除？</string>
+    <string name="dialog_queued_body">该文件已加入队列，供以后下载。</string>
+    <string name="dialog_running_body">您想要暂停下载文件，还是取消下载？</string>
+    <string name="dialog_title_nick_change">修改名字：</string>
+    <string name="dialog_title_nick_change_comfirm">温馨提示：</string>
+    <string name="dialog_title_not_available">下载失败</string>
+    <string name="dialog_title_queued_body">文件尚不可用</string>
+    <string name="dis_card">买定离手</string>
+    <string name="dis_cartoon">葫芦侠动画</string>
+    <string name="dis_center">礼物兑换中心</string>
+    <string name="dis_gift">兑换中心</string>
+    <string name="dis_html5">休闲小游戏(无需下载)</string>
+    <string name="dis_tail">修改手机型号</string>
+    <string name="disparage">踩</string>
+    <string name="done">确定</string>
+    <string name="done_label">Done</string>
+    <string name="download">下载</string>
+    <string name="download_error">下载失败</string>
+    <string name="download_manager">下载管理</string>
+    <string name="download_manager_copyright">该资源因版权问题已经下架</string>
+    <string name="download_manager_dminvalid">该资源需要下载管理器进行解压。您的手机不支持下载管理器，无法下载该资源。</string>
+    <string name="download_manager_download_reason_dm_disabled">系统下载管理程序没有启用</string>
+    <string name="download_manager_download_reason_http400">下载失败，请恢复手机型号并重新下载</string>
+    <string name="download_manager_download_reason_http404">下载地址不可用，请使用其他地址下载</string>
+    <string name="download_manager_download_reason_insufficient_storage">空间不足无法下载</string>
+    <string name="download_manager_download_reason_invaliable">下载地址不可用，请使用其他地址下载</string>
+    <string name="download_manager_download_reason_paused_manual">手动暂停</string>
+    <string name="download_manager_download_reason_paused_unknown">暂停</string>
+    <string name="download_manager_download_reason_queued_for_wifi">wifi排队</string>
+    <string name="download_manager_download_reason_wait_for_network">等待连接网络</string>
+    <string name="download_manager_download_reason_wait_to_retry">等待重试</string>
+    <string name="download_manager_install_apk_invalid">APK不可用</string>
+    <string name="download_manager_install_apk_not_exists">APK不存在</string>
+    <string name="download_manager_install_cancel_manual">手动取消</string>
+    <string name="download_manager_install_cancel_unzipping">取消解压</string>
+    <string name="download_manager_install_fail_unkown">因未知原因失败</string>
+    <string name="download_manager_install_inconsistent_certificates">签名不一致</string>
+    <string name="download_manager_install_insufficient_storage">空间不足。请先清理再重试。</string>
+    <string name="download_manager_install_no_permission">没有安装权限</string>
+    <string name="download_manager_install_uninstall_fail">无法卸载</string>
+    <string name="download_menu_sort_by_date">按时间排序</string>
+    <string name="download_menu_sort_by_size">按大小排序</string>
+    <string name="download_no_application_title">无法打开文件</string>
+    <string name="download_paused">暂停</string>
+    <string name="download_queued">已加入队列</string>
+    <string name="download_running">正在下载</string>
+    <string name="download_success">已完成</string>
+    <string name="download_title">下载内容</string>
+    <string name="download_unknown_title">&lt;未命名></string>
+    <string name="eat_over_potion_tips">喝药完毕...</string>
+    <string name="edit_studio">编辑工作室</string>
+    <string name="email">输入邮箱地址或三楼帐号</string>
+    <string name="enchantContext">"附魔功能简介
+附魔能使你的工具具有特殊属性,并附上炫彩的光芒。使用附魔功能，请选择你想要附魔的工具并手持，选择下方的附魔效果和等级，点击附魔即可。
+请注意:并不是每一个工具都能任意附魔，也不是每一个附魔都能附在任意的工具上。"</string>
+    <string name="enchantContextAttr00" formatted="false">"保护
+一级 减少4%伤害
+二级 减少8%伤害
+三级 减少12%伤害
+四级 减少20%伤害
+五级 未知"</string>
+    <string name="enchantContextAttr01" formatted="false">"火焰保护
+一级 减少8%火焰伤害
+二级 减少16%火焰伤害
+三级 减少24%火焰伤害
+四级 减少36%火焰伤害
+五级 未知"</string>
+    <string name="enchantContextAttr02" formatted="false">"掉落保护
+一级 减少20%掉落伤害
+二级 减少32%掉落伤害
+三级 减少48%掉落伤害
+四级 减少72%掉落伤害
+五级 未知"</string>
+    <string name="enchantContextAttr03" formatted="false">"爆炸保护
+一级 减少12%爆炸伤害
+二级 减少20%爆炸伤害
+三级 减少28%爆炸伤害
+四级 减少44%爆炸伤害
+五级 未知"</string>
+    <string name="enchantContextAttr04" formatted="false">"弹射物保护
+一级 减少12%箭/火球的伤害
+二级 减少20%箭/火球的伤害
+三级 减少28%箭/火球的伤害
+四级 减少44%箭/火球的伤害
+五级 未知"</string>
+    <string name="enchantContextAttr05" formatted="false">"荆棘
+一级 有15%几率对攻击者反馈伤害
+二级 有30%几率对攻击者反馈伤害
+三级 有45%几率对攻击者反馈伤害
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr06">"水下呼吸
+一级 增加15秒水下呼吸时间及1秒窒息伤害间隔
+二级 增加30秒水下呼吸时间及2秒窒息伤害间隔
+三级 增加45秒水下呼吸时间及3秒窒息伤害间隔
+四级 增加60秒水下呼吸时间及4秒窒息伤害间隔
+五级 增加75秒水下呼吸时间及5秒窒息伤害间隔"</string>
+    <string name="enchantContextAttr07" formatted="false">"深海探索者
+一级 减少水下行走减速的33%
+二级 减少水下行走减速的66%
+三级 水下行走将与陆地速度相同
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr08">"水下速掘
+一级 水下将保持正常的挖掘速度
+二级 未知
+三级 未知
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr09">"锋利
+一级 增加1.25点伤害
+二级 增加2.5点伤害
+三级 增加3.75点伤害
+四级 增加4点伤害
+五级 增加5.25点伤害"</string>
+    <string name="enchantContextAttr10">"亡灵杀手
+一级 增加2.5点伤害
+二级 增加5点伤害
+三级 增加7.5点伤害
+四级 增加10点伤害
+五级 增加12.5点伤害"</string>
+    <string name="enchantContextAttr11">"节肢杀手
+一级 增加2.5点伤害
+二级 增加5点伤害
+三级 增加7.5点伤害
+四级 增加10点伤害
+五级 增加12.5点伤害"</string>
+    <string name="enchantContextAttr12">"击退
+一级 击退3个方格的距离
+二级 击退6个方格的距离
+三级 击退9个方格的距离
+四级 击退12个方格的距离
+五级 击退15个方格的距离"</string>
+    <string name="enchantContextAttr13">"火焰附加
+一级 燃烧3秒，造成3点伤害
+二级 燃烧7秒，造成7点伤害
+三级 未知
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr14" formatted="false">"抢夺
+一级 掉落上限+1，稀有掉率+1%
+二级 掉落上限+2，稀有掉率+2%
+三级 掉落上限+3，稀有掉率+3%
+四级 掉落上限+4，稀有掉率+4%
+五级 掉落上限+5，稀有掉率+5%"</string>
+    <string name="enchantContextAttr15" formatted="false">"效率
+一级 130%采集速度
+二级 169%采集速度
+三级 220%采集速度
+四级 286%采集速度
+五级 371%采集速度"</string>
+    <string name="enchantContextAttr16">"精准采集
+一级 被挖掘的方块会掉落它本体
+二级 未知
+三级 未知
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr17">"耐久
+一级 2倍耐久
+二级 3倍耐久
+三级 4倍耐久
+四级 5倍耐久
+五级 6倍耐久"</string>
+    <string name="enchantContextAttr18" formatted="false">"时运
+一级 平均掉落物提高33%
+二级 平均掉落物提高75%
+三级 平均掉落物提高120%
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr19" formatted="false">"力量
+一级 箭伤害增加50%
+二级 箭伤害增加75%
+三级 箭伤害增加100%
+四级 箭伤害增加125%
+五级 箭伤害增加150%"</string>
+    <string name="enchantContextAttr20">"冲击
+一级 击退3个方格的距离
+二级 击退6个方格的距离
+三级 击退9个方格的距离
+四级 击退12个方格的距离
+五级 击退15个方格的距离"</string>
+    <string name="enchantContextAttr21">"火矢
+一级 燃烧5秒，造成5点伤害
+二级 未知
+三级 未知
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr22">"无限
+一级 射箭不会消耗箭矢
+二级 未知
+三级 未知
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr23" formatted="false">"海之眷顾
+一级 减少2.5%垃圾，增加1%宝物
+二级 减少5%垃圾，增加2%宝物
+三级 减少7.5%垃圾，增加3%宝物
+四级 未知
+五级 未知"</string>
+    <string name="enchantContextAttr24" formatted="false">"饵钓
+一级 减少5秒等待时间和1%上钩率
+二级 减少10秒等待时间和2%上钩率
+三级 减少15秒等待时间和3%上钩率
+四级 未知
+五级 未知"</string>
+    <string name="exchanged">兑换</string>
+    <string name="exchanged_space_style_failed">兑换失败，网络问题</string>
+    <string name="exchanged_space_style_succ">恭喜兑换成功</string>
+    <string name="exit_failure">退出失败，请重试</string>
+    <string name="exit_success">退出成功</string>
+    <string name="favorite">收藏</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_cate">填写关于版块的建议</string>
+    <string name="fetch_profile_failed">获取用户信息失败</string>
+    <string name="file_notcomplete">文件不完整</string>
+    <string name="file_send">发送</string>
+    <string name="file_too_large_tips">不支持超过50m的资源文件惹~</string>
+    <string name="filter">筛选</string>
+    <string name="filter_activetime">按回复时间</string>
+    <string name="filter_createtime">按发布时间</string>
+    <string name="filter_marrow">按本版精华</string>
+    <string name="filter_special_character_tips">亲，暂时未支持Emoji表情或特殊字符惹~，已过滤该字符！</string>
+    <string name="finish">完成</string>
+    <string name="finished">完成</string>
+    <string name="floor_master">楼主</string>
+    <string name="follow">关注</string>
+    <string name="followed">已关注</string>
+    <string name="following_res">我的关注</string>
+    <string name="forgetPassword">找回密码</string>
+    <string name="format_download_photo">下载 (%s)</string>
+    <string name="format_hulu_count">%d葫芦</string>
+    <string name="format_photo_count">(%d张)</string>
+    <string name="format_photo_progress">%d %%</string>
+    <string name="format_photo_size">%dK</string>
+    <string name="free">免费</string>
+    <string name="game_enable_function_mode">安全模式</string>
+    <string name="game_good">游戏周边</string>
+    <string name="game_mode_select_tip">设置游戏模式</string>
+    <string name="game_mode_txt">游戏模式</string>
+    <string name="game_option">游戏选项</string>
+    <string name="gba_path">"GBA游戏文件存储路径为
+内置存储卡/0roms/GBA"</string>
+    <string name="gbc_path">"GBC游戏文件存储路径为
+内置存储卡/0roms/GBC"</string>
+    <string name="getVcode">获取验证码</string>
+    <string name="giveup_resource_contribute_tips">是否放弃资源投稿</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_address">收件地址（请详细）</string>
+    <string name="hint_alipay">请填写支付宝帐号</string>
+    <string name="hint_alipay_nick">请填写支付宝昵称，方便验证</string>
+    <string name="hint_name">收货人姓名</string>
+    <string name="hint_nick_change">新昵称</string>
+    <string name="hint_qq_number">请填写QQ号</string>
+    <string name="hint_search_chat_home">输入房间号或者搜索名字</string>
+    <string name="hint_space_style_code">请输入兑换码</string>
+    <string name="hint_tel_number">请填写手机号</string>
+    <string name="his_ablum">Ta的相册</string>
+    <string name="his_comments">Ta的回帖</string>
+    <string name="his_fans">Ta的粉丝</string>
+    <string name="his_favorite">Ta的收藏</string>
+    <string name="his_favorite_article">Ta收藏的专题</string>
+    <string name="his_favorite_crack">Ta收藏的游戏</string>
+    <string name="his_hulu">Ta的葫芦</string>
+    <string name="his_idol">Ta的关注</string>
+    <string name="his_jifen">Ta的积分</string>
+    <string name="his_space">Ta的空间</string>
+    <string name="his_topics">Ta的帖子</string>
+    <string name="home_app_recommend">应用推荐</string>
+    <string name="home_heroeslist">英雄榜</string>
+    <string name="home_newbieguide">新手引导</string>
+    <string name="honor">大神</string>
+    <string name="hotplay">热播推荐</string>
+    <string name="hour_picker_description">Hours circular slider</string>
+    <string name="hwpush_ability_value">successRateAnalytics</string>
+    <string name="hwpush_cancel">Cancel</string>
+    <string name="hwpush_collect">Favorite</string>
+    <string name="hwpush_collect_tip">A Favorites icon will be created on the home screen. You can touch the icon to view all your favorite notifications.</string>
+    <string name="hwpush_collect_tip_known">OK</string>
+    <string name="hwpush_delete">Delete</string>
+    <string name="hwpush_deltitle">Delete notifications</string>
+    <string name="hwpush_dialog_limit_message">A maximum of 1000 favorite notifications can be saved. Delete some notifications before you can add new ones. Go to your favorite notifications list?</string>
+    <string name="hwpush_dialog_limit_ok">Go</string>
+    <string name="hwpush_dialog_limit_title">Note</string>
+    <string name="hwpush_forward">Forward</string>
+    <string name="hwpush_goback">Back</string>
+    <string name="hwpush_loading_title">Loading... Please wait.</string>
+    <string name="hwpush_msg_collect">Favorites</string>
+    <string name="hwpush_msg_favorites">Favorite notifications</string>
+    <string name="hwpush_no_collection">No favorite notifications</string>
+    <string name="hwpush_refresh">Refresh</string>
+    <string name="hwpush_request_provider_permission">Store messages</string>
+    <string name="hwpush_richmedia">Rich media</string>
+    <string name="hwpush_selectall">Select all</string>
+    <string name="hwpush_unselectall">Deselect all</string>
+    <string name="image_no_exist">图片不存在</string>
+    <string name="in_review_res">审核中资源</string>
+    <string name="index">首页</string>
+    <string name="info">攻略</string>
+    <string name="input_author">请填写作者, 2~8个字符</string>
+    <string name="input_contact">您的联系方式(QQ/微信/手机)</string>
+    <string name="input_content">填写内容,5~2000个字符</string>
+    <string name="input_map_des">"详情字数限制在30-2000之间。
+ 1、首先介绍下您的作品，是什么类型的。
+ 2、以简洁文字描述出作品的信息，好玩之处及特点，需要注意的地方，是否会卡顿。
+
+ 注：
+ 1、自己原创的作品，如果描述很随意，不用心，直接审核不通过。
+ 2、简短举例两条，大家可按照排序继续写下去，比如3、4、5等。"</string>
+    <string name="input_map_title">请填写标题, 2~32个字符</string>
+    <string name="input_source">请填写出处, 2~8个字符</string>
+    <string name="input_title">填写标题,5~32个字符</string>
+    <string name="introduction">说明</string>
+    <string name="is_loading">努力加载中...</string>
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="js">ＪＳ</string>
+    <string name="js_download">插件下载</string>
+    <string name="keep_queued_download">保留</string>
+    <string name="kingroot">请Root以获得更好的游戏体验</string>
+    <string name="launch_game_load_over">加速完成，正在启动游戏...</string>
+    <string name="level">级</string>
+    <string name="load_err">加载失败，点击重新加载</string>
+    <string name="load_error">加载网络数据失败，请重试</string>
+    <string name="load_failed_please_retry">加载失败！请重试</string>
+    <string name="load_image_failed">加载图片失败，请点击重试</string>
+    <string name="loading">正在加载中</string>
+    <string name="loading_failed">加载失败,轻触屏幕刷新</string>
+    <string name="loading_failed_please_retry">加载失败！请重试</string>
+    <string name="loading_network_error_downline">点击屏幕刷新</string>
+    <string name="loading_network_error_upline">网络异常，请检查网络再试试</string>
+    <string name="loadmore">查看更多</string>
+    <string name="local">本地</string>
+    <string name="local_manage">我的资源</string>
+    <string name="local_res">我的资源</string>
+    <string name="local_resmgr_backup">备份</string>
+    <string name="local_resmgr_backup_manager">备份管理</string>
+    <string name="local_resmgr_backup_onfloatwindows_tips">请在游戏悬浮框里使用备份和截图功能</string>
+    <string name="local_resmgr_del">删除</string>
+    <string name="local_resmgr_dlg_cancle">取消</string>
+    <string name="local_resmgr_dlg_save">保存</string>
+    <string name="local_resmgr_export">导出</string>
+    <string name="local_resmgr_import">导入</string>
+    <string name="local_resmgr_js_tips">关闭全部插件</string>
+    <string name="local_resmgr_loading_map">地图载入中...</string>
+    <string name="local_resmgr_map_tips">本地地图库</string>
+    <string name="local_resmgr_notexist_objectfile_updatefails">目标文件不存在，无法更新</string>
+    <string name="local_resmgr_open">已开启</string>
+    <string name="local_resmgr_recovering_map">地图还原中...</string>
+    <string name="local_resmgr_sort">排序</string>
+    <string name="local_resmgr_sort_name">名字排序</string>
+    <string name="local_resmgr_sort_size">大小排序</string>
+    <string name="local_resmgr_sort_time">时间排序</string>
+    <string name="local_resmgr_tips">欢迎！欢迎！热烈欢迎！</string>
+    <string name="local_resmgr_tutorial">教程</string>
+    <string name="local_resmgr_unopen">未开启</string>
+    <string name="local_resmgr_update_filename_fails">更新存档名出错</string>
+    <string name="login">登 录</string>
+    <string name="login_failed">登录失败！请重试</string>
+    <string name="login_process_name">com.huluxia.login</string>
+    <string name="logining">正在自动登陆</string>
+    <string name="main_bbs">社区</string>
+    <string name="main_chatroom">聊天室</string>
+    <string name="main_descovery">发现</string>
+    <string name="main_download">下载</string>
+    <string name="main_mine">空间</string>
+    <string name="main_resource">破解游戏</string>
+    <string name="main_spec">专区</string>
+    <string name="main_special">攻略</string>
+    <string name="manage_patches_import">导入</string>
+    <string name="manage_patches_import_confirm">Do you want to import this patch?</string>
+    <string name="manage_patches_import_error">导入JS脚本出错</string>
+    <string name="manage_patches_info">Information</string>
+    <string name="manager">管理</string>
+    <string name="map">地图</string>
+    <string name="map_add_entity">增加生物</string>
+    <string name="map_add_file">导入</string>
+    <string name="map_add_js">导入JS</string>
+    <string name="map_add_skin">导入皮肤</string>
+    <string name="map_add_slot">增加物品</string>
+    <string name="map_all">全部</string>
+    <string name="map_del_entity">删除生物</string>
+    <string name="map_del_file">删除</string>
+    <string name="map_del_js">删除JS</string>
+    <string name="map_del_skin">删除皮肤</string>
+    <string name="map_del_slot">删除物品</string>
+    <string name="map_down_file">下载</string>
+    <string name="map_down_js">下载JS</string>
+    <string name="map_down_skin">下载皮肤</string>
+    <string name="map_download">地图下载</string>
+    <string name="map_file_tip">点击地图可以修改存档名</string>
+    <string name="map_js_tip">注意使用错误的JS可能导致程序崩溃</string>
+    <string name="map_latest">最新</string>
+    <string name="map_name_noless_tips">地图名字不能少于2个字符，请先重命名</string>
+    <string name="map_name_nomore_tips">地图名字不能多于15个字符，请先重命名</string>
+    <string name="map_name_read_fails">读取地图文件名失败</string>
+    <string name="map_reading">地图读取中...</string>
+    <string name="map_recommend">精选</string>
+    <string name="map_recover_success">还原地图成功!</string>
+    <string name="map_seed">地图种子</string>
+    <string name="map_subject">专题</string>
+    <string name="map_type_txt">地图类型</string>
+    <string name="map_weekly_ranking">周榜</string>
+    <string name="maptype_building">建筑</string>
+    <string name="maptype_decryption">解密</string>
+    <string name="maptype_games">小游戏</string>
+    <string name="maptype_other">其他</string>
+    <string name="maptype_pve">PVE</string>
+    <string name="maptype_pvp">PVP</string>
+    <string name="maptype_redstone">红石</string>
+    <string name="maptype_risk">闯关</string>
+    <string name="maptype_running">跑酷</string>
+    <string name="maptype_survival">生存</string>
+    <string name="maptype_tower">塔防</string>
+    <string name="market_tip">请葫芦丝们给5星好评。葫芦哥会更有动力给大家开发更多更好的功能。葫芦侠感谢有您~</string>
+    <string name="max">最大</string>
+    <string name="mc_ad_desc">专为minecraft pe版玩家打造的游戏工具,绿色免费无广告!点击马上下载。</string>
+    <string name="mc_ad_title">《葫芦侠我的世界》Minecraft玩家必备的辅助工具</string>
+    <string name="mc_default_room_name">我的世界</string>
+    <string name="mc_feedback_qq">反馈请加官方Q群433180551。</string>
+    <string name="mc_guide">MC游戏指南</string>
+    <string name="mc_tip_reinstall">有任何原因无法启动游戏时，请将《葫芦侠我的世界》卸载，重装即可。</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="message">消息</string>
+    <string name="ming">名</string>
+    <string name="minute">分钟</string>
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="missing_title">&lt;未知></string>
+    <string name="mode_create">创造</string>
+    <string name="mode_survial">生存</string>
+    <string name="moderator">版主</string>
+    <string name="modify_avatar">修改头像</string>
+    <string name="more">更多</string>
+    <string name="more_firearms_12">枪械音效包 ( 12 )</string>
+    <string name="more_firearms_13">枪械音效包 ( 13 )</string>
+    <string name="msg_banner_sys">您有%d条系统消息，点击查看</string>
+    <string name="msg_banner_user">您有%d条新回复，点击查看</string>
+    <string name="mutual_follow">互相关注</string>
+    <string name="my_ablum">我的相册</string>
+    <string name="my_comments">我的回帖</string>
+    <string name="my_comments2">我的回复</string>
+    <string name="my_fans">粉丝</string>
+    <string name="my_fans2">我的粉丝</string>
+    <string name="my_fans_list">粉丝列表</string>
+    <string name="my_favorite">我的收藏</string>
+    <string name="my_favorite_article">我收藏的专题</string>
+    <string name="my_favorite_crack">我收藏的游戏</string>
+    <string name="my_hulu">葫芦</string>
+    <string name="my_idol">关注</string>
+    <string name="my_idol2">我的关注</string>
+    <string name="my_idol_list">关注列表</string>
+    <string name="my_jifen">贡献值</string>
+    <string name="my_map">我的地图</string>
+    <string name="my_news">我的消息</string>
+    <string name="my_res_accept">已通过</string>
+    <string name="my_res_contribute">已投稿</string>
+    <string name="my_res_deny">不通过</string>
+    <string name="my_space">我的空间</string>
+    <string name="my_topics">我的帖子</string>
+    <string name="n64_path">"N64游戏文件存储路径为
+内置存储卡/0roms/N64"</string>
+    <string name="nds_path">"NDS游戏文件存储路径为
+内置存储卡/0roms/NDS"</string>
+    <string name="nes_path">"NES游戏文件存储路径为
+内置存储卡/0roms/NES"</string>
+    <string name="netmod_all">3G/4G 和 Wi-Fi</string>
+    <string name="netmod_none">关闭</string>
+    <string name="netmod_onlywifi">仅Wi-Fi</string>
+    <string name="network_error_try_again">"网络问题
+验证失败，不能发贴
+请重试"</string>
+    <string name="new_user_guide">新手引导</string>
+    <string name="newest">最新</string>
+    <string name="nextstep">下一步</string>
+    <string name="ngp_path">"NGP游戏文件存储路径为
+内置存储卡/0roms/NGP"</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="no_attention_down_tip">关注后可以收听他的动态</string>
+    <string name="no_attention_up_tip">暂无关注的人</string>
+    <string name="no_downloads">无下载内容。</string>
+    <string name="no_fangs_tip">暂无粉丝，听说发表话题会涨粉</string>
+    <string name="no_list_data">当前页面暂无数据</string>
+    <string name="no_network">没有网络,请检查网络设置</string>
+    <string name="no_ranking">暂无排名</string>
+    <string name="not_title">无</string>
+    <string name="note_gift_mall">请注意：每月10日为商城开放兑换时间</string>
+    <string name="notif_download_successful">下载完成</string>
+    <string name="notif_install_failed">安装失败</string>
+    <string name="notif_install_successful">安装成功</string>
+    <string name="notif_installing">开始安装</string>
+    <string name="notification_download_complete">下载完成</string>
+    <string name="notification_download_failed">下载失败</string>
+    <string name="notification_filename_extras">" 还有 %d 项"</string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_need_wifi_for_size">此大小的文件需要通过 Wi-Fi 下载</string>
+    <string name="now_loading">奋力加载中…</string>
+    <item type="string" name="numbers_radius_multiplier_inner">0.6</item>
+    <item type="string" name="numbers_radius_multiplier_normal">0.81</item>
+    <item type="string" name="numbers_radius_multiplier_outer">0.83</item>
+    <string name="off_txt">关</string>
+    <string name="on_txt">开</string>
+    <string name="onloading">正在载入...</string>
+    <string name="open_float_windows">开启悬浮窗</string>
+    <string name="open_help_fairy">开启帮助小精灵</string>
+    <string name="open_with_browser">用浏览器打开</string>
+    <string name="pass_review_res">已通过资源</string>
+    <string name="passwd">输入密码</string>
+    <string name="pause_download">暂停</string>
+    <string name="permdesc_accessAllDownloads">允许该应用程序查看和修改由系统中的任意程序所发起的所有下载。</string>
+    <string name="permdesc_downloadCacheNonPurgeable">允许应用程序将文件下载到下载缓存（系统不会因为下载管理器需要更多空间而自动删除下载缓存）。</string>
+    <string name="permdesc_downloadCompletedIntent">允许应用程序发送关于已完成下载的通知。恶意应用程序可借此干扰下载文件的其他应用程序。</string>
+    <string name="permdesc_downloadManager">允许应用程序访问下载管理器以及用它下载文件。恶意应用程序可借此干扰下载，以及访问隐私信息。</string>
+    <string name="permdesc_downloadManagerAdvanced">允许应用程序使用下载管理器的高级功能。恶意应用程序可能会借此中断下载以及访问私密信息。</string>
+    <string name="permlab_accessAllDownloads">访问所有系统下载内容</string>
+    <string name="permlab_downloadCacheNonPurgeable">保留下载缓存中的空间</string>
+    <string name="permlab_downloadCompletedIntent">发送下载通知。</string>
+    <string name="permlab_downloadManager">访问下载管理器。</string>
+    <string name="permlab_downloadManagerAdvanced">高级下载管理器功能。</string>
+    <string name="photo">照片</string>
+    <string name="photo_index">%1$d/%2$d</string>
+    <string name="photo_selection">已选%1$d张，还剩%2$d张可选</string>
+    <string name="player_five">5人</string>
+    <string name="player_four">4人</string>
+    <string name="player_one">1人</string>
+    <string name="player_three">3人</string>
+    <string name="player_two">2人</string>
+    <string name="please_choose_js_file">请先选择js文件</string>
+    <string name="please_choose_map_folder">请先选择地图文件夹</string>
+    <string name="please_choose_skin_file">请先选择皮肤文件</string>
+    <string name="please_choose_sub_version">请选择子版本号</string>
+    <string name="please_choose_version">请选择版本号</string>
+    <string name="please_choose_wood_file">请先选择材质文件</string>
+    <string name="please_enter_patcha">验证码不能为空</string>
+    <string name="please_upload_res_file">请先上传资源文件</string>
+    <string name="post_count">话题数</string>
+    <string name="potion_absorption_detail">每级提升4点伤害吸收量</string>
+    <string name="potion_absorption_name">伤害吸收</string>
+    <string name="potion_attack_off">攻击(关)</string>
+    <string name="potion_attack_off_tips">解除攻击效果</string>
+    <string name="potion_attack_on">攻击(开)</string>
+    <string name="potion_attack_on_tips">开启攻击效果</string>
+    <string name="potion_attack_switch">药效作用于攻击</string>
+    <string name="potion_blindness_detail">身边充满黑色浓雾</string>
+    <string name="potion_blindness_name">失明</string>
+    <string name="potion_continued_time">待续时间</string>
+    <string name="potion_eat">嗑药</string>
+    <string name="potion_effect_name">效果</string>
+    <string name="potion_fire_resistance_detail">对火和岩浆免疫</string>
+    <string name="potion_fire_resistance_name">防火</string>
+    <string name="potion_haste_detail">每级提升20%挖掘速度</string>
+    <string name="potion_haste_name">急迫</string>
+    <string name="potion_health_boost_detail">每级提升4点额外生命值</string>
+    <string name="potion_health_boost_name">生命提升</string>
+    <string name="potion_hunger_detail">每级增加饥饿值消耗速度</string>
+    <string name="potion_hunger_name">饥饿</string>
+    <string name="potion_instant_damage_detail">瞬间受到6点x等级的伤害</string>
+    <string name="potion_instant_damage_name">瞬间伤害</string>
+    <string name="potion_instant_health_detail">瞬间回复4点x等级的生命值</string>
+    <string name="potion_instant_health_name">瞬间治疗</string>
+    <string name="potion_invisibility_detail">身体消失，怪物不会优先攻击</string>
+    <string name="potion_invisibility_name">隐身</string>
+    <string name="potion_jump_boost_detail">每级提升跳跃高度</string>
+    <string name="potion_jump_boost_name">跳跃</string>
+    <string name="potion_mining_fatigue_detail">每级减少70%挖掘速度</string>
+    <string name="potion_mining_fatigue_name">挖掘疲劳</string>
+    <string name="potion_nausea_detail">导致视野摇晃和扭曲</string>
+    <string name="potion_nausea_name">反胃</string>
+    <string name="potion_night_vision_detail">增加夜晚亮度</string>
+    <string name="potion_night_vision_name">夜视</string>
+    <string name="potion_poison_detail">受到持续中毒伤害</string>
+    <string name="potion_poison_name">中毒</string>
+    <string name="potion_regeneration_detail">持续回复生命值</string>
+    <string name="potion_regeneration_name">生命恢复</string>
+    <string name="potion_remove">解除</string>
+    <string name="potion_resistance_detail">每级减少20%的伤害</string>
+    <string name="potion_resistance_name">抗性提升</string>
+    <string name="potion_saturation_detail">持续恢复饥饿值</string>
+    <string name="potion_saturation_name">饱和</string>
+    <string name="potion_slowness_detail">每级减少15%速度</string>
+    <string name="potion_slowness_name">缓慢</string>
+    <string name="potion_speed_detail">每级提升20%速度</string>
+    <string name="potion_speed_name">速度</string>
+    <string name="potion_strength_detail">攻击会造成额外伤害</string>
+    <string name="potion_strength_name">力量</string>
+    <string name="potion_water_breathing_detail">可以在水下呼吸并且提高水下视野</string>
+    <string name="potion_water_breathing_name">水下呼吸</string>
+    <string name="potion_weakness_detail">攻击伤害降低</string>
+    <string name="potion_weakness_name">虚弱</string>
+    <string name="potion_wither_detail">受到持续凋零伤害</string>
+    <string name="potion_wither_name">凋零</string>
+    <string name="praise">赞</string>
+    <string name="praise_peoples">赞过我的好友</string>
+    <string name="pref_zz_manage_scripts">导入JS脚本</string>
+    <string name="previousPage">返回上一页</string>
+    <string name="prevstep">上一步</string>
+    <string name="profile_edit">个人资料编辑</string>
+    <string name="profile_exp">%1$d/%2$d</string>
+    <string name="profile_follow">+关注</string>
+    <string name="profile_level">LV%d</string>
+    <string name="prompt">提示</string>
+    <string name="ps_path">"PS游戏文件存储路径为
+内置存储卡/0roms/PS"</string>
+    <string name="publish">发表</string>
+    <string name="publish_js">发布插件</string>
+    <string name="publish_map">发布地图</string>
+    <string name="publish_new_res">发布新资源</string>
+    <string name="publish_skin">发布皮肤</string>
+    <string name="publish_wood">发布材质</string>
+    <string name="pullRefersh">下拉刷新</string>
+    <string name="qq_friend">QQ好友</string>
+    <string name="qq_space">QQ空间</string>
+    <string name="quitAccount">退出账号</string>
+    <string name="quitGame">退出游戏</string>
+    <string name="qvod">快播影视导航</string>
+    <string name="radial_numbers_typeface">sans-serif</string>
+    <string name="recommend">推荐</string>
+    <string name="recommend_app_cate_name">类型标签</string>
+    <string name="recommend_app_describe">应用描述：</string>
+    <string name="recommend_app_down_count">下载1,000次</string>
+    <string name="recommend_app_name">AppName</string>
+    <string name="recommend_app_size">大小：未知</string>
+    <string name="recommend_app_title">应用推荐</string>
+    <string name="red_packet_introduce">"春节抢红包就是一场“硬仗”，要时刻手快，一不留神可就和大红包失之交臂。然而伴随葫芦侠一系统的升级，我们自主研发的“红包助手”将强势登陆，可一举解决抢红包“手慢无”的窘境。
+此功能仅供测试到正月十五元宵节结束。
+"</string>
+    <string name="redpacket">盒子红包助手</string>
+    <string name="refresh">重新刷新</string>
+    <string name="refresh_profile_failed">刷新用户信息失败</string>
+    <string name="regisiter_email">输入邮箱。将用于密码找回，请谨慎填写</string>
+    <string name="regisiter_phone">请输入您的手机号</string>
+    <string name="register">注册</string>
+    <string name="reminds_cannont_remove">已经@过的用户不可移除~</string>
+    <string name="remove_download">清除</string>
+    <string name="remove_failure">踢出失败,请重试</string>
+    <string name="remove_members">踢出成功</string>
+    <string name="rename_studio">更改工作室名称将花费1000葫芦,是否更改?</string>
+    <string name="repair_black_screen">黑屏修复</string>
+    <string name="repasswd">再次密码</string>
+    <string name="republish_res">重新发布资源</string>
+    <string name="resType">资源类型</string>
+    <string name="res_publish_tips">"投稿重要提示：
+ 1、葫芦丝投稿的作品必须是自己原创的，切勿盗取他人作品据为己有。
+ 2、投稿的作品详情务必清晰，图片质量保证与该资源相关，否则会导致作品审核不通过。
+ 3、恶意或胡乱投稿的，我们将禁止其投稿，并禁言该账户。
+ 4、每天可投稿为一次，分别为地图，JS，材质，皮肤，除地图外其他资源都需要论坛等级4级及以上。
+ 5、葫芦丝投稿前务必查看【投稿规则明细】。 
+ 6、投稿成功后可在社区-我的资源内查看资源进度。
+ 7、投稿的作品都不允许在详情介绍及评论处出现联系方式，否则直接审核不通过。"</string>
+    <string name="res_scene">地图场景</string>
+    <string name="res_update_success">资源投稿更新成功</string>
+    <string name="res_upload_success">资源投稿成功</string>
+    <string name="res_version_10">0.10</string>
+    <string name="res_version_11">0.11</string>
+    <string name="res_version_12">0.12</string>
+    <string name="res_version_13">0.13</string>
+    <string name="res_version_13_0">0.13.0</string>
+    <string name="res_version_13_1">0.13.1</string>
+    <string name="res_version_14">0.14</string>
+    <string name="res_version_15">0.15</string>
+    <string name="res_version_16">0.16</string>
+    <string name="resume_download">继续</string>
+    <string name="retry">重试</string>
+    <string name="retry_download">重试</string>
+    <string name="return_parent_folder">上一层文件夹</string>
+    <string name="room_name_txt">房间名称</string>
+    <string name="room_passwd_text">房间密码</string>
+    <string name="room_player_num">房间人数</string>
+    <string name="room_player_num_tip">设置房间人数</string>
+    <string name="room_scope">开放范围</string>
+    <string name="room_scope_select_tip">设置开放范围</string>
+    <string name="root_360">查看使用360root电脑版获取权限教程</string>
+    <string name="root_back_to_float">回到桌面浮窗</string>
+    <string name="root_backhome">直接回到桌面</string>
+    <string name="root_baidu">使用百度一键root工具获取手机权限</string>
+    <string name="root_cancle">取消</string>
+    <string name="root_close">关闭</string>
+    <string name="root_fail">获取root权限失败</string>
+    <string name="root_float_tip">小米手机需开悬浮窗选项(如图)</string>
+    <string name="root_float_tip1">请开启悬浮窗以获得更好的游戏体验。</string>
+    <string name="root_home_tip">返回桌面并显示悬浮窗</string>
+    <string name="root_kinguser">使用kinguser工具获取手机权限</string>
+    <string name="root_mi">小米手机到安全中心设置Root权限</string>
+    <string name="root_noroot">免Root方案</string>
+    <string name="root_read">查看教程</string>
+    <string name="root_rooting">正在获取root权限</string>
+    <string name="root_run">启用修改器</string>
+    <string name="root_set">现在去设置</string>
+    <string name="root_set_float">开启桌面浮窗</string>
+    <string name="root_success">获取root权限成功</string>
+    <string name="root_success_tip">葫芦侠修改器已启动</string>
+    <string name="root_tip">修改器功能未启用</string>
+    <string name="root_topic">下载一键Root解决方案</string>
+    <string name="root_zhuodashi">使用一键Root大师获取手机权限</string>
+    <string name="sans_serif">sans-serif</string>
+    <string name="save_now">立即保存</string>
+    <string name="screenshot_saved_as">Saved screenshot as</string>
+    <string name="script_execution_error">An error occurred in a ModPE Script</string>
+    <string name="script_import_confirm">导入此JS脚本到葫芦侠我的世界?</string>
+    <string name="script_imported">导入JS脚本成功</string>
+    <string name="script_too_many_errors">has been disabled because it encountered too many errors. Sorry!</string>
+    <string name="search">搜索</string>
+    <string name="search_btn_text">搜索</string>
+    <string name="search_key_input_hint">输入地图名称/关键字</string>
+    <string name="search_key_topic_hint">输入帖子名/内容关键字</string>
+    <string name="search_no_result">抱歉! 暂无相关搜索结果</string>
+    <string name="search_recommend_tip">您可能会感兴趣</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_map_txt">选择地图</string>
+    <string name="select_map_type_tip">设置地图类型</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="select_photo">选取相册照片</string>
+    <string name="select_upload_file">选择上传文件</string>
+    <string name="select_year">Select year</string>
+    <item type="string" name="selection_radius_multiplier">0.16</item>
+    <string name="send_hulu_failed">赠送葫芦失败！请重试</string>
+    <string name="server">联机</string>
+    <string name="server_latest">最新</string>
+    <string name="server_recommend">精选</string>
+    <string name="server_resource">联机资源</string>
+    <string name="set_spawn_failure">设置重生点失败</string>
+    <string name="set_time_tips">请先设置时间...</string>
+    <string name="setting">设置</string>
+    <string name="sfc_path">"SFC游戏文件存储路径为
+内置存储卡/0roms/SFC"</string>
+    <string name="share">分享</string>
+    <string name="show_all">+</string>
+    <string name="signed">已签到</string>
+    <string name="signin">签到</string>
+    <string name="skin">皮肤</string>
+    <string name="skin_download">皮肤下载</string>
+    <string name="smd_path">"SMD游戏文件存储路径为
+内置存储卡/0roms/SMD"</string>
+    <string name="source_noless_tips">出处不能少于2个字符</string>
+    <string name="source_nomore_tips">出处不能多于8个字符</string>
+    <string name="space_slices_hint">上传的图片对所有人可见,超过3张可开启拼图效果</string>
+    <string name="space_slices_mode">拼图效果</string>
+    <string name="space_style_free">免费使用。</string>
+    <string name="space_style_integral">贡献等级达到%1$s称号或支付%2$d葫芦购买。</string>
+    <string name="special_articles">工具专题</string>
+    <string name="status_unzipping">开始解压</string>
+    <string name="story_mode_game_on_loading">故事正在加载中...</string>
+    <string name="story_mode_speed_changed">当前速度%s倍</string>
+    <string name="story_page_del_res"><u>删除资源包</u></string>
+    <string name="str_cancel_send_voice">上滑取消发送语音</string>
+    <string name="str_copy">复制</string>
+    <string name="str_day_before_yesterday">前天</string>
+    <string name="str_developing">功能开发中，敬请期待</string>
+    <string name="str_network_not_capable">网络不给力</string>
+    <string name="str_perssion_tip">"应用录制音频被禁止
+请到应用权限设置打开录音权限"</string>
+    <string name="str_press_say_voice">请按住说话</string>
+    <string name="str_tips_im_message_copy">已复制到剪贴板</string>
+    <string name="str_today">今天</string>
+    <string name="str_topic_sort_tips">按贴子创建时间排序</string>
+    <string name="str_voice_times_up">录音超时</string>
+    <string name="str_yesterday">昨天</string>
+    <string name="studio_members">工作室成员</string>
+    <string name="submit">提交</string>
+    <string name="submit_data">提交数据</string>
+    <string name="submit_data_sucess">数据提交成功</string>
+    <string name="submit_fails_network_error">提交失败，网络错误</string>
+    <string name="submit_image_error">抱歉，上传图片出错！</string>
+    <string name="submit_succ">提交成功！葫芦哥将在24小时内处理。您可以在兑换记录页面查看兑换记录。</string>
+    <string name="submiting">提交中..</string>
+    <string name="subscribe_cate">加入到首页</string>
+    <string name="sure_to_buy_space_style">您选择的背景需要达到%1$s称号，可使用%2$d葫芦购买，是否购买？</string>
+    <string name="tab_community">社区</string>
+    <string name="tab_discover">发现</string>
+    <string name="tab_home">资源</string>
+    <string name="tab_news">资讯</string>
+    <string name="tab_online">联机</string>
+    <string name="tab_space">空间</string>
+    <string name="tab_story">故事</string>
+    <string name="tab_toy">玩具</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="take_photo_now">现在拍摄</string>
+    <string name="test">我是测试我是测试我是测试我是测试</string>
+    <string name="text">text</string>
+    <string name="text_exchange_gift">兑换物品</string>
+    <string name="text_gift_number">兑换面额</string>
+    <string name="text_gift_type">兑换类型</string>
+    <string name="text_hulu_comsume">消耗葫芦</string>
+    <item type="string" name="text_size_multiplier_inner">0.14</item>
+    <item type="string" name="text_size_multiplier_normal">0.17</item>
+    <item type="string" name="text_size_multiplier_outer">0.11</item>
+    <string name="time_placeholder">--</string>
+    <string name="time_separator">:</string>
+    <string name="title_activity_profile">个人主页</string>
+    <string name="title_activity_publish_topic">发布话题</string>
+    <string name="title_noless_tips">标题不能少于2个字符</string>
+    <string name="title_nomore_tips">标题不能多于15个字符</string>
+    <string name="toast_play_video_hint">影片无法播放，SD卡空间不足！请清理手机存储空间后再观看！</string>
+    <string name="topic_auth">版主认证</string>
+    <string name="topic_auth_failed">帖子认证失败</string>
+    <string name="topic_auth_succ">帖子认证成功</string>
+    <string name="topic_complaint_reason1">涉及广告</string>
+    <string name="topic_complaint_reason2">涉及推广</string>
+    <string name="topic_complaint_reason3">涉及色情</string>
+    <string name="topic_complaint_reason4">无关内容</string>
+    <string name="topic_complaint_reason5">内容违规</string>
+    <string name="topic_complaint_reason6">涉及人身攻击</string>
+    <string name="topic_complaint_reason7">涉及反动政治</string>
+    <string name="topic_complaint_reason8">扰乱社区秩序</string>
+    <string name="topic_unauth">取消认证</string>
+    <string name="topic_unauth_failed">取消认证失败</string>
+    <string name="topic_unauth_succ">取消认证成功</string>
+    <string name="tv_audit">审核</string>
+    <string name="tv_essence">精品软件推荐</string>
+    <string name="tv_help">3楼帮助</string>
+    <string name="tv_net_instruction">说明：如遇网络问题，请分别运行“域名诊断”和“网速诊断”，然后将诊断结果截屏发在“意见反馈”版，并注明您当前做在省份城市及网络运营商（例如：湖南省长沙市联通3G）。</string>
+    <string name="tv_net_test">网络诊断</string>
+    <string name="tv_score">给3楼打分</string>
+    <string name="unfollow">取消关注</string>
+    <string name="unknown">未知</string>
+    <string name="update_category_tips">分类信息为空，请刷新页面</string>
+    <string name="update_space_failded">修改空间样式失败</string>
+    <string name="update_space_succ">修改空间样式成功</string>
+    <string name="upload_file_tips">请先选择要发布的文件</string>
+    <string name="upload_image">上传图片...</string>
+    <string name="upload_images_tips">请先上传4到8张图片（点击下方相机按钮）</string>
+    <string name="use">使用</string>
+    <string name="use_condition">使用条件：</string>
+    <string name="user_achievement">个人成就</string>
+    <string name="user_space">个人空间</string>
+    <string name="vcode">请输入验证码</string>
+    <string name="version_default">V0.11.1</string>
+    <string name="version_option">版本选择</string>
+    <string name="versionselect_0105">V0.10.5</string>
+    <string name="versionselect_0111">V0.11.1</string>
+    <string name="versionselect_0130">V0.13.0</string>
+    <string name="versionselect_0131">V0.13.1</string>
+    <string name="versionselect_0140">V0.14.0</string>
+    <string name="versionselect_0141">V0.14.1</string>
+    <string name="versionselect_01501">V0.15.4</string>
+    <string name="versionselect_01509">V0.16.1</string>
+    <string name="versionselect_cannotdownload">无法下载?</string>
+    <string name="versionselect_clear">删除</string>
+    <string name="versionselect_clouddickdownload">网盘下载</string>
+    <string name="versionselect_curversion">当前选择版本</string>
+    <string name="versionselect_customversion">常用版本</string>
+    <string name="versionselect_download">下载</string>
+    <string name="versionselect_more">更多</string>
+    <string name="versionselect_more_install">安装</string>
+    <string name="versionselect_select">下载中</string>
+    <string name="versionselect_storymode">故事模式字幕版</string>
+    <string name="versionselect_tutorial">教程</string>
+    <string name="view_count">热度</string>
+    <string name="view_history">浏览历史</string>
+    <string name="vote_btn">投票</string>
+    <string name="vote_cate">新版块投票</string>
+    <string name="voted_btn">已投票</string>
+    <string name="wifi_recommended_body" formatted="false">"立即开始此 %s  文件的下载可能会缩短电池的使用时间并/或导致超额使用移动数据连接（这会导致移动运营商依照流量套餐中的超额规定向您收费）。
+
+点击下面的%s可在下次连接到 Wi-Fi 网络时开始此下载。"</string>
+    <string name="wifi_recommended_title">稍后再加入下载队列吗？</string>
+    <string name="wifi_required_body" formatted="false">"您必须使用 Wi-Fi 才能完成此 %s  文件的下载。
+
+点击%s 可在下次连接到 Wi-Fi 网络时开始此下载。"</string>
+    <string name="wifi_required_title">文件太大，不适于通过运营商网络下载</string>
+    <string name="wish_delpic">(长按删除)</string>
+    <string name="wish_hint_patch">请输入你的愿望(比如我想要XXX)</string>
+    <string name="wish_hint_wish">请输入你的愿望(比如我想要XXX)</string>
+    <string name="wish_send">许下心愿</string>
+    <string name="wish_software">求软件</string>
+    <string name="wood">材质</string>
+    <string name="wood_download">材质下载</string>
+    <string name="wx_friend">微信好友</string>
+    <string name="wx_space">微信空间</string>
+    <string name="xperiaplayoptimized_content">true</string>
+    <string name="year_picker_description">Year list</string>
+</resources>

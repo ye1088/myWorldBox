@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="248.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ffcc2222" android:gravity="center|left" android:id="@id/ChildPluginBBTitleView" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="@string/app_text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="248.0dip" android:layout_height="30.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_text_22_p" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="侦查攻击模拟" />
+        <CheckBox android:id="@id/ChildPluginBBAttack" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_weight="1.0" style="@style/value_checkbox_switch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_text_22_p" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="神像合成模拟" />
+        <CheckBox android:id="@id/ChildPluginBBShenxiang" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_weight="1.0" style="@style/value_checkbox_switch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="15.0dip">
+        <Button android:id="@id/ChildPluginBBWebGonglue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="游戏攻略" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <Button android:id="@id/ChildPluginBBWebShenxiang" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="神像查询" android:layout_weight="1.0" style="@style/value_button_green_all" />
+    </LinearLayout>
+    <Button android:id="@id/ChildPluginBBWebHelper" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="使用帮助" style="@style/value_button_green_all" />
+</LinearLayout>

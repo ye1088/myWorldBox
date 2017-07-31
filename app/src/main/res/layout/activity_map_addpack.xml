@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mctool_bg">
+
+    <ListView
+        android:id="@id/listViewData"
+        style="@style/ListViewContainGridView"
+        android:layout_above="@id/btn_add" />
+
+    <Button
+        android:id="@id/btn_add"
+        style="@style/value_button_mcgreen_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:layout_marginTop="10.0dip"
+        android:drawablePadding="8.0dip"
+        android:padding="5.0dip"
+        android:singleLine="true"
+        android:text="一键添加"
+        android:textSize="@dimen/mc_home_btn_txt" />
+</RelativeLayout>

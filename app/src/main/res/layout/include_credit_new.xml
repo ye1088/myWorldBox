@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ly_score" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/photoWall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rly_total" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_total" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="?drawableTopicHuluTotal" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:textColor="?android:textColorTertiary" android:id="@id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_total" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rly_user1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_userl" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:id="@id/tv_countl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_userl" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rly_user2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_user2" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:id="@id/tv_count2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_user2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rly_user3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_user3" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:id="@id/tv_count3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_user3" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rly_user4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_user4" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:id="@id/tv_count4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_user4" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rly_user5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_user5" android:layout_width="33.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="9.0dip" android:id="@id/tv_count5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="+1563" android:layout_below="@id/iv_user5" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:src="?drawableTopicHuluMore" />
+</LinearLayout>

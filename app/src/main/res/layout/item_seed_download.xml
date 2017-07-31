@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.framework.base.image.PaintView android:id="@id/seed_image" android:layout_width="105.0dip" android:layout_height="66.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <TextView android:textSize="10.0sp" android:textColor="?version" android:id="@id/text_time" android:background="@color/text_half_transparent" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昨天" android:layout_alignRight="@id/seed_image" android:layout_alignBottom="@id/seed_image" />
+    <TextView android:textSize="10.0sp" android:textColor="?version" android:gravity="center" android:id="@id/seed_version" android:background="@color/text_half_transparent" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="0.14" />
+    <LinearLayout android:orientation="vertical" android:id="@id/line" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="60.0dip" android:layout_toRightOf="@id/seed_image">
+        <TextView android:textSize="16.0sp" android:textColor="?mapName" android:gravity="center_vertical" android:id="@id/seed_name" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="海上空军基地" android:singleLine="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="#ff79c4ff" android:id="@id/seed_type" android:background="@drawable/style_bg_oval" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沼泽" android:layout_weight="1.0" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="?authorName" android:id="@id/seed_generate_number" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="樱桃小丸子" />
+    </LinearLayout>
+    <View android:id="@id/dividing_line" android:background="?dividingLine" android:layout_width="0.5dip" android:layout_height="48.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="60.0dip" android:layout_alignTop="@id/seed_image" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/rly_container" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignTop="@id/dividing_line" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/image_download" android:background="?seedGenerate" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="?join" android:gravity="center" android:id="@id/text_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="生成" android:layout_below="@id/image_download" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_dividing_line" android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

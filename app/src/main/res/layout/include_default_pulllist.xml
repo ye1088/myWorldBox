@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rly_show_no_fans" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?space_ic_no_fans" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_fangs_tip" android:layout_below="@id/iv_temp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rly_show_no_attention" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_temp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?space_ic_no_attention" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_attention_up_tip" android:layout_below="@id/iv_temp_1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/no_attention_down_tip" android:layout_below="@id/tv_temp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" android:id="@id/list" android:background="@android:color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip" />
+</RelativeLayout>

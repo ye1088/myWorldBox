@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="200.0dip" android:minWidth="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff272626" android:gravity="center" android:id="@id/tv_title" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改生日" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ly_datepicker" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ly_confirm" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff29aa01" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/bglistitem_selector_transparent" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确定" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

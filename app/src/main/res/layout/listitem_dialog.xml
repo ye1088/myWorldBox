@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/bg_dialog_listitem_selector" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:id="@id/textview" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/ic_dropmenu_selector" android:contentDescription="@null" />
+    <CheckBox android:textColor="@color/red" android:layout_gravity="center|right" android:id="@id/menu_check" android:paddingLeft="5.0dip" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="黑屏修复" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/sys_header_title_height" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/imgSearchBtn" android:layout_centerHorizontal="true">
+        <EditText android:textColor="?android:textColorSecondary" android:textColorHint="?android:textColorHint" android:id="@id/edtSearch" android:background="?backgroundSearchView" android:paddingLeft="6.0dip" android:paddingRight="40.0dip" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_key_input_hint" android:singleLine="true" android:maxLength="32" android:layout_alignParentBottom="true" android:imeOptions="actionSearch" style="@style/EditNoBorder" />
+        <ImageView android:id="@id/imgClear" android:visibility="invisible" android:fadingEdge="none" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="?drawableClear" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/imgSearchBtn" android:visibility="visible" android:fadingEdge="none" android:layout_width="46.0dip" android:layout_height="fill_parent" android:src="?drawableTitleSearch" android:scaleType="centerInside" android:layout_alignParentRight="true" android:contentDescription="@null" style="@style/TopBarImageButton" />
+</RelativeLayout>

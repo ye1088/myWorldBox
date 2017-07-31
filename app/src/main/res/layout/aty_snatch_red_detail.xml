@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/bg_snatch_red_envelope_detatil" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivSnatchRedDetailBack" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/sty_button_snatch_red_back" />
+            <TextView android:textSize="22.0sp" android:textColor="@color/white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="功能说明" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/tvSnatchRedEnvelopDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/text" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@mipmap/img_snatch_red_envelope_qq_introduction" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@mipmap/img_snatch_red_envelope_qq_introduction1" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@mipmap/img_snatch_red_envelope_weixin_introduction" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff4b86f" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="祝您新春红包多，猴年猴塞雷！" />
+    </LinearLayout>
+</ScrollView>

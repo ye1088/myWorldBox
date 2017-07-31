@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/topic_video" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <com.huluxia.video.views.VideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scalableType="fitCenter" />
+        <com.huluxia.framework.base.image.PaintView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/play_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?drawableTopicVideoPlay" android:scaleType="centerInside" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="?drawableTopicVideoLoading" style="@android:style/Widget.ProgressBar.Inverse" />
+        <RelativeLayout android:id="@id/rly_play_end" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="?textColorTopicVideoReplay" android:gravity="center" android:id="@id/tv_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="重播" android:drawableTop="?drawableTopicVideoReplay" android:drawablePadding="8.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_progress_time" android:background="@drawable/bg_topic_video_time" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="00:00" />
+    </FrameLayout>
+</RelativeLayout>

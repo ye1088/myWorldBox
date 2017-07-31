@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar1" android:layout_width="fill_parent" android:layout_height="3.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/webView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:id="@id/logView1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="false" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/toolbar1" android:background="#ffecf0f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btnBack1" android:background="#ffecf0f2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:src="@drawable/x5_btn_back_fg_normal" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnForward1" android:background="#ffecf0f2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:src="@drawable/x5_btn_forward_fg_normal" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnHome1" android:background="#ffecf0f2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:src="@drawable/x5_btn_home_fg_normal" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnExit1" android:background="#ffecf0f2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:src="@drawable/x5_btn_quit_fg_normal" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

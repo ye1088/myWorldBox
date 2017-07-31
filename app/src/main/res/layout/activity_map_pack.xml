@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mctool_bg">
+
+    <TextView
+        android:id="@id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="8.0dip"
+        android:text="点击物品可以修改数量"
+        android:textColor="@color/black"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:id="@id/ly_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8.0dip">
+
+        <Button
+            android:id="@id/btn_del"
+            style="@style/value_button_mcgreen_all"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:drawablePadding="8.0dip"
+            android:padding="5.0dip"
+            android:singleLine="true"
+            android:text="@string/map_del_slot"
+            android:textSize="@dimen/mc_home_btn_txt" />
+
+        <Button
+            android:id="@id/btn_add"
+            style="@style/value_button_mcgreen_all"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="2.0"
+            android:drawablePadding="8.0dip"
+            android:padding="5.0dip"
+            android:singleLine="true"
+            android:text="@string/map_add_slot"
+            android:textSize="@dimen/mc_home_btn_txt" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/listViewData"
+        style="@style/ListViewContainGridView"
+        android:layout_above="@id/ly_add"
+        android:layout_below="@id/tv_tip" />
+</RelativeLayout>

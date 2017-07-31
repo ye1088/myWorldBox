@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="achieve">
+        <item>登陆</item>
+        <item>游戏</item>
+        <item>副本</item>
+        <item>故事</item>
+        <item>挖掘</item>
+        <item>附魔</item>
+        <item>击杀</item>
+        <item>死亡</item>
+        <item>地图</item>
+        <item>插件</item>
+        <item>皮肤</item>
+        <item>材质</item>
+    </string-array>
+    <string-array name="category">
+        <item>全部</item>
+        <item>精选</item>
+        <item>周榜</item>
+        <item>专题</item>
+    </string-array>
+    <string-array name="home_recommend_list">
+        <item>地图</item>
+        <item>插件</item>
+        <item>材质</item>
+        <item>皮肤</item>
+        <item>联机资源</item>
+        <item>种子</item>
+        <item>应用推荐</item>
+    </string-array>
+    <string-array name="server_category">
+        <item>全部</item>
+        <item>精选</item>
+    </string-array>
+</resources>

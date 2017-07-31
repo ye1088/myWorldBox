@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rly_gallery" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.widget.banner.BannerGallery android:id="@id/pic_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/common_text_size_17sp" android:textColor="?text_title_topic_detail" android:id="@id/map_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="梦幻城市V0.1版" android:shadowColor="#ff000000" android:shadowDx="5.0" android:shadowDy="5.0" android:shadowRadius="3.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

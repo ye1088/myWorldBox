@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <RelativeLayout android:id="@id/item_container" android:background="?listSelector" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="4.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.huluxia.framework.base.image.PaintView android:id="@id/riv_class_logo" android:layout_width="@dimen/cate_item_size" android:layout_height="@dimen/cate_item_size" android:layout_marginRight="8.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:id="@id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我的关注" android:layout_toRightOf="@id/riv_class_logo" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/msg" android:background="@drawable/unread_dot" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:maxWidth="30.0dip" android:minWidth="16.5dip" android:text="99+" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/item_split_vertical" android:background="?splitColor" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/item_container2" android:background="?listSelector" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="4.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.huluxia.framework.base.image.PaintView android:id="@id/riv_class_logo2" android:layout_width="@dimen/cate_item_size" android:layout_height="@dimen/cate_item_size" />
+            <TextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:id="@id/title2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我的关注2" android:layout_toRightOf="@id/riv_class_logo2" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/msg_2" android:background="@drawable/unread_dot" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:maxWidth="30.0dip" android:minWidth="16.5dip" android:text="99+" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/item_split_horizontal" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

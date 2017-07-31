@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_divider" android:background="?splitColorDim" android:layout_width="fill_parent" android:layout_height="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/block_split_top" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+    <View android:id="@id/block_split_bottom" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

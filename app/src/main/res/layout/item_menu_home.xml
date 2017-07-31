@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/menu_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/menu_guide" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/common_text_size_17sp" android:textColor="#ffa0a0a0" android:id="@id/tv_menu_title" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新手引导" android:layout_toRightOf="@id/img_menu_title" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_count" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/img_menu_go" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_menu_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:src="@drawable/menu_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <View android:id="@id/view_split_line" android:background="#ff4c4c4c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

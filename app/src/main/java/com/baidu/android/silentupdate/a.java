@@ -1,0 +1,154 @@
+package com.baidu.android.silentupdate;
+
+import android.support.v4.view.MotionEventCompat;
+import io.netty.handler.codec.http.HttpConstants;
+import java.io.UnsupportedEncodingException;
+import org.apache.tools.tar.TarConstants;
+
+final class a {
+    private static final byte[] a = new byte[]{(byte) 65, (byte) 66, (byte) 67, (byte) 68, (byte) 69, (byte) 70, (byte) 71, (byte) 72, (byte) 73, (byte) 74, TarConstants.LF_GNUTYPE_LONGLINK, TarConstants.LF_GNUTYPE_LONGNAME, (byte) 77, (byte) 78, (byte) 79, (byte) 80, (byte) 81, (byte) 82, TarConstants.LF_GNUTYPE_SPARSE, (byte) 84, (byte) 85, (byte) 86, (byte) 87, TarConstants.LF_PAX_EXTENDED_HEADER_UC, (byte) 89, (byte) 90, (byte) 97, (byte) 98, (byte) 99, (byte) 100, (byte) 101, (byte) 102, TarConstants.LF_PAX_GLOBAL_EXTENDED_HEADER, (byte) 104, (byte) 105, (byte) 106, (byte) 107, (byte) 108, (byte) 109, (byte) 110, (byte) 111, (byte) 112, (byte) 113, (byte) 114, (byte) 115, (byte) 116, (byte) 117, (byte) 118, (byte) 119, TarConstants.LF_PAX_EXTENDED_HEADER_LC, (byte) 121, (byte) 122, TarConstants.LF_NORMAL, TarConstants.LF_LINK, TarConstants.LF_SYMLINK, TarConstants.LF_CHR, TarConstants.LF_BLK, TarConstants.LF_DIR, TarConstants.LF_FIFO, TarConstants.LF_CONTIG, (byte) 56, (byte) 57, (byte) 43, (byte) 47};
+
+    a() {
+    }
+
+    public static String a(byte[] bArr, String str) throws UnsupportedEncodingException {
+        int length = (bArr.length * 4) / 3;
+        byte[] bArr2 = new byte[(length + ((length / 76) + 3))];
+        int length2 = bArr.length - (bArr.length % 3);
+        length = 0;
+        int i = 0;
+        for (int i2 = 0; i2 < length2; i2 += 3) {
+            int i3 = i + 1;
+            bArr2[i] = a[(bArr[i2] & 255) >> 2];
+            i = i3 + 1;
+            bArr2[i3] = a[((bArr[i2] & 3) << 4) | ((bArr[i2 + 1] & 255) >> 4)];
+            i3 = i + 1;
+            bArr2[i] = a[((bArr[i2 + 1] & 15) << 2) | ((bArr[i2 + 2] & 255) >> 6)];
+            i = i3 + 1;
+            bArr2[i3] = a[bArr[i2 + 2] & 63];
+            if ((i - length) % 76 == 0 && i != 0) {
+                i3 = i + 1;
+                bArr2[i] = (byte) 10;
+                length++;
+                i = i3;
+            }
+        }
+        switch (bArr.length % 3) {
+            case 1:
+                length = i + 1;
+                bArr2[i] = a[(bArr[length2] & 255) >> 2];
+                i = length + 1;
+                bArr2[length] = a[(bArr[length2] & 3) << 4];
+                i3 = i + 1;
+                bArr2[i] = HttpConstants.EQUALS;
+                length = i3 + 1;
+                bArr2[i3] = HttpConstants.EQUALS;
+                break;
+            case 2:
+                length = i + 1;
+                bArr2[i] = a[(bArr[length2] & 255) >> 2];
+                i = length + 1;
+                bArr2[length] = a[((bArr[length2] & 3) << 4) | ((bArr[length2 + 1] & 255) >> 4)];
+                i3 = i + 1;
+                bArr2[i] = a[(bArr[length2 + 1] & 15) << 2];
+                length = i3 + 1;
+                bArr2[i3] = HttpConstants.EQUALS;
+                break;
+            default:
+                length = i;
+                break;
+        }
+        return new String(bArr2, 0, length, str);
+    }
+
+    public static byte[] a(byte[] bArr) {
+        return a(bArr, bArr.length);
+    }
+
+    public static byte[] a(byte[] bArr, int i) {
+        int i2 = (i / 4) * 3;
+        if (i2 == 0) {
+            return new byte[0];
+        }
+        Object obj = new byte[i2];
+        i2 = 0;
+        while (true) {
+            byte b = bArr[i - 1];
+            if (!(b == (byte) 10 || b == (byte) 13 || b == (byte) 32 || b == (byte) 9)) {
+                if (b != HttpConstants.EQUALS) {
+                    break;
+                }
+                i2++;
+            }
+            i--;
+        }
+        int i3 = 0;
+        int i4 = 0;
+        int i5 = 0;
+        int i6 = 0;
+        while (i3 < i) {
+            int i7;
+            b = bArr[i3];
+            if (b == (byte) 10 || b == (byte) 13) {
+                i7 = i4;
+                i4 = i6;
+                i6 = i5;
+            } else if (b == (byte) 32) {
+                i7 = i4;
+                i4 = i6;
+                i6 = i5;
+            } else if (b == (byte) 9) {
+                i7 = i4;
+                i4 = i6;
+                i6 = i5;
+            } else {
+                if (b >= (byte) 65 && b <= (byte) 90) {
+                    i7 = b - 65;
+                } else if (b >= (byte) 97 && b <= (byte) 122) {
+                    i7 = b - 71;
+                } else if (b >= TarConstants.LF_NORMAL && b <= (byte) 57) {
+                    i7 = b + 4;
+                } else if (b == (byte) 43) {
+                    i7 = 62;
+                } else if (b != (byte) 47) {
+                    return null;
+                } else {
+                    i7 = 63;
+                }
+                i4 = (i4 << 6) | ((byte) i7);
+                if (i5 % 4 == 3) {
+                    i7 = i6 + 1;
+                    obj[i6] = (byte) ((16711680 & i4) >> 16);
+                    i6 = i7 + 1;
+                    obj[i7] = (byte) ((MotionEventCompat.ACTION_POINTER_INDEX_MASK & i4) >> 8);
+                    i7 = i6 + 1;
+                    obj[i6] = (byte) (i4 & 255);
+                } else {
+                    i7 = i6;
+                }
+                i6 = i5 + 1;
+                int i8 = i4;
+                i4 = i7;
+                i7 = i8;
+            }
+            i3++;
+            i5 = i6;
+            i6 = i4;
+            i4 = i7;
+        }
+        if (i2 > 0) {
+            i4 <<= i2 * 6;
+            i7 = i6 + 1;
+            obj[i6] = (byte) ((16711680 & i4) >> 16);
+            if (i2 == 1) {
+                i6 = i7 + 1;
+                obj[i7] = (byte) ((MotionEventCompat.ACTION_POINTER_INDEX_MASK & i4) >> 8);
+            } else {
+                i6 = i7;
+            }
+        }
+        Object obj2 = new byte[i6];
+        System.arraycopy(obj, 0, obj2, 0, i6);
+        return obj2;
+    }
+}

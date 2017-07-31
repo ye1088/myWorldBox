@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/float_bg" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/floatLayoutItemType1" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypePack" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="我的" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeV121New" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="新的" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeV131RedStone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="红石" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeBlock" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="方块" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeStone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="矿物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeTool" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="工具" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeFood" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="食物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/floatLayoutItemType2" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeMedicine" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="药水" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeTree" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="植物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeColor" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="染色" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeOther" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="杂项" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeEgg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="蛋卵" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeSave" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="收藏" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+        <RadioButton android:textSize="13.0sp" android:id="@id/floatBtnItemTypeJs" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="JS专属" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewAnimator android:id="@id/animatorMainviewItem" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/llyFloatAnimalShowBody" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llyFloatAnimalButton" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/floatSeekTextItemCount" android:layout_width="25.0dip" android:layout_height="fill_parent" android:text="0" />
+                    <SeekBar android:id="@id/floatSeekbarItemCount" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:max="64" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+                    <com.huluxia.widget.EditTextWithDelete android:id="@id/floatEditItemSearch" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:hint="搜索要添加的物品" android:cursorVisible="false" android:maxLength="10" android:layout_weight="1.0" style="@style/value_edit_normal_float" />
+                    <TextView android:id="@id/floatButtonSelectAll" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="全选" style="@style/value_button_float_common_style01" />
+                    <TextView android:id="@id/floatSeekButton1" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/text" style="@style/value_button_float_common_style01" />
+                    <TextView android:id="@id/floatSeekButton2" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/text" style="@style/value_button_float_common_style01" />
+                </LinearLayout>
+                <GridView android:id="@id/floatGridItemList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:numColumns="4" style="@style/value_gridview_base" />
+            </LinearLayout>
+            <include android:id="@id/icdeStrengthen" layout="@layout/lyt_float_animal_strengthen" />
+        </ViewAnimator>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+    <GridView android:id="@id/resGrid" android:background="@color/transparent" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white" android:divider="@null" android:layout_above="@id/container" android:layout_below="@id/resGrid" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip" />
+    <RelativeLayout android:gravity="center" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

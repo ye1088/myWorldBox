@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_more" android:background="@drawable/dialog_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <View android:id="@id/v1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="@drawable/dialog_bottom_btn_color" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/dialog_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/cancel" android:layout_alignParentBottom="true" />
+</LinearLayout>

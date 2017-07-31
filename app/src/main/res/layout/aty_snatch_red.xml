@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@mipmap/bg_snatch_red_envelope" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/bg_snatch_red_envelope" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <ImageView android:id="@id/ivSnatchRedBack" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/sty_button_snatch_red_back" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@mipmap/ico_snatch_red_envelope_title" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/red_packet_introduce" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffb22e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:text="设置步骤：" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="第一步：打开系统开关" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_snatch_red_envelope_setting_show" />
+                <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_snatch_red_rightward" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvStartSnatch" android:background="@mipmap/bg_snatch_red_envelope_setting" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去设置" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="第二步：打开功能开关" />
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@id/snatchRed" android:background="@drawable/sty_radio_snatch_red_function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffdb6553" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="开启微信、QQ自动抢红包" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llySnatchRedDetail" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_snatch_red_envelope_question" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffe4b86f" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能说明" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

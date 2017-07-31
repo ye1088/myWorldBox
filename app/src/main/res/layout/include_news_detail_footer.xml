@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff4596f1" android:gravity="center" android:id="@id/tv_more" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/comment_more" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <View android:background="?splitColor" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffa0a0a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/comment_hint3" />
+        <View android:background="?splitColor" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

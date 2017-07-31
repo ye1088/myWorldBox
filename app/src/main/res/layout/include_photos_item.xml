@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huluxia.widget.layout.SquareLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.framework.base.image.PaintView android:id="@id/avatar_imageview" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+    <ImageView android:id="@id/avatar_cover" android:background="@drawable/bg_shadow_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+    <TextView android:id="@id/tv_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.huluxia.widget.layout.SquareLayout>

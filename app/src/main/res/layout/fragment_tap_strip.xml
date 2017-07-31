@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="?backgroundDefault" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_resource" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_no_resource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_atten_no_resourc" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_no_resource_upline_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="暂无关注人的资源" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_no_resource_downline_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="关注后可以收听他发布的资源动态" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_no_resource_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无资源" android:drawableLeft="?drawableSearchNoResult" android:drawablePadding="13.0dip" android:layout_centerInParent="true" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/lv_tap_strip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/white" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip" />
+</RelativeLayout>

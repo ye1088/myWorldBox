@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="248.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/ChildFuzzyTextTitle" android:layout_width="248.0dip" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/app_text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip">
+        <Button android:id="@id/ChildFuzzyBtnBigger" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="变大了" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <Button android:id="@id/ChildFuzzyBtnSmall" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="变小了" android:layout_weight="1.0" style="@style/value_button_green_all" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip">
+        <Button android:id="@id/ChildFuzzyBtnChange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="有变化" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <Button android:id="@id/ChildFuzzyBtnEquail" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="无变化" android:layout_weight="1.0" style="@style/value_button_green_all" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="12.0dip" android:text="直接操作搜索的结果" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="20.0dip">
+        <Button android:id="@id/ChildFuzzyBtnFilter" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="筛选" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <Button android:id="@id/ChildFuzzyBtnHexRet" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="内存" android:layout_weight="1.0" style="@style/value_button_green_all" />
+        <Button android:id="@id/ChildFuzzyBtnSetVal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="修改" android:layout_weight="1.0" style="@style/value_button_green_all" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?settingMsgBg" android:scrollbars="none" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_split_block" />
+        <TextView android:textSize="16.0sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_notification" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="消息提醒" android:drawableRight="?arrow" />
+        <include layout="@layout/include_split_block" />
+        <TextView android:textSize="16.0sp" android:textColor="?settingMsgtext" android:background="?settingMsgBg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="下载设置" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rlv_browser" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_browser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="直接用浏览器下载" />
+            <CheckBox android:id="@id/browser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/act_person_gray" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="聊天室" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/chat_vibrate" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/chat_vibrate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="振动" />
+            <CheckBox android:id="@id/chat_msg_vibrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rlv_netmod" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_topicpic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="帖子列表缩略图" />
+            <TextView android:textSize="16.0sp" android:textColor="?textColorResDownloading" android:id="@id/tv_topicpic_op" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="仅Wi-Fi" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="16.0sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_version" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="检测新版本" android:drawableRight="?arrow" />
+        <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_rookie_guide" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新手引导" android:drawableRight="?arrow" />
+        <include layout="@layout/include_split_short" />
+        <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_feedback" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="意见反馈" android:drawableRight="?arrow" />
+        <include layout="@layout/include_split_short" />
+        <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_app_comment" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="跪求好评" android:drawableRight="?arrow" />
+        <include layout="@layout/include_split_short" />
+        <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_present_calabash" android:background="?itemBg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="致葫芦丝" android:drawableRight="?arrow" />
+        <include layout="@layout/include_split_short" />
+        <include layout="@layout/include_split_block" />
+        <TextView android:textSize="16.0sp" android:textColor="?dialog_msg_label_color" android:id="@id/tv_logout" android:background="?itemBg" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注销账号" android:drawableRight="?arrow" />
+    </LinearLayout>
+</ScrollView>

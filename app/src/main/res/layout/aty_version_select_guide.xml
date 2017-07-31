@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlGameVersionSelectGuide" android:background="@drawable/gameversion_select" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/tvGameVersionGuideNull" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <Button android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/btnNewUserGuide" android:background="@drawable/sty_btn_greenback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="新手引导" android:layout_below="@id/tvGameVersionGuideNull" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <Button android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tvGameVersionGuideSkip" android:background="@drawable/sty_btn_greenback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="跳过>>" android:layout_below="@id/btnNewUserGuide" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

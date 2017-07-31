@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_green_pressed" />
+                    <corners android:radius="60.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/progress_green" />
+                    <corners android:radius="60.0dip" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:maxLevel="1">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_orange_pressed" />
+                    <corners android:radius="60.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/progress_orange" />
+                    <corners android:radius="60.0dip" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:maxLevel="2">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_gray" />
+                    <corners android:radius="60.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/progress_green" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</level-list>

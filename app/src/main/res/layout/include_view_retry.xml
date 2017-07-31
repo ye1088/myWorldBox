@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/retry_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_drawable_loading_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_loading_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?drawableLoadingFailed" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_loading_failed_upline_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/loading_failed" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_loading_failed_downline_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/loading_network_error_downline" />
+        <Button android:textColor="@color/white" android:id="@id/btn_retry" android:background="@drawable/btn_retry" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/refresh" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/header_flright_second_img" android:visibility="gone" android:fadingEdge="none" android:layout_width="46.0dip" android:layout_height="fill_parent" android:src="?drawableTitleShare" android:scaleType="centerInside" android:contentDescription="@null" style="@style/TopBarImageButton" />
+    <ImageButton android:id="@id/sys_header_flright_img" android:visibility="visible" android:fadingEdge="none" android:layout_width="46.0dip" android:layout_height="fill_parent" android:src="?drawableTitleSearch" android:scaleType="centerInside" android:contentDescription="@null" style="@style/TopBarImageButton" />
+    <RelativeLayout android:id="@id/fl_msg" android:layout_width="46.0dip" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/img_msg" android:visibility="visible" android:fadingEdge="none" android:layout_width="46.0dip" android:layout_height="fill_parent" android:src="?drawableTitleMsg" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:contentDescription="@null" style="@style/TopBarImageButton" />
+        <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_msg" android:background="@drawable/sys_number_red_border" android:paddingLeft="2.5dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="16.5dip" android:layout_marginTop="5.0dip" android:maxWidth="30.0dip" android:minWidth="16.5dip" android:text="1" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

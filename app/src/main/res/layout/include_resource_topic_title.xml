@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header_container" android:background="?backgroundDefault" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_resource_topic_common_header" />
+    <View android:id="@id/split_item" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_map_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:scrollbarStyle="outsideInset" android:orientation="vertical" android:id="@id/linear_list_view" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="-12.0dip" android:paddingBottom="12.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.huluxia.framework.base.widget.hlistview.HListView android:id="@id/photoWall" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="100.0dip" android:fadeScrollbars="true" app:hlv_dividerWidth="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_map_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/split_item1" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/map_author" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/map_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="18.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/map_studio" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="工作室：无" android:maxEms="8" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/map_download" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/split_item3" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="?textColorQuaternary" android:gravity="center_vertical" android:id="@id/tv_more_resource" android:background="?listSelector" android:paddingLeft="24.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="更多资源" android:drawableRight="?ic_more_resource_arrow" />
+        </LinearLayout>
+        <View android:id="@id/split_item2" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+    </LinearLayout>
+</LinearLayout>

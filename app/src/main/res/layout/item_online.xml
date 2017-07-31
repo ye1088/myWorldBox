@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/recent_join" android:background="?recent_join" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="最近加入" />
+    <View android:id="@id/join_dividing_line" android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rly_root_view" android:background="?itemBackground" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/avatar" android:background="@drawable/default_ptr_flip" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="12.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/rly_studio" android:background="@drawable/style_bg_oval" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="42.0dip" android:layout_alignLeft="@id/avatar">
+            <TextView android:textSize="10.0dip" android:textColor="?label" android:gravity="center" android:id="@id/studio" android:background="@drawable/style_bg_oval" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的工作室" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/avatar">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="?room_number" android:gravity="center" android:id="@id/room_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10086" />
+                <TextView android:textSize="12.0sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="优秀" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="?tabText" android:gravity="center" android:id="@id/introduce" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="商店世界生存" android:singleLine="true" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生存" />
+                <View android:id="@id/vertical_dividing_line" android:background="?dividingLine" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="V0.14.1" />
+                <View android:id="@id/vertical_dividing_line2" android:background="?dividingLine" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="285KB" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/number" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginRight="12.0dip" android:text="离线" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:gravity="center" android:id="@id/lock_room" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/dividing_block" android:background="?home_interval_bg" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</LinearLayout>

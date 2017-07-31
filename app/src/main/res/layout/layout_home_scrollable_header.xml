@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/scroll_header_container" android:layout_width="fill_parent" android:layout_height="@dimen/home_header_height">
+            <com.huluxia.widget.banner.BannerGallery android:id="@id/iv_mainpage_banner" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+            <View android:id="@id/home_split_line_mode_bg_1" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/home_sticky_height">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/home_common_mode_bg_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeGameOptionRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeGameOptionImg" android:background="?home_ic_game_option_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_ic_game_option" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_game_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="游戏选项" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/iv_studio_logo" android:background="?home_bg_studio" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_ic_studio" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_studio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="工作室" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeMapRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeMapImg" android:background="?home_map_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_map" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="地图" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeMapCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeJsRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeJsImg" android:background="?home_js_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_js" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_js" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="插件" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeJsCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeWoodRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeWoodImg" android:background="?home_wood_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_wood" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_wood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="材质" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeWoodCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeSkinRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeSkinImg" android:background="?home_skin_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_skin" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="皮肤" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeSkinCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeServerRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeServerImg" android:background="?home_server_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_server" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_server" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="联机资源" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeServerCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeSeedRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeMapSeedImg" android:background="?home_seed_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_seed" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_seed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="种子" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeSeedCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/homeRecommendRly" android:paddingTop="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/homeRecommendImg" android:background="?home_app_recommend_bg" android:padding="8.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="?home_app_recommend" />
+                            <TextView android:textSize="@dimen/mc_home_txt" android:textColor="?home_common_text_color" android:id="@id/tv_home_app_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="应用推荐" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvhomeRecommendCount" android:background="@drawable/unread_dot" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View android:id="@id/home_split_line_mode_bg_2" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:id="@id/home_interval_bg" android:background="?home_interval_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:id="@id/home_split_line_mode_bg_3" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/pager_sliding_tab_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+            <View android:id="@id/split_top" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.huluxia.framework.base.widget.pager.SelectedViewPager android:id="@id/home_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/home_sticky_height" />
+</merge>

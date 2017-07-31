@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppDialog" parent="@style/HtAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="AppDialogNight" parent="@style/HtAppTheme.Night">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Light">
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+        <item name="android:buttonStyle">@style/customButton</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:checkboxStyle">@style/customCheckBox</item>
+        <item name="android:editTextStyle">@style/customEditText</item>
+        <item name="android:listViewStyle">@style/customListView</item>
+        <item name="android:textViewStyle">@style/customTextView</item>
+    </style>
+    <style name="CustomStylableDialog">
+        <item name="android:windowBackground">@drawable/game_pop_dialog_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_push_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_push_down</item>
+    </style>
+    <style name="DialogMsgText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">18.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">29.0dip</item>
+        <item name="android:layout_marginRight">29.0dip</item>
+        <item name="android:minLines">2</item>
+        <item name="android:lineSpacingExtra">5.0dip</item>
+    </style>
+    <style name="DialogMsgTextWithColor">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingBottom">22.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">29.0dip</item>
+        <item name="android:layout_marginRight">29.0dip</item>
+        <item name="android:minHeight">112.0dip</item>
+        <item name="android:lineSpacingExtra">12.0dip</item>
+    </style>
+    <style name="DialogTitle" parent="@style/ShadowedText">
+        <item name="android:textColor">@color/green</item>
+    </style>
+    <style name="DialogTitleWhile" parent="@style/ShadowedText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Dialog_Fullscreen">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Dialog_Input" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="EditBorder">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/style_edit_readonly</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="EditNoBorder">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="EditNoBorder2">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="EditTextExchanged" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:background">?backgroundEditTextExchanged</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="EditTextInput" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:background">@drawable/bg_et_input</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HeaderText" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HtAppTheme" parent="@style/AppBaseTheme">
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_color_secondary</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:windowBackground">?backgroundDefault</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>
+        <item name="agree_text">@color/color_agree</item>
+        <item name="all_studio">@drawable/all_studio_selector</item>
+        <item name="apply">@drawable/apply_nobody</item>
+        <item name="arrow">@drawable/arrow_day</item>
+        <item name="arrowArchieve">@drawable/arrow_achieve_day</item>
+        <item name="arrow_next">@drawable/arrow_next_selector</item>
+        <item name="attention_text_color_type_1">@color/attention_text_color_type_1</item>
+        <item name="attention_text_color_type_2">@color/attention_text_color_type_2</item>
+        <item name="back">@drawable/game_option_back_selector</item>
+        <item name="backText">@color/white</item>
+        <item name="backgroundButtonExchanged">@drawable/bg_btn_exchange</item>
+        <item name="backgroundButtonGrayTag">@drawable/sl_public_topic_tag_gray</item>
+        <item name="backgroundButtonGreenTag">@drawable/sl_public_topic_tag</item>
+        <item name="backgroundButtonLogin">@drawable/bg_btn_exchange</item>
+        <item name="backgroundButtonSolidGreen">@drawable/bg_btn_solid_green</item>
+        <item name="backgroundButtonTag">@drawable/sl_public_topic_tag</item>
+        <item name="backgroundColorProfileExp">@color/profile_exp_bg</item>
+        <item name="backgroundColorProfileExpNext">@color/profile_exp_next</item>
+        <item name="backgroundColorProfileExpNextTranslucent">@color/profile_exp_next_translucent</item>
+        <item name="backgroundColorProfileExpNow">@color/profile_exp_now</item>
+        <item name="backgroundColorProfileExpTranslucent">@color/profile_exp_bg_translucent</item>
+        <item name="backgroundColorTopicScore">@color/red</item>
+        <item name="backgroundComplaint">@drawable/sl_profile_button_report</item>
+        <item name="backgroundComplaintReason">@drawable/bg_topic_credit_count_dim</item>
+        <item name="backgroundCornerDialog">@drawable/bg_corner_dialog</item>
+        <item name="backgroundCreditCount">@drawable/bg_topic_credit_count</item>
+        <item name="backgroundDarenRanking">@drawable/bg_daren_ranking_text</item>
+        <item name="backgroundDarenTitle">@drawable/bg_daren_ranking_title</item>
+        <item name="backgroundDefault">@color/white</item>
+        <item name="backgroundDialog">@drawable/bg_dialog</item>
+        <item name="backgroundDialogEditText">@drawable/style_edit_readonly</item>
+        <item name="backgroundDim">@color/background_dim</item>
+        <item name="backgroundDim2">@color/background_dim</item>
+        <item name="backgroundDim3">@color/white</item>
+        <item name="backgroundDim4">@color/background_dim_second</item>
+        <item name="backgroundDim5">@color/background_dim5</item>
+        <item name="backgroundDim6">@color/background_normal_press</item>
+        <item name="backgroundEditTextExchanged">@drawable/bg_et_input</item>
+        <item name="backgroundFollow">@drawable/sl_profile_button_follow</item>
+        <item name="backgroundIntegralTitle">@drawable/bg_topic_integral_title</item>
+        <item name="backgroundItemGift">@drawable/bg_list_selector_exchange</item>
+        <item name="backgroundMsgBanner">@drawable/style_button_gray_full</item>
+        <item name="backgroundNewsBottom">@color/news_bottom</item>
+        <item name="backgroundNewsCommentEdit">@drawable/bg_news_comment_edit</item>
+        <item name="backgroundPageNext">@drawable/btn_bottom_gray_right</item>
+        <item name="backgroundPagePre">@drawable/btn_bottom_gray_left</item>
+        <item name="backgroundProfileButtonLogin">@drawable/sl_space_button_login</item>
+        <item name="backgroundProfileButtonLv">@drawable/bg_profile_button_lv</item>
+        <item name="backgroundProfileExp">@drawable/bg_profile_exp</item>
+        <item name="backgroundProfileFollow">@drawable/sl_profile_tv_follow</item>
+        <item name="backgroundProfileHeader">@color/background_normal</item>
+        <item name="backgroundProfileHeaderTranslucent">@color/profile_cover_translucent</item>
+        <item name="backgroundSearchView">@drawable/bg_rounded_solid_white</item>
+        <item name="backgroundSpaceStyleDetail">@color/background_space_style_detail</item>
+        <item name="backgroundTitleBar">@color/color_primary_green</item>
+        <item name="backgroundTitleBarButton">@drawable/sl_title_bar_button</item>
+        <item name="backgroundTopicButton">@drawable/btn_green2_selector</item>
+        <item name="backgroundTopicReply">@drawable/bg_topic_reply</item>
+        <item name="backgroundUserLevel">@drawable/bg_topic_user_level</item>
+        <item name="bgColorMask">@color/color_mask</item>
+        <item name="bg_assign_studio">@drawable/bg_assign_studio_selector</item>
+        <item name="bg_attention_fans_type_1">@drawable/bg_attention_fans_type_1</item>
+        <item name="bg_attention_fans_type_2">@drawable/bg_attention_fans_type_2</item>
+        <item name="bg_online_button">@drawable/bg_online_button_selector</item>
+        <item name="bg_online_create">@drawable/bg_online_create_selector</item>
+        <item name="bg_online_et">@drawable/bg_online_et</item>
+        <item name="bg_size">@drawable/bg_size</item>
+        <item name="bg_studio_name">@drawable/bg_studio_name</item>
+        <item name="bg_top_left_right_corner">@drawable/bg_top_left_right_corner_dialog</item>
+        <item name="bglistitem_selector_locmgrbtn">@drawable/bglistitem_selector_locmgrbtn_day</item>
+        <item name="choice_arrow">@drawable/choice_arrow_selector</item>
+        <item name="clothes_size_text">@drawable/clothes_size_selector</item>
+        <item name="colorBg">@color/background_dim_2</item>
+        <item name="colorChecked">@color/green_res</item>
+        <item name="colorDownButtonGreen">@color/color_primary_green</item>
+        <item name="colorDownButtonGrey">@color/download_btn_gray_trans</item>
+        <item name="colorDownButtonRed">@color/download_btn_orange</item>
+        <item name="colorHint">@color/color_hint</item>
+        <item name="colorNormalWhite">@color/background_normal</item>
+        <item name="colorPressed">@color/bgColor</item>
+        <item name="colorPressed2">@color/color_pressed2</item>
+        <item name="colorRadioBtn">@color/color_green_gray</item>
+        <item name="colorRadioTxt">@color/color_white_gray</item>
+        <item name="color_page_button_focus_num">@color/color_button_text_white_black</item>
+        <item name="contentCategoryBg">@color/background_normal</item>
+        <item name="cornerBottomSelector">@drawable/sl_corner_bottom</item>
+        <item name="death">@color/death_day</item>
+        <item name="default_discover_pic">@drawable/discover_pic</item>
+        <item name="dialog_back_circle">@drawable/dialog_background_circle_day</item>
+        <item name="dialog_msg_label_color">@color/dialog_msg_label_color_day</item>
+        <item name="dialog_title_label_color">@color/dialog_title_label_color_day</item>
+        <item name="dig">@color/dig_day</item>
+        <item name="disagree_text">@color/color_disagree</item>
+        <item name="discover">@drawable/discover_pic</item>
+        <item name="dividingLine">@color/SplitLine</item>
+        <item name="download_rank">@drawable/download_rank_selector</item>
+        <item name="drawableArrowRightSetting">@drawable/ic_arrow_right_setting</item>
+        <item name="drawableCamera">@drawable/icon_camera</item>
+        <item name="drawableCheckButton">@drawable/common_checkbox</item>
+        <item name="drawableCheckbox">@drawable/sl_checkbox</item>
+        <item name="drawableClassArrowNext">@drawable/bg_class_arrow</item>
+        <item name="drawableClear">@drawable/btn_clear_selector</item>
+        <item name="drawableCommentCount">@drawable/ic_topic_comment</item>
+        <item name="drawableCommentCountNew">@drawable/ic_topic_comment_new</item>
+        <item name="drawableComplaintDown">@drawable/ic_topic_detail_lock_down</item>
+        <item name="drawableComplaintUp">@drawable/ic_topic_detail_lock_up</item>
+        <item name="drawableCompoundButtonSetting">@drawable/sl_checkbox_setting</item>
+        <item name="drawableDownButton">@drawable/bg_btn_download</item>
+        <item name="drawableDownButtonGreen">@drawable/style_button_green_trans_rect_5p</item>
+        <item name="drawableDownButtonGrey">@drawable/style_button_gray_trans_rect_5p</item>
+        <item name="drawableDownButtonGreyFull">@drawable/style_button_gray_full_rect_5p</item>
+        <item name="drawableDownButtonRed">@drawable/style_button_red_trans_rect_5p</item>
+        <item name="drawableDownProgressRun">@drawable/style_prog_green</item>
+        <item name="drawableDownProgressStop">@drawable/style_prog_yellow</item>
+        <item name="drawableFilter">@drawable/ic_filter</item>
+        <item name="drawableGreenArrow">@drawable/sl_green_arrow</item>
+        <item name="drawableHook">@drawable/sl_hook</item>
+        <item name="drawableHookDisable">@drawable/ic_hook_disable</item>
+        <item name="drawableHulu">@drawable/ic_space_hulu2</item>
+        <item name="drawableHuluCorner">@drawable/bg_hulu_shadow_white_selector</item>
+        <item name="drawableHuluDaren">@drawable/ic_hulu_daren</item>
+        <item name="drawableHuluGreen">@drawable/ic_hulu_green</item>
+        <item name="drawableHuluRed">@drawable/ic_hulu_red</item>
+        <item name="drawableInputbox">@drawable/style_rect_layout_whitestroke</item>
+        <item name="drawableInputline">@drawable/line_input</item>
+        <item name="drawableJifen">@drawable/ic_space_jifen2</item>
+        <item name="drawableLoading">@drawable/ic_loading_default</item>
+        <item name="drawableLoadingFailed">@drawable/ic_loading_failed</item>
+        <item name="drawableLoadingImageDefault">@drawable/discover_pic</item>
+        <item name="drawableLoadingNetworkError">@drawable/ic_network_error</item>
+        <item name="drawableLoginButton">@drawable/style_button_blue_trans_rect_5p</item>
+        <item name="drawableLoginQQ">@drawable/bg_qq_login_selector</item>
+        <item name="drawableModeratorAuth">@drawable/img_moderator_symbol</item>
+        <item name="drawableNewsComment">@drawable/ic_news_comment</item>
+        <item name="drawableNewsCommentSend">@drawable/btn_send_news_selector</item>
+        <item name="drawableNewsFavor">@drawable/ic_news_favor</item>
+        <item name="drawableNewsFavorChecked">@drawable/ic_news_favored</item>
+        <item name="drawableNoFriend">@drawable/img_nofriend</item>
+        <item name="drawablePhotoDel">@drawable/btn_photo_del_selector</item>
+        <item name="drawablePraiseCount">@drawable/ic_topic_praise</item>
+        <item name="drawableProfileArrowRight">@drawable/ic_right_arrow</item>
+        <item name="drawableProfileAvatarUnLogin">@drawable/ic_profile_avatar</item>
+        <item name="drawableProfileGenderFemale">@drawable/ic_profile_gender_female</item>
+        <item name="drawableProfileGenderMale">@drawable/ic_profile_gender_male</item>
+        <item name="drawableProfileHulu">@drawable/ic_profile_hulu</item>
+        <item name="drawableProfileTitle">@drawable/ic_profile_title</item>
+        <item name="drawableProfileTitleBack">@drawable/ic_nav_back</item>
+        <item name="drawableProfileTitleMsg">@drawable/ic_title_msg</item>
+        <item name="drawableRemindDefault">@drawable/ic_remind_default</item>
+        <item name="drawableResDownloading">@drawable/bg_res_downloading_gray</item>
+        <item name="drawableResTopicGreen">@drawable/bg_res_download_green</item>
+        <item name="drawableResTopicOpen">@drawable/bg_res_open_gray</item>
+        <item name="drawableResTopicOrange">@drawable/bg_res_open_orange</item>
+        <item name="drawableReturnTop">@drawable/ic_return_top</item>
+        <item name="drawableRightSidebar">@drawable/ic_right_sidebar</item>
+        <item name="drawableRoleVip">@drawable/ic_role_vip</item>
+        <item name="drawableSearchNoResult">@drawable/ic_search_no_result</item>
+        <item name="drawableSubscribe">@drawable/sl_subscribe_board</item>
+        <item name="drawableTagCover">@drawable/ic_tag_cover</item>
+        <item name="drawableTitleAddBoard">@drawable/btn_class_add_selector</item>
+        <item name="drawableTitleBack">@drawable/btn_nav_back_selector</item>
+        <item name="drawableTitleDownload">@drawable/btn_download_selector</item>
+        <item name="drawableTitleFavor">@drawable/ic_main_favor</item>
+        <item name="drawableTitleFavorChecked">@drawable/ic_main_favored</item>
+        <item name="drawableTitleLogo">@drawable/header_icon</item>
+        <item name="drawableTitleMsg">@drawable/btn_main_msg_selector</item>
+        <item name="drawableTitleOnlyFloor">@drawable/ic_floor</item>
+        <item name="drawableTitleOnlyFloorChecked">@drawable/ic_floored</item>
+        <item name="drawableTitlePost">@drawable/btn_post_selector</item>
+        <item name="drawableTitleSearch">@drawable/btn_main_search_selector</item>
+        <item name="drawableTitleSetting">@drawable/ic_setting</item>
+        <item name="drawableTitleShare">@drawable/btn_share_selector</item>
+        <item name="drawableToastError">@drawable/g_icon_error</item>
+        <item name="drawableTopicAltUser">@drawable/ic_alt_userlist</item>
+        <item name="drawableTopicCamera">@drawable/topic_camera_icon_selector</item>
+        <item name="drawableTopicDigest">@drawable/ic_topic_digest</item>
+        <item name="drawableTopicEmotion">@drawable/topic_emotion_icon_selector</item>
+        <item name="drawableTopicFollow">@drawable/ic_topic_follow</item>
+        <item name="drawableTopicHot">@drawable/ic_topic_hot</item>
+        <item name="drawableTopicHuluMore">@drawable/ic_hulu_more</item>
+        <item name="drawableTopicHuluTotal">@drawable/ic_hulu_total</item>
+        <item name="drawableTopicNew">@drawable/ic_topic_new</item>
+        <item name="drawableTopicRemind">@drawable/topic_remind_icon_selector</item>
+        <item name="drawableTopicSendhulu">@drawable/btn_sendhulu_radio_selector</item>
+        <item name="drawableTopicSendhuluSelected">@drawable/sendhulu_radio_green</item>
+        <item name="drawableTopicSpinner">@drawable/sl_topic_order_spinner</item>
+        <item name="drawableTopicTu">@drawable/ic_topic_tu</item>
+        <item name="drawableTopicVd">@drawable/ic_topic_video</item>
+        <item name="drawableTopicVideo">@drawable/topic_video_icon_selector</item>
+        <item name="drawableTopicVideoLoading">@drawable/bg_topic_video_loading</item>
+        <item name="drawableTopicVideoPlay">@drawable/btn_topic_video_play_center_selector</item>
+        <item name="drawableTopicVideoPraise">@drawable/ic_topic_video_praise</item>
+        <item name="drawableTopicVideoPraised">@drawable/ic_topic_video_praised</item>
+        <item name="drawableTopicVideoReplay">@drawable/btn_topic_video_replay_selector</item>
+        <item name="drawableUnderline">@drawable/btn_underline_selector</item>
+        <item name="drawableViewCount">@drawable/ic_topic_read</item>
+        <item name="drawableViewCountNew">@drawable/ic_topic_read_new</item>
+        <item name="drawable_page_button_focus_num">@drawable/drawable_page_turn_button_focus_num</item>
+        <item name="drawable_pageturn_btn_edge">@drawable/style_button_green_edge</item>
+        <item name="exchanting">@color/exchanting_day</item>
+        <item name="gallery_dot">@drawable/gallery_selector</item>
+        <item name="game">@color/game_day</item>
+        <item name="home_bg_studio">@drawable/home_bg_studio_selector</item>
+        <item name="home_ic_studio">@drawable/ic_home_studio_selector</item>
+        <item name="ic_announce_delete">@drawable/ic_announce_delete_selector</item>
+        <item name="ic_atten_no_resourc">@drawable/my_atten_no_resource</item>
+        <item name="ic_default_loc_res">@drawable/ic_default_loc_res_day</item>
+        <item name="ic_more_resource_arrow">@drawable/ic_more_resource_arrow</item>
+        <item name="ic_past_rank_april">@drawable/ic_past_rank_april</item>
+        <item name="ic_past_rank_august">@drawable/ic_past_rank_august</item>
+        <item name="ic_past_rank_december">@drawable/ic_past_rank_december</item>
+        <item name="ic_past_rank_february">@drawable/ic_past_rank_february</item>
+        <item name="ic_past_rank_january">@drawable/ic_past_rank_january</item>
+        <item name="ic_past_rank_july">@drawable/ic_past_rank_july</item>
+        <item name="ic_past_rank_june">@drawable/ic_past_rank_june</item>
+        <item name="ic_past_rank_march">@drawable/ic_past_rank_march</item>
+        <item name="ic_past_rank_may">@drawable/ic_past_rank_may</item>
+        <item name="ic_past_rank_november">@drawable/ic_past_rank_november</item>
+        <item name="ic_past_rank_october">@drawable/ic_past_rank_october</item>
+        <item name="ic_past_rank_september">@drawable/ic_past_rank_september</item>
+        <item name="ic_picture_plus">@drawable/studio_edit_picture_plus</item>
+        <item name="ic_studio_announce">@drawable/ic_studio_announce_selector</item>
+        <item name="ic_studio_announce_more">@drawable/ic_studio_announce_more</item>
+        <item name="ico_local_resmgr_map_item_chose">@drawable/ico_local_resmgr_map_item_chose_day</item>
+        <item name="ico_local_resmgr_map_item_unchose">@drawable/ico_local_resmgr_map_item_unchose_day</item>
+        <item name="instance">@color/instance_day</item>
+        <item name="itemBg">@drawable/bg_item_day</item>
+        <item name="item_studio_announce_bg">@drawable/bg_item_studio_announce</item>
+        <item name="js">@color/js_day</item>
+        <item name="kick_out_text">@color/profile_exp_bg</item>
+        <item name="kill">@color/kill_day</item>
+        <item name="listSelector">@drawable/sl_list_item</item>
+        <item name="listSelectorButtonLeft">@drawable/sl_list_item_left</item>
+        <item name="listSelectorButtonRight">@drawable/sl_list_item_right</item>
+        <item name="listSelectorProfile">@drawable/sl_list_item_profile</item>
+        <item name="listSelectorProfileTranslucent">@drawable/sl_list_item_profile_translucent</item>
+        <item name="listSelectorSecond">@drawable/sl_list_item</item>
+        <item name="listview_item">@drawable/listview_item</item>
+        <item name="locmgr_menu_res_all_color">@color/locmgr_menu_res_all_color_day</item>
+        <item name="locmgr_menu_res_red_color">@color/locmgr_menu_res_red_color_day</item>
+        <item name="login">@color/login_day</item>
+        <item name="map">@color/map_day</item>
+        <item name="month_review_rank">@drawable/month_review_rank_selector</item>
+        <item name="pageturn_head_color">@color/pageturn_head_day_color</item>
+        <item name="pageturn_split_line_color">@color/page_turn_split_line_color</item>
+        <item name="progress_loading_mode">@drawable/community_restopic_progress_horizontal</item>
+        <item name="progress_loading_text_color">@color/text_primary_new</item>
+        <item name="progress_shape">@drawable/progress_shape</item>
+        <item name="progress_vote">@drawable/vote_progress</item>
+        <item name="refresh">@drawable/refresh_selector_day</item>
+        <item name="remove_bg">@drawable/remove_selector</item>
+        <item name="settingBtn">@drawable/btn_setting_day</item>
+        <item name="settingMsgBg">@color/bg_day</item>
+        <item name="settingMsgtext">@color/color_primary_green2</item>
+        <item name="settingText">@color/black</item>
+        <item name="setting_net_check">@drawable/ic_setting_net_check</item>
+        <item name="share_to_qq_friend">@drawable/selector_share_qq_friend_day</item>
+        <item name="share_to_qq_space">@drawable/selector_share_qq_space_day</item>
+        <item name="share_to_wx_friend">@drawable/selector_share_wx_friend_day</item>
+        <item name="share_to_wx_space">@drawable/selector_share_wx_space_day</item>
+        <item name="skin">@color/skin_day</item>
+        <item name="space_ic_follow">@drawable/space_ic_follow</item>
+        <item name="space_ic_followed">@drawable/space_ic_followed</item>
+        <item name="space_ic_mutual_follow">@drawable/space_ic_mutual_follow</item>
+        <item name="space_ic_no_attention">@drawable/space_ic_no_attention</item>
+        <item name="space_ic_no_fans">@drawable/space_ic_no_fans</item>
+        <item name="splitColor">@color/color_split</item>
+        <item name="splitColorDim">@color/color_split_dim</item>
+        <item name="splitColorDim2">@color/color_split_dim2</item>
+        <item name="splitColorDim3">@color/white</item>
+        <item name="splitColorDim4">@color/SplitLine</item>
+        <item name="splitColorProfileTranslucent">@color/split_profile_translucent</item>
+        <item name="splitZoneCategory">@color/SplitLine</item>
+        <item name="story">@color/story_day</item>
+        <item name="studio_announce_no_msg">@drawable/studio_announce_no_msg</item>
+        <item name="studio_background_split">@color/res_download_unable_color</item>
+        <item name="studio_bg">@drawable/studio_selector</item>
+        <item name="studio_drawable_left">@drawable/studio</item>
+        <item name="studio_edit_bg">@drawable/studio_bg</item>
+        <item name="studio_hot_icon">@drawable/ic_hot</item>
+        <item name="studio_hot_text_color">@color/studio_hot_text_color</item>
+        <item name="studio_introduce_hint">@color/tool_camera_box</item>
+        <item name="studio_member_count_icon">@drawable/ic_member_count</item>
+        <item name="studio_past_rank_april">@color/studio_past_rank_april</item>
+        <item name="studio_past_rank_august">@color/studio_past_rank_august</item>
+        <item name="studio_past_rank_december">@color/studio_past_rank_december</item>
+        <item name="studio_past_rank_february">@color/studio_past_rank_february</item>
+        <item name="studio_past_rank_january">@color/studio_past_rank_january</item>
+        <item name="studio_past_rank_july">@color/studio_past_rank_july</item>
+        <item name="studio_past_rank_june">@color/studio_past_rank_june</item>
+        <item name="studio_past_rank_march">@color/studio_past_rank_march</item>
+        <item name="studio_past_rank_may">@color/studio_past_rank_may</item>
+        <item name="studio_past_rank_november">@color/studio_past_rank_november</item>
+        <item name="studio_past_rank_october">@color/studio_past_rank_october</item>
+        <item name="studio_past_rank_september">@color/studio_past_rank_september</item>
+        <item name="studio_rank_first_icon">@drawable/ic_studio_rank_first</item>
+        <item name="studio_rank_first_text_color">@color/studio_rank_first_text_color</item>
+        <item name="studio_rank_other_icon">@drawable/ic_studio_rank_other</item>
+        <item name="studio_rank_other_text_color">@color/studio_rank_other_text_color</item>
+        <item name="studio_rank_second_icon">@drawable/ic_studio_rank_second</item>
+        <item name="studio_rank_second_text_color">@color/studio_rank_second_text_color</item>
+        <item name="studio_rank_third_icon">@drawable/ic_studio_rank_third</item>
+        <item name="studio_rank_third_text_color">@color/studio_rank_third_text_color</item>
+        <item name="studio_recommend">@drawable/studio_recommend_selector</item>
+        <item name="studio_resource_type">@drawable/bg_studio_edit_cate</item>
+        <item name="studio_text">@color/profile_exp_bg</item>
+        <item name="studio_write_announce">@drawable/studio_write_announce_selector</item>
+        <item name="sty_btn_localresmgr_backup">@drawable/sty_btn_localresmgr_backup_day</item>
+        <item name="sty_btn_localresmgr_del">@drawable/sty_btn_localresmgr_del_day</item>
+        <item name="sty_btn_localresmgr_import">@drawable/sty_btn_localresmgr_import_day</item>
+        <item name="sty_btn_localresmgr_sort">@drawable/sty_btn_localresmgr_sort_day</item>
+        <item name="textColorComplaint">@color/text_color_orange</item>
+        <item name="textColorCredit">@color/text_color_orange</item>
+        <item name="textColorDarenRanking">@color/text_color_daren_ranking</item>
+        <item name="textColorDeny">@color/color_red_white</item>
+        <item name="textColorGray">@color/color_primary_gray</item>
+        <item name="textColorGreen">@color/color_primary_green</item>
+        <item name="textColorGreen2">@color/color_primary_green2</item>
+        <item name="textColorGreen3">@color/color_green</item>
+        <item name="textColorGreenTopic">@color/color_secondary_green</item>
+        <item name="textColorGreenTopicClass">@color/color_topic_class</item>
+        <item name="textColorGreenTopicLight">@color/color_secondary_green</item>
+        <item name="textColorJump">@color/color_yellow_white</item>
+        <item name="textColorLocMapItemName">#ff616161</item>
+        <item name="textColorLocMapItemSize">#ffa0a0a0</item>
+        <item name="textColorLocSortBtn">#ff52ae38</item>
+        <item name="textColorNewsCommentCount">@color/news_comment_count</item>
+        <item name="textColorNewsEditHint">@color/news_comment_hint</item>
+        <item name="textColorPass">@color/color_green2_white</item>
+        <item name="textColorProfileFemale">@color/text_space_female</item>
+        <item name="textColorProfileFollow">@color/text_profile_follow</item>
+        <item name="textColorProfileHulu">@color/text_space_hulu</item>
+        <item name="textColorProfileMale">@color/text_space_male</item>
+        <item name="textColorProfileTitle">@color/text_space_title</item>
+        <item name="textColorQQLogin">@color/color_primary_blue</item>
+        <item name="textColorQuaternary">@color/text_color_quaternary</item>
+        <item name="textColorRed">@color/red</item>
+        <item name="textColorResDownloading">@color/res_text_unable_color</item>
+        <item name="textColorSpaceStyleDetail">@color/text_space_style_detail</item>
+        <item name="textColorTopicAltUser">@color/topic_alt_user</item>
+        <item name="textColorTopicButton">@color/color_green2_white</item>
+        <item name="textColorTopicClass">@color/topic_class_title</item>
+        <item name="textColorTopicCredit">@color/text_color_secondary</item>
+        <item name="textColorTopicCreditOrange">@color/text_color_credit_orange</item>
+        <item name="textColorTopicHotCount">@color/text_color_topic_orange</item>
+        <item name="textColorTopicHuluDetailRed">@color/text_color_hulu_red</item>
+        <item name="textColorTopicHuluRed">@color/text_color_hulu_red</item>
+        <item name="textColorTopicScore">@color/white</item>
+        <item name="textColorTopicTag">@color/color_topic_tag</item>
+        <item name="textColorTopicVideoReplay">@color/topic_video_replay</item>
+        <item name="textColorViolet">@color/color_primary_violet</item>
+        <item name="textFirstPageBtn">@color/textFirstPageBtnColor</item>
+        <item name="textPageTurnBtn">@color/text_pageturn_btn_color</item>
+        <item name="text_studio_topic_detail">@color/text_studio_topic_detail</item>
+        <item name="text_title_topic_detail">@color/white</item>
+        <item name="valBrightness">0</item>
+        <item name="voteBg">@drawable/bg_btn_vote</item>
+        <item name="vote_count">@color/text_color_primary</item>
+        <item name="vote_text">@drawable/vote_text_day</item>
+        <item name="wood">@color/wood_day</item>
+        <item name="zoneCategoryBg">@color/background_dim_2</item>
+        <item name="zoneSubcategoryHotColor">@color/topic_menu_search_title</item>
+        <item name="zoneSubcategoryTitleColor">@color/text_pageturn_btn_color</item>
+    </style>
+    <style name="HtAppTheme.Night" parent="@style/HtAppTheme">
+        <item name="android:textColorPrimary">@color/text_color_primary_night</item>
+        <item name="android:textColorSecondary">@color/text_color_secondary_night</item>
+        <item name="android:textColorPrimaryInverse">@color/text_color_primary_inverse_night</item>
+        <item name="android:windowBackground">@color/background_normal_night</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/text_color_hint_night</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary_night</item>
+        <item name="agree_text">@color/color_agree_night</item>
+        <item name="all_studio">@drawable/all_studio_night_selector</item>
+        <item name="apply">@drawable/apply_nobody_night</item>
+        <item name="arrow">@drawable/arrow_night</item>
+        <item name="arrowArchieve">@drawable/arrow_achieve_night</item>
+        <item name="arrow_next">@drawable/arrow_next_night_selector</item>
+        <item name="attention_text_color_type_1">@color/attention_text_color_type_night_1</item>
+        <item name="attention_text_color_type_2">@color/attention_text_color_type_night_2</item>
+        <item name="back">@drawable/game_option_back_night_selector</item>
+        <item name="backText">@color/back_text</item>
+        <item name="backgroundButtonExchanged">@drawable/bg_btn_exchange_night</item>
+        <item name="backgroundButtonGrayTag">@drawable/sl_public_topic_tag_gray_night</item>
+        <item name="backgroundButtonGreenTag">@drawable/sl_public_topic_tag_night</item>
+        <item name="backgroundButtonLogin">@drawable/bg_btn_exchange_night</item>
+        <item name="backgroundButtonSolidGreen">@drawable/bg_btn_solid_green_night</item>
+        <item name="backgroundButtonTag">@drawable/sl_public_topic_tag_night</item>
+        <item name="backgroundColorProfileExp">@color/profile_exp_bg_night</item>
+        <item name="backgroundColorProfileExpNext">@color/profile_exp_next_night</item>
+        <item name="backgroundColorProfileExpNextTranslucent">@color/profile_exp_next_translucent</item>
+        <item name="backgroundColorProfileExpNow">@color/profile_exp_now_night</item>
+        <item name="backgroundColorProfileExpTranslucent">@color/profile_exp_bg_translucent</item>
+        <item name="backgroundColorTopicScore">@color/red_night</item>
+        <item name="backgroundComplaint">@drawable/sl_profile_button_report_night</item>
+        <item name="backgroundComplaintReason">@drawable/bg_topic_credit_count_dim_night</item>
+        <item name="backgroundCornerDialog">@drawable/bg_corner_dialog_night</item>
+        <item name="backgroundCreditCount">@drawable/bg_topic_credit_count_night</item>
+        <item name="backgroundDarenRanking">@drawable/bg_daren_ranking_text_night</item>
+        <item name="backgroundDarenTitle">@drawable/bg_daren_ranking_title_night</item>
+        <item name="backgroundDefault">@color/background_normal_night</item>
+        <item name="backgroundDialog">@drawable/bg_dialog_night</item>
+        <item name="backgroundDialogEditText">@drawable/bg_dialog_edittext_night</item>
+        <item name="backgroundDim">@color/background_dim_night</item>
+        <item name="backgroundDim2">@color/background_normal_night</item>
+        <item name="backgroundDim3">@color/background_dim_night</item>
+        <item name="backgroundDim4">@color/background_dim_night</item>
+        <item name="backgroundDim5">@color/background_dim_night</item>
+        <item name="backgroundDim6">@color/background_dim_nightly</item>
+        <item name="backgroundEditTextExchanged">@drawable/bg_et_input_night</item>
+        <item name="backgroundFollow">@drawable/sl_profile_button_follow_night</item>
+        <item name="backgroundIntegralTitle">@drawable/bg_topic_integral_title_night</item>
+        <item name="backgroundItemGift">@drawable/bg_list_selector_exchange_night</item>
+        <item name="backgroundMsgBanner">@drawable/style_button_gray_full_night</item>
+        <item name="backgroundNewsBottom">@color/news_bottom_night</item>
+        <item name="backgroundNewsCommentEdit">@drawable/bg_news_comment_edit_night</item>
+        <item name="backgroundPageNext">@drawable/sl_topic_page_next_night</item>
+        <item name="backgroundPagePre">@drawable/sl_topic_page_pre_night</item>
+        <item name="backgroundProfileButtonLogin">@drawable/sl_space_button_login</item>
+        <item name="backgroundProfileButtonLv">@drawable/bg_profile_button_lv_night</item>
+        <item name="backgroundProfileExp">@drawable/bg_profile_exp_night</item>
+        <item name="backgroundProfileFollow">@drawable/sl_profile_tv_follow_night</item>
+        <item name="backgroundProfileHeader">@color/background_normal_night</item>
+        <item name="backgroundProfileHeaderTranslucent">@color/profile_cover_translucent_night</item>
+        <item name="backgroundSearchView">@drawable/bg_rounded_solid_grey</item>
+        <item name="backgroundSpaceStyleDetail">@color/background_space_style_detail_night</item>
+        <item name="backgroundTitleBar">@color/color_primary_green_night</item>
+        <item name="backgroundTitleBarButton">@drawable/sl_title_bar_button_night</item>
+        <item name="backgroundTopicButton">@drawable/btn_green_selector_night</item>
+        <item name="backgroundTopicReply">@drawable/bg_topic_reply_night</item>
+        <item name="backgroundUserLevel">@drawable/bg_topic_user_level_night</item>
+        <item name="bgColorMask">@color/color_mask_night</item>
+        <item name="bg_assign_studio">@drawable/bg_assign_studio_night_selector</item>
+        <item name="bg_attention_fans_type_1">@drawable/bg_attention_fans_type_night_1</item>
+        <item name="bg_attention_fans_type_2">@drawable/bg_attention_fans_type_night_2</item>
+        <item name="bg_online_button">@drawable/bg_online_button_selector_night</item>
+        <item name="bg_online_create">@drawable/bg_online_create_selector_night</item>
+        <item name="bg_online_et">@drawable/bg_online_et_night</item>
+        <item name="bg_size">@drawable/bg_size_night</item>
+        <item name="bg_studio_name">@drawable/bg_studio_name_night</item>
+        <item name="bg_top_left_right_corner">@drawable/bg_top_left_right_corner_night_dialog</item>
+        <item name="bglistitem_selector_locmgrbtn">@drawable/bglistitem_selector_locmgrbtn_night</item>
+        <item name="choice_arrow">@drawable/choice_arrow_night_selector</item>
+        <item name="clothes_size_text">@drawable/clothes_size_selector_night</item>
+        <item name="colorBg">@color/color_split_dim_night</item>
+        <item name="colorChecked">@color/green_res_night</item>
+        <item name="colorDownButtonGreen">@color/color_primary_green_night</item>
+        <item name="colorDownButtonGrey">@color/text_primary_new_night</item>
+        <item name="colorDownButtonRed">@color/download_btn_orange_night</item>
+        <item name="colorHint">@color/color_hint_night</item>
+        <item name="colorNormalWhite">@color/background_normal_night</item>
+        <item name="colorPressed">@color/bgColor_night</item>
+        <item name="colorPressed2">@color/color_pressed2_night</item>
+        <item name="colorRadioBtn">@color/color_green_gray_night</item>
+        <item name="colorRadioTxt">@color/color_white_gray_night</item>
+        <item name="color_page_button_focus_num">@color/page_turn_split_line_night_color</item>
+        <item name="contentCategoryBg">@color/text_color_topic_score</item>
+        <item name="cornerBottomSelector">@drawable/sl_corner_bottom_night</item>
+        <item name="death">@color/death_night</item>
+        <item name="default_discover_pic">@drawable/discover_pic_night</item>
+        <item name="dialog_back_circle">@drawable/dialog_background_circle_night</item>
+        <item name="dialog_msg_label_color">@color/dialog_msg_label_color_night</item>
+        <item name="dialog_title_label_color">@color/dialog_title_label_color_night</item>
+        <item name="dig">@color/dig_night</item>
+        <item name="disagree_text">@color/color_disagree_night</item>
+        <item name="discover">@drawable/discover_pic_night</item>
+        <item name="dividingLine">@color/color_split_night</item>
+        <item name="download_rank">@drawable/download_rank_night_selector</item>
+        <item name="drawableArrowRightSetting">@drawable/ic_arrow_right_setting_night</item>
+        <item name="drawableCamera">@drawable/icon_camera_night</item>
+        <item name="drawableCheckButton">@drawable/common_checkbox_night</item>
+        <item name="drawableCheckbox">@drawable/sl_checkbox_night</item>
+        <item name="drawableClassArrowNext">@drawable/bg_class_arrow_night</item>
+        <item name="drawableClear">@drawable/btn_clear_selector_night</item>
+        <item name="drawableCommentCount">@drawable/ic_topic_comment_night</item>
+        <item name="drawableCommentCountNew">@drawable/ic_topic_comment_new_night</item>
+        <item name="drawableComplaintDown">@drawable/ic_topic_detail_lock_down_night</item>
+        <item name="drawableComplaintUp">@drawable/ic_topic_detail_lock_up_night</item>
+        <item name="drawableCompoundButtonSetting">@drawable/sl_checkbox_setting_night</item>
+        <item name="drawableDownButton">@drawable/bg_btn_download_night</item>
+        <item name="drawableDownButtonGreen">@drawable/sl_stroke_rect_green_night</item>
+        <item name="drawableDownButtonGrey">@drawable/sl_stroke_rect_grey_night</item>
+        <item name="drawableDownButtonGreyFull">@drawable/sl_stroke_rect_grey_night</item>
+        <item name="drawableDownButtonRed">@drawable/sl_stroke_rect_red_night</item>
+        <item name="drawableDownProgressRun">@drawable/style_prog_green_night</item>
+        <item name="drawableDownProgressStop">@drawable/style_prog_yellow_night</item>
+        <item name="drawableFilter">@drawable/ic_filter_night</item>
+        <item name="drawableGreenArrow">@drawable/sl_green_arrow_night</item>
+        <item name="drawableHook">@drawable/sl_hook_night</item>
+        <item name="drawableHookDisable">@drawable/ic_hook_disable_night</item>
+        <item name="drawableHulu">@drawable/ic_space_hulu_night</item>
+        <item name="drawableHuluCorner">@drawable/bg_hulu_shadow_white_selector_night</item>
+        <item name="drawableHuluDaren">@drawable/ic_hulu_daren_night</item>
+        <item name="drawableHuluGreen">@drawable/ic_hulu_green_night</item>
+        <item name="drawableHuluRed">@drawable/ic_hulu_red_night</item>
+        <item name="drawableInputbox">@drawable/style_rect_layout_whitestroke_night</item>
+        <item name="drawableJifen">@drawable/ic_space_jifen_night</item>
+        <item name="drawableLoading">@drawable/ic_loading_default_night</item>
+        <item name="drawableLoadingFailed">@drawable/ic_loading_failed_night</item>
+        <item name="drawableLoadingImageDefault">@drawable/discover_pic_night</item>
+        <item name="drawableLoadingNetworkError">@drawable/ic_network_error_night</item>
+        <item name="drawableLoginButton">@drawable/sl_stroke_rect_blue_night</item>
+        <item name="drawableLoginQQ">@drawable/bg_qq_login_selector_night</item>
+        <item name="drawableModeratorAuth">@drawable/img_moderator_symbol_night</item>
+        <item name="drawableNewsComment">@drawable/ic_news_comment_night</item>
+        <item name="drawableNewsCommentSend">@drawable/btn_send_news_selector_night</item>
+        <item name="drawableNewsFavor">@drawable/ic_news_favor_night</item>
+        <item name="drawableNewsFavorChecked">@drawable/ic_news_favored_night</item>
+        <item name="drawableNoFriend">@drawable/img_nofriend_night</item>
+        <item name="drawablePhotoDel">@drawable/btn_photo_del_selector_night</item>
+        <item name="drawablePraiseCount">@drawable/ic_topic_praise_night</item>
+        <item name="drawableProfileArrowRight">@drawable/ic_right_arrow_night</item>
+        <item name="drawableProfileAvatarUnLogin">@drawable/ic_profile_avatar_night</item>
+        <item name="drawableProfileGenderFemale">@drawable/ic_profile_gender_female_night</item>
+        <item name="drawableProfileGenderMale">@drawable/ic_profile_gender_male_night</item>
+        <item name="drawableProfileHulu">@drawable/ic_profile_hulu_night</item>
+        <item name="drawableProfileTitle">@drawable/ic_profile_title_night</item>
+        <item name="drawableProfileTitleBack">@drawable/ic_nav_back_night</item>
+        <item name="drawableProfileTitleMsg">@drawable/ic_title_msg_night</item>
+        <item name="drawableRemindDefault">@drawable/ic_remind_default_night</item>
+        <item name="drawableResDownloading">@drawable/bg_res_downloading_gray_night</item>
+        <item name="drawableResTopicGreen">@drawable/bg_res_download_green_night</item>
+        <item name="drawableResTopicOpen">@drawable/bg_res_open_gray_night</item>
+        <item name="drawableResTopicOrange">@drawable/bg_res_open_orange_night</item>
+        <item name="drawableReturnTop">@drawable/ic_return_top_night</item>
+        <item name="drawableRightSidebar">@drawable/ic_right_sidebar_night</item>
+        <item name="drawableRoleVip">@drawable/ic_role_vip_night</item>
+        <item name="drawableSearchNoResult">@drawable/ic_search_no_result_night</item>
+        <item name="drawableSubscribe">@drawable/sl_subscribe_board_night</item>
+        <item name="drawableTagCover">@drawable/ic_tag_cover_night</item>
+        <item name="drawableTitleAddBoard">@drawable/btn_class_add_selector_night</item>
+        <item name="drawableTitleBack">@drawable/btn_nav_back_selector_night</item>
+        <item name="drawableTitleDownload">@drawable/ic_title_download_night</item>
+        <item name="drawableTitleFavor">@drawable/ic_main_favor_night</item>
+        <item name="drawableTitleFavorChecked">@drawable/ic_main_favored_night</item>
+        <item name="drawableTitleLogo">@drawable/header_icon_night</item>
+        <item name="drawableTitleMsg">@drawable/btn_main_msg_selector_night</item>
+        <item name="drawableTitleOnlyFloor">@drawable/ic_floor_night</item>
+        <item name="drawableTitleOnlyFloorChecked">@drawable/ic_floored_night</item>
+        <item name="drawableTitlePost">@drawable/btn_post_selector_night</item>
+        <item name="drawableTitleSearch">@drawable/ic_title_search_night</item>
+        <item name="drawableTitleShare">@drawable/btn_share_selector_night</item>
+        <item name="drawableToastError">@drawable/g_icon_error_night</item>
+        <item name="drawableTopicAltUser">@drawable/ic_alt_userlist_night</item>
+        <item name="drawableTopicCamera">@drawable/topic_camera_night_icon_selector</item>
+        <item name="drawableTopicDigest">@drawable/ic_topic_digest_night</item>
+        <item name="drawableTopicEmotion">@drawable/topic_emotion_night_icon_selector</item>
+        <item name="drawableTopicFollow">@drawable/ic_topic_follow_night</item>
+        <item name="drawableTopicHot">@drawable/ic_topic_hot_night</item>
+        <item name="drawableTopicHuluMore">@drawable/ic_hulu_more_night</item>
+        <item name="drawableTopicHuluTotal">@drawable/ic_hulu_total_night</item>
+        <item name="drawableTopicNew">@drawable/ic_topic_new_night</item>
+        <item name="drawableTopicRemind">@drawable/topic_remind_night_icon_selector</item>
+        <item name="drawableTopicSendhulu">@drawable/btn_sendhulu_radio_selector_night</item>
+        <item name="drawableTopicSendhuluSelected">@drawable/sendhulu_radio_green_night</item>
+        <item name="drawableTopicSpinner">@drawable/sl_topic_order_spinner_night</item>
+        <item name="drawableTopicTu">@drawable/ic_topic_tu_night</item>
+        <item name="drawableTopicVd">@drawable/ic_topic_video_night</item>
+        <item name="drawableTopicVideo">@drawable/topic_video_night_icon_selector</item>
+        <item name="drawableTopicVideoLoading">@drawable/bg_topic_video_loading_night</item>
+        <item name="drawableTopicVideoPlay">@drawable/btn_topic_video_play_center_selector_night</item>
+        <item name="drawableTopicVideoPraise">@drawable/ic_topic_video_praise_night</item>
+        <item name="drawableTopicVideoPraised">@drawable/ic_topic_video_praised_night</item>
+        <item name="drawableTopicVideoReplay">@drawable/btn_topic_video_replay_selector_night</item>
+        <item name="drawableUnderline">@drawable/btn_underline_selector_night</item>
+        <item name="drawableViewCount">@drawable/ic_topic_read_night</item>
+        <item name="drawableViewCountNew">@drawable/ic_topic_read_new_night</item>
+        <item name="drawable_page_button_focus_num">@drawable/drawable_page_turn_button_focus_num_night</item>
+        <item name="drawable_pageturn_btn_edge">@drawable/style_button_green_edge_night</item>
+        <item name="exchanting">@color/exchanting_night</item>
+        <item name="gallery_dot">@drawable/gallery_night_selector</item>
+        <item name="game">@color/game_night</item>
+        <item name="home_bg_studio">@drawable/home_bg_studio_night_selector</item>
+        <item name="home_ic_studio">@drawable/ic_home_studio_night_selector</item>
+        <item name="ic_announce_delete">@drawable/ic_announce_delete_night_selector</item>
+        <item name="ic_atten_no_resourc">@drawable/my_atten_no_resource_night</item>
+        <item name="ic_default_loc_res">@drawable/ic_default_loc_res_night</item>
+        <item name="ic_more_resource_arrow">@drawable/ic_more_resource_arrow_night</item>
+        <item name="ic_past_rank_april">@drawable/ic_past_rank_april_night</item>
+        <item name="ic_past_rank_august">@drawable/ic_past_rank_august_night</item>
+        <item name="ic_past_rank_december">@drawable/ic_past_rank_december_night</item>
+        <item name="ic_past_rank_february">@drawable/ic_past_rank_february_night</item>
+        <item name="ic_past_rank_january">@drawable/ic_past_rank_january_night</item>
+        <item name="ic_past_rank_july">@drawable/ic_past_rank_july_night</item>
+        <item name="ic_past_rank_june">@drawable/ic_past_rank_june_night</item>
+        <item name="ic_past_rank_march">@drawable/ic_past_rank_march_night</item>
+        <item name="ic_past_rank_may">@drawable/ic_past_rank_may_night</item>
+        <item name="ic_past_rank_november">@drawable/ic_past_rank_november_night</item>
+        <item name="ic_past_rank_october">@drawable/ic_past_rank_october_night</item>
+        <item name="ic_past_rank_september">@drawable/ic_past_rank_september_night</item>
+        <item name="ic_picture_plus">@drawable/studio_edit_picture_plus_night</item>
+        <item name="ic_studio_announce">@drawable/ic_studio_announce_night_selector</item>
+        <item name="ic_studio_announce_more">@drawable/ic_studio_announce_more_night</item>
+        <item name="ico_local_resmgr_map_item_chose">@drawable/ico_local_resmgr_map_item_chose_night</item>
+        <item name="ico_local_resmgr_map_item_unchose">@drawable/ico_local_resmgr_map_item_unchose_night</item>
+        <item name="instance">@color/instance_night</item>
+        <item name="itemBg">@drawable/bg_item_night</item>
+        <item name="item_studio_announce_bg">@drawable/bg_item_studio_announce_night</item>
+        <item name="js">@color/js_night</item>
+        <item name="kick_out_text">@color/dialog_title_label_color_night</item>
+        <item name="kill">@color/kill_night</item>
+        <item name="listSelector">@drawable/sl_list_item_night</item>
+        <item name="listSelectorButtonLeft">@drawable/sl_list_item_left_night</item>
+        <item name="listSelectorButtonRight">@drawable/sl_list_item_right_night</item>
+        <item name="listSelectorProfile">@drawable/sl_list_item_profile_night</item>
+        <item name="listSelectorProfileTranslucent">@drawable/sl_list_item_profile_translucent_night</item>
+        <item name="listSelectorSecond">@drawable/sl_list_item_night_second</item>
+        <item name="listview_item">@drawable/listview_item_night</item>
+        <item name="locmgr_menu_res_all_color">@color/locmgr_menu_res_all_color_night</item>
+        <item name="locmgr_menu_res_red_color">@color/locmgr_menu_res_red_color_night</item>
+        <item name="login">@color/login_night</item>
+        <item name="map">@color/map_night</item>
+        <item name="month_review_rank">@drawable/month_review_rank_night_selector</item>
+        <item name="pageturn_head_color">@color/pageturn_head_night_color</item>
+        <item name="pageturn_split_line_color">@color/color_page_button_focus_num_night</item>
+        <item name="progress_loading_mode">@drawable/community_restopic_progress_horizontal_night</item>
+        <item name="progress_loading_text_color">@color/sys_divider_line</item>
+        <item name="progress_shape">@drawable/progress_shape_night</item>
+        <item name="progress_vote">@drawable/vote_progress_night</item>
+        <item name="refresh">@drawable/refresh_selector_night</item>
+        <item name="remove_bg">@drawable/remove_selector_night</item>
+        <item name="settingBtn">@drawable/btn_setting_night</item>
+        <item name="settingMsgBg">@color/color_split_dim_night</item>
+        <item name="settingMsgtext">@color/color_secondary_green_night</item>
+        <item name="settingText">@color/act_person_gray</item>
+        <item name="setting_net_check">@drawable/ic_setting_net_check_night</item>
+        <item name="share_to_qq_friend">@drawable/selector_share_qq_friend_night</item>
+        <item name="share_to_qq_space">@drawable/selector_share_qq_space_night</item>
+        <item name="share_to_wx_friend">@drawable/selector_share_wx_friend_night</item>
+        <item name="share_to_wx_space">@drawable/selector_share_wx_space_night</item>
+        <item name="skin">@color/skin_night</item>
+        <item name="space_ic_follow">@drawable/space_ic_follow_night</item>
+        <item name="space_ic_followed">@drawable/space_ic_followed_night</item>
+        <item name="space_ic_mutual_follow">@drawable/space_ic_mutual_follow_night</item>
+        <item name="space_ic_no_attention">@drawable/space_ic_no_attention_night</item>
+        <item name="space_ic_no_fans">@drawable/space_ic_no_fans_night</item>
+        <item name="splitColor">@color/color_split_night</item>
+        <item name="splitColorDim">@color/color_split_dim_night</item>
+        <item name="splitColorDim2">@color/color_split_dim_night</item>
+        <item name="splitColorDim3">@color/color_split_dim_night</item>
+        <item name="splitColorDim4">@color/color_split_night</item>
+        <item name="splitColorProfileTranslucent">@color/split_profile_translucent_night</item>
+        <item name="splitZoneCategory">@color/color_split_night</item>
+        <item name="story">@color/story_night</item>
+        <item name="studio_announce_no_msg">@drawable/studio_announce_no_msg_night</item>
+        <item name="studio_background_split">@color/color_split_dim_night</item>
+        <item name="studio_bg">@drawable/studio_selector_night</item>
+        <item name="studio_drawable_left">@drawable/studio_night</item>
+        <item name="studio_edit_bg">@drawable/studio_bg_night</item>
+        <item name="studio_hot_icon">@drawable/ic_hot_night</item>
+        <item name="studio_hot_text_color">@color/studio_hot_text_color_night</item>
+        <item name="studio_introduce_hint">@color/studio_introduce_night</item>
+        <item name="studio_member_count_icon">@drawable/ic_member_count_night</item>
+        <item name="studio_past_rank_april">@color/studio_past_rank_april_night</item>
+        <item name="studio_past_rank_august">@color/studio_past_rank_august_night</item>
+        <item name="studio_past_rank_december">@color/studio_past_rank_december_night</item>
+        <item name="studio_past_rank_february">@color/studio_past_rank_february_night</item>
+        <item name="studio_past_rank_january">@color/studio_past_rank_january_night</item>
+        <item name="studio_past_rank_july">@color/studio_past_rank_july</item>
+        <item name="studio_past_rank_june">@color/studio_past_rank_june_night</item>
+        <item name="studio_past_rank_march">@color/studio_past_rank_march_night</item>
+        <item name="studio_past_rank_may">@color/studio_past_rank_may_night</item>
+        <item name="studio_past_rank_november">@color/studio_past_rank_november_night</item>
+        <item name="studio_past_rank_october">@color/studio_past_rank_october_night</item>
+        <item name="studio_past_rank_september">@color/studio_past_rank_september_night</item>
+        <item name="studio_rank_first_icon">@drawable/ic_studio_rank_first_night</item>
+        <item name="studio_rank_first_text_color">@color/studio_rank_first_text_color_night</item>
+        <item name="studio_rank_other_icon">@drawable/ic_studio_rank_other_night</item>
+        <item name="studio_rank_other_text_color">@color/studio_rank_other_text_color_night</item>
+        <item name="studio_rank_second_icon">@drawable/ic_studio_rank_second_night</item>
+        <item name="studio_rank_second_text_color">@color/studio_rank_second_text_color_night</item>
+        <item name="studio_rank_third_icon">@drawable/ic_studio_rank_third_night</item>
+        <item name="studio_rank_third_text_color">@color/studio_rank_third_text_color_night</item>
+        <item name="studio_recommend">@drawable/studio_recommend_night_selector</item>
+        <item name="studio_resource_type">@drawable/bg_studio_edit_cate_night</item>
+        <item name="studio_text">@color/dialog_title_label_color_night</item>
+        <item name="studio_write_announce">@drawable/studio_write_announce_night_selector</item>
+        <item name="sty_btn_localresmgr_backup">@drawable/sty_btn_localresmgr_backup_night</item>
+        <item name="sty_btn_localresmgr_del">@drawable/sty_btn_localresmgr_del_night</item>
+        <item name="sty_btn_localresmgr_import">@drawable/sty_btn_localresmgr_import_night</item>
+        <item name="sty_btn_localresmgr_sort">@drawable/sty_btn_localresmgr_sort_night</item>
+        <item name="textColorComplaint">@color/text_color_orange_night</item>
+        <item name="textColorCredit">@color/text_color_orange_night</item>
+        <item name="textColorDarenRanking">@color/text_color_daren_ranking_night</item>
+        <item name="textColorDeny">@color/text_red_night</item>
+        <item name="textColorGray">@color/color_primary_gray_night</item>
+        <item name="textColorGreen">@color/color_primary_green_night</item>
+        <item name="textColorGreen2">@color/color_primary_green_night2</item>
+        <item name="textColorGreen3">@color/color_green_night</item>
+        <item name="textColorGreenTopic">@color/color_secondary_green_night</item>
+        <item name="textColorGreenTopicClass">@color/color_secondary_green_night</item>
+        <item name="textColorGreenTopicLight">@color/color_secondary_green_light_night</item>
+        <item name="textColorJump">@color/text_yellow_night</item>
+        <item name="textColorLocMapItemName">#ff949494</item>
+        <item name="textColorLocMapItemSize">#ff6c6c6c</item>
+        <item name="textColorLocSortBtn">#ff4a9941</item>
+        <item name="textColorNewsCommentCount">@color/news_comment_count_night</item>
+        <item name="textColorNewsEditHint">@color/news_comment_hint_night</item>
+        <item name="textColorPass">@color/text_color_green_night</item>
+        <item name="textColorProfileFemale">@color/text_space_female_night</item>
+        <item name="textColorProfileFollow">@color/text_profile_follow_night</item>
+        <item name="textColorProfileHulu">@color/text_space_hulu_night</item>
+        <item name="textColorProfileMale">@color/text_space_male_night</item>
+        <item name="textColorProfileTitle">@color/text_space_title_night</item>
+        <item name="textColorQQLogin">@color/color_primary_blue_night</item>
+        <item name="textColorQuaternary">@color/text_color_quaternary_night</item>
+        <item name="textColorRed">@color/text_color_red_night</item>
+        <item name="textColorResDownloading">@color/res_text_unable_color_night</item>
+        <item name="textColorSpaceStyleDetail">@color/text_space_style_detail_night</item>
+        <item name="textColorTopicAltUser">@color/topic_alt_user_night</item>
+        <item name="textColorTopicButton">@color/text_color_green_night</item>
+        <item name="textColorTopicClass">@color/topic_class_title_night</item>
+        <item name="textColorTopicCredit">@color/text_color_tertiary_night</item>
+        <item name="textColorTopicCreditOrange">@color/text_color_credit_orange_night</item>
+        <item name="textColorTopicHotCount">@color/text_color_topic_orange_night</item>
+        <item name="textColorTopicHuluDetailRed">@color/text_color_hulu_red_light_night</item>
+        <item name="textColorTopicHuluRed">@color/text_color_hulu_red_night</item>
+        <item name="textColorTopicScore">@color/text_color_topic_score</item>
+        <item name="textColorTopicTag">@color/color_topic_tag_night</item>
+        <item name="textColorTopicVideoReplay">@color/topic_video_replay_night</item>
+        <item name="textColorViolet">@color/color_primary_violet_night</item>
+        <item name="textFirstPageBtn">@color/textFirstPageBtnNightColor</item>
+        <item name="textPageTurnBtn">@color/text_pageturn_btn_night_color</item>
+        <item name="text_studio_topic_detail">@color/text_studio_topic_detail_night</item>
+        <item name="text_title_topic_detail">@color/chat_title_list_bg</item>
+        <item name="valBrightness">-50</item>
+        <item name="voteBg">@drawable/bg_btn_vote_night</item>
+        <item name="vote_count">@color/vote_count_night</item>
+        <item name="vote_text">@drawable/vote_text_night</item>
+        <item name="wood">@color/wood_night</item>
+        <item name="zoneCategoryBg">@color/color_split_dim_night</item>
+        <item name="zoneSubcategoryHotColor">@color/text_color_tertiary_night</item>
+        <item name="zoneSubcategoryTitleColor">@color/topic_menu_filter_content</item>
+    </style>
+    <style name="HtAppTheme.Night.NoTitleBar" parent="@style/HtAppTheme.Night">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HtAppTheme.Night.NoTitleBar.Fullscreen" parent="@style/HtAppTheme.Night.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="HtAppTheme.NoTitleBar" parent="@style/HtAppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HtAppTheme.NoTitleBar.Fullscreen" parent="@style/HtAppTheme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ListViewContainGridView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">5.0dip</item>
+    </style>
+    <style name="ListViewFloatGridView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@drawable/float_split</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="MapFilterMenuButton" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_button_rect_blue</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="MapFilterRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/color_text_grey_green_checkable_day</item>
+        <item name="android:background">@drawable/bg_radio_rect_green_day</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="MapFilterRadioHeadButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/color_text_blue_green_checkable</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_radio_rect_green_day</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="MapVersionButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_text_blue_green_checkable</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_radio_rect_green_day</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="McAppTheme" parent="@style/HtAppTheme">
+        <item name="authorName">@color/home_navigation_tab_common</item>
+        <item name="back">@drawable/game_option_back_selector</item>
+        <item name="bgPopup">@drawable/bg_popup_day</item>
+        <item name="bg_enter_password">@color/recent_join</item>
+        <item name="bg_studio_applied">@drawable/bg_studio_applied</item>
+        <item name="bg_studio_apply_enter">@drawable/bg_studio_apply_enter</item>
+        <item name="bg_studio_apply_exit">@drawable/bg_studio_apply_exit</item>
+        <item name="buttonDelete">@drawable/btn_delete_selector_day</item>
+        <item name="buttonDownload">@drawable/btn_download_selector_day</item>
+        <item name="buttonDownloading">@drawable/btn_bg_downloading_normal_day</item>
+        <item name="buttonInstall">@drawable/btn_install_selector_day</item>
+        <item name="categoryBackground">@drawable/bg_radio_rect_green_day</item>
+        <item name="categoryText">@color/color_text_grey_green_checkable_day</item>
+        <item name="check">@drawable/check</item>
+        <item name="color_game_option_mode_text">@color/color_game_option_mode_text</item>
+        <item name="dialogText">@color/home_interval_bg_night</item>
+        <item name="discover">@drawable/discover_pic</item>
+        <item name="dividingLine">@color/home_split_line</item>
+        <item name="down">@drawable/down</item>
+        <item name="fans">@color/fans</item>
+        <item name="game_option_bg">@color/game_option_bg</item>
+        <item name="game_option_choice">@drawable/game_option_choice_btn_selector</item>
+        <item name="game_option_game_mode_tip">@color/game_option_game_mode_tip</item>
+        <item name="game_option_mode_bg">@drawable/game_option_mode_bg</item>
+        <item name="game_option_mode_rdo_center_bg">@drawable/game_option_mode_rdo_center_bg</item>
+        <item name="game_option_mode_rdo_left_bg">@drawable/game_option_mode_rdo_left_bg</item>
+        <item name="game_option_mode_rdo_right_bg">@drawable/game_option_mode_rdo_right_bg</item>
+        <item name="game_option_version_choice">@drawable/game_option_version_choice_selector</item>
+        <item name="game_option_version_choice_bg">@drawable/game_option_version_choice_bg_selector</item>
+        <item name="game_option_version_choice_text_color">@color/game_option_version_choice_text_color</item>
+        <item name="guideLine">@drawable/guide_line_day</item>
+        <item name="home_app_recommend">@drawable/home_app_recommend_selector</item>
+        <item name="home_app_recommend_bg">@drawable/home_app_recommend_bg_selector</item>
+        <item name="home_common_bg">@color/home_common_bg</item>
+        <item name="home_common_text_color">@color/home_common_text_color</item>
+        <item name="home_ic_game_option">@drawable/home_ic_game_option_selector</item>
+        <item name="home_ic_game_option_bg">@drawable/home_ic_game_option_bg_selector</item>
+        <item name="home_interval_bg">@color/home_interval_bg</item>
+        <item name="home_js">@drawable/home_js_selector</item>
+        <item name="home_js_bg">@drawable/home_js_bg_selector</item>
+        <item name="home_map">@drawable/home_map_selector</item>
+        <item name="home_map_bg">@drawable/home_map_bg_selector</item>
+        <item name="home_seed">@drawable/home_seed_selector</item>
+        <item name="home_seed_bg">@drawable/home_seed_bg_selector</item>
+        <item name="home_server">@drawable/home_server_selector</item>
+        <item name="home_server_bg">@drawable/home_server_bg_selector</item>
+        <item name="home_skin">@drawable/home_skin_selector</item>
+        <item name="home_skin_bg">@drawable/home_skin_bg_selector</item>
+        <item name="home_split_line_bg">@color/home_split_line_bg</item>
+        <item name="home_titlebar_bg">@color/home_titlebar_bg</item>
+        <item name="home_wood">@drawable/home_wood_selector</item>
+        <item name="home_wood_bg">@drawable/home_wood_bg_selector</item>
+        <item name="ic_more_option">@drawable/ico_more_option_selector</item>
+        <item name="ico_tab_community">@drawable/ico_tab_community_selector</item>
+        <item name="ico_tab_home">@drawable/ico_tab_home_selector</item>
+        <item name="ico_tab_news">@drawable/ico_tab_news_selector</item>
+        <item name="ico_tab_online">@drawable/ico_tab_online_selector</item>
+        <item name="ico_tab_space">@drawable/ico_tab_space_selector</item>
+        <item name="ico_tab_startgame">@drawable/sty_btn_startgame</item>
+        <item name="itemBackground">@drawable/bg_resource_item_day</item>
+        <item name="itemPopup">@color/white</item>
+        <item name="join">@color/text_start_color</item>
+        <item name="label">@color/white</item>
+        <item name="mapName">@color/home_main_txt</item>
+        <item name="my_studio_bg">@color/studio_bg_apply_exit</item>
+        <item name="normalStudio">@drawable/normal_studio</item>
+        <item name="offline">@color/offline</item>
+        <item name="progress">@color/item_resource_progress_day</item>
+        <item name="progressText">@color/home_navigation_tab_common</item>
+        <item name="recent_join">@color/recent_join</item>
+        <item name="room_number">@color/studio_bg_apply_enter</item>
+        <item name="seedGenerate">@drawable/btn_seed_generate_day_selector</item>
+        <item name="serverJoin">@drawable/btn_server_join_day_selector</item>
+        <item name="spectialStudio">@drawable/spectial_studio</item>
+        <item name="studioBg">@color/item_resource_studio_bg_day</item>
+        <item name="studioText">@color/item_resource_studio_text_day</item>
+        <item name="studio_apply_status">@color/studio_apply_status</item>
+        <item name="studio_me_in_member_list">@color/studio_me_in_member_list</item>
+        <item name="style_checkbox_switch">@drawable/style_checkbox_switch</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabText">@color/js_text_color</item>
+        <item name="tabTextSelect">@color/js_tab</item>
+        <item name="tab_bg">@color/tab_bg</item>
+        <item name="tab_text_color">@color/ico_tab_text_color_selector</item>
+        <item name="textDelete">@color/text_delete</item>
+        <item name="textDowning">@color/home_navigation_tab_common</item>
+        <item name="textDownloading">@color/home_navigation_tab_common</item>
+        <item name="textInstall">@color/text_install</item>
+        <item name="textPopup">@color/home_main_txt</item>
+        <item name="up">@drawable/up</item>
+        <item name="version">@color/white</item>
+        <item name="versionSelect">@drawable/bg_version_select</item>
+    </style>
+    <style name="McAppTheme.Night" parent="@style/HtAppTheme.Night">
+        <item name="authorName">@color/item_resource_tab_default_night</item>
+        <item name="back">@drawable/game_option_back_night_selector</item>
+        <item name="bgPopup">@drawable/bg_popup_night</item>
+        <item name="bg_enter_password">@color/enter_password</item>
+        <item name="bg_studio_applied">@drawable/bg_studio_applied_night</item>
+        <item name="bg_studio_apply_enter">@drawable/bg_studio_apply_enter_night</item>
+        <item name="bg_studio_apply_exit">@drawable/bg_studio_apply_exit_night</item>
+        <item name="buttonDelete">@drawable/btn_delete_selector_night</item>
+        <item name="buttonDownload">@drawable/btn_download_selector_night</item>
+        <item name="buttonDownloading">@drawable/btn_bg_downloading_normal_night</item>
+        <item name="buttonInstall">@drawable/btn_install_selector_night</item>
+        <item name="categoryBackground">@drawable/bg_radio_rect_green_night</item>
+        <item name="categoryText">@color/color_text_grey_green_checkable_night</item>
+        <item name="check">@drawable/check_night</item>
+        <item name="color_game_option_mode_text">@color/color_game_option_mode_text_night</item>
+        <item name="dialogText">@color/item_resource_version_night</item>
+        <item name="discover">@drawable/discover_pic_night</item>
+        <item name="dividingLine">@color/home_split_line_bg_night</item>
+        <item name="down">@drawable/down_night</item>
+        <item name="fans">@color/fans_night</item>
+        <item name="game_option_bg">@color/game_option_bg_night</item>
+        <item name="game_option_choice">@drawable/game_option_choice_btn_night_selector</item>
+        <item name="game_option_game_mode_tip">@color/game_option_game_mode_tip_night</item>
+        <item name="game_option_mode_bg">@drawable/game_option_mode_bg_night</item>
+        <item name="game_option_mode_rdo_center_bg">@drawable/game_option_mode_rdo_center_bg_night</item>
+        <item name="game_option_mode_rdo_left_bg">@drawable/game_option_mode_rdo_left_bg_night</item>
+        <item name="game_option_mode_rdo_right_bg">@drawable/game_option_mode_rdo_right_bg_night</item>
+        <item name="game_option_version_choice">@drawable/game_option_version_choice_night_selector</item>
+        <item name="game_option_version_choice_bg">@drawable/game_option_version_choice_bg_night_selector</item>
+        <item name="game_option_version_choice_text_color">@color/game_option_version_choice_text_color_night</item>
+        <item name="guideLine">@drawable/guide_line_night</item>
+        <item name="home_app_recommend">@drawable/home_app_recommend_night_selector</item>
+        <item name="home_app_recommend_bg">@drawable/home_app_recommend_bg_night_selector</item>
+        <item name="home_common_bg">@color/home_common_bg_night</item>
+        <item name="home_common_text_color">@color/home_common_text_color_night</item>
+        <item name="home_ic_game_option">@drawable/home_ic_game_option_night_selector</item>
+        <item name="home_ic_game_option_bg">@drawable/home_ic_game_option_bg_night_selector</item>
+        <item name="home_interval_bg">@color/home_interval_bg_night</item>
+        <item name="home_js">@drawable/home_js_night_selector</item>
+        <item name="home_js_bg">@drawable/home_js_bg_night_selector</item>
+        <item name="home_map">@drawable/home_map_night_selector</item>
+        <item name="home_map_bg">@drawable/home_map_bg_night_selector</item>
+        <item name="home_seed">@drawable/home_seed_night_selector</item>
+        <item name="home_seed_bg">@drawable/home_seed_bg_night_selector</item>
+        <item name="home_server">@drawable/home_server_night_selector</item>
+        <item name="home_server_bg">@drawable/home_server_bg_night_selector</item>
+        <item name="home_skin">@drawable/home_skin_night_selector</item>
+        <item name="home_skin_bg">@drawable/home_skin_bg_night_selector</item>
+        <item name="home_split_line_bg">@color/home_split_line_bg_night</item>
+        <item name="home_titlebar_bg">@color/home_titlebar_bg_night</item>
+        <item name="home_wood">@drawable/home_wood_night_selector</item>
+        <item name="home_wood_bg">@drawable/home_wood_bg_night_selector</item>
+        <item name="ic_more_option">@drawable/ico_more_option_night_selector</item>
+        <item name="ico_tab_community">@drawable/ico_tab_community_night_selector</item>
+        <item name="ico_tab_home">@drawable/ico_tab_home_night_selector</item>
+        <item name="ico_tab_news">@drawable/ico_tab_news_night_selector</item>
+        <item name="ico_tab_online">@drawable/ico_tab_online_night_selector</item>
+        <item name="ico_tab_space">@drawable/ico_tab_space_night_selector</item>
+        <item name="ico_tab_startgame">@drawable/sty_btn_startgame_night</item>
+        <item name="itemBackground">@drawable/bg_resource_item_night</item>
+        <item name="itemPopup">@color/bg_item_popup</item>
+        <item name="join">@color/home_titlebar_bg_night</item>
+        <item name="label">@color/game_option_version_choice_bg_night</item>
+        <item name="mapName">@color/home_common_text_color_night</item>
+        <item name="my_studio_bg">@color/studio_bg_apply_exit_night</item>
+        <item name="normalStudio">@drawable/normal_studio_night</item>
+        <item name="offline">@color/offline_night</item>
+        <item name="progress">@color/item_resource_progress_night</item>
+        <item name="progressText">@color/home_navigation_tab_common_night</item>
+        <item name="recent_join">@color/recent_join_night</item>
+        <item name="room_number">@color/studio_bg_apply_enter_night</item>
+        <item name="seedGenerate">@drawable/btn_seed_generate_night_selector</item>
+        <item name="serverJoin">@drawable/btn_server_join_night_selector</item>
+        <item name="spectialStudio">@drawable/spectial_studio_night</item>
+        <item name="studioBg">@color/item_resource_studio_bg_night</item>
+        <item name="studioText">@color/item_resourc_studio_text_night</item>
+        <item name="studio_apply_status">@color/studio_apply_status_night</item>
+        <item name="studio_me_in_member_list">@color/studio_me_in_member_list_night</item>
+        <item name="style_checkbox_switch">@drawable/style_checkbox_switch_night</item>
+        <item name="tabBackground">@color/home_common_bg_night</item>
+        <item name="tabText">@color/home_common_text_color_night</item>
+        <item name="tabTextSelect">@color/home_titlebar_bg_night</item>
+        <item name="tab_bg">@color/tab_bg_night</item>
+        <item name="tab_text_color">@color/ico_tab_text_color_night_selector</item>
+        <item name="textDelete">@color/text_delete_night</item>
+        <item name="textDowning">@color/text_title</item>
+        <item name="textDownloading">@color/text_title</item>
+        <item name="textInstall">@color/text_install_night</item>
+        <item name="textPopup">@color/item_resource_version_night</item>
+        <item name="up">@drawable/up_night</item>
+        <item name="version">@color/item_resource_version_night</item>
+        <item name="versionSelect">@drawable/bg_version_select_night</item>
+    </style>
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="ServerFilterRadioHeadButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/color_text_red_green_checkable</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_radio_rect_green_day</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="ShadowedText">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="Style_Scrollable">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    <style name="Style_SubmitButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+    <style name="TipCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:button">@drawable/common_checkbox</item>
+    </style>
+    <style name="TopBarButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_nav_tran</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="TopBarButtonBack" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?backgroundTitleBarButton</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:drawableLeft">?back</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="TopBarButtonMore">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_nav_tran</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/bg_more_selector</item>
+        <item name="android:minWidth">58.0dip</item>
+    </style>
+    <style name="TopBarImageButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_nav_tran</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">20.0dip</item>
+    </style>
+    <style name="TopBarImageButtonBack">
+        <item name="android:textColor">@color/color_white_green2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_nav_tran</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/btn_nav_back_selector</item>
+        <item name="android:minWidth">30.0dip</item>
+    </style>
+    <style name="TopBarImageButtonBackEx">
+        <item name="android:textColor">@color/color_white_green2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_nav_tran_1</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btn_nav_back_selector_1</item>
+        <item name="android:minWidth">30.0dip</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.MenuDrawer" parent="@style/Widget">
+        <item name="mdContentBackground">@color/transparent</item>
+        <item name="mdMenuBackground">@color/transparent</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
+    <style name="ampm_label">
+        <item name="android:textSize">@dimen/ampm_label_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ampm_text_color</item>
+    </style>
+    <style name="appRestartGameTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="customButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+    <style name="customCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/common_checkbox</item>
+    </style>
+    <style name="customEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+    </style>
+    <style name="customListView" parent="@android:style/Widget.ListView">
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@color/devideline</item>
+        <item name="android:dividerHeight">0.5dip</item>
+    </style>
+    <style name="customTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="day_of_week_label_condensed" />
+    <style name="dialog_fullscreen">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialoga_pop_animation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_push_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_push_down</item>
+    </style>
+    <style name="game_option_radio_btn" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?color_game_option_mode_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="head_view_topic_detail_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/common_text_size_14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="hwpush_NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="load_progress_style">
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">?progress_loading_mode</item>
+        <item name="android:minHeight">20.0dip</item>
+    </style>
+    <style name="popupAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim</item>
+    </style>
+    <style name="popup_dialog_cancel_button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/text_color_popup_dialog_cancel</item>
+        <item name="android:background">@drawable/btn_popup_dialog_cancel</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="popup_dialog_normal_button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/text_color_normal</item>
+        <item name="android:background">@drawable/btn_normal</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+    </style>
+    <style name="popup_dialog_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+    </style>
+    <style name="progress_style" parent="@android:style/Widget.ProgressBar.Inverse">
+        <item name="android:indeterminateDrawable">@drawable/spinner</item>
+    </style>
+    <style name="sizeRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?clothes_size_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?bg_size</item>
+        <item name="android:button">@null</item>
+        <item name="android:height">28.0dip</item>
+        <item name="android:width">43.0dip</item>
+    </style>
+    <style name="sys_header_font">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color_white_green2</item>
+    </style>
+    <style name="theme_dialog_normal" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="time_label">
+        <item name="android:textSize">@dimen/time_label_size</item>
+        <item name="android:textColor">@color/numbers_text_color</item>
+    </style>
+    <style name="topic_detail_pageturn_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_topic_detail_pageturn_enter</item>
+    </style>
+    <style name="value_button_alpha_green" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color_button_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_alpha_blue</item>
+    </style>
+    <style name="value_button_alpha_white" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color_button_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_alpha_blue</item>
+    </style>
+    <style name="value_button_blue_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/style_button_blue_all_5p</item>
+    </style>
+    <style name="value_button_brown_all" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/style_button_brown_all_5p</item>
+    </style>
+    <style name="value_button_float_common" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_float_button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_button_common</item>
+    </style>
+    <style name="value_button_float_common_style01" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_float_button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_button_common_style01</item>
+    </style>
+    <style name="value_button_float_green" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_float_button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_button_green</item>
+    </style>
+    <style name="value_button_float_green_text_white" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_float_button_text_white_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_button_green</item>
+    </style>
+    <style name="value_button_float_radio" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/color_float_radio_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_radio_menubg</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_button_float_radio_ex" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/color_float_radio_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_radio_menubg_ex</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_button_float_radio_exex" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/color_float_radio_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_radio_menubg_ex</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_button_gray_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_gray_all</item>
+    </style>
+    <style name="value_button_gray_green" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_green3_white</item>
+        <item name="android:background">@drawable/style_button_gray2_all_4p</item>
+    </style>
+    <style name="value_button_gray_green3" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/style_button_gray3_all_4p</item>
+    </style>
+    <style name="value_button_gray_rect" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_button_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_gray_rect_5p</item>
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="value_button_green_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/style_button_green_all_4p</item>
+    </style>
+    <style name="value_button_green_rect" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_button_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_green_rect_5p</item>
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="value_button_image" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="value_button_keybroad" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/color_text_keybroad</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_alpha_blue</item>
+    </style>
+    <style name="value_button_launch_green" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_ex_selector_rounded_box_green</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="value_button_launch_white" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/GreenText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_download_selector_day</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="value_button_lightgreen_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff009999</item>
+        <item name="android:background">@drawable/style_button_lightgreen_all_15p</item>
+    </style>
+    <style name="value_button_mapconfig_common" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_mapconfig_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_button_mcgreen_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/style_button_mcgreen_all_5p</item>
+    </style>
+    <style name="value_button_menukey" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/color_text_22_p</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/style_button_alpha_green</item>
+        <item name="android:paddingLeft">20.0dip</item>
+    </style>
+    <style name="value_button_normal1" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="value_button_underlline" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?colorRadioBtn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?drawableUnderline</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_button_white_all" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/style_button_white_all_5p</item>
+    </style>
+    <style name="value_checkbox_normal" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/color_text_22_p</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/style_checkbox_normal</item>
+    </style>
+    <style name="value_checkbox_switch" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">?style_checkbox_switch</item>
+    </style>
+    <style name="value_checkbox_switch2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/style_checkbox_switch2</item>
+    </style>
+    <style name="value_checkbox_switch3" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/style_checkbox_switch_off</item>
+    </style>
+    <style name="value_checkbox_switch4" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/style_checkbox_switch4</item>
+    </style>
+    <style name="value_checkbox_switch_left" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/style_checkbox_normal</item>
+    </style>
+    <style name="value_checkbox_switch_mapconfig" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:background">@drawable/bgd_rounded_box_white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/style_checkbox_switch</item>
+    </style>
+    <style name="value_edit_normal" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="value_edit_normal_float" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/style_edit_normal_float</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="value_edit_readonly" parent="@android:style/Widget.EditText">
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/style_edit_readonly</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <style name="value_exlistview_base" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:groupIndicator">@null</item>
+    </style>
+    <style name="value_gridview_base" parent="@android:style/Widget.GridView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+    <style name="value_listview_base" parent="@android:style/Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+    <style name="value_radio_btn_home_page_game_mode" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/color_text_grey_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="value_radio_btn_storym" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color_text_white_transparentwhite_enable</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/story_mode_radio_rtn</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="value_seekbar_base" parent="@android:style/Widget.SeekBar">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:progressDrawable">@drawable/style_seekbar_float</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/btn_thumb_bar</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="value_seekbar_base_float" parent="@android:style/Widget.SeekBar">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:progressDrawable">@drawable/style_seekbar_float_ex</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/btn_thumb_bar</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="value_textivew_normal" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/color_text_22_p</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="value_textivew_singleline" parent="@android:style/Widget.TextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="value_textview_float" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="value_textview_float_green" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/float_white_trans</item>
+        <item name="android:background">@color/background_transparent_press</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="versionSelectBt" parent="@android:style/Widget.Button">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_download_selector_day</item>
+        <item name="android:layout_width">51.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="versionSelectText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?mapName</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="versionSelectTv" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?mapName</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="vlaue_textview_gray" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ffbcbcbc</item>
+    </style>
+    <style name="vote_button" parent="@android:style/Widget.Button">
+        <item name="android:textColor">?vote_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?voteBg</item>
+    </style>
+</resources>

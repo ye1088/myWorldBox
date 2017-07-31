@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/bg_news_comment_edit_focus_night" />
+    <item android:state_focused="false" android:drawable="@drawable/bg_news_comment_edit_normal_night" />
+</selector>

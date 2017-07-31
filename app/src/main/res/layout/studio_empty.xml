@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?apply" android:layout_centerInParent="true" />
+    <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="还没有人申请加入" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/framework_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_header" android:visibility="invisible" layout="@layout/search_bar" />
+    <include android:id="@id/header" android:visibility="visible" layout="@layout/include_header" />
+    <View android:id="@id/split_top" android:background="?splitColorDim" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/header" />
+    <FrameLayout android:id="@id/childPage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_top" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_loading" />
+</RelativeLayout>

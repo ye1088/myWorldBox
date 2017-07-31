@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/float_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="250.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rlfloatNetPlayerCntLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/floatTextNetPlayerCnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="房间成员(0/5)" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tvfloatNetPlayerCntLayoutLine" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:id="@id/floatTextNetPlayer01" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="玩家名字" android:layout_weight="1.0" />
+                <TextView android:id="@id/floatBtnTrace01" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="追踪" style="@style/value_button_float_common_style01" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/floatLayoutLineNetPlayer02" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/floatRelativeLayoutNetPlayer02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:id="@id/floatTextNetPlayer02" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="玩家名字" android:layout_weight="1.0" />
+                <TextView android:id="@id/floatBtnSummon02" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="召唤" style="@style/value_button_float_common_style01" />
+                <TextView android:id="@id/floatBtnTrace02" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="追踪" style="@style/value_button_float_common_style01" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/floatLayoutLineNetPlayer03" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/floatRelativeLayoutNetPlayer03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:id="@id/floatTextNetPlayer03" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="玩家名字" android:layout_weight="1.0" />
+                <TextView android:id="@id/floatBtnTrace03" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="追踪" style="@style/value_button_float_common_style01" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/floatLayoutLineNetPlayer04" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/floatRelativeLayoutNetPlayer04" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:id="@id/floatTextNetPlayer04" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="玩家名字" android:layout_weight="1.0" />
+                <TextView android:id="@id/floatBtnTrace04" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="追踪" style="@style/value_button_float_common_style01" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/floatLayoutLineNetPlayer05" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/floatRelativeLayoutNetPlayer05" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:id="@id/floatTextNetPlayer05" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="玩家名字" android:layout_weight="1.0" />
+                <TextView android:id="@id/floatBtnTrace05" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="追踪" style="@style/value_button_float_common_style01" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

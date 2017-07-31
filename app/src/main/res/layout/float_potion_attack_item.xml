@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvFloatAttackItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="攻击药水名字" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvFloatAttackItemLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="攻击药水等级" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

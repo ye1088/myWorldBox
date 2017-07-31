@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="?backgroundDefault" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_my_credit" android:background="?backgroundDim" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?textColorGreen" android:id="@id/my_hulu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="我的葫芦:" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?textColorGreen" android:gravity="center_vertical" android:id="@id/tv_hulu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="0" android:includeFontPadding="false" android:drawableRight="?drawableHulu" android:drawablePadding="6.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?textColorCredit" android:id="@id/my_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="我的贡献:" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?textColorCredit" android:gravity="center_vertical" android:id="@id/tv_integral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="0" android:includeFontPadding="false" android:drawableRight="?drawableJifen" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/homeTabs" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/ll_my_credit" />
+    <android.support.v4.view.ViewPager android:id="@id/vpListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/homeTabs" />
+</RelativeLayout>

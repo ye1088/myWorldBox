@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container_img" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="2.0dip" android:foreground="@drawable/sl_foreground_image_default">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <com.huluxia.widget.HtImageView android:id="@id/selected_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_space_style_selected" android:layout_alignParentRight="true" />
+    <com.huluxia.widget.HtImageView android:id="@id/bg_use_condition" android:background="@drawable/bg_space_style_integral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/container_img" android:layout_alignBottom="@id/container_img" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/text_space_style_exchanged" android:gravity="center|right" android:id="@id/use_condition" android:paddingRight="6.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费" android:layout_alignRight="@id/container_img" android:layout_alignBottom="@id/container_img" />
+    <TextView android:textColor="?android:textColorSecondary" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" android:text="模版名称" android:maxLines="1" android:layout_below="@id/container_img" android:layout_alignLeft="@id/container_img" />
+    <TextView android:textColor="?android:textColorTertiary" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="11M" android:maxLines="1" android:layout_toRightOf="@id/name" android:layout_alignTop="@id/name" />
+</RelativeLayout>

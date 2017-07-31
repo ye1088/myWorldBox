@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/locmgr_bg_press_color_day" />
+    <item android:drawable="@color/locmgr_bg_unpress_color_day" />
+</selector>

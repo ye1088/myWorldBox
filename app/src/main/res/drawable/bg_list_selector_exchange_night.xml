@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background_normal_press_night" />
+            <stroke android:width="0.30000007px" android:color="@color/color_split_night" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <stroke android:width="0.30000007px" android:color="@color/color_split_night" />
+        </shape>
+    </item>
+</selector>

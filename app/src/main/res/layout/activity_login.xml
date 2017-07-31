@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/login_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@id/uin_edit_text"
+            style="@style/EditNoBorder2"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/line_input_bg"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@id/blackberry_edit_text"
+            style="@style/EditNoBorder2"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/line_input_bg"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:hint="@string/passwd"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@id/tv_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="?backgroundButtonLogin"
+            android:gravity="center"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip"
+            android:text="登 录"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:textSize="18.0sp" />
+
+        <RelativeLayout
+            android:id="@id/rly_login2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/bg_long_download_selector"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/tv_login2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="用第三方账号登录"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="20.0dip">
+
+            <TextView
+                android:id="@id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:text="注册新账号"
+                android:textColor="?textColorGreen3"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:text="忘记密码"
+                android:textColor="?textColorGreen3"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="10.0dip">
+
+        <TextView
+            android:id="@id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:text="第三方账号快速登录"
+            android:textColor="?android:textColorTertiary"
+            android:textSize="16.0sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_tip"
+            android:background="?android:textColorTertiary" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_tip"
+            android:background="?android:textColorTertiary" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/btn_qqlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30.0dip"
+        android:drawableLeft="?drawableLoginQQ"
+        android:drawablePadding="8.0dip"
+        android:gravity="center"
+        android:paddingTop="8.0dip"
+        android:singleLine="true"
+        android:text="使用QQ登录"
+        android:textColor="?textColorQQLogin"
+        android:textSize="15.0sp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ly_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_tip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:textSize="20.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_path" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+    </LinearLayout>
+    <ListView android:id="@id/listViewData" android:layout_above="@id/btn_export" android:layout_below="@id/ly_top" style="@style/ListViewContainGridView" />
+    <Button android:textSize="20.0sp" android:id="@id/btn_export" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="10.0dip" android:text="导出" android:singleLine="true" android:drawablePadding="8.0dip" android:layout_alignParentBottom="true" style="@style/value_button_green_all" />
+</RelativeLayout>

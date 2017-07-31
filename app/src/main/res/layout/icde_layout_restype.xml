@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rdogrpPublishResType" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+        <RadioButton android:gravity="center" android:id="@id/rtnPublishResMap" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip" android:checked="true" android:button="@null" android:text="@string/map" android:layout_weight="1.0" style="@style/value_button_underlline" />
+        <RadioButton android:gravity="center" android:id="@id/rtnPublishResJs" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip" android:button="@null" android:text="@string/js" android:layout_weight="1.0" style="@style/value_button_underlline" />
+        <RadioButton android:gravity="center" android:id="@id/rtnPublishResWood" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip" android:button="@null" android:text="@string/wood" android:layout_weight="1.0" style="@style/value_button_underlline" />
+        <RadioButton android:gravity="center" android:id="@id/rtnPublishResSkin" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="@string/skin" android:layout_weight="1.0" style="@style/value_button_underlline" />
+    </RadioGroup>
+    <View android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="5.0dip" />
+</LinearLayout>

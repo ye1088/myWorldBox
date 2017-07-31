@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.framework.base.widget.title.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <View android:id="@id/split_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/title_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huluxia.framework.base.widget.cropimage.CropImageView android:id="@id/crop_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

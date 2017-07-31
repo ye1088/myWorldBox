@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/topic_other" android:background="?listSelector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_topic_user" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="18.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:id="@id/delcontent" android:background="?backgroundTopicReply" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="此评论已经删除" />
+        <com.huluxia.widget.textview.HyperlinkTextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:id="@id/retcontent" android:background="?backgroundTopicReply" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="中华人民共和国,中华人民共和国,中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国" android:lineSpacingExtra="2.0dip" />
+        <RelativeLayout android:id="@id/content_rly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huluxia.widget.textview.HyperlinkTextView android:textSize="17.0sp" android:textColor="?android:textColorSecondary" android:id="@id/content_short" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="短文章" android:maxLines="6" android:lineSpacingExtra="2.0dip" />
+            <com.huluxia.widget.textview.HyperlinkTextView android:textSize="17.0sp" android:textColor="?android:textColorSecondary" android:id="@id/content_long" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="长文章" android:lineSpacingExtra="2.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="17.0sp" android:textColor="?textColorGreen" android:gravity="left" android:id="@id/more" android:background="?listSelector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/content_spread" android:singleLine="true" />
+        <com.huluxia.widget.photowall.PhotoWall android:id="@id/photoWall" android:layout_width="@dimen/topic_image_wall_size" android:layout_height="wrap_content" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+        <include layout="@layout/include_credit_new" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_score" android:background="@drawable/ic_topic_score" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/app_name" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <View android:id="@id/split_item" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

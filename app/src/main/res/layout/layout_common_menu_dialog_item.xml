@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlyComPopDlgItem" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/common_text_size_18sp" android:textColor="@color/common_menu_dialog_unfocus_btn_color" android:gravity="center" android:id="@id/tvComPopDlgItemItemName" android:paddingTop="@dimen/common_menu_dialog_padding_top" android:paddingBottom="@dimen/common_menu_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="排序" android:singleLine="true" android:layout_centerInParent="true" />
+</RelativeLayout>

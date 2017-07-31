@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?backgroundDialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ly_version" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="22.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/tv_title" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="版本更新" android:singleLine="true" />
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorSecondary" android:id="@id/tv_msg" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在检测版本信息..." />
+        <View android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.8000001dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ly_container" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_child_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_nexttime" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="下次再说" android:singleLine="true" android:layout_weight="4.0" />
+                <View android:gravity="center" android:id="@id/split_cancle" android:background="?splitColor" android:layout_width="0.8000001dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_browser" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="浏览器下载" android:singleLine="true" android:layout_weight="5.0" />
+                <View android:gravity="center" android:id="@id/split_other" android:background="?splitColor" android:layout_width="0.8000001dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_update" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="马上更新" android:singleLine="true" android:layout_weight="4.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_child_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_retry" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下载完整安装包" android:singleLine="true" android:layout_weight="4.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_child_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_reload" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="重新下载" android:singleLine="true" android:layout_weight="4.0" />
+                <View android:gravity="center" android:background="?splitColor" android:layout_width="0.8000001dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_continue" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="继续下载" android:singleLine="true" android:layout_weight="4.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_child_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_cancel" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="后台运行" android:singleLine="true" android:layout_weight="4.0" />
+                <View android:gravity="center" android:background="?splitColor" android:layout_width="0.8000001dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:textColor="?textColorGreen" android:gravity="center" android:id="@id/tv_pause" android:background="?listSelector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="暂停" android:singleLine="true" android:layout_weight="4.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

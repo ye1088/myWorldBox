@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_container" android:background="?listSelector" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/img1" android:layout_width="0.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <com.huluxia.framework.base.image.PaintView android:id="@id/img2" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+            <com.huluxia.framework.base.image.PaintView android:id="@id/img3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <TextView android:textSize="12.0sp" android:textColor="?android:textColorPrimaryInverse" android:layout_gravity="bottom|center|right" android:id="@id/img_counts" android:background="#88000000" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0图" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="?android:textColorTertiary" android:id="@id/timing" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0分钟前" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:textColor="?android:textColorTertiary" android:id="@id/comment_counts" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0评论" android:layout_toLeftOf="@id/timing" />
+    </RelativeLayout>
+    <View android:id="@id/split_item" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginTop="6.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="card_flip_duration_full">320</integer>
+    <integer name="card_flip_duration_half">160</integer>
+    <integer name="default_actionscontentview_fade_max_value">100</integer>
+    <integer name="default_actionscontentview_fling_duration">500</integer>
+    <integer name="max_num_patches">3</integer>
+    <integer name="max_num_scripts">2</integer>
+</resources>

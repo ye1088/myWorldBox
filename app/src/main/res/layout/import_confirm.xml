@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mctool_bg" android:paddingTop="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/app_name" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/manage_patches_info" android:singleLine="true" android:shadowRadius="2.0" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/install_confirm_question" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_patches_import_confirm" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancel_button" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/cancle" android:layout_weight="1.0" style="@style/value_button_mcgreen_all" />
+        <Button android:id="@id/ok_button" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/manage_patches_import" android:layout_weight="1.0" android:filterTouchesWhenObscured="true" style="@style/value_button_mcgreen_all" />
+    </LinearLayout>
+</LinearLayout>

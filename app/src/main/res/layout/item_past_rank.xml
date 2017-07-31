@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rly_past_rank" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_divider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_divider">
+        <FrameLayout android:id="@id/fl_month" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/sl_foreground_image_default">
+            <ImageView android:id="@id/iv_month" android:background="?studio_past_rank_july" android:layout_width="fill_parent" android:layout_height="135.0dip" android:src="?ic_past_rank_july" android:scaleType="center" />
+        </FrameLayout>
+        <TextView android:textSize="25.0dip" android:textColor="?backgroundDefault" android:id="@id/tv_past_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016年7月" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

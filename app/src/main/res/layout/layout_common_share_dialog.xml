@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:orientation="vertical" android:id="@id/lvSharePopDlgItemList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:numColumns="1" android:layout_alignParentBottom="true" />
+    <View android:id="@id/tvSharePopDlgBtnCancelLine" android:background="@color/common_menu_dialog_divide_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_menu_dialog_divide_line_height" />
+    <TextView android:textSize="@dimen/common_text_size_18sp" android:textColor="@color/common_menu_dialog_unfocus_btn_color" android:gravity="center" android:id="@id/tvSharePopDlgBtnCancel" android:paddingTop="@dimen/common_menu_dialog_padding_top" android:paddingBottom="@dimen/common_menu_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" />
+</LinearLayout>

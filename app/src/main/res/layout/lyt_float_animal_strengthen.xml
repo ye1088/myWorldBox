@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llyAnimalStrengthenMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llyAnimalStrengthenMenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/tvAnimalStrengthen" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="强化" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/tvAnimalEquipment" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="装备" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ViewAnimator android:id="@id/animatorStrengthen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llyStrengthenSlidingTabStripLeft" android:layout_width="fill_parent" android:layout_height="2.0dip">
+                    <View android:background="@color/float_themem" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/llyStrengthen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="生物改名" android:singleLine="true" />
+                            <com.huluxia.widget.EditTextWithDelete android:id="@id/etStrengthenAnimalName" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:layout_weight="1.0" style="@style/value_edit_normal_float" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="名称颜色" android:singleLine="true" />
+                            <TextView android:gravity="center" android:id="@id/tvAnimalNameColor" android:background="@drawable/shape_circle_white_15dp_corner" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="无" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llyColorList" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="血量" android:singleLine="true" />
+                            <com.huluxia.widget.EditTextWithDelete android:id="@id/etStrengthenBloodValue" android:padding="5.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:maxLength="6" android:inputType="numberDecimal" style="@style/value_edit_normal_float" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="数量" android:singleLine="true" />
+                            <TextView android:id="@id/tvStrengthenNumber" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="1" />
+                            <SeekBar android:id="@id/SeekStrengthenNumber" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="63" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llyStrengthenSlidingTabStripRight" android:layout_width="fill_parent" android:layout_height="2.0dip">
+                    <View android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:background="@color/float_themem" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/rlyEquipment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                            <TextView android:gravity="center_vertical" android:id="@id/tvAnimalStrengthenLoricaeText" android:paddingLeft="5.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="铠甲" />
+                            <ImageView android:gravity="center" android:id="@id/tvAnimalStrengthenHelmet" android:background="@drawable/bg_animal_strengthen_black_box" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ico_animal_strengthen_helmet" />
+                            <ImageView android:gravity="center" android:id="@id/tvAnimalStrengthenArmors" android:background="@drawable/bg_animal_strengthen_black_box" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ico_animal_strengthen_armors" />
+                            <ImageView android:gravity="center" android:id="@id/tvAnimalStrengthenPants" android:background="@drawable/bg_animal_strengthen_black_box" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ico_animal_strengthen_pants" />
+                            <ImageView android:gravity="center" android:id="@id/tvAnimalStrengthenShoes" android:background="@drawable/bg_animal_strengthen_black_box" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ico_animal_strengthen_shoes" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                            <TextView android:paddingLeft="5.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="武器" />
+                            <ImageView android:gravity="center" android:id="@id/tvHandEquipment" android:background="@drawable/bg_animal_strengthen_black_box" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ico_animal_strengthen_sword" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </ViewAnimator>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:gravity="center" android:id="@id/tvAnimalStrengthenAdd" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:text="添加" android:layout_weight="1.0" style="@style/value_button_float_green" />
+        <TextView android:gravity="center" android:id="@id/tvAnimalStrengthenCancle" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" android:text="取消" android:layout_weight="1.0" style="@style/value_button_float_green" />
+    </LinearLayout>
+</LinearLayout>

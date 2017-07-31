@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bgd_hero_roundedcorner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivInsZonesItemRankNo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@mipmap/ico_ins_zones_ranking_top_first" android:layout_centerVertical="true" />
+    <TextView android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvInsZonesItemRankNo" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="15" android:layout_weight="100.0" />
+    <View android:background="#ffae7048" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+    <com.huluxia.framework.base.image.PaintView android:id="@id/rivInsZonesRankAvatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_default_hero" />
+    <RelativeLayout android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="60.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvInsZonesItemRankNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户昵称" android:singleLine="true" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvInsZonesItemRankLevel" android:background="@drawable/bg_radius_green" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16" android:layout_toRightOf="@id/tvInsZonesItemRankNickname" android:layout_alignBottom="@id/tvInsZonesItemRankNickname" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd0aa6c" android:ellipsize="end" android:id="@id/tvInsZonesItemUserId" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ID:58624862" android:singleLine="true" android:layout_below="@id/tvInsZonesItemRankLevel" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvInsZonesItemRankScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="总分:260" android:singleLine="true" android:layout_below="@id/tvInsZonesItemUserId" />
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivInsZonesItemRankReword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_ins_zones_ranking_top_other_reward" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llyInsZonesRankMore" android:background="#ff343434" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvInsZonesRankFollow" android:background="#ff00a0e9" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="关注" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvInsZonesRankGift" android:background="#ff009944" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="赠葫芦" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffae7048" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+    <ImageView android:id="@id/ivInsZonesItemRankMore" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@mipmap/ico_ins_zones_ranking_more_pressed" android:layout_weight="80.0" />
+</LinearLayout>

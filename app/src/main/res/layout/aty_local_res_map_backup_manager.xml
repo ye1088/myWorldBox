@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llyMapBackupManager" android:layout_alignParentTop="true">
+        <ListView android:id="@id/lvLocalResMapBackupManager" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?dividingLine" android:dividerHeight="0.5dip" />
+    </LinearLayout>
+    <View android:id="@id/vMapBackupManagerSplit" android:background="?dividingLine" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/llyMapBackupManager" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llyMapBackupManager" android:background="?itemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/tvMapBackupMgrDel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:scaleType="centerInside" android:text="@string/local_resmgr_del" android:drawableTop="?sty_btn_localresmgr_del" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llyMapBackupMgrConfirmBox" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="@dimen/common_text_size_18sp" android:textColor="?locmgr_menu_res_red_color" android:gravity="center" android:id="@id/tvConfirmDel" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/common_text_size_18sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/tvConfirmCancle" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+            <View android:layout_gravity="center" android:id="@id/split_vertical" android:background="?splitColor" android:layout_width="0.5dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?locmgr_menu_res_all_color" android:gravity="center" android:id="@id/tvConfirmAll" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全选" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

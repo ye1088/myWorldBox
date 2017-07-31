@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/sl_list_item_photo">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <ImageView android:id="@id/check_image" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignTop="@id/image_container" android:layout_alignRight="@id/image_container" />
+</RelativeLayout>

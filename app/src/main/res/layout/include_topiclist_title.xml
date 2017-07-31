@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rly_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rly_header" android:background="?listSelector" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huluxia.framework.base.image.PaintView android:id="@id/avatar" android:layout_width="@dimen/image_large_size" android:layout_height="@dimen/image_large_size" android:layout_marginRight="4.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <TextView android:textSize="19.0sp" android:textColor="?android:textColorPrimary" android:id="@id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:text="福利活动" android:layout_toLeftOf="@id/ic_add_class" android:layout_toRightOf="@id/avatar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ly_desc" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ic_add_class" android:layout_toRightOf="@id/avatar" android:layout_below="@id/topic_title" android:layout_alignBottom="@id/avatar">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="3.0">
+                    <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热度 " android:singleLine="true" />
+                    <TextView android:textSize="@dimen/topiclist_title" android:textColor="?textColorTopicHotCount" android:id="@id/hot_today_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000万" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | 话题 " android:singleLine="true" />
+                    <TextView android:textSize="@dimen/topiclist_title" android:textColor="?textColorTopicHotCount" android:id="@id/topic_today_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10万" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/moderator" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:text="版主:" android:singleLine="true" android:layout_weight="3.0" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimaryInverse" android:id="@id/ic_add_class" android:background="?drawableSubscribe" android:paddingLeft="13.0dip" android:paddingTop="4.0dip" android:paddingRight="13.0dip" android:paddingBottom="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:text="关注" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:id="@id/divider_1" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/rly_header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/divider_1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_daren" android:background="?listSelector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/topiclist_icon" android:layout_height="@dimen/topiclist_icon" android:src="@drawable/icon_topic_tarento" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/tv_daren" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/daren" />
+            </LinearLayout>
+            <include android:id="@id/split_vertical" layout="@layout/include_split_vertical_17" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_signin" android:background="?listSelector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/topiclist_icon" android:layout_height="@dimen/topiclist_icon" android:src="@drawable/icon_topic_signin" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/tv_signin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/signin" />
+            </LinearLayout>
+            <include android:id="@id/split_vertical2" layout="@layout/include_split_vertical_17" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_search" android:background="?listSelector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/topiclist_icon" android:layout_height="@dimen/topiclist_icon" android:src="@drawable/icon_topic_search" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/search" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_res_block_divider" />
+</LinearLayout>

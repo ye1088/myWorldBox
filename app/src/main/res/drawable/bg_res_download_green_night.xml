@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/res_download_unable_color_night" />
+            <stroke android:width="1.0dip" android:color="#ff6c6c6c" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/res_download_focus_color_night" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/res_download_normal_color_night" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</selector>

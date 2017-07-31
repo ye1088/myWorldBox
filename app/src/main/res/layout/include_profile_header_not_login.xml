@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/profile_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_wallpaper_not_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_profile" android:scaleType="centerCrop" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimaryInverse" android:id="@id/tv_login" android:background="?backgroundProfileButtonLogin" android:paddingLeft="28.0dip" android:paddingTop="8.0dip" android:paddingRight="28.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip" android:text="@string/click_to_login_in" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="42.0dip" android:src="@drawable/ic_profile_avatar" android:layout_above="@id/tv_login" android:layout_centerHorizontal="true" />
+    <View android:id="@id/split_header" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

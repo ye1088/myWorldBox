@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/home_fragment_bg" android:background="?home_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huluxia.widget.title.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="?home_titlebar_bg" />
+    <com.huluxia.widget.PullToRefreshScrollableLayout android:id="@id/scroll_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white" android:divider="@null" android:layout_below="@id/title_bar" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" app:ptrHeaderBackground="@color/transparent" app:ptrShowIndicator="false" app:ptrAnimationStyle="flip" app:scrollable_maxScroll="@dimen/home_header_height" />
+    <com.huluxia.ui.base.BaseLoadingLayout android:id="@id/base_load_data_error_layout" android:background="?home_interval_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="148.0dip" />
+</RelativeLayout>

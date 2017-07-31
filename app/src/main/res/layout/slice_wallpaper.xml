@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huluxia.framework.base.image.PipelineView android:id="@id/iv_slice_1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:src="@drawable/bg_profile_header" android:scaleType="centerCrop" android:layout_weight="5.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_weight="3.0">
+        <com.huluxia.framework.base.image.PipelineView android:id="@id/iv_slice_2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/bg_profile_header" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <com.huluxia.framework.base.image.PipelineView android:id="@id/iv_slice_3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/bg_profile_header" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

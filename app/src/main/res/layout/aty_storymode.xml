@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:background="@mipmap/bg_story_mode" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llyStoryMGameLoading" android:background="@anim/story_launch_loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_mode_game_on_loading" />
+        <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tvStoryMGameTips" android:focusable="false" android:layout_width="270.0dip" android:layout_height="wrap_content" android:text="滚动小贴士" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llyStoryModeLoading" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/ivStoryLoading" android:background="@anim/storymode_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/lvStoryMode" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/transparent" android:dividerHeight="20.0dip" android:layout_above="@id/llyStoryModeLoading" />
+    <TextView android:id="@id/tvStoryPause" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂停" android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/tvStorySpeed" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X1.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

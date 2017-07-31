@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="156.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/title" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/title_div" android:background="#f2dcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <TextView android:id="@id/message" android:text="" style="@style/DialogMsgTextWithColor" />
+    <View android:gravity="center" android:orientation="horizontal" android:id="@id/v1" android:background="#f2dcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/btn_ok" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="@drawable/dialog_btn_color" android:gravity="center" android:id="@id/btn_cancel" android:layout_width="124.0dip" android:layout_height="43.0dip" android:layout_marginLeft="15.0dip" android:text="取消" />
+        <View android:gravity="center" android:orientation="horizontal" android:background="#f2dcdcdc" android:layout_width="1.0dip" android:layout_height="43.0dip" />
+        <TextView android:textSize="@dimen/dialog_btn_text_fnt" android:textColor="@drawable/dialog_btn_color" android:gravity="center" android:id="@id/btn_ok" android:layout_width="124.0dip" android:layout_height="43.0dip" android:layout_marginRight="15.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

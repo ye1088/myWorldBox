@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?listSelector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/split_top" android:background="?splitColorDim4" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.huluxia.framework.base.image.PaintView android:id="@id/avatar" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="8.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <com.huluxia.widget.textview.EmojiTextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我是土豪" android:maxLines="1" android:layout_toRightOf="@id/avatar" android:layout_alignTop="@id/avatar" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffa0a0a0" android:id="@id/publish_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="00:00" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ref_ll" android:background="?backgroundTopicReply" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip">
+        <com.huluxia.widget.textview.EmojiTextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:id="@id/refauthor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="回复 ***" />
+        <com.huluxia.widget.textview.HyperlinkTextView android:textSize="15.0sp" android:textColor="#ff616161" android:id="@id/refcontent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <com.huluxia.widget.textview.HyperlinkTextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:id="@id/content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:text="" android:lineSpacingExtra="2.0dip" />
+    <View android:id="@id/split_bottom" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

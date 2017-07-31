@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_green_pressed" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/progress_green_pressed" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/color_primary_green_night" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/color_primary_green_night" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:maxLevel="1">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_orange_pressed" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/progress_orange_pressed" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/download_btn_orange_night" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/download_btn_orange_night" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:maxLevel="2">
+        <selector android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/progress_gray" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/progress_gray" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/background_normal_press_night" />
+                    <corners android:radius="60.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/text_primary_new_night" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</level-list>

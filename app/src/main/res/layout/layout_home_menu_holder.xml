@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/holder_container" android:background="#ff434343" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/menu_head_background" android:layout_width="fill_parent" android:layout_height="98.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/menu_myword_icon" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/common_text_size_18sp" android:textColor="#ff379442" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="葫芦侠我的世界" android:layout_toRightOf="@id/iv_icon" android:layout_alignBottom="@id/iv_icon" />
+    </RelativeLayout>
+    <ListView android:id="@id/lv_apply_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@null" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/img_menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/home_night_mode_icon" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/common_text_size_17sp" android:textColor="#ffa0a0a0" android:id="@id/tv_menu_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="夜间模式" android:layout_toRightOf="@id/img_menu_title" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/cb_night_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:button="@drawable/home_night_mode_check_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>
