@@ -152,7 +152,7 @@ public class UserMsgFragment extends BaseLoadingFragment {
             if (info != null && info.isSucc()) {
                 t.o(this.bjp.bjk.getActivity(), "赠送成功");
             } else if (info != null) {
-                t.download_toast(this.bjp.bjk.getActivity(), ab.n(info.code, info.msg));
+                t.show_toast(this.bjp.bjk.getActivity(), ab.n(info.code, info.msg));
             } else {
                 t.n(this.bjp.bjk.getActivity(), "赠送失败，请稍后重试");
             }

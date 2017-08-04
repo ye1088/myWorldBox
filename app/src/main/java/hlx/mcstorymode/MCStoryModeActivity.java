@@ -153,7 +153,7 @@ public class MCStoryModeActivity extends Activity {
                 case R.id.tvStorySpeed:
                     this.bWF.bWz = (this.bWF.bWz + 1) % MCStoryModeActivity.bWB.length;
                     this.bWF.bWA.setText("X" + MCStoryModeActivity.bWC[this.bWF.bWz]);
-                    t.download_toast(this.bWF.aMn, this.bWF.getString(R.string.story_mode_speed_changed, new Object[]{MCStoryModeActivity.bWC[this.bWF.bWz]}));
+                    t.show_toast(this.bWF.aMn, this.bWF.getString(R.string.story_mode_speed_changed, new Object[]{MCStoryModeActivity.bWC[this.bWF.bWz]}));
                     return;
                 default:
                     return;
@@ -519,7 +519,7 @@ public class MCStoryModeActivity extends Activity {
                     this.bWr = (String) message.obj;
                     this.Vo.sendMessageDelayed(message, hlx.mcstorymode.storyutils.b.a(_ItemStructure.qk, 1, bWB[this.bWz]));
                 } else {
-                    t.download_toast(this.aMn, c.bWb);
+                    t.show_toast(this.aMn, c.bWb);
                 }
             }
         }

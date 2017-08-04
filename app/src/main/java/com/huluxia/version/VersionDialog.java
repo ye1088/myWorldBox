@@ -74,10 +74,10 @@ public class VersionDialog extends DialogFragment {
                     this.bow.b(this.bow.bor);
                     return;
                 }
-                t.download_toast(this.bow.boq.getActivity(), "当前已是最新版本");
+                t.show_toast(this.bow.boq.getActivity(), "当前已是最新版本");
                 this.bow.dismissAllowingStateLoss();
             } else {
-                t.download_toast(this.bow.boq.getActivity(), "当前已是最新版本");
+                t.show_toast(this.bow.boq.getActivity(), "当前已是最新版本");
                 this.bow.dismissAllowingStateLoss();
             }
         }

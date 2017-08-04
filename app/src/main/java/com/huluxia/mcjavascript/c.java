@@ -71,7 +71,7 @@ public class c {
         r2 = move-exception;
         goto L_0x001c;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.mcjavascript.c.P(java.lang.Object):double");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.mcjavascript.c.get_config_sp_intVal(java.lang.Object):double");
     }
 
     /* JADX WARNING: inconsistent code. */

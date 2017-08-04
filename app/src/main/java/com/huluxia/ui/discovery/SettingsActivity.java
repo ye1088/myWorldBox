@@ -260,7 +260,7 @@ public class SettingsActivity extends HTBaseActivity implements OnCheckedChangeL
                 if (response.getStatus() == 1) {
                     n verInfo = (n) response.getData();
                     if (verInfo.getVersionCode() <= UtilsVersion.getVersionCode(this.aRP.aRL)) {
-                        t.download_toast(this.aRP.aRL, "当前没有可更新的版本。");
+                        t.show_toast(this.aRP.aRL, "当前没有可更新的版本。");
                     } else if (verInfo.ez() > 0) {
                         this.aRP.U(verInfo.getMessage(), verInfo.getAddress());
                     }

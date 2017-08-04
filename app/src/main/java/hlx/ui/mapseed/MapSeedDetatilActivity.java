@@ -1080,7 +1080,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                             if (HTApplication.fA != null) {
                                 this.cbr.GE();
                             } else {
-                                t.download_toast(this.cbr.aMn, "暂时无法分享");
+                                t.show_toast(this.cbr.aMn, "暂时无法分享");
                             }
                         } else if (inIndex == MENU_VALUE.MOVETOPIC.ordinal()) {
                             t.a(this.cbr.aMn, this.cbr.aMT);
@@ -1369,11 +1369,11 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
 
     private void a(CommentItem clickItem, boolean isReplyTopic) {
         if (this.aMT == null) {
-            t.download_toast(this.aMn, "数据为空，请先下拉刷新本页面");
+            t.show_toast(this.aMn, "数据为空，请先下拉刷新本页面");
         } else if (!com.huluxia.data.j.ep().ey()) {
             t.an(this.aMn);
         } else if (this.aMT.state != 1) {
-            t.download_toast(this.aMn, "帖子已经被删除，无法评论");
+            t.show_toast(this.aMn, "帖子已经被删除，无法评论");
         } else if (isReplyTopic) {
             t.a(this.aMn, this.aMT, this.aMT != null ? this.aMT.getUserInfo() : null);
         } else {

@@ -77,7 +77,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
                 this.cdB.big = studio;
                 this.cdB.cdm.setmStudio(studio);
                 if (studio == null) {
-                    t.download_toast(this.cdB.mContext, "工作室已解散");
+                    t.show_toast(this.cdB.mContext, "工作室已解散");
                     this.cdB.finish();
                 }
             }
@@ -312,7 +312,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
 
             public void onClick(View v) {
                 if (this.cdB.cdz) {
-                    t.download_toast(this.cdB.mContext, "账户被锁，不能进行此操作");
+                    t.show_toast(this.cdB.mContext, "账户被锁，不能进行此操作");
                     return;
                 }
                 ArrayList<Object> mSortArrayList = new ArrayList();
@@ -567,7 +567,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
                 return;
             case 258:
                 if (104 == response.fg()) {
-                    t.download_toast(this.mContext, response.fh());
+                    t.show_toast(this.mContext, response.fh());
                     return;
                 }
                 switch (this.tk) {

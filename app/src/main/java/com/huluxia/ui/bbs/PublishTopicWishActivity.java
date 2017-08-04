@@ -68,14 +68,14 @@ public class PublishTopicWishActivity extends HTBaseThemeActivity implements f, 
             } else if (info.status == 1) {
                 this.aMp.aMn.setResult(-1);
                 if (info.code == 201) {
-                    t.download_toast(this.aMp.aMn, info.msg);
+                    t.show_toast(this.aMp.aMn, info.msg);
                     this.aMp.aMn.finish();
                     return;
                 }
                 t.o(this.aMp.aMn, info.msg);
                 this.aMp.aMn.finish();
             } else {
-                t.download_toast(this.aMp.aMn, info.msg);
+                t.show_toast(this.aMp.aMn, info.msg);
                 if (info.code == 106) {
                     this.aMp.Gk();
                 }
@@ -265,7 +265,7 @@ public class PublishTopicWishActivity extends HTBaseThemeActivity implements f, 
             if (response.getStatus() == 1) {
                 setResult(-1);
                 if (response.getCode() == 201) {
-                    t.download_toast(this.aMn, (String) response.getData());
+                    t.show_toast(this.aMn, (String) response.getData());
                     finish();
                     return;
                 }
@@ -273,7 +273,7 @@ public class PublishTopicWishActivity extends HTBaseThemeActivity implements f, 
                 finish();
                 return;
             }
-            t.download_toast(this.aMn, response.fh());
+            t.show_toast(this.aMn, response.fh());
             if (response.fg() == 106) {
                 Gk();
             }

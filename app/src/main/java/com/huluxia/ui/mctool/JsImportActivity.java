@@ -137,10 +137,10 @@ public class JsImportActivity extends HTBaseActivity implements OnClickListener,
             if (temp.endsWith(a.bJY)) {
                 temp = temp.substring(0, temp.indexOf(a.bJY));
             }
-            t.download_toast(this.aMn, "成功导入 " + name);
+            t.show_toast(this.aMn, "成功导入 " + name);
             n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         } else {
-            t.download_toast(this.aMn, "导入 " + name + " 失败");
+            t.show_toast(this.aMn, "导入 " + name + " 失败");
         }
         finish();
     }

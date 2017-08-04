@@ -69,7 +69,7 @@ public class AnnounceDetailActivity extends HTBaseLoadingActivity {
                 t.n(this.aEe.mContext, info != null ? info.msg : "删除失败，请重试");
                 return;
             }
-            t.download_toast(this.aEe.mContext, "删除成功");
+            t.show_toast(this.aEe.mContext, "删除成功");
             EventNotifyCenter.notifyEventUiThread(h.class, h.asv, Integer.valueOf(this.aEe.aDX), this.aEe.aDZ);
             this.aEe.finish();
         }

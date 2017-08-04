@@ -83,7 +83,7 @@ public class SysMsgFragment extends BaseLoadingFragment {
             if (info != null && info.isSucc()) {
                 t.o(this.biW.biS.getActivity(), "赠送成功");
             } else if (info != null) {
-                t.download_toast(this.biW.biS.getActivity(), ab.n(info.code, info.msg));
+                t.show_toast(this.biW.biS.getActivity(), ab.n(info.code, info.msg));
             } else {
                 t.n(this.biW.biS.getActivity(), "赠送失败，请稍后重试");
             }

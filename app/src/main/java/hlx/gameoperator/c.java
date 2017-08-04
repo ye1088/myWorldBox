@@ -53,7 +53,7 @@ public class c {
 
     public static boolean j(Context context, String oldMapFolderName, String newMapName) {
         if (newMapName.length() < 1 || oldMapFolderName.equals(newMapName)) {
-            t.download_toast(context, "请输入存档的新名字！");
+            t.show_toast(context, "请输入存档的新名字！");
             return false;
         }
         try {
@@ -64,10 +64,10 @@ public class c {
                 aC(newMapName, newMapName);
                 return true;
             }
-            t.download_toast(context, "重命名失败，请检查是否已有该名字的地图");
+            t.show_toast(context, "重命名失败，请检查是否已有该名字的地图");
             return false;
         } catch (Exception e) {
-            t.download_toast(context, "重命名失败");
+            t.show_toast(context, "重命名失败");
             return false;
         }
     }

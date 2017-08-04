@@ -178,7 +178,7 @@ public class NewsDetailActivity extends HTBaseLoadingActivity {
             this.aHz.aHr.setEnabled(true);
             if (succ) {
                 this.aHz.co(favor);
-                t.download_toast(this.aHz, favor ? "收藏成功" : "取消收藏成功");
+                t.show_toast(this.aHz, favor ? "收藏成功" : "取消收藏成功");
                 return;
             }
             t.n(this.aHz, msg);

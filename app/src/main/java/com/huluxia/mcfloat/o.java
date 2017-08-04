@@ -103,8 +103,8 @@ public class o {
                 this.mWindowManager.addView(this.Vd, this.Ve);
                 if (!this.Vf) {
                     this.Vf = true;
-                    this.Ve.x = ah.KZ().P(Vb, 0);
-                    this.Ve.y = ah.KZ().P(Vc, 0);
+                    this.Ve.x = ah.KZ().get_config_sp_intVal(Vb, 0);
+                    this.Ve.y = ah.KZ().get_config_sp_intVal(Vc, 0);
                     if (this.Ve.x + this.Ve.y != 0) {
                         this.mWindowManager.updateViewLayout(this.Vd, this.Ve);
                         return;

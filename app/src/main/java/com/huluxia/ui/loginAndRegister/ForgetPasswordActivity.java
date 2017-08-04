@@ -167,25 +167,25 @@ public class ForgetPasswordActivity extends HTBaseActivity {
         public void onComplete(Object response) {
             this.aXY.aXF.cs(false);
             if (response == null) {
-                t.download_toast(this.aXY.aXF, "QQ验证失败，请重试。");
+                t.show_toast(this.aXY.aXF, "QQ验证失败，请重试。");
                 return;
             }
             JSONObject jsonResponse = (JSONObject) response;
             if (jsonResponse == null || jsonResponse.length() != 0) {
                 d((JSONObject) response);
             } else {
-                t.download_toast(this.aXY.aXF, "QQ验证失败，请重试。");
+                t.show_toast(this.aXY.aXF, "QQ验证失败，请重试。");
             }
         }
 
         public void onError(UiError e) {
-            t.download_toast(this.aXY.aXF, "onError: " + e.errorDetail);
+            t.show_toast(this.aXY.aXF, "onError: " + e.errorDetail);
             this.aXY.aXF.cs(false);
             this.aXY.aXF.finish();
         }
 
         public void onCancel() {
-            t.download_toast(this.aXY.aXF, "取消验证");
+            t.show_toast(this.aXY.aXF, "取消验证");
             this.aXY.aXF.cs(false);
             this.aXY.aXF.finish();
         }
@@ -244,14 +244,14 @@ public class ForgetPasswordActivity extends HTBaseActivity {
         String account = this.aXS.getText().toString() != null ? this.aXS.getText().toString() : "";
         this.aXL = account.trim();
         if (TextUtils.isEmpty(this.aXL)) {
-            t.download_toast(this.aXF, "请输入正确的账号");
+            t.show_toast(this.aXF, "请输入正确的账号");
             this.aXS.requestFocus();
             this.aXS.setSelection(account.length());
         } else if (UtilsString.validEmail(this.aXL) || UtilsString.validPhone(this.aXL)) {
             cs(true);
             com.huluxia.module.account.a.DU().j(this.aXL, this.aXN, this.aXO);
         } else {
-            t.download_toast(this.aXF, "账号格式错误");
+            t.show_toast(this.aXF, "账号格式错误");
             this.aXS.requestFocus();
             this.aXS.setSelection(account.length());
         }
@@ -263,7 +263,7 @@ public class ForgetPasswordActivity extends HTBaseActivity {
         String pwd = this.aXT.getText().toString() != null ? this.aXT.getText().toString() : "";
         this.aXM = pwd.trim();
         if (!UtilsString.validEmail(this.aXL) && !UtilsString.validPhone(this.aXL)) {
-            t.download_toast(this.aXF, "账号格式错误");
+            t.show_toast(this.aXF, "账号格式错误");
             HX();
             this.aXS.requestFocus();
             this.aXS.setSelection(account.length());

@@ -259,7 +259,7 @@ public class HLog {
             sb.append(obj.getClass().getSimpleName());
         }
         sb.append(" Exception occurs at ");
-        sb.append("(P:");
+        sb.append("(get_config_sp_intVal:");
         sb.append(Process.myPid());
         sb.append(")");
         sb.append("(T:");
@@ -299,7 +299,7 @@ public class HLog {
         sb.append(objClassName(obj));
         sb.append("]");
         sb.append(msg);
-        sb.append("(P:");
+        sb.append("(get_config_sp_intVal:");
         sb.append(Process.myPid());
         sb.append(")");
         sb.append("(T:");

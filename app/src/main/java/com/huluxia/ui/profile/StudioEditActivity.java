@@ -640,7 +640,7 @@ public class StudioEditActivity extends HTBaseLoadingActivity implements OnClick
         String str = null;
         if (!(this.bih || JT())) {
             str = "没有修改工作室信息";
-            t.download_toast(this.mContext, str);
+            t.show_toast(this.mContext, str);
             finish();
         }
         if (this.bih && this.bil.getText().toString().trim().length() > 8) {

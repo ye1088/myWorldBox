@@ -143,8 +143,8 @@ public class h {
                     this.Ve.x = locationX;
                     this.Ve.y = locationY;
                     if (this.Ve.x + this.Ve.y == 0) {
-                        this.Ve.x = ah.KZ().P(this.bTS, 0);
-                        this.Ve.y = ah.KZ().P(this.bTT, 0);
+                        this.Ve.x = ah.KZ().get_config_sp_intVal(this.bTS, 0);
+                        this.Ve.y = ah.KZ().get_config_sp_intVal(this.bTT, 0);
                     }
                     if (this.Ve.x + this.Ve.y != 0) {
                         this.mWindowManager.updateViewLayout(this.Vd, this.Ve);

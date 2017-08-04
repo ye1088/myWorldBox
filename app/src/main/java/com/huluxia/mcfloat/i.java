@@ -169,7 +169,7 @@ public class i implements a {
             this.SD.St = bar.getProgress();
             i.dm(this.SD.St);
             if (this.SD.ru()) {
-                t.download_toast(this.SD.Pu.getContext(), "进雪地就会下雪");
+                t.show_toast(this.SD.Pu.getContext(), "进雪地就会下雪");
                 this.SD.aE(false);
             }
             r.ck().K(r.a.kt);
@@ -326,7 +326,7 @@ public class i implements a {
             ((CheckBox) this.Pu.findViewById(R.id.floatChkMainShowBlood)).setChecked(checked);
             h.bT(checked);
         } else if (h.zx() == 3 || h.zx() == 5 || h.zx() == 7) {
-            this.Sz = ah.KZ().P(Se, 0);
+            this.Sz = ah.KZ().get_config_sp_intVal(Se, 0);
             this.SB = ah.KZ().j(Sf, false);
             ((CheckBox) this.Pu.findViewById(R.id.floatChkMainLockTime)).setChecked(this.SB);
             rv();

@@ -89,7 +89,7 @@ public class MsgSettingsActivity extends HTBaseActivity implements OnCheckedChan
                 }
                 return;
             }
-            t.download_toast(this.aRI.aRG, "设置失败, 网络问题");
+            t.show_toast(this.aRI.aRG, "设置失败, 网络问题");
             CheckBox b;
             if (type_id == 1) {
                 this.aRI.aRD.setOnCheckedChangeListener(null);

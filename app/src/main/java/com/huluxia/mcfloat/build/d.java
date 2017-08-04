@@ -40,10 +40,10 @@ public class d extends a {
     public d(e buildStatus) {
         this.Qp = buildStatus;
         this.abh = new b();
-        int rectX = ah.KZ().P(aaS, 5);
-        int rectY = ah.KZ().P(aaT, 5);
-        int rectZ = ah.KZ().P(aaU, 5);
-        this.abh.d(ah.KZ().P(aaV, 0), rectX, rectY, rectZ);
+        int rectX = ah.KZ().get_config_sp_intVal(aaS, 5);
+        int rectY = ah.KZ().get_config_sp_intVal(aaT, 5);
+        int rectZ = ah.KZ().get_config_sp_intVal(aaU, 5);
+        this.abh.d(ah.KZ().get_config_sp_intVal(aaV, 0), rectX, rectY, rectZ);
     }
 
     public void aO(Context context) {

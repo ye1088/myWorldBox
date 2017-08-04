@@ -112,16 +112,16 @@ public class FileSelectActivity extends HTBaseActivity implements OnClickListene
         if (_path == null) {
             switch (this.axr) {
                 case 1:
-                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_map_folder));
+                    t.show_toast(this.aMn, this.aMn.getString(R.string.please_choose_map_folder));
                     return;
                 case 2:
-                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_js_file));
+                    t.show_toast(this.aMn, this.aMn.getString(R.string.please_choose_js_file));
                     return;
                 case 3:
-                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_skin_file));
+                    t.show_toast(this.aMn, this.aMn.getString(R.string.please_choose_skin_file));
                     return;
                 case 4:
-                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_wood_file));
+                    t.show_toast(this.aMn, this.aMn.getString(R.string.please_choose_wood_file));
                     return;
                 default:
                     return;

@@ -146,7 +146,7 @@ public class MCPreLauncherActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aty_prelaungame);
-        if (1 == ah.KZ().P(g.adF, 0)) {
+        if (1 == ah.KZ().get_config_sp_intVal(g.adF, 0)) {
             ah.KZ().Q(hlx.data.localstore.a.bKr, 0);
         }
         TextView mGameTipsMarquee = (TextView) findViewById(R.id.tvGameTipsMarquee);

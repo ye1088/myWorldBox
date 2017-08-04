@@ -134,7 +134,7 @@ public class SkinImportActivity extends HTBaseActivity implements OnClickListene
         if (temp.endsWith(end)) {
             temp = temp.substring(0, temp.indexOf(end));
         }
-        t.download_toast(this.aMn, "成功导入 " + name);
+        t.show_toast(this.aMn, "成功导入 " + name);
         n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         HLog.verbose(TAG, "DTPrint EVENT_IMPORT_LOC_SKIN filePath is " + filePath, new Object[0]);
         EventNotifyCenter.notifyEvent(n.class, n.axd, Boolean.valueOf(false), filePath, null);

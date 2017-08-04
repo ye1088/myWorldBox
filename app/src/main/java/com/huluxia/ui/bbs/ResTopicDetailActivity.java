@@ -260,7 +260,7 @@ public class ResTopicDetailActivity extends HTBaseThemeActivity implements OnCli
 
         public void onClick(View v) {
             if (this.aNS.aMX == null || !this.aNS.a(this.aNS.aMX)) {
-                t.download_toast(this.aNS.aMn, "下载后才能回复哦~");
+                t.show_toast(this.aNS.aMn, "下载后才能回复哦~");
             } else {
                 this.aNS.a(null, true);
             }
@@ -1622,7 +1622,7 @@ public class ResTopicDetailActivity extends HTBaseThemeActivity implements OnCli
                             if (HTApplication.fA != null) {
                                 this.aNS.GE();
                             } else {
-                                t.download_toast(this.aNS.aMn, "暂时无法分享");
+                                t.show_toast(this.aNS.aMn, "暂时无法分享");
                             }
                         } else if (inIndex == MENU_VALUE.MOVETOPIC.ordinal()) {
                             t.a(this.aNS.aMn, this.aNS.aMT);
@@ -1915,11 +1915,11 @@ public class ResTopicDetailActivity extends HTBaseThemeActivity implements OnCli
 
     private void a(CommentItem commentItem, boolean isReplyTopic) {
         if (this.aMT == null) {
-            t.download_toast(this.aMn, "数据为空，请先下拉刷新本页面");
+            t.show_toast(this.aMn, "数据为空，请先下拉刷新本页面");
         } else if (!com.huluxia.data.j.ep().ey()) {
             t.an(this.aMn);
         } else if (this.aMT.state != 1) {
-            t.download_toast(this.aMn, "帖子已经被删除，无法评论");
+            t.show_toast(this.aMn, "帖子已经被删除，无法评论");
         } else if (isReplyTopic) {
             t.a(this.aMn, this.aMT, this.aMT != null ? this.aMT.getUserInfo() : null);
         } else {

@@ -128,7 +128,7 @@ public class SpaceCustomStyleFragment extends BaseThemeFragment implements f {
 
             public void Gq() {
                 if (this.bhs.bhm.getPhotoCount() >= 8) {
-                    t.download_toast(this.bhs.getActivity(), this.bhs.getResources().getString(com.huluxia.bbs.b.m.album_photo_count_max, new Object[]{Integer.valueOf(8)}));
+                    t.show_toast(this.bhs.getActivity(), this.bhs.getResources().getString(com.huluxia.bbs.b.m.album_photo_count_max, new Object[]{Integer.valueOf(8)}));
                 } else if (this.bhs.aJc.getVisibility() != 0) {
                     t.a(this.bhs, 1, 1, null);
                 }
@@ -172,7 +172,7 @@ public class SpaceCustomStyleFragment extends BaseThemeFragment implements f {
                 cs(true);
                 return;
             }
-            t.download_toast(getActivity(), getResources().getString(com.huluxia.bbs.b.m.album_no_modified));
+            t.show_toast(getActivity(), getResources().getString(com.huluxia.bbs.b.m.album_no_modified));
         }
     }
 

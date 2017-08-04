@@ -88,7 +88,7 @@ public class MCVersionSelect extends HTBaseActivity {
     private static int bTh = 0;
     protected Handler Vo;
     private BroadcastReceiver aDe = new e();
-    private MCVersionSelect bRL;
+    private MCVersionSelect this_MCVersionSelect;
     private Button bRM;
     private Button bRN;
     private Button bRO;
@@ -99,8 +99,8 @@ public class MCVersionSelect extends HTBaseActivity {
     private Button bRT;
     private Button bRU;
     private Button bRV;
-    private int bRW;
-    private String bRX;
+    private int mc_launch_version;
+    private String mcVersion;
     private boolean bRY;
     private boolean bRZ;
     private boolean bSA;
@@ -190,23 +190,23 @@ public class MCVersionSelect extends HTBaseActivity {
             switch (v.getId()) {
                 case R.id.btnclearGameVersion0131:
                     this.bTk.bSh = 4;
-                    this.bTk.bT(this.bTk.bRL);
+                    this.bTk.bT(this.bTk.this_MCVersionSelect);
                     return;
                 case R.id.btnclearGameVersion0130:
                     this.bTk.bSh = 3;
-                    this.bTk.bT(this.bTk.bRL);
+                    this.bTk.bT(this.bTk.this_MCVersionSelect);
                     return;
                 case R.id.btnclearGameVersion0121:
                     this.bTk.bSh = 2;
-                    this.bTk.bT(this.bTk.bRL);
+                    this.bTk.bT(this.bTk.this_MCVersionSelect);
                     return;
                 case R.id.btnclearGameVersion0111:
                     this.bTk.bSh = 1;
-                    this.bTk.bT(this.bTk.bRL);
+                    this.bTk.bT(this.bTk.this_MCVersionSelect);
                     return;
                 case R.id.btnclearGameVersion0105:
                     this.bTk.bSh = 0;
-                    this.bTk.bT(this.bTk.bRL);
+                    this.bTk.bT(this.bTk.this_MCVersionSelect);
                     return;
                 default:
                     return;
@@ -311,8 +311,8 @@ public class MCVersionSelect extends HTBaseActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnDownGameVersion0131:
-                    this.bTk.bRW = 4;
-                    this.bTk.bRX = hlx.data.localstore.a.bJm;
+                    this.bTk.mc_launch_version = 4;
+                    this.bTk.mcVersion = hlx.data.localstore.a.bJm;
                     if (this.bTk.bSc) {
                         this.bTk.SH();
                         return;
@@ -321,8 +321,8 @@ public class MCVersionSelect extends HTBaseActivity {
                         return;
                     }
                 case R.id.btnDownGameVersion0130:
-                    this.bTk.bRW = 3;
-                    this.bTk.bRX = hlx.data.localstore.a.bJl;
+                    this.bTk.mc_launch_version = 3;
+                    this.bTk.mcVersion = hlx.data.localstore.a.bJl;
                     if (this.bTk.bSb) {
                         this.bTk.SH();
                         return;
@@ -331,8 +331,8 @@ public class MCVersionSelect extends HTBaseActivity {
                         return;
                     }
                 case R.id.btnDownGameVersion0121:
-                    this.bTk.bRW = 2;
-                    this.bTk.bRX = VERSION.SDK_INT < 11 ? hlx.data.localstore.a.bJj : hlx.data.localstore.a.bJk;
+                    this.bTk.mc_launch_version = 2;
+                    this.bTk.mcVersion = VERSION.SDK_INT < 11 ? hlx.data.localstore.a.bJj : hlx.data.localstore.a.bJk;
                     if (this.bTk.bSa) {
                         this.bTk.SH();
                         return;
@@ -341,8 +341,8 @@ public class MCVersionSelect extends HTBaseActivity {
                         return;
                     }
                 case R.id.btnDownGameVersion0111:
-                    this.bTk.bRW = 1;
-                    this.bTk.bRX = hlx.data.localstore.a.bJi;
+                    this.bTk.mc_launch_version = 1;
+                    this.bTk.mcVersion = hlx.data.localstore.a.bJi;
                     if (this.bTk.bRZ) {
                         this.bTk.SH();
                         return;
@@ -351,8 +351,8 @@ public class MCVersionSelect extends HTBaseActivity {
                         return;
                     }
                 case R.id.btnDownGameVersion0105:
-                    this.bTk.bRW = 0;
-                    this.bTk.bRX = hlx.data.localstore.a.bJh;
+                    this.bTk.mc_launch_version = 0;
+                    this.bTk.mcVersion = hlx.data.localstore.a.bJh;
                     if (this.bTk.bRY) {
                         this.bTk.SH();
                         return;
@@ -490,7 +490,7 @@ public class MCVersionSelect extends HTBaseActivity {
         public void onDownloadError(String url, String path, Object context) {
             MCVersionSelect self = (MCVersionSelect) this.bTo.get();
             if (self != null) {
-                t.download_toast(self, "下载出错");
+                t.show_toast(self, "下载出错");
                 self.hd(url);
             }
         }
@@ -621,13 +621,13 @@ public class MCVersionSelect extends HTBaseActivity {
             if (position == 0) {
                 r.ck().K(hlx.data.tongji.a.bNn);
                 if (VERSION.SDK_INT < 11) {
-                    com.huluxia.k.e(this.bTk.bRL, MCVersionSelect.bSd, hlx.data.localstore.a.bKL);
+                    com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSd, hlx.data.localstore.a.bKL);
                 } else {
-                    com.huluxia.k.e(this.bTk.bRL, MCVersionSelect.bSe, hlx.data.localstore.a.bKL);
+                    com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSe, hlx.data.localstore.a.bKL);
                 }
             } else if (position == 1) {
                 r.ck().K(hlx.data.tongji.a.bNo);
-                com.huluxia.k.e(this.bTk.bRL, MCVersionSelect.bSf, hlx.data.localstore.a.bKM);
+                com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSf, hlx.data.localstore.a.bKM);
             }
         }
     }
@@ -643,9 +643,9 @@ public class MCVersionSelect extends HTBaseActivity {
         public void onVersionUpdate() {
             MCVersionSelect self = (MCVersionSelect) this.bTo.get();
             if (self != null) {
-                String strVersionName = hlx.launch.game.c.Sg().dx(false);
-                if (!strVersionName.equals(hlx.data.localstore.a.bJg)) {
-                    t.download_toast(self, "已选择" + strVersionName + "版本");
+                String mcVersion = hlx.launch.game.c.Sg().getMCVersion(false);
+                if (!mcVersion.equals(hlx.data.localstore.a.bJg)) {
+                    t.show_toast(self, "已选择" + mcVersion + "版本");
                 }
             }
         }
@@ -661,7 +661,7 @@ public class MCVersionSelect extends HTBaseActivity {
         public void onReceive(Context context, Intent intent) {
             String taskId = intent.getStringExtra("taskid");
             int status = intent.getIntExtra("success", 0);
-            if (taskId != null && status == 1 && this.bTk.bRL != null && !this.bTk.bRL.isFinishing()) {
+            if (taskId != null && status == 1 && this.bTk.this_MCVersionSelect != null && !this.bTk.this_MCVersionSelect.isFinishing()) {
                 if (taskId.equals("unzipMoreResFirearms")) {
                     this.bTk.a(this.bTk.bSk, this.bTk.bSj, this.bTk.bSi, this.bTk.bSJ);
                 } else if (taskId.equals("unzipMoreResFirearms13")) {
@@ -680,19 +680,19 @@ public class MCVersionSelect extends HTBaseActivity {
         filter.addDataScheme(com.umeng.analytics.onlineconfig.a.b);
         this.bSZ = new UninstallReceiver(this);
         registerReceiver(this.bSZ, filter);
-        this.bRL = this;
+        this.this_MCVersionSelect = this;
         this.Vo = new b(this);
         this.aIs.setVisibility(8);
-        this.bSg = new k(this.bRL);
-        this.bSg.gM(this.bRL.getString(R.string.onloading));
+        this.bSg = new k(this.this_MCVersionSelect);
+        this.bSg.gM(this.this_MCVersionSelect.getString(R.string.onloading));
         sJ();
         SD();
         this.beM = com.simple.colorful.d.isDayMode();
         SK();
         SL();
-        this.bTi = new a(this.bRL);
+        this.bTi = new a(this.this_MCVersionSelect);
         EventNotifyCenter.add(BaseEvent.class, this.bTi);
-        this.bTj = new d(this.bRL);
+        this.bTj = new d(this.this_MCVersionSelect);
         EventNotifyCenter.add(n.class, this.bTj);
         ResourceCtrl.getInstance().registerHandler(1000006, DownloadHandler.class);
         SE();
@@ -794,16 +794,16 @@ public class MCVersionSelect extends HTBaseActivity {
         int color;
         if (this.beM) {
             if (isSelect) {
-                color = this.bRL.getResources().getColor(R.color.home_interval_bg);
+                color = this.this_MCVersionSelect.getResources().getColor(R.color.home_interval_bg);
             } else {
-                color = this.bRL.getResources().getColor(R.color.home_common_bg);
+                color = this.this_MCVersionSelect.getResources().getColor(R.color.home_common_bg);
             }
             view.setBackgroundColor(color);
         } else {
             if (isSelect) {
-                color = this.bRL.getResources().getColor(R.color.home_interval_bg_night);
+                color = this.this_MCVersionSelect.getResources().getColor(R.color.home_interval_bg_night);
             } else {
-                color = this.bRL.getResources().getColor(R.color.game_option_version_choice_bg_night);
+                color = this.this_MCVersionSelect.getResources().getColor(R.color.game_option_version_choice_bg_night);
             }
             view.setBackgroundColor(color);
         }
@@ -813,36 +813,36 @@ public class MCVersionSelect extends HTBaseActivity {
     private void M(View v) {
         switch (v.getId()) {
             case R.id.rlyMoreV0141:
-                this.bRW = 5;
-                this.bRX = hlx.data.localstore.a.version_0141;
+                this.mc_launch_version = 5;
+                this.mcVersion = hlx.data.localstore.a.version_0141;
                 return;
             case R.id.rlyMoreV0159:
-                this.bRW = 8;
-                this.bRX = hlx.data.localstore.a.version_0161;
+                this.mc_launch_version = 8;
+                this.mcVersion = hlx.data.localstore.a.version_0161;
                 return;
             case R.id.rlyMoreV0150:
-                this.bRW = 7;
-                this.bRX = hlx.data.localstore.a.version_0154;
+                this.mc_launch_version = 7;
+                this.mcVersion = hlx.data.localstore.a.version_0154;
                 return;
             case R.id.ly_GameVersion0131:
-                this.bRW = 4;
-                this.bRX = hlx.data.localstore.a.bJm;
+                this.mc_launch_version = 4;
+                this.mcVersion = hlx.data.localstore.a.bJm;
                 return;
             case R.id.ly_GameVersion0130:
-                this.bRW = 3;
-                this.bRX = hlx.data.localstore.a.bJl;
+                this.mc_launch_version = 3;
+                this.mcVersion = hlx.data.localstore.a.bJl;
                 return;
             case R.id.ly_GameVersion0121:
-                this.bRW = 2;
-                this.bRX = VERSION.SDK_INT < 11 ? hlx.data.localstore.a.bJj : hlx.data.localstore.a.bJk;
+                this.mc_launch_version = 2;
+                this.mcVersion = VERSION.SDK_INT < 11 ? hlx.data.localstore.a.bJj : hlx.data.localstore.a.bJk;
                 return;
             case R.id.ly_GameVersion0111:
-                this.bRW = 1;
-                this.bRX = hlx.data.localstore.a.bJi;
+                this.mc_launch_version = 1;
+                this.mcVersion = hlx.data.localstore.a.bJi;
                 return;
             case R.id.ly_GameVersion0105:
-                this.bRW = 0;
-                this.bRX = hlx.data.localstore.a.bJh;
+                this.mc_launch_version = 0;
+                this.mcVersion = hlx.data.localstore.a.bJh;
                 return;
             default:
                 return;
@@ -901,7 +901,7 @@ public class MCVersionSelect extends HTBaseActivity {
         h item2 = new h(dayMode ? R.drawable.tutorial_day : R.drawable.tutorial_night, hlx.data.localstore.a.bKM, false);
         texts.add(item1);
         texts.add(item2);
-        final j popup = new j(this.bRL, new c(), texts);
+        final j popup = new j(this.this_MCVersionSelect, new c(), texts);
         view.setOnClickListener(new OnClickListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
@@ -940,7 +940,7 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void SD() {
-        this.bRX = hlx.launch.game.c.Sg().dx(false);
+        this.mcVersion = hlx.launch.game.c.Sg().getMCVersion(false);
     }
 
     private void SE() {
@@ -1065,27 +1065,30 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void a(RelativeLayout relativeLayout, int version) {
         if (!relativeLayout.isClickable()) {
-            this.bRW = -1;
-            SI();
+            this.mc_launch_version = -1;
+            setStartVersion();
         }
         mN(version);
     }
 
     private void SH() {
-        if (this.bRW == hlx.launch.game.c.Sg().Sm() || hlx.launch.game.c.Sg().Sm() == -1) {
-            t.download_toast(this.bRL, "已选择" + this.bRX + "版本");
-            SI();
+        if (this.mc_launch_version == hlx.launch.game.c.Sg().getLaunch_mc_version() || hlx.launch.game.c.Sg().getLaunch_mc_version() == -1) {
+            t.show_toast(this.this_MCVersionSelect, "已选择" + this.mcVersion + "版本");
+            setStartVersion();
             return;
         }
-        gZ(this.bRX);
+        showConfirmDialog(this.mcVersion);
     }
 
-    private void SI() {
-        hlx.launch.game.c.Sg().setStartGameVersion(this.bRW);
+    private void setStartVersion() {
+        hlx.launch.game.c.Sg().setStartGameVersion(this.mc_launch_version);
     }
 
-    private void gZ(String version) {
-        new DialogManager(this.bRL).showOkCancelDialog(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKF, new Object[]{version}), hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+    private void showConfirmDialog(String version) {
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA,
+                String.format(hlx.data.localstore.a.bKF, new Object[]{version}),
+                hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true,
+                new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
@@ -1096,19 +1099,19 @@ public class MCVersionSelect extends HTBaseActivity {
             }
 
             public void onOk() {
-                t.download_toast(this.bTk.bRL, "已选择" + this.bTk.bRX + "版本");
-                this.bTk.SI();
-                MCLauncherActivity105.t(this.bTk.bRL, ReStartSoftFlag.MC_RESTART_BLACK.Value());
+                t.show_toast(this.bTk.this_MCVersionSelect, "已选择" + this.bTk.mcVersion + "版本");
+                this.bTk.setStartVersion();
+                MCLauncherActivity105.t(this.bTk.this_MCVersionSelect, ReStartSoftFlag.MC_RESTART_BLACK.Value());
             }
         });
     }
 
     private void SJ() {
         CharSequence _prompt = null;
-        switch (this.bRW) {
+        switch (this.mc_launch_version) {
             case 0:
             case 1:
-                _prompt = this.bRL.getResources().getString(R.string.TipMCOldVerDown);
+                _prompt = this.this_MCVersionSelect.getResources().getString(R.string.TipMCOldVerDown);
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 14680064) {
                     _prompt = _prompt + hlx.data.localstore.a.bKx;
                     break;
@@ -1130,7 +1133,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 }
                 break;
         }
-        new DialogManager(this.bRL).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt, hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt, hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
@@ -1149,7 +1152,7 @@ public class MCVersionSelect extends HTBaseActivity {
     private void Ep() {
         String gamePackName = "";
         String url = "";
-        switch (this.bRW) {
+        switch (this.mc_launch_version) {
             case 0:
                 gamePackName = Constants.bsu;
                 url = Constants.bsl;
@@ -1377,7 +1380,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 }
                 break;
         }
-        new DialogManager(this.bRL).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt,
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt,
                 hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true,
                 new OkCancelDialogListener(MCVersionSelect.this) {
             final /* synthetic */ MCVersionSelect bTk;
@@ -1429,20 +1432,20 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void SN() {
-        this.bRW = 8;
-        this.bRX = hlx.data.localstore.a.version_0161;
+        this.mc_launch_version = 8;
+        this.mcVersion = hlx.data.localstore.a.version_0161;
         SH();
     }
 
     private void SO() {
-        this.bRW = 7;
-        this.bRX = hlx.data.localstore.a.version_0154;
+        this.mc_launch_version = 7;
+        this.mcVersion = hlx.data.localstore.a.version_0154;
         SH();
     }
 
     private void SP() {
-        this.bRW = 5;
-        this.bRX = hlx.data.localstore.a.version_0141;
+        this.mc_launch_version = 5;
+        this.mcVersion = hlx.data.localstore.a.version_0141;
         SH();
     }
 
@@ -1459,7 +1462,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 4:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.download_toast(this.bRL, "需要先卸载旧版本！");
+                        t.show_toast(this.this_MCVersionSelect, "需要先卸载旧版本！");
                         this.bSY = 5;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1468,7 +1471,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 5:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.download_toast(this.bRL, "需要先卸载原有版本！");
+                        t.show_toast(this.this_MCVersionSelect, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1477,7 +1480,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 6:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.download_toast(this.bRL, "需要先卸载原有版本！");
+                        t.show_toast(this.this_MCVersionSelect, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1597,8 +1600,8 @@ public class MCVersionSelect extends HTBaseActivity {
         this.bSH = moreResIndex;
         DialogManager manager = new DialogManager(this);
         StyleHolder styleHolder = new StyleHolder();
-        styleHolder.colorUnMarkedButton = com.simple.colorful.d.getColor(this.bRL, 16842808);
-        styleHolder.colorButton = this.bRL.getResources().getColor(R.color.dialog_ok_btn_color);
+        styleHolder.colorUnMarkedButton = com.simple.colorful.d.getColor(this.this_MCVersionSelect, 16842808);
+        styleHolder.colorButton = this.this_MCVersionSelect.getResources().getColor(R.color.dialog_ok_btn_color);
         manager.showOkCancelDialog(hlx.data.localstore.a.bKA, hlx.data.localstore.a.bKK, "删除", hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
@@ -1652,53 +1655,53 @@ public class MCVersionSelect extends HTBaseActivity {
         tInfo.na = true;
         tInfo.nb = false;
         ResourceCtrl.getInstance().addTask(tInfo);
-        t.download_toast(this.bRL, "后台下载中...");
+        t.show_toast(this.this_MCVersionSelect, "后台下载中...");
     }
 
     private void hc(String url) {
         if (url.equals(Constants.bsl)) {
-            this.bRW = 0;
-            this.bRX = hlx.data.localstore.a.bJh;
-            mK(this.bRW);
+            this.mc_launch_version = 0;
+            this.mcVersion = hlx.data.localstore.a.bJh;
+            mK(this.mc_launch_version);
             SH();
             this.bRY = true;
-            mM(this.bRW);
+            mM(this.mc_launch_version);
             this.bSX.performClick();
             a(this.bRR, this.bRM, this.bSO, null);
         } else if (url.equals(Constants.bsm)) {
-            this.bRW = 1;
-            this.bRX = hlx.data.localstore.a.bJi;
-            mK(this.bRW);
+            this.mc_launch_version = 1;
+            this.mcVersion = hlx.data.localstore.a.bJi;
+            mK(this.mc_launch_version);
             SH();
             this.bRZ = true;
-            mM(this.bRW);
+            mM(this.mc_launch_version);
             this.bSW.performClick();
             a(this.bRS, this.bRN, this.bSN, null);
         } else if (url.equals(Constants.bsn) || url.equals(Constants.bsq)) {
-            this.bRW = 2;
-            this.bRX = hlx.data.localstore.a.bJj;
-            mK(this.bRW);
+            this.mc_launch_version = 2;
+            this.mcVersion = hlx.data.localstore.a.bJj;
+            mK(this.mc_launch_version);
             SH();
             this.bSa = true;
-            mM(this.bRW);
+            mM(this.mc_launch_version);
             this.bSV.performClick();
             a(this.bRT, this.bRO, this.bSM, null);
         } else if (url.equals(Constants.bso) || url.equals(Constants.bsr)) {
-            this.bRW = 3;
-            this.bRX = hlx.data.localstore.a.bJl;
-            mK(this.bRW);
+            this.mc_launch_version = 3;
+            this.mcVersion = hlx.data.localstore.a.bJl;
+            mK(this.mc_launch_version);
             SH();
             this.bSb = true;
-            mM(this.bRW);
+            mM(this.mc_launch_version);
             this.bSU.performClick();
             a(this.bRU, this.bRP, this.bSL, null);
         } else if (url.equals(Constants.bsp) || url.equals(Constants.bss)) {
-            this.bRW = 4;
-            this.bRX = hlx.data.localstore.a.bJm;
-            mK(this.bRW);
+            this.mc_launch_version = 4;
+            this.mcVersion = hlx.data.localstore.a.bJm;
+            mK(this.mc_launch_version);
             SH();
             this.bSc = true;
-            mM(this.bRW);
+            mM(this.mc_launch_version);
             this.bST.performClick();
             a(this.bRV, this.bRQ, this.bSK, null);
         } else if (url.equals(hlx.data.localstore.a.bLe)) {

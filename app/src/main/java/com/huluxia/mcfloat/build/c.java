@@ -39,7 +39,7 @@ public class c extends a {
     public c(e buildStatus) {
         this.Qp = buildStatus;
         this.abd = new b();
-        this.abd.n(ah.KZ().P(aba, 5), ah.KZ().P(abb, 0), ah.KZ().P(abc, 0));
+        this.abd.n(ah.KZ().get_config_sp_intVal(aba, 5), ah.KZ().get_config_sp_intVal(abb, 0), ah.KZ().get_config_sp_intVal(abc, 0));
     }
 
     public void aO(Context context) {

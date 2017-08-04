@@ -333,7 +333,7 @@ public class a extends View {
             bundle.putInt("level", i);
             bundle.putInt("x", this.f);
             bundle.putInt("y", this.g);
-            bundle.putInt("dx", i2);
+            bundle.putInt("getMCVersion", i2);
             bundle.putInt("dy", i3);
             Mj.sendBundle(bundle);
         }

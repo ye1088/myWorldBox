@@ -128,7 +128,7 @@ public class t {
         return true;
     }
 
-    public static void download_toast(Context context, String msg) {
+    public static void show_toast(Context context, String msg) {
         a(context, msg, 0, 17);
     }
 
@@ -249,7 +249,7 @@ public class t {
     }
 
     public static void a(PaintView imageView, String url, int width, int height) {
-        imageView.setUri(UtilUri.getUriOrNull(String.format("%s_%dx%d.jpeg", new Object[]{url, Integer.valueOf(width), Integer.valueOf(height)}))).placeHolder(d.isDayMode() ? f.place_holder_normal : f.place_holder_night_normal).setImageLoader(l.cb().getImageLoader());
+        imageView.setUri(UtilUri.getUriOrNull(String.format("%s_%getMCVersion%d.jpeg", new Object[]{url, Integer.valueOf(width), Integer.valueOf(height)}))).placeHolder(d.isDayMode() ? f.place_holder_normal : f.place_holder_night_normal).setImageLoader(l.cb().getImageLoader());
     }
 
     public static void q(Context context, String url) {

@@ -156,7 +156,7 @@ public class UploadPhotoActivity extends HTBaseActivity {
         if (UtilsFunction.empty(this.bja) && UtilsFunction.empty(this.bjb)) {
             cs(false);
             this.aIT.setEnabled(true);
-            t.download_toast(this, getString(com.huluxia.bbs.b.m.album_no_modified));
+            t.show_toast(this, getString(com.huluxia.bbs.b.m.album_no_modified));
             return;
         }
         this.biZ.getImages().clear();

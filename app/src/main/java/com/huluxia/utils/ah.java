@@ -110,11 +110,11 @@ public class ah {
         return HTApplication.getAppContext().getSharedPreferences("config", 0);
     }
 
-    private SharedPreferences Lf() {
+    private SharedPreferences get_update_sp() {
         return HTApplication.getAppContext().getSharedPreferences("update", 0);
     }
 
-    public int P(String key, int def) {
+    public int get_config_sp_intVal(String key, int def) {
         return get_config_sp().getInt(key, def);
     }
 
@@ -239,23 +239,23 @@ public class ah {
     }
 
     public void fV(String version) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putString("skip_version", version);
         editor.commit();
     }
 
     public void bt(long time) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putLong("skip_version_time", time);
         editor.commit();
     }
 
     public String Lk() {
-        return Lf().getString("skip_version", "");
+        return get_update_sp().getString("skip_version", "");
     }
 
     public long Ll() {
-        return Lf().getLong("skip_version_time", -1);
+        return get_update_sp().getLong("skip_version_time", -1);
     }
 
     public String qb() {
@@ -354,21 +354,21 @@ public class ah {
     }
 
     public boolean Lq() {
-        return Lf().getBoolean("openapp", true);
+        return get_update_sp().getBoolean("openapp", true);
     }
 
     public void cZ(boolean value) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putBoolean("openapp", value);
         editor.commit();
     }
 
     public boolean Lr() {
-        return Lf().getBoolean("firstnew", true);
+        return get_update_sp().getBoolean("firstnew", true);
     }
 
     public void da(boolean value) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putBoolean("firstnew", value);
         editor.commit();
     }
@@ -388,31 +388,31 @@ public class ah {
     }
 
     public boolean Lt() {
-        return Lf().getBoolean("bbdiatip", true);
+        return get_update_sp().getBoolean("bbdiatip", true);
     }
 
     public void db(boolean value) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putBoolean("bbdiatip", value);
         editor.commit();
     }
 
     public boolean Lu() {
-        return Lf().getBoolean("roothometip", true);
+        return get_update_sp().getBoolean("roothometip", true);
     }
 
     public void dc(boolean value) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putBoolean("roothometip", value);
         editor.commit();
     }
 
     public String Lv() {
-        return Lf().getString("BaiduMobAd_CHANNEL", null);
+        return get_update_sp().getString("BaiduMobAd_CHANNEL", null);
     }
 
     public void fW(String flag) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putString("BaiduMobAd_CHANNEL", flag);
         editor.commit();
     }
@@ -468,31 +468,31 @@ public class ah {
     }
 
     public String LB() {
-        return Lf().getString("LOCAL_CHANNEL", null);
+        return get_update_sp().getString("LOCAL_CHANNEL", null);
     }
 
     public void fX(String flag) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putString("LOCAL_CHANNEL", flag);
         editor.commit();
     }
 
     public String LC() {
-        return Lf().getString("UMENG_CHANNEL", null);
+        return get_update_sp().getString("UMENG_CHANNEL", null);
     }
 
     public void fY(String flag) {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putString("UMENG_CHANNEL", flag);
         editor.commit();
     }
 
     public boolean LD() {
-        return Lf().getBoolean("TIP_MARKET", false);
+        return get_update_sp().getBoolean("TIP_MARKET", false);
     }
 
     public void LE() {
-        Editor editor = Lf().edit();
+        Editor editor = get_update_sp().edit();
         editor.putBoolean("TIP_MARKET", true);
         editor.commit();
     }

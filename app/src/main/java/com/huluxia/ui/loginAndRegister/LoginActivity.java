@@ -67,7 +67,7 @@ public class LoginActivity extends HTBaseActivity {
                 HLog.error("LoginActivity", e.toString(), new Object[0]);
             }
             if (TextUtils.isEmpty(token) || TextUtils.isEmpty(expires) || TextUtils.isEmpty(openId) || this.aYl.aDA == null) {
-                t.download_toast(this.aYl.aYf, "QQ验证失败。请重试。");
+                t.show_toast(this.aYl.aYf, "QQ验证失败。请重试。");
                 return;
             }
             this.aYl.aDA.setAccessToken(token, expires);
@@ -148,14 +148,14 @@ public class LoginActivity extends HTBaseActivity {
         public void onComplete(Object response) {
             this.aYl.aYf.cs(false);
             if (response == null) {
-                t.download_toast(this.aYl.aYf, "QQ验证失败，请重试。");
+                t.show_toast(this.aYl.aYf, "QQ验证失败，请重试。");
                 return;
             }
             JSONObject jsonResponse = (JSONObject) response;
             if (jsonResponse == null || jsonResponse.length() != 0) {
                 d((JSONObject) response);
             } else {
-                t.download_toast(this.aYl.aYf, "QQ验证失败，请重试。");
+                t.show_toast(this.aYl.aYf, "QQ验证失败，请重试。");
             }
         }
 
@@ -324,7 +324,7 @@ public class LoginActivity extends HTBaseActivity {
         } else if (response.fe() == 1) {
             com.huluxia.data.h info = (com.huluxia.data.h) response.getData();
             if (info.getCode() != 200 || (info.en().booleanValue() && info.eo() == null)) {
-                t.download_toast(this, "验证失效，请重新登陆");
+                t.show_toast(this, "验证失效，请重新登陆");
             } else if (info.en().booleanValue()) {
                 t.o(this, "登录成功");
                 j.ep().a(info.eo());

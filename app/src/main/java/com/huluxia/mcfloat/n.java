@@ -273,8 +273,8 @@ public class n implements com.huluxia.mcfloat.p.a {
                     this.US.setWidth(a.cX(80));
                     this.US.setHeight(a.cX(80));
                     this.US.setBackgroundDrawable(new ColorDrawable(0));
-                    this.QL = ah.KZ().P(n.Uy, 40);
-                    this.QM = ah.KZ().P(n.Uz, 20);
+                    this.QL = ah.KZ().get_config_sp_intVal(n.Uy, 40);
+                    this.QM = ah.KZ().get_config_sp_intVal(n.Uz, 20);
                     this.QJ = true;
                 }
             }
@@ -399,7 +399,7 @@ public class n implements com.huluxia.mcfloat.p.a {
         h.bR(checked);
         if (h.zx() == 0 || h.zx() == 1) {
             boolean z;
-            int nResult = ah.KZ().P(Ux, 0);
+            int nResult = ah.KZ().get_config_sp_intVal(Ux, 0);
             CheckBox checkBox = this.UD;
             if (nResult == 0) {
                 z = false;
@@ -423,7 +423,7 @@ public class n implements com.huluxia.mcfloat.p.a {
             checked = ah.KZ().j(Uw, false);
             this.UF.setChecked(checked);
             h.bv(checked);
-            int gameZoom = ah.KZ().P(Sd, 2);
+            int gameZoom = ah.KZ().get_config_sp_intVal(Sd, 2);
             h.gK(gameZoom);
             this.UG.setProgress(gameZoom);
             dH(gameZoom);

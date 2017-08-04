@@ -112,7 +112,7 @@ public class a {
     public static final int bKt = 1;
     public static final int bKu = 2;
     public static final int bKv = 1;
-    public static final String bKw = "KEY_LAUNCH_GAME_LAST_VERSION";
+    public static final String KEY_LAUNCH_GAME_LAST_VERSION = "KEY_LAUNCH_GAME_LAST_VERSION";
     public static final String bKx = ", (手机剩余空间不足14M，请清理后重新下载)";
     public static final String bKy = ", (手机剩余空间不足11M，请清理后重新下载)";
     public static final String bKz = ", (手机剩余空间不足17M，请清理后重新下载)";

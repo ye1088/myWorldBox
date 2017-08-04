@@ -10,9 +10,9 @@ import hlx.data.localstore.a;
 /* compiled from: MCLaunchGame */
 public class c {
     private static c bRa;
-    private int inputLaunchGameIndex = ah.KZ().P(a.KEY_LAUNCHGAME_GAMEVERSION_EX, -1);
-    private int bQV = ah.KZ().P(a.bKr, 1);
-    private int bQW = ah.KZ().P(a.bKw, -1);
+    private int inputLaunchGameIndex = ah.KZ().get_config_sp_intVal(a.KEY_LAUNCHGAME_GAMEVERSION_EX, -1);
+    private int bQV = ah.KZ().get_config_sp_intVal(a.bKr, 1);
+    private int launch_mc_version = ah.KZ().get_config_sp_intVal(a.KEY_LAUNCH_GAME_LAST_VERSION, -1);
     private boolean bQX = ah.KZ().j(a.bKk, true);
     private boolean bQY = ah.KZ().j(a.bKm, false);
     private boolean bQZ = ah.KZ().j(a.bKo, true);
@@ -43,7 +43,7 @@ public class c {
         ah.KZ().Q(a.KEY_LAUNCHGAME_GAMEVERSION_EX, inputLaunchGameIndex);// put key,value 到 config.xml中
     }
 
-    public String dx(boolean inputShortFlag) {
+    public String getMCVersion(boolean inputShortFlag) {
         switch (this.inputLaunchGameIndex) {
             case -1:
                 return a.bJg;
@@ -111,12 +111,12 @@ public class c {
         if (!(lastVersionIndex == 0 || lastVersionIndex == 1 || lastVersionIndex == 2 || lastVersionIndex == 3 || lastVersionIndex == 4 || lastVersionIndex == 5 || lastVersionIndex == 7)) {
             lastVersionIndex = -1;
         }
-        this.bQW = lastVersionIndex;
-        ah.KZ().Q(a.bKw, lastVersionIndex);
+        this.launch_mc_version = lastVersionIndex;
+        ah.KZ().Q(a.KEY_LAUNCH_GAME_LAST_VERSION, lastVersionIndex);
     }
 
-    public int Sm() {
-        return this.bQW;
+    public int getLaunch_mc_version() {
+        return this.launch_mc_version;
     }
 
     public static boolean d(String ver, int intVer, boolean isJs) {

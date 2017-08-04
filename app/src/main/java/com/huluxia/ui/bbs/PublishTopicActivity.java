@@ -40,7 +40,7 @@ public class PublishTopicActivity extends PublishTopicBaseActivity {
             if (success) {
                 t.o(this.aLm.mContext, "发布成功");
             } else {
-                t.download_toast(this.aLm.mContext, msg);
+                t.show_toast(this.aLm.mContext, msg);
             }
             this.aLm.finish();
         }

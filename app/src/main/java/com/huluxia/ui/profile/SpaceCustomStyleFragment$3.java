@@ -48,7 +48,7 @@ class SpaceCustomStyleFragment$3 extends CallbackHandler {
             SpaceCustomStyleFragment.g(this.bhs).setEnabled(true);
             this.bhs.cs(false);
             if (succ) {
-                t.download_toast(this.bhs.getActivity(), this.bhs.getResources().getString(m.update_space_succ));
+                t.show_toast(this.bhs.getActivity(), this.bhs.getResources().getString(m.update_space_succ));
                 SpaceCustomStyleFragment.e(this.bhs).model = model;
                 this.bhs.getActivity().finish();
                 Class cls = f.class;
@@ -58,7 +58,7 @@ class SpaceCustomStyleFragment$3 extends CallbackHandler {
                 EventNotifyCenter.notifyEvent(cls, 2, objArr);
                 return;
             }
-            t.download_toast(this.bhs.getActivity(), info == null ? this.bhs.getResources().getString(m.update_space_failded) : info.msg);
+            t.show_toast(this.bhs.getActivity(), info == null ? this.bhs.getResources().getString(m.update_space_failded) : info.msg);
         }
     }
 

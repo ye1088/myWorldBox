@@ -89,7 +89,7 @@ public class GameOptionActivity extends HTBaseActivity {
         @MessageHandler(message = 2825)
         public void onVersionUpdate() {
             if (this.bPm.bPd != null) {
-                this.bPm.bPd.setText(c.Sg().dx(false));
+                this.bPm.bPd.setText(c.Sg().getMCVersion(false));
             }
         }
     };
@@ -174,7 +174,7 @@ public class GameOptionActivity extends HTBaseActivity {
 
     protected void onResume() {
         super.onResume();
-        this.bPd.setText(c.Sg().dx(false));
+        this.bPd.setText(c.Sg().getMCVersion(false));
     }
 
     protected void onDestroy() {

@@ -63,7 +63,7 @@ public class d {
                 return;
             case 2:
             case 4:
-                if (aE(strVersions, c.Sg().dx(true))) {
+                if (aE(strVersions, c.Sg().getMCVersion(true))) {
                     d(_tmpVersion, context);
                     return;
                 } else {
@@ -83,7 +83,7 @@ public class d {
         int _tmpVersion = c.Sg().Sh();
         if (!mK(_tmpVersion)) {
             bS(context);
-        } else if (aE(info.ver, c.Sg().dx(true))) {
+        } else if (aE(info.ver, c.Sg().getMCVersion(true))) {
             h.g(info.name, info.addr, String.valueOf(info.port));
             d(_tmpVersion, context);
         } else {
@@ -111,7 +111,7 @@ public class d {
             dia.az(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKG, new Object[]{hlx.data.localstore.a.bJA, versions}));
             dia.u(hlx.data.localstore.a.bKE, null, hlx.data.localstore.a.bKB);
         } else {
-            dia.az(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKG, new Object[]{c.Sg().dx(true), versions}));
+            dia.az(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKG, new Object[]{c.Sg().getMCVersion(true), versions}));
             dia.u(hlx.data.localstore.a.bKE, null, hlx.data.localstore.a.bKD);
         }
         dia.showDialog();

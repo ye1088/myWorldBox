@@ -44,14 +44,14 @@ public class an {
                             this.bmL.bmJ.setBluetoothScoOn(true);
                             this.bmL.bmJ.setMode(2);
                             this.bmL.mMode = 2;
-                            t.download_toast(this.bmL.mContext, "已经切换为听筒播放模式");
+                            t.show_toast(this.bmL.mContext, "已经切换为听筒播放模式");
                         }
                     } else if (this.bmL.mMode == 2) {
                         this.bmL.bmJ.setSpeakerphoneOn(true);
                         this.bmL.bmJ.setBluetoothScoOn(false);
                         this.bmL.bmJ.setMode(0);
                         this.bmL.mMode = 0;
-                        t.download_toast(this.bmL.mContext, "已经切换为扬声器播放模式");
+                        t.show_toast(this.bmL.mContext, "已经切换为扬声器播放模式");
                     }
                     Log.i("event0", String.valueOf(event.values[0]));
                 }

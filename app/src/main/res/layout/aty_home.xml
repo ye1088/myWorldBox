@@ -1,27 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:id="@id/rl_home" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <hlx.home.widget.NoScrollInterceptViewPager android:orientation="horizontal" android:id="@id/ivp_home_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tabs" />
-    <View android:id="@id/view_home_split" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_above="@id/bottom_tabs" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_tabs" android:background="?backgroundDim" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_bottom_height" android:layout_alignParentBottom="true">
-        <RelativeLayout android:id="@id/rly_home_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_home_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="@string/tab_home" android:drawableTop="?ico_tab_home" android:layout_centerInParent="true" />
-            <ImageView android:id="@id/home_tip" android:visibility="invisible" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ico_unread_dot" android:layout_toRightOf="@id/tv_home_tab" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rl_home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <hlx.home.widget.NoScrollInterceptViewPager
+        android:id="@id/ivp_home_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_tabs"
+        android:orientation="horizontal" />
+
+    <View
+        android:id="@id/view_home_split"
+        android:layout_width="fill_parent"
+        android:layout_height="0.20000005dip"
+        android:layout_above="@id/bottom_tabs"
+        android:background="?home_split_line_bg" />
+
+    <LinearLayout
+        android:id="@id/bottom_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_tab_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="?backgroundDim"
+        android:orientation="horizontal"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip">
+
+        <RelativeLayout
+            android:id="@id/rly_home_tab"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <CheckedTextView
+                android:id="@id/tv_home_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:drawableTop="?ico_tab_home"
+                android:gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:text="@string/tab_home"
+                android:textColor="?tab_text_color" />
+
+            <ImageView
+                android:id="@id/home_tip"
+                android:layout_width="5.0dip"
+                android:layout_height="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@id/tv_home_tab"
+                android:src="@drawable/ico_unread_dot"
+                android:visibility="invisible" />
         </RelativeLayout>
-        <RelativeLayout android:id="@id/rly_news_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_news_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="@string/tab_news" android:drawableTop="?ico_tab_news" android:layout_centerHorizontal="true" />
-            <ImageView android:id="@id/story_tip" android:visibility="invisible" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ico_unread_dot" android:layout_toRightOf="@id/tv_news_tab" />
+
+        <RelativeLayout
+            android:id="@id/rly_news_tab"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <CheckedTextView
+                android:id="@id/tv_news_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="?ico_tab_news"
+                android:gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:text="@string/tab_news"
+                android:textColor="?tab_text_color" />
+
+            <ImageView
+                android:id="@id/story_tip"
+                android:layout_width="5.0dip"
+                android:layout_height="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@id/tv_news_tab"
+                android:src="@drawable/ico_unread_dot"
+                android:visibility="invisible" />
         </RelativeLayout>
-        <RelativeLayout android:id="@id/rly_start_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <ImageView android:id="@id/iv_startgame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?ico_tab_startgame" />
+
+        <RelativeLayout
+            android:id="@id/rly_start_tab"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@id/iv_startgame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="?ico_tab_startgame" />
         </RelativeLayout>
-        <RelativeLayout android:id="@id/rly_community_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_community_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="@string/tab_community" android:drawableTop="?ico_tab_community" android:layout_centerInParent="true" />
-            <ImageView android:id="@id/community_tip" android:visibility="invisible" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ico_unread_dot" android:layout_toRightOf="@id/tv_community_tab" />
+
+        <RelativeLayout
+            android:id="@id/rly_community_tab"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <CheckedTextView
+                android:id="@id/tv_community_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:drawableTop="?ico_tab_community"
+                android:gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:text="@string/tab_community"
+                android:textColor="?tab_text_color" />
+
+            <ImageView
+                android:id="@id/community_tip"
+                android:layout_width="5.0dip"
+                android:layout_height="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@id/tv_community_tab"
+                android:src="@drawable/ico_unread_dot"
+                android:visibility="invisible" />
         </RelativeLayout>
-        <RelativeLayout android:id="@id/rly_space_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <CheckedTextView android:textColor="?tab_text_color" android:gravity="center_horizontal" android:id="@id/tv_space_tab" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:text="@string/tab_space" android:drawableTop="?ico_tab_space" android:layout_centerHorizontal="true" />
-            <ImageView android:id="@id/space_tip" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ico_unread_dot" android:layout_toRightOf="@id/tv_space_tab" />
+
+        <RelativeLayout
+            android:id="@id/rly_space_tab"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <CheckedTextView
+                android:id="@id/tv_space_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="?ico_tab_space"
+                android:gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:text="@string/tab_space"
+                android:textColor="?tab_text_color" />
+
+            <ImageView
+                android:id="@id/space_tip"
+                android:layout_width="10.0dip"
+                android:layout_height="10.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@id/tv_space_tab"
+                android:src="@drawable/ico_unread_dot"
+                android:visibility="invisible" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

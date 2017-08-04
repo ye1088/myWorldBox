@@ -486,7 +486,7 @@ public class TopicListFragment extends BaseLoadingFragment implements OnClickLis
             if (!j.ep().ey()) {
                 t.b(this.mContext, 528, 529);
             } else if (this.aQe.getText().toString().equals("已签到")) {
-                t.download_toast(this.mContext, "今日已签到，请明天再来");
+                t.show_toast(this.mContext, "今日已签到，请明天再来");
             } else {
                 this.aQc.setClickable(false);
                 this.aPY.w(j.ep().getUserid());
@@ -502,7 +502,7 @@ public class TopicListFragment extends BaseLoadingFragment implements OnClickLis
             if (!j.ep().ey()) {
                 t.an(this.mContext);
             } else if (j.ep().getLevel() < this.aPE.getIsSearch()) {
-                t.download_toast(this.mContext, "抱歉！目前搜索只对" + this.aPE.getIsSearch() + "级以上的葫芦娃开放。");
+                t.show_toast(this.mContext, "抱歉！目前搜索只对" + this.aPE.getIsSearch() + "级以上的葫芦娃开放。");
             } else {
                 t.b(this.mContext, this.aPE);
             }

@@ -52,6 +52,6 @@ public class c {
     }
 
     public String toString() {
-        return String.format((Locale) null, "%dx%d", new Object[]{Integer.valueOf(this.width), Integer.valueOf(this.height)});
+        return String.format((Locale) null, "%getMCVersion%d", new Object[]{Integer.valueOf(this.width), Integer.valueOf(this.height)});
     }
 }

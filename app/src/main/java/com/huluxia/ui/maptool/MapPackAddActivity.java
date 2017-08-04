@@ -163,7 +163,7 @@ public class MapPackAddActivity extends HTBaseActivity implements OnClickListene
     private void Il() {
         String key = this.aIY.getText().toString().trim();
         if (key.length() < 1) {
-            t.download_toast(this, "搜索条件不能为空");
+            t.show_toast(this, "搜索条件不能为空");
         } else if (this.aZV != null) {
             this.arrayList.clear();
             List<ItemStack> resultList = new ArrayList();

@@ -958,7 +958,7 @@ public class TopicDetailActivity extends HTBaseLoadingActivity implements OnClic
                             if (HTApplication.bV() != null) {
                                 this.aPk.GE();
                             } else {
-                                t.download_toast(this.aPk, "暂时无法分享");
+                                t.show_toast(this.aPk, "暂时无法分享");
                             }
                         } else if (inIndex == MENU_VALUE.MOVETOPIC.ordinal()) {
                             t.a(this.aPk, this.aPk.sK);

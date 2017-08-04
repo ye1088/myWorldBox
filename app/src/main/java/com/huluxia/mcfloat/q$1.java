@@ -32,7 +32,7 @@ class q$1 extends Handler {
                 q.b(this.VV).aI(true);
                 return;
             }
-            k.download_toast(q.c(this.VV), "请进入游戏后再开启悬浮窗");
+            k.show_toast(q.c(this.VV), "请进入游戏后再开启悬浮窗");
         } else if (type == 18) {
             q.a(this.VV).aI(true);
             q.b(this.VV).aI(false);

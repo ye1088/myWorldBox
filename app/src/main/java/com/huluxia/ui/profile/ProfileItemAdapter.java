@@ -40,7 +40,7 @@ public class ProfileItemAdapter extends ArrayAdapter<b> {
                     case 2:
                         boolean isOther = j.ep().getUserid() != this.bgG.aKG.getUserID();
                         if (isOther && this.bgG.aKG.getPhotos().isEmpty()) {
-                            t.download_toast(this.bgG.context, "该用户还没有上传照片");
+                            t.show_toast(this.bgG.context, "该用户还没有上传照片");
                             return;
                         } else if (isOther) {
                             t.a(this.bgG.context, this.bgG.aKG, isOther);

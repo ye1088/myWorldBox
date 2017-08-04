@@ -112,14 +112,14 @@ public class a extends Drawable {
         this.Ba = this.AX;
         this.Bb = this.AY;
         a(canvas, "ID: %s", this.AP);
-        a(canvas, "D: %dx%d", Integer.valueOf(bounds.width()), Integer.valueOf(bounds.height()));
-        a(canvas, "I: %dx%d", Integer.valueOf(this.AQ), Integer.valueOf(this.AR));
+        a(canvas, "D: %getMCVersion%d", Integer.valueOf(bounds.width()), Integer.valueOf(bounds.height()));
+        a(canvas, "I: %getMCVersion%d", Integer.valueOf(this.AQ), Integer.valueOf(this.AR));
         a(canvas, "I: %d KiB", Integer.valueOf(this.AS / 1024));
         if (this.AT != null) {
             a(canvas, "i format: %s", this.AT);
         }
         if (this.AU > 0) {
-            a(canvas, "anim: f %d, download_toast %d", Integer.valueOf(this.AU), Integer.valueOf(this.AV));
+            a(canvas, "anim: f %d, show_toast %d", Integer.valueOf(this.AU), Integer.valueOf(this.AV));
         }
     }
 

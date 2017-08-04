@@ -30,7 +30,7 @@ class ai$1 implements Runnable {
                 try {
                     p.b(UtilsFile.Kq() + dstName, destPath, dstName + ".zip", true);
                     if (this.bmn) {
-                        k.download_toast(this.val$context, "导出" + dstName + "成功");
+                        k.show_toast(this.val$context, "导出" + dstName + "成功");
                     }
                 } catch (Exception e) {
                 }

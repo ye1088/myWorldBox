@@ -132,7 +132,7 @@ public class RegisterActivity extends HTBaseActivity {
             } catch (Exception e) {
             }
             if (TextUtils.isEmpty(token) || TextUtils.isEmpty(expires) || TextUtils.isEmpty(openId)) {
-                t.download_toast(this.aYN, "QQ验证失败。请重试。");
+                t.show_toast(this.aYN, "QQ验证失败。请重试。");
                 return;
             }
             this.aYN.aXN = openId;
@@ -273,25 +273,25 @@ public class RegisterActivity extends HTBaseActivity {
         public void onComplete(Object response) {
             this.aYN.cs(false);
             if (response == null) {
-                t.download_toast(this.aYN, "QQ验证失败，请重试。");
+                t.show_toast(this.aYN, "QQ验证失败，请重试。");
                 return;
             }
             JSONObject jsonResponse = (JSONObject) response;
             if (jsonResponse == null || jsonResponse.length() != 0) {
                 d((JSONObject) response);
             } else {
-                t.download_toast(this.aYN, "QQ验证失败，请重试。");
+                t.show_toast(this.aYN, "QQ验证失败，请重试。");
             }
         }
 
         public void onError(UiError e) {
-            t.download_toast(this.aYN, "onError: " + e.errorDetail);
+            t.show_toast(this.aYN, "onError: " + e.errorDetail);
             this.aYN.cs(false);
             this.aYN.cO(false);
         }
 
         public void onCancel() {
-            t.download_toast(this.aYN, "取消验证");
+            t.show_toast(this.aYN, "取消验证");
             this.aYN.cs(false);
             this.aYN.cO(false);
         }
@@ -669,7 +669,7 @@ public class RegisterActivity extends HTBaseActivity {
             com.huluxia.module.account.a.DU().i(this.aXL, this.aXN, this.aXO);
             return;
         }
-        t.download_toast(this.aYm, "请输入合法的手机号");
+        t.show_toast(this.aYm, "请输入合法的手机号");
         this.aXS.requestFocus();
         this.aXS.setSelection(email.length());
     }
@@ -682,14 +682,14 @@ public class RegisterActivity extends HTBaseActivity {
         String vcode = this.aYt.getText().toString() != null ? this.aYt.getText().toString() : "";
         this.aYw = vcode.trim();
         if (!UtilsString.validPhone(this.aXL)) {
-            t.download_toast(this.aYm, "手机号无效");
+            t.show_toast(this.aYm, "手机号无效");
             this.aXS.requestFocus();
             this.aXS.setSelection(email.length());
         } else if (!eA(this.aXM)) {
             this.aXT.requestFocus();
             this.aXT.setSelection(pwd.length());
         } else if (this.aYw == null || this.aYw.length() < 2) {
-            t.download_toast(this.aYm, "验证码无效");
+            t.show_toast(this.aYm, "验证码无效");
             this.aYt.requestFocus();
             this.aYt.setSelection(vcode.length());
         } else if (this.aYL.isChecked()) {
@@ -699,7 +699,7 @@ public class RegisterActivity extends HTBaseActivity {
             cs(true);
             com.huluxia.module.account.a.DU().R(this.aXL, this.aYw);
         } else {
-            t.download_toast(this.aYm, "必须勾选同意使用条款才能注册");
+            t.show_toast(this.aYm, "必须勾选同意使用条款才能注册");
         }
     }
 

@@ -135,7 +135,7 @@ public class WoodImportActivity extends HTBaseActivity implements OnClickListene
         }
         n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         EventNotifyCenter.notifyEvent(n.class, n.axc, Boolean.valueOf(false), filePath, null);
-        t.download_toast(this.aMn, "成功导入 " + name);
+        t.show_toast(this.aMn, "成功导入 " + name);
         AsyncTaskCenter.getInstance().execute(new Runnable(this) {
             final /* synthetic */ WoodImportActivity bcz;
 

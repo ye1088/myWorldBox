@@ -476,18 +476,18 @@ public abstract class PublishTopicBaseActivity extends HTBaseActivity implements
         if (this.aLu == null || this.aLu.size() <= 0 || this.sH != 0) {
             if (this.aLv.getVisibility() == 0) {
                 if (title.trim().length() < 5) {
-                    t.download_toast(this, "标题不能少于5个字符");
+                    t.show_toast(this, "标题不能少于5个字符");
                     return;
                 } else if (title.trim().length() > 32) {
-                    t.download_toast(this, "标题不能多于32个字符");
+                    t.show_toast(this, "标题不能多于32个字符");
                     return;
                 }
             }
             if (this.aLx.getVisibility() == 0 && (contact.trim().length() < 5 || contact.trim().length() > 50)) {
-                t.download_toast(this, "联系方式为5到50个字符。准确填写可以方便我们更好地为您解决问题。");
+                t.show_toast(this, "联系方式为5到50个字符。准确填写可以方便我们更好地为您解决问题。");
                 return;
             } else if (detail.trim().length() < 5) {
-                t.download_toast(this, "内容不能少于5个字符");
+                t.show_toast(this, "内容不能少于5个字符");
                 return;
             } else if (this.aLH.getVisibility() != 0 || this.aLB.getText().toString().length() > 1) {
                 this.aIT.setEnabled(false);
@@ -495,11 +495,11 @@ public abstract class PublishTopicBaseActivity extends HTBaseActivity implements
                 ks(0);
                 return;
             } else {
-                t.download_toast(this, "验证码不能为空");
+                t.show_toast(this, "验证码不能为空");
                 return;
             }
         }
-        t.download_toast(this, "请在底部选择帖子标签");
+        t.show_toast(this, "请在底部选择帖子标签");
         if (this.aLP != null) {
             this.aLP.performClick();
         }
@@ -794,7 +794,7 @@ public abstract class PublishTopicBaseActivity extends HTBaseActivity implements
             this.aLw.setSelection(faceItem.text.length() + selStart);
             return;
         }
-        t.download_toast(this, "一次最多发送15个表情噢～");
+        t.show_toast(this, "一次最多发送15个表情噢～");
     }
 
     protected String FS() {
@@ -909,7 +909,7 @@ public abstract class PublishTopicBaseActivity extends HTBaseActivity implements
                         return;
                     }
                 }
-                t.download_toast(this.aMg.mContext, this.aMg.mContext.getResources().getString(m.reminds_cannont_remove));
+                t.show_toast(this.aMg.mContext, this.aMg.mContext.getResources().getString(m.reminds_cannont_remove));
             }
         });
     }

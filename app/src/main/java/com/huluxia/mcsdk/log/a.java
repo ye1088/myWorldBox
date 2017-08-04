@@ -157,7 +157,7 @@ public class a {
             sb.append(obj.getClass().getSimpleName());
         }
         sb.append(" Exception occurs at ");
-        sb.append("(P:");
+        sb.append("(get_config_sp_intVal:");
         sb.append(Process.myPid());
         sb.append(")");
         sb.append("(T:");
@@ -174,7 +174,7 @@ public class a {
     private static String a(Object obj, String filename, int line, String msg) {
         StringBuilder sb = new StringBuilder();
         sb.append(msg);
-        sb.append("(P:");
+        sb.append("(get_config_sp_intVal:");
         sb.append(Process.myPid());
         sb.append(")");
         sb.append("(T:");

@@ -169,8 +169,8 @@ public abstract class d {
         r2 = r2.equals(r3);
         if (r2 == 0) goto L_0x0005;
     L_0x0030:
-        r2 = r4.download_toast;
-        r3 = r5.download_toast;
+        r2 = r4.show_toast;
+        r3 = r5.show_toast;
         r2 = r2.equals(r3);
         if (r2 == 0) goto L_0x0005;
     L_0x003a:
