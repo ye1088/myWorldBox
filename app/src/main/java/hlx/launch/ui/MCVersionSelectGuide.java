@@ -33,9 +33,9 @@ public class MCVersionSelectGuide extends Activity {
                     return;
                 case R.id.tvGameVersionGuideSkip:
                     if (VERSION.SDK_INT < 11) {
-                        c.Sg().mG(3);
+                        c.Sg().setStartGameVersion(3);
                     } else {
-                        c.Sg().mG(7);
+                        c.Sg().setStartGameVersion(7);
                     }
                     hlx.ui.a.bV(this.bTq.mContext);
                     r.ck().K(hlx.data.tongji.a.bLN);
@@ -63,10 +63,10 @@ public class MCVersionSelectGuide extends Activity {
             findViewById(R.id.tvGameVersionGuideSkip).setEnabled(false);
             if (VERSION.SDK_INT < 11) {
                 if (d.mK(3)) {
-                    c.Sg().mG(3);
+                    c.Sg().setStartGameVersion(3);
                 }
             } else if (d.mK(5)) {
-                c.Sg().mG(5);
+                c.Sg().setStartGameVersion(5);
             }
             hlx.ui.a.bV(this.mContext);
             finish();

@@ -108,7 +108,7 @@ public class MapImportActivity extends HTBaseActivity implements OnClickListener
         this.bbb = new ImportMapItemAdapter(this.aMn, this.arrayList);
         this.aZh.setAdapter(this.bbb);
         this.aZh.setOnItemClickListener(this);
-        this.arrayList.addAll(eF(UtilsFile.CU()));
+        this.arrayList.addAll(eF(UtilsFile.getSdCardPath()));
         this.bbb.notifyDataSetChanged();
         this.baJ.setText("请选择要导入的地图zip文件");
     }
@@ -130,7 +130,7 @@ public class MapImportActivity extends HTBaseActivity implements OnClickListener
         List<MapPathItem> tempItems = new ArrayList();
         File f = new File(filePath);
         File[] files = f.listFiles();
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             MapPathItem parentItem = new MapPathItem("上一层文件夹", f.getParent());
             parentItem.fileType = FileType.PARENTDIR.Value();
             items.add(parentItem);

@@ -135,9 +135,9 @@ public class UtilsFile {
         return cur2;
     }
 
-    public static String CU() {
+    public static String getSdCardPath() {
         if (CT() && Environment.getExternalStorageDirectory().canWrite()) {
-            return Environment.getExternalStorageDirectory().toString();
+            return Environment.getExternalStorageDirectory().toString();// 获得sdk根路径
         }
         return HTApplication.getAppContext().getFilesDir().getPath();
     }
@@ -150,15 +150,15 @@ public class UtilsFile {
     }
 
     public static String getRootPath() {
-        return CU() + File.separator + AppConstant.getHlxName() + File.separator + "mctool" + File.separator;
+        return getSdCardPath() + File.separator + AppConstant.getHlxName() + File.separator + "mctool" + File.separator;
     }
 
     public static String KO() {
-        return CU() + File.separator + AppConstant.getHlxName();
+        return getSdCardPath() + File.separator + AppConstant.getHlxName();
     }
 
     public static String KP() {
-        return CU() + File.separator + AppConstant.getHlxName() + File.separator + "mctool" + File.separator + "SaveImage";
+        return getSdCardPath() + File.separator + AppConstant.getHlxName() + File.separator + "mctool" + File.separator + "SaveImage";
     }
 
     public static String KQ() {
@@ -186,11 +186,11 @@ public class UtilsFile {
     }
 
     public static String KV() {
-        return CU() + File.separator + "Pictures" + File.separator + "huluxia";
+        return getSdCardPath() + File.separator + "Pictures" + File.separator + "huluxia";
     }
 
     public static String KW() {
-        return CU() + File.separator + "Pictures";
+        return getSdCardPath() + File.separator + "Pictures";
     }
 
     public static String getTempPath() {
@@ -198,7 +198,7 @@ public class UtilsFile {
     }
 
     public static String fx(String dPath) {
-        return CU() + File.separator + dPath + File.separator;
+        return getSdCardPath() + File.separator + dPath + File.separator;
     }
 
     public static String cW(boolean useExternal) {
@@ -1198,9 +1198,9 @@ public class UtilsFile {
     }
 
     private static void Kp() {
-        mkdir(CU() + File.separator + "games");
-        mkdir(CU() + File.separator + "games" + File.separator + "com.mojang");
-        mkdir(CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds");
+        mkdir(getSdCardPath() + File.separator + "games");
+        mkdir(getSdCardPath() + File.separator + "games" + File.separator + "com.mojang");
+        mkdir(getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds");
         mkdir(Kt());
         mkdir(cT(true));
         mkdir(Ku());
@@ -1211,7 +1211,7 @@ public class UtilsFile {
     }
 
     public static String Kq() {
-        return CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds" + File.separator;
+        return getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds" + File.separator;
     }
 
     public static String eM(String title) {
@@ -1320,7 +1320,7 @@ public class UtilsFile {
     }
 
     public static String getDownloadPath() {
-        return CU() + File.separator + "Download" + File.separator;
+        return getSdCardPath() + File.separator + "Download" + File.separator;
     }
 
     public static String KI() {

@@ -35,16 +35,16 @@ public class APKInstallReceiver extends BroadcastReceiver {
                     }
                     if (tmpVersionName.equals(e.ahL)) {
                         if (hlx.recorddata.a.TW()) {
-                            c.Sg().mG(7);
+                            c.Sg().setStartGameVersion(7);
                             EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                         }
                     } else if (tmpVersionName.equals(e.ahM)) {
                         if (hlx.recorddata.a.TV()) {
-                            c.Sg().mG(8);
+                            c.Sg().setStartGameVersion(8);
                             EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                         }
                     } else if (tmpVersionName.equals(e.ahK) && hlx.recorddata.a.TX()) {
-                        c.Sg().mG(5);
+                        c.Sg().setStartGameVersion(5);
                         EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                     }
                 }

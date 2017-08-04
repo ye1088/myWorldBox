@@ -106,7 +106,7 @@ public class ah {
         com.huluxia.pref.b.Em().putString(blY, ag.toJsonString(info));
     }
 
-    private SharedPreferences pX() {
+    private SharedPreferences get_config_sp() {
         return HTApplication.getAppContext().getSharedPreferences("config", 0);
     }
 
@@ -115,39 +115,39 @@ public class ah {
     }
 
     public int P(String key, int def) {
-        return pX().getInt(key, def);
+        return get_config_sp().getInt(key, def);
     }
 
     public void Q(String key, int val) {
-        pX().edit().putInt(key, val).commit();
+        get_config_sp().edit().putInt(key, val).commit();
     }
 
     public float b(String key, float def) {
-        return pX().getFloat(key, def);
+        return get_config_sp().getFloat(key, def);
     }
 
     public void c(String key, float val) {
-        pX().edit().putFloat(key, val).commit();
+        get_config_sp().edit().putFloat(key, val).commit();
     }
 
     public boolean j(String key, boolean def) {
-        return pX().getBoolean(key, def);
+        return get_config_sp().getBoolean(key, def);
     }
 
     public void k(String key, boolean val) {
-        pX().edit().putBoolean(key, val).commit();
+        get_config_sp().edit().putBoolean(key, val).commit();
     }
 
     public String aj(String key, String def) {
-        return pX().getString(key, def);
+        return get_config_sp().getString(key, def);
     }
 
     public void ak(String key, String val) {
-        pX().edit().putString(key, val).commit();
+        get_config_sp().edit().putString(key, val).commit();
     }
 
     public void bT(String account) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString(blV, account);
         editor.commit();
     }
@@ -165,77 +165,77 @@ public class ah {
     }
 
     public void pY() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.remove(blV);
         editor.commit();
     }
 
     public String pZ() {
-        return pX().getString(blV, "");
+        return get_config_sp().getString(blV, "");
     }
 
     public void setPassword(String pwd) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString(blW, pwd);
         editor.commit();
     }
 
     public void qa() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.remove(blW);
         editor.commit();
     }
 
     public String getPassword() {
-        return pX().getString(blW, "");
+        return get_config_sp().getString(blW, "");
     }
 
     public void a(k info) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString(SESSION, ag.toJsonString(info));
         editor.commit();
     }
 
     public void Lg() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.remove(SESSION);
         editor.commit();
     }
 
     public k eo() {
-        return (k) ag.toObjectNoExp(pX().getString(SESSION, ""), k.class);
+        return (k) ag.toObjectNoExp(get_config_sp().getString(SESSION, ""), k.class);
     }
 
     public void G(long uid) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putLong("miuid", uid);
         editor.commit();
     }
 
     public void Lh() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.remove("miuid");
         editor.commit();
     }
 
     public long fH() {
-        return pX().getLong("miuid", 0);
+        return get_config_sp().getLong("miuid", 0);
     }
 
     public void b(l info) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("misession", ag.toJsonString(info));
         editor.commit();
     }
 
     public void Li() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.remove("misession");
         editor.commit();
     }
 
     public l Lj() {
-        return (l) ag.toObjectNoExp(pX().getString("misession", ""), l.class);
+        return (l) ag.toObjectNoExp(get_config_sp().getString("misession", ""), l.class);
     }
 
     public void fV(String version) {
@@ -285,13 +285,13 @@ public class ah {
     }
 
     public void lh(int val) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt("TopicPic", val);
         editor.commit();
     }
 
     public int Lm() {
-        return pX().getInt("TopicPic", a.bmc);
+        return get_config_sp().getInt("TopicPic", a.bmc);
     }
 
     public void li(int val) {
@@ -319,7 +319,7 @@ public class ah {
     }
 
     public void a(e msgRemind) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("MsgRemind", ag.toJsonString(msgRemind));
         editor.commit();
     }
@@ -329,7 +329,7 @@ public class ah {
     }
 
     public e bI() {
-        String json = pX().getString("MsgRemind", null);
+        String json = get_config_sp().getString("MsgRemind", null);
         if (json != null) {
             return (e) ag.toObjectNoExp(json, e.class);
         }
@@ -374,13 +374,13 @@ public class ah {
     }
 
     public void a(HTSysBannerInfo obj) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("SysBannerInfo", ag.toJsonString(obj));
         editor.commit();
     }
 
     public HTSysBannerInfo Ls() {
-        String json = pX().getString("SysBannerInfo", null);
+        String json = get_config_sp().getString("SysBannerInfo", null);
         if (json != null) {
             return (HTSysBannerInfo) ag.toObjectNoExp(json, HTSysBannerInfo.class);
         }
@@ -418,51 +418,51 @@ public class ah {
     }
 
     public boolean Lw() {
-        return pX().getBoolean("TipBaidu", false);
+        return get_config_sp().getBoolean("TipBaidu", false);
     }
 
     public void Lx() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("TipBaidu", true);
         editor.commit();
     }
 
     public int bO() {
-        return pX().getInt("cartooncount", 0);
+        return get_config_sp().getInt("cartooncount", 0);
     }
 
     public void m(int count) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt("cartooncount", count);
         editor.commit();
     }
 
     public long Ly() {
-        return pX().getLong("gamelimitsize", 52428801);
+        return get_config_sp().getLong("gamelimitsize", 52428801);
     }
 
     public void bv(long size) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putLong("gamelimitsize", size);
         editor.commit();
     }
 
     public boolean Lz() {
-        return pX().getBoolean("relief", false);
+        return get_config_sp().getBoolean("relief", false);
     }
 
     public void LA() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("relief", true);
         editor.commit();
     }
 
     public boolean lk(int bizIndex) {
-        return pX().getBoolean("emupath_" + bizIndex, false);
+        return get_config_sp().getBoolean("emupath_" + bizIndex, false);
     }
 
     public void ll(int bizIndex) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("emupath_" + bizIndex, true);
         editor.commit();
     }
@@ -498,11 +498,11 @@ public class ah {
     }
 
     public boolean LF() {
-        return pX().getBoolean("TIP_VERNOTSUPPORT", false);
+        return get_config_sp().getBoolean("TIP_VERNOTSUPPORT", false);
     }
 
     public void LG() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("TIP_VERNOTSUPPORT", true);
         editor.commit();
     }
@@ -541,31 +541,31 @@ public class ah {
     }
 
     public String LH() {
-        return pX().getString("usingmap", null);
+        return get_config_sp().getString("usingmap", null);
     }
 
     public void ga(String name) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("usingmap", name);
         editor.commit();
     }
 
     public String LI() {
-        return pX().getString("usingskin", null);
+        return get_config_sp().getString("usingskin", null);
     }
 
     public void gb(String name) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("usingskin", name);
         editor.commit();
     }
 
     public String LJ() {
-        return pX().getString("usingwood", null);
+        return get_config_sp().getString("usingwood", null);
     }
 
     public void gc(String name) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("usingwood", name);
         editor.commit();
     }
@@ -599,7 +599,7 @@ public class ah {
     }
 
     private void aB(int count, int type) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         switch (type) {
             case 0:
                 HLog.verbose("UtilsLocalStore", "set mapCount %d", Integer.valueOf(count));
@@ -632,166 +632,166 @@ public class ah {
     }
 
     public int getMapCount() {
-        HLog.verbose("UtilsLocalStore", "get mapCount %d", Integer.valueOf(pX().getInt("mapCount", 0)));
-        return pX().getInt("mapCount", 0);
+        HLog.verbose("UtilsLocalStore", "get mapCount %d", Integer.valueOf(get_config_sp().getInt("mapCount", 0)));
+        return get_config_sp().getInt("mapCount", 0);
     }
 
     public int getJsCount() {
-        HLog.verbose("UtilsLocalStore", "get jsCount %d", Integer.valueOf(pX().getInt("jsCount", 0)));
-        return pX().getInt("jsCount", 0);
+        HLog.verbose("UtilsLocalStore", "get jsCount %d", Integer.valueOf(get_config_sp().getInt("jsCount", 0)));
+        return get_config_sp().getInt("jsCount", 0);
     }
 
     public int getSkinCount() {
-        HLog.verbose("UtilsLocalStore", "get skinCount %d", Integer.valueOf(pX().getInt("skinCount", 0)));
-        return pX().getInt("skinCount", 0);
+        HLog.verbose("UtilsLocalStore", "get skinCount %d", Integer.valueOf(get_config_sp().getInt("skinCount", 0)));
+        return get_config_sp().getInt("skinCount", 0);
     }
 
     public int getWoodCount() {
-        HLog.verbose("UtilsLocalStore", "get woodCount %d", Integer.valueOf(pX().getInt("woodCount", 0)));
-        return pX().getInt("woodCount", 0);
+        HLog.verbose("UtilsLocalStore", "get woodCount %d", Integer.valueOf(get_config_sp().getInt("woodCount", 0)));
+        return get_config_sp().getInt("woodCount", 0);
     }
 
     public int getServerCount() {
-        HLog.verbose("UtilsLocalStore", "get serverCount %d", Integer.valueOf(pX().getInt("serverCount", 0)));
-        return pX().getInt("serverCount", 0);
+        HLog.verbose("UtilsLocalStore", "get serverCount %d", Integer.valueOf(get_config_sp().getInt("serverCount", 0)));
+        return get_config_sp().getInt("serverCount", 0);
     }
 
     public int getSeedCount() {
-        return pX().getInt("seedCount", 0);
+        return get_config_sp().getInt("seedCount", 0);
     }
 
     public int getAdCount() {
-        return pX().getInt("adCount", 0);
+        return get_config_sp().getInt("adCount", 0);
     }
 
     public int LK() {
-        return pX().getInt("apply_enter_studio", 0);
+        return get_config_sp().getInt("apply_enter_studio", 0);
     }
 
     public void lm(int count) {
-        Editor edit = pX().edit();
+        Editor edit = get_config_sp().edit();
         edit.putInt("apply_enter_studio", count);
         edit.commit();
     }
 
     public boolean LL() {
-        boolean ret = pX().getBoolean("fristLoadJs", true);
-        Editor editor = pX().edit();
+        boolean ret = get_config_sp().getBoolean("fristLoadJs", true);
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("fristLoadJs", false);
         editor.commit();
         return ret;
     }
 
     public boolean LM() {
-        boolean ret = pX().getBoolean("fristLoadWood", true);
-        Editor editor = pX().edit();
+        boolean ret = get_config_sp().getBoolean("fristLoadWood", true);
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("fristLoadWood", false);
         editor.commit();
         return ret;
     }
 
     public boolean LN() {
-        boolean ret = pX().getBoolean("fristLoadSkin", true);
-        Editor editor = pX().edit();
+        boolean ret = get_config_sp().getBoolean("fristLoadSkin", true);
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("fristLoadSkin", false);
         editor.commit();
         return ret;
     }
 
     public boolean LO() {
-        boolean ret = pX().getBoolean("firstRecoverJsState", true);
-        Editor editor = pX().edit();
+        boolean ret = get_config_sp().getBoolean("firstRecoverJsState", true);
+        Editor editor = get_config_sp().edit();
         editor.putBoolean("firstRecoverJsState", false);
         editor.commit();
         return ret;
     }
 
     public int LP() {
-        return pX().getInt("vercode", 0);
+        return get_config_sp().getInt("vercode", 0);
     }
 
     public void ln(int gameVerCode) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt("lastGameStartVer", gameVerCode);
         editor.commit();
     }
 
     public int LQ() {
-        return pX().getInt("lastGameStartVer", 0);
+        return get_config_sp().getInt("lastGameStartVer", 0);
     }
 
     public void lo(int flag) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt("lastGameRepairFlag", flag);
         editor.commit();
     }
 
     public int LR() {
-        return pX().getInt("lastGameRepairFlag", 0);
+        return get_config_sp().getInt("lastGameRepairFlag", 0);
     }
 
     public void lp(int vercode) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt("vercode", vercode);
         editor.commit();
     }
 
     public String LS() {
-        return pX().getString("loadapp", null);
+        return get_config_sp().getString("loadapp", null);
     }
 
     public void LT() {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putString("loadapp", "1");
         editor.commit();
     }
 
     public void lq(int val) {
-        Editor editor = pX().edit();
+        Editor editor = get_config_sp().edit();
         editor.putInt(bmb, val);
         editor.commit();
     }
 
     public int LU() {
-        return pX().getInt(bmb, 0);
+        return get_config_sp().getInt(bmb, 0);
     }
 
     public void a(j draft) {
         if (draft != null) {
-            pX().edit().putString("resDraft", ag.toJsonString(draft)).commit();
+            get_config_sp().edit().putString("resDraft", ag.toJsonString(draft)).commit();
         }
     }
 
     public j LV() {
-        return (j) ag.toObjectNoExp(pX().getString("resDraft", ""), j.class);
+        return (j) ag.toObjectNoExp(get_config_sp().getString("resDraft", ""), j.class);
     }
 
     public void LW() {
-        pX().edit().remove("resDraft").commit();
+        get_config_sp().edit().remove("resDraft").commit();
     }
 
     public void a(d archive, String storyName) {
         if (archive != null) {
-            pX().edit().putString("storyModeArchive_new_" + storyName, ag.toJsonString(archive)).commit();
+            get_config_sp().edit().putString("storyModeArchive_new_" + storyName, ag.toJsonString(archive)).commit();
         }
     }
 
     public d gd(String storyName) {
-        return (d) ag.toObjectNoExp(pX().getString("storyModeArchive_new_" + storyName, ""), d.class);
+        return (d) ag.toObjectNoExp(get_config_sp().getString("storyModeArchive_new_" + storyName, ""), d.class);
     }
 
     public void ge(String storyName) {
-        pX().edit().remove("storyModeArchive_new_" + storyName).commit();
+        get_config_sp().edit().remove("storyModeArchive_new_" + storyName).commit();
     }
 
     public void a(int insZoneMode, com.huluxia.data.inszone.a scoreRecore) {
         if (scoreRecore != null) {
-            pX().edit().putString("insZone" + insZoneMode, ag.toJsonString(scoreRecore)).commit();
+            get_config_sp().edit().putString("insZone" + insZoneMode, ag.toJsonString(scoreRecore)).commit();
         }
     }
 
     public com.huluxia.data.inszone.a lr(int insZoneMode) {
-        return (com.huluxia.data.inszone.a) ag.toObjectNoExp(pX().getString("insZone" + insZoneMode, ""), com.huluxia.data.inszone.a.class);
+        return (com.huluxia.data.inszone.a) ag.toObjectNoExp(get_config_sp().getString("insZone" + insZoneMode, ""), com.huluxia.data.inszone.a.class);
     }
 
     public void bw(long count) {

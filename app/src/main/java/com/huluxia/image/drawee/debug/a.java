@@ -119,7 +119,7 @@ public class a extends Drawable {
             a(canvas, "i format: %s", this.AT);
         }
         if (this.AU > 0) {
-            a(canvas, "anim: f %d, l %d", Integer.valueOf(this.AU), Integer.valueOf(this.AV));
+            a(canvas, "anim: f %d, download_toast %d", Integer.valueOf(this.AU), Integer.valueOf(this.AV));
         }
     }
 

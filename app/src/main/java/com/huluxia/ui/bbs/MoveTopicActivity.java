@@ -59,7 +59,7 @@ public class MoveTopicActivity extends HTBaseTableActivity {
     public void a(AdapterView<?> adapterView, View arg1, int position, long arg3) {
         this.aKC = (TopicCategory) this.arrayList.get(position);
         if (this.aKC.getModel() != 0) {
-            t.l(this, "不能移动到此版块");
+            t.download_toast(this, "不能移动到此版块");
         } else if (this.aKC.getTags().size() > 0) {
             this.aKD = UtilsMenu.c((Context) this, this.aKC.getTags());
             this.aKD.show();

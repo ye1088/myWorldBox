@@ -10,7 +10,7 @@ import hlx.data.localstore.a;
 /* compiled from: MCLaunchGame */
 public class c {
     private static c bRa;
-    private int bQU = ah.KZ().P(a.bKi, -1);
+    private int inputLaunchGameIndex = ah.KZ().P(a.KEY_LAUNCHGAME_GAMEVERSION_EX, -1);
     private int bQV = ah.KZ().P(a.bKr, 1);
     private int bQW = ah.KZ().P(a.bKw, -1);
     private boolean bQX = ah.KZ().j(a.bKk, true);
@@ -29,19 +29,22 @@ public class c {
     }
 
     public int Sh() {
-        return this.bQU;
+        return this.inputLaunchGameIndex;
     }
 
-    public void mG(int inputLaunchGameIndex) {
-        if (!(inputLaunchGameIndex == 0 || inputLaunchGameIndex == 1 || inputLaunchGameIndex == 2 || inputLaunchGameIndex == 3 || inputLaunchGameIndex == 4 || inputLaunchGameIndex == 5 || inputLaunchGameIndex == 7 || inputLaunchGameIndex == 8)) {
+    public void setStartGameVersion(int inputLaunchGameIndex) {// inputLaunchGameIndex = 5
+        if (!(inputLaunchGameIndex == 0 || inputLaunchGameIndex == 1 || inputLaunchGameIndex == 2 ||
+                inputLaunchGameIndex == 3 || inputLaunchGameIndex == 4 || inputLaunchGameIndex == 5
+                || inputLaunchGameIndex == 7 || inputLaunchGameIndex == 8)) {
             inputLaunchGameIndex = -1;
         }
-        this.bQU = inputLaunchGameIndex;
-        ah.KZ().Q(a.bKi, inputLaunchGameIndex);
+        this.inputLaunchGameIndex = inputLaunchGameIndex;
+        // 这里可能是控制 选择游戏版本的配置
+        ah.KZ().Q(a.KEY_LAUNCHGAME_GAMEVERSION_EX, inputLaunchGameIndex);// put key,value 到 config.xml中
     }
 
     public String dx(boolean inputShortFlag) {
-        switch (this.bQU) {
+        switch (this.inputLaunchGameIndex) {
             case -1:
                 return a.bJg;
             case 0:
@@ -58,11 +61,11 @@ public class c {
             case 4:
                 return inputShortFlag ? "0.13" : a.bJm;
             case 5:
-                return inputShortFlag ? "0.14" : a.bJn;
+                return inputShortFlag ? "0.14" : a.version_0141;
             case 7:
-                return inputShortFlag ? a.bJy : a.bJo;
+                return inputShortFlag ? a.bJy : a.version_0154;
             case 8:
-                return inputShortFlag ? a.bJz : a.bJp;
+                return inputShortFlag ? a.bJz : a.version_0161;
             default:
                 return null;
         }
@@ -156,7 +159,7 @@ public class c {
     }
 
     public String Sn() {
-        switch (this.bQU) {
+        switch (this.inputLaunchGameIndex) {
             case 0:
                 return UtilsFile.getRootPath() + Constants.bsu + ".zip";
             case 1:

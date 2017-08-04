@@ -143,9 +143,9 @@ public class RoomCreateActivity extends HTBaseActivity {
             }
             if (!succ || info == null) {
                 if (info != null) {
-                    t.l(this.akB.akb, ab.n(info.code, info.msg));
+                    t.download_toast(this.akB.akb, ab.n(info.code, info.msg));
                 } else {
-                    t.l(this.akB.akb, "查询工作室信息失败，请重试");
+                    t.download_toast(this.akB.akb, "查询工作室信息失败，请重试");
                 }
             } else if (info.getSid() != 0) {
                 z.DO();
@@ -161,9 +161,9 @@ public class RoomCreateActivity extends HTBaseActivity {
                 f createItem = (f) ctx;
                 if (!isSucc || createItem == null) {
                     if (info != null) {
-                        t.l(this.akB.akb, ab.n(info.code, info.msg));
+                        t.download_toast(this.akB.akb, ab.n(info.code, info.msg));
                     } else {
-                        t.l(this.akB.akb, "查询工作室信息失败，请重试");
+                        t.download_toast(this.akB.akb, "查询工作室信息失败，请重试");
                     }
                 } else if (info == null || info.studioInfo == null) {
                     createItem.fillStudio(0, null);
@@ -225,7 +225,7 @@ public class RoomCreateActivity extends HTBaseActivity {
                 if (ctx != null && (ctx instanceof f)) {
                     f createItem = (f) ctx;
                     if (UtilsFunction.empty(infos.room_infos)) {
-                        t.l(this.akB.akb, "申请房间资源失败");
+                        t.download_toast(this.akB.akb, "申请房间资源失败");
                         return;
                     }
                     g info = (g) infos.room_infos.get(0);
@@ -233,9 +233,9 @@ public class RoomCreateActivity extends HTBaseActivity {
                     this.akB.a(createItem);
                 }
             } else if (infos != null) {
-                t.l(this.akB.akb, ab.n(infos.code, infos.msg));
+                t.download_toast(this.akB.akb, ab.n(infos.code, infos.msg));
             } else {
-                t.l(this.akB.akb, "网络错误");
+                t.download_toast(this.akB.akb, "网络错误");
             }
         }
     };
@@ -420,9 +420,9 @@ public class RoomCreateActivity extends HTBaseActivity {
         if (!j.ep().ey()) {
             t.an(this.akb);
         } else if (this.ake.getText().toString().trim().length() < 2) {
-            t.l(this.akb, "房间名称长度不能小于2");
+            t.download_toast(this.akb, "房间名称长度不能小于2");
         } else if (this.akf.getText().toString().trim().length() < 1) {
-            t.l(this.akb, "地图名称长度不能小于1");
+            t.download_toast(this.akb, "地图名称长度不能小于1");
         } else {
             Object createItem = new f();
             createItem.fillAdmin(j.ep().getUserid(), j.ep().getNick(), j.ep().getAvatar());

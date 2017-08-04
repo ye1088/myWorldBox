@@ -45,7 +45,7 @@ public class ModifyTopicActivity extends PublishTopicBaseActivity {
                 this.aKz.finish();
                 return;
             }
-            t.l(this.aKz.mContext, msg);
+            t.download_toast(this.aKz.mContext, msg);
         }
     };
     private Context mContext;

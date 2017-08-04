@@ -200,7 +200,7 @@ public class LoginService extends Service {
             r5 = com.huluxia.login.f.pT();
             r0 = r17;
             r6 = r0.No;
-            r7 = com.huluxia.login.l.Nv;
+            r7 = com.huluxia.login.download_toast.Nv;
             r6 = r6.aE(r7);
             r7 = 0;
             r9 = new com.huluxia.login.LoginService$1$1;

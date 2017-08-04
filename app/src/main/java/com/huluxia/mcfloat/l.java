@@ -108,7 +108,7 @@ public class l implements a {
         if (_tmpMCNetUser.isValid()) {
             DTSDKManagerEx.a(_tmpMCNetUser.yX(), h.zF(), h.zG(), h.zH());
         } else {
-            k.l(this.Pu.getContext(), "玩家已经离开!");
+            k.download_toast(this.Pu.getContext(), "玩家已经离开!");
         }
     }
 
@@ -120,7 +120,7 @@ public class l implements a {
             r.ck().K(r.a.kB);
             return;
         }
-        k.l(this.Pu.getContext(), "玩家已经离开!");
+        k.download_toast(this.Pu.getContext(), "玩家已经离开!");
     }
 
     private void rG() {

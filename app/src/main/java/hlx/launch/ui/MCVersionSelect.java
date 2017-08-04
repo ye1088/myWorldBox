@@ -490,7 +490,7 @@ public class MCVersionSelect extends HTBaseActivity {
         public void onDownloadError(String url, String path, Object context) {
             MCVersionSelect self = (MCVersionSelect) this.bTo.get();
             if (self != null) {
-                t.l(self, "下载出错");
+                t.download_toast(self, "下载出错");
                 self.hd(url);
             }
         }
@@ -645,7 +645,7 @@ public class MCVersionSelect extends HTBaseActivity {
             if (self != null) {
                 String strVersionName = hlx.launch.game.c.Sg().dx(false);
                 if (!strVersionName.equals(hlx.data.localstore.a.bJg)) {
-                    t.l(self, "已选择" + strVersionName + "版本");
+                    t.download_toast(self, "已选择" + strVersionName + "版本");
                 }
             }
         }
@@ -814,15 +814,15 @@ public class MCVersionSelect extends HTBaseActivity {
         switch (v.getId()) {
             case R.id.rlyMoreV0141:
                 this.bRW = 5;
-                this.bRX = hlx.data.localstore.a.bJn;
+                this.bRX = hlx.data.localstore.a.version_0141;
                 return;
             case R.id.rlyMoreV0159:
                 this.bRW = 8;
-                this.bRX = hlx.data.localstore.a.bJp;
+                this.bRX = hlx.data.localstore.a.version_0161;
                 return;
             case R.id.rlyMoreV0150:
                 this.bRW = 7;
-                this.bRX = hlx.data.localstore.a.bJo;
+                this.bRX = hlx.data.localstore.a.version_0154;
                 return;
             case R.id.ly_GameVersion0131:
                 this.bRW = 4;
@@ -874,7 +874,7 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void a(Button button, Button button1, Button button2, Button button3) {
         if (button != null) {
-            button.setVisibility(0);
+            button.setVisibility(Button.VISIBLE);
         }
         if (button1 != null) {
             button1.setVisibility(8);
@@ -1073,7 +1073,7 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void SH() {
         if (this.bRW == hlx.launch.game.c.Sg().Sm() || hlx.launch.game.c.Sg().Sm() == -1) {
-            t.l(this.bRL, "已选择" + this.bRX + "版本");
+            t.download_toast(this.bRL, "已选择" + this.bRX + "版本");
             SI();
             return;
         }
@@ -1081,7 +1081,7 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void SI() {
-        hlx.launch.game.c.Sg().mG(this.bRW);
+        hlx.launch.game.c.Sg().setStartGameVersion(this.bRW);
     }
 
     private void gZ(String version) {
@@ -1096,7 +1096,7 @@ public class MCVersionSelect extends HTBaseActivity {
             }
 
             public void onOk() {
-                t.l(this.bTk.bRL, "已选择" + this.bTk.bRX + "版本");
+                t.download_toast(this.bTk.bRL, "已选择" + this.bTk.bRX + "版本");
                 this.bTk.SI();
                 MCLauncherActivity105.t(this.bTk.bRL, ReStartSoftFlag.MC_RESTART_BLACK.Value());
             }
@@ -1109,7 +1109,7 @@ public class MCVersionSelect extends HTBaseActivity {
             case 0:
             case 1:
                 _prompt = this.bRL.getResources().getString(R.string.TipMCOldVerDown);
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 14680064) {
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 14680064) {
                     _prompt = _prompt + hlx.data.localstore.a.bKx;
                     break;
                 }
@@ -1117,14 +1117,14 @@ public class MCVersionSelect extends HTBaseActivity {
             case 2:
             case 3:
                 _prompt = hlx.data.localstore.a.bKO;
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 15728640) {
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 15728640) {
                     _prompt = _prompt + hlx.data.localstore.a.bKy;
                     break;
                 }
                 break;
             case 4:
                 _prompt = hlx.data.localstore.a.bKP;
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 17825792) {
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 17825792) {
                     _prompt = _prompt + hlx.data.localstore.a.bKz;
                     break;
                 }
@@ -1342,45 +1342,48 @@ public class MCVersionSelect extends HTBaseActivity {
         switch (moreIndex) {
             case 1:
                 _prompt = "将为您下载插件(2.2MB)以支持最新功能";
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 2099200) {
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
                     _prompt = _prompt + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 2:
                 _prompt = "将为您下载插件(2.2MB)以支持最新功能";
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 2099200) {
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
                     _prompt = _prompt + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 4:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.bJn});
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 19922944) {
+                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能",
+                        new Object[]{hlx.data.localstore.a.version_0141});
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 19922944) {
                     _prompt = _prompt + ", (手机剩余空间不足19M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 5:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.bJo});
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 20971520) {
+                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0154});
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 20971520) {
                     _prompt = _prompt + ", (手机剩余空间不足20M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 6:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.bJp});
-                if (com.huluxia.utils.j.fk(UtilsFile.CU()) < 44040192) {
+                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0161});
+                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 44040192) {
                     _prompt = _prompt + ", (手机剩余空间不足42M，请清理后重新下载)";
                     break;
                 }
                 break;
         }
-        new DialogManager(this.bRL).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt, hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+        new DialogManager(this.bRL).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt,
+                hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true,
+                new OkCancelDialogListener(MCVersionSelect.this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
-                this.bTk = this$0;
+                this.bTk = MCVersionSelect.this;
             }
 
             public void onCancel() {
@@ -1407,7 +1410,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 a(this.bSI, this.bSn, this.bSl, this.bSm);
                 break;
             case 4:
-                url = hlx.data.localstore.a.bLd;
+                url = hlx.data.localstore.a.mpc_download_url;
                 fileName = "MC_0.14.1_huluxia.apk";
                 a(this.bSv, this.bSs, this.bSu, this.bSt);
                 break;
@@ -1427,19 +1430,19 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void SN() {
         this.bRW = 8;
-        this.bRX = hlx.data.localstore.a.bJp;
+        this.bRX = hlx.data.localstore.a.version_0161;
         SH();
     }
 
     private void SO() {
         this.bRW = 7;
-        this.bRX = hlx.data.localstore.a.bJo;
+        this.bRX = hlx.data.localstore.a.version_0154;
         SH();
     }
 
     private void SP() {
         this.bRW = 5;
-        this.bRX = hlx.data.localstore.a.bJn;
+        this.bRX = hlx.data.localstore.a.version_0141;
         SH();
     }
 
@@ -1456,7 +1459,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 4:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.l(this.bRL, "需要先卸载旧版本！");
+                        t.download_toast(this.bRL, "需要先卸载旧版本！");
                         this.bSY = 5;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1465,7 +1468,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 5:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.l(this.bRL, "需要先卸载原有版本！");
+                        t.download_toast(this.bRL, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1474,7 +1477,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     return;
                 case 6:
                     if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
-                        t.l(this.bRL, "需要先卸载原有版本！");
+                        t.download_toast(this.bRL, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
@@ -1649,7 +1652,7 @@ public class MCVersionSelect extends HTBaseActivity {
         tInfo.na = true;
         tInfo.nb = false;
         ResourceCtrl.getInstance().addTask(tInfo);
-        t.l(this.bRL, "后台下载中...");
+        t.download_toast(this.bRL, "后台下载中...");
     }
 
     private void hc(String url) {
@@ -1708,7 +1711,7 @@ public class MCVersionSelect extends HTBaseActivity {
             a(this.bSw, this.bSx, this.bSz, this.bSy);
             mR(6);
             hlx.recorddata.a.dF(true);
-        } else if (url.equals(hlx.data.localstore.a.bLd)) {
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
             this.bSD = true;
             a(this.bSs, this.bSt, this.bSv, this.bSu);
             mR(4);
@@ -1752,7 +1755,7 @@ public class MCVersionSelect extends HTBaseActivity {
         } else if (url.equals(hlx.data.localstore.a.bLf)) {
             this.bSF = false;
             a(this.bSx, this.bSy, this.bSw, this.bSz);
-        } else if (url.equals(hlx.data.localstore.a.bLd)) {
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
             this.bSD = false;
             a(this.bSt, this.bSu, this.bSs, this.bSv);
         } else if (url.equals(hlx.data.localstore.a.bKS)) {
@@ -1779,7 +1782,7 @@ public class MCVersionSelect extends HTBaseActivity {
             a(this.bSr, this.bSo, this.bSp, this.bSq);
         } else if (url.equals(hlx.data.localstore.a.bLf)) {
             a(this.bSz, this.bSw, this.bSx, this.bSy);
-        } else if (url.equals(hlx.data.localstore.a.bLd)) {
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
             a(this.bSv, this.bSs, this.bSt, this.bSu);
         } else if (url.equals(hlx.data.localstore.a.bKS)) {
             if (mP(1)) {

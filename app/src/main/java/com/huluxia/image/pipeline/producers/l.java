@@ -227,7 +227,7 @@ public class l implements am<com.huluxia.image.core.common.references.a<com.hulu
             monitor-exit(r2);	 Catch:{ all -> 0x001c }
             throw r0;
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.l.c.aq(boolean):void");
+            throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.download_toast.c.aq(boolean):void");
         }
 
         private void a(com.huluxia.image.base.imagepipeline.image.b decodedImage, boolean isFinal) {

@@ -1,107 +1,632 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:id="@id/rlGameVersionSelect" android:background="?game_option_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:background="@drawable/bgd_rounded_box_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <RelativeLayout android:orientation="horizontal" android:id="@id/rlyMoreV0141" android:background="?tabBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0141" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tvMoreV0141" android:text="@string/versionselect_0141" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyMoreV0141" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownMoreV0141" android:background="?buttonDownload" android:visibility="visible" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textInstall" android:id="@id/btnInstallMoreV0141" android:background="?buttonInstall" android:visibility="gone" android:text="@string/versionselect_more_install" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0141" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnClearMoreV0141" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rlGameVersionSelect"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?game_option_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgd_rounded_box_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/rlyMoreV0141"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:id="@id/left_view_0141"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tvMoreV0141"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_0141" />
+
+            <LinearLayout
+                android:id="@id/llyMoreV0141"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownMoreV0141"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@id/btnInstallMoreV0141"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonInstall"
+                    android:text="@string/versionselect_more_install"
+                    android:textColor="?textInstall"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0141"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnClearMoreV0141"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/rlyMoreV0159" android:background="?tabBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0159" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tvMoreV0159" android:text="@string/versionselect_01509" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyMoreV0159" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownMoreV0159" android:background="?buttonDownload" android:visibility="visible" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textInstall" android:id="@id/btnInstallMoreV0159" android:background="?buttonInstall" android:visibility="gone" android:text="@string/versionselect_more_install" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0159" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnClearMoreV0159" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/rlyMoreV0159"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:id="@id/left_view_0159"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tvMoreV0159"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_01509" />
+
+            <LinearLayout
+                android:id="@id/llyMoreV0159"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownMoreV0159"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@id/btnInstallMoreV0159"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonInstall"
+                    android:text="@string/versionselect_more_install"
+                    android:textColor="?textInstall"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0159"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnClearMoreV0159"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/rlyMoreV0150" android:background="?tabBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0150" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tvMoreV0150" android:text="@string/versionselect_01501" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyMoreV0150" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownMoreV0150" android:background="?buttonDownload" android:visibility="visible" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textInstall" android:id="@id/btnInstallMoreV0150" android:background="?buttonInstall" android:visibility="gone" android:text="@string/versionselect_more_install" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0150" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnClearMoreV0150" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/rlyMoreV0150"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:id="@id/left_view_0150"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tvMoreV0150"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_01501" />
+
+            <LinearLayout
+                android:id="@id/llyMoreV0150"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownMoreV0150"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@id/btnInstallMoreV0150"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonInstall"
+                    android:text="@string/versionselect_more_install"
+                    android:textColor="?textInstall"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0150"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnClearMoreV0150"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/ly_GameVersion0131" android:background="?tabBackground" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0131" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tv_GameVersion0131" android:text="@string/versionselect_0131" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyVersionSelected131" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownGameVersion0131" android:background="?buttonDownload" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0131" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" android:layout_centerVertical="true" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnclearGameVersion0131" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/ly_GameVersion0131"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@id/left_view_0131"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_GameVersion0131"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_0131" />
+
+            <LinearLayout
+                android:id="@id/llyVersionSelected131"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownGameVersion0131"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0131"
+                    style="@style/versionSelectBt"
+                    android:layout_centerVertical="true"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnclearGameVersion0131"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/ly_GameVersion0130" android:background="?tabBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0130" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:textSize="16.0sp" android:id="@id/tv_GameVersion0130" android:text="@string/versionselect_0130" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyVersionSelected130" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownGameVersion0130" android:background="?buttonDownload" android:visibility="gone" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0130" android:background="?buttonDownloading" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnclearGameVersion0130" android:background="?buttonDelete" android:visibility="visible" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/ly_GameVersion0130"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:id="@id/left_view_0130"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_GameVersion0130"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_0130"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:id="@id/llyVersionSelected130"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownGameVersion0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading" />
+
+                <Button
+                    android:id="@id/btnclearGameVersion0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="visible" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/ly_GameVersion0121" android:background="?tabBackground" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0121" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tv_GameVersion0121" android:text="@string/text" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyVersionSelected121" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownGameVersion0121" android:background="?buttonDownload" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0121" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnclearGameVersion0121" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/ly_GameVersion0121"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@id/left_view_0121"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_GameVersion0121"
+                style="@style/versionSelectTv"
+                android:text="@string/text" />
+
+            <LinearLayout
+                android:id="@id/llyVersionSelected121"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownGameVersion0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnclearGameVersion0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/ly_GameVersion0111" android:background="?tabBackground" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0111" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tv_GameVersion0111" android:text="@string/versionselect_0111" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyVersionSelected111" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownGameVersion0111" android:background="?buttonDownload" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0111" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnclearGameVersion0111" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/ly_GameVersion0111"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@id/left_view_0111"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_GameVersion0111"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_0111" />
+
+            <LinearLayout
+                android:id="@id/llyVersionSelected111"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownGameVersion0111"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0111"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnclearGameVersion0111"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/ly_GameVersion0105" android:background="?tabBackground" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <View android:id="@id/left_view_0105" android:background="?tabTextSelect" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="fill_parent" />
-            <TextView android:id="@id/tv_GameVersion0105" android:text="@string/versionselect_0105" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyVersionSelected105" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownGameVersion0105" android:background="?buttonDownload" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameVersion0105" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnclearGameVersion0105" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/ly_GameVersion0105"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@id/left_view_0105"
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="?tabTextSelect"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/tv_GameVersion0105"
+                style="@style/versionSelectTv"
+                android:text="@string/versionselect_0105" />
+
+            <LinearLayout
+                android:id="@id/llyVersionSelected105"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownGameVersion0105"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect" />
+
+                <Button
+                    android:id="@id/btnSelectGameVersion0105"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnclearGameVersion0105"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
         </RelativeLayout>
+
         <include layout="@layout/view_divider_block" />
-        <RelativeLayout android:orientation="horizontal" android:id="@id/rlyMoreFirearms0130" android:background="?tabBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <TextView android:id="@id/tvMoreFirearms0130" android:text="@string/more_firearms_13" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyMoreFirearms0130" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownMoreFirearms0130" android:background="?buttonDownload" android:visibility="visible" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textInstall" android:id="@id/btnInstallMoreFirearms0130" android:background="?buttonInstall" android:visibility="gone" android:text="@string/versionselect_more_install" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameMoreFirearms0130" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnClearMoreFirearms0130" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/rlyMoreFirearms0130"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@id/tvMoreFirearms0130"
+                style="@style/versionSelectTv"
+                android:text="@string/more_firearms_13" />
+
+            <LinearLayout
+                android:id="@id/llyMoreFirearms0130"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownMoreFirearms0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@id/btnInstallMoreFirearms0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonInstall"
+                    android:text="@string/versionselect_more_install"
+                    android:textColor="?textInstall"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameMoreFirearms0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnClearMoreFirearms0130"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
-            <View android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="?dividingLine" />
         </RelativeLayout>
-        <RelativeLayout android:orientation="horizontal" android:id="@id/rlyMoreFirearms0121" android:background="?tabBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip">
-            <TextView android:id="@id/tvMoreFirearms0121" android:text="@string/more_firearms_12" style="@style/versionSelectTv" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llyMoreFirearms0121" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
-                <Button android:textColor="?tabTextSelect" android:id="@id/btnDownMoreFirearms0121" android:background="?buttonDownload" android:text="@string/versionselect_download" style="@style/versionSelectBt" />
-                <Button android:textColor="?textInstall" android:id="@id/btnInstallMoreFirearms0121" android:background="?buttonInstall" android:visibility="gone" android:text="@string/versionselect_more_install" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDownloading" android:id="@id/btnSelectGameMoreFirearms0121" android:background="?buttonDownloading" android:visibility="gone" android:clickable="false" android:text="@string/versionselect_select" style="@style/versionSelectBt" />
-                <Button android:textColor="?textDelete" android:id="@id/btnClearMoreFirearms0121" android:background="?buttonDelete" android:visibility="gone" android:text="@string/versionselect_clear" style="@style/versionSelectBt" />
+
+        <RelativeLayout
+            android:id="@id/rlyMoreFirearms0121"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="?tabBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@id/tvMoreFirearms0121"
+                style="@style/versionSelectTv"
+                android:text="@string/more_firearms_12" />
+
+            <LinearLayout
+                android:id="@id/llyMoreFirearms0121"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/btnDownMoreFirearms0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownload"
+                    android:text="@string/versionselect_download"
+                    android:textColor="?tabTextSelect" />
+
+                <Button
+                    android:id="@id/btnInstallMoreFirearms0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonInstall"
+                    android:text="@string/versionselect_more_install"
+                    android:textColor="?textInstall"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnSelectGameMoreFirearms0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDownloading"
+                    android:clickable="false"
+                    android:text="@string/versionselect_select"
+                    android:textColor="?textDownloading"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btnClearMoreFirearms0121"
+                    style="@style/versionSelectBt"
+                    android:background="?buttonDelete"
+                    android:text="@string/versionselect_clear"
+                    android:textColor="?textDelete"
+                    android:visibility="gone" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

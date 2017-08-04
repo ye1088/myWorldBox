@@ -403,7 +403,7 @@ public class TopicDetailItemAdapter extends BaseAdapter implements b {
             this.aXs.setVisibility(8);
             this.aXr.setVisibility(8);
         } catch (IOException e) {
-            t.l(this.aTg, "暂时不支持播放该格式的视频");
+            t.download_toast(this.aTg, "暂时不支持播放该格式的视频");
         }
     }
 
@@ -412,7 +412,7 @@ public class TopicDetailItemAdapter extends BaseAdapter implements b {
             HO();
             t.n(this.aTg, "网络连接不可用，请稍后再试");
         } else if (this.aXy == null) {
-            t.l(this.aTg, "视频地址解析出错");
+            t.download_toast(this.aTg, "视频地址解析出错");
             this.aXq.setVisibility(8);
             this.aXp.setVisibility(0);
         } else {
@@ -459,7 +459,7 @@ public class TopicDetailItemAdapter extends BaseAdapter implements b {
         this.aXp.setVisibility(0);
         this.aXq.setVisibility(8);
         this.aXu.setVisibility(8);
-        t.l(this.aTg, "视频加载失败,请稍后重试");
+        t.download_toast(this.aTg, "视频加载失败,请稍后重试");
     }
 
     public void HP() {

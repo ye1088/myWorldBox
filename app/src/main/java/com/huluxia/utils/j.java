@@ -29,9 +29,9 @@ public class j extends UtilsFile {
     static boolean bkg = false;
 
     public static void Kp() {
-        UtilsFile.mkdir(UtilsFile.CU() + File.separator + "games");
-        UtilsFile.mkdir(UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang");
-        UtilsFile.mkdir(UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds");
+        UtilsFile.mkdir(UtilsFile.getSdCardPath() + File.separator + "games");
+        UtilsFile.mkdir(UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang");
+        UtilsFile.mkdir(UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds");
         UtilsFile.mkdir(Kt());
         UtilsFile.mkdir(cT(true));
         UtilsFile.mkdir(Ku());
@@ -47,15 +47,15 @@ public class j extends UtilsFile {
     }
 
     public static String Kq() {
-        return UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds" + File.separator;
+        return UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftWorlds" + File.separator;
     }
 
     public static String Kr() {
-        return UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator;
+        return UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator;
     }
 
     public static String Ks() {
-        return UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "resource_packs" + File.separator;
+        return UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "resource_packs" + File.separator;
     }
 
     public static String eM(String title) {
@@ -253,11 +253,11 @@ public class j extends UtilsFile {
     }
 
     public static boolean Ky() {
-        return isExist(UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator + "options.txt");
+        return isExist(UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator + "options.txt");
     }
 
     public static String Kz() {
-        return UtilsFile.CU() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator + "options.txt";
+        return UtilsFile.getSdCardPath() + File.separator + "games" + File.separator + "com.mojang" + File.separator + "minecraftpe" + File.separator + "options.txt";
     }
 
     public static boolean eT(String zipPath) {
@@ -631,7 +631,12 @@ public class j extends UtilsFile {
         UtilsFile.mkdir(dPath);
     }
 
-    public static long fk(String path) {
+    /**
+     * 获取sdcard 可用空间
+     * @param path sdcard的根目录
+     * @return
+     */
+    public static long getSdcardAvailableSize(String path) {
         StatFs fileStats = getStatFs(path);
         if (fileStats == null) {
             return 0;
@@ -1183,11 +1188,11 @@ public class j extends UtilsFile {
     }
 
     public static String fx(String dPath) {
-        return UtilsFile.CU() + File.separator + dPath + File.separator;
+        return UtilsFile.getSdCardPath() + File.separator + dPath + File.separator;
     }
 
     public static String getDownloadPath() {
-        return UtilsFile.CU() + File.separator + "Download" + File.separator;
+        return UtilsFile.getSdCardPath() + File.separator + "Download" + File.separator;
     }
 
     public static String KI() {

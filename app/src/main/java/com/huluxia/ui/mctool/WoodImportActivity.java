@@ -50,7 +50,7 @@ public class WoodImportActivity extends HTBaseActivity implements OnClickListene
         this.bbb = new ImportMapItemAdapter(this.aMn, this.arrayList);
         this.aZh.setAdapter(this.bbb);
         this.aZh.setOnItemClickListener(this);
-        this.arrayList.addAll(eF(UtilsFile.CU()));
+        this.arrayList.addAll(eF(UtilsFile.getSdCardPath()));
         this.bbb.notifyDataSetChanged();
         this.baJ.setText("请选择要导入的材质zip文件");
     }
@@ -72,7 +72,7 @@ public class WoodImportActivity extends HTBaseActivity implements OnClickListene
         List<MapPathItem> tempItems = new ArrayList();
         File f = new File(filePath);
         File[] files = f.listFiles();
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             MapPathItem parentItem = new MapPathItem("上一层文件夹", f.getParent());
             parentItem.fileType = FileType.PARENTDIR.Value();
             items.add(parentItem);
@@ -135,7 +135,7 @@ public class WoodImportActivity extends HTBaseActivity implements OnClickListene
         }
         n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         EventNotifyCenter.notifyEvent(n.class, n.axc, Boolean.valueOf(false), filePath, null);
-        t.l(this.aMn, "成功导入 " + name);
+        t.download_toast(this.aMn, "成功导入 " + name);
         AsyncTaskCenter.getInstance().execute(new Runnable(this) {
             final /* synthetic */ WoodImportActivity bcz;
 

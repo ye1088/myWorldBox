@@ -26,7 +26,7 @@ class StudioEditActivity$a$1 implements OnClickListener {
             tv.setBackgroundDrawable(d.o(a.b(this.biO), c.studio_resource_type));
             a.a(this.biO).remove(Long.valueOf(item.cateid));
         } else if (4 <= a.a(this.biO).size()) {
-            t.l(a.b(this.biO), "最多可选4个");
+            t.download_toast(a.b(this.biO), "最多可选4个");
         } else {
             Drawable drawable = y.c(a.b(this.biO), item.catename, UtilsScreen.dipToPx(a.b(this.biO), 40));
             tv.setTextColor(d.getColor(a.b(this.biO), c.colorNormalWhite));

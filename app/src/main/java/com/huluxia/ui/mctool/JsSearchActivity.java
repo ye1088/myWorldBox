@@ -171,7 +171,7 @@ public class JsSearchActivity extends HTBaseActivity implements OnClickListener 
     protected void f(int start, int count, boolean isClear) {
         String key = this.aIY.getText().toString().trim();
         if (key.length() < 2) {
-            t.l(this, "搜索条件必须大于两个字符");
+            t.download_toast(this, "搜索条件必须大于两个字符");
             return;
         }
         if (isClear) {

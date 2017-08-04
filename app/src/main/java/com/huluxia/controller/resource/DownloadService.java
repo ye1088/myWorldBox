@@ -33,11 +33,11 @@ public class DownloadService extends Service {
             return new Intent(context, DownloadService.class);
         }
 
-        private static void az(Context context) {
+        private static void startService(Context context) {
             context.startService(ay(context));
         }
 
-        private static void aA(Context context) {
+        private static void stopService(Context context) {
             context.stopService(ay(context));
         }
 
@@ -54,7 +54,7 @@ public class DownloadService extends Service {
             if (this.mv) {
                 throw new IllegalStateException("already connected");
             }
-            az(this.mContext);
+            startService(this.mContext);
             this.mv = this.mContext.bindService(ay(this.mContext), this.mx, 1);
         }
 
@@ -66,21 +66,21 @@ public class DownloadService extends Service {
             }
         }
 
-        public static void aB(Context context) {
-            aA(context);
-            az(context);
+        public static void restart_service(Context context) {
+            stopService(context);
+            startService(context);
         }
     }
 
     private class b extends Binder {
-        final /* synthetic */ DownloadService mz;
+        final /* synthetic */ DownloadService downloadService;
 
         private b(DownloadService downloadService) {
-            this.mz = downloadService;
+            this.downloadService = downloadService;
         }
 
         DownloadService getService() {
-            return this.mz;
+            return this.downloadService;
         }
     }
 

@@ -128,7 +128,7 @@ public class t {
         return true;
     }
 
-    public static void l(Context context, String msg) {
+    public static void download_toast(Context context, String msg) {
         a(context, msg, 0, 17);
     }
 

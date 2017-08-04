@@ -50,7 +50,7 @@ public class JsImportActivity extends HTBaseActivity implements OnClickListener,
         this.bbb = new ImportMapItemAdapter(this.aMn, this.arrayList);
         this.aZh.setAdapter(this.bbb);
         this.aZh.setOnItemClickListener(this);
-        this.arrayList.addAll(eF(UtilsFile.CU()));
+        this.arrayList.addAll(eF(UtilsFile.getSdCardPath()));
         this.bbb.notifyDataSetChanged();
         this.baJ.setText("请选择要导入的js文件");
     }
@@ -72,7 +72,7 @@ public class JsImportActivity extends HTBaseActivity implements OnClickListener,
         List<MapPathItem> tempItems = new ArrayList();
         File f = new File(filePath);
         File[] files = f.listFiles();
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             MapPathItem parentItem = new MapPathItem("上一层文件夹", f.getParent());
             parentItem.fileType = FileType.PARENTDIR.Value();
             items.add(parentItem);
@@ -137,10 +137,10 @@ public class JsImportActivity extends HTBaseActivity implements OnClickListener,
             if (temp.endsWith(a.bJY)) {
                 temp = temp.substring(0, temp.indexOf(a.bJY));
             }
-            t.l(this.aMn, "成功导入 " + name);
+            t.download_toast(this.aMn, "成功导入 " + name);
             n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         } else {
-            t.l(this.aMn, "导入 " + name + " 失败");
+            t.download_toast(this.aMn, "导入 " + name + " 失败");
         }
         finish();
     }

@@ -464,13 +464,13 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
             VC();
             return false;
         } else if (this.sH == 0) {
-            t.l(this.cdV, this.cdV.getString(R.string.update_category_tips));
+            t.download_toast(this.cdV, this.cdV.getString(R.string.update_category_tips));
             super.VE();
             return false;
         } else {
             String filePath = this.ceK;
             if (TextUtils.isEmpty(filePath)) {
-                t.l(this.cdV, this.cdV.getString(R.string.upload_file_tips));
+                t.download_toast(this.cdV, this.cdV.getString(R.string.upload_file_tips));
                 return false;
             }
             if (!filePath.startsWith("http://")) {

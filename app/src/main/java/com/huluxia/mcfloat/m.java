@@ -75,7 +75,7 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
             if (isChecked) {
                 this.Uh.TX = true;
                 this.Uh.TU.setText(this.Uh.Pu.getResources().getString(R.string.potion_attack_on));
-                t.l(this.Uh.PD, this.Uh.Pu.getResources().getString(R.string.potion_attack_on_tips));
+                t.download_toast(this.Uh.PD, this.Uh.Pu.getResources().getString(R.string.potion_attack_on_tips));
                 return;
             }
             this.Uh.TX = false;
@@ -83,7 +83,7 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
             m.Ua.clear();
             h.a(false, null);
             this.Uh.Ug.notifyDataSetChanged();
-            t.l(this.Uh.PD, this.Uh.Pu.getResources().getString(R.string.potion_attack_off_tips));
+            t.download_toast(this.Uh.PD, this.Uh.Pu.getResources().getString(R.string.potion_attack_off_tips));
         }
     };
     private a Uf = new a();

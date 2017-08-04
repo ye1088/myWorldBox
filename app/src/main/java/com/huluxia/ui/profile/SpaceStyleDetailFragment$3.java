@@ -23,7 +23,7 @@ class SpaceStyleDetailFragment$3 extends CallbackHandler {
             this.bhZ.cs(false);
             SpaceStyleDetailFragment.e(this.bhZ).setEnabled(true);
             if (succ) {
-                t.l(this.bhZ.getActivity(), context.getString(m.apply_space_style_succ));
+                t.download_toast(this.bhZ.getActivity(), context.getString(m.apply_space_style_succ));
                 SpaceStyleDetailFragment.g(this.bhZ).model = 2;
                 if (SpaceStyleDetailFragment.h(this.bhZ)) {
                     t.at(this.bhZ.getActivity());
@@ -43,7 +43,7 @@ class SpaceStyleDetailFragment$3 extends CallbackHandler {
             this.bhZ.cs(false);
             SpaceStyleDetailFragment.e(this.bhZ).setEnabled(true);
             if (succ) {
-                t.l(this.bhZ.getActivity(), context.getString(m.buy_space_style_succ));
+                t.download_toast(this.bhZ.getActivity(), context.getString(m.buy_space_style_succ));
                 SpaceStyleDetailFragment.g(this.bhZ).isuse = 1;
                 this.bhZ.cs(true);
                 g.Eb().b(SpaceStyleDetailFragment.g(this.bhZ).id, this.bhZ.getActivity());
@@ -61,7 +61,7 @@ class SpaceStyleDetailFragment$3 extends CallbackHandler {
             if (succ) {
                 SpaceStyleDetailFragment.i(this.bhZ).setDisplayedChild(0);
                 SpaceStyleDetailFragment.g(this.bhZ).isuse = 1;
-                t.l(this.bhZ.getActivity(), context.getString(m.exchanged_space_style_succ));
+                t.download_toast(this.bhZ.getActivity(), context.getString(m.exchanged_space_style_succ));
                 return;
             }
             SpaceStyleDetailFragment.j(this.bhZ).setEnabled(true);

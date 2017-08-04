@@ -105,7 +105,7 @@ public class c implements a {
                     return;
                 case R.id.floatSeekButton1:
                     this.PC.cZ(this.PC.Py);
-                    t.l(this.PC.Pu.getContext(), "添加生物完毕");
+                    t.download_toast(this.PC.Pu.getContext(), "添加生物完毕");
                     return;
                 case R.id.floatSeekButton2:
                     this.PC.da(this.PC.Py);

@@ -169,7 +169,7 @@ public class i implements a {
             this.SD.St = bar.getProgress();
             i.dm(this.SD.St);
             if (this.SD.ru()) {
-                t.l(this.SD.Pu.getContext(), "进雪地就会下雪");
+                t.download_toast(this.SD.Pu.getContext(), "进雪地就会下雪");
                 this.SD.aE(false);
             }
             r.ck().K(r.a.kt);

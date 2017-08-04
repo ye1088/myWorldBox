@@ -411,12 +411,12 @@ public class MapToolMainActivity extends Activity {
             levelName = Mojang.instance().getLevel().getLevelName();
         }
         if (levelName == null) {
-            t.l(this.mActivity, "目标文件不存在，无法更新");
+            t.download_toast(this.mActivity, "目标文件不存在，无法更新");
             return;
         }
         WorldItem item = Mojang.instance().getWorldItem();
         if (item == null) {
-            t.l(this.mActivity, "目标文件不存在，无法更新");
+            t.download_toast(this.mActivity, "目标文件不存在，无法更新");
             return;
         }
         String from = UtilsFile.Kq() + item.getFileName();
@@ -426,7 +426,7 @@ public class MapToolMainActivity extends Activity {
                 Mojang.instance().renameGame(mapName);
             } catch (Exception e) {
                 HLog.error(hlx.data.localstore.a.bKf, "renameMap error", e, new Object[0]);
-                t.l(this.mActivity, "更新存档名出错");
+                t.download_toast(this.mActivity, "更新存档名出错");
                 return;
             }
         }

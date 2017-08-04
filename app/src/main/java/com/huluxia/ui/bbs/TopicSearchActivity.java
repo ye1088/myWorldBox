@@ -292,7 +292,7 @@ public class TopicSearchActivity extends HTBaseThemeActivity {
         CharSequence key = this.aQF.getText().toString().trim();
         if (!UtilsFunction.empty(key)) {
             if (key.length() < 2) {
-                t.l(this, "搜索条件必须大于两个字符");
+                t.download_toast(this, "搜索条件必须大于两个字符");
                 return;
             }
             this.tC = key;

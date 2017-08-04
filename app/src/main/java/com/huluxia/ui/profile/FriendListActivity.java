@@ -331,7 +331,7 @@ public class FriendListActivity extends HTBaseLoadingActivity implements com.hul
                         this.bfj.IV();
                         return;
                     }
-                    t.l(this.bfj.aMn, this.bfj.aMn.getResources().getString(m.reminds_cannont_remove));
+                    t.download_toast(this.bfj.aMn, this.bfj.aMn.getResources().getString(m.reminds_cannont_remove));
                 }
             }
         });
@@ -374,7 +374,7 @@ public class FriendListActivity extends HTBaseLoadingActivity implements com.hul
         if (this.aVc == null || this.aVc.size() < 5) {
             return false;
         }
-        t.l(this, "只能同时@5位好友哦");
+        t.download_toast(this, "只能同时@5位好友哦");
         return true;
     }
 
@@ -382,7 +382,7 @@ public class FriendListActivity extends HTBaseLoadingActivity implements com.hul
         if (a(this.bfd, info) == null) {
             return false;
         }
-        t.l(this, this.aMn.getResources().getString(m.reminds_cannont_remove));
+        t.download_toast(this, this.aMn.getResources().getString(m.reminds_cannont_remove));
         return true;
     }
 

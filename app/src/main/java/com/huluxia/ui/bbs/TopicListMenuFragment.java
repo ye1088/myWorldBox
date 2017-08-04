@@ -136,7 +136,7 @@ public class TopicListMenuFragment extends BaseLoadingFragment implements OnClic
             if (!j.ep().ey()) {
                 t.an(this.mContext);
             } else if (j.ep().getLevel() < this.aJO.getIsSearch()) {
-                t.l(this.mContext, "抱歉！目前搜索只对" + this.aJO.getIsSearch() + "级以上的葫芦娃开放。");
+                t.download_toast(this.mContext, "抱歉！目前搜索只对" + this.aJO.getIsSearch() + "级以上的葫芦娃开放。");
             } else {
                 t.b(this.mContext, this.aJO);
             }
@@ -149,7 +149,7 @@ public class TopicListMenuFragment extends BaseLoadingFragment implements OnClic
         if (!j.ep().ey()) {
             t.an(this.mContext);
         } else if (this.subscribeType == ESubscribeType.Invalid.ordinal() || this.subscribeType == ESubscribeType.ALWAYS.ordinal()) {
-            t.l(this.mContext, "亲,该版块是不能取消的");
+            t.download_toast(this.mContext, "亲,该版块是不能取消的");
         } else {
             this.aQi = !this.aQi;
             this.aQt.setClickable(false);

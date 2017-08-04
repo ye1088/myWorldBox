@@ -42,7 +42,7 @@ public class FileSelectActivity extends HTBaseActivity implements OnClickListene
         Ip();
         Iq();
         It();
-        String path = UtilsFile.CU();
+        String path = UtilsFile.getSdCardPath();
         if (this.axr == 1) {
             String mapPath = j.Kq();
             if (mapPath != null) {
@@ -112,16 +112,16 @@ public class FileSelectActivity extends HTBaseActivity implements OnClickListene
         if (_path == null) {
             switch (this.axr) {
                 case 1:
-                    t.l(this.aMn, this.aMn.getString(R.string.please_choose_map_folder));
+                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_map_folder));
                     return;
                 case 2:
-                    t.l(this.aMn, this.aMn.getString(R.string.please_choose_js_file));
+                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_js_file));
                     return;
                 case 3:
-                    t.l(this.aMn, this.aMn.getString(R.string.please_choose_skin_file));
+                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_skin_file));
                     return;
                 case 4:
-                    t.l(this.aMn, this.aMn.getString(R.string.please_choose_wood_file));
+                    t.download_toast(this.aMn, this.aMn.getString(R.string.please_choose_wood_file));
                     return;
                 default:
                     return;
@@ -198,7 +198,7 @@ public class FileSelectActivity extends HTBaseActivity implements OnClickListene
     }
 
     private void a(String filePath, List<MapPathItem> items, File currentItem) {
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             String filePath1 = filePath + File.separator;
             MapPathItem parentItem;
             switch (this.axr) {

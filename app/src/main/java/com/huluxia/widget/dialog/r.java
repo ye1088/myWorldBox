@@ -48,6 +48,6 @@ public class r extends g {
         tInfo.na = true;
         tInfo.nb = false;
         ResourceCtrl.getInstance().addTask(tInfo);
-        t.l(this.bxl, "后台下载中..");
+        t.download_toast(this.bxl, "后台下载中..");
     }
 }

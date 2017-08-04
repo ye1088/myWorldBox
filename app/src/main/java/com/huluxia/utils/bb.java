@@ -23,7 +23,7 @@ public class bb {
         }
 
         public void rb() {
-            t.l(this.bnw.bns, "复制成功");
+            t.download_toast(this.bnw.bns, "复制成功");
         }
 
         public void rc() {

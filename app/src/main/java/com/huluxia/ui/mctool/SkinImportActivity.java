@@ -50,7 +50,7 @@ public class SkinImportActivity extends HTBaseActivity implements OnClickListene
         this.bbb = new ImportMapItemAdapter(this.aMn, this.arrayList);
         this.aZh.setAdapter(this.bbb);
         this.aZh.setOnItemClickListener(this);
-        this.arrayList.addAll(eF(UtilsFile.CU()));
+        this.arrayList.addAll(eF(UtilsFile.getSdCardPath()));
         this.bbb.notifyDataSetChanged();
         this.baJ.setText("请选择要导入的皮肤png文件");
     }
@@ -72,7 +72,7 @@ public class SkinImportActivity extends HTBaseActivity implements OnClickListene
         List<MapPathItem> tempItems = new ArrayList();
         File f = new File(filePath);
         File[] files = f.listFiles();
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             MapPathItem parentItem = new MapPathItem("上一层文件夹", f.getParent());
             parentItem.fileType = FileType.PARENTDIR.Value();
             items.add(parentItem);
@@ -134,7 +134,7 @@ public class SkinImportActivity extends HTBaseActivity implements OnClickListene
         if (temp.endsWith(end)) {
             temp = temp.substring(0, temp.indexOf(end));
         }
-        t.l(this.aMn, "成功导入 " + name);
+        t.download_toast(this.aMn, "成功导入 " + name);
         n(temp, newPath, String.valueOf(System.currentTimeMillis()));
         HLog.verbose(TAG, "DTPrint EVENT_IMPORT_LOC_SKIN filePath is " + filePath, new Object[0]);
         EventNotifyCenter.notifyEvent(n.class, n.axd, Boolean.valueOf(false), filePath, null);

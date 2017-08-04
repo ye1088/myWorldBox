@@ -69,43 +69,43 @@ public class e {
         switch (storyIndex) {
             case 1:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"5MB"});
-                if (j.fk(UtilsFile.CU()) >= 5242880) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 5242880) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"5MB"});
             case 2:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"55KB"});
-                if (j.fk(UtilsFile.CU()) >= 56320) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 56320) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"55KB"});
             case 3:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"8MB"});
-                if (j.fk(UtilsFile.CU()) >= 8388608) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 8388608) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"8MB"});
             case 4:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"2MB"});
-                if (j.fk(UtilsFile.CU()) >= 2097152) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 2097152) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"2MB"});
             case 5:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"24.5MB"});
-                if (j.fk(UtilsFile.CU()) >= 25690112) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 25690112) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"24.5MB"});
             case 6:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"1MB"});
-                if (j.fk(UtilsFile.CU()) >= PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"1MB"});
             case 7:
                 tmpStr = String.format(hlx.data.localstore.a.bKI, new Object[]{"500KB"});
-                if (j.fk(UtilsFile.CU()) >= 500) {
+                if (j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) >= 500) {
                     return tmpStr;
                 }
                 return tmpStr + String.format(hlx.data.localstore.a.bKJ, new Object[]{"500KB"});

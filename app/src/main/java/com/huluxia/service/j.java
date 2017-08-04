@@ -116,7 +116,7 @@ public class j {
                                 }
 
                                 public void run() {
-                                    t.l(HTApplication.getAppContext(), "分享失败");
+                                    t.download_toast(HTApplication.getAppContext(), "分享失败");
                                 }
                             });
                             return;
@@ -148,7 +148,7 @@ public class j {
                             }
 
                             public void run() {
-                                t.l(HTApplication.getAppContext(), "分享失败");
+                                t.download_toast(HTApplication.getAppContext(), "分享失败");
                             }
                         });
                     }
@@ -162,7 +162,7 @@ public class j {
                             }
 
                             public void run() {
-                                t.l(HTApplication.getAppContext(), "无法分享到QQ空间");
+                                t.download_toast(HTApplication.getAppContext(), "无法分享到QQ空间");
                             }
                         });
                     }
@@ -196,7 +196,7 @@ public class j {
                                 }
 
                                 public void run() {
-                                    t.l(HTApplication.getAppContext(), "分享失败");
+                                    t.download_toast(HTApplication.getAppContext(), "分享失败");
                                 }
                             });
                             return;
@@ -223,7 +223,7 @@ public class j {
                                 }
 
                                 public void run() {
-                                    t.l(HTApplication.getAppContext(), "分享失败");
+                                    t.download_toast(HTApplication.getAppContext(), "分享失败");
                                 }
                             });
                         }
@@ -238,7 +238,7 @@ public class j {
                             }
 
                             public void run() {
-                                t.l(HTApplication.getAppContext(), "无法分享给QQ好友");
+                                t.download_toast(HTApplication.getAppContext(), "无法分享给QQ好友");
                             }
                         });
                     }

@@ -93,7 +93,7 @@ class a {
         r7 = this;
         r0 = 0;
         r2 = new java.io.File;
-        r1 = r7.l();
+        r1 = r7.download_toast();
         r2.<init>(r1);
         r1 = r2.exists();
         if (r1 == 0) goto L_0x0047;

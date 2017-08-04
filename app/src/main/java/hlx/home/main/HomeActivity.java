@@ -438,12 +438,12 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
         }
         long current = SystemClock.elapsedRealtime();
         if (this.bQO == 0) {
-            t.l(this, "再按一次退出");
+            t.download_toast(this, "再按一次退出");
             this.bQO = current;
         } else if (current - this.bQO < FileUtils.FAT_FILE_TIMESTAMP_GRANULARITY) {
             super.onBackPressed();
         } else {
-            t.l(this, "再按一次退出");
+            t.download_toast(this, "再按一次退出");
             this.bQO = current;
         }
     }
@@ -491,7 +491,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
             com.huluxia.data.n verInfo = (com.huluxia.data.n) response.getData();
             if (verInfo == null || verInfo.getVersionCode() <= UtilsVersion.getVersionCode(this)) {
                 if (response.fe() == 2) {
-                    t.l(this, "当前已是最新版本(" + UtilsVersion.getVersionString(this) + ")。");
+                    t.download_toast(this, "当前已是最新版本(" + UtilsVersion.getVersionString(this) + ")。");
                 }
             } else if (response.fe() == 2) {
                 U(verInfo.getMessage(), verInfo.getAddress());

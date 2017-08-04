@@ -51,9 +51,9 @@ public class a {
     public static final String bJk = "V0.12.3";
     public static final String bJl = "V0.13.0";
     public static final String bJm = "V0.13.1";
-    public static final String bJn = "V0.14.1";
-    public static final String bJo = "V0.15.4";
-    public static final String bJp = "V0.16.1";
+    public static final String version_0141 = "V0.14.1";
+    public static final String version_0154 = "V0.15.4";
+    public static final String version_0161 = "V0.16.1";
     public static final String bJq = "本地";
     public static final String bJr = "0.10";
     public static final String bJs = "0.11";
@@ -98,7 +98,7 @@ public class a {
     public static final String bKf = "Minecraft";
     public static final String bKg = "resources.json";
     public static final String bKh = "pack_id";
-    public static final String bKi = "KEY_LAUNCHGAME_GAMEVERSION_EX";
+    public static final String KEY_LAUNCHGAME_GAMEVERSION_EX = "KEY_LAUNCHGAME_GAMEVERSION_EX";
     public static final int bKj = -1;
     public static final String bKk = "KEY_LAUNCHGAME_OPENFLOATWINDOW";
     public static final boolean bKl = true;
@@ -131,7 +131,7 @@ public class a {
     public static final String bLa = "654F90593B81B1A576326B735AB7ED5C";
     public static final String bLb = "56580536b9a54f9ae1ac49f960dbee6c";
     public static final String bLc = "821635acea4807672a8baf3549c026d6";
-    public static String bLd = null;
+    public static String mpc_download_url = null;
     public static String bLe = null;
     public static String bLf = null;
     public static final String bLg = "KEY_HOME_PAGE_NEW_USER_GUIDE";
@@ -173,7 +173,7 @@ public class a {
     public static void NR() {
         bKS = HTApplication.fn + "/file/mc/resource/mcgun/12/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8512.zip";
         bKV = HTApplication.fn + "/file/mc/resource/mcgun/13/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8513.zip";
-        bLd = HTApplication.fn + "/file/mc/resource/2016/07/04/MC_0.14.1_huluxia.apk";
+        mpc_download_url = HTApplication.fn + "/file/mc/resource/2016/07/04/MC_0.14.1_huluxia.apk";
         bLe = HTApplication.fn + "/file/mc/resource/2016/11/09/MC_0.15.4.0.apk";
         bLf = HTApplication.fn + "/file/mc/resource/2016/11/15/MC_0.16.1.0.apk";
     }

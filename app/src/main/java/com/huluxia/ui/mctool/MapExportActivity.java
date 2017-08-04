@@ -50,7 +50,7 @@ public class MapExportActivity extends HTBaseActivity implements OnClickListener
         this.bbo = new ExportMapItemAdapter(this.aMn, this.arrayList);
         this.aZh.setAdapter(this.bbo);
         this.aZh.setOnItemClickListener(this);
-        this.arrayList.addAll(eF(UtilsFile.CU()));
+        this.arrayList.addAll(eF(UtilsFile.getSdCardPath()));
         this.bbo.notifyDataSetChanged();
         this.baL.setOnClickListener(this);
         this.baJ.setText("请选择‘" + this.bat + ".zip’的保存路径");
@@ -77,7 +77,7 @@ public class MapExportActivity extends HTBaseActivity implements OnClickListener
         List<MapPathItem> tempItems = new ArrayList();
         File f = new File(filePath);
         File[] files = f.listFiles();
-        if (!filePath.equals(UtilsFile.CU())) {
+        if (!filePath.equals(UtilsFile.getSdCardPath())) {
             MapPathItem parentItem = new MapPathItem("上一层文件夹", f.getParent());
             parentItem.fileType = FileType.PARENTDIR.Value();
             items.add(parentItem);

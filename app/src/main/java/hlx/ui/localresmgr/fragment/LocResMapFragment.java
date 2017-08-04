@@ -252,9 +252,9 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
                     levelName = Mojang.instance().getLevel().getLevelName();
                 }
                 if (levelName == null) {
-                    t.l(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_notexist_objectfile_updatefails));
+                    t.download_toast(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_notexist_objectfile_updatefails));
                 } else if (Mojang.instance().getWorldItem() == null) {
-                    t.l(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_notexist_objectfile_updatefails));
+                    t.download_toast(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_notexist_objectfile_updatefails));
                 } else {
                     try {
                         if (!levelName.equals(msg)) {
@@ -263,7 +263,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
                         }
                         this.caO.UL();
                     } catch (Exception e) {
-                        t.l(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_update_filename_fails));
+                        t.download_toast(this.caO.mActivity, this.caO.mActivity.getString(R.string.local_resmgr_update_filename_fails));
                     }
                 }
             }
@@ -526,7 +526,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     public void aH(String name, String mapGameDir) {
         ArrayList<com.huluxia.data.map.b> fmList = ai.l(name, true);
         if (fmList.size() < 1) {
-            t.l(this.mActivity, this.mActivity.getString(R.string.local_resmgr_backup_onfloatwindows_tips));
+            t.download_toast(this.mActivity, this.mActivity.getString(R.string.local_resmgr_backup_onfloatwindows_tips));
             return;
         }
         for (int i = 0; i < fmList.size(); i++) {
