@@ -3,7 +3,6 @@ package com.huluxia.ui.bbs;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import com.huluxia.b;
@@ -31,7 +30,7 @@ public class BbsTitle extends LinearLayout implements c {
             if (rid == m.publish_map) {
                 i callback = b.bq().bs();
                 if (callback != null) {
-                    r.ck().K(a.bNp);
+                    r.ck().K_umengEvent(a.bNp);
                     callback.e(this.aJI.mContext);
                 }
             } else if (rid != m.my_map) {
@@ -39,7 +38,7 @@ public class BbsTitle extends LinearLayout implements c {
                 if (j.ep().ey()) {
                     i cb = b.bq().bs();
                     if (cb != null) {
-                        r.ck().K(a.bNq);
+                        r.ck().K_umengEvent(a.bNq);
                         cb.f(this.aJI.mContext);
                         return;
                     }

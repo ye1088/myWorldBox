@@ -119,7 +119,7 @@ public class a {
         r5 = this;
         r0 = "PushSelfShowLog";
         r1 = "run into launchCosaApp ";
-        com.huawei.android.pushagent.c.a.e.e(r0, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r0, r1);
         r0 = "PushSelfShowLog";
         r1 = new java.lang.StringBuilder;	 Catch:{ Exception -> 0x00bc }
         r1.<init>();	 Catch:{ Exception -> 0x00bc }
@@ -134,11 +134,11 @@ public class a {
         r2 = r2.f;	 Catch:{ Exception -> 0x00bc }
         r1 = r1.append(r2);	 Catch:{ Exception -> 0x00bc }
         r1 = r1.toString();	 Catch:{ Exception -> 0x00bc }
-        com.huawei.android.pushagent.c.a.e.a(r0, r1);	 Catch:{ Exception -> 0x00bc }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0, r1);	 Catch:{ Exception -> 0x00bc }
         r0 = r5.b;	 Catch:{ Exception -> 0x00bc }
         r1 = r5.c;	 Catch:{ Exception -> 0x00bc }
         r1 = r1.z;	 Catch:{ Exception -> 0x00bc }
-        r1 = com.huawei.android.pushselfshow.utils.a.a(r0, r1);	 Catch:{ Exception -> 0x00bc }
+        r1 = com.huawei.android.pushselfshow.utils.a_isRightVersion.a_isRightVersion(r0, r1);	 Catch:{ Exception -> 0x00bc }
         r0 = r5.c;	 Catch:{ Exception -> 0x00bc }
         r0 = r0.f;	 Catch:{ Exception -> 0x00bc }
         if (r0 == 0) goto L_0x0095;
@@ -155,11 +155,11 @@ public class a {
         r4 = r1.toURI();	 Catch:{ Exception -> 0x0089 }
         r3 = r3.append(r4);	 Catch:{ Exception -> 0x0089 }
         r3 = r3.toString();	 Catch:{ Exception -> 0x0089 }
-        com.huawei.android.pushagent.c.a.e.a(r2, r3);	 Catch:{ Exception -> 0x0089 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r3);	 Catch:{ Exception -> 0x0089 }
         r2 = r5.b;	 Catch:{ Exception -> 0x0089 }
         r3 = r5.c;	 Catch:{ Exception -> 0x0089 }
         r3 = r3.z;	 Catch:{ Exception -> 0x0089 }
-        r2 = com.huawei.android.pushselfshow.utils.a.a(r2, r3, r0);	 Catch:{ Exception -> 0x0089 }
+        r2 = com.huawei.android.pushselfshow.utils.a_isRightVersion.a_isRightVersion(r2, r3, r0);	 Catch:{ Exception -> 0x0089 }
         r2 = r2.booleanValue();	 Catch:{ Exception -> 0x0089 }
         if (r2 == 0) goto L_0x00f3;
     L_0x007d:
@@ -167,14 +167,14 @@ public class a {
     L_0x007f:
         r0 = "PushSelfShowLog";
         r1 = "launchCosaApp,intent == null";
-        com.huawei.android.pushagent.c.a.e.a(r0, r1);	 Catch:{ Exception -> 0x00bc }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0, r1);	 Catch:{ Exception -> 0x00bc }
     L_0x0088:
         return;
     L_0x0089:
         r0 = move-exception;
         r2 = "PushSelfShowLog";
         r3 = "intentUri error ";
-        com.huawei.android.pushagent.c.a.e.a(r2, r3, r0);	 Catch:{ Exception -> 0x00bc }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r3, r0);	 Catch:{ Exception -> 0x00bc }
         r0 = r1;
         goto L_0x007d;
     L_0x0095:
@@ -189,7 +189,7 @@ public class a {
         r2 = r5.b;	 Catch:{ Exception -> 0x00bc }
         r3 = r5.c;	 Catch:{ Exception -> 0x00bc }
         r3 = r3.z;	 Catch:{ Exception -> 0x00bc }
-        r2 = com.huawei.android.pushselfshow.utils.a.a(r2, r3, r0);	 Catch:{ Exception -> 0x00bc }
+        r2 = com.huawei.android.pushselfshow.utils.a_isRightVersion.a_isRightVersion(r2, r3, r0);	 Catch:{ Exception -> 0x00bc }
         r2 = r2.booleanValue();	 Catch:{ Exception -> 0x00bc }
         if (r2 == 0) goto L_0x00f1;
     L_0x00b4:
@@ -201,7 +201,7 @@ public class a {
         r0 = move-exception;
         r1 = "PushSelfShowLog";
         r2 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.c(r1, r2, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r1, r2, r0);
         goto L_0x0088;
     L_0x00c8:
         r1 = 805437440; // 0x30020000 float:4.7293724E-10 double:3.97938969E-315;
@@ -214,7 +214,7 @@ public class a {
         r3 = r0.toURI();	 Catch:{ Exception -> 0x00bc }
         r2 = r2.append(r3);	 Catch:{ Exception -> 0x00bc }
         r2 = r2.toString();	 Catch:{ Exception -> 0x00bc }
-        com.huawei.android.pushagent.c.a.e.a(r1, r2);	 Catch:{ Exception -> 0x00bc }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);	 Catch:{ Exception -> 0x00bc }
         r1 = r5.b;	 Catch:{ Exception -> 0x00bc }
         r1.startActivity(r0);	 Catch:{ Exception -> 0x00bc }
         goto L_0x0088;
@@ -225,7 +225,7 @@ public class a {
         r0 = r1;
         goto L_0x007d;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.a.a.f():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.a_isRightVersion.a_isRightVersion.f():void");
     }
 
     private void g() {

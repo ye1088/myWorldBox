@@ -375,7 +375,7 @@ public abstract class ExtendableListView extends AbsListView {
 
         public void setViewTypeCount(int viewTypeCount) {
             if (viewTypeCount < 1) {
-                throw new IllegalArgumentException("Can't have a viewTypeCount < 1");
+                throw new IllegalArgumentException("Can't have a_isRightVersion viewTypeCount < 1");
             }
             ArrayList<View>[] scrapViews = new ArrayList[viewTypeCount];
             for (int i = 0; i < viewTypeCount; i++) {
@@ -864,7 +864,7 @@ public abstract class ExtendableListView extends AbsListView {
                     invokeOnItemScrollListener();
                     this.mBlockLayoutRequests = false;
                 } else if (this.mItemCount != this.mAdapter.getCount()) {
-                    throw new IllegalStateException("The content of the adapter has changed but ExtendableListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ExtendableListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
+                    throw new IllegalStateException("The content of the adapter has changed but ExtendableListView did not receive a_isRightVersion notification. Make sure the content of your adapter is not modified from a_isRightVersion background thread, but only from the UI thread. [in ExtendableListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
                 } else {
                     int firstPosition = this.mFirstPosition;
                     RecycleBin recycleBin = this.mRecycleBin;

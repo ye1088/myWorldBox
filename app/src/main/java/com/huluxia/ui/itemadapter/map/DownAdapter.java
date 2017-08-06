@@ -334,7 +334,7 @@ public class DownAdapter extends BaseAdapter implements b {
         if (this.aTn) {
             notifyDataSetChanged();
         }
-        r.ck().K(hlx.data.tongji.a.bMI);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMI);
         e.Dk().iQ(1);
     }
 

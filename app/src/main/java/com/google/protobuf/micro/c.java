@@ -8,7 +8,7 @@ public class c extends IOException {
     }
 
     static c a() {
-        return new c("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either than the input has been truncated or that an embedded message misreported its own length.");
+        return new c("While parsing a_isRightVersion protocol message, the input ended unexpectedly in the middle of a_isRightVersion field.  This could mean either than the input has been truncated or that an embedded message misreported its own length.");
     }
 
     static c b() {
@@ -16,7 +16,7 @@ public class c extends IOException {
     }
 
     static c c() {
-        return new c("CodedInputStream encountered a malformed varint.");
+        return new c("CodedInputStream encountered a_isRightVersion malformed varint.");
     }
 
     static c d() {

@@ -54,7 +54,7 @@ public class NioSctpChannel extends AbstractNioMessageChannel implements SctpCha
         try {
             return com.sun.nio.sctp.SctpChannel.open();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a sctp channel.", e);
+            throw new ChannelException("Failed to open a_isRightVersion sctp channel.", e);
         }
     }
 
@@ -77,7 +77,7 @@ public class NioSctpChannel extends AbstractNioMessageChannel implements SctpCha
                 sctpChannel.close();
             } catch (IOException e2) {
                 if (logger.isWarnEnabled()) {
-                    logger.warn("Failed to close a partially initialized sctp channel.", e2);
+                    logger.warn("Failed to close a_isRightVersion partially initialized sctp channel.", e2);
                 }
             }
             throw new ChannelException("Failed to enter non-blocking mode.", e);

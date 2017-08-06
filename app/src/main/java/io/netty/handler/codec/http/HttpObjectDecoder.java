@@ -128,11 +128,11 @@ public abstract class HttpObjectDecoder extends ByteToMessageDecoder {
         this.contentLength = Long.MIN_VALUE;
         this.currentState = State.SKIP_CONTROL_CHARS;
         if (maxInitialLineLength <= 0) {
-            throw new IllegalArgumentException("maxInitialLineLength must be a positive integer: " + maxInitialLineLength);
+            throw new IllegalArgumentException("maxInitialLineLength must be a_isRightVersion positive integer: " + maxInitialLineLength);
         } else if (maxHeaderSize <= 0) {
-            throw new IllegalArgumentException("maxHeaderSize must be a positive integer: " + maxHeaderSize);
+            throw new IllegalArgumentException("maxHeaderSize must be a_isRightVersion positive integer: " + maxHeaderSize);
         } else if (maxChunkSize <= 0) {
-            throw new IllegalArgumentException("maxChunkSize must be a positive integer: " + maxChunkSize);
+            throw new IllegalArgumentException("maxChunkSize must be a_isRightVersion positive integer: " + maxChunkSize);
         } else {
             AppendableCharSequence seq = new AppendableCharSequence(initialBufferSize);
             this.lineParser = new LineParser(seq, maxInitialLineLength);

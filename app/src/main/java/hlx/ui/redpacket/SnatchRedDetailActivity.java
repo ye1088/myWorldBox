@@ -17,7 +17,7 @@ public class SnatchRedDetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aty_snatch_red_detail);
         ((TextView) findViewById(R.id.tvSnatchRedEnvelopDetail)).setText(Html.fromHtml(cfT));
-        r.ck().K(a.bOs);
+        r.ck().K_umengEvent(a.bOs);
         findViewById(R.id.ivSnatchRedDetailBack).setOnClickListener(new OnClickListener(this) {
             final /* synthetic */ SnatchRedDetailActivity cfU;
 

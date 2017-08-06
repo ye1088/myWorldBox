@@ -268,7 +268,7 @@ public class Where<T, ID> {
 
     void appendSql(String tableName, StringBuilder sb, List<ArgumentHolder> columnArgList) throws SQLException {
         if (this.clauseStackLevel == 0) {
-            throw new IllegalStateException("No where clauses defined.  Did you miss a where operation?");
+            throw new IllegalStateException("No where clauses defined.  Did you miss a_isRightVersion where operation?");
         } else if (this.clauseStackLevel != 1) {
             throw new IllegalStateException("Both the \"left-hand\" and \"right-hand\" clauses have been defined.  Did you miss an AND or OR?");
         } else if (this.needsFuture != null) {
@@ -289,7 +289,7 @@ public class Where<T, ID> {
         if (this.statementBuilder instanceof QueryBuilder) {
             return (QueryBuilder) this.statementBuilder;
         }
-        throw new SQLException("Cannot call " + methodName + " on a statement of type " + this.statementBuilder.getType());
+        throw new SQLException("Cannot call " + methodName + " on a_isRightVersion statement of type " + this.statementBuilder.getType());
     }
 
     private Where<T, ID> in(boolean in, String columnName, Object... objects) throws SQLException {
@@ -297,9 +297,9 @@ public class Where<T, ID> {
             if (objects[0].getClass().isArray()) {
                 throw new IllegalArgumentException("Object argument to " + (in ? "IN" : "notId") + " seems to be an array within an array");
             } else if (objects[0] instanceof Where) {
-                throw new IllegalArgumentException("Object argument to " + (in ? "IN" : "notId") + " seems to be a Where object, did you mean the QueryBuilder?");
+                throw new IllegalArgumentException("Object argument to " + (in ? "IN" : "notId") + " seems to be a_isRightVersion Where object, did you mean the QueryBuilder?");
             } else if (objects[0] instanceof PreparedStmt) {
-                throw new IllegalArgumentException("Object argument to " + (in ? "IN" : "notId") + " seems to be a prepared statement, did you mean the QueryBuilder?");
+                throw new IllegalArgumentException("Object argument to " + (in ? "IN" : "notId") + " seems to be a_isRightVersion prepared statement, did you mean the QueryBuilder?");
             }
         }
         addClause(new In(columnName, findColumnFieldType(columnName), objects, in));
@@ -331,7 +331,7 @@ public class Where<T, ID> {
 
     private void addNeedsFuture(NeedsFutureClause clause) {
         if (this.needsFuture != null) {
-            throw new IllegalStateException(this.needsFuture + " is already waiting for a future clause, can't add: " + clause);
+            throw new IllegalStateException(this.needsFuture + " is already waiting for a_isRightVersion future clause, can't add: " + clause);
         }
         this.needsFuture = clause;
     }
@@ -366,7 +366,7 @@ public class Where<T, ID> {
 
     private Clause pop(String label) {
         if (this.clauseStackLevel == 0) {
-            throw new IllegalStateException("Expecting there to be a clause already defined for '" + label + "' operation");
+            throw new IllegalStateException("Expecting there to be a_isRightVersion clause already defined for '" + label + "' operation");
         }
         Clause[] clauseArr = this.clauseStack;
         int i = this.clauseStackLevel - 1;

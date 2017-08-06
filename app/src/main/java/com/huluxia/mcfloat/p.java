@@ -101,60 +101,60 @@ public class p implements g {
             f.ri().az(false);
             switch (v.getId()) {
                 case R.id.floatBtnMenuRole:
-                    r.ck().K(com.huluxia.r.a.jX);
+                    r.ck().K_umengEvent(com.huluxia.r.a.jX);
                     n.rU().az(true);
                     return;
                 case R.id.floatBtnMenuFunc:
-                    r.ck().K(com.huluxia.r.a.jW);
+                    r.ck().K_umengEvent(com.huluxia.r.a.jW);
                     i.rt().az(true);
                     return;
                 case R.id.floatBtnMenuNetPlayer:
                     if (h.zx() == 3 || h.zx() == 5 || h.zx() == 7) {
-                        r.ck().K(com.huluxia.r.a.jY);
+                        r.ck().K_umengEvent(com.huluxia.r.a.jY);
                         l.rF().az(true);
                         return;
                     }
                     return;
                 case R.id.floatBtnMenuInsZones:
                     if (h.zx() == 3 || h.zx() == 5 || h.zx() == 7) {
-                        r.ck().K(com.huluxia.r.a.jZ);
+                        r.ck().K_umengEvent(com.huluxia.r.a.jZ);
                         this.VP.Vt.az(true);
                         return;
                     }
                     return;
                 case R.id.floatBtnMenuEnchant:
-                    r.ck().K(com.huluxia.r.a.ki);
+                    r.ck().K_umengEvent(com.huluxia.r.a.ki);
                     this.VP.Vx.az(true);
                     return;
                 case R.id.floatBtnMenuPotion:
                     if (h.zx() == 2 || h.zx() == 3 || h.zx() == 5 || h.zx() == 7) {
-                        r.ck().K(com.huluxia.r.a.kh);
+                        r.ck().K_umengEvent(com.huluxia.r.a.kh);
                         m.rL().az(true);
                         return;
                     }
                     return;
                 case R.id.floatBtnMenuPack:
-                    r.ck().K(com.huluxia.r.a.ka);
+                    r.ck().K_umengEvent(com.huluxia.r.a.ka);
                     this.VP.Vu.az(true);
                     return;
                 case R.id.floatBtnMenuDeliver:
-                    r.ck().K(com.huluxia.r.a.kb);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kb);
                     this.VP.Vv.az(true);
                     return;
                 case R.id.floatBtnMenuAnimal:
-                    r.ck().K(com.huluxia.r.a.kc);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kc);
                     this.VP.Vy.az(true);
                     return;
                 case R.id.floatBtnMenuBuilder:
-                    r.ck().K(com.huluxia.r.a.kd);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kd);
                     e.rf().az(true);
                     return;
                 case R.id.floatBtnMenuBackup:
-                    r.ck().K(com.huluxia.r.a.ke);
+                    r.ck().K_umengEvent(com.huluxia.r.a.ke);
                     this.VP.Vw.az(true);
                     return;
                 case R.id.floatBtnMenuCapshot:
-                    r.ck().K(com.huluxia.r.a.kf);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kf);
                     f.ri().az(true);
                     return;
                 default:
@@ -279,7 +279,7 @@ public class p implements g {
             Message msg = this.Vo.obtainMessage(1);
             msg.obj = mapName;
             this.Vo.sendMessageDelayed(msg, 100);
-            r.ck().K(com.huluxia.r.a.jS);
+            r.ck().K_umengEvent(com.huluxia.r.a.jS);
         }
     }
 
@@ -292,7 +292,7 @@ public class p implements g {
 
     public void sd() {
         this.Vn = true;
-        r.ck().K(com.huluxia.r.a.jT);
+        r.ck().K_umengEvent(com.huluxia.r.a.jT);
     }
 
     public boolean bT() {

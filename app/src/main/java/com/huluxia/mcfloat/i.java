@@ -49,7 +49,7 @@ public class i implements a {
                     ah.KZ().Q(i.Se, this.SD.Sz);
                     ah.KZ().k(i.Sf, checked);
                     if (true == checked) {
-                        r.ck().K(r.a.kq);
+                        r.ck().K_umengEvent(r.a.kq);
                         return;
                     }
                     return;
@@ -57,21 +57,21 @@ public class i implements a {
                     h.bT(checked);
                     ah.KZ().k(i.Sg, checked);
                     if (checked) {
-                        r.ck().K(r.a.kn);
+                        r.ck().K_umengEvent(r.a.kn);
                         return;
                     }
                     return;
                 case R.id.floatChkMainHelpFairy:
                     b.aK(checked);
                     if (checked) {
-                        r.ck().K(hlx.data.tongji.a.bOK);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bOK);
                     }
                     ah.KZ().k(hlx.data.localstore.a.bLv, checked);
                     return;
                 case R.id.floatChkMainSmallMap:
                     h.bS(checked);
                     if (true == checked) {
-                        r.ck().K(r.a.kp);
+                        r.ck().K_umengEvent(r.a.kp);
                         return;
                     }
                     return;
@@ -91,7 +91,7 @@ public class i implements a {
         public void onStopTrackingTouch(SeekBar bar) {
             this.SD.Sz = this.SD.dq(bar.getProgress());
             h.hs(this.SD.Sz);
-            r.ck().K(r.a.kl);
+            r.ck().K_umengEvent(r.a.kl);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {
@@ -133,7 +133,7 @@ public class i implements a {
             this.SD.Sr = bar.getProgress();
             i.dk(this.SD.Sr);
             ah.KZ().Q(i.Si, this.SD.Sr);
-            r.ck().K(r.a.ks);
+            r.ck().K_umengEvent(r.a.ks);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {
@@ -172,7 +172,7 @@ public class i implements a {
                 t.show_toast(this.SD.Pu.getContext(), "进雪地就会下雪");
                 this.SD.aE(false);
             }
-            r.ck().K(r.a.kt);
+            r.ck().K_umengEvent(r.a.kt);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {
@@ -206,7 +206,7 @@ public class i implements a {
         public void onStopTrackingTouch(SeekBar bar) {
             this.SD.Sw = bar.getProgress();
             i.do(this.SD.Sw);
-            r.ck().K(r.a.ku);
+            r.ck().K_umengEvent(r.a.ku);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {
@@ -278,7 +278,7 @@ public class i implements a {
                             h.ht(this.SD.Sp);
                             b.qy().qI();
                         }
-                        r.ck().K(r.a.kk);
+                        r.ck().K_umengEvent(r.a.kk);
                         return;
                     }
                     return;
@@ -293,7 +293,7 @@ public class i implements a {
                             b.qy().ay(true);
                             h.ht(this.SD.Sp);
                         }
-                        r.ck().K(r.a.kj);
+                        r.ck().K_umengEvent(r.a.kj);
                         return;
                     }
                     return;
@@ -353,7 +353,7 @@ public class i implements a {
         h.bS(false);
         checked = ah.KZ().j(hlx.data.localstore.a.bLv, true);
         if (checked) {
-            r.ck().K(hlx.data.tongji.a.bOK);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bOK);
         }
         ((CheckBox) this.Pu.findViewById(R.id.floatChkMainHelpFairy)).setChecked(checked);
     }

@@ -59,7 +59,7 @@ final class ChunkedInputStream extends AbstractHttpInputStream {
                 endOfInput(true);
             }
         } catch (NumberFormatException e) {
-            throw new IOException("Expected a hex chunk size, but was " + chunkSizeString);
+            throw new IOException("Expected a_isRightVersion hex chunk size, but was " + chunkSizeString);
         }
     }
 

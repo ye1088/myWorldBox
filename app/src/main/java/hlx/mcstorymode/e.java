@@ -14,30 +14,30 @@ import java.io.File;
 /* compiled from: StoryOperator */
 public class e {
     public static String TD() {
-        return UtilsFile.getRootPath() + c.bUn + File.separator;
+        return UtilsFile.get_mctool_path() + c.bUn + File.separator;
     }
 
     public static String TE() {
-        return UtilsFile.getRootPath() + "mcstory" + File.separator;
+        return UtilsFile.get_mctool_path() + "mcstory" + File.separator;
     }
 
     public static String mY(int storyIndex) {
         String tmpPath = "";
         switch (storyIndex) {
             case 1:
-                return UtilsFile.getRootPath() + c.bUB;
+                return UtilsFile.get_mctool_path() + c.bUB;
             case 2:
-                return UtilsFile.getRootPath() + c.bUC;
+                return UtilsFile.get_mctool_path() + c.bUC;
             case 3:
-                return UtilsFile.getRootPath() + c.bUD;
+                return UtilsFile.get_mctool_path() + c.bUD;
             case 4:
-                return UtilsFile.getRootPath() + c.bUE;
+                return UtilsFile.get_mctool_path() + c.bUE;
             case 5:
-                return UtilsFile.getRootPath() + c.bUF;
+                return UtilsFile.get_mctool_path() + c.bUF;
             case 6:
-                return UtilsFile.getRootPath() + c.bUG;
+                return UtilsFile.get_mctool_path() + c.bUG;
             case 7:
-                return UtilsFile.getRootPath() + c.bUH;
+                return UtilsFile.get_mctool_path() + c.bUH;
             default:
                 return tmpPath;
         }
@@ -184,19 +184,19 @@ public class e {
         String tmpStr = "";
         switch (storyIndex) {
             case 1:
-                return UtilsFile.getRootPath() + "mcstory";
+                return UtilsFile.get_mctool_path() + "mcstory";
             case 2:
-                return UtilsFile.getRootPath() + c.bVl;
+                return UtilsFile.get_mctool_path() + c.bVl;
             case 3:
-                return UtilsFile.getRootPath() + c.bVm;
+                return UtilsFile.get_mctool_path() + c.bVm;
             case 4:
-                return UtilsFile.getRootPath() + c.bVn;
+                return UtilsFile.get_mctool_path() + c.bVn;
             case 5:
-                return UtilsFile.getRootPath() + c.bVo;
+                return UtilsFile.get_mctool_path() + c.bVo;
             case 6:
-                return UtilsFile.getRootPath() + c.bVp;
+                return UtilsFile.get_mctool_path() + c.bVp;
             case 7:
-                return UtilsFile.getRootPath() + c.bVq;
+                return UtilsFile.get_mctool_path() + c.bVq;
             default:
                 return tmpStr;
         }

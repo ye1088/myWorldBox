@@ -135,7 +135,7 @@ public class r {
         monitor-exit(r7);
         return r2;
     L_0x004d:
-        r1 = com.huluxia.image.base.imagepipeline.image.d.a(r0);	 Catch:{ all -> 0x0055 }
+        r1 = com.huluxia.image.base.imagepipeline.image.d.a_isRightVersion(r0);	 Catch:{ all -> 0x0055 }
         monitor-exit(r0);	 Catch:{ all -> 0x005c }
         r0 = r1;
     L_0x0053:

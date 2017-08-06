@@ -67,7 +67,7 @@ public class LoginService extends Service {
             r7 = r19;
             r8 = r20;
             r9 = r21;
-            r4.a(r5, r6, r7, r8, r9, r10, r11, r12, r13);
+            r4.a_isRightVersion(r5, r6, r7, r8, r9, r10, r11, r12, r13);
         L_0x0038:
             return;
         L_0x0039:
@@ -95,7 +95,7 @@ public class LoginService extends Service {
             r7 = r19;
             r8 = r20;
             r9 = r21;
-            r4.a(r5, r6, r7, r8, r9, r10, r11, r12, r13);
+            r4.a_isRightVersion(r5, r6, r7, r8, r9, r10, r11, r12, r13);
             goto L_0x0038;
         L_0x0072:
             r5 = "LoginService";
@@ -148,7 +148,7 @@ public class LoginService extends Service {
             r7 = r19;
             r8 = r20;
             r9 = r21;
-            r4.a(r5, r6, r7, r8, r9, r10, r11, r12, r13);
+            r4.a_isRightVersion(r5, r6, r7, r8, r9, r10, r11, r12, r13);
             goto L_0x0038;
         L_0x00e3:
             r5 = com.huluxia.login.j.pV();
@@ -235,7 +235,7 @@ public class LoginService extends Service {
             r14.add(r0);	 Catch:{ all -> 0x0185 }
             goto L_0x0147;
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.huluxia.login.LoginService.1.a(java.lang.String, java.lang.String, java.lang.String, java.lang.String):void");
+            throw new UnsupportedOperationException("Method not decompiled: com.huluxia.login.LoginService.1.a_isRightVersion(java.lang.String, java.lang.String, java.lang.String, java.lang.String):void");
         }
 
         public void a(final String clientid, final String email, String encrytPwd, String nick, int gender, long birthday, String avatarFid, String openid, String accessToken) throws RemoteException {

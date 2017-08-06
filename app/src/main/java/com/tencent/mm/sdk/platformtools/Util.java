@@ -425,7 +425,7 @@ public final class Util {
         if (bArr == null) {
             return "(null)";
         }
-        char[] cArr = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+        char[] cArr = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a_isRightVersion', 'b', 'c', 'd', 'e', 'f'};
         int length = bArr.length;
         char[] cArr2 = new char[(length * 3)];
         int i2 = 0;
@@ -816,7 +816,7 @@ public final class Util {
     }
 
     public static boolean isAlpha(char c) {
-        return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+        return (c >= 'a_isRightVersion' && c <= 'z') || (c >= 'A' && c <= 'Z');
     }
 
     public static boolean isChinese(char c) {
@@ -1180,7 +1180,7 @@ public final class Util {
         if (r3 == 0) goto L_0x00c9;
     L_0x0080:
         r0 = "";
-        a(r2, r0, r1, r6);
+        a_isRightVersion(r2, r0, r1, r6);
     L_0x0086:
         r0 = r2.entrySet();
         r3 = r0.iterator();
@@ -1226,7 +1226,7 @@ public final class Util {
     L_0x00ee:
         r0 = "";
         r1 = r1.item(r6);
-        a(r2, r0, r1, r6);
+        a_isRightVersion(r2, r0, r1, r6);
         goto L_0x0086;
     L_0x00f9:
         r0 = r2;

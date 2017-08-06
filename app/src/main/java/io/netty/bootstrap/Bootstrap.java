@@ -173,7 +173,7 @@ public class Bootstrap extends AbstractBootstrap<Bootstrap, Channel> {
                         logger.warn("Unknown channel option: " + e);
                     }
                 } catch (Throwable t) {
-                    logger.warn("Failed to set a channel option: " + channel, t);
+                    logger.warn("Failed to set a_isRightVersion channel option: " + channel, t);
                 }
             }
         }

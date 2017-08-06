@@ -570,13 +570,13 @@ public class f {
         r0 = 0;
         if (r11 == 0) goto L_0x0007;
     L_0x0003:
-        r8 = a(r7, r9, r11);
+        r8 = a_isRightVersion(r7, r9, r11);
     L_0x0007:
         if (r8 != 0) goto L_0x0013;
     L_0x0009:
         r1 = "PushLogAC2705";
         r2 = "TRSUrl is null, cannot create connection.";
-        com.huawei.android.pushagent.c.a.e.a(r1, r2);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);
     L_0x0012:
         return r0;
     L_0x0013:
@@ -590,11 +590,11 @@ public class f {
         r2 = r2.append(r3);
         r2 = r2.append(r11);
         r2 = r2.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r2);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);
         r1 = b(r7, r8, r10);	 Catch:{ IOException -> 0x0100, Exception -> 0x00fd }
         r2 = "PushLogAC2705";
         r3 = "get connection success.";
-        com.huawei.android.pushagent.c.a.e.a(r2, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         r1.connect();	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         r3 = r1.getOutputStream();	 Catch:{ Exception -> 0x00a2, all -> 0x00e9 }
         r2 = b(r7, r9);	 Catch:{ Exception -> 0x0106 }
@@ -608,14 +608,14 @@ public class f {
     L_0x0062:
         r2 = "PushLogAC2705";
         r3 = "call conn.connect() success";
-        com.huawei.android.pushagent.c.a.e.a(r2, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         r0 = r1;
         goto L_0x0012;
     L_0x006d:
         r2 = move-exception;
         r3 = "PushLogAC2705";
         r4 = r2.toString();	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
-        com.huawei.android.pushagent.c.a.e.c(r3, r4, r2);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r3, r4, r2);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         goto L_0x0062;
     L_0x0079:
         r2 = move-exception;
@@ -631,7 +631,7 @@ public class f {
         r1 = r1.toString();
         r1 = r4.append(r1);
         r1 = r1.toString();
-        com.huawei.android.pushagent.c.a.e.d(r3, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r3, r1);
         if (r2 == 0) goto L_0x0012;
     L_0x009d:
         r2.disconnect();
@@ -642,7 +642,7 @@ public class f {
     L_0x00a4:
         r4 = "PushLogAC2705";
         r5 = r2.toString();	 Catch:{ all -> 0x0104 }
-        com.huawei.android.pushagent.c.a.e.c(r4, r5, r2);	 Catch:{ all -> 0x0104 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r4, r5, r2);	 Catch:{ all -> 0x0104 }
         if (r3 == 0) goto L_0x0062;
     L_0x00b0:
         r3.close();	 Catch:{ Exception -> 0x00b4, IOException -> 0x0079 }
@@ -651,7 +651,7 @@ public class f {
         r2 = move-exception;
         r3 = "PushLogAC2705";
         r4 = r2.toString();	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
-        com.huawei.android.pushagent.c.a.e.c(r3, r4, r2);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r3, r4, r2);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         goto L_0x0062;
     L_0x00c0:
         r2 = move-exception;
@@ -667,7 +667,7 @@ public class f {
         r5 = r1.toString();
         r4 = r4.append(r5);
         r4 = r4.toString();
-        com.huawei.android.pushagent.c.a.e.c(r3, r4, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r3, r4, r1);
         if (r2 == 0) goto L_0x0012;
     L_0x00e4:
         r2.disconnect();
@@ -685,7 +685,7 @@ public class f {
         r3 = move-exception;
         r4 = "PushLogAC2705";
         r5 = r3.toString();	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
-        com.huawei.android.pushagent.c.a.e.c(r4, r5, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r4, r5, r3);	 Catch:{ IOException -> 0x0079, Exception -> 0x00c0 }
         goto L_0x00f0;
     L_0x00fd:
         r1 = move-exception;
@@ -702,7 +702,7 @@ public class f {
         r2 = move-exception;
         goto L_0x00a4;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushagent.c.c.f.a(android.content.Context, java.lang.String, java.lang.String, boolean, boolean):javax.net.ssl.HttpsURLConnection");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushagent.c.c.f.a_isRightVersion(android.content.Context, java.lang.String, java.lang.String, boolean, boolean):javax.net.ssl.HttpsURLConnection");
     }
 
     private static String b(Context context, String str) {

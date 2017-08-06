@@ -56,7 +56,7 @@ public class c extends com.huawei.android.pushagent.b.a.a.c {
                         break;
                     }
                     String a = com.huawei.android.pushagent.c.a.a(new byte[]{(byte) i3});
-                    e.a("PushLogAC2705", "received a msg cmdId:" + a);
+                    e.a("PushLogAC2705", "received a_isRightVersion msg cmdId:" + a);
                     try {
                         Serializable a2;
                         if (l.c() == ((byte) i3)) {

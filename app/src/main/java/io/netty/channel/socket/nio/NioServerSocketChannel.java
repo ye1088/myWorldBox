@@ -38,7 +38,7 @@ public class NioServerSocketChannel extends AbstractNioMessageChannel implements
         try {
             return provider.openServerSocketChannel();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a server socket.", e);
+            throw new ChannelException("Failed to open a_isRightVersion server socket.", e);
         }
     }
 
@@ -102,7 +102,7 @@ public class NioServerSocketChannel extends AbstractNioMessageChannel implements
                 buf.add(new NioSocketChannel(this, ch));
                 return 1;
             } catch (Throwable t2) {
-                logger.warn("Failed to close a socket.", t2);
+                logger.warn("Failed to close a_isRightVersion socket.", t2);
             }
         }
         return 0;

@@ -41,7 +41,7 @@ public class CategoryVoteItemAdapter extends ArrayAdapter {
             if (!UtilsNetwork.isNetworkConnected(this.aSD.aSA)) {
                 t.n(this.aSD.aSA, "没有网络,请检查网络设置。");
             } else if (!j.ep().ey()) {
-                this.aSD.aSB.showOkCancelDialog(hlx.data.localstore.a.bKA, (CharSequence) "登录后才能进行投票操作,请点击登录。", (CharSequence) "登录", hlx.data.localstore.a.bKB, true, new 1(this));
+                this.aSD.aSB.showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, (CharSequence) "登录后才能进行投票操作,请点击登录。", (CharSequence) "登录", hlx.data.localstore.a.bKB_bt_cancel, true, new 1(this));
             } else if (this.aSC == null) {
                 HLog.error("VoteOnClickListener.onClick", "mCategroy is null", new Object[0]);
             } else {

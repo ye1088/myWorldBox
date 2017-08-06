@@ -21,14 +21,14 @@ class d$1 implements a {
     }
 
     public void rd() {
-        r.ck().K(hlx.data.tongji.a.bNS);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bNS);
         if (!this.bRd) {
             d.e(c.Sg().Sh(), this.val$context);
         }
     }
 
     public void rb() {
-        r.ck().K(hlx.data.tongji.a.bNR);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bNR);
         hlx.ui.a.e(this.val$context, false);
     }
 }

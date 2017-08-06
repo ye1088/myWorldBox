@@ -121,7 +121,7 @@ public class c {
             x.b b = x.a().b(attributeValue, attributeValue4);
             x.b b2 = b == null ? x.a().b(attributeValue, attributeValue3) : b;
             if (b2 == null) {
-                throw new p("the channel id is wrong while receiving a encrypted message");
+                throw new p("the channel id is wrong while receiving a_isRightVersion encrypted message");
             }
             z = false;
             d dVar = null;
@@ -129,9 +129,9 @@ public class c {
                 int next = xmlPullParser.next();
                 if (next == 2) {
                     if (!"s".equals(xmlPullParser.getName())) {
-                        throw new p("error while receiving a encrypted message with wrong format");
+                        throw new p("error while receiving a_isRightVersion encrypted message with wrong format");
                     } else if (xmlPullParser.next() != 4) {
-                        throw new p("error while receiving a encrypted message with wrong format");
+                        throw new p("error while receiving a_isRightVersion encrypted message with wrong format");
                     } else {
                         String text = xmlPullParser.getText();
                         if ("5".equals(attributeValue) || Constants.VIA_SHARE_TYPE_INFO.equals(attributeValue)) {
@@ -158,7 +158,7 @@ public class c {
             if (dVar != null) {
                 return dVar;
             }
-            throw new p("error while receiving a encrypted message with wrong format");
+            throw new p("error while receiving a_isRightVersion encrypted message with wrong format");
         }
         Object attributeValue6;
         Object attributeValue7;

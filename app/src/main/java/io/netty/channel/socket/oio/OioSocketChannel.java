@@ -44,17 +44,17 @@ public class OioSocketChannel extends OioByteStreamChannel implements SocketChan
                 try {
                     socket.close();
                 } catch (IOException e) {
-                    logger.warn("Failed to close a socket.", e);
+                    logger.warn("Failed to close a_isRightVersion socket.", e);
                 }
             }
         } catch (Exception e2) {
-            throw new ChannelException("failed to initialize a socket", e2);
+            throw new ChannelException("failed to initialize a_isRightVersion socket", e2);
         } catch (Throwable th) {
             if (!false) {
                 try {
                     socket.close();
                 } catch (IOException e3) {
-                    logger.warn("Failed to close a socket.", e3);
+                    logger.warn("Failed to close a_isRightVersion socket.", e3);
                 }
             }
         }
@@ -178,7 +178,7 @@ public class OioSocketChannel extends OioByteStreamChannel implements SocketChan
                 promise.setFailure(t2);
                 return;
             }
-            logger.debug("Exception suppressed because a previous exception occurred.", t2);
+            logger.debug("Exception suppressed because a_isRightVersion previous exception occurred.", t2);
             promise.setFailure(cause);
         }
     }

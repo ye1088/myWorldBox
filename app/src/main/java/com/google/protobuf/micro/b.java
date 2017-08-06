@@ -12,7 +12,7 @@ public final class b {
 
     public static class a extends IOException {
         a() {
-            super("CodedOutputStream was writing to a flat byte array and ran out of space.");
+            super("CodedOutputStream was writing to a_isRightVersion flat byte array and ran out of space.");
         }
     }
 
@@ -156,7 +156,7 @@ public final class b {
         if (this.d == null) {
             return this.b - this.c;
         }
-        throw new UnsupportedOperationException("spaceLeft() can only be called on CodedOutputStreams that are writing to a flat array.");
+        throw new UnsupportedOperationException("spaceLeft() can only be called on CodedOutputStreams that are writing to a_isRightVersion flat array.");
     }
 
     public void b(int i) {

@@ -41,7 +41,7 @@ public class SpdyFrameDecoder {
         } else if (delegate == null) {
             throw new NullPointerException("delegate");
         } else if (maxChunkSize <= 0) {
-            throw new IllegalArgumentException("maxChunkSize must be a positive integer: " + maxChunkSize);
+            throw new IllegalArgumentException("maxChunkSize must be a_isRightVersion positive integer: " + maxChunkSize);
         } else {
             this.spdyVersion = spdyVersion.getVersion();
             this.delegate = delegate;

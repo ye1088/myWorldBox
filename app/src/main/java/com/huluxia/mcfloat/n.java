@@ -60,7 +60,7 @@ public class n implements com.huluxia.mcfloat.p.a {
                     }
                     h.hr(nResult);
                     ah.KZ().k(n.Uv, checked);
-                    r.ck().K(com.huluxia.r.a.kv);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kv);
                     return;
                 case R.id.floatChkRoleReJump:
                     this.UR.UP.aC(checked);
@@ -68,40 +68,40 @@ public class n implements com.huluxia.mcfloat.p.a {
                         nResult = 0;
                     }
                     ah.KZ().Q(n.Ux, nResult);
-                    r.ck().K(com.huluxia.r.a.kw);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kw);
                     return;
                 case R.id.floatChkMainInvincible:
                     h.e(checked ? e.ahz : 20, checked);
                     ah.KZ().k(n.Ut, checked);
-                    r.ck().K(com.huluxia.r.a.kx);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kx);
                     return;
                 case R.id.floatChkMainDeadNoDrop:
                     b.qy().ax(checked);
                     ah.KZ().k(n.Uu, checked);
-                    r.ck().K(com.huluxia.r.a.ky);
+                    r.ck().K_umengEvent(com.huluxia.r.a.ky);
                     return;
                 case R.id.floatChkMainFlyMode:
                     h.bR(checked);
                     ah.KZ().k(n.Us, checked);
-                    r.ck().K(com.huluxia.r.a.kz);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kz);
                     return;
                 case R.id.floatChkMainPerspective:
                     h.e(checked, true);
                     if (checked) {
-                        r.ck().K(hlx.data.tongji.a.bOC);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bOC);
                         return;
                     }
                     return;
                 case R.id.floatChkFallWithNoDamage:
                     h.bv(checked);
                     ah.KZ().k(n.Uw, checked);
-                    r.ck().K(com.huluxia.r.a.kA);
+                    r.ck().K_umengEvent(com.huluxia.r.a.kA);
                     return;
                 case R.id.floatChkMainShowPoint1:
                     com.huluxia.mcsdk.log.a.verbose("TAG", "DTPrint floatChkMainShowPoint1 000 \n", new Object[0]);
                     this.UR.UQ.aC(checked);
                     ah.KZ().k(n.Sh, checked);
-                    r.ck().K(com.huluxia.r.a.km);
+                    r.ck().K_umengEvent(com.huluxia.r.a.km);
                     return;
                 default:
                     return;
@@ -127,7 +127,7 @@ public class n implements com.huluxia.mcfloat.p.a {
             int gameZoom = bar.getProgress();
             h.gK(gameZoom);
             ah.KZ().Q(n.Sd, gameZoom);
-            r.ck().K(com.huluxia.r.a.ko);
+            r.ck().K_umengEvent(com.huluxia.r.a.ko);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {
@@ -148,7 +148,7 @@ public class n implements com.huluxia.mcfloat.p.a {
         public void onStopTrackingTouch(SeekBar bar) {
             this.UR.UK = bar.getProgress();
             h.gP(this.UR.UK);
-            r.ck().K(com.huluxia.r.a.kr);
+            r.ck().K_umengEvent(com.huluxia.r.a.kr);
         }
 
         public void onStartTrackingTouch(SeekBar bar) {

@@ -163,7 +163,7 @@ public class HttpPostRequestEncoder implements ChunkedInput<HttpContent> {
                 }
                 return;
             }
-            throw new ErrorDataEncoderException("Cannot create a Encoder if not a POST");
+            throw new ErrorDataEncoderException("Cannot create a_isRightVersion Encoder if not a_isRightVersion POST");
         }
     }
 

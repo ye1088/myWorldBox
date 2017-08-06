@@ -311,9 +311,9 @@ public class ZipOutputStream extends FilterOutputStream {
     private void validateSizeInformation(Zip64Mode effectiveMode) throws ZipException {
         if (CurrentEntry.access$100(this.entry).getMethod() == 0 && this.raf == null) {
             if (CurrentEntry.access$100(this.entry).getSize() == -1) {
-                throw new ZipException("uncompressed size is required for STORED method when not writing to a file");
+                throw new ZipException("uncompressed size is required for STORED method when not writing to a_isRightVersion file");
             } else if (CurrentEntry.access$100(this.entry).getCrc() == -1) {
-                throw new ZipException("crc checksum is required for STORED method when not writing to a file");
+                throw new ZipException("crc checksum is required for STORED method when not writing to a_isRightVersion file");
             } else {
                 CurrentEntry.access$100(this.entry).setCompressedSize(CurrentEntry.access$100(this.entry).getSize());
             }

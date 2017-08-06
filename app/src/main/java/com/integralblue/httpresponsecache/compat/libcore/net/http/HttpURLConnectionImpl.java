@@ -140,7 +140,7 @@ class HttpURLConnectionImpl extends HttpURLConnection {
         connect();
         OutputStream result = this.httpEngine.getRequestBody();
         if (result == null) {
-            throw new ProtocolException("method does not support a request body: " + this.method);
+            throw new ProtocolException("method does not support a_isRightVersion request body: " + this.method);
         } else if (!this.httpEngine.hasResponse()) {
             return result;
         } else {

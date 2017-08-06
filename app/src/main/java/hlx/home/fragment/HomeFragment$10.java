@@ -14,6 +14,6 @@ class HomeFragment$10 implements OnClickListener {
 
     public void onClick(View v) {
         a.cc(HomeFragment.a(this.bQl));
-        r.ck().K(hlx.data.tongji.a.bMd);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMd);
     }
 }

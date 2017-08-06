@@ -189,7 +189,7 @@ public class HttpEngine {
             }
         }
         if (this.socketOut == null) {
-            throw new IllegalStateException("No socket to write to; was a POST cached?");
+            throw new IllegalStateException("No socket to write to; was a_isRightVersion POST cached?");
         }
         if (this.httpMinorVersion == 0) {
             this.sendChunked = false;

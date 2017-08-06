@@ -45,7 +45,7 @@ public class OioSctpServerChannel extends AbstractOioMessageChannel implements S
         try {
             return com.sun.nio.sctp.SctpServerChannel.open();
         } catch (IOException e) {
-            throw new ChannelException("failed to create a sctp server channel", e);
+            throw new ChannelException("failed to create a_isRightVersion sctp server channel", e);
         }
     }
 
@@ -68,17 +68,17 @@ public class OioSctpServerChannel extends AbstractOioMessageChannel implements S
                 try {
                     sch.close();
                 } catch (IOException e) {
-                    logger.warn("Failed to close a sctp server channel.", e);
+                    logger.warn("Failed to close a_isRightVersion sctp server channel.", e);
                 }
             }
         } catch (Exception e2) {
-            throw new ChannelException("failed to initialize a sctp server channel", e2);
+            throw new ChannelException("failed to initialize a_isRightVersion sctp server channel", e2);
         } catch (Throwable th) {
             if (!false) {
                 try {
                     sch.close();
                 } catch (IOException e3) {
-                    logger.warn("Failed to close a sctp server channel.", e3);
+                    logger.warn("Failed to close a_isRightVersion sctp server channel.", e3);
                 }
             }
         }
@@ -140,7 +140,7 @@ public class OioSctpServerChannel extends AbstractOioMessageChannel implements S
         try {
             this.selector.close();
         } catch (IOException e) {
-            logger.warn("Failed to close a selector.", e);
+            logger.warn("Failed to close a_isRightVersion selector.", e);
         }
         this.sch.close();
     }
@@ -169,7 +169,7 @@ public class OioSctpServerChannel extends AbstractOioMessageChannel implements S
             } while (selectionKeys.hasNext());
             return acceptedChannels;
         } catch (Throwable t2) {
-            logger.warn("Failed to close a sctp channel.", t2);
+            logger.warn("Failed to close a_isRightVersion sctp channel.", t2);
             return 0;
         }
     }

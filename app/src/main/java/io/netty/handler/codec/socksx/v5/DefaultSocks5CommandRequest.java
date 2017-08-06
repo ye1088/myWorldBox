@@ -21,7 +21,7 @@ public final class DefaultSocks5CommandRequest extends AbstractSocks5Message imp
         } else {
             if (dstAddrType == Socks5AddressType.IPv4) {
                 if (!NetUtil.isValidIpV4Address(dstAddr)) {
-                    throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a valid IPv4 address)");
+                    throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a_isRightVersion valid IPv4 address)");
                 }
             } else if (dstAddrType == Socks5AddressType.DOMAIN) {
                 dstAddr = IDN.toASCII(dstAddr);
@@ -29,7 +29,7 @@ public final class DefaultSocks5CommandRequest extends AbstractSocks5Message imp
                     throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: less than 256 chars)");
                 }
             } else if (dstAddrType == Socks5AddressType.IPv6 && !NetUtil.isValidIpV6Address(dstAddr)) {
-                throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a valid IPv6 address");
+                throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a_isRightVersion valid IPv6 address");
             }
             if (dstPort <= 0 || dstPort >= 65536) {
                 throw new IllegalArgumentException("dstPort: " + dstPort + " (expected: 1~65535)");

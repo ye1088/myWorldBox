@@ -99,7 +99,7 @@ class a {
         if (r1 == 0) goto L_0x0047;
     L_0x0010:
         r1 = 0;
-        r3 = r7.a;	 Catch:{ FileNotFoundException -> 0x0048, Exception -> 0x0070 }
+        r3 = r7.a_isRightVersion;	 Catch:{ FileNotFoundException -> 0x0048, Exception -> 0x0070 }
         r3 = r3.getAssets();	 Catch:{ FileNotFoundException -> 0x0048, Exception -> 0x0070 }
         r4 = new java.lang.StringBuilder;	 Catch:{ FileNotFoundException -> 0x0048, Exception -> 0x0070 }
         r4.<init>();	 Catch:{ FileNotFoundException -> 0x0048, Exception -> 0x0070 }
@@ -120,7 +120,7 @@ class a {
     L_0x0040:
         r1 = r1.getParcelFileDescriptor();
     L_0x0044:
-        com.xiaomi.channel.commonutils.file.a.a(r1);
+        com.xiaomi.channel.commonutils.file.a_isRightVersion.a_isRightVersion(r1);
     L_0x0047:
         return r0;
     L_0x0048:
@@ -156,7 +156,7 @@ class a {
         if (r1 == 0) goto L_0x0088;
     L_0x0081:
         r1 = r1.getParcelFileDescriptor();
-        com.xiaomi.channel.commonutils.file.a.a(r1);
+        com.xiaomi.channel.commonutils.file.a_isRightVersion.a_isRightVersion(r1);
     L_0x0088:
         throw r0;
     L_0x0089:
@@ -170,7 +170,7 @@ class a {
         r1 = r6;
         goto L_0x0074;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.push.service.module.a.i():boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.push.service.module.a_isRightVersion.i():boolean");
     }
 
     private void j() {

@@ -63,7 +63,7 @@ class e$1 implements Runnable {
                             feedbackRequest.setExt(e.a(this.eL.eK, "mobile:" + ((TelephonyManager) AppConfig.getInstance().getAppContext().getSystemService(a.qe)).getLine1Number()));
                             StringBuilder detail = new StringBuilder("【自动反馈】\n");
                             if (!UtilsFunction.empty(logUrl)) {
-                                detail = detail.append("   <a href=" + logUrl + ">反馈日志</a>");
+                                detail = detail.append("   <a_isRightVersion href=" + logUrl + ">反馈日志</a_isRightVersion>");
                             }
                             for (e$a filter : filters) {
                                 if (filter.t(this.eL.eJ)) {

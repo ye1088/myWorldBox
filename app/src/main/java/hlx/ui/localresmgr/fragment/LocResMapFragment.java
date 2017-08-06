@@ -36,7 +36,7 @@ import com.huluxia.utils.ai;
 import com.huluxia.widget.Constants.DownFileType;
 import com.huluxia.widget.dialog.e;
 import com.huluxia.widget.dialog.g;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
 import com.simple.colorful.d;
 import hlx.ui.localresmgr.adapter.MapResMgrItemAdapter;
 import java.util.ArrayList;
@@ -66,7 +66,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     private List<Object> akJ = new ArrayList();
     private ArrayList<Object> akW = new ArrayList();
     private List<com.huluxia.data.map.b> ako;
-    private k bSg;
+    private k_dialog_class bSg;
     private ArrayList<Object> bbA = new ArrayList();
     private LinearLayout caA;
     private BroadcastReceiver caE = new BroadcastReceiver(this) {
@@ -83,7 +83,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         }
     };
     private MapResMgrItemAdapter caJ = null;
-    private k caK;
+    private k_dialog_class caK;
     private a caL;
     private com.huluxia.data.map.b caM;
     private CommonMenuDialog caN;
@@ -124,15 +124,15 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
                     return;
                 case R.id.tvLocalResMgrBackupManager:
                     hlx.ui.a.J(this.caO.mActivity);
-                    r.ck().K(hlx.data.tongji.a.bNi);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNi);
                     return;
                 case R.id.tvLocalResMgrDel:
                     this.caO.UD();
-                    r.ck().K(hlx.data.tongji.a.bNe);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNe);
                     return;
                 case R.id.tvLocalResMgrImport:
                     hlx.ui.a.F(this.caO.mActivity);
-                    r.ck().K(hlx.data.tongji.a.bNj);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNj);
                     return;
                 case R.id.tvNoFilesTips:
                     hlx.ui.a.bY(this.caO.mActivity);
@@ -368,8 +368,8 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
 
     private void Sw() {
         this.caJ = new MapResMgrItemAdapter(getContext(), this.akW);
-        this.bSg = new k(getContext());
-        this.caK = new k(getContext());
+        this.bSg = new k_dialog_class(getContext());
+        this.caK = new k_dialog_class(getContext());
     }
 
     private void sJ() {
@@ -542,7 +542,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     public void aI(String name, String path) {
         this.caL.dismiss();
         String[] arrayOfString = new String[]{name, path};
-        this.caK.gM(this.mActivity.getString(R.string.local_resmgr_recovering_map));
+        this.caK.gM_setText(this.mActivity.getString(R.string.local_resmgr_recovering_map));
         new ProcessRecoverMapTask(this).execute(arrayOfString);
     }
 
@@ -562,7 +562,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
 
     private boolean v(com.huluxia.data.map.b item) {
         if (UtilsFile.isExist(UtilsFile.eQ(item.name)) || UtilsFile.isExist(UtilsFile.fS(item.name))) {
-            this.bSg.gM(this.mActivity.getString(R.string.map_reading));
+            this.bSg.gM_setText(this.mActivity.getString(R.string.map_reading));
             if (!this.mActivity.isFinishing()) {
                 this.bSg.show();
             }

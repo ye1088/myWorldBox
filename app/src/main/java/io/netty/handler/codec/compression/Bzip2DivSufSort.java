@@ -2010,7 +2010,7 @@ final class Bzip2DivSufSort {
         r27 = r28 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;
@@ -2059,7 +2059,7 @@ final class Bzip2DivSufSort {
         r27 = r28 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;
@@ -2093,7 +2093,7 @@ final class Bzip2DivSufSort {
         r27 = r28 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;
@@ -2130,7 +2130,7 @@ final class Bzip2DivSufSort {
         r27 = r27 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;
@@ -2255,7 +2255,7 @@ final class Bzip2DivSufSort {
         r27 = r28 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;
@@ -2670,7 +2670,7 @@ final class Bzip2DivSufSort {
         r27 = r28 + -1;
         r20 = r29[r27];
         r0 = r20;
-        r0 = r0.a;
+        r0 = r0.a_isRightVersion;
         r35 = r0;
         r0 = r20;
         r0 = r0.b;

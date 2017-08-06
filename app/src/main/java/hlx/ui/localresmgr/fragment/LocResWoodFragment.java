@@ -109,11 +109,11 @@ public class LocResWoodFragment extends BaseLoadingFragment implements a {
                     return;
                 case R.id.tvLocalResMgrDel:
                     this.cbd.UD();
-                    r.ck().K(hlx.data.tongji.a.bNg);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNg);
                     return;
                 case R.id.tvLocalResMgrImport:
                     hlx.ui.a.H(this.cbd.mActivity);
-                    r.ck().K(hlx.data.tongji.a.bNl);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNl);
                     return;
                 case R.id.tvLocalResMgrRecoverDefault:
                     this.cbd.UR();
@@ -217,7 +217,7 @@ public class LocResWoodFragment extends BaseLoadingFragment implements a {
             }
         }
         this.cba.notifyDataSetChanged();
-        r.ck().K(hlx.data.tongji.a.bMY);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMY);
     }
 
     private void UD() {

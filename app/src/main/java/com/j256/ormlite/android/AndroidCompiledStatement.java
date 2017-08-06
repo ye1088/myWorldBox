@@ -124,7 +124,7 @@ public class AndroidCompiledStatement implements CompiledStatement {
         if (this.type.isOkForQuery()) {
             return new AndroidDatabaseResults(getCursor(), objectCache, this.cacheStore);
         }
-        throw new IllegalArgumentException("Cannot call query on a " + this.type + " statement");
+        throw new IllegalArgumentException("Cannot call query on a_isRightVersion " + this.type + " statement");
     }
 
     public int runUpdate() throws SQLException {
@@ -137,14 +137,14 @@ public class AndroidCompiledStatement implements CompiledStatement {
             }
             return execSql(this.db, "runUpdate", finalSql, getArgArray());
         }
-        throw new IllegalArgumentException("Cannot call update on a " + this.type + " statement");
+        throw new IllegalArgumentException("Cannot call update on a_isRightVersion " + this.type + " statement");
     }
 
     public int runExecute() throws SQLException {
         if (this.type.isOkForExecute()) {
             return execSql(this.db, "runExecute", this.sql, getArgArray());
         }
-        throw new IllegalArgumentException("Cannot call execute on a " + this.type + " statement");
+        throw new IllegalArgumentException("Cannot call execute on a_isRightVersion " + this.type + " statement");
     }
 
     public void close() throws IOException {

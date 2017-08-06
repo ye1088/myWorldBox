@@ -106,7 +106,7 @@ Error: java.util.NoSuchElementException
         } else if (length < 0) {
             throw new IllegalArgumentException("length: " + length + " (expected: 0 or greater)");
         } else if (chunkSize <= 0) {
-            throw new IllegalArgumentException("chunkSize: " + chunkSize + " (expected: a positive integer)");
+            throw new IllegalArgumentException("chunkSize: " + chunkSize + " (expected: a_isRightVersion positive integer)");
         } else {
             if (offset != 0) {
                 in.position(offset);

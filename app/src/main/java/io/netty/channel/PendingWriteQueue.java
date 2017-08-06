@@ -260,7 +260,7 @@ public final class PendingWriteQueue {
 
     private static void safeFail(ChannelPromise promise, Throwable cause) {
         if (!(promise instanceof VoidChannelPromise) && !promise.tryFailure(cause)) {
-            logger.warn("Failed to mark a promise as failure because it's done already: {}", promise, cause);
+            logger.warn("Failed to mark a_isRightVersion promise as failure because it's done already: {}", promise, cause);
         }
     }
 }

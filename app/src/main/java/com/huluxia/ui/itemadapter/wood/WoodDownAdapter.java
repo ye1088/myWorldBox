@@ -102,7 +102,7 @@ public class WoodDownAdapter extends DownAdapter {
         if (this.aTn) {
             notifyDataSetChanged();
         }
-        r.ck().K(hlx.data.tongji.a.bMK);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMK);
         e.Dk().iT(1);
     }
 

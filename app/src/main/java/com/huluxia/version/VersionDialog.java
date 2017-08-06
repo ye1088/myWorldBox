@@ -483,9 +483,9 @@ public class VersionDialog extends DialogFragment {
             a patchTaskInfo = (a) com.huluxia.controller.resource.bean.a.b(a.class);
             patchTaskInfo.url = downloadUrl;
             patchTaskInfo.mM = resType;
-            patchTaskInfo.mS = info.name;
+            patchTaskInfo.mS_appTitle = info.name;
             patchTaskInfo.filename = filename;
-            patchTaskInfo.mV = finalFileName;
+            patchTaskInfo.mV_fileName = finalFileName;
             patchTaskInfo.packagename = info.packname;
             patchTaskInfo.na = true;
             patchTaskInfo.nb = false;
@@ -495,9 +495,9 @@ public class VersionDialog extends DialogFragment {
             ResTaskInfo resTaskInfo = com.huluxia.controller.resource.bean.a.dM();
             resTaskInfo.url = downloadUrl;
             resTaskInfo.mM = resType;
-            resTaskInfo.mS = info.name;
+            resTaskInfo.mS_appTitle = info.name;
             resTaskInfo.filename = filename;
-            resTaskInfo.mV = finalFileName;
+            resTaskInfo.mV_fileName = finalFileName;
             resTaskInfo.na = true;
             resTaskInfo.nb = false;
             this.mUrl = downloadUrl;
@@ -650,8 +650,8 @@ public class VersionDialog extends DialogFragment {
                     return;
                 }
                 if (taskInfo.state == State.FILE_DELETE.ordinal() || taskInfo.state == State.DOWNLOAD_PAUSE.ordinal() || taskInfo.state == State.UNZIP_NOT_START.ordinal()) {
-                    taskInfo.mS = info.name;
-                    taskInfo.mV = finalFileName;
+                    taskInfo.mS_appTitle = info.name;
+                    taskInfo.mV_fileName = finalFileName;
                     if (resType == 22) {
                         patchTaskInfo = a.b(taskInfo);
                         patchTaskInfo.packagename = info.packname;
@@ -673,9 +673,9 @@ public class VersionDialog extends DialogFragment {
                 patchTaskInfo = (a) com.huluxia.controller.resource.bean.a.b(a.class);
                 patchTaskInfo.url = downloadUrl;
                 patchTaskInfo.mM = resType;
-                patchTaskInfo.mS = info.name;
+                patchTaskInfo.mS_appTitle = info.name;
                 patchTaskInfo.filename = filename;
-                patchTaskInfo.mV = finalFileName;
+                patchTaskInfo.mV_fileName = finalFileName;
                 patchTaskInfo.na = true;
                 patchTaskInfo.nb = false;
                 this.mUrl = downloadUrl;
@@ -685,9 +685,9 @@ public class VersionDialog extends DialogFragment {
                 ResTaskInfo resTaskInfo = com.huluxia.controller.resource.bean.a.dM();
                 resTaskInfo.url = downloadUrl;
                 resTaskInfo.mM = resType;
-                resTaskInfo.mS = info.name;
+                resTaskInfo.mS_appTitle = info.name;
                 resTaskInfo.filename = filename;
-                resTaskInfo.mV = finalFileName;
+                resTaskInfo.mV_fileName = finalFileName;
                 resTaskInfo.na = true;
                 resTaskInfo.nb = false;
                 this.mUrl = downloadUrl;

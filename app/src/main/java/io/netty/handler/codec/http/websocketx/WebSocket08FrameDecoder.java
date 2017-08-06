@@ -194,7 +194,7 @@ Error: java.util.NoSuchElementException
         r4 = r11.frameMasked;
         if (r2 == r4) goto L_0x00ae;
     L_0x00a6:
-        r2 = "received a frame that is not masked as expected";
+        r2 = "received a_isRightVersion frame that is not masked as expected";
         r11.protocolViolation(r12, r2);
         goto L_0x0012;
     L_0x00ae:

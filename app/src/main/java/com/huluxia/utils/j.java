@@ -63,7 +63,7 @@ public class j extends UtilsFile {
     }
 
     public static String Kt() {
-        return UtilsFile.getRootPath() + "modscriptzip" + File.separator;
+        return UtilsFile.get_mctool_path() + "modscriptzip" + File.separator;
     }
 
     public static String eN(String title) {
@@ -72,13 +72,13 @@ public class j extends UtilsFile {
 
     public static String cT(boolean bEnd) {
         if (bEnd) {
-            return UtilsFile.getRootPath() + "modscript" + File.separator;
+            return UtilsFile.get_mctool_path() + "modscript" + File.separator;
         }
-        return UtilsFile.getRootPath() + "modscript";
+        return UtilsFile.get_mctool_path() + "modscript";
     }
 
     public static String Ku() {
-        return UtilsFile.getRootPath() + "skinzip" + File.separator;
+        return UtilsFile.get_mctool_path() + "skinzip" + File.separator;
     }
 
     public static String eO(String title) {
@@ -87,13 +87,13 @@ public class j extends UtilsFile {
 
     public static String cU(boolean bEnd) {
         if (bEnd) {
-            return UtilsFile.getRootPath() + "skin" + File.separator;
+            return UtilsFile.get_mctool_path() + "skin" + File.separator;
         }
-        return UtilsFile.getRootPath() + "skin";
+        return UtilsFile.get_mctool_path() + "skin";
     }
 
     public static String Kv() {
-        return UtilsFile.getRootPath() + "woodzip" + File.separator;
+        return UtilsFile.get_mctool_path() + "woodzip" + File.separator;
     }
 
     public static String eP(String title) {
@@ -102,23 +102,23 @@ public class j extends UtilsFile {
 
     public static String cV(boolean bEnd) {
         if (bEnd) {
-            return UtilsFile.getRootPath() + "maps" + File.separator;
+            return UtilsFile.get_mctool_path() + "maps" + File.separator;
         }
-        return UtilsFile.getRootPath() + "maps";
+        return UtilsFile.get_mctool_path() + "maps";
     }
 
     public static String ld(int inputBootVersion) {
         if (inputBootVersion == 0) {
-            return UtilsFile.getRootPath() + "gameres105";
+            return UtilsFile.get_mctool_path() + "gameres105";
         }
         if (1 == inputBootVersion) {
-            return UtilsFile.getRootPath() + "gameres110";
+            return UtilsFile.get_mctool_path() + "gameres110";
         }
         if (2 == inputBootVersion) {
-            return UtilsFile.getRootPath() + "gameres121";
+            return UtilsFile.get_mctool_path() + "gameres121";
         }
         if (3 == inputBootVersion) {
-            return UtilsFile.getRootPath() + "gameres130";
+            return UtilsFile.get_mctool_path() + "gameres130";
         }
         return null;
     }
@@ -176,7 +176,7 @@ public class j extends UtilsFile {
     }
 
     public static String Kw() {
-        return UtilsFile.getRootPath() + "game_pack" + File.separator;
+        return UtilsFile.get_mctool_path() + "game_pack" + File.separator;
     }
 
     public static String eQ(String name) {
@@ -287,7 +287,7 @@ public class j extends UtilsFile {
     public static String eX(String urlString) {
         String fName = UtilsFile.eV(urlString);
         if (fName.length() <= 0) {
-            fName = "a";
+            fName = "a_isRightVersion";
         }
         fName = UtilsMD5.MD5Code(fName);
         String filePath = (UtilsFile.KR() + fName.substring(0, 1).toLowerCase(Locale.getDefault())) + File.separator + fName;
@@ -362,7 +362,7 @@ public class j extends UtilsFile {
             return null;
         }
         String fName = h(url, false);
-        String subDir = UtilsFile.getRootPath() + "DownFile";
+        String subDir = UtilsFile.get_mctool_path() + "DownFile";
         if (!bkd) {
             bkd = true;
             UtilsFile.mkdir(subDir);
@@ -375,7 +375,7 @@ public class j extends UtilsFile {
             return null;
         }
         String fName = h(url, true);
-        String subDir = UtilsFile.getRootPath() + "DownApk";
+        String subDir = UtilsFile.get_mctool_path() + "DownApk";
         if (!bke) {
             bke = true;
             UtilsFile.mkdir(subDir);
@@ -388,7 +388,7 @@ public class j extends UtilsFile {
             return null;
         }
         String fName = h(url, true);
-        String subDir = UtilsFile.getRootPath() + "DownZip";
+        String subDir = UtilsFile.get_mctool_path() + "DownZip";
         if (!bkf) {
             bkf = true;
             UtilsFile.mkdir(subDir);
@@ -397,7 +397,7 @@ public class j extends UtilsFile {
     }
 
     public static String KA() {
-        String subDir = UtilsFile.getRootPath() + "Installer";
+        String subDir = UtilsFile.get_mctool_path() + "Installer";
         if (!bkg) {
             bkg = true;
             UtilsFile.mkdir(subDir);
@@ -1196,7 +1196,7 @@ public class j extends UtilsFile {
     }
 
     public static String KI() {
-        return UtilsFile.getRootPath() + "Log" + File.separator;
+        return UtilsFile.get_mctool_path() + "Log" + File.separator;
     }
 
     public static String i(String path, boolean containsSuffix) {

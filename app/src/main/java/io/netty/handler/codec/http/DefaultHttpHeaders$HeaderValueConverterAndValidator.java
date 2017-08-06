@@ -16,18 +16,18 @@ final class DefaultHttpHeaders$HeaderValueConverterAndValidator extends DefaultH
         if (state == 0) {
             return seq;
         }
-        throw new IllegalArgumentException("a header value must not end with '\\r' or '\\n':" + seq);
+        throw new IllegalArgumentException("a_isRightVersion header value must not end with '\\r' or '\\n':" + seq);
     }
 
     private static int validateValueChar(CharSequence seq, int state, char character) {
         if ((character & -16) == 0) {
             switch (character) {
                 case '\u0000':
-                    throw new IllegalArgumentException("a header value contains a prohibited character '\u0000': " + seq);
+                    throw new IllegalArgumentException("a_isRightVersion header value contains a_isRightVersion prohibited character '\u0000': " + seq);
                 case '\u000b':
-                    throw new IllegalArgumentException("a header value contains a prohibited character '\\v': " + seq);
+                    throw new IllegalArgumentException("a_isRightVersion header value contains a_isRightVersion prohibited character '\\v': " + seq);
                 case '\f':
-                    throw new IllegalArgumentException("a header value contains a prohibited character '\\f': " + seq);
+                    throw new IllegalArgumentException("a_isRightVersion header value contains a_isRightVersion prohibited character '\\f': " + seq);
             }
         }
         switch (state) {

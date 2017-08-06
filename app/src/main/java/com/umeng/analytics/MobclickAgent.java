@@ -259,7 +259,7 @@ public class MobclickAgent {
             str2 = null;
         }
         if (i <= 0 || i >= 200) {
-            bj.a(a.e, "not a valid age!");
+            bj.a(a.e, "not a_isRightVersion valid age!");
             i = -1;
         }
         g.a(context).a(str, str2, i, gender.value);

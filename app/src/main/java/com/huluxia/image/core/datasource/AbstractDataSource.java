@@ -119,7 +119,7 @@ public abstract class AbstractDataSource<T> implements c<T> {
     L_0x0032:
         r1 = r3.iO();
         r2 = r3.iR();
-        r3.a(r4, r5, r1, r2);
+        r3.a_isRightVersion(r4, r5, r1, r2);
         goto L_0x000c;
     L_0x003e:
         r0 = 0;
@@ -129,7 +129,7 @@ public abstract class AbstractDataSource<T> implements c<T> {
         monitor-exit(r3);	 Catch:{ all -> 0x0040 }
         throw r1;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.AbstractDataSource.a(com.huluxia.image.core.datasource.e, java.util.concurrent.Executor):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.AbstractDataSource.a_isRightVersion(com.huluxia.image.core.datasource.e, java.util.concurrent.Executor):void");
     }
 
     private void iQ() {

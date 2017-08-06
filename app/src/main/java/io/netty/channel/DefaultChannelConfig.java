@@ -201,7 +201,7 @@ public class DefaultChannelConfig implements ChannelConfig {
 
     public ChannelConfig setWriteSpinCount(int writeSpinCount) {
         if (writeSpinCount <= 0) {
-            throw new IllegalArgumentException("writeSpinCount must be a positive integer.");
+            throw new IllegalArgumentException("writeSpinCount must be a_isRightVersion positive integer.");
         }
         this.writeSpinCount = writeSpinCount;
         return this;

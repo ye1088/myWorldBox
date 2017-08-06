@@ -32,7 +32,7 @@ public abstract class BaseArgumentHolder implements ArgumentHolder {
             this.columnName = columnName;
             return;
         }
-        throw new IllegalArgumentException("Column name cannot be set twice from " + this.columnName + " to " + columnName + ".  Using a SelectArg twice in query with different columns?");
+        throw new IllegalArgumentException("Column name cannot be set twice from " + this.columnName + " to " + columnName + ".  Using a_isRightVersion SelectArg twice in query with different columns?");
     }
 
     public void setMetaInfo(FieldType fieldType) {
@@ -40,7 +40,7 @@ public abstract class BaseArgumentHolder implements ArgumentHolder {
             this.fieldType = fieldType;
             return;
         }
-        throw new IllegalArgumentException("FieldType name cannot be set twice from " + this.fieldType + " to " + fieldType + ".  Using a SelectArg twice in query with different columns?");
+        throw new IllegalArgumentException("FieldType name cannot be set twice from " + this.fieldType + " to " + fieldType + ".  Using a_isRightVersion SelectArg twice in query with different columns?");
     }
 
     public void setMetaInfo(String columnName, FieldType fieldType) {

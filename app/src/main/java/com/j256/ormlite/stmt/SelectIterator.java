@@ -155,7 +155,7 @@ public class SelectIterator<T, ID> implements CloseableIterator<T> {
 
     public void removeThrow() throws SQLException {
         if (this.last == null) {
-            throw new IllegalStateException("No last " + this.dataClass + " object to remove. Must be called after a call to next.");
+            throw new IllegalStateException("No last " + this.dataClass + " object to remove. Must be called after a_isRightVersion call to next.");
         } else if (this.classDao == null) {
             throw new IllegalStateException("Cannot remove " + this.dataClass + " object because classDao not initialized");
         } else {

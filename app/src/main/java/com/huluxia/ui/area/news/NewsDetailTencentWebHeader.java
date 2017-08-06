@@ -173,7 +173,7 @@ public class NewsDetailTencentWebHeader extends RelativeLayout {
                 this.aHv.put("versioncode", String.valueOf(UtilsVersion.getVersionCode(AppConfig.getInstance().getAppContext())));
             }
             if (!this.aHv.containsKey(BaseHttpMgr.PARAM_MARKET_ID)) {
-                this.aHv.put(BaseHttpMgr.PARAM_MARKET_ID, String.valueOf(HTApplication.bJ()));
+                this.aHv.put(BaseHttpMgr.PARAM_MARKET_ID, String.valueOf(HTApplication.bJ_mctool_huluxia_string()));
             }
             if (!this.aHv.containsKey("_key")) {
                 String token = j.ep().getToken();

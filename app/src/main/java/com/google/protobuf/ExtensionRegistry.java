@@ -131,7 +131,7 @@ public class ExtensionRegistry extends ExtensionRegistryLite {
 
     public void add(FieldDescriptor type) {
         if (type.getJavaType() == JavaType.MESSAGE) {
-            throw new IllegalArgumentException("ExtensionRegistry.add() must be provided a default instance when adding an embedded message extension.");
+            throw new IllegalArgumentException("ExtensionRegistry.add() must be provided a_isRightVersion default instance when adding an embedded message extension.");
         }
         ExtensionInfo info = new ExtensionInfo(type, null);
         add(info, ExtensionType.IMMUTABLE);
@@ -140,7 +140,7 @@ public class ExtensionRegistry extends ExtensionRegistryLite {
 
     public void add(FieldDescriptor type, Message defaultInstance) {
         if (type.getJavaType() != JavaType.MESSAGE) {
-            throw new IllegalArgumentException("ExtensionRegistry.add() provided a default instance for a non-message extension.");
+            throw new IllegalArgumentException("ExtensionRegistry.add() provided a_isRightVersion default instance for a_isRightVersion non-message extension.");
         }
         add(new ExtensionInfo(type, defaultInstance), ExtensionType.IMMUTABLE);
     }
@@ -193,6 +193,6 @@ public class ExtensionRegistry extends ExtensionRegistryLite {
             }
             return;
         }
-        throw new IllegalArgumentException("ExtensionRegistry.add() was given a FieldDescriptor for a regular (non-extension) field.");
+        throw new IllegalArgumentException("ExtensionRegistry.add() was given a_isRightVersion FieldDescriptor for a_isRightVersion regular (non-extension) field.");
     }
 }

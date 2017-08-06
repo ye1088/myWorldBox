@@ -14,7 +14,7 @@ import org.json.JSONArray;
 
 public class SelfShowReceiver {
     public void a(Context context, Intent intent, a aVar) {
-        e.a("PushSelfShowLog", "receive a selfshow message ,the type is" + aVar.o);
+        e.a("PushSelfShowLog", "receive a_isRightVersion selfshow message ,the type is" + aVar.o);
         if (com.huawei.android.pushselfshow.a.a.a(aVar.o)) {
             long b = com.huawei.android.pushselfshow.utils.a.b(aVar.k);
             if (b == 0) {
@@ -30,7 +30,7 @@ public class SelfShowReceiver {
     }
 
     public void a(Context context, Intent intent, String str, a aVar, int i) {
-        e.a("PushSelfShowLog", "receive a selfshow userhandle message");
+        e.a("PushSelfShowLog", "receive a_isRightVersion selfshow userhandle message");
         if ("-1".equals(str)) {
             b.a(context, i);
         } else {
@@ -45,7 +45,7 @@ public class SelfShowReceiver {
                     intent2.putExtra("click", jSONArray.toString()).setPackage(context.getPackageName()).setFlags(32);
                     context.sendBroadcast(intent2);
                 } catch (Exception e) {
-                    e.d("PushSelfShowLog", "message.extras is not a json format,err info " + e.toString());
+                    e.d("PushSelfShowLog", "message.extras is not a_isRightVersion json format,err info " + e.toString());
                 }
             }
         }

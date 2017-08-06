@@ -28,7 +28,7 @@ public class MCVersionSelectGuide extends Activity {
                 case R.id.btnNewUserGuide:
                     ah.KZ().k(a.bLg, true);
                     t.aw(this.bTq.mContext);
-                    r.ck().K(hlx.data.tongji.a.bLM);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bLM);
                     this.bTq.bTp = true;
                     return;
                 case R.id.tvGameVersionGuideSkip:
@@ -38,7 +38,7 @@ public class MCVersionSelectGuide extends Activity {
                         c.Sg().setStartGameVersion(7);
                     }
                     hlx.ui.a.bV(this.bTq.mContext);
-                    r.ck().K(hlx.data.tongji.a.bLN);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bLN);
                     this.bTq.finish();
                     return;
                 default:

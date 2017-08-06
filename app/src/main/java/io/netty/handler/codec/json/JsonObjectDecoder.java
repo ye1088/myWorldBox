@@ -35,7 +35,7 @@ public class JsonObjectDecoder extends ByteToMessageDecoder {
 
     public JsonObjectDecoder(int maxObjectLength, boolean streamArrayElements) {
         if (maxObjectLength < 1) {
-            throw new IllegalArgumentException("maxObjectLength must be a positive int");
+            throw new IllegalArgumentException("maxObjectLength must be a_isRightVersion positive int");
         }
         this.maxObjectLength = maxObjectLength;
         this.streamArrayElements = streamArrayElements;

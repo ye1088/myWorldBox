@@ -19,7 +19,7 @@ public abstract class d {
             a(a);
             a.c();
         } catch (IOException e) {
-            throw new RuntimeException("Serializing to a byte array threw an IOException (should never happen).");
+            throw new RuntimeException("Serializing to a_isRightVersion byte array threw an IOException (should never happen).");
         }
     }
 
@@ -36,7 +36,7 @@ public abstract class d {
         } catch (c e) {
             throw e;
         } catch (IOException e2) {
-            throw new RuntimeException("Reading from a byte array threw an IOException (should never happen).");
+            throw new RuntimeException("Reading from a_isRightVersion byte array threw an IOException (should never happen).");
         }
     }
 

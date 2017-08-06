@@ -34,7 +34,7 @@ public abstract class AbstractBinaryMemcacheDecoder<M extends BinaryMemcacheMess
     protected AbstractBinaryMemcacheDecoder(int chunkSize) {
         this.state = State.READ_HEADER;
         if (chunkSize < 0) {
-            throw new IllegalArgumentException("chunkSize must be a positive integer: " + chunkSize);
+            throw new IllegalArgumentException("chunkSize must be a_isRightVersion positive integer: " + chunkSize);
         }
         this.chunkSize = chunkSize;
     }

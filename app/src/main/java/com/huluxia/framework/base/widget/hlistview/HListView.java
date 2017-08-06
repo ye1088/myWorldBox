@@ -844,7 +844,7 @@ public class HListView extends AbsHListView {
                                 this.mBlockLayoutRequests = false;
                             }
                         } else if (this.mItemCount == this.mAdapter.getCount()) {
-                            throw new IllegalStateException("The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
+                            throw new IllegalStateException("The content of the adapter has changed but ListView did not receive a_isRightVersion notification. Make sure the content of your adapter is not modified from a_isRightVersion background thread, but only from the UI thread. [in ListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
                         } else {
                             setSelectedPositionInt(this.mNextSelectedPosition);
                             firstPosition = this.mFirstPosition;
@@ -1107,7 +1107,7 @@ public class HListView extends AbsHListView {
                         this.mBlockLayoutRequests = false;
                     }
                 } else {
-                    throw new IllegalStateException("The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
+                    throw new IllegalStateException("The content of the adapter has changed but ListView did not receive a_isRightVersion notification. Make sure the content of your adapter is not modified from a_isRightVersion background thread, but only from the UI thread. [in ListView(" + getId() + ", " + getClass() + ") with Adapter(" + this.mAdapter.getClass() + ")]");
                 }
             } catch (Throwable th) {
                 if (!blockLayoutRequests) {
@@ -1896,7 +1896,7 @@ public class HListView extends AbsHListView {
                 return this.mFirstPosition + i;
             }
         }
-        throw new IllegalArgumentException("newFocus is not a child of any of the children of the list!");
+        throw new IllegalArgumentException("newFocus is not a_isRightVersion child of any of the children of the list!");
     }
 
     private boolean isViewAncestorOf(View child, View parent) {

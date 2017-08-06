@@ -25,12 +25,12 @@ public class k implements h {
         /*
         r6 = this;
         r5 = 0;
-        r0 = r6.a;
+        r0 = r6.a_isRightVersion;
         if (r0 != 0) goto L_0x000f;
     L_0x0005:
         r0 = "PushSelfShowLog";
         r1 = "jsMessageQueue is null while run into Video Player exec";
-        com.huawei.android.pushagent.c.a.e.a(r0, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0, r1);
     L_0x000e:
         return;
     L_0x000f:
@@ -42,9 +42,9 @@ public class k implements h {
     L_0x001a:
         r0 = "url";
         r0 = r7.getString(r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r1 = r6.a;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r1 = r1.a();	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r1 = com.huawei.android.pushselfshow.richpush.html.api.b.a(r1, r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r1 = r6.a_isRightVersion;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r1 = r1.a_isRightVersion();	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r1 = com.huawei.android.pushselfshow.richpush.html.api.b.a_isRightVersion(r1, r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         if (r1 == 0) goto L_0x011c;
     L_0x002d:
         r2 = r1.length();	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
@@ -65,7 +65,7 @@ public class k implements h {
         r3 = r3.append(r4);	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
         r3 = r3.append(r0);	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
         r3 = r3.toString();	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
-        com.huawei.android.pushagent.c.a.e.e(r2, r3);	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r2, r3);	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
         r2 = "video/";
         r2 = r0.startsWith(r2);	 Catch:{ JSONException -> 0x00e2, Exception -> 0x0105 }
         if (r2 == 0) goto L_0x0153;
@@ -91,9 +91,9 @@ public class k implements h {
         r3 = r3.append(r4);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
         r3 = r3.append(r1);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
         r3 = r3.toString();	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
-        com.huawei.android.pushagent.c.a.e.e(r2, r3);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r2, r3);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
         r2 = r6.c;	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.b.a(r2, r0);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.b.a_isRightVersion(r2, r0);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
         r2 = r2.contains(r1);	 Catch:{ JSONException -> 0x0111, Exception -> 0x00ed }
         if (r2 == 0) goto L_0x00b6;
     L_0x00b3:
@@ -101,52 +101,52 @@ public class k implements h {
     L_0x00b6:
         r1 = r6.c;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r1.startActivity(r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r0 = r6.a;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r0 = r6.a_isRightVersion;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r1 = r6.b;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a.OK;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a_isRightVersion.OK;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r3 = "success";
         r4 = 0;
-        r0.a(r1, r2, r3, r4);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r0.a_isRightVersion(r1, r2, r3, r4);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         goto L_0x000e;
     L_0x00ca:
         r0 = move-exception;
         r1 = "PushSelfShowLog";
         r2 = "startPlaying failed ";
-        com.huawei.android.pushagent.c.a.e.d(r1, r2, r0);
-        r0 = r6.a;
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r1, r2, r0);
+        r0 = r6.a_isRightVersion;
         r1 = r6.b;
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a.JSON_EXCEPTION;
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a_isRightVersion.JSON_EXCEPTION;
         r3 = "error";
-        r0.a(r1, r2, r3, r5);
+        r0.a_isRightVersion(r1, r2, r3, r5);
         goto L_0x000e;
     L_0x00e2:
         r0 = move-exception;
         r0 = "PushSelfShowLog";
         r2 = "get mime-type error";
-        com.huawei.android.pushagent.c.a.e.e(r0, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r0, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         goto L_0x006c;
     L_0x00ed:
         r0 = move-exception;
         r1 = "PushSelfShowLog";
         r2 = "startPlaying failed ";
-        com.huawei.android.pushagent.c.a.e.d(r1, r2, r0);
-        r0 = r6.a;
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r1, r2, r0);
+        r0 = r6.a_isRightVersion;
         r1 = r6.b;
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a.JSON_EXCEPTION;
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a_isRightVersion.JSON_EXCEPTION;
         r3 = "error";
-        r0.a(r1, r2, r3, r5);
+        r0.a_isRightVersion(r1, r2, r3, r5);
         goto L_0x000e;
     L_0x0105:
         r0 = move-exception;
         r0 = "PushSelfShowLog";
         r2 = "get mime-type error";
-        com.huawei.android.pushagent.c.a.e.e(r0, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r0, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         goto L_0x006c;
     L_0x0111:
         r1 = move-exception;
         r1 = "PushSelfShowLog";
         r2 = "get packageName error";
-        com.huawei.android.pushagent.c.a.e.e(r1, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r1, r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         goto L_0x00b6;
     L_0x011c:
         r1 = "PushSelfShowLog";
@@ -156,26 +156,26 @@ public class k implements h {
         r2 = "File not exist";
         r0 = r0.append(r2);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r0 = r0.toString();	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        com.huawei.android.pushagent.c.a.e.e(r1, r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r0 = r6.a;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.e(r1, r0);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r0 = r6.a_isRightVersion;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r1 = r6.b;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a.AUDIO_ONLY_SUPPORT_HTTP;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a_isRightVersion.AUDIO_ONLY_SUPPORT_HTTP;	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         r3 = "error";
         r4 = 0;
-        r0.a(r1, r2, r3, r4);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
+        r0.a_isRightVersion(r1, r2, r3, r4);	 Catch:{ JSONException -> 0x00ca, Exception -> 0x00ed }
         goto L_0x000e;
     L_0x0145:
-        r0 = r6.a;
+        r0 = r6.a_isRightVersion;
         r1 = r6.b;
-        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a.JSON_EXCEPTION;
+        r2 = com.huawei.android.pushselfshow.richpush.html.api.d.a_isRightVersion.JSON_EXCEPTION;
         r3 = "error";
-        r0.a(r1, r2, r3, r5);
+        r0.a_isRightVersion(r1, r2, r3, r5);
         goto L_0x000e;
     L_0x0153:
         r0 = r1;
         goto L_0x006b;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.richpush.html.a.k.a(org.json.JSONObject):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.richpush.html.a_isRightVersion.k_dialog_class.a_isRightVersion(org.json.JSONObject):void");
     }
 
     public String a(String str, JSONObject jSONObject) {

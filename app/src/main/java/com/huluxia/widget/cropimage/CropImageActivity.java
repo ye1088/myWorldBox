@@ -12,7 +12,8 @@ import com.huluxia.bbs.b.i;
 import com.huluxia.module.h;
 import com.huluxia.ui.base.HTBaseActivity;
 import com.huluxia.utils.ae;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
+
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -23,7 +24,7 @@ public class CropImageActivity extends HTBaseActivity {
     private int aRo = h.arp;
     private int aRp = h.arp;
     private boolean aRq = true;
-    private k aRr;
+    private k_dialog_class aRr;
 
     private class a extends AsyncTask<Bitmap, Integer, String> {
         final /* synthetic */ CropImageActivity bvS;
@@ -76,10 +77,10 @@ public class CropImageActivity extends HTBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(i.activity_cropimage);
-        this.aRr = new k(this);
+        this.aRr = new k_dialog_class(this);
         setTitle("图片裁剪");
         this.aIs.setVisibility(8);
-        this.aIT.setText(hlx.data.localstore.a.bKC);
+        this.aIT.setText(hlx.data.localstore.a.bKC_bt_ok);
         this.aIT.setVisibility(0);
         this.aRn = (CropImageView) findViewById(g.CropImageView);
         Intent cropIntent = getIntent();

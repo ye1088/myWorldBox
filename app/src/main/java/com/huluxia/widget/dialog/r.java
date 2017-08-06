@@ -37,14 +37,14 @@ public class r extends g {
 
     protected void sK() {
         super.sK();
-        UtilsFile.deleteFile(UtilsFile.getRootPath() + this.bwj);
+        UtilsFile.deleteFile(UtilsFile.get_mctool_path() + this.bwj);
         ResourceCtrl.getInstance().registerHandler(1000005, UpdateDownloadHandler.class);
         ResTaskInfo tInfo = new ResTaskInfo();
         tInfo.url = this.mUrl;
         tInfo.filename = this.bwj;
         tInfo.mM = 1000005;
-        tInfo.mV = this.bwj;
-        tInfo.dir = UtilsFile.getRootPath();
+        tInfo.mV_fileName = this.bwj;
+        tInfo.dir = UtilsFile.get_mctool_path();
         tInfo.na = true;
         tInfo.nb = false;
         ResourceCtrl.getInstance().addTask(tInfo);

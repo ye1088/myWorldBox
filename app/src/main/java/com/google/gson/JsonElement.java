@@ -30,28 +30,28 @@ public abstract class JsonElement {
         if (isJsonObject()) {
             return (JsonObject) this;
         }
-        throw new IllegalStateException("Not a JSON Object: " + this);
+        throw new IllegalStateException("Not a_isRightVersion JSON Object: " + this);
     }
 
     public JsonArray getAsJsonArray() {
         if (isJsonArray()) {
             return (JsonArray) this;
         }
-        throw new IllegalStateException("This is not a JSON Array.");
+        throw new IllegalStateException("This is not a_isRightVersion JSON Array.");
     }
 
     public JsonPrimitive getAsJsonPrimitive() {
         if (isJsonPrimitive()) {
             return (JsonPrimitive) this;
         }
-        throw new IllegalStateException("This is not a JSON Primitive.");
+        throw new IllegalStateException("This is not a_isRightVersion JSON Primitive.");
     }
 
     public JsonNull getAsJsonNull() {
         if (isJsonNull()) {
             return (JsonNull) this;
         }
-        throw new IllegalStateException("This is not a JSON Null.");
+        throw new IllegalStateException("This is not a_isRightVersion JSON Null.");
     }
 
     public boolean getAsBoolean() {

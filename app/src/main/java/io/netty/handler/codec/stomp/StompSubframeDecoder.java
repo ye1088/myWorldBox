@@ -38,9 +38,9 @@ public class StompSubframeDecoder extends ReplayingDecoder<State> {
         super(State.SKIP_CONTROL_CHARACTERS);
         this.contentLength = -1;
         if (maxLineLength <= 0) {
-            throw new IllegalArgumentException("maxLineLength must be a positive integer: " + maxLineLength);
+            throw new IllegalArgumentException("maxLineLength must be a_isRightVersion positive integer: " + maxLineLength);
         } else if (maxChunkSize <= 0) {
-            throw new IllegalArgumentException("maxChunkSize must be a positive integer: " + maxChunkSize);
+            throw new IllegalArgumentException("maxChunkSize must be a_isRightVersion positive integer: " + maxChunkSize);
         } else {
             this.maxChunkSize = maxChunkSize;
             this.maxLineLength = maxLineLength;

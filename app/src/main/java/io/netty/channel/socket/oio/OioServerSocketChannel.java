@@ -28,7 +28,7 @@ public class OioServerSocketChannel extends AbstractOioMessageChannel implements
         try {
             return new ServerSocket();
         } catch (IOException e) {
-            throw new ChannelException("failed to create a server socket", e);
+            throw new ChannelException("failed to create a_isRightVersion server socket", e);
         }
     }
 
@@ -49,7 +49,7 @@ public class OioServerSocketChannel extends AbstractOioMessageChannel implements
                     socket.close();
                 } catch (IOException e) {
                     if (logger.isWarnEnabled()) {
-                        logger.warn("Failed to close a partially initialized socket.", e);
+                        logger.warn("Failed to close a_isRightVersion partially initialized socket.", e);
                     }
                 }
             }
@@ -63,7 +63,7 @@ public class OioServerSocketChannel extends AbstractOioMessageChannel implements
                     socket.close();
                 } catch (IOException e22) {
                     if (logger.isWarnEnabled()) {
-                        logger.warn("Failed to close a partially initialized socket.", e22);
+                        logger.warn("Failed to close a_isRightVersion partially initialized socket.", e22);
                     }
                 }
             }
@@ -116,7 +116,7 @@ public class OioServerSocketChannel extends AbstractOioMessageChannel implements
                 buf.add(new OioSocketChannel(this, s));
                 return 1;
             } catch (Throwable t2) {
-                logger.warn("Failed to close a socket.", t2);
+                logger.warn("Failed to close a_isRightVersion socket.", t2);
             }
         } catch (SocketTimeoutException e) {
         }

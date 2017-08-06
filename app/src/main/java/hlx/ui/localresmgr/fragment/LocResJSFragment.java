@@ -110,11 +110,11 @@ public class LocResJSFragment extends BaseLoadingFragment implements a {
                     return;
                 case R.id.tvLocalResMgrDel:
                     this.caF.UD();
-                    r.ck().K(hlx.data.tongji.a.bNf);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNf);
                     return;
                 case R.id.tvLocalResMgrImport:
                     hlx.ui.a.G(this.caF.mActivity);
-                    r.ck().K(hlx.data.tongji.a.bNk);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNk);
                     return;
                 case R.id.tvLocalResMgrRecoverDefault:
                     this.caF.UH();

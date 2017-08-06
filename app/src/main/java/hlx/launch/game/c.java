@@ -161,15 +161,15 @@ public class c {
     public String Sn() {
         switch (this.inputLaunchGameIndex) {
             case 0:
-                return UtilsFile.getRootPath() + Constants.bsu + ".zip";
+                return UtilsFile.get_mctool_path() + Constants.bsu + ".zip";
             case 1:
-                return UtilsFile.getRootPath() + Constants.bsv + ".zip";
+                return UtilsFile.get_mctool_path() + Constants.bsv + ".zip";
             case 2:
-                return UtilsFile.getRootPath() + Constants.bsw + ".zip";
+                return UtilsFile.get_mctool_path() + Constants.bsw + ".zip";
             case 3:
-                return UtilsFile.getRootPath() + Constants.bsx + ".zip";
+                return UtilsFile.get_mctool_path() + Constants.bsx + ".zip";
             case 4:
-                return UtilsFile.getRootPath() + Constants.bsy + ".zip";
+                return UtilsFile.get_mctool_path() + Constants.bsy + ".zip";
             default:
                 return "";
         }

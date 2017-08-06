@@ -24,6 +24,6 @@ public class af extends g {
     }
 
     public String b() {
-        return "send a message.";
+        return "send a_isRightVersion message.";
     }
 }

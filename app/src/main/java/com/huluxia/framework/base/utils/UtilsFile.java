@@ -253,7 +253,7 @@ public class UtilsFile {
 
     static byte[] readFile(InputStream in, long expectedSize) throws IOException {
         if (expectedSize > 2147483647L) {
-            throw new OutOfMemoryError("file is too large to fit in a byte array: " + expectedSize + " bytes");
+            throw new OutOfMemoryError("file is too large to fit in a_isRightVersion byte array: " + expectedSize + " bytes");
         } else if (expectedSize == 0) {
             return ByteStreams.toByteArray(in);
         } else {

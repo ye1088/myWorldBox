@@ -150,7 +150,7 @@ public class OpenConfig {
         r0.printStackTrace();
         goto L_0x0086;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tencent.open.utils.OpenConfig.a(java.lang.String):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.open.utils.OpenConfig.a_isRightVersion(java.lang.String):java.lang.String");
     }
 
     private void a(String str, String str2) {
@@ -180,7 +180,7 @@ public class OpenConfig {
         bundle.putString("status_machine", Build.MODEL);
         bundle.putString("status_version", VERSION.SDK);
         bundle.putString("sdkv", Constants.SDK_VERSION);
-        bundle.putString("sdkp", "a");
+        bundle.putString("sdkp", "a_isRightVersion");
         new Thread(this) {
             final /* synthetic */ OpenConfig b;
 

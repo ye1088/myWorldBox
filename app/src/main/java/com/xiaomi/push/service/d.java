@@ -23,7 +23,7 @@ public class d {
         if (b == null) {
             String c = c(context);
             String b = b(context);
-            b = "a-" + com.xiaomi.channel.commonutils.string.d.b(c + b + a());
+            b = "a_isRightVersion-" + com.xiaomi.channel.commonutils.string.d.b(c + b + a());
         }
         return b;
     }

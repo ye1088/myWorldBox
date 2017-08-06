@@ -56,7 +56,7 @@ public class g implements com.huluxia.mcfloat.p.a {
             switch (v.getId()) {
                 case R.id.floatBtnSetSpawn:
                     if (this.Rj.a(this.Rj.rm())) {
-                        r.ck().K(com.huluxia.r.a.lj);
+                        r.ck().K_umengEvent(com.huluxia.r.a.lj);
                         return;
                     } else {
                         t.n(this.Rj.Pu.getContext(), this.Rj.Pu.getContext().getString(R.string.set_spawn_failure));
@@ -64,7 +64,7 @@ public class g implements com.huluxia.mcfloat.p.a {
                     }
                 case R.id.floatBtnKillSelf:
                     h.e(-26, false);
-                    r.ck().K(com.huluxia.r.a.lk);
+                    r.ck().K_umengEvent(com.huluxia.r.a.lk);
                     return;
                 case R.id.floatBtnBackToDeathPoint:
                     this.Rj.rl();
@@ -313,7 +313,7 @@ public class g implements com.huluxia.mcfloat.p.a {
         String _tmpText = "传送点" + String.valueOf(inputIndex);
         de(inputIndex);
         e dialog = new e((Activity) this.Pu.getContext(), new a());
-        dialog.aA(hlx.data.localstore.a.bKB, "保存");
+        dialog.aA(hlx.data.localstore.a.bKB_bt_cancel, "保存");
         dialog.az("坐标名称", _tmpText);
         dialog.gJ("请输入坐标点名称");
         dialog.showDialog();
@@ -321,7 +321,7 @@ public class g implements com.huluxia.mcfloat.p.a {
 
     private void rl() {
         h.b(h.zI(), h.zJ(), h.zK());
-        r.ck().K(com.huluxia.r.a.ll);
+        r.ck().K_umengEvent(com.huluxia.r.a.ll);
     }
 
     private void b(b pos) {

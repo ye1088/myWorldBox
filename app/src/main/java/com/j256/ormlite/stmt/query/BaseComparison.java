@@ -82,7 +82,7 @@ abstract class BaseComparison implements Comparison {
             if (value.length() <= 0 || NUMBER_CHARACTERS.indexOf(value.charAt(0)) >= 0) {
                 sb.append(value);
             } else {
-                throw new SQLException("Foreign field " + fieldType + " does not seem to be producing a numerical value '" + value + "'. Maybe you are passing the wrong object to comparison: " + this);
+                throw new SQLException("Foreign field " + fieldType + " does not seem to be producing a_isRightVersion numerical value '" + value + "'. Maybe you are passing the wrong object to comparison: " + this);
             }
         } else {
             sb.append(fieldType.convertJavaFieldToSqlArgValue(argOrValue));

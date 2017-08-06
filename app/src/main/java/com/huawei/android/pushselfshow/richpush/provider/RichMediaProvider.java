@@ -37,7 +37,7 @@ public class RichMediaProvider extends ContentProvider {
     private android.net.Uri a(android.database.sqlite.SQLiteDatabase r11, java.lang.String r12, android.content.ContentValues r13, android.net.Uri r14) {
         /* JADX: method processing error */
 /*
-Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominator not found, method:com.huawei.android.pushselfshow.richpush.provider.RichMediaProvider.a(android.database.sqlite.SQLiteDatabase, java.lang.String, android.content.ContentValues, android.net.Uri):android.net.Uri. bs: [B:8:0x0036, B:20:0x0060]
+Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominator not found, method:com.huawei.android.pushselfshow.richpush.provider.RichMediaProvider.a_isRightVersion(android.database.sqlite.SQLiteDatabase, java.lang.String, android.content.ContentValues, android.net.Uri):android.net.Uri. bs: [B:8:0x0036, B:20:0x0060]
 	at jadx.core.dex.visitors.regions.ProcessTryCatchRegions.searchTryCatchDominators(ProcessTryCatchRegions.java:86)
 	at jadx.core.dex.visitors.regions.ProcessTryCatchRegions.process(ProcessTryCatchRegions.java:45)
 	at jadx.core.dex.visitors.regions.RegionMakerVisitor.postProcessRegions(RegionMakerVisitor.java:63)
@@ -59,12 +59,12 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominato
         r1 = r1.append(r2);
         r1 = r1.append(r12);
         r1 = r1.toString();
-        com.huawei.android.pushagent.c.a.e.a(r0, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0, r1);
         if (r11 != 0) goto L_0x0028;
     L_0x001d:
         r0 = "PushSelfShowLog_RichMediaProvider";
         r1 = "db is null";
-        com.huawei.android.pushagent.c.a.e.d(r0, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r0, r1);
         r0 = r8;
     L_0x0027:
         return r0;
@@ -82,7 +82,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominato
     L_0x0036:
         r0 = "PushSelfShowLog_RichMediaProvider";	 Catch:{ Exception -> 0x00b6, all -> 0x00b1 }
         r2 = "cursor is null";	 Catch:{ Exception -> 0x00b6, all -> 0x00b1 }
-        com.huawei.android.pushagent.c.a.e.d(r0, r2);	 Catch:{ Exception -> 0x00b6, all -> 0x00b1 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r0, r2);	 Catch:{ Exception -> 0x00b6, all -> 0x00b1 }
         if (r1 == 0) goto L_0x0044;
     L_0x0041:
         r1.close();
@@ -121,7 +121,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominato
         r2 = r2.append(r3);
         r2 = r2.append(r0);
         r2 = r2.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r2);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);
         goto L_0x0027;
     L_0x0090:
         r0 = move-exception;
@@ -130,7 +130,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominato
     L_0x0093:
         r2 = "PushSelfShowLog_RichMediaProvider";	 Catch:{ all -> 0x00b3 }
         r3 = r1.toString();	 Catch:{ all -> 0x00b3 }
-        com.huawei.android.pushagent.c.a.e.c(r2, r3, r1);	 Catch:{ all -> 0x00b3 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r2, r3, r1);	 Catch:{ all -> 0x00b3 }
         if (r8 == 0) goto L_0x00a2;
     L_0x009f:
         r8.close();
@@ -172,7 +172,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Exception block dominato
         r0 = r8;
         goto L_0x006d;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.richpush.provider.RichMediaProvider.a(android.database.sqlite.SQLiteDatabase, java.lang.String, android.content.ContentValues, android.net.Uri):android.net.Uri");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.richpush.provider.RichMediaProvider.a_isRightVersion(android.database.sqlite.SQLiteDatabase, java.lang.String, android.content.ContentValues, android.net.Uri):android.net.Uri");
     }
 
     private boolean a(String str) {

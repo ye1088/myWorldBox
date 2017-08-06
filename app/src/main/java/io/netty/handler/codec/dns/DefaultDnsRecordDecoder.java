@@ -66,7 +66,7 @@ public class DefaultDnsRecordDecoder implements DnsRecordDecoder {
                     name.append(in.toString(in.readerIndex(), len, CharsetUtil.UTF_8)).append('.');
                     in.skipBytes(len);
                 } else {
-                    throw new CorruptedFrameException("truncated label in a name");
+                    throw new CorruptedFrameException("truncated label in a_isRightVersion name");
                 }
             }
             if (position == -1) {
@@ -80,10 +80,10 @@ public class DefaultDnsRecordDecoder implements DnsRecordDecoder {
                 in.readerIndex(next);
                 checked += 2;
                 if (checked >= end) {
-                    throw new CorruptedFrameException("name contains a loop.");
+                    throw new CorruptedFrameException("name contains a_isRightVersion loop.");
                 }
             } else {
-                throw new CorruptedFrameException("truncated pointer in a name");
+                throw new CorruptedFrameException("truncated pointer in a_isRightVersion name");
             }
         }
         if (position != -1) {

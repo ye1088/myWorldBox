@@ -476,14 +476,14 @@ public class Context {
         if ((script instanceof InterpretedFunction) && ((InterpretedFunction) script).isScript()) {
             return callFunctionWithContinuations((InterpretedFunction) script, scope, ScriptRuntime.emptyArgs);
         }
-        throw new IllegalArgumentException("Script argument was not a script or was not created by interpreted mode ");
+        throw new IllegalArgumentException("Script argument was not a_isRightVersion script or was not created by interpreted mode ");
     }
 
     public Object callFunctionWithContinuations(Callable function, Scriptable scope, Object[] args) throws ContinuationPending {
         if (!(function instanceof InterpretedFunction)) {
             throw new IllegalArgumentException("Function argument was not created by interpreted mode ");
         } else if (ScriptRuntime.hasTopCall(this)) {
-            throw new IllegalStateException("Cannot have any pending top calls when executing a script with continuations");
+            throw new IllegalStateException("Cannot have any pending top calls when executing a_isRightVersion script with continuations");
         } else {
             this.isContinuationsTopCall = true;
             return ScriptRuntime.doTopCall(function, this, scope, scope, args);

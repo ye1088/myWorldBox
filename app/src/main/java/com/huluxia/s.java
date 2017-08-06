@@ -23,7 +23,7 @@ public class s {
     private static final String lD = "com.vectorunit.green";
     private static final long lE = 1001;
     private static s lF;
-    private SharedPreferences lG;
+    private SharedPreferences lG_sp;
     private Map<String, GameInfo> lH;
     private BroadcastReceiver lI = new BroadcastReceiver(this) {
         final /* synthetic */ s lK;
@@ -45,9 +45,9 @@ public class s {
     private CallbackHandler mCallback = new 2(this);
 
     private s(Context context) {
-        this.lG = context.getSharedPreferences("downloadList", 0);
+        this.lG_sp = context.getSharedPreferences("downloadList", 0);
         this.lH = Collections.synchronizedMap(new HashMap());
-        for (Entry<String, ?> entry : this.lG.getAll().entrySet()) {
+        for (Entry<String, ?> entry : this.lG_sp.getAll().entrySet()) {
             this.lH.put(entry.getKey(), (GameInfo) Json.parseJsonObject((String) entry.getValue(), GameInfo.class));
         }
         EventNotifyCenter.add(c.class, this.mCallback);
@@ -71,7 +71,7 @@ public class s {
     public void a(String url, GameInfo gameInfo) {
         if (!this.lH.containsKey(url)) {
             this.lH.put(url, gameInfo);
-            this.lG.edit().putString(url, Json.toJson(gameInfo)).apply();
+            this.lG_sp.edit().putString(url, Json.toJson(gameInfo)).apply();
             r.ck().b(gameInfo.appid, "game", gameInfo.tongjiPage);
             HLog.verbose(TAG, "downloadBegin:" + gameInfo.toString() + " page:" + gameInfo.tongjiPage, new Object[0]);
         }
@@ -88,8 +88,8 @@ public class s {
 
     public void T(String url) {
         this.lH.remove(url);
-        if (this.lG.contains(url)) {
-            this.lG.edit().remove(url).apply();
+        if (this.lG_sp.contains(url)) {
+            this.lG_sp.edit().remove(url).apply();
         }
         HLog.verbose(TAG, "removeDownload:" + url, new Object[0]);
     }

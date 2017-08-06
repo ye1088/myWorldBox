@@ -128,19 +128,19 @@ public class ResourceDownloadActivity extends HTBaseLoadingActivity {
                 switch (this.cfY.axr) {
                     case 2:
                         k.R(this.cfY);
-                        r.ck().K(a.bMo);
+                        r.ck().K_umengEvent(a.bMo);
                         return;
                     case 3:
                         k.T(this.cfY);
-                        r.ck().K(a.bMq);
+                        r.ck().K_umengEvent(a.bMq);
                         return;
                     case 4:
                         k.S(this.cfY);
-                        r.ck().K(a.bMp);
+                        r.ck().K_umengEvent(a.bMp);
                         return;
                     default:
                         k.Q(this.cfY);
-                        r.ck().K(a.bMn);
+                        r.ck().K_umengEvent(a.bMn);
                         return;
                 }
             }

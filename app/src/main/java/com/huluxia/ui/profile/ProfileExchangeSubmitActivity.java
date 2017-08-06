@@ -120,7 +120,7 @@ public class ProfileExchangeSubmitActivity extends HTBaseActivity implements OnC
         builder.setInverseBackgroundForced(true);
         builder.setView(LayoutInflater.from(this).inflate(i.layout_exchange_submit, null));
         builder.setCancelable(false);
-        builder.setPositiveButton(a.bKC, new DialogInterface.OnClickListener(this) {
+        builder.setPositiveButton(a.bKC_bt_ok, new DialogInterface.OnClickListener(this) {
             final /* synthetic */ ProfileExchangeSubmitActivity bgA;
 
             {

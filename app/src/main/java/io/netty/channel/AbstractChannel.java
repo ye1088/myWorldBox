@@ -88,7 +88,7 @@ public abstract class AbstractChannel extends DefaultAttributeMap implements Cha
                 try {
                     eventLoop.execute(new 1(this, promise));
                 } catch (Throwable t) {
-                    AbstractChannel.logger.warn("Force-closing a channel whose registration task was not accepted by an event loop: {}", AbstractChannel.this, t);
+                    AbstractChannel.logger.warn("Force-closing a_isRightVersion channel whose registration task was not accepted by an event loop: {}", AbstractChannel.this, t);
                     closeForcibly();
                     AbstractChannel.this.closeFuture.setClosed();
                     safeSetFailure(promise, t);
@@ -128,7 +128,7 @@ public abstract class AbstractChannel extends DefaultAttributeMap implements Cha
             assertEventLoop();
             if (promise.setUncancellable() && ensureOpen(promise)) {
                 if (!(!Boolean.TRUE.equals(AbstractChannel.this.config().getOption(ChannelOption.SO_BROADCAST)) || !(localAddress instanceof InetSocketAddress) || ((InetSocketAddress) localAddress).getAddress().isAnyLocalAddress() || PlatformDependent.isWindows() || PlatformDependent.isRoot())) {
-                    AbstractChannel.logger.warn("A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (" + localAddress + ") anyway as requested.");
+                    AbstractChannel.logger.warn("A non-root user can't receive a_isRightVersion broadcast packet if the socket is not bound to a_isRightVersion wildcard address; binding to a_isRightVersion non-wildcard address (" + localAddress + ") anyway as requested.");
                 }
                 boolean wasActive = AbstractChannel.this.isActive();
                 try {
@@ -221,7 +221,7 @@ public abstract class AbstractChannel extends DefaultAttributeMap implements Cha
             try {
                 AbstractChannel.this.doClose();
             } catch (Exception e) {
-                AbstractChannel.logger.warn("Failed to close a channel.", e);
+                AbstractChannel.logger.warn("Failed to close a_isRightVersion channel.", e);
             }
         }
 
@@ -327,13 +327,13 @@ public abstract class AbstractChannel extends DefaultAttributeMap implements Cha
 
         protected final void safeSetSuccess(ChannelPromise promise) {
             if (!(promise instanceof VoidChannelPromise) && !promise.trySuccess()) {
-                AbstractChannel.logger.warn("Failed to mark a promise as success because it is done already: {}", promise);
+                AbstractChannel.logger.warn("Failed to mark a_isRightVersion promise as success because it is done already: {}", promise);
             }
         }
 
         protected final void safeSetFailure(ChannelPromise promise, Throwable cause) {
             if (!(promise instanceof VoidChannelPromise) && !promise.tryFailure(cause)) {
-                AbstractChannel.logger.warn("Failed to mark a promise as failure because it's done already: {}", promise, cause);
+                AbstractChannel.logger.warn("Failed to mark a_isRightVersion promise as failure because it's done already: {}", promise, cause);
             }
         }
 

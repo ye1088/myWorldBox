@@ -52,7 +52,7 @@ public final class SocksCmdResponse extends SocksResponse {
                 switch (AnonymousClass1.$SwitchMap$io$netty$handler$codec$socks$SocksAddressType[addressType.ordinal()]) {
                     case 1:
                         if (!NetUtil.isValidIpV4Address(host)) {
-                            throw new IllegalArgumentException(host + " is not a valid IPv4 address");
+                            throw new IllegalArgumentException(host + " is not a_isRightVersion valid IPv4 address");
                         }
                         break;
                     case 2:
@@ -62,7 +62,7 @@ public final class SocksCmdResponse extends SocksResponse {
                         break;
                     case 3:
                         if (!NetUtil.isValidIpV6Address(host)) {
-                            throw new IllegalArgumentException(host + " is not a valid IPv6 address");
+                            throw new IllegalArgumentException(host + " is not a_isRightVersion valid IPv6 address");
                         }
                         break;
                 }

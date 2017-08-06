@@ -131,7 +131,7 @@ public class HttpMgr extends BaseHttpMgr {
             params.put("platform", "2");
         }
         if (!params.containsKey(BaseHttpMgr.PARAM_MARKET_ID)) {
-            params.put(BaseHttpMgr.PARAM_MARKET_ID, String.valueOf(HTApplication.bJ()));
+            params.put(BaseHttpMgr.PARAM_MARKET_ID, String.valueOf(HTApplication.bJ_mctool_huluxia_string()));
         }
         if (!params.containsKey(BaseHttpMgr.PARAM_DEVICE_CODE)) {
             params.put(BaseHttpMgr.PARAM_DEVICE_CODE, o.getDeviceId());

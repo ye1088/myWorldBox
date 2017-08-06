@@ -33,7 +33,7 @@ public abstract class DnsServerAddresses {
         if (defaultNameServers.isEmpty()) {
             Collections.addAll(defaultNameServers, new InetSocketAddress[]{new InetSocketAddress("8.8.8.8", 53), new InetSocketAddress("8.8.4.4", 53)});
             if (logger.isWarnEnabled()) {
-                logger.warn("Default DNS servers: {} (Google Public DNS as a fallback)", defaultNameServers);
+                logger.warn("Default DNS servers: {} (Google Public DNS as a_isRightVersion fallback)", defaultNameServers);
             }
         } else if (logger.isDebugEnabled()) {
             logger.debug("Default DNS servers: {} (sun.net.dns.ResolverConfiguration)", defaultNameServers);

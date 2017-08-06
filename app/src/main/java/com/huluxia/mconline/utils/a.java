@@ -68,11 +68,11 @@ public class a {
                 return new BufferedReader(new InputStreamReader(connection.getInputStream())).readLine();
             }
             IP = "";
-            HLog.error(hlx.data.localstore.a.bKA, "网络连接异常，无法获取IP地址！", new Object[0]);
+            HLog.error(hlx.data.localstore.a.bKA_TIPS, "网络连接异常，无法获取IP地址！", new Object[0]);
             return IP;
         } catch (Exception e) {
             IP = "";
-            HLog.error(hlx.data.localstore.a.bKA, "获取IP地址时出现异常，异常信息是：" + e.toString(), new Object[0]);
+            HLog.error(hlx.data.localstore.a.bKA_TIPS, "获取IP地址时出现异常，异常信息是：" + e.toString(), new Object[0]);
             return IP;
         }
     }

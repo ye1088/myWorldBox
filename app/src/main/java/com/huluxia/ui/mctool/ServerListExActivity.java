@@ -57,7 +57,7 @@ public class ServerListExActivity extends HTBaseLoadingActivity {
             }
 
             public void onClick(View arg0) {
-                r.ck().K(a.bMR);
+                r.ck().K_umengEvent(a.bMR);
                 t.a(this.bcq, 5243116, false);
             }
         });

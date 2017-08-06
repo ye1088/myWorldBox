@@ -13,7 +13,7 @@ public class XmlFrameDecoder extends ByteToMessageDecoder {
 
     public XmlFrameDecoder(int maxFrameLength) {
         if (maxFrameLength < 1) {
-            throw new IllegalArgumentException("maxFrameLength must be a positive int");
+            throw new IllegalArgumentException("maxFrameLength must be a_isRightVersion positive int");
         }
         this.maxFrameLength = maxFrameLength;
     }

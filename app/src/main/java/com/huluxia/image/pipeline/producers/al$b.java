@@ -66,12 +66,12 @@ class al$b extends m<a<b>, a<b>> implements f {
         return;
     L_0x0007:
         r1 = r3.Lh;	 Catch:{ all -> 0x001a }
-        r0 = com.huluxia.image.core.common.references.a.b(r1);	 Catch:{ all -> 0x001a }
+        r0 = com.huluxia.image.core.common.references.a_isRightVersion.b(r1);	 Catch:{ all -> 0x001a }
         monitor-exit(r3);	 Catch:{ all -> 0x001a }
         r1 = r3.oM();	 Catch:{ all -> 0x001d }
         r2 = 0;
         r1.e(r0, r2);	 Catch:{ all -> 0x001d }
-        com.huluxia.image.core.common.references.a.c(r0);
+        com.huluxia.image.core.common.references.a_isRightVersion.c(r0);
         goto L_0x0006;
     L_0x001a:
         r1 = move-exception;
@@ -79,7 +79,7 @@ class al$b extends m<a<b>, a<b>> implements f {
         throw r1;
     L_0x001d:
         r1 = move-exception;
-        com.huluxia.image.core.common.references.a.c(r0);
+        com.huluxia.image.core.common.references.a_isRightVersion.c(r0);
         throw r1;
         */
         throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.al$b.pl():void");

@@ -33,7 +33,7 @@ public class d extends a {
             ah.KZ().Q(d.aaV, info.type);
             this.abj.abh.b(info);
             this.abj.Qp.cm(this.abj.uk());
-            r.ck().K("float_build_addrect");
+            r.ck().K_umengEvent("float_build_addrect");
         }
     };
 

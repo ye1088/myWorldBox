@@ -100,7 +100,7 @@ public class f implements com.huluxia.mcfloat.p.a {
                     switch (event.getAction()) {
                         case 1:
                             com.huluxia.mcfloat.capshot.a.un().aQ(this.QQ.QI.Pu.getContext());
-                            r.ck().K(com.huluxia.r.a.lt);
+                            r.ck().K_umengEvent(com.huluxia.r.a.lt);
                             break;
                     }
                     return true;
@@ -171,7 +171,7 @@ public class f implements com.huluxia.mcfloat.p.a {
 
     private void aB(boolean inputEnabled) {
         q.aJ(inputEnabled);
-        r.ck().K(hlx.data.tongji.a.bOJ);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bOJ);
     }
 
     public void qO() {

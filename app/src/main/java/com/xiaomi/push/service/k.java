@@ -55,7 +55,7 @@ public class k {
         try {
             ad.a(oVar, bArr);
             if (TextUtils.isEmpty(oVar.f)) {
-                com.xiaomi.channel.commonutils.logger.b.a("receive a mipush message without package name");
+                com.xiaomi.channel.commonutils.logger.b.a("receive a_isRightVersion mipush message without package name");
                 return;
             }
             Intent intent = new Intent("com.xiaomi.mipush.RECEIVE_MESSAGE");
@@ -74,12 +74,12 @@ public class k {
                 if (m != null) {
                     str = m.b();
                 }
-                com.xiaomi.channel.commonutils.logger.b.a("Drop a message for unregistered, msgid=" + str);
+                com.xiaomi.channel.commonutils.logger.b.a("Drop a_isRightVersion message for unregistered, msgid=" + str);
                 a(xMPushService, oVar, oVar.f);
             } else if (a.e != oVar.a() || TextUtils.equals(xMPushService.getPackageName(), "com.xiaomi.xmsf") || TextUtils.equals(xMPushService.getPackageName(), oVar.f)) {
                 if (m != null) {
                     if (m.b() != null) {
-                        com.xiaomi.channel.commonutils.logger.b.a(String.format("receive a message, appid=%1$s, msgid= %2$s", new Object[]{oVar.h(), m.b()}));
+                        com.xiaomi.channel.commonutils.logger.b.a(String.format("receive a_isRightVersion message, appid=%1$s, msgid= %2$s", new Object[]{oVar.h(), m.b()}));
                     }
                 }
                 if (m != null) {
@@ -115,7 +115,7 @@ public class k {
                             a2 = false;
                         }
                         if (a2) {
-                            com.xiaomi.channel.commonutils.logger.b.a("drop a duplicate message, key=" + str);
+                            com.xiaomi.channel.commonutils.logger.b.a("drop a_isRightVersion duplicate message, key=" + str);
                         } else {
                             r.a(xMPushService, oVar, bArr);
                             if (!r.b(oVar)) {
@@ -143,12 +143,12 @@ public class k {
                         xMPushService.stopSelf();
                     }
                 } else if (b((Context) xMPushService, oVar.f)) {
-                    com.xiaomi.channel.commonutils.logger.b.a("receive a mipush message, we can see the app, but we can't see the receiver.");
+                    com.xiaomi.channel.commonutils.logger.b.a("receive a_isRightVersion mipush message, we can see the app, but we can't see the receiver.");
                 } else {
                     xMPushService.a(new l(4, xMPushService, oVar));
                 }
             } else {
-                com.xiaomi.channel.commonutils.logger.b.a("Receive a message with wrong package name, expect " + xMPushService.getPackageName() + ", received " + oVar.f);
+                com.xiaomi.channel.commonutils.logger.b.a("Receive a_isRightVersion message with wrong package name, expect " + xMPushService.getPackageName() + ", received " + oVar.f);
                 a(xMPushService, oVar, "unmatched_package", "package should be " + xMPushService.getPackageName() + ", but got " + oVar.f);
             }
         } catch (Throwable e2) {
@@ -239,6 +239,6 @@ public class k {
             }
             return;
         }
-        com.xiaomi.channel.commonutils.logger.b.a("not a mipush message");
+        com.xiaomi.channel.commonutils.logger.b.a("not a_isRightVersion mipush message");
     }
 }

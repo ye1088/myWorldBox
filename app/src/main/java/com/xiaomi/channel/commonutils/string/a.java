@@ -16,7 +16,7 @@ public class a {
             c = (char) (c + 1);
             i3 = i;
         }
-        c = 'a';
+        c = 'a_isRightVersion';
         while (c <= 'z') {
             i = i3 + 1;
             b[i3] = c;
@@ -53,7 +53,7 @@ public class a {
 
     public static byte[] a(char[] cArr, int i, int i2) {
         if (i2 % 4 != 0) {
-            throw new IllegalArgumentException("Length of Base64 encoded input string is not a multiple of 4.");
+            throw new IllegalArgumentException("Length of Base64 encoded input string is not a_isRightVersion multiple of 4.");
         }
         while (i2 > 0 && cArr[(i + i2) - 1] == '=') {
             i2--;

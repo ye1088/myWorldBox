@@ -41,7 +41,7 @@ public final class NioDatagramChannel extends AbstractNioMessageChannel implemen
         try {
             return provider.openDatagramChannel();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a socket.", e);
+            throw new ChannelException("Failed to open a_isRightVersion socket.", e);
         }
     }
 
@@ -53,7 +53,7 @@ public final class NioDatagramChannel extends AbstractNioMessageChannel implemen
         try {
             return provider.openDatagramChannel(ProtocolFamilyConverter.convert(ipFamily));
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a socket.", e);
+            throw new ChannelException("Failed to open a_isRightVersion socket.", e);
         }
     }
 

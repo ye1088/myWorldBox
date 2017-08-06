@@ -113,7 +113,7 @@ public abstract class StatementBuilder<T, ID> {
         this.dao = dao;
         this.type = type;
         if (!type.isOkForStatementBuilder()) {
-            throw new IllegalStateException("Building a statement from a " + type + " statement is not allowed");
+            throw new IllegalStateException("Building a_isRightVersion statement from a_isRightVersion " + type + " statement is not allowed");
         }
     }
 
@@ -138,7 +138,7 @@ public abstract class StatementBuilder<T, ID> {
         if (this.type.isOkForStatementBuilder()) {
             return new MappedPreparedStmt(this.tableInfo, statement, argFieldTypes, resultFieldTypes, selectArgs, this.databaseType.isLimitSqlSupported() ? null : limit, this.type, cacheStore);
         }
-        throw new IllegalStateException("Building a statement from a " + this.type + " statement is not allowed");
+        throw new IllegalStateException("Building a_isRightVersion statement from a_isRightVersion " + this.type + " statement is not allowed");
     }
 
     public String prepareStatementString() throws SQLException {

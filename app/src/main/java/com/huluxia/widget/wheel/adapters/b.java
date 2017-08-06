@@ -128,8 +128,8 @@ public abstract class b extends a {
                     return (TextView) view;
                 }
             } catch (ClassCastException e) {
-                Log.e("AbstractWheelAdapter", "You must supply a resource ID for a TextView");
-                throw new IllegalStateException("AbstractWheelAdapter requires the resource ID to be a TextView", e);
+                Log.e("AbstractWheelAdapter", "You must supply a_isRightVersion resource ID for a_isRightVersion TextView");
+                throw new IllegalStateException("AbstractWheelAdapter requires the resource ID to be a_isRightVersion TextView", e);
             }
         }
         if (textResource != 0) {

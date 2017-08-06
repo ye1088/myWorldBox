@@ -45,7 +45,8 @@ import com.huluxia.utils.u;
 import com.huluxia.widget.Constants;
 import com.huluxia.widget.Constants.ReStartSoftFlag;
 import com.huluxia.widget.dialog.j;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
+
 import hlx.launch.game.MCLauncherActivity105;
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -109,7 +110,7 @@ public class MCVersionSelect extends HTBaseActivity {
     private boolean bSD;
     private boolean bSE;
     private boolean bSF;
-    private int bSG;
+    private int bSG_moreIndex;
     private int bSH;
     private Button bSI;
     private Button bSJ;
@@ -132,7 +133,7 @@ public class MCVersionSelect extends HTBaseActivity {
     private boolean bSa;
     private boolean bSb;
     private boolean bSc;
-    private k bSg;
+    private k_dialog_class bSg_deal_request_dialog;
     private int bSh = -1;
     private Button bSi;
     private Button bSj;
@@ -144,10 +145,10 @@ public class MCVersionSelect extends HTBaseActivity {
     private Button bSp;
     private Button bSq;
     private Button bSr;
-    private Button bSs;
-    private Button bSt;
-    private Button bSu;
-    private Button bSv;
+    private Button bSs_bt_Install_v0141;
+    private Button bSt_download_v0141;
+    private Button bSu_btn_clear_mc;
+    private Button bSv_bt_downloading_v0141;
     private Button bSw;
     private Button bSx;
     private Button bSy;
@@ -213,71 +214,71 @@ public class MCVersionSelect extends HTBaseActivity {
             }
         }
     };
-    private OnClickListener bTd = new OnClickListener(this) {
-        final /* synthetic */ MCVersionSelect bTk;
+    private OnClickListener bTd_version_select_clickListener = new OnClickListener(this) {
+        final /* synthetic */ MCVersionSelect bTk_MCVersionSelect_this;
 
         {
-            this.bTk = this$0;
+            this.bTk_MCVersionSelect_this = this$0;
         }
 
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnDownMoreV0141:
-                    this.bTk.mQ(4);
+                    this.bTk_MCVersionSelect_this.mQ(4);
                     return;
                 case R.id.btnInstallMoreV0141:
-                    this.bTk.mR(4);
+                    this.bTk_MCVersionSelect_this.mR_install_apk(4);
                     hlx.recorddata.a.dH(true);
                     return;
                 case R.id.btnSelectGameVersion0141:
-                    this.bTk.SP();
+                    this.bTk_MCVersionSelect_this.SP();
                     return;
                 case R.id.btnClearMoreV0141:
-                    this.bTk.mS(4);
+                    this.bTk_MCVersionSelect_this.mS(4);
                     return;
                 case R.id.btnDownMoreV0159:
-                    this.bTk.mQ(6);
+                    this.bTk_MCVersionSelect_this.mQ(6);
                     return;
                 case R.id.btnInstallMoreV0159:
-                    this.bTk.mR(6);
+                    this.bTk_MCVersionSelect_this.mR_install_apk(6);
                     hlx.recorddata.a.dF(true);
                     return;
                 case R.id.btnSelectGameVersion0159:
-                    this.bTk.SN();
+                    this.bTk_MCVersionSelect_this.SN();
                     return;
                 case R.id.btnClearMoreV0159:
-                    this.bTk.mS(6);
+                    this.bTk_MCVersionSelect_this.mS(6);
                     return;
                 case R.id.btnDownMoreV0150:
-                    this.bTk.mQ(5);
+                    this.bTk_MCVersionSelect_this.mQ(5);
                     return;
                 case R.id.btnInstallMoreV0150:
-                    this.bTk.mR(5);
+                    this.bTk_MCVersionSelect_this.mR_install_apk(5);
                     hlx.recorddata.a.dG(true);
                     return;
                 case R.id.btnSelectGameVersion0150:
-                    this.bTk.SO();
+                    this.bTk_MCVersionSelect_this.SO();
                     return;
                 case R.id.btnClearMoreV0150:
-                    this.bTk.mS(5);
+                    this.bTk_MCVersionSelect_this.mS(5);
                     return;
                 case R.id.btnDownMoreFirearms0130:
-                    this.bTk.mQ(2);
+                    this.bTk_MCVersionSelect_this.mQ(2);
                     return;
                 case R.id.btnInstallMoreFirearms0130:
-                    this.bTk.mR(2);
+                    this.bTk_MCVersionSelect_this.mR_install_apk(2);
                     return;
                 case R.id.btnClearMoreFirearms0130:
-                    this.bTk.mS(2);
+                    this.bTk_MCVersionSelect_this.mS(2);
                     return;
                 case R.id.btnDownMoreFirearms0121:
-                    this.bTk.mQ(1);
+                    this.bTk_MCVersionSelect_this.mQ(1);
                     return;
                 case R.id.btnInstallMoreFirearms0121:
-                    this.bTk.mR(1);
+                    this.bTk_MCVersionSelect_this.mR_install_apk(1);
                     return;
                 case R.id.btnClearMoreFirearms0121:
-                    this.bTk.mS(1);
+                    this.bTk_MCVersionSelect_this.mS(1);
                     return;
                 default:
                     return;
@@ -383,7 +384,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
 
         protected void onPreExecute() {
-            this.bTk.bSg.show();
+            this.bTk.bSg_deal_request_dialog.show();
         }
 
         protected String c(String... params) {
@@ -423,8 +424,8 @@ public class MCVersionSelect extends HTBaseActivity {
         }
 
         protected void ce(String result) {
-            if (this.bTk.bSg != null && this.bTk.bSg.isShowing()) {
-                this.bTk.bSg.cancel();
+            if (this.bTk.bSg_deal_request_dialog != null && this.bTk.bSg_deal_request_dialog.isShowing()) {
+                this.bTk.bSg_deal_request_dialog.cancel();
             }
             this.bTk.SF();
         }
@@ -442,18 +443,18 @@ public class MCVersionSelect extends HTBaseActivity {
                 if (this.bTk.bSY == 4) {
                     this.bTk.bSY = -1;
                     this.bTk.a(this.bTk.bSQ, 5);
-                    UtilsFile.deleteFile(UtilsFile.getRootPath() + hlx.data.localstore.a.bKX + ".apk");
-                    this.bTk.a(this.bTk.bSt, this.bTk.bSv, this.bTk.bSu, this.bTk.bSs);
+                    UtilsFile.deleteFile(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + ".apk");
+                    this.bTk.a_setBtn_visibale_or_gone(this.bTk.bSt_download_v0141, this.bTk.bSv_bt_downloading_v0141, this.bTk.bSu_btn_clear_mc, this.bTk.bSs_bt_Install_v0141);
                 } else if (this.bTk.bSY == 5) {
                     this.bTk.bSY = -1;
                     this.bTk.a(this.bTk.bSR, 7);
-                    UtilsFile.deleteFile(UtilsFile.getRootPath() + hlx.data.localstore.a.bKY + ".apk");
-                    this.bTk.a(this.bTk.bSp, this.bTk.bSo, this.bTk.bSr, this.bTk.bSq);
+                    UtilsFile.deleteFile(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKY + ".apk");
+                    this.bTk.a_setBtn_visibale_or_gone(this.bTk.bSp, this.bTk.bSo, this.bTk.bSr, this.bTk.bSq);
                 } else if (this.bTk.bSY == 6) {
                     this.bTk.bSY = -1;
                     this.bTk.a(this.bTk.bSR, 8);
-                    UtilsFile.deleteFile(UtilsFile.getRootPath() + hlx.data.localstore.a.bKZ + ".apk");
-                    this.bTk.a(this.bTk.bSx, this.bTk.bSw, this.bTk.bSz, this.bTk.bSy);
+                    UtilsFile.deleteFile(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKZ + ".apk");
+                    this.bTk.a_setBtn_visibale_or_gone(this.bTk.bSx, this.bTk.bSw, this.bTk.bSz, this.bTk.bSy);
                 }
             }
         }
@@ -510,88 +511,88 @@ public class MCVersionSelect extends HTBaseActivity {
                     case 1:
                         if (activity.bRY) {
                             activity.mM(0);
-                            activity.a(activity.bRR, activity.bSO, activity.bRM, null);
+                            activity.a_setBtn_visibale_or_gone(activity.bRR, activity.bSO, activity.bRM, null);
                             return;
                         }
-                        activity.a(activity.bSO, activity.bRR, activity.bRM, null);
+                        activity.a_setBtn_visibale_or_gone(activity.bSO, activity.bRR, activity.bRM, null);
                         return;
                     case 2:
                         if (activity.bRZ) {
                             activity.mM(1);
-                            activity.a(activity.bRS, activity.bSN, activity.bRN, null);
+                            activity.a_setBtn_visibale_or_gone(activity.bRS, activity.bSN, activity.bRN, null);
                             return;
                         }
-                        activity.a(activity.bSN, activity.bRS, activity.bRN, null);
+                        activity.a_setBtn_visibale_or_gone(activity.bSN, activity.bRS, activity.bRN, null);
                         return;
                     case 3:
                         if (activity.bSa) {
                             activity.mM(2);
-                            activity.a(activity.bRT, activity.bSM, activity.bRO, null);
+                            activity.a_setBtn_visibale_or_gone(activity.bRT, activity.bSM, activity.bRO, null);
                             return;
                         }
-                        activity.a(activity.bSM, activity.bRT, activity.bRO, null);
+                        activity.a_setBtn_visibale_or_gone(activity.bSM, activity.bRT, activity.bRO, null);
                         return;
                     case 4:
                         if (activity.bSb) {
                             activity.mM(3);
-                            activity.a(activity.bRU, activity.bSL, activity.bRP, null);
+                            activity.a_setBtn_visibale_or_gone(activity.bRU, activity.bSL, activity.bRP, null);
                             return;
                         }
-                        activity.a(activity.bSL, activity.bRU, activity.bRP, null);
+                        activity.a_setBtn_visibale_or_gone(activity.bSL, activity.bRU, activity.bRP, null);
                         return;
                     case 5:
                         if (activity.bSc) {
                             activity.mM(4);
-                            activity.a(activity.bRV, activity.bSK, activity.bRQ, null);
+                            activity.a_setBtn_visibale_or_gone(activity.bRV, activity.bSK, activity.bRQ, null);
                             return;
                         }
-                        activity.a(activity.bSK, activity.bRV, activity.bRQ, null);
+                        activity.a_setBtn_visibale_or_gone(activity.bSK, activity.bRV, activity.bRQ, null);
                         return;
                     case 13:
                         if (!activity.bSA) {
-                            activity.a(activity.bSj, activity.bSi, activity.bSk, activity.bSJ);
+                            activity.a_setBtn_visibale_or_gone(activity.bSj, activity.bSi, activity.bSk, activity.bSJ);
                             return;
-                        } else if (activity.mP(1)) {
-                            activity.a(activity.bSk, activity.bSj, activity.bSi, activity.bSJ);
+                        } else if (activity.mP_isRightVersion(1)) {
+                            activity.a_setBtn_visibale_or_gone(activity.bSk, activity.bSj, activity.bSi, activity.bSJ);
                             return;
                         } else {
-                            activity.a(activity.bSi, activity.bSj, activity.bSk, activity.bSJ);
+                            activity.a_setBtn_visibale_or_gone(activity.bSi, activity.bSj, activity.bSk, activity.bSJ);
                             return;
                         }
                     case 14:
                         if (!activity.bSB) {
-                            activity.a(activity.bSm, activity.bSn, activity.bSl, activity.bSI);
+                            activity.a_setBtn_visibale_or_gone(activity.bSm, activity.bSn, activity.bSl, activity.bSI);
                             return;
-                        } else if (activity.mP(2)) {
-                            activity.a(activity.bSn, activity.bSm, activity.bSl, activity.bSI);
+                        } else if (activity.mP_isRightVersion(2)) {
+                            activity.a_setBtn_visibale_or_gone(activity.bSn, activity.bSm, activity.bSl, activity.bSI);
                             return;
                         } else {
-                            activity.a(activity.bSl, activity.bSm, activity.bSn, activity.bSI);
+                            activity.a_setBtn_visibale_or_gone(activity.bSl, activity.bSm, activity.bSn, activity.bSI);
                             return;
                         }
                     case 16:
                         if (!activity.bSD) {
-                            activity.a(activity.bSt, activity.bSv, activity.bSs, activity.bSu);
+                            activity.a_setBtn_visibale_or_gone(activity.bSt_download_v0141, activity.bSv_bt_downloading_v0141, activity.bSs_bt_Install_v0141, activity.bSu_btn_clear_mc);
                             return;
-                        } else if (activity.mP(4)) {
+                        } else if (activity.mP_isRightVersion(4)) {
                             activity.mM(5);
-                            activity.a(activity.bSu, activity.bSv, activity.bSt, activity.bSs);
+                            activity.a_setBtn_visibale_or_gone(activity.bSu_btn_clear_mc, activity.bSv_bt_downloading_v0141, activity.bSt_download_v0141, activity.bSs_bt_Install_v0141);
                             return;
                         } else {
-                            activity.a(activity.bSs, activity.bSv, activity.bSt, activity.bSu);
+                            activity.a_setBtn_visibale_or_gone(activity.bSs_bt_Install_v0141, activity.bSv_bt_downloading_v0141, activity.bSt_download_v0141, activity.bSu_btn_clear_mc);
                             return;
                         }
                     case 17:
                         if (activity.bSE) {
-                            if (!activity.mP(5)) {
-                                activity.a(activity.bSo, activity.bSq, activity.bSr, activity.bSp);
+                            if (!activity.mP_isRightVersion(5)) {
+                                activity.a_setBtn_visibale_or_gone(activity.bSo, activity.bSq, activity.bSr, activity.bSp);
                                 break;
                             }
                             activity.mM(7);
-                            activity.a(activity.bSq, activity.bSo, activity.bSr, activity.bSp);
+                            activity.a_setBtn_visibale_or_gone(activity.bSq, activity.bSo, activity.bSr, activity.bSp);
                             break;
                         }
-                        activity.a(activity.bSp, activity.bSq, activity.bSr, activity.bSo);
+                        activity.a_setBtn_visibale_or_gone(activity.bSp, activity.bSq, activity.bSr, activity.bSo);
                         break;
                     case 18:
                         break;
@@ -599,12 +600,12 @@ public class MCVersionSelect extends HTBaseActivity {
                         return;
                 }
                 if (!activity.bSF) {
-                    activity.a(activity.bSx, activity.bSy, activity.bSz, activity.bSw);
-                } else if (activity.mP(6)) {
+                    activity.a_setBtn_visibale_or_gone(activity.bSx, activity.bSy, activity.bSz, activity.bSw);
+                } else if (activity.mP_isRightVersion(6)) {
                     activity.mM(8);
-                    activity.a(activity.bSy, activity.bSw, activity.bSz, activity.bSx);
+                    activity.a_setBtn_visibale_or_gone(activity.bSy, activity.bSw, activity.bSz, activity.bSx);
                 } else {
-                    activity.a(activity.bSw, activity.bSy, activity.bSz, activity.bSx);
+                    activity.a_setBtn_visibale_or_gone(activity.bSw, activity.bSy, activity.bSz, activity.bSx);
                 }
             }
         }
@@ -619,14 +620,14 @@ public class MCVersionSelect extends HTBaseActivity {
 
         public void kz(int position) {
             if (position == 0) {
-                r.ck().K(hlx.data.tongji.a.bNn);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bNn);
                 if (VERSION.SDK_INT < 11) {
                     com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSd, hlx.data.localstore.a.bKL);
                 } else {
                     com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSe, hlx.data.localstore.a.bKL);
                 }
             } else if (position == 1) {
-                r.ck().K(hlx.data.tongji.a.bNo);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bNo);
                 com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSf, hlx.data.localstore.a.bKM);
             }
         }
@@ -663,9 +664,9 @@ public class MCVersionSelect extends HTBaseActivity {
             int status = intent.getIntExtra("success", 0);
             if (taskId != null && status == 1 && this.bTk.this_MCVersionSelect != null && !this.bTk.this_MCVersionSelect.isFinishing()) {
                 if (taskId.equals("unzipMoreResFirearms")) {
-                    this.bTk.a(this.bTk.bSk, this.bTk.bSj, this.bTk.bSi, this.bTk.bSJ);
+                    this.bTk.a_setBtn_visibale_or_gone(this.bTk.bSk, this.bTk.bSj, this.bTk.bSi, this.bTk.bSJ);
                 } else if (taskId.equals("unzipMoreResFirearms13")) {
-                    this.bTk.a(this.bTk.bSn, this.bTk.bSm, this.bTk.bSl, this.bTk.bSI);
+                    this.bTk.a_setBtn_visibale_or_gone(this.bTk.bSn, this.bTk.bSm, this.bTk.bSl, this.bTk.bSI);
                 }
             }
         }
@@ -683,8 +684,8 @@ public class MCVersionSelect extends HTBaseActivity {
         this.this_MCVersionSelect = this;
         this.Vo = new b(this);
         this.aIs.setVisibility(8);
-        this.bSg = new k(this.this_MCVersionSelect);
-        this.bSg.gM(this.this_MCVersionSelect.getString(R.string.onloading));
+        this.bSg_deal_request_dialog = new k_dialog_class(this.this_MCVersionSelect);
+        this.bSg_deal_request_dialog.gM_setText(this.this_MCVersionSelect.getString(R.string.onloading));
         sJ();
         SD();
         this.beM = com.simple.colorful.d.isDayMode();
@@ -872,7 +873,7 @@ public class MCVersionSelect extends HTBaseActivity {
         return R.style.McAppTheme.Night;
     }
 
-    private void a(Button button, Button button1, Button button2, Button button3) {
+    private void a_setBtn_visibale_or_gone(Button button, Button button1, Button button2, Button button3) {
         if (button != null) {
             button.setVisibility(Button.VISIBLE);
         }
@@ -984,15 +985,15 @@ public class MCVersionSelect extends HTBaseActivity {
         String _MD5;
         switch (version) {
             case 0:
-                zipPath = UtilsFile.getRootPath() + Constants.bsu + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsu + ".zip";
                 _MD5 = com.huluxia.mcinterface.e.ajc;
                 break;
             case 1:
-                zipPath = UtilsFile.getRootPath() + Constants.bsv + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsv + ".zip";
                 _MD5 = com.huluxia.mcinterface.e.ajd;
                 break;
             case 2:
-                zipPath = UtilsFile.getRootPath() + Constants.bsw + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsw + ".zip";
                 if (VERSION.SDK_INT >= 11) {
                     _MD5 = com.huluxia.mcinterface.e.aja;
                     break;
@@ -1000,7 +1001,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 _MD5 = com.huluxia.mcinterface.e.aiY;
                 break;
             case 3:
-                zipPath = UtilsFile.getRootPath() + Constants.bsx + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsx + ".zip";
                 if (VERSION.SDK_INT >= 11) {
                     _MD5 = com.huluxia.mcinterface.e.ajb;
                     break;
@@ -1008,7 +1009,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 _MD5 = com.huluxia.mcinterface.e.aiZ;
                 break;
             case 4:
-                zipPath = UtilsFile.getRootPath() + Constants.bsy + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsy + ".zip";
                 if (VERSION.SDK_INT >= 11) {
                     _MD5 = com.huluxia.mcinterface.e.aje;
                     break;
@@ -1031,32 +1032,32 @@ public class MCVersionSelect extends HTBaseActivity {
             case 0:
                 this.bRY = false;
                 a(this.bSX, 0);
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + Constants.bsu + ".zip");
-                a(this.bSO, this.bRR, this.bRM, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + Constants.bsu + ".zip");
+                a_setBtn_visibale_or_gone(this.bSO, this.bRR, this.bRM, null);
                 return;
             case 1:
                 this.bRZ = false;
                 a(this.bSW, 1);
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + Constants.bsv + ".zip");
-                a(this.bSN, this.bRN, this.bRS, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + Constants.bsv + ".zip");
+                a_setBtn_visibale_or_gone(this.bSN, this.bRN, this.bRS, null);
                 return;
             case 2:
                 this.bSa = false;
                 a(this.bSV, 2);
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + Constants.bsw + ".zip");
-                a(this.bSM, this.bRO, this.bRT, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + Constants.bsw + ".zip");
+                a_setBtn_visibale_or_gone(this.bSM, this.bRO, this.bRT, null);
                 return;
             case 3:
                 this.bSb = false;
                 a(this.bSU, 3);
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + Constants.bsx + ".zip");
-                a(this.bSL, this.bRP, this.bRU, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + Constants.bsx + ".zip");
+                a_setBtn_visibale_or_gone(this.bSL, this.bRP, this.bRU, null);
                 return;
             case 4:
                 this.bSc = false;
                 a(this.bST, 4);
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + Constants.bsy + ".zip");
-                a(this.bSK, this.bRQ, this.bRV, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + Constants.bsy + ".zip");
+                a_setBtn_visibale_or_gone(this.bSK, this.bRQ, this.bRV, null);
                 return;
             default:
                 return;
@@ -1085,9 +1086,9 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void showConfirmDialog(String version) {
-        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA,
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS,
                 String.format(hlx.data.localstore.a.bKF, new Object[]{version}),
-                hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true,
+                hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, true,
                 new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
@@ -1133,7 +1134,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 }
                 break;
         }
-        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt, hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, _prompt, hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, true, new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
@@ -1156,12 +1157,12 @@ public class MCVersionSelect extends HTBaseActivity {
             case 0:
                 gamePackName = Constants.bsu;
                 url = Constants.bsl;
-                a(this.bRM, this.bRR, this.bSO, null);
+                a_setBtn_visibale_or_gone(this.bRM, this.bRR, this.bSO, null);
                 break;
             case 1:
                 gamePackName = Constants.bsv;
                 url = Constants.bsm;
-                a(this.bRN, this.bRS, this.bSN, null);
+                a_setBtn_visibale_or_gone(this.bRN, this.bRS, this.bSN, null);
                 break;
             case 2:
                 gamePackName = Constants.bsw;
@@ -1169,7 +1170,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 if (VERSION.SDK_INT < 11) {
                     url = Constants.bsq;
                 }
-                a(this.bRO, this.bRT, this.bSM, null);
+                a_setBtn_visibale_or_gone(this.bRO, this.bRT, this.bSM, null);
                 break;
             case 3:
                 gamePackName = Constants.bsx;
@@ -1177,7 +1178,7 @@ public class MCVersionSelect extends HTBaseActivity {
                 if (VERSION.SDK_INT < 11) {
                     url = Constants.bsr;
                 }
-                a(this.bRP, this.bRU, this.bSL, null);
+                a_setBtn_visibale_or_gone(this.bRP, this.bRU, this.bSL, null);
                 break;
             case 4:
                 gamePackName = Constants.bsy;
@@ -1185,14 +1186,14 @@ public class MCVersionSelect extends HTBaseActivity {
                 if (VERSION.SDK_INT < 11) {
                     url = Constants.bss;
                 }
-                a(this.bRQ, this.bRV, this.bSK, null);
+                a_setBtn_visibale_or_gone(this.bRQ, this.bRV, this.bSK, null);
                 break;
         }
-        v(url, UtilsFile.getRootPath(), gamePackName + ".zip");
+        v_downloadMC(url, UtilsFile.get_mctool_path(), gamePackName + ".zip");
     }
 
     private void bT(Context context) {
-        new DialogManager(context).showOkCancelDialog(hlx.data.localstore.a.bKA, hlx.data.localstore.a.bKK, hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+        new DialogManager(context).showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, hlx.data.localstore.a.bKK, hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, true, new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
@@ -1210,38 +1211,38 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void SK() {
         this.bSi = (Button) findViewById(R.id.btnInstallMoreFirearms0121);
-        this.bSi.setOnClickListener(this.bTd);
+        this.bSi.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSj = (Button) findViewById(R.id.btnDownMoreFirearms0121);
-        this.bSj.setOnClickListener(this.bTd);
+        this.bSj.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSk = (Button) findViewById(R.id.btnClearMoreFirearms0121);
-        this.bSk.setOnClickListener(this.bTd);
+        this.bSk.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSl = (Button) findViewById(R.id.btnInstallMoreFirearms0130);
-        this.bSl.setOnClickListener(this.bTd);
+        this.bSl.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSm = (Button) findViewById(R.id.btnDownMoreFirearms0130);
-        this.bSm.setOnClickListener(this.bTd);
+        this.bSm.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSn = (Button) findViewById(R.id.btnClearMoreFirearms0130);
-        this.bSn.setOnClickListener(this.bTd);
+        this.bSn.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSo = (Button) findViewById(R.id.btnInstallMoreV0150);
-        this.bSo.setOnClickListener(this.bTd);
+        this.bSo.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSp = (Button) findViewById(R.id.btnDownMoreV0150);
-        this.bSp.setOnClickListener(this.bTd);
+        this.bSp.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSq = (Button) findViewById(R.id.btnClearMoreV0150);
-        this.bSq.setOnClickListener(this.bTd);
+        this.bSq.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSr = (Button) findViewById(R.id.btnSelectGameVersion0150);
         this.bSw = (Button) findViewById(R.id.btnInstallMoreV0159);
-        this.bSw.setOnClickListener(this.bTd);
+        this.bSw.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSx = (Button) findViewById(R.id.btnDownMoreV0159);
-        this.bSx.setOnClickListener(this.bTd);
+        this.bSx.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSy = (Button) findViewById(R.id.btnClearMoreV0159);
-        this.bSy.setOnClickListener(this.bTd);
+        this.bSy.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSz = (Button) findViewById(R.id.btnSelectGameVersion0159);
-        this.bSs = (Button) findViewById(R.id.btnInstallMoreV0141);
-        this.bSs.setOnClickListener(this.bTd);
-        this.bSt = (Button) findViewById(R.id.btnDownMoreV0141);
-        this.bSt.setOnClickListener(this.bTd);
-        this.bSu = (Button) findViewById(R.id.btnClearMoreV0141);
-        this.bSu.setOnClickListener(this.bTd);
-        this.bSv = (Button) findViewById(R.id.btnSelectGameVersion0141);
+        this.bSs_bt_Install_v0141 = (Button) findViewById(R.id.btnInstallMoreV0141);
+        this.bSs_bt_Install_v0141.setOnClickListener(this.bTd_version_select_clickListener);
+        this.bSt_download_v0141 = (Button) findViewById(R.id.btnDownMoreV0141);
+        this.bSt_download_v0141.setOnClickListener(this.bTd_version_select_clickListener);
+        this.bSu_btn_clear_mc = (Button) findViewById(R.id.btnClearMoreV0141);
+        this.bSu_btn_clear_mc.setOnClickListener(this.bTd_version_select_clickListener);
+        this.bSv_bt_downloading_v0141 = (Button) findViewById(R.id.btnSelectGameVersion0141);
     }
 
     private void SL() {
@@ -1275,43 +1276,56 @@ public class MCVersionSelect extends HTBaseActivity {
         boolean _tmpFlag;
         switch (moreIndex) {
             case 1:
-                return hlx.mcspecialmode.firearms.a.Tp().hh(UtilsFile.getRootPath() + hlx.data.localstore.a.bKQ + ".zip");
+                return hlx.mcspecialmode.firearms.a.Tp().hh(UtilsFile.get_mctool_path() +
+                        hlx.data.localstore.a.bKQ + ".zip");
             case 2:
-                return hlx.mcspecialmode.firearms.b.Tq().hh(UtilsFile.getRootPath() + hlx.data.localstore.a.bKT + ".zip");
+                return hlx.mcspecialmode.firearms.b.Tq().hh(UtilsFile.get_mctool_path() +
+                        hlx.data.localstore.a.bKT + ".zip");
             case 4:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.getRootPath() + hlx.data.localstore.a.bKX + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.getRootPath() + hlx.data.localstore.a.bKX + "" + ".apk") && hlx.data.localstore.a.bLa.equalsIgnoreCase(tmpPackMD5Value)) {
+                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                        + hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + ".apk"));
+                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() +
+                        hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + "" + ".apk") &&
+                        hlx.data.localstore.a.bLa.equalsIgnoreCase(tmpPackMD5Value)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
-                if (_tmpFlag || hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK)) {
+                if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
                 return _tmpFlag;
             case 5:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.getRootPath() + hlx.data.localstore.a.bKY + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.getRootPath() + hlx.data.localstore.a.bKY + "" + ".apk") && hlx.data.localstore.a.bLb.equalsIgnoreCase(tmpPackMD5Value)) {
+                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                        + hlx.data.localstore.a.bKY + ".apk"));
+                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKY +
+                        "" + ".apk") && hlx.data.localstore.a.bLb.equalsIgnoreCase(tmpPackMD5Value)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
-                if (_tmpFlag || hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL)) {
+                if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
                 return _tmpFlag;
             case 6:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.getRootPath() + hlx.data.localstore.a.bKZ + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.getRootPath() + hlx.data.localstore.a.bKZ + "" + ".apk") && hlx.data.localstore.a.bLc.equalsIgnoreCase(tmpPackMD5Value)) {
+                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                        + hlx.data.localstore.a.bKZ + ".apk"));
+                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() +
+                        hlx.data.localstore.a.bKZ + "" + ".apk") && hlx.data.localstore.a.bLc.equalsIgnoreCase(
+                                tmpPackMD5Value)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
-                if (_tmpFlag || hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM)) {
+                if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
@@ -1322,113 +1336,115 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private boolean mP(int moreIndex) {
+    private boolean mP_isRightVersion(int moreIndex) {
         switch (moreIndex) {
             case 1:
-                return hlx.mcspecialmode.firearms.a.Tp().hi(UtilsFile.getRootPath() + hlx.data.localstore.a.bKW + "枪械js音效包");
+                return hlx.mcspecialmode.firearms.a.Tp().hi(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW + "枪械js音效包");
             case 2:
-                return hlx.mcspecialmode.firearms.b.Tq().hi(UtilsFile.getRootPath() + hlx.data.localstore.a.bKW + "枪械js音效包13");
+                return hlx.mcspecialmode.firearms.b.Tq().hi(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW + "枪械js音效包13");
             case 4:
-                return hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141);
             case 5:
-                return hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540);
             case 6:
-                return hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410);
             default:
                 return false;
         }
     }
 
     private void mQ(int moreIndex) {
-        this.bSG = moreIndex;
-        CharSequence _prompt = null;
+        this.bSG_moreIndex = moreIndex;
+        CharSequence tips_content = null;
         switch (moreIndex) {
             case 1:
-                _prompt = "将为您下载插件(2.2MB)以支持最新功能";
+                tips_content = "将为您下载插件(2.2MB)以支持最新功能";
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
-                    _prompt = _prompt + ", (手机剩余空间不足2.2M，请清理后重新下载)";
+                    tips_content = tips_content + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 2:
-                _prompt = "将为您下载插件(2.2MB)以支持最新功能";
+                tips_content = "将为您下载插件(2.2MB)以支持最新功能";
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
-                    _prompt = _prompt + ", (手机剩余空间不足2.2M，请清理后重新下载)";
+                    tips_content = tips_content + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 4:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能",
+                tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能",
                         new Object[]{hlx.data.localstore.a.version_0141});
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 19922944) {
-                    _prompt = _prompt + ", (手机剩余空间不足19M，请清理后重新下载)";
+                    tips_content = tips_content + ", (手机剩余空间不足19M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 5:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0154});
+                tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0154});
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 20971520) {
-                    _prompt = _prompt + ", (手机剩余空间不足20M，请清理后重新下载)";
+                    tips_content = tips_content + ", (手机剩余空间不足20M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 6:
-                _prompt = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0161});
+                tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0161});
                 if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 44040192) {
-                    _prompt = _prompt + ", (手机剩余空间不足42M，请清理后重新下载)";
+                    tips_content = tips_content + ", (手机剩余空间不足42M，请清理后重新下载)";
                     break;
                 }
                 break;
         }
-        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA, _prompt,
-                hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true,
-                new OkCancelDialogListener(MCVersionSelect.this) {
-            final /* synthetic */ MCVersionSelect bTk;
+        new DialogManager(this.this_MCVersionSelect).showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS,
+                tips_content,
+                hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, true,
+                new OkCancelDialogListener() {
+            final /* synthetic */ MCVersionSelect bTk_MCVersionSelect_this;
 
             {
-                this.bTk = MCVersionSelect.this;
+                this.bTk_MCVersionSelect_this = MCVersionSelect.this;
             }
 
             public void onCancel() {
             }
 
             public void onOk() {
-                this.bTk.SM();
+                this.bTk_MCVersionSelect_this.SM_download_mc();
             }
         });
     }
 
-    private void SM() {
+    private void SM_download_mc() {
         String url = "";
         String fileName = "";
-        switch (this.bSG) {
+        switch (this.bSG_moreIndex) {
             case 1:
-                url = hlx.data.localstore.a.bKS;
+                url = hlx.data.localstore.a.bKS_down_url_fireAndSound_pack_12;
                 fileName = "more_sepack0121.zip";
-                a(this.bSJ, this.bSk, this.bSi, this.bSj);
+                a_setBtn_visibale_or_gone(this.bSJ, this.bSk, this.bSi, this.bSj);
                 break;
             case 2:
-                url = hlx.data.localstore.a.bKV;
+                url = hlx.data.localstore.a.bKV_down_url_fireAndSound_pack_13;
                 fileName = "more_sepack0130.zip";
-                a(this.bSI, this.bSn, this.bSl, this.bSm);
+                a_setBtn_visibale_or_gone(this.bSI, this.bSn, this.bSl, this.bSm);
                 break;
             case 4:
-                url = hlx.data.localstore.a.mpc_download_url;
+                url = hlx.data.localstore.a.mpc_download_url_v0141;
                 fileName = "MC_0.14.1_huluxia.apk";
-                a(this.bSv, this.bSs, this.bSu, this.bSt);
+                a_setBtn_visibale_or_gone(this.bSv_bt_downloading_v0141, this.bSs_bt_Install_v0141, this.bSu_btn_clear_mc,
+                        this.bSt_download_v0141);
                 break;
             case 5:
-                url = hlx.data.localstore.a.bLe;
+                url = hlx.data.localstore.a.bLe_download_url_v01540;
                 fileName = "MC_0.15.1.2_huluxia.apk";
-                a(this.bSr, this.bSo, this.bSq, this.bSp);
+                a_setBtn_visibale_or_gone(this.bSr, this.bSo, this.bSq, this.bSp);
                 break;
             case 6:
-                url = hlx.data.localstore.a.bLf;
+                url = hlx.data.localstore.a.bLf_download_url_v01610;
                 fileName = "MC_0.15.90.2_hlx.apk";
-                a(this.bSz, this.bSw, this.bSy, this.bSx);
+                a_setBtn_visibale_or_gone(this.bSz, this.bSw, this.bSy, this.bSx);
                 break;
         }
-        v(url, UtilsFile.getRootPath(), fileName);
+        v_downloadMC(url, UtilsFile.get_mctool_path(), fileName);
     }
 
     private void SN() {
@@ -1449,43 +1465,44 @@ public class MCVersionSelect extends HTBaseActivity {
         SH();
     }
 
-    private void mR(int moreResIndex) {
-        if (!mP(moreResIndex) || moreResIndex == 3) {
+    private void mR_install_apk(int moreResIndex) { // moreResIndex = 4 // v0141
+        if (!mP_isRightVersion(moreResIndex) || moreResIndex == 3) {
             switch (moreResIndex) {
                 case 1:
                     i.i(this.aDe);
-                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms", UtilsFile.getRootPath() + hlx.data.localstore.a.bKQ + ".zip", UtilsFile.getRootPath() + hlx.data.localstore.a.bKW);
+                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKQ + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
                     return;
                 case 2:
                     i.i(this.aDe);
-                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms13", UtilsFile.getRootPath() + hlx.data.localstore.a.bKT + ".zip", UtilsFile.getRootPath() + hlx.data.localstore.a.bKW);
+                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms13", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKT + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
                     return;
                 case 4:
-                    if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
+                    if (hlx.launch.game.b.isInstalled(u.getPackageManager(), "com.mojang.minecraftpe")) {
                         t.show_toast(this.this_MCVersionSelect, "需要先卸载旧版本！");
                         this.bSY = 5;
                         hb("com.mojang.minecraftpe");
                         return;
                     }
-                    ha(UtilsFile.getRootPath() + hlx.data.localstore.a.bKX + ".apk");
+                    ha_install_apk(UtilsFile.get_mctool_path() +
+                            hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + ".apk");
                     return;
                 case 5:
-                    if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
+                    if (hlx.launch.game.b.isInstalled(u.getPackageManager(), "com.mojang.minecraftpe")) {
                         t.show_toast(this.this_MCVersionSelect, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
                     }
-                    ha(UtilsFile.getRootPath() + hlx.data.localstore.a.bKY + ".apk");
+                    ha_install_apk(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKY + ".apk");
                     return;
                 case 6:
-                    if (hlx.launch.game.b.a(u.getPackageManager(), "com.mojang.minecraftpe")) {
+                    if (hlx.launch.game.b.isInstalled(u.getPackageManager(), "com.mojang.minecraftpe")) {
                         t.show_toast(this.this_MCVersionSelect, "需要先卸载原有版本！");
                         this.bSY = 4;
                         hb("com.mojang.minecraftpe");
                         return;
                     }
-                    ha(UtilsFile.getRootPath() + hlx.data.localstore.a.bKZ + ".apk");
+                    ha_install_apk(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKZ + ".apk");
                     return;
                 default:
                     return;
@@ -1493,7 +1510,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private void ha(String path) {
+    private void ha_install_apk(String path) {
         try {
             UtilsFile.deleteFile(hlx.data.localstore.a.bJP);
         } catch (Exception e) {
@@ -1525,7 +1542,7 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void SQ() {
-        this.bSg.show();
+        this.bSg_deal_request_dialog.show();
         AsyncTaskCenter.getInstance().execute(this.bTe, new RunnableCallback(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
@@ -1540,54 +1557,57 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private void SR() {
-        if (this.bSg != null && this.bSg.isShowing()) {
-            this.bSg.cancel();
+        if (this.bSg_deal_request_dialog != null && this.bSg_deal_request_dialog.isShowing()) {
+            this.bSg_deal_request_dialog.cancel();
         }
         if (bTf == 1) {
-            a(this.bSq, this.bSo, this.bSp, this.bSr);
+            a_setBtn_visibale_or_gone(this.bSq, this.bSo, this.bSp, this.bSr);
             mM(7);
             this.bSR.performClick();
         } else if (bTf == 2) {
-            a(this.bSo, this.bSq, this.bSp, this.bSr);
+            a_setBtn_visibale_or_gone(this.bSo, this.bSq, this.bSp, this.bSr);
         } else {
-            a(this.bSp, this.bSq, this.bSo, this.bSr);
+            a_setBtn_visibale_or_gone(this.bSp, this.bSq, this.bSo, this.bSr);
         }
         if (bTg == 1) {
-            a(this.bSy, this.bSw, this.bSx, this.bSz);
+            a_setBtn_visibale_or_gone(this.bSy, this.bSw, this.bSx, this.bSz);
             mM(8);
             this.bSS.performClick();
         } else if (bTg == 2) {
-            a(this.bSw, this.bSy, this.bSx, this.bSz);
+            a_setBtn_visibale_or_gone(this.bSw, this.bSy, this.bSx, this.bSz);
         } else {
-            a(this.bSx, this.bSy, this.bSw, this.bSz);
+            a_setBtn_visibale_or_gone(this.bSx, this.bSy, this.bSw, this.bSz);
         }
         if (bTh == 1) {
-            a(this.bSu, this.bSt, this.bSs, this.bSv);
+            a_setBtn_visibale_or_gone(this.bSu_btn_clear_mc, this.bSt_download_v0141, this.bSs_bt_Install_v0141, this.bSv_bt_downloading_v0141);
             mM(5);
             this.bSQ.performClick();
         } else if (bTh == 2) {
-            a(this.bSs, this.bSt, this.bSu, this.bSv);
+            a_setBtn_visibale_or_gone(this.bSs_bt_Install_v0141, this.bSt_download_v0141, this.bSu_btn_clear_mc, this.bSv_bt_downloading_v0141);
         } else {
-            a(this.bSt, this.bSu, this.bSs, this.bSv);
+            a_setBtn_visibale_or_gone(this.bSt_download_v0141, this.bSu_btn_clear_mc, this.bSs_bt_Install_v0141, this.bSv_bt_downloading_v0141);
         }
     }
 
     private void SS() {
-        if (hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL)) {
+        if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540)) {
             bTf = 1;
         } else if (mO(5)) {
             bTf = 2;
         } else {
             bTf = 3;
         }
-        if (hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM)) {
+        if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410)) {
             bTg = 1;
         } else if (mO(6)) {
             bTg = 2;
         } else {
             bTg = 3;
         }
-        if (hlx.launch.game.b.a(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK)) {
+        if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
+                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141)) {
             bTh = 1;
         } else if (mO(4)) {
             bTh = 2;
@@ -1602,7 +1622,7 @@ public class MCVersionSelect extends HTBaseActivity {
         StyleHolder styleHolder = new StyleHolder();
         styleHolder.colorUnMarkedButton = com.simple.colorful.d.getColor(this.this_MCVersionSelect, 16842808);
         styleHolder.colorButton = this.this_MCVersionSelect.getResources().getColor(R.color.dialog_ok_btn_color);
-        manager.showOkCancelDialog(hlx.data.localstore.a.bKA, hlx.data.localstore.a.bKK, "删除", hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+        manager.showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, hlx.data.localstore.a.bKK, "删除", hlx.data.localstore.a.bKB_bt_cancel, true, new OkCancelDialogListener(this) {
             final /* synthetic */ MCVersionSelect bTk;
 
             {
@@ -1621,12 +1641,12 @@ public class MCVersionSelect extends HTBaseActivity {
     private void ST() {
         switch (this.bSH) {
             case 1:
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + hlx.data.localstore.a.bKQ + "" + ".zip");
-                a(this.bSj, this.bSi, this.bSk, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKQ + "" + ".zip");
+                a_setBtn_visibale_or_gone(this.bSj, this.bSi, this.bSk, null);
                 return;
             case 2:
-                UtilsFile.deleteFile(UtilsFile.getRootPath() + hlx.data.localstore.a.bKT + "" + ".zip");
-                a(this.bSm, this.bSl, this.bSn, null);
+                UtilsFile.deleteFile(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKT + "" + ".zip");
+                a_setBtn_visibale_or_gone(this.bSm, this.bSl, this.bSn, null);
                 return;
             case 4:
                 this.bSY = 4;
@@ -1645,7 +1665,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private void v(String url, String dirPath, String fileName) {
+    private void v_downloadMC(String url, String dirPath, String fileName) {
         UtilsFile.deleteFile(dirPath + fileName);
         ResTaskInfo tInfo = new ResTaskInfo();
         tInfo.url = url;
@@ -1667,7 +1687,7 @@ public class MCVersionSelect extends HTBaseActivity {
             this.bRY = true;
             mM(this.mc_launch_version);
             this.bSX.performClick();
-            a(this.bRR, this.bRM, this.bSO, null);
+            a_setBtn_visibale_or_gone(this.bRR, this.bRM, this.bSO, null);
         } else if (url.equals(Constants.bsm)) {
             this.mc_launch_version = 1;
             this.mcVersion = hlx.data.localstore.a.bJi;
@@ -1676,7 +1696,7 @@ public class MCVersionSelect extends HTBaseActivity {
             this.bRZ = true;
             mM(this.mc_launch_version);
             this.bSW.performClick();
-            a(this.bRS, this.bRN, this.bSN, null);
+            a_setBtn_visibale_or_gone(this.bRS, this.bRN, this.bSN, null);
         } else if (url.equals(Constants.bsn) || url.equals(Constants.bsq)) {
             this.mc_launch_version = 2;
             this.mcVersion = hlx.data.localstore.a.bJj;
@@ -1685,7 +1705,7 @@ public class MCVersionSelect extends HTBaseActivity {
             this.bSa = true;
             mM(this.mc_launch_version);
             this.bSV.performClick();
-            a(this.bRT, this.bRO, this.bSM, null);
+            a_setBtn_visibale_or_gone(this.bRT, this.bRO, this.bSM, null);
         } else if (url.equals(Constants.bso) || url.equals(Constants.bsr)) {
             this.mc_launch_version = 3;
             this.mcVersion = hlx.data.localstore.a.bJl;
@@ -1694,7 +1714,7 @@ public class MCVersionSelect extends HTBaseActivity {
             this.bSb = true;
             mM(this.mc_launch_version);
             this.bSU.performClick();
-            a(this.bRU, this.bRP, this.bSL, null);
+            a_setBtn_visibale_or_gone(this.bRU, this.bRP, this.bSL, null);
         } else if (url.equals(Constants.bsp) || url.equals(Constants.bss)) {
             this.mc_launch_version = 4;
             this.mcVersion = hlx.data.localstore.a.bJm;
@@ -1703,35 +1723,35 @@ public class MCVersionSelect extends HTBaseActivity {
             this.bSc = true;
             mM(this.mc_launch_version);
             this.bST.performClick();
-            a(this.bRV, this.bRQ, this.bSK, null);
-        } else if (url.equals(hlx.data.localstore.a.bLe)) {
+            a_setBtn_visibale_or_gone(this.bRV, this.bRQ, this.bSK, null);
+        } else if (url.equals(hlx.data.localstore.a.bLe_download_url_v01540)) {
             this.bSE = true;
-            a(this.bSo, this.bSp, this.bSr, this.bSq);
-            mR(5);
+            a_setBtn_visibale_or_gone(this.bSo, this.bSp, this.bSr, this.bSq);
+            mR_install_apk(5);
             hlx.recorddata.a.dG(true);
-        } else if (url.equals(hlx.data.localstore.a.bLf)) {
+        } else if (url.equals(hlx.data.localstore.a.bLf_download_url_v01610)) {
             this.bSF = true;
-            a(this.bSw, this.bSx, this.bSz, this.bSy);
-            mR(6);
+            a_setBtn_visibale_or_gone(this.bSw, this.bSx, this.bSz, this.bSy);
+            mR_install_apk(6);
             hlx.recorddata.a.dF(true);
-        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url_v0141)) {
             this.bSD = true;
-            a(this.bSs, this.bSt, this.bSv, this.bSu);
-            mR(4);
+            a_setBtn_visibale_or_gone(this.bSs_bt_Install_v0141, this.bSt_download_v0141, this.bSv_bt_downloading_v0141, this.bSu_btn_clear_mc);
+            mR_install_apk(4);
             hlx.recorddata.a.dH(true);
-        } else if (url.equals(hlx.data.localstore.a.bKS)) {
+        } else if (url.equals(hlx.data.localstore.a.bKS_down_url_fireAndSound_pack_12)) {
             this.bSA = true;
-            if (mP(1)) {
-                a(this.bSk, this.bSi, this.bSj, this.bSJ);
+            if (mP_isRightVersion(1)) {
+                a_setBtn_visibale_or_gone(this.bSk, this.bSi, this.bSj, this.bSJ);
             } else {
-                a(this.bSi, this.bSk, this.bSj, this.bSJ);
+                a_setBtn_visibale_or_gone(this.bSi, this.bSk, this.bSj, this.bSJ);
             }
-        } else if (url.equals(hlx.data.localstore.a.bKV)) {
+        } else if (url.equals(hlx.data.localstore.a.bKV_down_url_fireAndSound_pack_13)) {
             this.bSB = true;
-            if (mP(2)) {
-                a(this.bSn, this.bSm, this.bSl, this.bSI);
+            if (mP_isRightVersion(2)) {
+                a_setBtn_visibale_or_gone(this.bSn, this.bSm, this.bSl, this.bSI);
             } else {
-                a(this.bSl, this.bSn, this.bSm, this.bSI);
+                a_setBtn_visibale_or_gone(this.bSl, this.bSn, this.bSm, this.bSI);
             }
         }
     }
@@ -1739,66 +1759,66 @@ public class MCVersionSelect extends HTBaseActivity {
     private void hd(String url) {
         if (url.equals(Constants.bsl)) {
             this.bRY = false;
-            a(this.bSO, this.bRR, this.bRM, null);
+            a_setBtn_visibale_or_gone(this.bSO, this.bRR, this.bRM, null);
         } else if (url.equals(Constants.bsm)) {
             this.bRZ = false;
-            a(this.bSN, this.bRS, this.bRN, null);
+            a_setBtn_visibale_or_gone(this.bSN, this.bRS, this.bRN, null);
         } else if (url.equals(Constants.bsn) || url.equals(Constants.bsq)) {
             this.bSa = false;
-            a(this.bSM, this.bRT, this.bRO, null);
+            a_setBtn_visibale_or_gone(this.bSM, this.bRT, this.bRO, null);
         } else if (url.equals(Constants.bso) || url.equals(Constants.bsr)) {
             this.bSb = false;
-            a(this.bSL, this.bRU, this.bRP, null);
+            a_setBtn_visibale_or_gone(this.bSL, this.bRU, this.bRP, null);
         } else if (url.equals(Constants.bsp) || url.equals(Constants.bss)) {
             this.bSc = false;
-            a(this.bSK, this.bRV, this.bRQ, null);
-        } else if (url.equals(hlx.data.localstore.a.bLe)) {
+            a_setBtn_visibale_or_gone(this.bSK, this.bRV, this.bRQ, null);
+        } else if (url.equals(hlx.data.localstore.a.bLe_download_url_v01540)) {
             this.bSE = false;
-            a(this.bSp, this.bSq, this.bSo, this.bSr);
-        } else if (url.equals(hlx.data.localstore.a.bLf)) {
+            a_setBtn_visibale_or_gone(this.bSp, this.bSq, this.bSo, this.bSr);
+        } else if (url.equals(hlx.data.localstore.a.bLf_download_url_v01610)) {
             this.bSF = false;
-            a(this.bSx, this.bSy, this.bSw, this.bSz);
-        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
+            a_setBtn_visibale_or_gone(this.bSx, this.bSy, this.bSw, this.bSz);
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url_v0141)) {
             this.bSD = false;
-            a(this.bSt, this.bSu, this.bSs, this.bSv);
-        } else if (url.equals(hlx.data.localstore.a.bKS)) {
+            a_setBtn_visibale_or_gone(this.bSt_download_v0141, this.bSu_btn_clear_mc, this.bSs_bt_Install_v0141, this.bSv_bt_downloading_v0141);
+        } else if (url.equals(hlx.data.localstore.a.bKS_down_url_fireAndSound_pack_12)) {
             this.bSA = false;
-            a(this.bSj, this.bSk, this.bSi, this.bSJ);
-        } else if (url.equals(hlx.data.localstore.a.bKV)) {
+            a_setBtn_visibale_or_gone(this.bSj, this.bSk, this.bSi, this.bSJ);
+        } else if (url.equals(hlx.data.localstore.a.bKV_down_url_fireAndSound_pack_13)) {
             this.bSB = false;
-            a(this.bSm, this.bSn, this.bSl, this.bSI);
+            a_setBtn_visibale_or_gone(this.bSm, this.bSn, this.bSl, this.bSI);
         }
     }
 
     private void he(String url) {
         if (url.equals(Constants.bsl)) {
-            a(this.bRM, this.bRR, this.bSO, null);
+            a_setBtn_visibale_or_gone(this.bRM, this.bRR, this.bSO, null);
         } else if (url.equals(Constants.bsm)) {
-            a(this.bRN, this.bRS, this.bSN, null);
+            a_setBtn_visibale_or_gone(this.bRN, this.bRS, this.bSN, null);
         } else if (url.equals(Constants.bsn) || url.equals(Constants.bsq)) {
-            a(this.bRO, this.bRT, this.bSM, null);
+            a_setBtn_visibale_or_gone(this.bRO, this.bRT, this.bSM, null);
         } else if (url.equals(Constants.bso) || url.equals(Constants.bsr)) {
-            a(this.bRP, this.bRU, this.bSL, null);
+            a_setBtn_visibale_or_gone(this.bRP, this.bRU, this.bSL, null);
         } else if (url.equals(Constants.bsp) || url.equals(Constants.bss)) {
-            a(this.bRQ, this.bRV, this.bSK, null);
-        } else if (url.equals(hlx.data.localstore.a.bLe)) {
-            a(this.bSr, this.bSo, this.bSp, this.bSq);
-        } else if (url.equals(hlx.data.localstore.a.bLf)) {
-            a(this.bSz, this.bSw, this.bSx, this.bSy);
-        } else if (url.equals(hlx.data.localstore.a.mpc_download_url)) {
-            a(this.bSv, this.bSs, this.bSt, this.bSu);
-        } else if (url.equals(hlx.data.localstore.a.bKS)) {
-            if (mP(1)) {
-                a(this.bSJ, this.bSk, this.bSi, this.bSj);
+            a_setBtn_visibale_or_gone(this.bRQ, this.bRV, this.bSK, null);
+        } else if (url.equals(hlx.data.localstore.a.bLe_download_url_v01540)) {
+            a_setBtn_visibale_or_gone(this.bSr, this.bSo, this.bSp, this.bSq);
+        } else if (url.equals(hlx.data.localstore.a.bLf_download_url_v01610)) {
+            a_setBtn_visibale_or_gone(this.bSz, this.bSw, this.bSx, this.bSy);
+        } else if (url.equals(hlx.data.localstore.a.mpc_download_url_v0141)) {
+            a_setBtn_visibale_or_gone(this.bSv_bt_downloading_v0141, this.bSs_bt_Install_v0141, this.bSt_download_v0141, this.bSu_btn_clear_mc);
+        } else if (url.equals(hlx.data.localstore.a.bKS_down_url_fireAndSound_pack_12)) {
+            if (mP_isRightVersion(1)) {
+                a_setBtn_visibale_or_gone(this.bSJ, this.bSk, this.bSi, this.bSj);
             } else {
-                a(this.bSJ, this.bSi, this.bSk, this.bSj);
+                a_setBtn_visibale_or_gone(this.bSJ, this.bSi, this.bSk, this.bSj);
             }
-        } else if (url.equals(hlx.data.localstore.a.bKV)) {
+        } else if (url.equals(hlx.data.localstore.a.bKV_down_url_fireAndSound_pack_13)) {
             this.bSB = true;
-            if (mP(2)) {
-                a(this.bSI, this.bSn, this.bSm, this.bSl);
+            if (mP_isRightVersion(2)) {
+                a_setBtn_visibale_or_gone(this.bSI, this.bSn, this.bSm, this.bSl);
             } else {
-                a(this.bSI, this.bSl, this.bSn, this.bSm);
+                a_setBtn_visibale_or_gone(this.bSI, this.bSl, this.bSn, this.bSm);
             }
         }
     }

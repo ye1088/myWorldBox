@@ -39,13 +39,13 @@ public class MCLauncherActivity105 extends MainActivity {
         Sp();
         switch (c.Sg().Sl()) {
             case 0:
-                r.ck().K(a.bOh);
+                r.ck().K_umengEvent(a.bOh);
                 break;
             case 1:
-                r.ck().K(a.bOi);
+                r.ck().K_umengEvent(a.bOi);
                 break;
             case 2:
-                r.ck().K(a.bOj);
+                r.ck().K_umengEvent(a.bOj);
                 break;
         }
         So();

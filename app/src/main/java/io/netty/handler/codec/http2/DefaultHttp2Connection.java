@@ -658,7 +658,7 @@ public class DefaultHttp2Connection implements Http2Connection {
 
         private void checkNewStreamAllowed(int streamId, State state) throws Http2Exception {
             if (this.this$0.goAwayReceived() && streamId > this.this$0.localEndpoint.lastStreamKnownByPeer()) {
-                throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Cannot create stream %d since this endpoint has received a GOAWAY frame with last stream id %d.", Integer.valueOf(streamId), Integer.valueOf(this.this$0.localEndpoint.lastStreamKnownByPeer()));
+                throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Cannot create stream %d since this endpoint has received a_isRightVersion GOAWAY frame with last stream id %d.", Integer.valueOf(streamId), Integer.valueOf(this.this$0.localEndpoint.lastStreamKnownByPeer()));
             } else if (streamId < 0) {
                 throw new Http2NoMoreStreamIdsException();
             } else if (!isValidStreamId(streamId)) {
@@ -702,7 +702,7 @@ public class DefaultHttp2Connection implements Http2Connection {
             if (connection == DefaultHttp2Connection.this) {
                 return this;
             }
-            throw new IllegalArgumentException("Using a key that was not created by this connection");
+            throw new IllegalArgumentException("Using a_isRightVersion key that was not created by this connection");
         }
     }
 
@@ -922,7 +922,7 @@ public class DefaultHttp2Connection implements Http2Connection {
             case RESERVED_REMOTE:
                 return State.HALF_CLOSED_LOCAL;
             default:
-                throw Http2Exception.streamError(streamId, Http2Error.PROTOCOL_ERROR, "Attempting to open a stream in an invalid state: " + initialState, new Object[0]);
+                throw Http2Exception.streamError(streamId, Http2Error.PROTOCOL_ERROR, "Attempting to open a_isRightVersion stream in an invalid state: " + initialState, new Object[0]);
         }
     }
 

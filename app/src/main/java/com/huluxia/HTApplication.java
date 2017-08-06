@@ -75,7 +75,7 @@ public class HTApplication extends MultiDexApplication {
     public static String fl = "hlx";
     public static String fm = "HlxMc.db";
     public static String fn = hlx.data.localstore.a.bLF;
-    private static String fo = "mctool_huluxia";
+    private static String fo_mctool_huluxia_string = "mctool_huluxia";
     public static int fp;
     private static d fq = new d(0, 0);
     private static int fr = 0;
@@ -387,7 +387,7 @@ public class HTApplication extends MultiDexApplication {
         UtilsFile.Kx();
         AppConfig.getInstance().setAppContext(this.fR);
         r.ck().ad(context);
-        LoginService.fo = fo;
+        LoginService.fo = fo_mctool_huluxia_string;
         CrashMgr.getInstance().init(AppConstant.CRASH_FILE).setListener(new e());
     }
 
@@ -397,7 +397,7 @@ public class HTApplication extends MultiDexApplication {
             channel = ah.KZ().LC();
         }
         ah.KZ().fY(channel);
-        fo = channel;
+        fo_mctool_huluxia_string = channel;
     }
 
     public void onTerminate() {
@@ -457,12 +457,12 @@ public class HTApplication extends MultiDexApplication {
         return fT;
     }
 
-    public static String bJ() {
-        return fo;
+    public static String bJ_mctool_huluxia_string() {
+        return fo_mctool_huluxia_string;
     }
 
     public static void z(String marketID) {
-        fo = marketID;
+        fo_mctool_huluxia_string = marketID;
     }
 
     public static d bK() {

@@ -174,9 +174,9 @@ public class i {
                 b.d("receiving an un-recognized message. " + oVar.a);
                 return null;
             }
-            b.c("receive a message." + a);
+            b.c("receive a_isRightVersion message." + a);
             a a2 = oVar.a();
-            b.a("processing a message, action=" + a2);
+            b.a("processing a_isRightVersion message, action=" + a2);
             List list;
             switch (1.a[a2.ordinal()]) {
                 case 1:
@@ -214,7 +214,7 @@ public class i {
                                 r.a(this.b, oVar, bArr);
                                 return null;
                             }
-                            b.a("receive a message, msgid=" + l.b() + ", jobkey=" + b);
+                            b.a("receive a_isRightVersion message, msgid=" + l.b() + ", jobkey=" + b);
                             if (z && generateMessage.getExtra() != null && generateMessage.getExtra().containsKey("notify_effect")) {
                                 Map extra = generateMessage.getExtra();
                                 String str = (String) extra.get("notify_effect");
@@ -243,7 +243,7 @@ public class i {
                             }
                             Serializable serializable = generateMessage;
                         } else {
-                            b.a("drop a duplicate message, key=" + b);
+                            b.a("drop a_isRightVersion duplicate message, key=" + b);
                         }
                         if (oVar.m() != null || z) {
                             return aVar;
@@ -251,7 +251,7 @@ public class i {
                         a(wVar, oVar);
                         return aVar;
                     }
-                    b.a("receive a message in pause state. drop it");
+                    b.a("receive a_isRightVersion message in pause state. drop it");
                     return null;
                 case 2:
                     t tVar = (t) a;
@@ -375,7 +375,7 @@ public class i {
             }
         } catch (Throwable e222) {
             b.a(e222);
-            b.d("receive a message which action string is not valid. is the reg expired?");
+            b.d("receive a_isRightVersion message which action string is not valid. is the reg expired?");
             return null;
         }
     }
@@ -388,7 +388,7 @@ public class i {
                 b.d("message arrived: receiving an un-recognized message. " + oVar.a);
                 return null;
             }
-            b.c("message arrived: receive a message." + a);
+            b.c("message arrived: receive a_isRightVersion message." + a);
             a a2 = oVar.a();
             b.a("message arrived: processing an arrived message, action=" + a2);
             switch (1.a[a2.ordinal()]) {
@@ -404,14 +404,14 @@ public class i {
                     }
                     MiPushMessage generateMessage = PushMessageHelper.generateMessage(wVar, oVar.m(), false);
                     generateMessage.setArrivedMessage(true);
-                    b.a("message arrived: receive a message, msgid=" + l.b() + ", jobkey=" + str);
+                    b.a("message arrived: receive a_isRightVersion message, msgid=" + l.b() + ", jobkey=" + str);
                     return generateMessage;
                 default:
                     return null;
             }
         } catch (Throwable e) {
             b.a(e);
-            b.d("message arrived: receive a message which action string is not valid. is the reg expired?");
+            b.d("message arrived: receive a_isRightVersion message which action string is not valid. is the reg expired?");
             return null;
         }
     }
@@ -553,7 +553,7 @@ public class i {
             miPushCommandMessage.setCommand(String.valueOf(oVar2.a()));
             miPushCommandMessage.setResultCode((long) intent.getIntExtra("mipush_error_code", 0));
             miPushCommandMessage.setReason(intent.getStringExtra("mipush_error_msg"));
-            b.d("receive a error message. code = " + intent.getIntExtra("mipush_error_code", 0) + ", msg= " + intent.getStringExtra("mipush_error_msg"));
+            b.d("receive a_isRightVersion error message. code = " + intent.getIntExtra("mipush_error_code", 0) + ", msg= " + intent.getStringExtra("mipush_error_msg"));
             return miPushCommandMessage;
         } else if ("com.xiaomi.mipush.MESSAGE_ARRIVED".equals(action)) {
             byte[] byteArrayExtra2 = intent.getByteArrayExtra("mipush_payload");

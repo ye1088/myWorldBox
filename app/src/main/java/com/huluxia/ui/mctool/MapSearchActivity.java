@@ -273,7 +273,7 @@ public class MapSearchActivity extends HTBaseActivity implements OnClickListener
 
     protected void e(int start, int count, String key) {
         k.DC().b(start, count, key);
-        r.ck().K(r.a.io);
+        r.ck().K_umengEvent(r.a.io);
     }
 
     protected int AN() {

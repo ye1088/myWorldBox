@@ -5,7 +5,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 
 /* compiled from: MCGameCheckUtils */
 public class b {
-    public static boolean a(PackageManager pm, String uri, String version) {
+    public static boolean a_isRightVersion(PackageManager pm, String uri, String version) {
         try {
             return pm.getPackageInfo(uri, 1).versionName.equals(version);
         } catch (NameNotFoundException e) {
@@ -13,7 +13,7 @@ public class b {
         }
     }
 
-    public static boolean a(PackageManager pm, String uri) {
+    public static boolean isInstalled(PackageManager pm, String uri) {
         try {
             pm.getPackageInfo(uri, 1);
             return true;

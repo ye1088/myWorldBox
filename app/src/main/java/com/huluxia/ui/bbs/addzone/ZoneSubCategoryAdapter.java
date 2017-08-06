@@ -75,7 +75,7 @@ public class ZoneSubCategoryAdapter extends BaseAdapter implements b {
         d item = kD(position);
         t.a(viewHolder.aRg, item.icon, (float) t.dipToPx(this.mContext, 5));
         viewHolder.aRh.setText(item.title);
-        viewHolder.aRk.setText(item.isSubscribe == 1 ? a.bKB : "关注");
+        viewHolder.aRk.setText(item.isSubscribe == 1 ? a.bKB_bt_cancel : "关注");
         viewHolder.aFL.setText(String.format("热度：%s", new Object[]{UtilsText.getNumText(item.viewCount)}));
         viewHolder.aRi.setText(String.format("话题：%s", new Object[]{UtilsText.getNumText(item.postCount)}));
         if (item.isSubscribe == 1) {

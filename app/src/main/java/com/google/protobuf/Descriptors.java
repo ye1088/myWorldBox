@@ -385,7 +385,7 @@ public final class Descriptors {
             r9 = "The descriptor for message type \"";
             r8 = r8.append(r9);
             r8 = r8.append(r11);
-            r9 = "\" can not be found and a placeholder is created for it";
+            r9 = "\" can not be found and a_isRightVersion placeholder is created for it";
             r8 = r8.append(r9);
             r8 = r8.toString();
             r7.warning(r8);
@@ -491,7 +491,7 @@ public final class Descriptors {
             if (old != null) {
                 this.descriptorsByName.put(fullName, old);
                 if (!(old instanceof PackageDescriptor)) {
-                    throw new DescriptorValidationException(file, StringUtil.DOUBLE_QUOTE + name + "\" is already defined (as something other than a " + "package) in file \"" + old.getFile().getName() + "\".");
+                    throw new DescriptorValidationException(file, StringUtil.DOUBLE_QUOTE + name + "\" is already defined (as something other than a_isRightVersion " + "package) in file \"" + old.getFile().getName() + "\".");
                 }
             }
         }
@@ -531,7 +531,7 @@ public final class Descriptors {
                 i++;
             }
             if (!valid) {
-                throw new DescriptorValidationException(descriptor, StringUtil.DOUBLE_QUOTE + name + "\" is not a valid identifier.");
+                throw new DescriptorValidationException(descriptor, StringUtil.DOUBLE_QUOTE + name + "\" is not a_isRightVersion valid identifier.");
             }
         }
     }
@@ -825,7 +825,7 @@ public final class Descriptors {
 
         static {
             if (Type.values().length != com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Type.values().length) {
-                throw new RuntimeException("descriptor.proto has a new declared type but Desrciptors.java wasn't updated.");
+                throw new RuntimeException("descriptor.proto has a_isRightVersion new declared type but Desrciptors.java wasn't updated.");
             }
         }
 
@@ -956,7 +956,7 @@ public final class Descriptors {
                         throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + getContainingType().getFullName() + "\" does not declare " + getNumber() + " as an extension number.");
                     }
                 }
-                throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getExtendee() + "\" is not a message type.");
+                throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getExtendee() + "\" is not a_isRightVersion message type.");
             }
             if (this.proto.hasTypeName()) {
                 GenericDescriptor typeDescriptor = this.file.pool.lookupSymbol(this.proto.getTypeName(), this, SearchFilter.TYPES_ONLY);
@@ -966,7 +966,7 @@ public final class Descriptors {
                     } else if (typeDescriptor instanceof EnumDescriptor) {
                         this.type = Type.ENUM;
                     } else {
-                        throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getTypeName() + "\" is not a type.");
+                        throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getTypeName() + "\" is not a_isRightVersion type.");
                     }
                 }
                 if (getJavaType() == JavaType.MESSAGE) {
@@ -976,7 +976,7 @@ public final class Descriptors {
                             throw new DescriptorValidationException((GenericDescriptor) this, "Messages can't have default values.");
                         }
                     }
-                    throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getTypeName() + "\" is not a message type.");
+                    throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getTypeName() + "\" is not a_isRightVersion message type.");
                 } else if (getJavaType() != JavaType.ENUM) {
                     throw new DescriptorValidationException((GenericDescriptor) this, "Field with primitive type has type_name.");
                 } else if (typeDescriptor instanceof EnumDescriptor) {
@@ -1428,9 +1428,9 @@ public final class Descriptors {
                     this.outputType = (Descriptor) output;
                     return;
                 }
-                throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getOutputType() + "\" is not a message type.");
+                throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getOutputType() + "\" is not a_isRightVersion message type.");
             }
-            throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getInputType() + "\" is not a message type.");
+            throw new DescriptorValidationException((GenericDescriptor) this, StringUtil.DOUBLE_QUOTE + this.proto.getInputType() + "\" is not a_isRightVersion message type.");
         }
 
         private void setProto(MethodDescriptorProto proto) {

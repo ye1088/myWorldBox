@@ -66,7 +66,7 @@ public class c {
             this.b.put(b(str, str2), obj);
             return;
         }
-        throw new IllegalArgumentException("Provider must be a PacketExtensionProvider or a Class instance.");
+        throw new IllegalArgumentException("Provider must be a_isRightVersion PacketExtensionProvider or a_isRightVersion Class instance.");
     }
 
     protected void b() {

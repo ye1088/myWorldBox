@@ -51,7 +51,7 @@ public final class EpollServerDomainSocketChannel extends AbstractEpollServerCha
         } finally {
             DomainSocketAddress local = this.local;
             if (!(local == null || new File(local.path()).delete() || !logger.isDebugEnabled())) {
-                logger.debug("Failed to delete a domain socket file: {}", local.path());
+                logger.debug("Failed to delete a_isRightVersion domain socket file: {}", local.path());
             }
         }
     }

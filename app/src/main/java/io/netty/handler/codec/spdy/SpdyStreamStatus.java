@@ -17,7 +17,7 @@ public class SpdyStreamStatus implements Comparable<SpdyStreamStatus> {
 
     public static SpdyStreamStatus valueOf(int code) {
         if (code == 0) {
-            throw new IllegalArgumentException("0 is not a valid status code for a RST_STREAM");
+            throw new IllegalArgumentException("0 is not a_isRightVersion valid status code for a_isRightVersion RST_STREAM");
         }
         switch (code) {
             case 1:
@@ -49,7 +49,7 @@ public class SpdyStreamStatus implements Comparable<SpdyStreamStatus> {
 
     public SpdyStreamStatus(int code, String statusPhrase) {
         if (code == 0) {
-            throw new IllegalArgumentException("0 is not a valid status code for a RST_STREAM");
+            throw new IllegalArgumentException("0 is not a_isRightVersion valid status code for a_isRightVersion RST_STREAM");
         } else if (statusPhrase == null) {
             throw new NullPointerException("statusPhrase");
         } else {

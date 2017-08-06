@@ -207,7 +207,7 @@ public abstract class AbstractMemoryHttpData extends AbstractHttpData {
     }
 
     public File getFile() throws IOException {
-        throw new IOException("Not represented by a file");
+        throw new IOException("Not represented by a_isRightVersion file");
     }
 
     public HttpData touch() {

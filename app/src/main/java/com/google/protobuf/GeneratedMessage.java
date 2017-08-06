@@ -788,11 +788,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
 
             public boolean has(GeneratedMessage message) {
-                throw new UnsupportedOperationException("hasField() called on a repeated field.");
+                throw new UnsupportedOperationException("hasField() called on a_isRightVersion repeated field.");
             }
 
             public boolean has(Builder builder) {
-                throw new UnsupportedOperationException("hasField() called on a repeated field.");
+                throw new UnsupportedOperationException("hasField() called on a_isRightVersion repeated field.");
             }
 
             public int getRepeatedCount(GeneratedMessage message) {
@@ -808,11 +808,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
 
             public com.google.protobuf.Message.Builder newBuilder() {
-                throw new UnsupportedOperationException("newBuilderForField() called on a non-Message type.");
+                throw new UnsupportedOperationException("newBuilderForField() called on a_isRightVersion non-Message type.");
             }
 
             public com.google.protobuf.Message.Builder getBuilder(Builder builder) {
-                throw new UnsupportedOperationException("getFieldBuilder() called on a non-Message type.");
+                throw new UnsupportedOperationException("getFieldBuilder() called on a_isRightVersion non-Message type.");
             }
         }
 
@@ -957,19 +957,19 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
 
             public Object getRepeated(GeneratedMessage message, int index) {
-                throw new UnsupportedOperationException("getRepeatedField() called on a singular field.");
+                throw new UnsupportedOperationException("getRepeatedField() called on a_isRightVersion singular field.");
             }
 
             public Object getRepeated(Builder builder, int index) {
-                throw new UnsupportedOperationException("getRepeatedField() called on a singular field.");
+                throw new UnsupportedOperationException("getRepeatedField() called on a_isRightVersion singular field.");
             }
 
             public void setRepeated(Builder builder, int index, Object value) {
-                throw new UnsupportedOperationException("setRepeatedField() called on a singular field.");
+                throw new UnsupportedOperationException("setRepeatedField() called on a_isRightVersion singular field.");
             }
 
             public void addRepeated(Builder builder, Object value) {
-                throw new UnsupportedOperationException("addRepeatedField() called on a singular field.");
+                throw new UnsupportedOperationException("addRepeatedField() called on a_isRightVersion singular field.");
             }
 
             public boolean has(GeneratedMessage message) {
@@ -1005,11 +1005,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
 
             public int getRepeatedCount(GeneratedMessage message) {
-                throw new UnsupportedOperationException("getRepeatedFieldSize() called on a singular field.");
+                throw new UnsupportedOperationException("getRepeatedFieldSize() called on a_isRightVersion singular field.");
             }
 
             public int getRepeatedCount(Builder builder) {
-                throw new UnsupportedOperationException("getRepeatedFieldSize() called on a singular field.");
+                throw new UnsupportedOperationException("getRepeatedFieldSize() called on a_isRightVersion singular field.");
             }
 
             public void clear(Builder builder) {
@@ -1017,11 +1017,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
 
             public com.google.protobuf.Message.Builder newBuilder() {
-                throw new UnsupportedOperationException("newBuilderForField() called on a non-Message type.");
+                throw new UnsupportedOperationException("newBuilderForField() called on a_isRightVersion non-Message type.");
             }
 
             public com.google.protobuf.Message.Builder getBuilder(Builder builder) {
-                throw new UnsupportedOperationException("getFieldBuilder() called on a non-Message type.");
+                throw new UnsupportedOperationException("getFieldBuilder() called on a_isRightVersion non-Message type.");
             }
         }
 
@@ -1399,7 +1399,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
                 try {
                     return ((FileDescriptor) singularType.getClassLoader().loadClass(descriptorOuterClass).getField(NamingScheme.DESCRIPTOR).get(null)).findExtensionByName(extensionName);
                 } catch (Exception e) {
-                    throw new RuntimeException("Cannot load descriptors: " + descriptorOuterClass + " is not a valid descriptor class name", e);
+                    throw new RuntimeException("Cannot load descriptors: " + descriptorOuterClass + " is not a_isRightVersion valid descriptor class name", e);
                 }
             }
         }, singularType, defaultInstance, ExtensionType.MUTABLE);

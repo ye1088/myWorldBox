@@ -47,9 +47,9 @@ public class UnpooledUnsafeDirectByteBuf extends AbstractReferenceCountedByteBuf
         } else if (initialBuffer == null) {
             throw new NullPointerException("initialBuffer");
         } else if (!initialBuffer.isDirect()) {
-            throw new IllegalArgumentException("initialBuffer is not a direct buffer.");
+            throw new IllegalArgumentException("initialBuffer is not a_isRightVersion direct buffer.");
         } else if (initialBuffer.isReadOnly()) {
-            throw new IllegalArgumentException("initialBuffer is a read-only buffer.");
+            throw new IllegalArgumentException("initialBuffer is a_isRightVersion read-only buffer.");
         } else {
             int initialCapacity = initialBuffer.remaining();
             if (initialCapacity > maxCapacity) {

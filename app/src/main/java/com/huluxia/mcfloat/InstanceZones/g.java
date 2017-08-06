@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v4.internal.view.SupportMenu;
 import android.support.v4.view.InputDeviceCompat;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -148,7 +147,7 @@ public class g extends Dialog {
                         break;
                 }
                 j.m(this.XF.mContext).a(0, "葫芦侠我的世界", _Desc, "http://cdn.u1.huluxia.com/g1/M00/01/77/wKgBB1Z4yh2AAIDmAAAZ4_tYmNk647.jpg", Constants.bsz);
-                r.ck().K(hlx.data.tongji.a.bOk);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bOk);
             }
         });
     }

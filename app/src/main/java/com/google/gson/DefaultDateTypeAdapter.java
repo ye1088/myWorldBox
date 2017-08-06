@@ -59,7 +59,7 @@ final class DefaultDateTypeAdapter implements JsonDeserializer<Date>, JsonSerial
             }
             throw new IllegalArgumentException(getClass() + " cannot deserialize to " + typeOfT);
         }
-        throw new JsonParseException("The date should be a string value");
+        throw new JsonParseException("The date should be a_isRightVersion string value");
     }
 
     private Date deserializeToDate(JsonElement json) {

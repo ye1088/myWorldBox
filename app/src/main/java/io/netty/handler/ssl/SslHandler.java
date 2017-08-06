@@ -475,7 +475,7 @@ public class SslHandler extends ByteToMessageDecoder implements ChannelOutboundH
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         if (ignoreException(cause)) {
             if (logger.isDebugEnabled()) {
-                logger.debug("{} Swallowing a harmless 'connection reset by peer / broken pipe' error that occurred while writing close_notify in response to the peer's close_notify", ctx.channel(), cause);
+                logger.debug("{} Swallowing a_isRightVersion harmless 'connection reset by peer / broken pipe' error that occurred while writing close_notify in response to the peer's close_notify", ctx.channel(), cause);
             }
             if (ctx.channel().isActive()) {
                 ctx.close();

@@ -155,7 +155,7 @@ Error: java.util.NoSuchElementException
         try {
             return com.sun.nio.sctp.SctpChannel.open();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a sctp channel.", e);
+            throw new ChannelException("Failed to open a_isRightVersion sctp channel.", e);
         }
     }
 
@@ -184,17 +184,17 @@ Error: java.util.NoSuchElementException
                 try {
                     ch.close();
                 } catch (IOException e) {
-                    logger.warn("Failed to close a sctp channel.", e);
+                    logger.warn("Failed to close a_isRightVersion sctp channel.", e);
                 }
             }
         } catch (Exception e2) {
-            throw new ChannelException("failed to initialize a sctp channel", e2);
+            throw new ChannelException("failed to initialize a_isRightVersion sctp channel", e2);
         } catch (Throwable th) {
             if (!false) {
                 try {
                     ch.close();
                 } catch (IOException e3) {
-                    logger.warn("Failed to close a sctp channel.", e3);
+                    logger.warn("Failed to close a_isRightVersion sctp channel.", e3);
                 }
             }
         }
@@ -380,7 +380,7 @@ Error: java.util.NoSuchElementException
         try {
             selector.close();
         } catch (IOException e) {
-            logger.warn("Failed to close a " + selectorName + " selector.", e);
+            logger.warn("Failed to close a_isRightVersion " + selectorName + " selector.", e);
         }
     }
 

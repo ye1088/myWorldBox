@@ -213,7 +213,7 @@ public class g {
                 /*
                 r8 = this;
                 r1 = 0;
-                r0 = r8.a;	 Catch:{ Exception -> 0x00bf }
+                r0 = r8.a_isRightVersion;	 Catch:{ Exception -> 0x00bf }
                 r4 = r0.c();	 Catch:{ Exception -> 0x00bf }
                 if (r4 != 0) goto L_0x000a;
             L_0x0009:
@@ -236,7 +236,7 @@ public class g {
                 r2 = r2.append(r5);	 Catch:{ Exception -> 0x00bf }
                 r2 = r2.append(r3);	 Catch:{ Exception -> 0x00bf }
                 r2 = r2.toString();	 Catch:{ Exception -> 0x00bf }
-                com.tencent.open.a.f.b(r0, r2);	 Catch:{ Exception -> 0x00bf }
+                com.tencent.open.a_isRightVersion.f.b(r0, r2);	 Catch:{ Exception -> 0x00bf }
                 r0 = r1;
             L_0x0039:
                 r0 = r0 + 1;
@@ -268,24 +268,24 @@ public class g {
                 r6 = r6.append(r7);	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
                 r6 = r6.append(r2);	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
                 r6 = r6.toString();	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
-                com.tencent.open.a.f.b(r5, r6);	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
+                com.tencent.open.a_isRightVersion.f.b(r5, r6);	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
                 r5 = 200; // 0xc8 float:2.8E-43 double:9.9E-322;
                 if (r2 != r5) goto L_0x00a6;
             L_0x009b:
-                r2 = com.tencent.open.b.f.a();	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
+                r2 = com.tencent.open.b.f.a_isRightVersion();	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
                 r5 = "report_cgi";
                 r2.b(r5);	 Catch:{ ConnectTimeoutException -> 0x00ce, SocketTimeoutException -> 0x00db, Exception -> 0x00e6 }
                 r1 = 1;
             L_0x00a6:
                 if (r1 != 0) goto L_0x00b6;
             L_0x00a8:
-                r0 = com.tencent.open.b.f.a();	 Catch:{ Exception -> 0x00bf }
+                r0 = com.tencent.open.b.f.a_isRightVersion();	 Catch:{ Exception -> 0x00bf }
                 r1 = "report_cgi";
-                r2 = r8.a;	 Catch:{ Exception -> 0x00bf }
+                r2 = r8.a_isRightVersion;	 Catch:{ Exception -> 0x00bf }
                 r2 = r2.c;	 Catch:{ Exception -> 0x00bf }
-                r0.a(r1, r2);	 Catch:{ Exception -> 0x00bf }
+                r0.a_isRightVersion(r1, r2);	 Catch:{ Exception -> 0x00bf }
             L_0x00b6:
-                r0 = r8.a;	 Catch:{ Exception -> 0x00bf }
+                r0 = r8.a_isRightVersion;	 Catch:{ Exception -> 0x00bf }
                 r0 = r0.c;	 Catch:{ Exception -> 0x00bf }
                 r0.clear();	 Catch:{ Exception -> 0x00bf }
                 goto L_0x0009;
@@ -293,7 +293,7 @@ public class g {
                 r0 = move-exception;
                 r1 = "openSDK_LOG.ReportManager";
                 r2 = "-->doReportCgi, doupload exception out.";
-                com.tencent.open.a.f.b(r1, r2, r0);
+                com.tencent.open.a_isRightVersion.f.b(r1, r2, r0);
                 goto L_0x0009;
             L_0x00cb:
                 r3 = r0;
@@ -302,7 +302,7 @@ public class g {
                 r2 = move-exception;
                 r5 = "openSDK_LOG.ReportManager";
                 r6 = "-->doReportCgi, doupload exception";
-                com.tencent.open.a.f.b(r5, r6, r2);	 Catch:{ Exception -> 0x00bf }
+                com.tencent.open.a_isRightVersion.f.b(r5, r6, r2);	 Catch:{ Exception -> 0x00bf }
             L_0x00d8:
                 if (r0 < r3) goto L_0x0039;
             L_0x00da:
@@ -311,13 +311,13 @@ public class g {
                 r2 = move-exception;
                 r5 = "openSDK_LOG.ReportManager";
                 r6 = "-->doReportCgi, doupload exception";
-                com.tencent.open.a.f.b(r5, r6, r2);	 Catch:{ Exception -> 0x00bf }
+                com.tencent.open.a_isRightVersion.f.b(r5, r6, r2);	 Catch:{ Exception -> 0x00bf }
                 goto L_0x00d8;
             L_0x00e6:
                 r0 = move-exception;
                 r2 = "openSDK_LOG.ReportManager";
                 r3 = "-->doReportCgi, doupload exception";
-                com.tencent.open.a.f.b(r2, r3, r0);	 Catch:{ Exception -> 0x00bf }
+                com.tencent.open.a_isRightVersion.f.b(r2, r3, r0);	 Catch:{ Exception -> 0x00bf }
                 goto L_0x00a6;
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.tencent.open.b.g.4.run():void");
@@ -496,7 +496,7 @@ public class g {
                 /*
                 r18 = this;
                 r0 = r18;
-                r2 = r0.a;	 Catch:{ Exception -> 0x00ac }
+                r2 = r0.a_isRightVersion;	 Catch:{ Exception -> 0x00ac }
                 r14 = r2.d();	 Catch:{ Exception -> 0x00ac }
                 if (r14 != 0) goto L_0x000b;
             L_0x000a:
@@ -510,8 +510,8 @@ public class g {
                 r4 = r14.toString();	 Catch:{ Exception -> 0x00ac }
                 r3 = r3.append(r4);	 Catch:{ Exception -> 0x00ac }
                 r3 = r3.toString();	 Catch:{ Exception -> 0x00ac }
-                com.tencent.open.a.f.a(r2, r3);	 Catch:{ Exception -> 0x00ac }
-                r11 = com.tencent.open.b.e.a();	 Catch:{ Exception -> 0x00ac }
+                com.tencent.open.a_isRightVersion.f.a_isRightVersion(r2, r3);	 Catch:{ Exception -> 0x00ac }
+                r11 = com.tencent.open.b.e.a_isRightVersion();	 Catch:{ Exception -> 0x00ac }
                 r10 = 0;
                 r3 = 0;
                 r8 = android.os.SystemClock.elapsedRealtime();	 Catch:{ Exception -> 0x00ac }
@@ -551,19 +551,19 @@ public class g {
                 r4 = r16;
             L_0x006f:
                 r0 = r18;
-                r2 = r0.a;	 Catch:{ Exception -> 0x00ac }
+                r2 = r0.a_isRightVersion;	 Catch:{ Exception -> 0x00ac }
                 r3 = "mapp_apptrace_sdk";
                 r11 = 0;
                 r12 = 0;
-                r2.a(r3, r4, r6, r8, r10, r11, r12);	 Catch:{ Exception -> 0x00ac }
+                r2.a_isRightVersion(r3, r4, r6, r8, r10, r11, r12);	 Catch:{ Exception -> 0x00ac }
                 if (r13 == 0) goto L_0x0127;
             L_0x007d:
-                r2 = com.tencent.open.b.f.a();	 Catch:{ Exception -> 0x00ac }
+                r2 = com.tencent.open.b.f.a_isRightVersion();	 Catch:{ Exception -> 0x00ac }
                 r3 = "report_via";
                 r2.b(r3);	 Catch:{ Exception -> 0x00ac }
             L_0x0087:
                 r0 = r18;
-                r2 = r0.a;	 Catch:{ Exception -> 0x00ac }
+                r2 = r0.a_isRightVersion;	 Catch:{ Exception -> 0x00ac }
                 r2 = r2.d;	 Catch:{ Exception -> 0x00ac }
                 r2.clear();	 Catch:{ Exception -> 0x00ac }
                 r2 = "openSDK_LOG.ReportManager";
@@ -573,13 +573,13 @@ public class g {
                 r3 = r3.append(r4);	 Catch:{ Exception -> 0x00ac }
                 r3 = r3.append(r13);	 Catch:{ Exception -> 0x00ac }
                 r3 = r3.toString();	 Catch:{ Exception -> 0x00ac }
-                com.tencent.open.a.f.b(r2, r3);	 Catch:{ Exception -> 0x00ac }
+                com.tencent.open.a_isRightVersion.f.b(r2, r3);	 Catch:{ Exception -> 0x00ac }
                 goto L_0x000a;
             L_0x00ac:
                 r2 = move-exception;
                 r3 = "openSDK_LOG.ReportManager";
                 r4 = "-->doReportVia, exception in serial executor.";
-                com.tencent.open.a.f.b(r3, r4, r2);
+                com.tencent.open.a_isRightVersion.f.b(r3, r4, r2);
                 goto L_0x000a;
             L_0x00b8:
                 r12 = move-exception;
@@ -613,12 +613,12 @@ public class g {
             L_0x00dd:
                 r2 = move-exception;
                 r0 = r18;
-                r2 = r0.a;	 Catch:{ Exception -> 0x00ac }
+                r2 = r0.a_isRightVersion;	 Catch:{ Exception -> 0x00ac }
                 r2 = r2.d;	 Catch:{ Exception -> 0x00ac }
                 r2.clear();	 Catch:{ Exception -> 0x00ac }
                 r2 = "openSDK_LOG.ReportManager";
                 r3 = "doReportVia, NetworkUnavailableException.";
-                com.tencent.open.a.f.b(r2, r3);	 Catch:{ Exception -> 0x00ac }
+                com.tencent.open.a_isRightVersion.f.b(r2, r3);	 Catch:{ Exception -> 0x00ac }
                 goto L_0x000a;
             L_0x00f2:
                 r10 = move-exception;
@@ -652,12 +652,12 @@ public class g {
                 r10 = r11;
                 goto L_0x0066;
             L_0x0127:
-                r2 = com.tencent.open.b.f.a();	 Catch:{ Exception -> 0x00ac }
+                r2 = com.tencent.open.b.f.a_isRightVersion();	 Catch:{ Exception -> 0x00ac }
                 r3 = "report_via";
                 r0 = r18;
-                r4 = r0.a;	 Catch:{ Exception -> 0x00ac }
+                r4 = r0.a_isRightVersion;	 Catch:{ Exception -> 0x00ac }
                 r4 = r4.d;	 Catch:{ Exception -> 0x00ac }
-                r2.a(r3, r4);	 Catch:{ Exception -> 0x00ac }
+                r2.a_isRightVersion(r3, r4);	 Catch:{ Exception -> 0x00ac }
                 goto L_0x0087;
             L_0x0139:
                 r3 = move-exception;
@@ -694,11 +694,11 @@ public class g {
             L_0x0006:
                 r0 = "openSDK_LOG.ReportManager";
                 r1 = "-->httpRequest, params is null!";
-                com.tencent.open.a.f.e(r0, r1);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.e(r0, r1);	 Catch:{ Exception -> 0x00c4 }
             L_0x000f:
                 return;
             L_0x0010:
-                r1 = com.tencent.open.b.e.a();	 Catch:{ Exception -> 0x00c4 }
+                r1 = com.tencent.open.b.e.a_isRightVersion();	 Catch:{ Exception -> 0x00c4 }
                 if (r1 != 0) goto L_0x00d0;
             L_0x0016:
                 r1 = 3;
@@ -711,7 +711,7 @@ public class g {
                 r3 = r3.append(r5);	 Catch:{ Exception -> 0x00c4 }
                 r3 = r3.append(r4);	 Catch:{ Exception -> 0x00c4 }
                 r3 = r3.toString();	 Catch:{ Exception -> 0x00c4 }
-                com.tencent.open.a.f.b(r1, r3);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r1, r3);	 Catch:{ Exception -> 0x00c4 }
                 r1 = com.tencent.open.utils.Global.getContext();	 Catch:{ Exception -> 0x00c4 }
                 r3 = 0;
                 r5 = r3;	 Catch:{ Exception -> 0x00c4 }
@@ -758,25 +758,25 @@ public class g {
                 r8 = r8.append(r9);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
                 r8 = r8.append(r6);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
                 r8 = r8.toString();	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
-                com.tencent.open.a.f.b(r7, r8);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
+                com.tencent.open.a_isRightVersion.f.b(r7, r8);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
                 r7 = 200; // 0xc8 float:2.8E-43 double:9.9E-322;
                 if (r6 == r7) goto L_0x0103;
             L_0x00ae:
                 r6 = "openSDK_LOG.ReportManager";
                 r7 = "-->ReportCenter httpRequest : HttpStatuscode != 200";
-                com.tencent.open.a.f.b(r6, r7);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
+                com.tencent.open.a_isRightVersion.f.b(r6, r7);	 Catch:{ ConnectTimeoutException -> 0x010e, SocketTimeoutException -> 0x011b, Exception -> 0x0126 }
             L_0x00b7:
                 if (r0 != r2) goto L_0x0131;
             L_0x00b9:
                 r0 = "openSDK_LOG.ReportManager";
                 r1 = "-->ReportCenter httpRequest Thread request success";
-                com.tencent.open.a.f.b(r0, r1);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r0, r1);	 Catch:{ Exception -> 0x00c4 }
                 goto L_0x000f;
             L_0x00c4:
                 r0 = move-exception;
                 r0 = "openSDK_LOG.ReportManager";
                 r1 = "-->httpRequest, exception in serial executor.";
-                com.tencent.open.a.f.b(r0, r1);
+                com.tencent.open.a_isRightVersion.f.b(r0, r1);
                 goto L_0x000f;
             L_0x00d0:
                 r4 = r1;
@@ -800,12 +800,12 @@ public class g {
             L_0x00f8:
                 r0 = "openSDK_LOG.ReportManager";
                 r1 = "-->httpRequest unkonw request method return.";
-                com.tencent.open.a.f.e(r0, r1);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.e(r0, r1);	 Catch:{ Exception -> 0x00c4 }
                 goto L_0x000f;
             L_0x0103:
                 r0 = "openSDK_LOG.ReportManager";
                 r6 = "-->ReportCenter httpRequest Thread success";
-                com.tencent.open.a.f.b(r0, r6);	 Catch:{ ConnectTimeoutException -> 0x0142, SocketTimeoutException -> 0x013f, Exception -> 0x013c }
+                com.tencent.open.a_isRightVersion.f.b(r0, r6);	 Catch:{ ConnectTimeoutException -> 0x0142, SocketTimeoutException -> 0x013f, Exception -> 0x013c }
                 r0 = r2;
                 goto L_0x00b7;
             L_0x010e:
@@ -813,7 +813,7 @@ public class g {
             L_0x010f:
                 r6 = "openSDK_LOG.ReportManager";
                 r7 = "-->ReportCenter httpRequest ConnectTimeoutException";
-                com.tencent.open.a.f.b(r6, r7);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r6, r7);	 Catch:{ Exception -> 0x00c4 }
             L_0x0118:
                 if (r1 < r4) goto L_0x0082;
             L_0x011a:
@@ -823,19 +823,19 @@ public class g {
             L_0x011c:
                 r6 = "openSDK_LOG.ReportManager";
                 r7 = "-->ReportCenter httpRequest SocketTimeoutException";
-                com.tencent.open.a.f.b(r6, r7);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r6, r7);	 Catch:{ Exception -> 0x00c4 }
                 goto L_0x0118;
             L_0x0126:
                 r1 = move-exception;
             L_0x0127:
                 r1 = "openSDK_LOG.ReportManager";
                 r3 = "-->ReportCenter httpRequest Exception";
-                com.tencent.open.a.f.b(r1, r3);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r1, r3);	 Catch:{ Exception -> 0x00c4 }
                 goto L_0x00b7;
             L_0x0131:
                 r0 = "openSDK_LOG.ReportManager";
                 r1 = "-->ReportCenter httpRequest Thread request failed";
-                com.tencent.open.a.f.b(r0, r1);	 Catch:{ Exception -> 0x00c4 }
+                com.tencent.open.a_isRightVersion.f.b(r0, r1);	 Catch:{ Exception -> 0x00c4 }
                 goto L_0x000f;
             L_0x013c:
                 r0 = move-exception;

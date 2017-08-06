@@ -76,18 +76,18 @@ public class a extends com.huawei.android.pushagent.b.a {
                 e.b("PushLogAC2705", "received " + str + ", cur ConType:" + com.huawei.android.pushagent.b.a.a.c() + ", but have need depose size:" + b.size());
                 a(context, new Intent("com.huawei.action.CONNECT_PUSHSRV_PUSHSRV"));
             } else if ("com.huawei.action.CONNECT_PUSHSRV_PUSHSRV".equals(str)) {
-                e.a("PushLogAC2705", "get " + str + " so get a pushSrv to connect");
+                e.a("PushLogAC2705", "get " + str + " so get a_isRightVersion pushSrv to connect");
                 if (b.size() != 0) {
                     com.huawei.android.pushagent.b.a.a.a(context).a(com.huawei.android.pushagent.b.a.a.a.a);
                 }
                 com.huawei.android.pushagent.b.a.a.e().a(true);
             } else if ("com.huawei.action.CONNECT_PUSHSRV_POLLINGSRV".equals(str)) {
-                e.a("PushLogAC2705", "get " + str + " so get a pollingSrv to connect");
+                e.a("PushLogAC2705", "get " + str + " so get a_isRightVersion pollingSrv to connect");
                 com.huawei.android.pushagent.b.a.a.f().a(true);
             } else if (com.huawei.android.pushagent.b.a.a.a(context).d().a()) {
                 e.a("PushLogAC2705", "pushChannel already connect, so needn't handle, nextSendHearBeatTime:" + com.huawei.android.pushagent.c.a.a(com.huawei.android.pushagent.b.a.a.b(context).e(), "yyyy-MM-dd HH:mm:ss SSS"));
             } else {
-                e.a("PushLogAC2705", "get " + str + " so get a srv to connect");
+                e.a("PushLogAC2705", "get " + str + " so get a_isRightVersion srv to connect");
                 if (obj != null) {
                     com.huawei.android.pushagent.b.d.b.a(context).a(context, com.huawei.android.pushagent.b.d.b.b.d, new Bundle());
                 }

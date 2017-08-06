@@ -110,7 +110,7 @@ class g$a extends AbstractDataSource<T> {
         r2 = 1;
         goto L_0x0009;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.g$a.close():boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.g$a_isRightVersion.close():boolean");
     }
 
     private void a(int index, c<T> dataSource) {
@@ -171,7 +171,7 @@ class g$a extends AbstractDataSource<T> {
         monitor-exit(r4);	 Catch:{ all -> 0x002e }
         throw r3;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.g$a.a(int, com.huluxia.image.core.datasource.c, boolean):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.g$a_isRightVersion.a_isRightVersion(int, com.huluxia.image.core.datasource.c, boolean):void");
     }
 
     @Nullable

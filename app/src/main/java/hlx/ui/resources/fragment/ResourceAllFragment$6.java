@@ -28,7 +28,7 @@ class ResourceAllFragment$6 implements a {
                     this.cgj.cbD = 2;
                     hlx.module.resources.a cate = (hlx.module.resources.a) button.getTag();
                     ResourceAllFragment.a(this.cgj, cate.cateid);
-                    r.ck().K(hlx.data.tongji.a.bMv + ResourceAllFragment.k(this.cgj) + "_" + String.valueOf(cate.cateid));
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bMv + ResourceAllFragment.k(this.cgj) + "_" + String.valueOf(cate.cateid));
                     if (ResourceAllFragment.i(this.cgj) != 1) {
                         ResourceAllFragment.j(this.cgj).setVisibility(0);
                         break;

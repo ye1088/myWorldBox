@@ -94,7 +94,7 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
 
         private void verifyExtensionContainingType(GeneratedExtension<MessageType, ?> extension) {
             if (extension.getContainingTypeDefaultInstance() != getDefaultInstanceForType()) {
-                throw new IllegalArgumentException("This extension is for a different message type.  Please make sure that you are not suppressing any generics type warnings.");
+                throw new IllegalArgumentException("This extension is for a_isRightVersion different message type.  Please make sure that you are not suppressing any generics type warnings.");
             }
         }
 
@@ -212,7 +212,7 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
 
         private void verifyExtensionContainingType(GeneratedExtension<MessageType, ?> extension) {
             if (extension.getContainingTypeDefaultInstance() != getDefaultInstanceForType()) {
-                throw new IllegalArgumentException("This extension is for a different message type.  Please make sure that you are not suppressing any generics type warnings.");
+                throw new IllegalArgumentException("This extension is for a_isRightVersion different message type.  Please make sure that you are not suppressing any generics type warnings.");
             }
         }
 

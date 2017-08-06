@@ -100,7 +100,7 @@ public final class HostsFileParser {
             try {
                 buff.close();
             } catch (Throwable e) {
-                logger.warn("Failed to close a reader", e);
+                logger.warn("Failed to close a_isRightVersion reader", e);
             }
         }
     }

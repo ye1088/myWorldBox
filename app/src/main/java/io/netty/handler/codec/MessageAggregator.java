@@ -80,7 +80,7 @@ public abstract class MessageAggregator<I, S, C extends ByteBufHolder, O extends
         } else if (this.ctx == null) {
             this.maxCumulationBufferComponents = maxCumulationBufferComponents;
         } else {
-            throw new IllegalStateException("decoder properties cannot be changed once the decoder is added to a pipeline.");
+            throw new IllegalStateException("decoder properties cannot be changed once the decoder is added to a_isRightVersion pipeline.");
         }
     }
 
@@ -92,7 +92,7 @@ public abstract class MessageAggregator<I, S, C extends ByteBufHolder, O extends
         if (this.ctx != null) {
             return this.ctx;
         }
-        throw new IllegalStateException("not added to a pipeline yet");
+        throw new IllegalStateException("not added to a_isRightVersion pipeline yet");
     }
 
     protected void decode(ChannelHandlerContext ctx, I msg, List<Object> out) throws Exception {

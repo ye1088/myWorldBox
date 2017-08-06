@@ -55,12 +55,12 @@ class DownAdapter$a implements OnClickListener {
         boolean isMapExist = this.aTp.a(this.info);
         if (j.KH() == 740110001) {
             g dia = new g(DownAdapter.a(this.aTp), null);
-            dia.az(hlx.data.localstore.a.bKA, DownAdapter.a(this.aTp).getResources().getString(R.string.TipMCOldMap));
-            dia.u(null, null, hlx.data.localstore.a.bKC);
+            dia.az(hlx.data.localstore.a.bKA_TIPS, DownAdapter.a(this.aTp).getResources().getString(R.string.TipMCOldMap));
+            dia.u(null, null, hlx.data.localstore.a.bKC_bt_ok);
         } else if (isMapExist) {
             HLog.info(DownAdapter.TAG, "map exist in game info = " + this.info, new Object[0]);
             d.f(DownAdapter.a(this.aTp), this.info.version, 1);
-            r.ck().K(hlx.data.tongji.a.bMA);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bMA);
         } else {
             MapItem item = com.huluxia.data.map.f.a.convertMapItem(this.info);
             if (j.eT(j.eM(this.info.name)) && j.Z(this.info.name, this.info.md5)) {
@@ -107,9 +107,9 @@ class DownAdapter$a implements OnClickListener {
                 DownAdapter.bm(o.v(DownAdapter.a(this.aTp)));
             }
             if (DownAdapter.HB() < ((long) nNeedMemory)) {
-                a(DownAdapter.a(this.aTp), arg0, hlx.data.localstore.a.bKA, "您的机器内存太小,此地图可能会出现卡顿,是否要继续下载", hlx.data.localstore.a.bKB, "继续");
+                a(DownAdapter.a(this.aTp), arg0, hlx.data.localstore.a.bKA_TIPS, "您的机器内存太小,此地图可能会出现卡顿,是否要继续下载", hlx.data.localstore.a.bKB_bt_cancel, "继续");
             } else if (VERSION.SDK_INT < nNeedSysVersion) {
-                a(DownAdapter.a(this.aTp), arg0, hlx.data.localstore.a.bKA, "您的机器系统版本太低,此地图可能会出现卡顿,是否要继续下载", hlx.data.localstore.a.bKB, "继续");
+                a(DownAdapter.a(this.aTp), arg0, hlx.data.localstore.a.bKA_TIPS, "您的机器系统版本太低,此地图可能会出现卡顿,是否要继续下载", hlx.data.localstore.a.bKB_bt_cancel, "继续");
             } else {
                 k(arg0);
             }

@@ -115,7 +115,7 @@ public class OpenHelperManager {
                 throw new IllegalStateException("Could not construct instance of helper class " + openHelperClass, e);
             }
         } catch (Exception e2) {
-            throw new IllegalStateException("Could not find public constructor that has a single (Context) argument for helper class " + openHelperClass, e2);
+            throw new IllegalStateException("Could not find public constructor that has a_isRightVersion single (Context) argument for helper class " + openHelperClass, e2);
         }
     }
 

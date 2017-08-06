@@ -24,7 +24,7 @@ public final class DefaultSocks5CommandResponse extends AbstractSocks5Message im
             if (bndAddr != null) {
                 if (bndAddrType == Socks5AddressType.IPv4) {
                     if (!NetUtil.isValidIpV4Address(bndAddr)) {
-                        throw new IllegalArgumentException("bndAddr: " + bndAddr + " (expected: a valid IPv4 address)");
+                        throw new IllegalArgumentException("bndAddr: " + bndAddr + " (expected: a_isRightVersion valid IPv4 address)");
                     }
                 } else if (bndAddrType == Socks5AddressType.DOMAIN) {
                     bndAddr = IDN.toASCII(bndAddr);
@@ -32,7 +32,7 @@ public final class DefaultSocks5CommandResponse extends AbstractSocks5Message im
                         throw new IllegalArgumentException("bndAddr: " + bndAddr + " (expected: less than 256 chars)");
                     }
                 } else if (bndAddrType == Socks5AddressType.IPv6 && !NetUtil.isValidIpV6Address(bndAddr)) {
-                    throw new IllegalArgumentException("bndAddr: " + bndAddr + " (expected: a valid IPv6 address)");
+                    throw new IllegalArgumentException("bndAddr: " + bndAddr + " (expected: a_isRightVersion valid IPv6 address)");
                 }
             }
             if (bndPort < 0 || bndPort > 65535) {

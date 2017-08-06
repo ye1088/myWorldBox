@@ -87,7 +87,7 @@ public class b<DH extends com.huluxia.image.drawee.interfaces.b> implements c, t
     public void onDraw() {
         if (!this.DI) {
             if (!this.DL) {
-                HLog.warn(DraweeEventTracker.class, String.format("%x: Draw requested for a non-attached controller %x. %s", new Object[]{Integer.valueOf(System.identityHashCode(this)), Integer.valueOf(System.identityHashCode(this.DN)), toString()}), new Object[0]);
+                HLog.warn(DraweeEventTracker.class, String.format("%x: Draw requested for a_isRightVersion non-attached controller %x. %s", new Object[]{Integer.valueOf(System.identityHashCode(this)), Integer.valueOf(System.identityHashCode(this.DN)), toString()}), new Object[0]);
             }
             this.DL = false;
             this.DJ = true;

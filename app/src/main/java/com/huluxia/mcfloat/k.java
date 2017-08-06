@@ -166,7 +166,7 @@ public class k implements com.huluxia.mcfloat.p.a {
                         this.Tt.rC();
                         return;
                     case R.id.floatBtnItemTypeV121New:
-                        r.ck().K(com.huluxia.r.a.kR);
+                        r.ck().K_umengEvent(com.huluxia.r.a.kR);
                         this.Tt.v(aj.Mm());
                         return;
                     case R.id.floatBtnItemTypeV131RedStone:
@@ -185,7 +185,7 @@ public class k implements com.huluxia.mcfloat.p.a {
                         this.Tt.v(aj.Mf());
                         return;
                     case R.id.floatBtnItemTypeMedicine:
-                        r.ck().K(com.huluxia.r.a.kS);
+                        r.ck().K_umengEvent(com.huluxia.r.a.kS);
                         this.Tt.v(aj.Mn());
                         return;
                     case R.id.floatBtnItemTypeTree:
@@ -201,7 +201,7 @@ public class k implements com.huluxia.mcfloat.p.a {
                         this.Tt.v(aj.Mp());
                         return;
                     case R.id.floatBtnItemTypeSave:
-                        r.ck().K(com.huluxia.r.a.kQ);
+                        r.ck().K_umengEvent(com.huluxia.r.a.kQ);
                         this.Tt.v(b.qy().qz());
                         return;
                     case R.id.floatBtnItemTypeJs:

@@ -188,7 +188,7 @@ public class MapImportActivity extends HTBaseActivity implements OnClickListener
                 this.mFileName = item.name;
                 g dia = new g(this.aMn, new a());
                 dia.az(null, "确定解压 " + item.name + "吗");
-                dia.u(hlx.data.localstore.a.bKB, null, hlx.data.localstore.a.bKC);
+                dia.u(hlx.data.localstore.a.bKB_bt_cancel, null, hlx.data.localstore.a.bKC_bt_ok);
             }
         }
     }

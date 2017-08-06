@@ -37,8 +37,8 @@ public class a {
                 }
             } while (-1 == indexOf);
             readLine = readLine.substring(indexOf + "MemTotal:".length()).trim();
-            if (readLine != null && readLine.length() != 0 && readLine.contains("k")) {
-                i = Integer.parseInt(readLine.substring(0, readLine.indexOf("k")).trim()) / 1024;
+            if (readLine != null && readLine.length() != 0 && readLine.contains("k_dialog_class")) {
+                i = Integer.parseInt(readLine.substring(0, readLine.indexOf("k_dialog_class")).trim()) / 1024;
             }
             if (bufferedReader != null) {
                 try {

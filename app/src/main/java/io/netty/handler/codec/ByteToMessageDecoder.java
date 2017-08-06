@@ -304,7 +304,7 @@ public abstract class ByteToMessageDecoder extends ChannelInboundHandlerAdapter 
                             return;
                         }
                     } else if (oldInputLength == in.readableBytes()) {
-                        throw new DecoderException(StringUtil.simpleClassName(getClass()) + ".decode() did not read anything but decoded a message.");
+                        throw new DecoderException(StringUtil.simpleClassName(getClass()) + ".decode() did not read anything but decoded a_isRightVersion message.");
                     } else if (isSingleDecode()) {
                         return;
                     }

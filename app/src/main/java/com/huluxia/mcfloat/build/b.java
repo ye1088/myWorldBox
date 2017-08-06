@@ -31,7 +31,7 @@ public class b extends a {
             ah.KZ().Q(b.aaV, info.type);
             this.aaZ.aaX.b(info);
             this.aaZ.Qp.cm(this.aaZ.uk());
-            r.ck().K("float_build_addellipse");
+            r.ck().K_umengEvent("float_build_addellipse");
         }
     };
 

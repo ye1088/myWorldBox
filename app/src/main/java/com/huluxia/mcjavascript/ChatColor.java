@@ -13,7 +13,7 @@ public class ChatColor {
     public static final String DARK_RED = "§4";
     public static final String GOLD = "§6";
     public static final String GRAY = "§7";
-    public static final String GREEN = "§a";
+    public static final String GREEN = "§a_isRightVersion";
     public static final String LIGHT_PURPLE = "§d";
     public static final String RED = "§c";
     public static final String WHITE = "§f";

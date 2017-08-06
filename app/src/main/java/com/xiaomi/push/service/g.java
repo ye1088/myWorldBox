@@ -36,7 +36,7 @@ public class g {
                 String string6 = sharedPreferences.getString("package_name", null);
                 Object string7 = sharedPreferences.getString("device_id", null);
                 int i = sharedPreferences.getInt("env_type", 1);
-                if (!TextUtils.isEmpty(string7) && string7.startsWith("a-")) {
+                if (!TextUtils.isEmpty(string7) && string7.startsWith("a_isRightVersion-")) {
                     string7 = d.e(context);
                     sharedPreferences.edit().putString("device_id", string7).commit();
                 }

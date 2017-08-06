@@ -23,7 +23,7 @@ import com.huluxia.module.h;
 import com.huluxia.module.picture.b;
 import com.huluxia.ui.base.HTBaseActivity;
 import com.huluxia.utils.at;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
 import com.huluxia.widget.photowall.PhotoWall2;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -43,7 +43,7 @@ public class PictureCropActivity extends HTBaseActivity {
     public static final String ben = "EXTRA_CURRENT_IDX";
     private int aRo = h.arp;
     private int aRp = h.arp;
-    private k aRr;
+    private k_dialog_class aRr;
     private CropImageView beA;
     private CropImageView beB;
     private Set<Integer> beC = new HashSet();
@@ -223,7 +223,7 @@ public class PictureCropActivity extends HTBaseActivity {
             }
         });
         this.beo.dp(false);
-        this.aRr = new k(this);
+        this.aRr = new k_dialog_class(this);
         int minWidth = (int) (((double) at.getScreenWidth(this)) * 0.8d);
         this.bet = (CropImageView) findViewById(g.CropImageView0);
         this.bet.setAspectRatio(1, 1);
@@ -283,7 +283,7 @@ public class PictureCropActivity extends HTBaseActivity {
 
     private void EP() {
         this.aIs.setVisibility(8);
-        this.aIT.setText(hlx.data.localstore.a.bKC);
+        this.aIT.setText(hlx.data.localstore.a.bKC_bt_ok);
         this.aIT.setVisibility(0);
         if (UtilsFunction.empty(this.bep)) {
             this.aIT.setEnabled(false);

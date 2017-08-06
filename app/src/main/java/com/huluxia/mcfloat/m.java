@@ -273,9 +273,9 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
             }
             mVar.TY = z;
             if (this.Uh.TW == 0) {
-                r.ck().K(com.huluxia.r.a.lc);
+                r.ck().K_umengEvent(com.huluxia.r.a.lc);
             } else if (this.Uh.TW == 1) {
-                r.ck().K(com.huluxia.r.a.ld);
+                r.ck().K_umengEvent(com.huluxia.r.a.ld);
             }
             notifyDataSetChanged();
         }
@@ -289,9 +289,9 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
             this.Uh.dG(30);
             this.Uh.TR.setProgress(30);
             if (this.Uh.TW == 0) {
-                r.ck().K(com.huluxia.r.a.le);
+                r.ck().K_umengEvent(com.huluxia.r.a.le);
             } else if (this.Uh.TW == 1) {
-                r.ck().K(com.huluxia.r.a.lf);
+                r.ck().K_umengEvent(com.huluxia.r.a.lf);
             }
             notifyDataSetChanged();
         }
@@ -454,7 +454,7 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
         this.TW = 0;
         this.Uf.a(null);
         this.Rm.setAdapter(this.Uf);
-        r.ck().K(com.huluxia.r.a.kV);
+        r.ck().K_umengEvent(com.huluxia.r.a.kV);
     }
 
     private void rN() {
@@ -464,7 +464,7 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
         this.TW = 1;
         this.Uf.a(null);
         this.Rm.setAdapter(this.Uf);
-        r.ck().K(com.huluxia.r.a.kW);
+        r.ck().K_umengEvent(com.huluxia.r.a.kW);
     }
 
     private void rO() {
@@ -473,7 +473,7 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
         this.Pu.findViewById(R.id.floatLinearLayoutOption).setVisibility(0);
         this.TW = 2;
         this.Rm.setAdapter(this.Ug);
-        r.ck().K(com.huluxia.r.a.lg);
+        r.ck().K_umengEvent(com.huluxia.r.a.lg);
     }
 
     private void rP() {
@@ -495,11 +495,11 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
             }
         }
         if (this.TX) {
-            r.ck().K(com.huluxia.r.a.li);
+            r.ck().K_umengEvent(com.huluxia.r.a.li);
         } else if (this.TW == 0) {
-            r.ck().K(com.huluxia.r.a.kX);
+            r.ck().K_umengEvent(com.huluxia.r.a.kX);
         } else if (this.TW == 1) {
-            r.ck().K(com.huluxia.r.a.kY);
+            r.ck().K_umengEvent(com.huluxia.r.a.kY);
         }
         com.huluxia.k.p(this.Pu.getContext(), this.Pu.getResources().getString(R.string.cancel_potion_tips));
     }
@@ -540,11 +540,11 @@ public class m implements OnClickListener, com.huluxia.mcfloat.p.a {
         }
         if (tmpEatPotionFlag) {
             if (this.TX) {
-                r.ck().K(com.huluxia.r.a.lh);
+                r.ck().K_umengEvent(com.huluxia.r.a.lh);
             } else if (this.TW == 0) {
-                r.ck().K(com.huluxia.r.a.kZ);
+                r.ck().K_umengEvent(com.huluxia.r.a.kZ);
             } else if (this.TW == 1) {
-                r.ck().K(com.huluxia.r.a.la);
+                r.ck().K_umengEvent(com.huluxia.r.a.la);
             }
             com.huluxia.k.p(this.Pu.getContext(), this.Pu.getResources().getString(R.string.eat_over_potion_tips));
         }

@@ -30,7 +30,7 @@ class WoodDownAdapter$a implements OnClickListener {
         if (j.eT(j.eP(this.info.name)) && j.ac(this.info.name, this.info.md5)) {
             WoodDownAdapter.a(this.aXE, this.info.name, zipPath, this.info.createTime, 1, aq.gk(this.info.version));
             d.f(this.aXE.aTg, this.info.version, 4);
-            r.ck().K(hlx.data.tongji.a.bMC);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bMC);
             return;
         }
         int color;

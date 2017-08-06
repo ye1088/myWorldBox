@@ -13,7 +13,7 @@ public class ProtobufDecoderNano extends MessageToMessageDecoder<ByteBuf> {
     private final Class<? extends MessageNano> clazz;
 
     public ProtobufDecoderNano(Class<? extends MessageNano> clazz) {
-        this.clazz = (Class) ObjectUtil.checkNotNull(clazz, "You must provide a Class");
+        this.clazz = (Class) ObjectUtil.checkNotNull(clazz, "You must provide a_isRightVersion Class");
     }
 
     protected void decode(ChannelHandlerContext ctx, ByteBuf msg, List<Object> out) throws Exception {

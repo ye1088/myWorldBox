@@ -90,7 +90,7 @@ public class StudioMembersAdapter extends BaseAdapter implements b {
                             holder.aGb.setBackgroundDrawable(d.o(this.aFQ, R.attr.buttonDownload));
                             break;
                         }
-                        holder.aGb.setText(hlx.data.localstore.a.bKB);
+                        holder.aGb.setText(hlx.data.localstore.a.bKB_bt_cancel);
                         holder.aGb.setTextColor(d.getColor(this.aFQ, R.attr.textDelete));
                         holder.aGb.setBackgroundDrawable(d.o(this.aFQ, R.attr.buttonDelete));
                         break;

@@ -94,7 +94,7 @@ public class SkinDownAdapter extends DownAdapter {
         if (this.aTn) {
             notifyDataSetChanged();
         }
-        r.ck().K(hlx.data.tongji.a.bML);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bML);
         e.Dk().iS(1);
     }
 

@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -39,7 +38,7 @@ public class ServerListRecommendLayout extends LinearLayout {
         }
 
         public void onClick(View v) {
-            r.ck().K(this.bcv.bcu == 0 ? a.iJ : a.iK);
+            r.ck().K_umengEvent(this.bcv.bcu == 0 ? a.iJ : a.iK);
             ((ServerListActivity) this.bcv.context).kU(this.bcv.bcu == 0 ? 1 : 0);
         }
     };

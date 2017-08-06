@@ -89,7 +89,7 @@ public class DateTimeType extends BaseDataType {
             }
             return millisConstructor.newInstance(new Object[]{sqlArg});
         } catch (Exception e) {
-            throw SqlExceptionUtil.create("Could not use reflection to construct a Joda DateTime", e);
+            throw SqlExceptionUtil.create("Could not use reflection to construct a_isRightVersion Joda DateTime", e);
         }
     }
 

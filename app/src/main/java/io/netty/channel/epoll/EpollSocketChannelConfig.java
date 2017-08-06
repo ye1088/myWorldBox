@@ -291,7 +291,7 @@ public final class EpollSocketChannelConfig extends EpollChannelConfig implement
 
     public EpollSocketChannelConfig setTcpNotSentLowAt(long tcpNotSentLowAt) {
         if (tcpNotSentLowAt < 0 || tcpNotSentLowAt > 4294967295L) {
-            throw new IllegalArgumentException("tcpNotSentLowAt must be a uint32_t");
+            throw new IllegalArgumentException("tcpNotSentLowAt must be a_isRightVersion uint32_t");
         }
         try {
             Native.setTcpNotSentLowAt(this.channel.fd().intValue(), (int) tcpNotSentLowAt);

@@ -493,9 +493,9 @@ public final class ChannelOutboundBuffer {
         if (!(promise instanceof VoidChannelPromise) && !promise.trySuccess()) {
             Throwable err = promise.cause();
             if (err == null) {
-                logger.warn("Failed to mark a promise as success because it has succeeded already: {}", promise);
+                logger.warn("Failed to mark a_isRightVersion promise as success because it has succeeded already: {}", promise);
             } else {
-                logger.warn("Failed to mark a promise as success because it has failed already: {}, unnotified cause {}", promise, ThrowableUtil.stackTraceToString(err));
+                logger.warn("Failed to mark a_isRightVersion promise as success because it has failed already: {}, unnotified cause {}", promise, ThrowableUtil.stackTraceToString(err));
             }
         }
     }
@@ -503,10 +503,10 @@ public final class ChannelOutboundBuffer {
     private static void safeFail(ChannelPromise promise, Throwable cause) {
         if (!(promise instanceof VoidChannelPromise) && !promise.tryFailure(cause)) {
             if (promise.cause() == null) {
-                logger.warn("Failed to mark a promise as failure because it has succeeded already: {}", promise, cause);
+                logger.warn("Failed to mark a_isRightVersion promise as failure because it has succeeded already: {}", promise, cause);
                 return;
             }
-            logger.warn("Failed to mark a promise as failure because it has failed already: {}, unnotified cause {}", new Object[]{promise, ThrowableUtil.stackTraceToString(promise.cause()), cause});
+            logger.warn("Failed to mark a_isRightVersion promise as failure because it has failed already: {}, unnotified cause {}", new Object[]{promise, ThrowableUtil.stackTraceToString(promise.cause()), cause});
         }
     }
 

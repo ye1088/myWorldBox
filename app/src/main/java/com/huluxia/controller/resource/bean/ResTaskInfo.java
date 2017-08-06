@@ -14,10 +14,10 @@ public class ResTaskInfo extends b implements Comparable {
     public float mO;
     public ProgressInfo mP;
     public String mR;
-    public String mS;
+    public String mS_appTitle;
     public String mT;
     public boolean mU = true;
-    public String mV;
+    public String mV_fileName;
     public String mW;
     public a mZ;
     public boolean na = false;
@@ -47,7 +47,7 @@ public class ResTaskInfo extends b implements Comparable {
     }
 
     public String toString() {
-        return "ResTaskInfo{resourceType=" + this.mM + ", dir='" + this.dir + '\'' + ", filename='" + this.filename + '\'' + ", state=" + this.state + ", record=" + this.mN + ", donwloadRate=" + this.mO + ", unzipProgress=" + this.mP + ", unzipApk='" + this.mR + '\'' + ", notificationText='" + this.mS + '\'' + ", notificationIcon=" + this.mK + ", notificationIntentClass='" + this.mT + '\'' + ", renameFile=" + this.mU + ", finalFileName='" + this.mV + '\'' + ", encodeType=" + this.encodeType + ", cookie='" + this.mW + '\'' + ", dataDownUrl='" + this.dataDownUrl + '\'' + ", table=" + this.mZ + '}';
+        return "ResTaskInfo{resourceType=" + this.mM + ", dir='" + this.dir + '\'' + ", filename='" + this.filename + '\'' + ", state=" + this.state + ", record=" + this.mN + ", donwloadRate=" + this.mO + ", unzipProgress=" + this.mP + ", unzipApk='" + this.mR + '\'' + ", notificationText='" + this.mS_appTitle + '\'' + ", notificationIcon=" + this.mK + ", notificationIntentClass='" + this.mT + '\'' + ", renameFile=" + this.mU + ", finalFileName='" + this.mV_fileName + '\'' + ", encodeType=" + this.encodeType + ", cookie='" + this.mW + '\'' + ", dataDownUrl='" + this.dataDownUrl + '\'' + ", table=" + this.mZ + '}';
     }
 
     public int compareTo(Object another) {

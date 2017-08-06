@@ -281,7 +281,7 @@ public class CombinedChannelDuplexHandler<I extends ChannelInboundHandler, O ext
 
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
         if (this.inboundHandler == null) {
-            throw new IllegalStateException("init() must be invoked before being added to a " + ChannelPipeline.class.getSimpleName() + " if " + CombinedChannelDuplexHandler.class.getSimpleName() + " was constructed with the default constructor.");
+            throw new IllegalStateException("init() must be invoked before being added to a_isRightVersion " + ChannelPipeline.class.getSimpleName() + " if " + CombinedChannelDuplexHandler.class.getSimpleName() + " was constructed with the default constructor.");
         }
         this.outboundCtx = new DelegatingChannelHandlerContext(ctx, this.outboundHandler);
         this.inboundCtx = new DelegatingChannelHandlerContext(ctx, this.inboundHandler) {
@@ -293,9 +293,9 @@ public class CombinedChannelDuplexHandler<I extends ChannelInboundHandler, O ext
                         CombinedChannelDuplexHandler.this.outboundHandler.exceptionCaught(CombinedChannelDuplexHandler.this.outboundCtx, cause);
                     } catch (Throwable error) {
                         if (CombinedChannelDuplexHandler.logger.isDebugEnabled()) {
-                            CombinedChannelDuplexHandler.logger.debug("An exception {}was thrown by a user handler's exceptionCaught() method while handling the following exception:", ThrowableUtil.stackTraceToString(error), cause);
+                            CombinedChannelDuplexHandler.logger.debug("An exception {}was thrown by a_isRightVersion user handler's exceptionCaught() method while handling the following exception:", ThrowableUtil.stackTraceToString(error), cause);
                         } else if (CombinedChannelDuplexHandler.logger.isWarnEnabled()) {
-                            CombinedChannelDuplexHandler.logger.warn("An exception '{}' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:", error, cause);
+                            CombinedChannelDuplexHandler.logger.warn("An exception '{}' [enable DEBUG level for full stacktrace] was thrown by a_isRightVersion user handler's exceptionCaught() method while handling the following exception:", error, cause);
                         }
                     }
                 }

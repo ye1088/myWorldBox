@@ -140,7 +140,7 @@ class f$a extends AbstractDataSource<T> {
         monitor-exit(r2);	 Catch:{ all -> 0x001b }
         throw r1;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.f$a.a(com.huluxia.image.core.datasource.c, boolean):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.datasource.f$a_isRightVersion.a_isRightVersion(com.huluxia.image.core.datasource.c, boolean):void");
     }
 
     private void c(c<T> dataSource) {

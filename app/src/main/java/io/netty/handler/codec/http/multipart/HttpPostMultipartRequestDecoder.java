@@ -449,7 +449,7 @@ public class HttpPostMultipartRequestDecoder implements InterfaceHttpPostRequest
                     this.currentStatus = MultiPartStatus.MIXEDDELIMITER;
                     return decodeMultipart(MultiPartStatus.MIXEDDELIMITER);
                 } else {
-                    throw new ErrorDataDecoderException("Mixed Multipart found in a previous Mixed Multipart");
+                    throw new ErrorDataDecoderException("Mixed Multipart found in a_isRightVersion previous Mixed Multipart");
                 }
             } catch (NotEnoughDataDecoderException e3) {
                 this.undecodedChunk.readerIndex(readerIndex);

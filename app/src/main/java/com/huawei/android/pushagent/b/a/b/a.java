@@ -34,15 +34,15 @@ public class a implements b {
             /*
             r4 = this;
             r0 = -1;
-            r1 = r4.a;
+            r1 = r4.a_isRightVersion;
             monitor-enter(r1);
-            r2 = r4.a;	 Catch:{ all -> 0x0035 }
+            r2 = r4.a_isRightVersion;	 Catch:{ all -> 0x0035 }
             r2 = r2.e;	 Catch:{ all -> 0x0035 }
             if (r2 != 0) goto L_0x0017;
         L_0x000c:
             r2 = "PushLogAC2705";
             r3 = "secure socket is not initialized, can not read any data";
-            com.huawei.android.pushagent.c.a.e.c(r2, r3);	 Catch:{ all -> 0x0035 }
+            com.huawei.android.pushagent.c.a_isRightVersion.e.c(r2, r3);	 Catch:{ all -> 0x0035 }
             monitor-exit(r1);	 Catch:{ all -> 0x0035 }
         L_0x0016:
             return r0;
@@ -74,7 +74,7 @@ public class a implements b {
         L_0x0038:
             r1 = "PushLogAC2705";
             r2 = "bufferByte has read end , need read bytes from socket";
-            com.huawei.android.pushagent.c.a.e.a(r1, r2);
+            com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);
         L_0x0041:
             r1 = 0;
             r4.c = r1;
@@ -89,16 +89,16 @@ public class a implements b {
         L_0x0053:
             r1 = "PushLogAC2705";
             r2 = "read -1 from inputstream";
-            com.huawei.android.pushagent.c.a.e.c(r1, r2);
+            com.huawei.android.pushagent.c.a_isRightVersion.e.c(r1, r2);
             goto L_0x0016;
         L_0x005d:
             r2 = 48;
             if (r2 != r1) goto L_0x0091;
         L_0x0061:
             r1 = r4.b;
-            r1 = com.huawei.android.pushagent.b.a.b.a.c(r1);
-            r2 = com.huawei.android.pushagent.b.a.b.a.c;
-            r1 = com.huawei.android.pushagent.c.a.a.f.b(r1, r2);
+            r1 = com.huawei.android.pushagent.b.a_isRightVersion.b.a_isRightVersion.c(r1);
+            r2 = com.huawei.android.pushagent.b.a_isRightVersion.b.a_isRightVersion.c;
+            r1 = com.huawei.android.pushagent.c.a_isRightVersion.a_isRightVersion.f.b(r1, r2);
             r4.c = r1;
             r1 = r4.c;
             if (r1 == 0) goto L_0x007a;
@@ -109,7 +109,7 @@ public class a implements b {
         L_0x007a:
             r1 = "PushLogAC2705";
             r2 = "ase decrypt serverkey error";
-            com.huawei.android.pushagent.c.a.e.c(r1, r2);
+            com.huawei.android.pushagent.c.a_isRightVersion.e.c(r1, r2);
             goto L_0x0016;
         L_0x0084:
             r0 = r4.c;
@@ -122,15 +122,15 @@ public class a implements b {
         L_0x0091:
             r1 = "PushLogAC2705";
             r2 = "read secure message error, return -1";
-            com.huawei.android.pushagent.c.a.e.c(r1, r2);
+            com.huawei.android.pushagent.c.a_isRightVersion.e.c(r1, r2);
             goto L_0x0016;
         L_0x009c:
             r1 = "PushLogAC2705";
             r2 = "secureInputStream is null, return -1";
-            com.huawei.android.pushagent.c.a.e.c(r1, r2);
+            com.huawei.android.pushagent.c.a_isRightVersion.e.c(r1, r2);
             goto L_0x0016;
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushagent.b.a.b.a.a.read():int");
+            throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushagent.b.a_isRightVersion.b.a_isRightVersion.a_isRightVersion.read():int");
         }
     }
 

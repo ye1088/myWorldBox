@@ -354,12 +354,12 @@ public class DefaultRequestDirector implements RequestDirector {
         if (r2 == 0) goto L_0x002c;
     L_0x0023:
         r5 = new org.apache.http.client.NonRepeatableRequestException;
-        r6 = "Cannot retry request with a non-repeatable request entity.  The cause lists the reason the original request failed.";
+        r6 = "Cannot retry request with a_isRightVersion non-repeatable request entity.  The cause lists the reason the original request failed.";
         r5.<init>(r6, r2);
         throw r5;
     L_0x002c:
         r5 = new org.apache.http.client.NonRepeatableRequestException;
-        r6 = "Cannot retry request with a non-repeatable request entity.";
+        r6 = "Cannot retry request with a_isRightVersion non-repeatable request entity.";
         r5.<init>(r6);
         throw r5;
     L_0x0035:
@@ -651,7 +651,7 @@ public class DefaultRequestDirector implements RequestDirector {
             redirect.setHeaders(request.getOriginal().getAllHeaders());
             URI uri = redirect.getURI();
             if (uri.getHost() == null) {
-                throw new ProtocolException("Redirect URI does not specify a valid host name: " + uri);
+                throw new ProtocolException("Redirect URI does not specify a_isRightVersion valid host name: " + uri);
             }
             HttpHost newTarget = new HttpHost(uri.getHost(), uri.getPort(), uri.getScheme());
             this.targetAuthState.setAuthScope(null);

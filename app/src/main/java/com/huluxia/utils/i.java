@@ -99,16 +99,16 @@ public class i implements com.huluxia.i {
             ResourceCtrl.getInstance().addTask(a(item, resType, fileType, unzipDir));
             if (type == DownFileType.defaultType.Value()) {
                 k.DC().aF(item.id);
-                r.ck().K(hlx.data.tongji.a.bME);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bME);
             } else if (type == DownFileType.Js.Value()) {
                 com.huluxia.module.i.DB().ja((int) item.id);
-                r.ck().K(hlx.data.tongji.a.bMF);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bMF);
             } else if (type == DownFileType.Skin.Value()) {
                 x.DN().aM(item.id);
-                r.ck().K(hlx.data.tongji.a.bMH);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bMH);
             } else if (type == DownFileType.Wood.Value()) {
                 ac.DT().aO(item.id);
-                r.ck().K(hlx.data.tongji.a.bMG);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bMG);
             }
         } else if (info.state == State.DOWNLOAD_PROGRESS.ordinal()) {
             ResourceCtrl.getInstance().pauseTask(info);

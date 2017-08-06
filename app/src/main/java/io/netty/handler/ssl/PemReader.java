@@ -82,7 +82,7 @@ final class PemReader {
                 base64.release();
                 return der;
             }
-            throw new KeyException("could not find a PKCS #8 private key in input stream (see http://netty.io/wiki/sslcontextbuilder-and-private-key.html for more information)");
+            throw new KeyException("could not find a_isRightVersion PKCS #8 private key in input stream (see http://netty.io/wiki/sslcontextbuilder-and-private-key.html for more information)");
         } catch (IOException e) {
             throw new KeyException("failed to read key input stream", e);
         }
@@ -110,7 +110,7 @@ final class PemReader {
         try {
             in.close();
         } catch (Throwable e) {
-            logger.warn("Failed to close a stream.", e);
+            logger.warn("Failed to close a_isRightVersion stream.", e);
         }
     }
 
@@ -118,7 +118,7 @@ final class PemReader {
         try {
             out.close();
         } catch (Throwable e) {
-            logger.warn("Failed to close a stream.", e);
+            logger.warn("Failed to close a_isRightVersion stream.", e);
         }
     }
 

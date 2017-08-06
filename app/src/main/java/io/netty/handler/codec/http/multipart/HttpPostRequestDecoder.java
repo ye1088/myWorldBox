@@ -115,7 +115,7 @@ public class HttpPostRequestDecoder implements InterfaceHttpPostRequestDecoder {
         }
         String boundary = StringUtil.substringAfter(headerContentType[mrank], '=');
         if (boundary == null) {
-            throw new ErrorDataDecoderException("Needs a boundary value");
+            throw new ErrorDataDecoderException("Needs a_isRightVersion boundary value");
         }
         if (boundary.charAt(0) == StringUtil.DOUBLE_QUOTE) {
             String bound = boundary.trim();

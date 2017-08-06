@@ -453,7 +453,7 @@ public class QueryBuilder<T, ID> extends StatementBuilder<T, ID> {
                 return;
             }
         }
-        throw new SQLException("Could not find a foreign " + this.tableInfo.getDataClass() + " field in " + joinedQueryBuilder.tableInfo.getDataClass() + " or vice versa");
+        throw new SQLException("Could not find a_isRightVersion foreign " + this.tableInfo.getDataClass() + " field in " + joinedQueryBuilder.tableInfo.getDataClass() + " or vice versa");
     }
 
     private void addSelectColumnToList(String columnName) {

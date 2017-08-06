@@ -34,11 +34,11 @@ public class LengthFieldBasedFrameDecoder extends ByteToMessageDecoder {
         if (byteOrder == null) {
             throw new NullPointerException("byteOrder");
         } else if (maxFrameLength <= 0) {
-            throw new IllegalArgumentException("maxFrameLength must be a positive integer: " + maxFrameLength);
+            throw new IllegalArgumentException("maxFrameLength must be a_isRightVersion positive integer: " + maxFrameLength);
         } else if (lengthFieldOffset < 0) {
-            throw new IllegalArgumentException("lengthFieldOffset must be a non-negative integer: " + lengthFieldOffset);
+            throw new IllegalArgumentException("lengthFieldOffset must be a_isRightVersion non-negative integer: " + lengthFieldOffset);
         } else if (initialBytesToStrip < 0) {
-            throw new IllegalArgumentException("initialBytesToStrip must be a non-negative integer: " + initialBytesToStrip);
+            throw new IllegalArgumentException("initialBytesToStrip must be a_isRightVersion non-negative integer: " + initialBytesToStrip);
         } else if (lengthFieldOffset > maxFrameLength - lengthFieldLength) {
             throw new IllegalArgumentException("maxFrameLength (" + maxFrameLength + ") " + "must be equal to or greater than " + "lengthFieldOffset (" + lengthFieldOffset + ") + " + "lengthFieldLength (" + lengthFieldLength + ").");
         } else {

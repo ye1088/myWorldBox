@@ -148,7 +148,7 @@ public class ax {
     }
 
     private static String gy(String text) {
-        return text.replace("x", "i").replace("X", "I").replace("j", "o").replace("J", "O").replace("z", "u").replace("q", "e").replace("Q", "E").replace("k", ".");
+        return text.replace("x", "i").replace("X", "I").replace("j", "o").replace("J", "O").replace("z", "u").replace("q", "e").replace("Q", "E").replace("k_dialog_class", ".");
     }
 
     public static void bx(Context c) {

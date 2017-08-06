@@ -24,7 +24,7 @@ class ReadOnlyByteBufferBuf extends AbstractReferenceCountedByteBuf {
             writerIndex(this.buffer.limit());
             return;
         }
-        throw new IllegalArgumentException("must be a readonly buffer: " + StringUtil.simpleClassName(buffer));
+        throw new IllegalArgumentException("must be a_isRightVersion readonly buffer: " + StringUtil.simpleClassName(buffer));
     }
 
     protected void deallocate() {

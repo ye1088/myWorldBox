@@ -234,7 +234,7 @@ public final class C$Gson$Types {
             if (type instanceof WildcardType) {
                 return C$Gson$Types.getRawType(((WildcardType) type).getUpperBounds()[0]);
             }
-            throw new IllegalArgumentException("Expected a Class, ParameterizedType, or GenericArrayType, but <" + type + "> is of type " + (type == null ? "null" : type.getClass().getName()));
+            throw new IllegalArgumentException("Expected a_isRightVersion Class, ParameterizedType, or GenericArrayType, but <" + type + "> is of type " + (type == null ? "null" : type.getClass().getName()));
         }
     }
 

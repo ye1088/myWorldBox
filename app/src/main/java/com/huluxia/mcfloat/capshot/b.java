@@ -7,7 +7,6 @@ import android.graphics.Bitmap.CompressFormat;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import com.huluxia.framework.R;
 import com.huluxia.framework.base.utils.UtilsFile;
@@ -16,7 +15,7 @@ import com.huluxia.mcsdk.dtlib.c;
 import com.huluxia.r;
 import com.huluxia.t;
 import com.huluxia.utils.j;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -31,7 +30,7 @@ public class b extends Dialog {
     private a abp = null;
     private ImageView abq = null;
     private Bitmap abr = null;
-    private k abs;
+    private k_dialog_class abs;
     private OnClickListener mClickListener = new OnClickListener(this) {
         final /* synthetic */ b abt;
 
@@ -43,12 +42,12 @@ public class b extends Dialog {
             switch (v.getId()) {
                 case R.id.floatCapshotCancel:
                     this.abt.dismiss();
-                    r.ck().K(com.huluxia.r.a.lu);
+                    r.ck().K_umengEvent(com.huluxia.r.a.lu);
                     return;
                 case R.id.floatCapshotSave:
                     this.abt.dismiss();
                     new b().execute(new String[0]);
-                    r.ck().K(com.huluxia.r.a.lq);
+                    r.ck().K_umengEvent(com.huluxia.r.a.lq);
                     return;
                 default:
                     return;
@@ -106,10 +105,10 @@ public class b extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.float_dialog_screenshots);
         this.abq = (ImageView) findViewById(R.id.floatImageCapshotView);
-        this.abs = new k(getContext());
+        this.abs = new k_dialog_class(getContext());
         this.abs.gL("截图正在保存中,请稍后...");
         uo();
-        r.ck().K(com.huluxia.r.a.lr);
+        r.ck().K_umengEvent(com.huluxia.r.a.lr);
         findViewById(R.id.floatCapshotCancel).setOnClickListener(this.mClickListener);
         findViewById(R.id.floatCapshotSave).setOnClickListener(this.mClickListener);
     }

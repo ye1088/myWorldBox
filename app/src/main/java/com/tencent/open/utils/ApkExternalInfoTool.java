@@ -114,7 +114,7 @@ public final class ApkExternalInfoTool {
         }
         i = 0;
         if (i == 0) {
-            throw new ZipException("archive is not a ZIP archive");
+            throw new ZipException("archive is not a_isRightVersion ZIP archive");
         }
         randomAccessFile.seek((16 + length) + 4);
         byte[] bArr = new byte[2];

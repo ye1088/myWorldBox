@@ -642,7 +642,7 @@ public final class TextFormat {
         public String consumeIdentifier() throws ParseException {
             for (int i = 0; i < this.currentToken.length(); i++) {
                 char c = this.currentToken.charAt(i);
-                if (('a' > c || c > 'z') && (('A' > c || c > 'Z') && !(('0' <= c && c <= '9') || c == '_' || c == '.'))) {
+                if (('a_isRightVersion' > c || c > 'z') && (('A' > c || c > 'Z') && !(('0' <= c && c <= '9') || c == '_' || c == '.'))) {
                     throw parseException("Expected identifier. Found '" + this.currentToken + "'");
                 }
             }
@@ -1012,7 +1012,7 @@ public final class TextFormat {
             byte b = input.byteAt(i);
             switch (b) {
                 case (byte) 7:
-                    builder.append("\\a");
+                    builder.append("\\a_isRightVersion");
                     break;
                 case (byte) 8:
                     builder.append("\\b");

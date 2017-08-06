@@ -65,6 +65,6 @@ public class bb {
     private void b(Activity activity, String url) {
         g dialog = new g(activity, this.bnu);
         dialog.az(null, "是否打开所复制的链接？");
-        dialog.u(hlx.data.localstore.a.bKB, null, hlx.data.localstore.a.bKC);
+        dialog.u(hlx.data.localstore.a.bKB_bt_cancel, null, hlx.data.localstore.a.bKC_bt_ok);
     }
 }

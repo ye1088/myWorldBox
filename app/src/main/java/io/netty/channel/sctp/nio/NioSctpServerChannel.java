@@ -38,7 +38,7 @@ public class NioSctpServerChannel extends AbstractNioMessageChannel implements S
         try {
             return com.sun.nio.sctp.SctpServerChannel.open();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a server socket.", e);
+            throw new ChannelException("Failed to open a_isRightVersion server socket.", e);
         }
     }
 

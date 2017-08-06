@@ -48,7 +48,7 @@ public class r {
     private static final String gV = "http://stat.huluxia.com/downstat/down/complete";
     private static final String gW = "http://stat.huluxia.com/downstat/install/begin";
     private static final String gX = "http://stat.huluxia.com/downstat/install/complete";
-    private static String gY = "mctool";
+    private static String gY_mctool_string = "mctool";
     private static String gZ = null;
     private static r gu = null;
     public static final int gv = 1;
@@ -281,7 +281,7 @@ public class r {
         public static String lt = "float_screenshot_quick";
         public static String lu = "float_screenshot_unsave";
         public static String lv = "main_publish_map";
-        public static String lw = "homebanner_download_apk_start";
+        public static String lw_homebanner_download_apk_start_string = "homebanner_download_apk_start";
         public static String lx = "homebanner_download_apk_finish";
         public static String ly = "homebanner_install_apk_start";
         public static String lz = "homebanner_install_apk_finish";
@@ -289,7 +289,8 @@ public class r {
 
     static {
         StringBuilder sb = new StringBuilder();
-        sb.append(o.getDeviceId()).append("@").append(HTApplication.bJ()).append("@").append(gY).append("@ver").append(o.fetchVersionName());
+        sb.append(o.getDeviceId()).append("@").append(HTApplication.bJ_mctool_huluxia_string()).
+                append("@").append(gY_mctool_string).append("@ver").append(o.fetchVersionName());
         gZ = sb.toString();
     }
 
@@ -319,7 +320,7 @@ public class r {
         MobclickAgent.updateOnlineConfig(this.mContext);
         MobclickAgent.openActivityDurationTrack(false);
         MobclickAgent.onResume(this.mContext);
-        channel = HTApplication.bJ();
+        channel = HTApplication.bJ_mctool_huluxia_string();
         if (ah.KZ().LB() != null) {
             channel = ah.KZ().LB();
         }
@@ -646,7 +647,7 @@ public class r {
         MobclickAgent.onEvent(this.mContext, "file-verify-fail");
     }
 
-    public void K(String eventName) {
+    public void K_umengEvent(String eventName) {
         MobclickAgent.onEvent(this.mContext, eventName);
     }
 
@@ -1004,8 +1005,8 @@ public class r {
     private void a(boolean isClick, int type, long key, long assistkey, int mcrestype) {
         Properties properties = new Properties();
         properties.put("version", UtilsAndroid.fetchVersionName());
-        properties.put("channel", HTApplication.bJ());
-        properties.put("clienttype", gY);
+        properties.put("channel", HTApplication.bJ_mctool_huluxia_string());
+        properties.put("clienttype", gY_mctool_string);
         properties.put("type", String.valueOf(type));
         properties.put("mcrestype", String.valueOf(mcrestype));
         properties.put("key", String.valueOf(key));

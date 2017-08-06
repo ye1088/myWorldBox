@@ -46,7 +46,7 @@ public class j {
         boolean validMiUid;
         CharSequence historyAccount = ah.KZ().pZ();
         CharSequence historyPwd = ah.KZ().getPassword();
-        if (ax.MG() == MiVer.nomi || !HTApplication.bJ().equals(Constants.btb)) {
+        if (ax.MG() == MiVer.nomi || !HTApplication.bJ_mctool_huluxia_string().equals(Constants.btb)) {
             notXiaomi = true;
         } else {
             notXiaomi = false;

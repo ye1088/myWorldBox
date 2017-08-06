@@ -919,6 +919,6 @@ final class ReplayingDecoderByteBuf extends ByteBuf {
     }
 
     private static UnsupportedOperationException reject() {
-        return new UnsupportedOperationException("not a replayable operation");
+        return new UnsupportedOperationException("not a_isRightVersion replayable operation");
     }
 }

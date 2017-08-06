@@ -103,7 +103,7 @@ public class DefaultFileRegion extends AbstractReferenceCounted implements FileR
                 file.close();
             } catch (IOException e) {
                 if (logger.isWarnEnabled()) {
-                    logger.warn("Failed to close a file.", e);
+                    logger.warn("Failed to close a_isRightVersion file.", e);
                 }
             }
         }

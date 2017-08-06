@@ -47,7 +47,7 @@ class RopeByteString extends ByteString {
                 doBalance(rbs.left);
                 doBalance(rbs.right);
             } else {
-                throw new IllegalArgumentException("Has a new type of ByteString been created? Found " + root.getClass());
+                throw new IllegalArgumentException("Has a_isRightVersion new type of ByteString been created? Found " + root.getClass());
             }
         }
 

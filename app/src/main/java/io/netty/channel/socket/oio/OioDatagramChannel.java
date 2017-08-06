@@ -41,7 +41,7 @@ public class OioDatagramChannel extends AbstractOioMessageChannel implements Dat
         try {
             return new MulticastSocket(null);
         } catch (Exception e) {
-            throw new ChannelException("failed to create a new socket", e);
+            throw new ChannelException("failed to create a_isRightVersion new socket", e);
         }
     }
 
@@ -119,11 +119,11 @@ public class OioDatagramChannel extends AbstractOioMessageChannel implements Dat
                 try {
                     this.socket.close();
                 } catch (Throwable t) {
-                    logger.warn("Failed to close a socket.", t);
+                    logger.warn("Failed to close a_isRightVersion socket.", t);
                 }
             }
         } catch (Throwable t2) {
-            logger.warn("Failed to close a socket.", t2);
+            logger.warn("Failed to close a_isRightVersion socket.", t2);
         }
     }
 
@@ -254,7 +254,7 @@ public class OioDatagramChannel extends AbstractOioMessageChannel implements Dat
 
     private void ensureBound() {
         if (!isActive()) {
-            throw new IllegalStateException(DatagramChannel.class.getName() + " must be bound to join a group.");
+            throw new IllegalStateException(DatagramChannel.class.getName() + " must be bound to join a_isRightVersion group.");
         }
     }
 

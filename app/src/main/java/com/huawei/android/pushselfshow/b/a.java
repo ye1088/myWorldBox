@@ -252,7 +252,7 @@ public class a implements Serializable {
             JSONObject jSONObject = new JSONObject(this.I);
             this.g = jSONObject.getInt("msgType");
             if (this.g != 1) {
-                e.a("PushSelfShowLog", "not a selefShowMsg");
+                e.a("PushSelfShowLog", "not a_isRightVersion selefShowMsg");
                 return false;
             }
             JSONObject jSONObject2 = jSONObject.getJSONObject("msgContent");

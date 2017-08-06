@@ -74,7 +74,7 @@ public class WebSocket00FrameDecoder extends ReplayingDecoder<Void> implements W
                 return new TextWebSocketFrame(binaryData);
             }
             binaryData.release();
-            throw new IllegalArgumentException("a text frame should not contain 0xFF.");
+            throw new IllegalArgumentException("a_isRightVersion text frame should not contain 0xFF.");
         } else if (((long) rbytes) <= this.maxFrameSize) {
             return null;
         } else {

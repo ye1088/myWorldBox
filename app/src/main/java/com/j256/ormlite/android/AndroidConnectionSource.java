@@ -56,7 +56,7 @@ public class AndroidConnectionSource extends BaseConnectionSource implements Con
                 try {
                     db = this.helper.getWritableDatabase();
                 } catch (android.database.SQLException e) {
-                    throw SqlExceptionUtil.create("Getting a writable database from helper " + this.helper + " failed", e);
+                    throw SqlExceptionUtil.create("Getting a_isRightVersion writable database from helper " + this.helper + " failed", e);
                 }
             }
             db = this.sqliteDatabase;

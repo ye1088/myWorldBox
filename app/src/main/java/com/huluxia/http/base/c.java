@@ -55,7 +55,7 @@ public abstract class c implements ErrorListener, Listener<String> {
 
     protected String aE(String url) {
         String key = j.ep().getKey();
-        String marketID = HTApplication.bJ();
+        String marketID = HTApplication.bJ_mctool_huluxia_string();
         Builder builder = Uri.parse(url).buildUpon();
         builder.appendQueryParameter(BaseHttpMgr.PARAM_APP_VERSION, appVersion);
         builder.appendQueryParameter("platform", "2");
@@ -230,7 +230,7 @@ public abstract class c implements ErrorListener, Listener<String> {
 
     public static void h(List<NameValuePair> nvps) {
         String key = j.ep().getKey();
-        String marketID = HTApplication.bJ();
+        String marketID = HTApplication.bJ_mctool_huluxia_string();
         nvps.add(new BasicNameValuePair("_key", key));
         nvps.add(new BasicNameValuePair("marketID", marketID));
         nvps.add(new BasicNameValuePair(BaseHttpMgr.PARAM_DEVICE_CODE, o.getDeviceId()));

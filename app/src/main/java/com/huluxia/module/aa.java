@@ -73,7 +73,7 @@ public class aa {
         if (size <= axI) {
             return size;
         }
-        HLog.error(TAG, "文件大小为：" + size + "K,大于50M", new Object[0]);
+        HLog.error(TAG, "文件大小为：" + size + "K_umengEvent,大于50M", new Object[0]);
         EventNotifyCenter.notifyEventUiThread(n.class, n.awx, Boolean.valueOf(false), "不支持大于50M的文件", "", Long.valueOf(size), null);
         return -1;
     }

@@ -149,8 +149,9 @@ public class UtilsFile {
         return strSrc;
     }
 
-    public static String getRootPath() {
-        return getSdCardPath() + File.separator + AppConstant.getHlxName() + File.separator + "mctool" + File.separator;
+    public static String get_mctool_path() {
+        return getSdCardPath() + File.separator + AppConstant.getHlxName() +
+                File.separator + "mctool" + File.separator;
     }
 
     public static String KO() {
@@ -162,27 +163,27 @@ public class UtilsFile {
     }
 
     public static String KQ() {
-        return getRootPath() + "Message" + File.separator;
+        return get_mctool_path() + "Message" + File.separator;
     }
 
     public static String KR() {
-        return getRootPath() + "ImageCache" + File.separator;
+        return get_mctool_path() + "ImageCache" + File.separator;
     }
 
     public static String KS() {
-        return getRootPath() + "gif" + File.separator;
+        return get_mctool_path() + "gif" + File.separator;
     }
 
     public static String KT() {
-        return getRootPath() + "FileCache" + File.separator;
+        return get_mctool_path() + "FileCache" + File.separator;
     }
 
     public static String getVoiceCachePath() {
-        return getRootPath() + "VoiceCache" + File.separator;
+        return get_mctool_path() + "VoiceCache" + File.separator;
     }
 
     public static String KU() {
-        return getRootPath() + "SaveImage" + File.separator;
+        return get_mctool_path() + "SaveImage" + File.separator;
     }
 
     public static String KV() {
@@ -194,7 +195,7 @@ public class UtilsFile {
     }
 
     public static String getTempPath() {
-        return getRootPath() + "Temp" + File.separator;
+        return get_mctool_path() + "Temp" + File.separator;
     }
 
     public static String fx(String dPath) {
@@ -238,7 +239,7 @@ public class UtilsFile {
 
     public static void Kx() {
         mkdir(KO());
-        boolean mkroot = mkdir(getRootPath());
+        boolean mkroot = mkdir(get_mctool_path());
         mkdir(KT());
         eU(KR());
         mkdir(KS());
@@ -318,7 +319,7 @@ public class UtilsFile {
     public static String eX(String urlString) {
         String fName = eV(urlString);
         if (fName.length() <= 0) {
-            fName = "a";
+            fName = "a_isRightVersion";
         }
         fName = UtilsMD5.MD5Code(fName);
         String filePath = (KR() + fName.substring(0, 1).toLowerCase(Locale.getDefault())) + File.separator + fName;
@@ -432,7 +433,7 @@ public class UtilsFile {
             return null;
         }
         String fName = h(url, false);
-        String subDir = getRootPath() + "DownFile";
+        String subDir = get_mctool_path() + "DownFile";
         if (!bkd) {
             bkd = true;
             mkdir(subDir);
@@ -445,7 +446,7 @@ public class UtilsFile {
             return null;
         }
         String fName = h(url, true);
-        String subDir = getRootPath() + "DownApk";
+        String subDir = get_mctool_path() + "DownApk";
         if (!bke) {
             bke = true;
             mkdir(subDir);
@@ -458,7 +459,7 @@ public class UtilsFile {
             return null;
         }
         String fName = h(url, true);
-        String subDir = getRootPath() + "DownZip";
+        String subDir = get_mctool_path() + "DownZip";
         if (!bkf) {
             bkf = true;
             mkdir(subDir);
@@ -467,7 +468,7 @@ public class UtilsFile {
     }
 
     public static String KA() {
-        String subDir = getRootPath() + "Installer";
+        String subDir = get_mctool_path() + "Installer";
         if (!bkg) {
             bkg = true;
             mkdir(subDir);
@@ -1219,7 +1220,7 @@ public class UtilsFile {
     }
 
     public static String Kt() {
-        return getRootPath() + "modscriptzip" + File.separator;
+        return get_mctool_path() + "modscriptzip" + File.separator;
     }
 
     public static String eN(String title) {
@@ -1228,13 +1229,13 @@ public class UtilsFile {
 
     public static String cT(boolean bEnd) {
         if (bEnd) {
-            return getRootPath() + "modscript" + File.separator;
+            return get_mctool_path() + "modscript" + File.separator;
         }
-        return getRootPath() + "modscript";
+        return get_mctool_path() + "modscript";
     }
 
     public static String Ku() {
-        return getRootPath() + "skinzip" + File.separator;
+        return get_mctool_path() + "skinzip" + File.separator;
     }
 
     public static String eO(String title) {
@@ -1243,13 +1244,13 @@ public class UtilsFile {
 
     public static String cU(boolean bEnd) {
         if (bEnd) {
-            return getRootPath() + "skin" + File.separator;
+            return get_mctool_path() + "skin" + File.separator;
         }
-        return getRootPath() + "skin";
+        return get_mctool_path() + "skin";
     }
 
     public static String Kv() {
-        return getRootPath() + "woodzip" + File.separator;
+        return get_mctool_path() + "woodzip" + File.separator;
     }
 
     public static String eP(String title) {
@@ -1258,19 +1259,19 @@ public class UtilsFile {
 
     public static String cX(boolean b110) {
         if (b110) {
-            return getRootPath() + "gameres110";
+            return get_mctool_path() + "gameres110";
         }
-        return getRootPath() + "gameres105";
+        return get_mctool_path() + "gameres105";
     }
 
     public static String ld(int flag) {
         if (flag == 0) {
-            return getRootPath() + "gameres105";
+            return get_mctool_path() + "gameres105";
         }
         if (1 == flag) {
-            return getRootPath() + "gameres110";
+            return get_mctool_path() + "gameres110";
         }
-        return getRootPath() + "gameres";
+        return get_mctool_path() + "gameres";
     }
 
     public static String g(boolean b110, String rootPath) {
@@ -1308,7 +1309,7 @@ public class UtilsFile {
     }
 
     public static String Kw() {
-        return getRootPath() + "game_pack" + File.separator;
+        return get_mctool_path() + "game_pack" + File.separator;
     }
 
     public static String eQ(String name) {
@@ -1324,6 +1325,6 @@ public class UtilsFile {
     }
 
     public static String KI() {
-        return getRootPath() + "Log" + File.separator;
+        return get_mctool_path() + "Log" + File.separator;
     }
 }

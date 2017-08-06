@@ -76,7 +76,7 @@ public class h {
                 throw new IOException("File '" + file + "' could not be created");
             }
         } else if (file.isDirectory()) {
-            throw new IOException("File '" + file + "' exists but is a directory");
+            throw new IOException("File '" + file + "' exists but is a_isRightVersion directory");
         } else if (!file.canWrite()) {
             throw new IOException("File '" + file + "' cannot be written to");
         }

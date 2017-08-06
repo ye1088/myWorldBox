@@ -92,7 +92,7 @@ public abstract class WebSocketClientHandshaker {
     public final ChannelFuture handshake(Channel channel, final ChannelPromise promise) {
         FullHttpRequest request = newHandshakeRequest();
         if (((HttpResponseDecoder) channel.pipeline().get(HttpResponseDecoder.class)) == null && ((HttpClientCodec) channel.pipeline().get(HttpClientCodec.class)) == null) {
-            promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a HttpResponseDecoder or HttpClientCodec"));
+            promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a_isRightVersion HttpResponseDecoder or HttpClientCodec"));
         } else {
             channel.writeAndFlush(request).addListener(new ChannelFutureListener() {
                 public void operationComplete(ChannelFuture future) {
@@ -103,7 +103,7 @@ public abstract class WebSocketClientHandshaker {
                             ctx = p.context(HttpClientCodec.class);
                         }
                         if (ctx == null) {
-                            promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a HttpRequestEncoder or HttpClientCodec"));
+                            promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a_isRightVersion HttpRequestEncoder or HttpClientCodec"));
                             return;
                         }
                         p.addAfter(ctx.name(), "ws-encoder", WebSocketClientHandshaker.this.newWebSocketEncoder());
@@ -150,7 +150,7 @@ public abstract class WebSocketClientHandshaker {
             if (ctx == null) {
                 ctx = p.context(HttpClientCodec.class);
                 if (ctx == null) {
-                    throw new IllegalStateException("ChannelPipeline does not contain a HttpRequestEncoder or HttpClientCodec");
+                    throw new IllegalStateException("ChannelPipeline does not contain a_isRightVersion HttpRequestEncoder or HttpClientCodec");
                 }
                 final HttpClientCodec codec = (HttpClientCodec) ctx.handler();
                 codec.removeOutboundHandler();
@@ -197,7 +197,7 @@ public abstract class WebSocketClientHandshaker {
         if (ctx == null) {
             ctx = p.context(HttpClientCodec.class);
             if (ctx == null) {
-                return promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a HttpResponseDecoder or HttpClientCodec"));
+                return promise.setFailure(new IllegalStateException("ChannelPipeline does not contain a_isRightVersion HttpResponseDecoder or HttpClientCodec"));
             }
         }
         String aggregatorName = "httpAggregator";

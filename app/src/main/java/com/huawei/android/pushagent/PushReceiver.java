@@ -165,7 +165,7 @@ public abstract class PushReceiver extends BroadcastReceiver {
         }
         byte[] byteArrayExtra = intent.getByteArrayExtra("msg_data");
         String str = new String(intent.getByteArrayExtra("device_token"), "UTF-8");
-        e.a("PushLogAC2705", "PushReceiver receive a message success");
+        e.a("PushLogAC2705", "PushReceiver receive a_isRightVersion message success");
         Bundle bundle = new Bundle();
         bundle.putString(BOUND_KEY.deviceTokenKey, str);
         bundle.putByteArray(BOUND_KEY.pushMsgKey, byteArrayExtra);
@@ -263,9 +263,9 @@ public abstract class PushReceiver extends BroadcastReceiver {
 
     protected void a(Context context, Intent intent) throws UnsupportedEncodingException {
         String str = new String(intent.getByteArrayExtra("device_token"), "UTF-8");
-        e.a("PushLogAC2705", "get a deviceToken:" + com.huawei.android.pushagent.c.a.a.e.a(str));
+        e.a("PushLogAC2705", "get a_isRightVersion deviceToken:" + com.huawei.android.pushagent.c.a.a.e.a(str));
         if (TextUtils.isEmpty(str)) {
-            e.c("PushLogAC2705", "get a deviceToken, but it is null");
+            e.c("PushLogAC2705", "get a_isRightVersion deviceToken, but it is null");
             return;
         }
         boolean a = new h(context, "push_client_self_info").a("hasRequestToken");
@@ -284,7 +284,7 @@ public abstract class PushReceiver extends BroadcastReceiver {
             new EventThread(this, context, bundle).start();
             return;
         }
-        e.c("PushLogAC2705", "get a deviceToken, but do not requested token, and new token is equals old token");
+        e.c("PushLogAC2705", "get a_isRightVersion deviceToken, but do not requested token, and new token is equals old token");
     }
 
     public void onEvent(Context context, Event event, Bundle bundle) {

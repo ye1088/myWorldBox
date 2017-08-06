@@ -113,7 +113,7 @@ public class SubjectListAdapter extends BaseAdapter implements b {
                 String className = (String) SubjectListAdapter.bYK.get(this.bYM.axr);
                 String tongjiEvent = (String) SubjectListAdapter.bYL.get(this.bYM.axr);
                 if (!UtilsFunction.empty(className)) {
-                    r.ck().K(tongjiEvent + String.valueOf(item.id));
+                    r.ck().K_umengEvent(tongjiEvent + String.valueOf(item.id));
                     HLog.verbose(toString(), tongjiEvent + String.valueOf(item.id), new Object[0]);
                     com.huluxia.ui.mctool.d.b(this.bYM.context, className, item.id, item.name);
                 }

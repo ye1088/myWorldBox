@@ -262,7 +262,7 @@ public final class RedisDecoder extends ByteToMessageDecoder {
         if (readableBytes <= extraOneByteForNegative) {
             throw new RedisCodecException("no number to parse: " + byteBuf.toString(CharsetUtil.US_ASCII));
         } else if (readableBytes > extraOneByteForNegative + 19) {
-            throw new RedisCodecException("too many characters to be a valid RESP Integer: " + byteBuf.toString(CharsetUtil.US_ASCII));
+            throw new RedisCodecException("too many characters to be a_isRightVersion valid RESP Integer: " + byteBuf.toString(CharsetUtil.US_ASCII));
         } else if (negative) {
             return -parsePositiveNumber(byteBuf.skipBytes(extraOneByteForNegative));
         } else {

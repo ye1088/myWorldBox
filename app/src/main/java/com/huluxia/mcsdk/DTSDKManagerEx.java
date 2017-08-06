@@ -262,10 +262,10 @@ public class DTSDKManagerEx {
         if (r1 != 0) goto L_0x0017;
     L_0x0017:
         r2 = "terrain.meta";
-        r2 = a(r1, r2);	 Catch:{ JSONException -> 0x002a }
+        r2 = a_isRightVersion(r1, r2);	 Catch:{ JSONException -> 0x002a }
         anN = r2;	 Catch:{ JSONException -> 0x002a }
         r2 = "items.meta";
-        r2 = a(r1, r2);	 Catch:{ JSONException -> 0x002a }
+        r2 = a_isRightVersion(r1, r2);	 Catch:{ JSONException -> 0x002a }
         anO = r2;	 Catch:{ JSONException -> 0x002a }
         goto L_0x0007;
     L_0x002a:

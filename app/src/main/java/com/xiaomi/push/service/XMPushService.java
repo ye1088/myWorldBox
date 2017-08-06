@@ -243,7 +243,7 @@ public class XMPushService extends Service implements com.xiaomi.smack.d {
         }
 
         public String b() {
-            return "receive a message.";
+            return "receive a_isRightVersion message.";
         }
     }
 
@@ -420,7 +420,7 @@ public class XMPushService extends Service implements com.xiaomi.smack.d {
         x a = x.a();
         List b = a.b(str);
         if (b.isEmpty()) {
-            com.xiaomi.channel.commonutils.logger.b.a("open channel should be called first before sending a packet, pkg=" + str);
+            com.xiaomi.channel.commonutils.logger.b.a("open channel should be called first before sending a_isRightVersion packet, pkg=" + str);
         } else {
             dVar.o(str);
             String l = dVar.l();
@@ -430,9 +430,9 @@ public class XMPushService extends Service implements com.xiaomi.smack.d {
             }
             com.xiaomi.push.service.x.b b2 = a.b(l, dVar.n());
             if (!e()) {
-                com.xiaomi.channel.commonutils.logger.b.a("drop a packet as the channel is not connected, chid=" + l);
+                com.xiaomi.channel.commonutils.logger.b.a("drop a_isRightVersion packet as the channel is not connected, chid=" + l);
             } else if (b2 == null || b2.m != com.xiaomi.push.service.x.c.binded) {
-                com.xiaomi.channel.commonutils.logger.b.a("drop a packet as the channel is not opened, chid=" + l);
+                com.xiaomi.channel.commonutils.logger.b.a("drop a_isRightVersion packet as the channel is not opened, chid=" + l);
             } else if (TextUtils.equals(str2, b2.j)) {
                 return ((dVar instanceof com.xiaomi.smack.packet.c) && z) ? a((com.xiaomi.smack.packet.c) dVar, b2.i) : dVar;
             } else {
@@ -947,7 +947,7 @@ public class XMPushService extends Service implements com.xiaomi.smack.d {
                 this.h.a(a);
                 return;
             } else {
-                j.a(this, str, bArr, ErrorCode.ERROR_INVALID_PAYLOAD, "not a valid message");
+                j.a(this, str, bArr, ErrorCode.ERROR_INVALID_PAYLOAD, "not a_isRightVersion valid message");
                 return;
             }
         }

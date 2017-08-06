@@ -69,7 +69,7 @@ public class JsonReader implements Closeable {
                 } else if (p == 14) {
                     reader.peeked = 10;
                 } else {
-                    throw new IllegalStateException("Expected a name but was " + reader.peek() + " " + " at line " + reader.getLineNumber() + " column " + reader.getColumnNumber());
+                    throw new IllegalStateException("Expected a_isRightVersion name but was " + reader.peek() + " " + " at line " + reader.getLineNumber() + " column " + reader.getColumnNumber());
                 }
             }
         };
@@ -520,7 +520,7 @@ public class JsonReader implements Closeable {
         } else if (p == 13) {
             result = nextQuotedValue(StringUtil.DOUBLE_QUOTE);
         } else {
-            throw new IllegalStateException("Expected a name but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new IllegalStateException("Expected a_isRightVersion name but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
         this.peeked = 0;
         return result;
@@ -547,7 +547,7 @@ public class JsonReader implements Closeable {
             result = new String(this.buffer, this.pos, this.peekedNumberLength);
             this.pos += this.peekedNumberLength;
         } else {
-            throw new IllegalStateException("Expected a string but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new IllegalStateException("Expected a_isRightVersion string but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
         this.peeked = 0;
         return result;
@@ -565,7 +565,7 @@ public class JsonReader implements Closeable {
             this.peeked = 0;
             return false;
         } else {
-            throw new IllegalStateException("Expected a boolean but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new IllegalStateException("Expected a_isRightVersion boolean but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
     }
 
@@ -598,7 +598,7 @@ public class JsonReader implements Closeable {
         } else if (p == 10) {
             this.peekedString = nextUnquotedValue();
         } else if (p != 11) {
-            throw new IllegalStateException("Expected a double but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new IllegalStateException("Expected a_isRightVersion double but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
         this.peeked = 11;
         double result = Double.parseDouble(this.peekedString);
@@ -632,13 +632,13 @@ public class JsonReader implements Closeable {
             } catch (NumberFormatException e) {
             }
         } else {
-            throw new IllegalStateException("Expected a long but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new IllegalStateException("Expected a_isRightVersion long but was " + peek() + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
         this.peeked = 11;
         double asDouble = Double.parseDouble(this.peekedString);
         parseLong = (long) asDouble;
         if (((double) parseLong) != asDouble) {
-            throw new NumberFormatException("Expected a long but was " + this.peekedString + " at line " + getLineNumber() + " column " + getColumnNumber());
+            throw new NumberFormatException("Expected a_isRightVersion long but was " + this.peekedString + " at line " + getLineNumber() + " column " + getColumnNumber());
         }
         this.peekedString = null;
         this.peeked = 0;
@@ -1070,7 +1070,7 @@ public class JsonReader implements Closeable {
                             result = (char) (result << 4);
                             if (c >= '0' && c <= '9') {
                                 result = (char) ((c - 48) + result);
-                            } else if (c >= 'a' && c <= 'f') {
+                            } else if (c >= 'a_isRightVersion' && c <= 'f') {
                                 result = (char) (((c - 97) + 10) + result);
                             } else if (c < 'A' || c > 'F') {
                                 throw new NumberFormatException("\\u" + new String(this.buffer, this.pos, 4));

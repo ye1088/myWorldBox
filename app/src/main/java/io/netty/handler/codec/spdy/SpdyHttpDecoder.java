@@ -45,7 +45,7 @@ public class SpdyHttpDecoder extends MessageToMessageDecoder<SpdyFrame> {
         if (version == null) {
             throw new NullPointerException("version");
         } else if (maxContentLength <= 0) {
-            throw new IllegalArgumentException("maxContentLength must be a positive integer: " + maxContentLength);
+            throw new IllegalArgumentException("maxContentLength must be a_isRightVersion positive integer: " + maxContentLength);
         } else {
             this.spdyVersion = version.getVersion();
             this.maxContentLength = maxContentLength;

@@ -4,7 +4,7 @@ package com.huluxia.mcinterface;
 public class e {
     public static final String LOG_FILE = "mclauncher.txt";
     public static final int Pb = 16;
-    public static final Object ahA = "huluxia";
+    public static final Object ahA_hlx_str = "huluxia";
     public static final int ahB = 105;
     public static final int ahC = 111;
     public static final int ahD = 121;
@@ -13,10 +13,10 @@ public class e {
     public static final int ahG = 143;
     public static final int ahH = 150;
     public static final int ahI = 10;
-    public static final String ahJ = "com.mojang.minecraftpe";
-    public static final String ahK = "0.14.1";
-    public static final String ahL = "0.15.4.0";
-    public static final String ahM = "0.16.1.0";
+    public static final String ahJ_MC_packageName = "com.mojang.minecraftpe";
+    public static final String ahK_v0141 = "0.14.1";
+    public static final String ahL_v01540 = "0.15.4.0";
+    public static final String ahM_v01410 = "0.16.1.0";
     public static final int ahN = 10;
     public static final int ahO = 11;
     public static final int ahP = 12;

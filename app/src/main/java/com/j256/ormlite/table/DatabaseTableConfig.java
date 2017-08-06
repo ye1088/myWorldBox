@@ -145,9 +145,9 @@ public class DatabaseTableConfig<T> {
                 }
             }
             if (dataClass.getEnclosingClass() == null) {
-                throw new IllegalArgumentException("Can't find a no-arg constructor for " + dataClass);
+                throw new IllegalArgumentException("Can't find a_isRightVersion no-arg constructor for " + dataClass);
             }
-            throw new IllegalArgumentException("Can't find a no-arg constructor for " + dataClass + ".  Missing static on inner class?");
+            throw new IllegalArgumentException("Can't find a_isRightVersion no-arg constructor for " + dataClass + ".  Missing static on inner class?");
         } catch (Exception e2) {
             throw new IllegalArgumentException("Can't lookup declared constructors for " + dataClass, e2);
         }
@@ -166,7 +166,7 @@ public class DatabaseTableConfig<T> {
         if (!fieldTypes.isEmpty()) {
             return (FieldType[]) fieldTypes.toArray(new FieldType[fieldTypes.size()]);
         }
-        throw new IllegalArgumentException("No fields have a " + DatabaseField.class.getSimpleName() + " annotation in " + clazz);
+        throw new IllegalArgumentException("No fields have a_isRightVersion " + DatabaseField.class.getSimpleName() + " annotation in " + clazz);
     }
 
     private FieldType[] convertFieldConfigs(ConnectionSource connectionSource, String tableName, List<DatabaseFieldConfig> fieldConfigs) throws SQLException {

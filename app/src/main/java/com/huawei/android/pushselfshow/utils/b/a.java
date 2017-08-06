@@ -66,7 +66,7 @@ public class a {
     L_0x0024:
         r6 = new java.util.zip.ZipFile;	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
         r0 = new java.io.File;	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
-        r1 = r12.a;	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
+        r1 = r12.a_isRightVersion;	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
         r0.<init>(r1);	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
         r6.<init>(r0);	 Catch:{ ZipException -> 0x0656, IOException -> 0x0652, IllegalStateException -> 0x064e, NoSuchElementException -> 0x064a, all -> 0x0642 }
         r7 = r6.entries();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -89,7 +89,7 @@ public class a {
         r4 = r0.getName();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r3 = r3.append(r4);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r3 = r3.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = new java.lang.StringBuilder;	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1.<init>();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r3 = r12.b;	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -109,7 +109,7 @@ public class a {
         r4 = r4.append(r5);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r4 = r4.append(r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r4 = r4.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r4);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r4);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = new java.io.File;	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1.<init>(r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r1.mkdir();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -117,7 +117,7 @@ public class a {
     L_0x00b3:
         r1 = r12.b;	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r3 = r0.getName();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        r3 = a(r1, r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        r3 = a_isRightVersion(r1, r3);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r3.isDirectory();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         if (r1 == 0) goto L_0x00e9;
     L_0x00c3:
@@ -136,7 +136,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x00e9:
         r1 = "PushSelfShowLog";
@@ -151,14 +151,14 @@ public class a {
         r5 = r3.getAbsolutePath();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r4 = r4.append(r5);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r4 = r4.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r4);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r4);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r0.getName();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = android.text.TextUtils.isEmpty(r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         if (r1 == 0) goto L_0x0150;
     L_0x0120:
         r0 = "PushSelfShowLog";
         r1 = "ze.getName() is empty= ";
-        com.huawei.android.pushagent.c.a.e.a(r0, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         if (r6 == 0) goto L_0x00c8;
     L_0x012b:
         r6.close();	 Catch:{ IOException -> 0x012f }
@@ -173,7 +173,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x0150:
         r1 = r6.getInputStream(r0);	 Catch:{ IOException -> 0x068f, IllegalStateException -> 0x03e9, IndexOutOfBoundsException -> 0x04a4, all -> 0x055f }
@@ -204,7 +204,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x0668 }
         r0 = r10.append(r0);	 Catch:{ all -> 0x0668 }
         r0 = r0.toString();	 Catch:{ all -> 0x0668 }
-        com.huawei.android.pushagent.c.a.e.a(r9, r0);	 Catch:{ all -> 0x0668 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r9, r0);	 Catch:{ all -> 0x0668 }
         if (r1 == 0) goto L_0x0196;
     L_0x0193:
         r1.close();	 Catch:{ IOException -> 0x0386, ZipException -> 0x01c8, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -231,7 +231,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0038;
     L_0x01c8:
         r0 = move-exception;
@@ -245,7 +245,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x0646 }
         r0 = r3.append(r0);	 Catch:{ all -> 0x0646 }
         r0 = r0.toString();	 Catch:{ all -> 0x0646 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ all -> 0x0646 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ all -> 0x0646 }
         if (r2 == 0) goto L_0x00c8;
     L_0x01ea:
         r2.close();	 Catch:{ IOException -> 0x01ef }
@@ -260,7 +260,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x0210:
         if (r1 == 0) goto L_0x0215;
@@ -289,7 +289,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0038;
     L_0x0247:
         r0 = move-exception;
@@ -302,7 +302,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x037f }
         r0 = r2.append(r0);	 Catch:{ all -> 0x037f }
         r0 = r0.toString();	 Catch:{ all -> 0x037f }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ all -> 0x037f }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ all -> 0x037f }
         if (r6 == 0) goto L_0x00c8;
     L_0x0268:
         r6.close();	 Catch:{ IOException -> 0x026d }
@@ -317,7 +317,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x028e:
         r0 = move-exception;
@@ -329,7 +329,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r9.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0215;
     L_0x02af:
         r0 = move-exception;
@@ -342,7 +342,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x037f }
         r0 = r2.append(r0);	 Catch:{ all -> 0x037f }
         r0 = r0.toString();	 Catch:{ all -> 0x037f }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ all -> 0x037f }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ all -> 0x037f }
         if (r6 == 0) goto L_0x00c8;
     L_0x02d0:
         r6.close();	 Catch:{ IOException -> 0x02d5 }
@@ -357,7 +357,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x02f6:
         r0 = move-exception;
@@ -369,7 +369,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x021a;
     L_0x0317:
         r0 = move-exception;
@@ -382,7 +382,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x037f }
         r0 = r2.append(r0);	 Catch:{ all -> 0x037f }
         r0 = r0.toString();	 Catch:{ all -> 0x037f }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ all -> 0x037f }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ all -> 0x037f }
         if (r6 == 0) goto L_0x00c8;
     L_0x0338:
         r6.close();	 Catch:{ IOException -> 0x033d }
@@ -397,7 +397,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x035e:
         r0 = move-exception;
@@ -409,7 +409,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x021f;
     L_0x037f:
         r0 = move-exception;
@@ -429,7 +429,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r9.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0196;
     L_0x03a7:
         r0 = move-exception;
@@ -441,7 +441,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x019b;
     L_0x03c8:
         r0 = move-exception;
@@ -453,7 +453,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x01a0;
     L_0x03e9:
         r0 = move-exception;
@@ -470,7 +470,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x0668 }
         r0 = r10.append(r0);	 Catch:{ all -> 0x0668 }
         r0 = r0.toString();	 Catch:{ all -> 0x0668 }
-        com.huawei.android.pushagent.c.a.e.a(r9, r0);	 Catch:{ all -> 0x0668 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r9, r0);	 Catch:{ all -> 0x0668 }
         if (r1 == 0) goto L_0x0411;
     L_0x040e:
         r1.close();	 Catch:{ IOException -> 0x0443, ZipException -> 0x01c8, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -497,7 +497,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0038;
     L_0x0443:
         r0 = move-exception;
@@ -509,7 +509,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r9.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0411;
     L_0x0463:
         r0 = move-exception;
@@ -521,7 +521,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0416;
     L_0x0483:
         r0 = move-exception;
@@ -533,7 +533,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x041b;
     L_0x04a4:
         r0 = move-exception;
@@ -550,7 +550,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ all -> 0x0668 }
         r0 = r10.append(r0);	 Catch:{ all -> 0x0668 }
         r0 = r0.toString();	 Catch:{ all -> 0x0668 }
-        com.huawei.android.pushagent.c.a.e.a(r9, r0);	 Catch:{ all -> 0x0668 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r9, r0);	 Catch:{ all -> 0x0668 }
         if (r1 == 0) goto L_0x04cc;
     L_0x04c9:
         r1.close();	 Catch:{ IOException -> 0x04fe, ZipException -> 0x01c8, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
@@ -577,7 +577,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0038;
     L_0x04fe:
         r0 = move-exception;
@@ -589,7 +589,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r9.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x04cc;
     L_0x051e:
         r0 = move-exception;
@@ -601,7 +601,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x04d1;
     L_0x053e:
         r0 = move-exception;
@@ -613,7 +613,7 @@ public class a {
         r0 = r0.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r3.append(r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r0 = r0.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x04d6;
     L_0x055f:
         r0 = move-exception;
@@ -649,7 +649,7 @@ public class a {
         r1 = r1.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r7.append(r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r1.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0569;
     L_0x0599:
         r1 = move-exception;
@@ -661,7 +661,7 @@ public class a {
         r1 = r1.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r3.append(r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r1.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x056e;
     L_0x05b9:
         r1 = move-exception;
@@ -673,7 +673,7 @@ public class a {
         r1 = r1.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r3.append(r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r1.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0573;
     L_0x05d9:
         r1 = move-exception;
@@ -685,7 +685,7 @@ public class a {
         r1 = r1.getMessage();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r3.append(r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         r1 = r1.toString();	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
-        com.huawei.android.pushagent.c.a.e.a(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r1);	 Catch:{ ZipException -> 0x01c8, IOException -> 0x0247, IllegalStateException -> 0x02af, NoSuchElementException -> 0x0317 }
         goto L_0x0578;
     L_0x05f9:
         if (r6 == 0) goto L_0x00c8;
@@ -702,7 +702,7 @@ public class a {
         r0 = r0.getMessage();
         r0 = r2.append(r0);
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r0);
         goto L_0x00c8;
     L_0x0621:
         r1 = move-exception;
@@ -714,7 +714,7 @@ public class a {
         r1 = r1.getMessage();
         r1 = r3.append(r1);
         r1 = r1.toString();
-        com.huawei.android.pushagent.c.a.e.a(r2, r1);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r2, r1);
         goto L_0x0385;
     L_0x0642:
         r0 = move-exception;
@@ -816,6 +816,6 @@ public class a {
         r3 = r2;
         goto L_0x0173;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.utils.b.a.a():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.utils.b.a_isRightVersion.a_isRightVersion():void");
     }
 }

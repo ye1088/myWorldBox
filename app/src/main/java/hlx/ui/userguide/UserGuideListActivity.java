@@ -23,11 +23,11 @@ public class UserGuideListActivity extends BaseActivity {
         public void onClick(View v) {
             if (v.getId() == g.tv_app_guide) {
                 t.h(this.cgF, 0);
-                r.ck().K(a.bOy);
+                r.ck().K_umengEvent(a.bOy);
                 return;
             }
             t.h(this.cgF, 1);
-            r.ck().K(a.bOz);
+            r.ck().K_umengEvent(a.bOz);
         }
     };
 

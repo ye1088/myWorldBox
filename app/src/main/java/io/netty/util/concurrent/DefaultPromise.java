@@ -721,7 +721,7 @@ Error: java.util.NoSuchElementException
         try {
             executor.execute(task);
         } catch (Throwable t) {
-            rejectedExecutionLogger.error("Failed to submit a listener notification task. Event loop shut down?", t);
+            rejectedExecutionLogger.error("Failed to submit a_isRightVersion listener notification task. Event loop shut down?", t);
         }
     }
 }

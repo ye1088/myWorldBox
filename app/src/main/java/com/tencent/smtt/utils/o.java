@@ -14,13 +14,13 @@ public class o {
     private static o c = null;
     private Context a = null;
     private File b = null;
-    private String d = "http://log.tbs.qq.com/ajax?c=pu&v=2&k=";
+    private String d = "http://log.tbs.qq.com/ajax?c=pu&v=2&k_dialog_class=";
     private String e = "http://wup.imtt.qq.com:8080";
-    private String f = "http://log.tbs.qq.com/ajax?c=dl&k=";
+    private String f = "http://log.tbs.qq.com/ajax?c=dl&k_dialog_class=";
     private String g = "http://cfg.imtt.qq.com/tbs?v=2&mk=";
-    private String h = "http://log.tbs.qq.com/ajax?c=ul&v=2&k=";
+    private String h = "http://log.tbs.qq.com/ajax?c=ul&v=2&k_dialog_class=";
     private String i = "http://mqqad.html5.qq.com/adjs";
-    private String j = "http://log.tbs.qq.com/ajax?c=ucfu&k=";
+    private String j = "http://log.tbs.qq.com/ajax?c=ucfu&k_dialog_class=";
 
     @TargetApi(11)
     private o(Context context) {

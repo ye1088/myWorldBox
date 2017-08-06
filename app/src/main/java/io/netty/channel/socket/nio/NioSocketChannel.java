@@ -62,7 +62,7 @@ public class NioSocketChannel extends AbstractNioByteChannel implements SocketCh
         try {
             return provider.openSocketChannel();
         } catch (IOException e) {
-            throw new ChannelException("Failed to open a socket.", e);
+            throw new ChannelException("Failed to open a_isRightVersion socket.", e);
         }
     }
 
@@ -255,7 +255,7 @@ public class NioSocketChannel extends AbstractNioByteChannel implements SocketCh
                 promise.setFailure(t2);
                 return;
             }
-            logger.debug("Exception suppressed because a previous exception occurred.", t2);
+            logger.debug("Exception suppressed because a_isRightVersion previous exception occurred.", t2);
             promise.setFailure(cause);
         }
     }

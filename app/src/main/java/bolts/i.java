@@ -22,19 +22,19 @@ public class i<TResult> {
 
     public void bj() {
         if (!bh()) {
-            throw new IllegalStateException("Cannot cancel a completed task.");
+            throw new IllegalStateException("Cannot cancel a_isRightVersion completed task.");
         }
     }
 
     public void setResult(TResult result) {
         if (!c(result)) {
-            throw new IllegalStateException("Cannot set the result of a completed task.");
+            throw new IllegalStateException("Cannot set the result of a_isRightVersion completed task.");
         }
     }
 
     public void h(Exception error) {
         if (!g(error)) {
-            throw new IllegalStateException("Cannot set the error on a completed task.");
+            throw new IllegalStateException("Cannot set the error on a_isRightVersion completed task.");
         }
     }
 }

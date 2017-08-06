@@ -82,7 +82,7 @@ public final class NioUdtProvider<T extends UdtChannel> implements ChannelFactor
         try {
             return SelectorProviderUDT.from(type).openServerSocketChannel();
         } catch (IOException e) {
-            throw new ChannelException("failed to open a server socket channel", e);
+            throw new ChannelException("failed to open a_isRightVersion server socket channel", e);
         }
     }
 
@@ -90,7 +90,7 @@ public final class NioUdtProvider<T extends UdtChannel> implements ChannelFactor
         try {
             return SelectorProviderUDT.from(type).openSocketChannel();
         } catch (IOException e) {
-            throw new ChannelException("failed to open a socket channel", e);
+            throw new ChannelException("failed to open a_isRightVersion socket channel", e);
         }
     }
 
@@ -98,7 +98,7 @@ public final class NioUdtProvider<T extends UdtChannel> implements ChannelFactor
         try {
             return SelectorProviderUDT.from(type).openRendezvousChannel();
         } catch (IOException e) {
-            throw new ChannelException("failed to open a rendezvous channel", e);
+            throw new ChannelException("failed to open a_isRightVersion rendezvous channel", e);
         }
     }
 

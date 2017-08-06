@@ -199,7 +199,7 @@ public class f implements OnCompletionListener, OnErrorListener, OnPreparedListe
         try {
             if (j()) {
                 this.h.seekTo(i);
-                e.a("PushSelfShowLog", "Send a onStatus update for the new seek");
+                e.a("PushSelfShowLog", "Send a_isRightVersion onStatus update for the new seek");
                 return;
             }
             this.i = i;

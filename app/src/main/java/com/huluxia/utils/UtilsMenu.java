@@ -50,7 +50,7 @@ public class UtilsMenu {
     }
 
     public static n bl(Context context) {
-        n dialogMenu = new n(context, a.bKA);
+        n dialogMenu = new n(context, a.bKA_TIPS);
         List<o> menuManageList = new ArrayList();
         menuManageList.add(new o(MENU_VALUE.REPORT_TOPIC, "举报"));
         menuManageList.add(new o(MENU_VALUE.COPY_TEXT, "复制全文"));
@@ -59,7 +59,7 @@ public class UtilsMenu {
     }
 
     public static n bm(Context context) {
-        n dialogMenu = new n(context, a.bKA);
+        n dialogMenu = new n(context, a.bKA_TIPS);
         List<o> menuManageList = new ArrayList();
         menuManageList.add(new o(MENU_VALUE.REPORT_COMMENT, "举报"));
         menuManageList.add(new o(MENU_VALUE.COPY_TEXT, "复制全文"));
@@ -140,7 +140,7 @@ public class UtilsMenu {
         List<o> menuManageList = new ArrayList();
         menuManageList.add(new o(MENU_DOWNLOAD_RETRY_LIST.RETRY_CHANGE, "更换下载地址"));
         menuManageList.add(new o(MENU_DOWNLOAD_RETRY_LIST.RETRY_DELETE, "删除下载任务"));
-        menuManageList.add(new o(MENU_DOWNLOAD_RETRY_LIST.RETRY_CANCLE, a.bKB));
+        menuManageList.add(new o(MENU_DOWNLOAD_RETRY_LIST.RETRY_CANCLE, a.bKB_bt_cancel));
         dialogMenu.setMenuItems(menuManageList);
         return dialogMenu;
     }
@@ -163,7 +163,7 @@ public class UtilsMenu {
         long sessionUserId = j.ep().getUserid();
         long sessionRole = (long) j.ep().getRole();
         boolean isModerator = false;
-        n dialogMenu = new n(context, a.bKA);
+        n dialogMenu = new n(context, a.bKA_TIPS);
         List<o> menuManageList = new ArrayList();
         if (!isRes) {
             menuManageList.add(new o(MENU_VALUE.COMMENT, "评论"));
@@ -198,7 +198,7 @@ public class UtilsMenu {
     }
 
     public static n a(Context context, TopicItem topicItem, CommentItem commentItem) {
-        n dialogMenu = new n(context, a.bKA);
+        n dialogMenu = new n(context, a.bKA_TIPS);
         List<o> menuManageList = new ArrayList();
         long topicUserId = topicItem.getUserInfo().getUserID();
         long commentUserId = commentItem.getUserInfo().getUserID();
@@ -250,7 +250,7 @@ public class UtilsMenu {
     }
 
     public static n a(Context context, CommentItem commentItem) {
-        n dialogMenu = new n(context, a.bKA);
+        n dialogMenu = new n(context, a.bKA_TIPS);
         List<o> menuManageList = new ArrayList();
         if (commentItem.getUserInfo().getUserID() != j.ep().getUserid()) {
             menuManageList.add(new o(MENU_VALUE.REPLY, "回复"));

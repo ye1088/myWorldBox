@@ -52,7 +52,7 @@ Error: java.util.NoSuchElementException
         r0 = 0;
         r2 = r5.getUri();	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
         r3 = 5;	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
-        r0 = r4.a(r2, r3);	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
+        r0 = r4.a_isRightVersion(r2, r3);	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
         if (r0 == 0) goto L_0x0014;	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
     L_0x000c:
         r2 = r0.getInputStream();	 Catch:{ IOException -> 0x001a, all -> 0x0024 }
@@ -79,7 +79,7 @@ Error: java.util.NoSuchElementException
     L_0x002a:
         throw r2;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.p.b(com.huluxia.image.pipeline.producers.s, com.huluxia.image.pipeline.producers.ah$a):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.p.b(com.huluxia.image.pipeline.producers.s, com.huluxia.image.pipeline.producers.ah$a_isRightVersion):void");
     }
 
     public p() {
@@ -119,7 +119,7 @@ Error: java.util.NoSuchElementException
             if (maxRedirects == 0) {
                 message = a("URL %s follows too many redirects", uri.toString());
             } else {
-                message = a("URL %s returned %d without a valid redirect", uri.toString(), Integer.valueOf(this.go));
+                message = a("URL %s returned %d without a_isRightVersion valid redirect", uri.toString(), Integer.valueOf(this.go));
             }
             throw new IOException(message);
         }

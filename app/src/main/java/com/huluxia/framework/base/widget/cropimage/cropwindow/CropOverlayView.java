@@ -141,7 +141,7 @@ public class CropOverlayView extends ImageView {
 
     public void setAspectRatioX(int aspectRatioX) {
         if (aspectRatioX <= 0) {
-            throw new IllegalArgumentException("Cannot set aspect ratio value to a number less than or equal to 0.");
+            throw new IllegalArgumentException("Cannot set aspect ratio value to a_isRightVersion number less than or equal to 0.");
         }
         this.mAspectRatioX = aspectRatioX;
         this.mTargetAspectRatio = ((float) this.mAspectRatioX) / ((float) this.mAspectRatioY);
@@ -153,7 +153,7 @@ public class CropOverlayView extends ImageView {
 
     public void setAspectRatioY(int aspectRatioY) {
         if (aspectRatioY <= 0) {
-            throw new IllegalArgumentException("Cannot set aspect ratio value to a number less than or equal to 0.");
+            throw new IllegalArgumentException("Cannot set aspect ratio value to a_isRightVersion number less than or equal to 0.");
         }
         this.mAspectRatioY = aspectRatioY;
         this.mTargetAspectRatio = ((float) this.mAspectRatioX) / ((float) this.mAspectRatioY);
@@ -170,12 +170,12 @@ public class CropOverlayView extends ImageView {
         this.mGuidelines = guidelines;
         this.mFixAspectRatio = fixAspectRatio;
         if (aspectRatioX <= 0) {
-            throw new IllegalArgumentException("Cannot set aspect ratio value to a number less than or equal to 0.");
+            throw new IllegalArgumentException("Cannot set aspect ratio value to a_isRightVersion number less than or equal to 0.");
         }
         this.mAspectRatioX = aspectRatioX;
         this.mTargetAspectRatio = ((float) this.mAspectRatioX) / ((float) this.mAspectRatioY);
         if (aspectRatioY <= 0) {
-            throw new IllegalArgumentException("Cannot set aspect ratio value to a number less than or equal to 0.");
+            throw new IllegalArgumentException("Cannot set aspect ratio value to a_isRightVersion number less than or equal to 0.");
         }
         this.mAspectRatioY = aspectRatioY;
         this.mTargetAspectRatio = ((float) this.mAspectRatioX) / ((float) this.mAspectRatioY);

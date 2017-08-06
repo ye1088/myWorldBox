@@ -27,7 +27,7 @@ public class ServerListActivity extends HTBaseActivity {
             }
 
             public void onClick(View arg0) {
-                r.ck().K(a.bMR);
+                r.ck().K_umengEvent(a.bMR);
                 t.a(this.bcn, 5243116, false);
             }
         });
@@ -63,9 +63,9 @@ public class ServerListActivity extends HTBaseActivity {
         setContentView(this.bcl[this.bcm]);
         this.bcl[this.bcm].IL();
         if (this.bcm == 0) {
-            r.ck().K(a.bMP);
+            r.ck().K_umengEvent(a.bMP);
         } else if (this.bcm == 1) {
-            r.ck().K(a.bMQ);
+            r.ck().K_umengEvent(a.bMQ);
         }
     }
 }

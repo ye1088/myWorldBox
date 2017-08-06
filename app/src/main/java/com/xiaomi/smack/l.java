@@ -78,11 +78,11 @@ public class l extends a {
         r5 = r2.intValue();
         r2 = r16.c(r17);
         r5 = java.lang.Integer.valueOf(r5);
-        com.xiaomi.channel.commonutils.logger.b.a(r5);
+        com.xiaomi.channel.commonutils.logger.b.a_isRightVersion(r5);
         if (r2 == 0) goto L_0x003b;
     L_0x0036:
         r3 = 1;
-        r3 = r2.a(r3);
+        r3 = r2.a_isRightVersion(r3);
     L_0x003b:
         r5 = r3.isEmpty();
         if (r5 == 0) goto L_0x0046;
@@ -117,7 +117,7 @@ public class l extends a {
         r5 = r5.append(r6);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r5 = r5.append(r3);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r5 = r5.toString();	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
-        com.xiaomi.channel.commonutils.logger.b.a(r5);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
+        com.xiaomi.channel.commonutils.logger.b.a_isRightVersion(r5);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r5 = r16.v();	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r0 = r16;
         r0.r = r5;	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
@@ -132,7 +132,7 @@ public class l extends a {
         r7 = 8000; // 0x1f40 float:1.121E-41 double:3.9525E-320;
         r6.connect(r5, r7);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r5 = "tcp connected";
-        com.xiaomi.channel.commonutils.logger.b.a(r5);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
+        com.xiaomi.channel.commonutils.logger.b.a_isRightVersion(r5);	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r0 = r16;
         r5 = r0.r;	 Catch:{ IOException -> 0x011c, p -> 0x018d, Throwable -> 0x01fc }
         r6 = 1;
@@ -168,7 +168,7 @@ public class l extends a {
         r6 = r0.c;	 Catch:{ IOException -> 0x024a, p -> 0x0247, Throwable -> 0x0243 }
         r4 = r4.append(r6);	 Catch:{ IOException -> 0x024a, p -> 0x0247, Throwable -> 0x0243 }
         r4 = r4.toString();	 Catch:{ IOException -> 0x024a, p -> 0x0247, Throwable -> 0x0243 }
-        com.xiaomi.channel.commonutils.logger.b.a(r4);	 Catch:{ IOException -> 0x024a, p -> 0x0247, Throwable -> 0x0243 }
+        com.xiaomi.channel.commonutils.logger.b.a_isRightVersion(r4);	 Catch:{ IOException -> 0x024a, p -> 0x0247, Throwable -> 0x0243 }
     L_0x0109:
         r2 = com.xiaomi.network.HostManager.getInstance();
         r2.persist();
@@ -215,7 +215,7 @@ public class l extends a {
     L_0x0174:
         r0 = r16;
         r4 = r0.q;
-        com.xiaomi.stats.g.a(r3, r4);
+        com.xiaomi.stats.g.a_isRightVersion(r3, r4);
         r0 = r16;
         r3 = r0.y;
         r3 = com.xiaomi.channel.commonutils.network.d.f(r3);
@@ -263,7 +263,7 @@ public class l extends a {
     L_0x01e5:
         r0 = r16;
         r4 = r0.q;
-        com.xiaomi.stats.g.a(r3, r4);
+        com.xiaomi.stats.g.a_isRightVersion(r3, r4);
         r0 = r16;
         r3 = r0.y;
         r3 = com.xiaomi.channel.commonutils.network.d.f(r3);
@@ -279,12 +279,12 @@ public class l extends a {
         r6.<init>(r7, r5);	 Catch:{ all -> 0x0226 }
         r0 = r16;
         r0.q = r6;	 Catch:{ all -> 0x0226 }
-        com.xiaomi.channel.commonutils.logger.b.a(r5);	 Catch:{ all -> 0x0226 }
+        com.xiaomi.channel.commonutils.logger.b.a_isRightVersion(r5);	 Catch:{ all -> 0x0226 }
         if (r4 != 0) goto L_0x024d;
     L_0x020e:
         r0 = r16;
         r5 = r0.q;
-        com.xiaomi.stats.g.a(r3, r5);
+        com.xiaomi.stats.g.a_isRightVersion(r3, r5);
         r0 = r16;
         r3 = r0.y;
         r3 = com.xiaomi.channel.commonutils.network.d.f(r3);
@@ -301,7 +301,7 @@ public class l extends a {
     L_0x022a:
         r0 = r16;
         r4 = r0.q;
-        com.xiaomi.stats.g.a(r3, r4);
+        com.xiaomi.stats.g.a_isRightVersion(r3, r4);
         r0 = r16;
         r3 = r0.y;
         r3 = com.xiaomi.channel.commonutils.network.d.f(r3);
@@ -332,7 +332,7 @@ public class l extends a {
         r9 = r4;
         goto L_0x0109;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.smack.show_toast.a(java.lang.String, int):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.smack.show_toast.a_isRightVersion(java.lang.String, int):void");
     }
 
     private void a(String str, long j, Exception exception) {

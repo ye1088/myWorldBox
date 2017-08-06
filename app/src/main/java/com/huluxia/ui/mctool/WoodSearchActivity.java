@@ -274,7 +274,7 @@ public class WoodSearchActivity extends HTBaseActivity implements OnClickListene
 
     protected void e(int start, int count, String key) {
         ac.DT().d(start, count, key);
-        r.ck().K(r.a.iq);
+        r.ck().K_umengEvent(r.a.iq);
     }
 
     protected int AN() {

@@ -17,7 +17,7 @@ class AbstractChannel$AbstractUnsafe$7 implements Runnable {
         try {
             this.this$1.this$0.doDeregister();
         } catch (Throwable t) {
-            AbstractChannel.access$300().warn("Unexpected exception occurred while deregistering a channel.", t);
+            AbstractChannel.access$300().warn("Unexpected exception occurred while deregistering a_isRightVersion channel.", t);
         } finally {
             if (this.val$fireChannelInactive) {
                 AbstractChannel.access$500(this.this$1.this$0).fireChannelInactive();

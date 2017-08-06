@@ -729,7 +729,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
 
     protected void VC() {
         final DialogManager dialogManager = new DialogManager(this.ceU);
-        dialogManager.showOkCancelDialog("分类信息为空，点击确定重新获取", hlx.data.localstore.a.bKC, null, new OkCancelDialogListener(this) {
+        dialogManager.showOkCancelDialog("分类信息为空，点击确定重新获取", hlx.data.localstore.a.bKC_bt_ok, null, new OkCancelDialogListener(this) {
             final /* synthetic */ PublishResourceBaseActivity ceZ;
 
             public void onCancel() {

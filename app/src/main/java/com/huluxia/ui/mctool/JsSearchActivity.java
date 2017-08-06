@@ -274,7 +274,7 @@ public class JsSearchActivity extends HTBaseActivity implements OnClickListener 
 
     protected void e(int start, int count, String key) {
         i.DB().a(start, count, key);
-        r.ck().K(r.a.ip);
+        r.ck().K_umengEvent(r.a.ip);
     }
 
     protected int AN() {

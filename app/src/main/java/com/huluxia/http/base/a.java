@@ -21,7 +21,7 @@ public abstract class a extends c {
 
     protected String aE(String url) {
         String key = j.ep().getKey();
-        String marketID = HTApplication.bJ();
+        String marketID = HTApplication.bJ_mctool_huluxia_string();
         Builder builder = Uri.parse(url).buildUpon();
         builder.appendQueryParameter(BaseHttpMgr.PARAM_APP_VERSION, rQ);
         builder.appendQueryParameter("platform", "2");

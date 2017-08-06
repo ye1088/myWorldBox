@@ -33,7 +33,7 @@ public class OrmLiteConfigUtil {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
-            throw new IllegalArgumentException("Main can take a single file-name argument.");
+            throw new IllegalArgumentException("Main can take a_isRightVersion single file-name argument.");
         }
         writeConfigFile(args[0]);
     }

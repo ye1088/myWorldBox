@@ -67,7 +67,7 @@ public class SettingsActivity extends HTBaseActivity implements OnCheckedChangeL
                 t.av(this.aRP.aRL);
             } else if (id == g.tv_rookie_guide) {
                 t.aw(this.aRP.aRL);
-                r.ck().K(hlx.data.tongji.a.bLM);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bLM);
             } else if (id == g.tv_app_comment) {
                 ah.KZ().LE();
                 com.huluxia.widget.dialog.a aVar = new com.huluxia.widget.dialog.a(this.aRP.aRL, new a(), null);
@@ -299,7 +299,7 @@ public class SettingsActivity extends HTBaseActivity implements OnCheckedChangeL
 
                 public void onClick(View arg0) {
                     dialog.dismiss();
-                    new UtilsDownloadFile(this.aRP.aRL, UtilsFile.getRootPath() + "mctool.apk", true, new b()).execute(new String[]{szUrl});
+                    new UtilsDownloadFile(this.aRP.aRL, UtilsFile.get_mctool_path() + "mctool.apk", true, new b()).execute(new String[]{szUrl});
                 }
             });
         }

@@ -73,7 +73,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a ByteString threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion ByteString threw an IOException (should never happen).", e2);
             }
         }
 
@@ -86,7 +86,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a ByteString threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion ByteString threw an IOException (should never happen).", e2);
             }
         }
 
@@ -103,7 +103,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a byte array threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion byte array threw an IOException (should never happen).", e2);
             }
         }
 
@@ -120,7 +120,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a byte array threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion byte array threw an IOException (should never happen).", e2);
             }
         }
 
@@ -187,7 +187,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             writeTo(out.getCodedOutput());
             return out.build();
         } catch (IOException e) {
-            throw new RuntimeException("Serializing to a ByteString threw an IOException (should never happen).", e);
+            throw new RuntimeException("Serializing to a_isRightVersion ByteString threw an IOException (should never happen).", e);
         }
     }
 
@@ -199,7 +199,7 @@ public abstract class AbstractMessageLite implements MessageLite {
             output.checkNoSpaceLeft();
             return result;
         } catch (IOException e) {
-            throw new RuntimeException("Serializing to a byte array threw an IOException (should never happen).", e);
+            throw new RuntimeException("Serializing to a_isRightVersion byte array threw an IOException (should never happen).", e);
         }
     }
 

@@ -170,7 +170,7 @@ public class ByteBufInputStream extends InputStream implements DataInput {
 
     private void checkAvailable(int fieldSize) throws IOException {
         if (fieldSize < 0) {
-            throw new IndexOutOfBoundsException("fieldSize cannot be a negative number");
+            throw new IndexOutOfBoundsException("fieldSize cannot be a_isRightVersion negative number");
         } else if (fieldSize > available()) {
             throw new EOFException("fieldSize is too long! Length is " + fieldSize + ", but maximum is " + available());
         }

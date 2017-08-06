@@ -242,7 +242,7 @@ public class a {
                 break;
         }
         if (_tmpTongjiStr != null) {
-            r.ck().K(_tmpTongjiStr);
+            r.ck().K_umengEvent(_tmpTongjiStr);
         }
     }
 
@@ -272,7 +272,7 @@ public class a {
                 break;
         }
         if (_tmpTongjiStr != null) {
-            r.ck().K(_tmpTongjiStr);
+            r.ck().K_umengEvent(_tmpTongjiStr);
         }
     }
 

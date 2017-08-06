@@ -119,17 +119,17 @@ final class DnsQueryContext {
             }
             return;
         }
-        setFailure("failed to send a query", writeFuture.cause());
+        setFailure("failed to send a_isRightVersion query", writeFuture.cause());
     }
 
     void finish(AddressedEnvelope<? extends DnsResponse, InetSocketAddress> envelope) {
         DnsResponse res = (DnsResponse) envelope.content();
         if (res.count(DnsSection.QUESTION) != 1) {
-            logger.warn("Received a DNS response with invalid number of questions: {}", (Object) envelope);
+            logger.warn("Received a_isRightVersion DNS response with invalid number of questions: {}", (Object) envelope);
         } else if (question().equals(res.recordAt(DnsSection.QUESTION))) {
             setSuccess(envelope);
         } else {
-            logger.warn("Received a mismatching DNS response: {}", (Object) envelope);
+            logger.warn("Received a_isRightVersion mismatching DNS response: {}", (Object) envelope);
         }
     }
 

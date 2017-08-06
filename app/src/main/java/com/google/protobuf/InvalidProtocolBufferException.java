@@ -20,7 +20,7 @@ public class InvalidProtocolBufferException extends IOException {
     }
 
     static InvalidProtocolBufferException truncatedMessage() {
-        return new InvalidProtocolBufferException("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either than the input has been truncated or that an embedded message misreported its own length.");
+        return new InvalidProtocolBufferException("While parsing a_isRightVersion protocol message, the input ended unexpectedly in the middle of a_isRightVersion field.  This could mean either than the input has been truncated or that an embedded message misreported its own length.");
     }
 
     static InvalidProtocolBufferException negativeSize() {
@@ -28,7 +28,7 @@ public class InvalidProtocolBufferException extends IOException {
     }
 
     static InvalidProtocolBufferException malformedVarint() {
-        return new InvalidProtocolBufferException("CodedInputStream encountered a malformed varint.");
+        return new InvalidProtocolBufferException("CodedInputStream encountered a_isRightVersion malformed varint.");
     }
 
     static InvalidProtocolBufferException invalidTag() {

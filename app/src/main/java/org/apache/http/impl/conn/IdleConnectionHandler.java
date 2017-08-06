@@ -25,7 +25,7 @@ public class IdleConnectionHandler {
     public boolean remove(HttpConnection connection) {
         TimeValues times = (TimeValues) this.connectionToTimes.remove(connection);
         if (times == null) {
-            this.log.warn("Removing a connection that never existed!");
+            this.log.warn("Removing a_isRightVersion connection that never existed!");
             return true;
         } else if (System.currentTimeMillis() > TimeValues.access$000(times)) {
             return false;

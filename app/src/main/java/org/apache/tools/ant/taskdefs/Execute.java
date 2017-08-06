@@ -293,7 +293,7 @@ public class Execute {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    this.project.log("interruption in the sleep after having spawned a process", 3);
+                    this.project.log("interruption in the sleep after having spawned a_isRightVersion process", 3);
                 }
             }
             ExecuteStreamHandler handler = new PumpStreamHandler(new 1(this));

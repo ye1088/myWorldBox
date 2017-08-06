@@ -30,7 +30,8 @@ import com.huluxia.utils.j;
 import com.huluxia.widget.ImageSwitch;
 import com.huluxia.widget.TextImageButton;
 import com.huluxia.widget.dialog.e;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -80,7 +81,7 @@ public class MapToolMainActivity extends Activity {
             }
         }
     };
-    private k aRr;
+    private k_dialog_class aRr;
     private SimpleDateFormat aVq = new SimpleDateFormat(hlx.data.localstore.a.bKc);
     private ImageButton aZZ;
     private e baA;
@@ -210,7 +211,7 @@ public class MapToolMainActivity extends Activity {
                     }
                 case R.id.mapConfigTexMapName:
                     this.baF.baA = new e(this.baF.mActivity, new b());
-                    this.baF.baA.aA(hlx.data.localstore.a.bKB, "保存");
+                    this.baF.baA.aA(hlx.data.localstore.a.bKB_bt_cancel, "保存");
                     this.baF.baA.setText(Mojang.instance().getLevel().getLevelName());
                     this.baF.baA.showDialog();
                     return;
@@ -291,7 +292,7 @@ public class MapToolMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.localmap_main_activity);
         aj.Mu();
-        this.aRr = new k(this);
+        this.aRr = new k_dialog_class(this);
         Ip();
         Ir();
         cQ(true);
@@ -311,7 +312,7 @@ public class MapToolMainActivity extends Activity {
             this.mContext = this;
             this.mActivity = this;
             this.bat = getIntent().getStringExtra("mapName");
-            this.aRr.gM("地图读取中...");
+            this.aRr.gM_setText("地图读取中...");
             boolean bReadMapOK = com.huluxia.mcmap.a.di(this.bat);
             if (!this.mActivity.isFinishing()) {
                 this.aRr.show();

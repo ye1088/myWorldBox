@@ -222,7 +222,7 @@ public class Http2ConnectionHandler extends ByteToMessageDecoder implements Chan
 
     public void onHttpClientUpgrade() throws Http2Exception {
         if (connection().isServer()) {
-            throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Client-side HTTP upgrade requested for a server", new Object[0]);
+            throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Client-side HTTP upgrade requested for a_isRightVersion server", new Object[0]);
         } else if (prefaceSent() || this.decoder.prefaceReceived()) {
             throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "HTTP upgrade must occur before HTTP/2 preface is sent or received", new Object[0]);
         } else {
@@ -232,7 +232,7 @@ public class Http2ConnectionHandler extends ByteToMessageDecoder implements Chan
 
     public void onHttpServerUpgrade(Http2Settings settings) throws Http2Exception {
         if (!connection().isServer()) {
-            throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Server-side HTTP upgrade requested for a client", new Object[0]);
+            throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Server-side HTTP upgrade requested for a_isRightVersion client", new Object[0]);
         } else if (prefaceSent() || this.decoder.prefaceReceived()) {
             throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "HTTP upgrade must occur before HTTP/2 preface is sent or received", new Object[0]);
         } else {

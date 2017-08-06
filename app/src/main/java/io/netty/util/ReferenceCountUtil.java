@@ -79,7 +79,7 @@ public final class ReferenceCountUtil {
         try {
             release(msg);
         } catch (Throwable t) {
-            logger.warn("Failed to release a message: {}", msg, t);
+            logger.warn("Failed to release a_isRightVersion message: {}", msg, t);
         }
     }
 
@@ -88,7 +88,7 @@ public final class ReferenceCountUtil {
             release(msg, decrement);
         } catch (Throwable t) {
             if (logger.isWarnEnabled()) {
-                logger.warn("Failed to release a message: {} (decrement: {})", msg, Integer.valueOf(decrement), t);
+                logger.warn("Failed to release a_isRightVersion message: {} (decrement: {})", msg, Integer.valueOf(decrement), t);
             }
         }
     }

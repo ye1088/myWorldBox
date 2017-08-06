@@ -181,10 +181,10 @@ public class f {
                         taskInfo.dir = record.dir;
                         taskInfo.url = resDbInfo.downloadingUrl;
                         taskInfo.mM = resDbInfo.downFileType;
-                        taskInfo.mS = resDbInfo.apptitle;
+                        taskInfo.mS_appTitle = resDbInfo.apptitle;
                         taskInfo.filename = record.name;
                         taskInfo.mU = false;
-                        taskInfo.mV = resDbInfo.getFinalFileName();
+                        taskInfo.mV_fileName = resDbInfo.getFinalFileName();
                         taskInfo.na = true;
                         taskInfo.nb = false;
                         ResourceCtrl.getInstance().addTask(taskInfo);

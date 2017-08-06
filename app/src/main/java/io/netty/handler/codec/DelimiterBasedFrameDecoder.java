@@ -175,7 +175,7 @@ public class DelimiterBasedFrameDecoder extends ByteToMessageDecoder {
 
     private static void validateMaxFrameLength(int maxFrameLength) {
         if (maxFrameLength <= 0) {
-            throw new IllegalArgumentException("maxFrameLength must be a positive integer: " + maxFrameLength);
+            throw new IllegalArgumentException("maxFrameLength must be a_isRightVersion positive integer: " + maxFrameLength);
         }
     }
 }

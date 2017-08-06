@@ -19,7 +19,7 @@ public abstract class AbstractRemoteAddressFilter<T extends SocketAddress> exten
             ctx.fireChannelActive();
             return;
         }
-        throw new IllegalStateException("cannot determine to accept or reject a channel: " + ctx.channel());
+        throw new IllegalStateException("cannot determine to accept or reject a_isRightVersion channel: " + ctx.channel());
     }
 
     private boolean handleNewChannel(ChannelHandlerContext ctx) throws Exception {

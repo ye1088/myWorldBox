@@ -152,7 +152,7 @@ public abstract class BaseApi {
         bundle.putString("status_machine", Build.MODEL);
         bundle.putString("status_version", VERSION.SDK);
         bundle.putString("sdkv", Constants.SDK_VERSION);
-        bundle.putString("sdkp", "a");
+        bundle.putString("sdkp", "a_isRightVersion");
         if (this.mToken != null && this.mToken.isSessionValid()) {
             bundle.putString("access_token", this.mToken.getAccessToken());
             bundle.putString("oauth_consumer_key", this.mToken.getAppId());
@@ -199,7 +199,7 @@ public abstract class BaseApi {
             bundle.putString(Constants.PARAM_PLATFORM_ID, "openmobile_android");
         }
         bundle.putString("sdkv", Constants.SDK_VERSION);
-        bundle.putString("sdkp", "a");
+        bundle.putString("sdkp", "a_isRightVersion");
         return bundle;
     }
 

@@ -24,7 +24,7 @@ public class AbsHListView$RecycleBin {
 
     public void setViewTypeCount(int viewTypeCount) {
         if (viewTypeCount < 1) {
-            throw new IllegalArgumentException("Can't have a viewTypeCount < 1");
+            throw new IllegalArgumentException("Can't have a_isRightVersion viewTypeCount < 1");
         }
         ArrayList<View>[] scrapViews = new ArrayList[viewTypeCount];
         for (int i = 0; i < viewTypeCount; i++) {

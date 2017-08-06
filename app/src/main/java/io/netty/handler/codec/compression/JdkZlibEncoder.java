@@ -93,7 +93,7 @@ public class JdkZlibEncoder extends ZlibEncoder {
         if (ctx != null) {
             return ctx;
         }
-        throw new IllegalStateException("not added to a pipeline");
+        throw new IllegalStateException("not added to a_isRightVersion pipeline");
     }
 
     public boolean isClosed() {

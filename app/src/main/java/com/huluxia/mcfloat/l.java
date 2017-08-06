@@ -117,7 +117,7 @@ public class l implements a {
         b _tmpMCNetUser = com.huluxia.mcgame.netuser.a.yQ().hf(index);
         if (_tmpMCNetUser.isValid()) {
             h.b(_tmpMCNetUser.yj(), _tmpMCNetUser.yk(), _tmpMCNetUser.yl());
-            r.ck().K(r.a.kB);
+            r.ck().K_umengEvent(r.a.kB);
             return;
         }
         k.show_toast(this.Pu.getContext(), "玩家已经离开!");

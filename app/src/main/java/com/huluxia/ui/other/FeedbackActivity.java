@@ -100,7 +100,7 @@ public class FeedbackActivity extends PublishTopicBaseActivity {
         }
         this.bda.setExt(s(contact));
         if (!UtilsFunction.empty((CharSequence) logUrl)) {
-            detail = detail + "   <a href=" + logUrl + ">反馈日志</a>";
+            detail = detail + "   <a_isRightVersion href=" + logUrl + ">反馈日志</a_isRightVersion>";
         }
         this.bda.setText(detail);
         this.bda.a(this);

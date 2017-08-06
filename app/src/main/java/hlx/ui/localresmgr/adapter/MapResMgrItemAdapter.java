@@ -259,7 +259,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
                         this.bZg.akL.dismissDialog();
                         return;
                     case 2:
-                        r.ck().K(hlx.data.tongji.a.bNa);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bNa);
                         if (this.bZg.akF != null) {
                             this.bZg.akF.aH(item.name, item.path);
                             this.bZg.akL.dismissDialog();
@@ -267,21 +267,21 @@ public class MapResMgrItemAdapter extends BaseAdapter {
                         }
                         return;
                     case 3:
-                        r.ck().K(hlx.data.tongji.a.bNb);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bNb);
                         if (this.bZg.akF != null) {
                             this.bZg.akF.l(item);
                         }
                         this.bZg.akL.dismissDialog();
                         return;
                     case 4:
-                        r.ck().K(hlx.data.tongji.a.bNc);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bNc);
                         if (this.bZg.akF != null) {
                             this.bZg.akF.m(item);
                         }
                         this.bZg.akL.dismissDialog();
                         return;
                     case 5:
-                        r.ck().K(hlx.data.tongji.a.bNd);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bNd);
                         if (this.bZg.akF != null) {
                             this.bZg.akF.ht(item.name);
                         }

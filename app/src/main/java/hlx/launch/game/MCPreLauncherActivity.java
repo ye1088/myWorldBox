@@ -206,14 +206,14 @@ public class MCPreLauncherActivity extends Activity {
             i = 0;
         }
         h.ho(i);
-        r.ck().K(c.Sg().Sj() ? hlx.data.tongji.a.bNW : hlx.data.tongji.a.bNX);
+        r.ck().K_umengEvent(c.Sg().Sj() ? hlx.data.tongji.a.bNW : hlx.data.tongji.a.bNX);
         if (!c.Sg().Si()) {
             i2 = 0;
         }
         h.hn(i2);
-        r.ck().K(c.Sg().Si() ? hlx.data.tongji.a.bNU : hlx.data.tongji.a.bNV);
+        r.ck().K_umengEvent(c.Sg().Si() ? hlx.data.tongji.a.bNU : hlx.data.tongji.a.bNV);
         h.bK(c.Sg().Sk());
-        r.ck().K(c.Sg().Sk() ? hlx.data.tongji.a.bNY : hlx.data.tongji.a.bNZ);
+        r.ck().K_umengEvent(c.Sg().Sk() ? hlx.data.tongji.a.bNY : hlx.data.tongji.a.bNZ);
         h.zE();
     }
 

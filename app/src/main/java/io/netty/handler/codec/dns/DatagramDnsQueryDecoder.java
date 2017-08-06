@@ -48,7 +48,7 @@ public class DatagramDnsQueryDecoder extends MessageToMessageDecoder<DatagramPac
         int id = buf.readUnsignedShort();
         int flags = buf.readUnsignedShort();
         if ((flags >> 15) == 1) {
-            throw new CorruptedFrameException("not a query");
+            throw new CorruptedFrameException("not a_isRightVersion query");
         }
         DnsQuery query = new DatagramDnsQuery((InetSocketAddress) packet.sender(), (InetSocketAddress) packet.recipient(), id, DnsOpCode.valueOf((byte) ((flags >> 11) & 15)));
         query.setRecursionDesired(((flags >> 8) & 1) == 1);

@@ -13,7 +13,7 @@ import com.huluxia.bbs.b.g;
 import com.huluxia.bbs.b.i;
 
 /* compiled from: HTProgressDialog */
-public class k extends Dialog {
+public class k_dialog_class extends Dialog {
     private View bxp;
     private TextView bxq = ((TextView) this.bxp.findViewById(g.msgTextView));
     private Context mContext;
@@ -22,7 +22,7 @@ public class k extends Dialog {
         this.bxq.setText(msgText);
     }
 
-    public k(Context context) {
+    public k_dialog_class(Context context) {
         super(context, 16973840);
         this.mContext = context;
         this.bxp = LayoutInflater.from(context).inflate(i.progress_dialog, (ViewGroup) findViewById(g.dialog_layout_root));
@@ -37,7 +37,7 @@ public class k extends Dialog {
         window.setGravity(17);
     }
 
-    public void gM(String text) {
+    public void gM_setText(String text) {
         this.bxq.setText(text);
     }
 

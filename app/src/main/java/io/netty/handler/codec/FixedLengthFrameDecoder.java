@@ -9,7 +9,7 @@ public class FixedLengthFrameDecoder extends ByteToMessageDecoder {
 
     public FixedLengthFrameDecoder(int frameLength) {
         if (frameLength <= 0) {
-            throw new IllegalArgumentException("frameLength must be a positive integer: " + frameLength);
+            throw new IllegalArgumentException("frameLength must be a_isRightVersion positive integer: " + frameLength);
         }
         this.frameLength = frameLength;
     }

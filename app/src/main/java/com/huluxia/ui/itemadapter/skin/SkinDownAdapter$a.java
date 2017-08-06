@@ -31,7 +31,7 @@ class SkinDownAdapter$a implements OnClickListener {
         if (j.isExist(jsPath)) {
             SkinDownAdapter.a(this.aWx, this.info.name, jsPath, this.info.createTime, 1, aq.gk(this.info.version));
             d.f(this.aWx.aTg, this.info.version, 3);
-            r.ck().K(hlx.data.tongji.a.bMD);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bMD);
             return;
         }
         MapItem item = a.convertMapItem(this.info);

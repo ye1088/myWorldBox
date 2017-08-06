@@ -154,7 +154,7 @@ public class g {
                         taskInfo.dir = record.dir;
                         taskInfo.url = updaterDbInfo.url;
                         taskInfo.mM = 22;
-                        taskInfo.mS = updaterDbInfo.name;
+                        taskInfo.mS_appTitle = updaterDbInfo.name;
                         taskInfo.filename = record.name;
                         taskInfo.mU = false;
                         taskInfo.na = true;

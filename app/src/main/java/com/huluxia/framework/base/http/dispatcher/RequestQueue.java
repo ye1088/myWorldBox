@@ -143,7 +143,7 @@ public class RequestQueue<T extends Request<?>> {
                 }
             }, mayInterruptIfRunning);
         }
-        throw new IllegalArgumentException("Cannot cancelAll with a null tag");
+        throw new IllegalArgumentException("Cannot cancelAll with a_isRightVersion null tag");
     }
 
     public Request findRequest(RequestFilter filter) {

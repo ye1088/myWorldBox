@@ -127,7 +127,7 @@ public class aw {
     }
 
     public static String gn(String s) {
-        char[] hexDigits = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+        char[] hexDigits = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a_isRightVersion', 'b', 'c', 'd', 'e', 'f'};
         try {
             byte[] btInput = s.getBytes();
             MessageDigest mdInst = MessageDigest.getInstance("MD5");

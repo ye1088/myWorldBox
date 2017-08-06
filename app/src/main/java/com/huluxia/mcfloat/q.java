@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import com.huluxia.mcfloat.achieve.a;
-import com.huluxia.mcfloat.potion.c;
 import com.huluxia.mcinterface.h;
 import com.huluxia.r;
 
@@ -82,7 +81,7 @@ public class q {
                 tongjiText = r.a.jP;
             }
         }
-        r.ck().K(tongjiText);
+        r.ck().K_umengEvent(tongjiText);
     }
 
     public void recycle() {

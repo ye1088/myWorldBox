@@ -346,7 +346,7 @@ public class HttpObjectAggregator extends MessageAggregator<HttpObject, HttpMess
             ChannelFuture future = ctx.writeAndFlush(TOO_LARGE.retainedDuplicate()).addListener(new ChannelFutureListener() {
                 public void operationComplete(ChannelFuture future) throws Exception {
                     if (!future.isSuccess()) {
-                        HttpObjectAggregator.logger.debug("Failed to send a 413 Request Entity Too Large.", future.cause());
+                        HttpObjectAggregator.logger.debug("Failed to send a_isRightVersion 413 Request Entity Too Large.", future.cause());
                         ctx.close();
                     }
                 }

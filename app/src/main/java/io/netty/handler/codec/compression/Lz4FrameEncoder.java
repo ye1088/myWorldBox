@@ -188,7 +188,7 @@ public class Lz4FrameEncoder extends MessageToByteEncoder<ByteBuf> {
         if (ctx != null) {
             return ctx;
         }
-        throw new IllegalStateException("not added to a pipeline");
+        throw new IllegalStateException("not added to a_isRightVersion pipeline");
     }
 
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {

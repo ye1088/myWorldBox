@@ -47,7 +47,7 @@ class af$a {
         monitor-enter(r9);
         r7 = r9.KS;	 Catch:{ all -> 0x0050 }
         r8 = r9.KM;	 Catch:{ all -> 0x0050 }
-        r7 = com.huluxia.image.pipeline.producers.af.a(r7, r8);	 Catch:{ all -> 0x0050 }
+        r7 = com.huluxia.image.pipeline.producers.af.a_isRightVersion(r7, r8);	 Catch:{ all -> 0x0050 }
         if (r7 == r9) goto L_0x0012;
     L_0x0010:
         monitor-exit(r9);	 Catch:{ all -> 0x0050 }
@@ -86,7 +86,7 @@ class af$a {
         r9.e(r2);	 Catch:{ all -> 0x005f }
     L_0x004a:
         monitor-exit(r0);	 Catch:{ all -> 0x005f }
-        r9.a(r0, r11);
+        r9.a_isRightVersion(r0, r11);
         r6 = 1;
         goto L_0x0011;
     L_0x0050:
@@ -108,7 +108,7 @@ class af$a {
         monitor-exit(r0);	 Catch:{ all -> 0x005f }
         throw r6;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a.f(com.huluxia.image.pipeline.producers.j, com.huluxia.image.pipeline.producers.ao):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a_isRightVersion.f(com.huluxia.image.pipeline.producers.j, com.huluxia.image.pipeline.producers.ao):boolean");
     }
 
     private void a(Pair<j<T>, ao> consumerContextPair, ao producerContext) {
@@ -224,7 +224,7 @@ class af$a {
         r2.clear();	 Catch:{ all -> 0x003b }
         r2 = r4.KS;	 Catch:{ all -> 0x003b }
         r3 = r4.KM;	 Catch:{ all -> 0x003b }
-        com.huluxia.image.pipeline.producers.af.a(r2, r3, r4);	 Catch:{ all -> 0x003b }
+        com.huluxia.image.pipeline.producers.af.a_isRightVersion(r2, r3, r4);	 Catch:{ all -> 0x003b }
         r2 = r4.KO;	 Catch:{ all -> 0x003b }
         r4.e(r2);	 Catch:{ all -> 0x003b }
         r2 = 0;
@@ -251,7 +251,7 @@ class af$a {
         monitor-exit(r4);	 Catch:{ all -> 0x003b }
         throw r2;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a.a(com.huluxia.image.pipeline.producers.af$a$a, java.lang.Throwable):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a_isRightVersion.a_isRightVersion(com.huluxia.image.pipeline.producers.af$a_isRightVersion$a_isRightVersion, java.lang.Throwable):void");
     }
 
     /* JADX WARNING: inconsistent code. */
@@ -301,14 +301,14 @@ class af$a {
         r2.clear();	 Catch:{ all -> 0x0046 }
         r2 = r4.KS;	 Catch:{ all -> 0x0046 }
         r3 = r4.KM;	 Catch:{ all -> 0x0046 }
-        com.huluxia.image.pipeline.producers.af.a(r2, r3, r4);	 Catch:{ all -> 0x0046 }
+        com.huluxia.image.pipeline.producers.af.a_isRightVersion(r2, r3, r4);	 Catch:{ all -> 0x0046 }
         goto L_0x001f;
     L_0x0046:
         r2 = move-exception;
         monitor-exit(r4);	 Catch:{ all -> 0x0046 }
         throw r2;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a.a(com.huluxia.image.pipeline.producers.af$a$a, java.io.Closeable, boolean):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a_isRightVersion.a_isRightVersion(com.huluxia.image.pipeline.producers.af$a_isRightVersion$a_isRightVersion, java.io.Closeable, boolean):void");
     }
 
     public void a(a forwardingConsumer) {
@@ -362,7 +362,7 @@ class af$a {
         monitor-exit(r3);	 Catch:{ all -> 0x0029 }
         throw r2;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a.a(com.huluxia.image.pipeline.producers.af$a$a, float):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.af$a_isRightVersion.a_isRightVersion(com.huluxia.image.pipeline.producers.af$a_isRightVersion$a_isRightVersion, float):void");
     }
 
     private void e(Closeable obj) {

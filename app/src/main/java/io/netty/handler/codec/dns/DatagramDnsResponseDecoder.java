@@ -49,7 +49,7 @@ public class DatagramDnsResponseDecoder extends MessageToMessageDecoder<Datagram
         int id = buf.readUnsignedShort();
         int flags = buf.readUnsignedShort();
         if ((flags >> 15) == 0) {
-            throw new CorruptedFrameException("not a response");
+            throw new CorruptedFrameException("not a_isRightVersion response");
         }
         boolean z2;
         DnsResponse response = new DatagramDnsResponse((InetSocketAddress) packet.sender(), (InetSocketAddress) packet.recipient(), id, DnsOpCode.valueOf((byte) ((flags >> 11) & 15)), DnsResponseCode.valueOf((byte) (flags & 15)));

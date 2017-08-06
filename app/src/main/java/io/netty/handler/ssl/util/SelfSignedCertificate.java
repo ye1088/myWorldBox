@@ -58,8 +58,8 @@ public final class SelfSignedCertificate {
             try {
                 paths = OpenJdkSelfSignedCertGenerator.generate(fqdn, keypair, random, notBefore, notAfter);
             } catch (Throwable t2) {
-                logger.debug("Failed to generate a self-signed X.509 certificate using Bouncy Castle:", t2);
-                CertificateException certificateException = new CertificateException("No provider succeeded to generate a self-signed certificate. See debug log for the root cause.");
+                logger.debug("Failed to generate a_isRightVersion self-signed X.509 certificate using Bouncy Castle:", t2);
+                CertificateException certificateException = new CertificateException("No provider succeeded to generate a_isRightVersion self-signed certificate. See debug log for the root cause.");
             }
             this.certificate = new File(paths[0]);
             this.privateKey = new File(paths[1]);
@@ -73,7 +73,7 @@ public final class SelfSignedCertificate {
                         try {
                             certificateInput2.close();
                         } catch (Throwable e2) {
-                            logger.warn("Failed to close a file: " + this.certificate, e2);
+                            logger.warn("Failed to close a_isRightVersion file: " + this.certificate, e2);
                         }
                     }
                 } catch (Exception e3) {
@@ -87,7 +87,7 @@ public final class SelfSignedCertificate {
                             try {
                                 certificateInput.close();
                             } catch (Throwable e22) {
-                                logger.warn("Failed to close a file: " + this.certificate, e22);
+                                logger.warn("Failed to close a_isRightVersion file: " + this.certificate, e22);
                             }
                         }
                         throw th;
@@ -260,7 +260,7 @@ public final class SelfSignedCertificate {
 
     private static void safeDelete(File certFile) {
         if (!certFile.delete()) {
-            logger.warn("Failed to delete a file: " + certFile);
+            logger.warn("Failed to delete a_isRightVersion file: " + certFile);
         }
     }
 
@@ -268,7 +268,7 @@ public final class SelfSignedCertificate {
         try {
             keyOut.close();
         } catch (Throwable e) {
-            logger.warn("Failed to close a file: " + keyFile, e);
+            logger.warn("Failed to close a_isRightVersion file: " + keyFile, e);
         }
     }
 }

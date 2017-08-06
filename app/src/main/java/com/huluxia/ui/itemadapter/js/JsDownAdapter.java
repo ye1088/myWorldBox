@@ -98,7 +98,7 @@ public class JsDownAdapter extends DownAdapter {
         if (this.aTn) {
             notifyDataSetChanged();
         }
-        r.ck().K(hlx.data.tongji.a.bMJ);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMJ);
         e.Dk().iR(1);
     }
 

@@ -67,7 +67,7 @@ public class War extends Jar {
             if (this.addedWebXmlFile != null) {
                 addFile = false;
                 if (!FILE_UTILS.fileNameEquals(this.addedWebXmlFile, file)) {
-                    logWhenWriting("Warning: selected " + this.archiveType + " files include a second " + XML_DESCRIPTOR_PATH + " which will be ignored.\n" + "The duplicate entry is at " + file + '\n' + "The file that will be used is " + this.addedWebXmlFile, 1);
+                    logWhenWriting("Warning: selected " + this.archiveType + " files include a_isRightVersion second " + XML_DESCRIPTOR_PATH + " which will be ignored.\n" + "The duplicate entry is at " + file + '\n' + "The file that will be used is " + this.addedWebXmlFile, 1);
                 }
             } else {
                 this.addedWebXmlFile = file;

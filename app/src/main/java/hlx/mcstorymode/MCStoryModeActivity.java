@@ -409,7 +409,7 @@ public class MCStoryModeActivity extends Activity {
                 this.bWF.Tz();
             }
         });
-        dia.az(hlx.data.localstore.a.bKA, "您已通关，是否重玩以体验更多剧情？");
+        dia.az(hlx.data.localstore.a.bKA_TIPS, "您已通关，是否重玩以体验更多剧情？");
         dia.aA("回顾过去", "重新体验");
         dia.showDialog();
     }
@@ -443,7 +443,7 @@ public class MCStoryModeActivity extends Activity {
                 this.bWF.Tz();
             }
         });
-        dia.az(hlx.data.localstore.a.bKA, "欲知后事如何，请听下回分解！敬请期待喔！^_^");
+        dia.az(hlx.data.localstore.a.bKA_TIPS, "欲知后事如何，请听下回分解！敬请期待喔！^_^");
         dia.aA("回顾过去", isReaded ? null : "重新体验");
         dia.showDialog();
     }

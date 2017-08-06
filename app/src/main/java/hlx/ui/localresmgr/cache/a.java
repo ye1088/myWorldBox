@@ -247,7 +247,7 @@ public class a {
         if (r7 != 0) goto L_0x0016;
     L_0x002c:
         r7 = r10.bZE;	 Catch:{ all -> 0x0046 }
-        r9 = new hlx.ui.localresmgr.cache.a$a;	 Catch:{ all -> 0x0046 }
+        r9 = new hlx.ui.localresmgr.cache.a_isRightVersion$a_isRightVersion;	 Catch:{ all -> 0x0046 }
         r5 = r6 + 1;
         r9.<init>(r4, r6);	 Catch:{ all -> 0x0071 }
         r7.add(r9);	 Catch:{ all -> 0x0071 }
@@ -322,7 +322,7 @@ public class a {
         r5 = r6;
         goto L_0x0045;
         */
-        throw new UnsupportedOperationException("Method not decompiled: hlx.ui.localresmgr.cache.a.hC(java.lang.String):void");
+        throw new UnsupportedOperationException("Method not decompiled: hlx.ui.localresmgr.cache.a_isRightVersion.hC(java.lang.String):void");
     }
 
     public String hD(String filepath) throws Exception {

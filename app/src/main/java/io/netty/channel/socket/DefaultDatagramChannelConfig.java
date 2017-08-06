@@ -117,7 +117,7 @@ public class DefaultDatagramChannelConfig extends DefaultChannelConfig implement
         if (broadcast) {
             try {
                 if (!(this.javaSocket.getLocalAddress().isAnyLocalAddress() || PlatformDependent.isWindows() || PlatformDependent.isRoot())) {
-                    logger.warn("A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; setting the SO_BROADCAST flag anyway as requested on the socket which is bound to " + this.javaSocket.getLocalSocketAddress() + '.');
+                    logger.warn("A non-root user can't receive a_isRightVersion broadcast packet if the socket is not bound to a_isRightVersion wildcard address; setting the SO_BROADCAST flag anyway as requested on the socket which is bound to " + this.javaSocket.getLocalSocketAddress() + '.');
                 }
             } catch (SocketException e) {
                 throw new ChannelException(e);

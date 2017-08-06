@@ -40,7 +40,7 @@ public class QueryStringDecoder {
         } else if (charset == null) {
             throw new NullPointerException("charset");
         } else if (maxParams <= 0) {
-            throw new IllegalArgumentException("maxParams: " + maxParams + " (expected: a positive integer)");
+            throw new IllegalArgumentException("maxParams: " + maxParams + " (expected: a_isRightVersion positive integer)");
         } else {
             this.uri = uri;
             this.charset = charset;
@@ -63,7 +63,7 @@ public class QueryStringDecoder {
         } else if (charset == null) {
             throw new NullPointerException("charset");
         } else if (maxParams <= 0) {
-            throw new IllegalArgumentException("maxParams: " + maxParams + " (expected: a positive integer)");
+            throw new IllegalArgumentException("maxParams: " + maxParams + " (expected: a_isRightVersion positive integer)");
         } else {
             String rawPath = uri.getRawPath();
             if (rawPath != null) {
@@ -309,7 +309,7 @@ public class QueryStringDecoder {
         if ('0' <= c && c <= '9') {
             return (char) (c - 48);
         }
-        if ('a' <= c && c <= 'f') {
+        if ('a_isRightVersion' <= c && c <= 'f') {
             return (char) ((c - 97) + 10);
         }
         if ('A' > c || c > 'F') {

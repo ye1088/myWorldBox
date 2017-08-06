@@ -71,7 +71,7 @@ Error: java.util.NoSuchElementException
         android.os.Looper.prepare();	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r0 = new android.os.Handler;	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r0.<init>();	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
-        r2.a = r0;	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
+        r2.a_isRightVersion = r0;	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r0 = android.os.Looper.myQueue();	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r2.b = r0;	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r0 = r2.b;	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
@@ -93,8 +93,8 @@ Error: java.util.NoSuchElementException
     L_0x002f:
         r0 = move-exception;
         r1 = "PushLogAC2705";	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
-        r0 = com.huawei.android.pushagent.c.a.e.a(r0);	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
-        com.huawei.android.pushagent.c.a.e.d(r1, r0);	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
+        r0 = com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r0);	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
+        com.huawei.android.pushagent.c.a_isRightVersion.e.d(r1, r0);	 Catch:{ Throwable -> 0x002f, all -> 0x004c }
         r0 = r2.c;
         if (r0 == 0) goto L_0x002e;
     L_0x003e:

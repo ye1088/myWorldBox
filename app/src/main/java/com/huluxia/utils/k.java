@@ -210,17 +210,17 @@ public class k extends au {
                     case SHARE_QQZONE:
                         _tongjiFlag = str + "_qqzone";
                         j.m(activity).a(0, str2, str3, str4, str5);
-                        r.ck().K(_tongjiFlag);
+                        r.ck().K_umengEvent(_tongjiFlag);
                         break;
                     case SHARE_QQ:
                         _tongjiFlag = str + "_qqfriend";
                         j.m(activity).e(str2, str3, str4, str5);
-                        r.ck().K(_tongjiFlag);
+                        r.ck().K_umengEvent(_tongjiFlag);
                         break;
                     case SHARE_WEIXIN:
                         _tongjiFlag = str + "_wxfriend";
                         k.a(activity, str2, str3, str5);
-                        r.ck().K(_tongjiFlag);
+                        r.ck().K_umengEvent(_tongjiFlag);
                         break;
                 }
                 dialogMenu.dismiss();

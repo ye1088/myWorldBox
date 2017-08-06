@@ -167,15 +167,15 @@ public class e implements a {
                     return;
                 case R.id.floatBuildBtnLineSet:
                     this.Qz.Qq.aO(this.Qz.Pu.getContext());
-                    r.ck().K(r.a.lm);
+                    r.ck().K_umengEvent(r.a.lm);
                     return;
                 case R.id.floatBuildBtnRectAddSet:
                     this.Qz.Qr.aO(this.Qz.Pu.getContext());
-                    r.ck().K(r.a.ln);
+                    r.ck().K_umengEvent(r.a.ln);
                     return;
                 case R.id.floatBuildBtnEllipseAddSet:
                     this.Qz.Qs.aO(this.Qz.Pu.getContext());
-                    r.ck().K(r.a.lo);
+                    r.ck().K_umengEvent(r.a.lo);
                     return;
                 default:
                     return;

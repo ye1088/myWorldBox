@@ -39,7 +39,7 @@ public class a implements h {
                 break;
         }
         if (_tmpTongjiEvent != null) {
-            r.ck().K(_tmpTongjiEvent);
+            r.ck().K_umengEvent(_tmpTongjiEvent);
         }
         d.g(context, strVersions, resType);
     }

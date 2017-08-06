@@ -61,7 +61,7 @@ public class SnatchRedActivity extends Activity {
                     this.cfS.finish();
                     return;
                 case R.id.tvStartSnatch:
-                    r.ck().K(hlx.data.tongji.a.bOp);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bOp);
                     this.cfS.VO();
                     return;
                 case R.id.llySnatchRedDetail:
@@ -77,7 +77,7 @@ public class SnatchRedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aty_snatch_red);
         this.SE = this;
-        r.ck().K(hlx.data.tongji.a.bOo);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bOo);
         sJ();
     }
 
@@ -125,9 +125,9 @@ public class SnatchRedActivity extends Activity {
     public static void VP() {
         boolean isOpenSnatchRed = ah.KZ().j(a.bLw, false);
         if (isOpenSnatchRed) {
-            r.ck().K(hlx.data.tongji.a.bOq);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bOq);
         } else {
-            r.ck().K(hlx.data.tongji.a.bOr);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bOr);
         }
         a.VJ().g(isOpenSnatchRed, isOpenSnatchRed);
     }

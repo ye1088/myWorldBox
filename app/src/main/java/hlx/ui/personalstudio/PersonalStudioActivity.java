@@ -225,7 +225,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
                 this.cdB.cdo.setVisibility(8);
                 t.g(this.cdB.mContext, this.cdB.big.studioInfo.id);
             } else if (inIndex == 4 && this.cdB.big != null) {
-                new DialogManager(this.cdB.mContext).showOkCancelDialog("退出工作室", String.format("你将退出 %s，退出后120小时内禁止加入任何工作室！", new Object[]{this.cdB.big.studioInfo.name}), (CharSequence) "退出", hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+                new DialogManager(this.cdB.mContext).showOkCancelDialog("退出工作室", String.format("你将退出 %s，退出后120小时内禁止加入任何工作室！", new Object[]{this.cdB.big.studioInfo.name}), (CharSequence) "退出", hlx.data.localstore.a.bKB_bt_cancel, true, new OkCancelDialogListener(this) {
                     final /* synthetic */ AnonymousClass1 cdC;
 
                     {

@@ -195,7 +195,7 @@ public class ImageRequestBuilder {
                 try {
                     Integer.parseInt(this.Mn.getPath().substring(1));
                 } catch (NumberFormatException e) {
-                    throw new BuilderException("Resource URI path must be a resource id.");
+                    throw new BuilderException("Resource URI path must be a_isRightVersion resource id.");
                 }
             }
         }

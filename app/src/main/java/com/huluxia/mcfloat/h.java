@@ -279,7 +279,7 @@ public class h implements OnClickListener, com.huluxia.mcfloat.p.a {
         public void aD(boolean bEnabled) {
             int i;
             if (bEnabled) {
-                r.ck().K(com.huluxia.r.a.kU);
+                r.ck().K_umengEvent(com.huluxia.r.a.kU);
             }
             if (bEnabled) {
                 i = 20;
@@ -439,7 +439,7 @@ public class h implements OnClickListener, com.huluxia.mcfloat.p.a {
                     }
                 }
                 com.huluxia.mcinterface.h.d(this.Rn, 0, 1, this.RJ.RO, this.Rx);
-                r.ck().K(com.huluxia.r.a.kT);
+                r.ck().K_umengEvent(com.huluxia.r.a.kT);
                 com.huluxia.mctool.e.Dk().iP(1);
                 k.p(this.Pu.getContext(), "附魔完成,已加入背包");
                 if (com.huluxia.mcinterface.h.zx() != 5) {

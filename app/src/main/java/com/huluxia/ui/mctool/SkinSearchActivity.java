@@ -277,7 +277,7 @@ public class SkinSearchActivity extends HTBaseActivity implements OnClickListene
 
     protected void e(int start, int count, String key) {
         x.DN().c(start, count, key);
-        r.ck().K(r.a.ir);
+        r.ck().K_umengEvent(r.a.ir);
     }
 
     protected int AN() {

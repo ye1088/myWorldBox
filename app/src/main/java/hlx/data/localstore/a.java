@@ -64,9 +64,9 @@ public class a {
     public static final String bJx = "0.14";
     public static final String bJy = "0.15";
     public static final String bJz = "0.16";
-    public static final String bKA = "提示";
-    public static final String bKB = "取消";
-    public static final String bKC = "确定";
+    public static final String bKA_TIPS = "提示";
+    public static final String bKB_bt_cancel = "取消";
+    public static final String bKC_bt_ok = "确定";
     public static final String bKD = "直接启动";
     public static final String bKE = "切换版本";
     public static final String bKF = "切换到(%s)版本需要重启程序才能继续，是否重启？";
@@ -82,12 +82,12 @@ public class a {
     public static final String bKP = "将为您下载插件(17MB)以支持最新功能";
     public static final String bKQ = "more_sepack0121";
     public static final String bKR = "EEB6D5D1D4FD3891897DE6969D1FA167";
-    public static String bKS = null;
+    public static String bKS_down_url_fireAndSound_pack_12 = null;
     public static final String bKT = "more_sepack0130";
     public static final String bKU = "9EC4E14B71EB00F6FF11521BFA76D178";
-    public static String bKV = null;
+    public static String bKV_down_url_fireAndSound_pack_13 = null;
     public static final String bKW = "sound/";
-    public static final String bKX = "MC_0.14.1_huluxia";
+    public static final String bKX_MC_0_14_1_huluxia_string = "MC_0.14.1_huluxia";
     public static final String bKY = "MC_0.15.1.2_huluxia";
     public static final String bKZ = "MC_0.15.90.2_hlx";
     public static final String bKa = ".png";
@@ -131,9 +131,9 @@ public class a {
     public static final String bLa = "654F90593B81B1A576326B735AB7ED5C";
     public static final String bLb = "56580536b9a54f9ae1ac49f960dbee6c";
     public static final String bLc = "821635acea4807672a8baf3549c026d6";
-    public static String mpc_download_url = null;
-    public static String bLe = null;
-    public static String bLf = null;
+    public static String mpc_download_url_v0141 = null;
+    public static String bLe_download_url_v01540 = null;
+    public static String bLf_download_url_v01610 = null;
     public static final String bLg = "KEY_HOME_PAGE_NEW_USER_GUIDE";
     public static final long bLh = 10217023;
     public static final long bLi = 11406664;
@@ -171,10 +171,10 @@ public class a {
     }
 
     public static void NR() {
-        bKS = HTApplication.fn + "/file/mc/resource/mcgun/12/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8512.zip";
-        bKV = HTApplication.fn + "/file/mc/resource/mcgun/13/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8513.zip";
-        mpc_download_url = HTApplication.fn + "/file/mc/resource/2016/07/04/MC_0.14.1_huluxia.apk";
-        bLe = HTApplication.fn + "/file/mc/resource/2016/11/09/MC_0.15.4.0.apk";
-        bLf = HTApplication.fn + "/file/mc/resource/2016/11/15/MC_0.16.1.0.apk";
+        bKS_down_url_fireAndSound_pack_12 = HTApplication.fn + "/file/mc/resource/mcgun/12/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8512.zip";
+        bKV_down_url_fireAndSound_pack_13 = HTApplication.fn + "/file/mc/resource/mcgun/13/%E6%9E%AA%E6%A2%B0js%E9%9F%B3%E6%95%88%E5%8C%8513.zip";
+        mpc_download_url_v0141 = HTApplication.fn + "/file/mc/resource/2016/07/04/MC_0.14.1_huluxia.apk";
+        bLe_download_url_v01540 = HTApplication.fn + "/file/mc/resource/2016/11/09/MC_0.15.4.0.apk";
+        bLf_download_url_v01610 = HTApplication.fn + "/file/mc/resource/2016/11/15/MC_0.16.1.0.apk";
     }
 }

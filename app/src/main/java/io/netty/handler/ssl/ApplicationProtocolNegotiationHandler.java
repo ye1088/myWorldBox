@@ -23,7 +23,7 @@ public abstract class ApplicationProtocolNegotiationHandler extends ChannelInbou
             if (handshakeEvent.isSuccess()) {
                 SslHandler sslHandler = (SslHandler) ctx.pipeline().get(SslHandler.class);
                 if (sslHandler == null) {
-                    throw new IllegalStateException("cannot find a SslHandler in the pipeline (required for application-level protocol negotiation)");
+                    throw new IllegalStateException("cannot find a_isRightVersion SslHandler in the pipeline (required for application-level protocol negotiation)");
                 }
                 String protocol = sslHandler.applicationProtocol();
                 if (protocol == null) {

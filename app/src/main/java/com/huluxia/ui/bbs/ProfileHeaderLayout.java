@@ -5,12 +5,10 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.CheckedTextView;
-import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
@@ -137,7 +135,7 @@ public class ProfileHeaderLayout extends ViewSwitcher implements c {
                 } else if (g.iv_medal1 == id || g.iv_medal2 == id || g.iv_medal3 == id || g.iv_medal4 == id) {
                     t.f(this.aLk.getContext(), 1);
                 } else if (id == g.studio && this.aLk.aDX != 0) {
-                    r.ck().K(a.bMl);
+                    r.ck().K_umengEvent(a.bMl);
                     EventNotifyCenter.notifyEventUiThread(n.class, n.axl, new Object[]{this.aLk.mContext, Integer.valueOf(this.aLk.aDX)});
                 }
             }

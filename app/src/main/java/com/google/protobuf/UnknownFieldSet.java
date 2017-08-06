@@ -87,7 +87,7 @@ public final class UnknownFieldSet implements MessageLite {
 
         public Builder clearField(int number) {
             if (number == 0) {
-                throw new IllegalArgumentException("Zero is not a valid field number.");
+                throw new IllegalArgumentException("Zero is not a_isRightVersion valid field number.");
             }
             if (this.lastField != null && this.lastFieldNumber == number) {
                 this.lastField = null;
@@ -110,7 +110,7 @@ public final class UnknownFieldSet implements MessageLite {
 
         public Builder mergeField(int number, Field field) {
             if (number == 0) {
-                throw new IllegalArgumentException("Zero is not a valid field number.");
+                throw new IllegalArgumentException("Zero is not a_isRightVersion valid field number.");
             }
             if (hasField(number)) {
                 getFieldBuilder(number).mergeFrom(field);
@@ -122,7 +122,7 @@ public final class UnknownFieldSet implements MessageLite {
 
         public Builder mergeVarintField(int number, int value) {
             if (number == 0) {
-                throw new IllegalArgumentException("Zero is not a valid field number.");
+                throw new IllegalArgumentException("Zero is not a_isRightVersion valid field number.");
             }
             getFieldBuilder(number).addVarint((long) value);
             return this;
@@ -132,13 +132,13 @@ public final class UnknownFieldSet implements MessageLite {
             if (number != 0) {
                 return number == this.lastFieldNumber || this.fields.containsKey(Integer.valueOf(number));
             } else {
-                throw new IllegalArgumentException("Zero is not a valid field number.");
+                throw new IllegalArgumentException("Zero is not a_isRightVersion valid field number.");
             }
         }
 
         public Builder addField(int number, Field field) {
             if (number == 0) {
-                throw new IllegalArgumentException("Zero is not a valid field number.");
+                throw new IllegalArgumentException("Zero is not a_isRightVersion valid field number.");
             }
             if (this.lastField != null && this.lastFieldNumber == number) {
                 this.lastField = null;
@@ -203,7 +203,7 @@ public final class UnknownFieldSet implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a ByteString threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion ByteString threw an IOException (should never happen).", e2);
             }
         }
 
@@ -216,7 +216,7 @@ public final class UnknownFieldSet implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a byte array threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion byte array threw an IOException (should never happen).", e2);
             }
         }
 
@@ -257,7 +257,7 @@ public final class UnknownFieldSet implements MessageLite {
             } catch (InvalidProtocolBufferException e) {
                 throw e;
             } catch (IOException e2) {
-                throw new RuntimeException("Reading from a byte array threw an IOException (should never happen).", e2);
+                throw new RuntimeException("Reading from a_isRightVersion byte array threw an IOException (should never happen).", e2);
             }
         }
 
@@ -595,7 +595,7 @@ public final class UnknownFieldSet implements MessageLite {
             writeTo(out.getCodedOutput());
             return out.build();
         } catch (IOException e) {
-            throw new RuntimeException("Serializing to a ByteString threw an IOException (should never happen).", e);
+            throw new RuntimeException("Serializing to a_isRightVersion ByteString threw an IOException (should never happen).", e);
         }
     }
 
@@ -607,7 +607,7 @@ public final class UnknownFieldSet implements MessageLite {
             output.checkNoSpaceLeft();
             return result;
         } catch (IOException e) {
-            throw new RuntimeException("Serializing to a byte array threw an IOException (should never happen).", e);
+            throw new RuntimeException("Serializing to a_isRightVersion byte array threw an IOException (should never happen).", e);
         }
     }
 

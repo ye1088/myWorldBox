@@ -16,7 +16,7 @@ public class Not implements Clause, NeedsFutureClause {
 
     public void setMissingClause(Clause clause) {
         if (this.comparison != null) {
-            throw new IllegalArgumentException("NOT operation already has a comparison set");
+            throw new IllegalArgumentException("NOT operation already has a_isRightVersion comparison set");
         } else if (clause instanceof Comparison) {
             this.comparison = (Comparison) clause;
         } else if (clause instanceof Exists) {

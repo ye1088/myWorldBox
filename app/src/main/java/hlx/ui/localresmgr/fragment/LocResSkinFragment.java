@@ -110,11 +110,11 @@ public class LocResSkinFragment extends BaseLoadingFragment implements a {
                     return;
                 case R.id.tvLocalResMgrDel:
                     this.caX.UD();
-                    r.ck().K(hlx.data.tongji.a.bNh);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNh);
                     return;
                 case R.id.tvLocalResMgrImport:
                     hlx.ui.a.I(this.caX.mActivity);
-                    r.ck().K(hlx.data.tongji.a.bNm);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bNm);
                     return;
                 case R.id.tvLocalResMgrRecoverDefault:
                     this.caX.UN();
@@ -219,7 +219,7 @@ public class LocResSkinFragment extends BaseLoadingFragment implements a {
             }
         }
         this.caT.notifyDataSetChanged();
-        r.ck().K(hlx.data.tongji.a.bMZ);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bMZ);
     }
 
     private void UD() {

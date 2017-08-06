@@ -172,7 +172,9 @@ public class RecommendAppAdapter extends BaseAdapter implements b {
             } else if (rinfo.state == State.SUCC.ordinal()) {
                 holder.cfh.setText("安装");
                 holder.cfj.setVisibility(4);
-                a(holder, this.aTm, R.color.text_continue_color, R.color.item_resource_continue_night, R.drawable.btn_download_install_day_selector, R.drawable.btn_download_install_night_selector);
+                a(holder, this.aTm, R.color.text_continue_color, R.color.item_resource_continue_night,
+                        R.drawable.btn_download_install_day_selector,
+                        R.drawable.btn_download_install_night_selector);
                 holder.cfi.setClickable(true);
                 return;
             } else if (rinfo.state == State.DOWNLOAD_START.ordinal()) {

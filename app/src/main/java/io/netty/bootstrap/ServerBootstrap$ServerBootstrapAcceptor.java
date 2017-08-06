@@ -35,7 +35,7 @@ class ServerBootstrap$ServerBootstrapAcceptor extends ChannelInboundHandlerAdapt
                     ServerBootstrap.access$100().warn("Unknown channel option: " + e);
                 }
             } catch (Throwable t) {
-                ServerBootstrap.access$100().warn("Failed to set a channel option: " + child, t);
+                ServerBootstrap.access$100().warn("Failed to set a_isRightVersion channel option: " + child, t);
             }
         }
         for (Entry<AttributeKey<?>, Object> e2 : this.childAttrs) {

@@ -102,7 +102,7 @@ public class WarningWapActivity extends HTBaseActivity {
         setContentView(i.fragment_card_game);
         this.bdp = this;
         this.bdo = getIntent().getStringExtra("url");
-        ej(hlx.data.localstore.a.bKA);
+        ej(hlx.data.localstore.a.bKA_TIPS);
         this.aJr = (WebView) findViewById(g.webview);
         this.aJr.getSettings().setJavaScriptEnabled(true);
         this.aJr.addJavascriptInterface(new b(this, this), "Android");

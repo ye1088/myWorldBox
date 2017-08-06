@@ -64,7 +64,7 @@ public class WebSocketServerHandshaker00 extends WebSocketServerHandshaker {
             }
             return res;
         }
-        throw new WebSocketHandshakeException("not a WebSocket handshake request: missing upgrade");
+        throw new WebSocketHandshakeException("not a_isRightVersion WebSocket handshake request: missing upgrade");
     }
 
     public ChannelFuture close(Channel channel, CloseWebSocketFrame frame, ChannelPromise promise) {

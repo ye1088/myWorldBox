@@ -734,7 +734,7 @@ public abstract class PublishTopicBaseActivity extends HTBaseActivity implements
                     } else {
                         this.aLz.setCanceledOnClickBackKey(true);
                         this.aLz.setCanceledOnClickOutside(true);
-                        this.aLz.showOkCancelDialog("需要下载视频插件，需要耗费大概9M流量，是否确定下载?", hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, new OkCancelDialogListener(this) {
+                        this.aLz.showOkCancelDialog("需要下载视频插件，需要耗费大概9M流量，是否确定下载?", hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, new OkCancelDialogListener(this) {
                             final /* synthetic */ PublishTopicBaseActivity aMg;
 
                             public void onCancel() {

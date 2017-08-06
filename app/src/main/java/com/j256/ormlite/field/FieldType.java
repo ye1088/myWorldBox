@@ -126,14 +126,14 @@ public class FieldType {
                     throw new SQLException("Field '" + field.getName() + "' in class " + clazz + "' should use the @" + ForeignCollectionField.class.getSimpleName() + " annotation not foreign=true");
                 }
             }
-            throw new IllegalArgumentException("Field " + this + " is a primitive class " + clazz + " but marked as foreign");
+            throw new IllegalArgumentException("Field " + this + " is a_isRightVersion primitive class " + clazz + " but marked as foreign");
         } else if (fieldConfig.isForeignCollection()) {
             if (clazz == Collection.class || ForeignCollection.class.isAssignableFrom(clazz)) {
                 Type type = field.getGenericType();
                 if (!(type instanceof ParameterizedType)) {
-                    throw new SQLException("Field class for '" + field.getName() + "' must be a parameterized Collection.");
+                    throw new SQLException("Field class for '" + field.getName() + "' must be a_isRightVersion parameterized Collection.");
                 } else if (((ParameterizedType) type).getActualTypeArguments().length == 0) {
-                    throw new SQLException("Field class for '" + field.getName() + "' must be a parameterized Collection with at least 1 type.");
+                    throw new SQLException("Field class for '" + field.getName() + "' must be a_isRightVersion parameterized Collection with at least 1 type.");
                 }
             }
             throw new SQLException("Field class for '" + field.getName() + "' must be of class " + ForeignCollection.class.getSimpleName() + " or Collection.");
@@ -143,7 +143,7 @@ public class FieldType {
             } else if (Serializable.class.isAssignableFrom(clazz)) {
                 throw new SQLException("ORMLite does not know how to store " + clazz + " for field '" + field.getName() + "'.  Use another class, custom persister, or to serialize it use " + "dataType=DataType.SERIALIZABLE");
             } else {
-                throw new IllegalArgumentException("ORMLite does not know how to store " + clazz + " for field " + field.getName() + ". Use another class or a custom persister.");
+                throw new IllegalArgumentException("ORMLite does not know how to store " + clazz + " for field " + field.getName() + ". Use another class or a_isRightVersion custom persister.");
             }
         }
         if (fieldConfig.getColumnName() == null) {
@@ -184,7 +184,7 @@ public class FieldType {
             this.generatedIdSequence = null;
         }
         if (this.isId && (fieldConfig.isForeign() || fieldConfig.isForeignAutoRefresh())) {
-            throw new IllegalArgumentException("Id field " + field.getName() + " cannot also be a foreign object");
+            throw new IllegalArgumentException("Id field " + field.getName() + " cannot also be a_isRightVersion foreign object");
         }
         if (fieldConfig.isUseGetSet()) {
             this.fieldGetMethod = DatabaseFieldConfig.findGetMethod(field, true);
@@ -201,7 +201,7 @@ public class FieldType {
             this.fieldSetMethod = null;
         }
         if (fieldConfig.isAllowGeneratedIdInsert() && !fieldConfig.isGeneratedId()) {
-            throw new IllegalArgumentException("Field " + field.getName() + " must be a generated-id if allowGeneratedIdInsert = true");
+            throw new IllegalArgumentException("Field " + field.getName() + " must be a_isRightVersion generated-id if allowGeneratedIdInsert = true");
         } else if (fieldConfig.isForeignAutoRefresh() && !fieldConfig.isForeign()) {
             throw new IllegalArgumentException("Field " + field.getName() + " must have foreign = true if foreignAutoRefresh = true");
         } else if (fieldConfig.isForeignAutoCreate() && !fieldConfig.isForeign()) {
@@ -211,7 +211,7 @@ public class FieldType {
         } else if (!fieldConfig.isVersion() || (dataPersister != null && dataPersister.isValidForVersion())) {
             assignDataType(databaseType, dataPersister);
         } else {
-            throw new IllegalArgumentException("Field " + field.getName() + " is not a valid type to be a version field");
+            throw new IllegalArgumentException("Field " + field.getName() + " is not a_isRightVersion valid type to be a_isRightVersion version field");
         }
     }
 
@@ -272,7 +272,7 @@ public class FieldType {
                     throw new IllegalArgumentException("Field " + this.field.getName() + ", if foreignAutoCreate = true then class " + fieldClass.getSimpleName() + " must have id field with generatedId = true");
                 }
             }
-            throw new IllegalArgumentException("Field " + this + " is a primitive class " + fieldClass + " but marked as foreign");
+            throw new IllegalArgumentException("Field " + this + " is a_isRightVersion primitive class " + fieldClass + " but marked as foreign");
         } else if (!this.fieldConfig.isForeignCollection()) {
             foreignTableInfo = null;
             foreignIdField = null;
@@ -285,7 +285,7 @@ public class FieldType {
             if (type instanceof ParameterizedType) {
                 Type[] genericArguments = ((ParameterizedType) type).getActualTypeArguments();
                 if (genericArguments.length == 0) {
-                    throw new SQLException("Field class for '" + this.field.getName() + "' must be a parameterized Collection with at least 1 type.");
+                    throw new SQLException("Field class for '" + this.field.getName() + "' must be a_isRightVersion parameterized Collection with at least 1 type.");
                 }
                 if (genericArguments[0] instanceof TypeVariable) {
                     genericArguments = ((ParameterizedType) parentClass.getGenericSuperclass()).getActualTypeArguments();
@@ -306,10 +306,10 @@ public class FieldType {
                     foreignTableInfo = null;
                     mappedQueryForForeignField = null;
                 } else {
-                    throw new SQLException("Field class for '" + this.field.getName() + "' must be a parameterized Collection whose generic argument is an entity class not: " + genericArguments[0]);
+                    throw new SQLException("Field class for '" + this.field.getName() + "' must be a_isRightVersion parameterized Collection whose generic argument is an entity class not: " + genericArguments[0]);
                 }
             }
-            throw new SQLException("Field class for '" + this.field.getName() + "' must be a parameterized Collection.");
+            throw new SQLException("Field class for '" + this.field.getName() + "' must be a_isRightVersion parameterized Collection.");
         } else {
             throw new SQLException("Field class for '" + this.field.getName() + "' must be of class " + ForeignCollection.class.getSimpleName() + " or Collection.");
         }
@@ -790,12 +790,12 @@ public class FieldType {
             } else if (fieldType.fieldConfig.isForeign() || fieldType.fieldConfig.isForeignAutoRefresh()) {
                 return fieldType;
             } else {
-                throw new SQLException("Foreign collection object " + clazz + " for field '" + this.field.getName() + "' contains a field of class " + foreignClass + " but it's not foreign");
+                throw new SQLException("Foreign collection object " + clazz + " for field '" + this.field.getName() + "' contains a_isRightVersion field of class " + foreignClass + " but it's not foreign");
             }
         }
         StringBuilder sb = new StringBuilder();
         sb.append("Foreign collection class ").append(clazz.getName());
-        sb.append(" for field '").append(this.field.getName()).append("' column-name does not contain a foreign field");
+        sb.append(" for field '").append(this.field.getName()).append("' column-name does not contain a_isRightVersion foreign field");
         if (foreignColumnName != null) {
             sb.append(" named '").append(foreignColumnName).append('\'');
         }
@@ -822,14 +822,14 @@ public class FieldType {
                 }
                 throw new IllegalArgumentException(sb.toString());
             } else if (this.fieldConfig.isThrowIfNull() && !dataPersister.isPrimitive()) {
-                throw new SQLException("Field " + this.field.getName() + " must be a primitive if set with throwIfNull");
+                throw new SQLException("Field " + this.field.getName() + " must be a_isRightVersion primitive if set with throwIfNull");
             } else if (!this.isId || dataPersister.isAppropriateId()) {
                 this.dataTypeConfigObj = dataPersister.makeConfigObject(this);
                 String defaultStr = this.fieldConfig.getDefaultValue();
                 if (defaultStr == null) {
                     this.defaultValue = null;
                 } else if (this.isGeneratedId) {
-                    throw new SQLException("Field '" + this.field.getName() + "' cannot be a generatedId and have a default value '" + defaultStr + "'");
+                    throw new SQLException("Field '" + this.field.getName() + "' cannot be a_isRightVersion generatedId and have a_isRightVersion default value '" + defaultStr + "'");
                 } else {
                     this.defaultValue = this.fieldConverter.parseDefaultString(this, defaultStr);
                 }
@@ -837,7 +837,7 @@ public class FieldType {
                 throw new SQLException("Field '" + this.field.getName() + "' is of data type " + dataPersister + " which cannot be the ID field");
             }
         } else if (!this.fieldConfig.isForeign() && !this.fieldConfig.isForeignCollection()) {
-            throw new SQLException("Data persister for field " + this + " is null but the field is not a foreign or foreignCollection");
+            throw new SQLException("Data persister for field " + this + " is null but the field is not a_isRightVersion foreign or foreignCollection");
         }
     }
 }

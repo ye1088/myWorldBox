@@ -114,8 +114,8 @@ public class StoryPageFragment extends BaseThemeFragment {
 
     private void bU(Context context) {
         c dia = new c((Activity) context, new 4(this));
-        dia.az(hlx.data.localstore.a.bKA, hlx.data.localstore.a.bKK);
-        dia.aA(hlx.data.localstore.a.bKB, hlx.data.localstore.a.bKC);
+        dia.az(hlx.data.localstore.a.bKA_TIPS, hlx.data.localstore.a.bKK);
+        dia.aA(hlx.data.localstore.a.bKB_bt_cancel, hlx.data.localstore.a.bKC_bt_ok);
         dia.showDialog();
     }
 
@@ -149,8 +149,8 @@ public class StoryPageFragment extends BaseThemeFragment {
 
     private void TO() {
         c mDownTipsDlg = new c(this.mActivity, new b(this, null));
-        mDownTipsDlg.az(hlx.data.localstore.a.bKA, e.na(this.bXt));
-        mDownTipsDlg.aA(hlx.data.localstore.a.bKB, hlx.data.localstore.a.bKC);
+        mDownTipsDlg.az(hlx.data.localstore.a.bKA_TIPS, e.na(this.bXt));
+        mDownTipsDlg.aA(hlx.data.localstore.a.bKB_bt_cancel, hlx.data.localstore.a.bKC_bt_ok);
     }
 
     private void nh(int chapterIndex) {
@@ -179,7 +179,7 @@ public class StoryPageFragment extends BaseThemeFragment {
                 break;
         }
         if (_tmpTongji != null) {
-            r.ck().K(_tmpTongji);
+            r.ck().K_umengEvent(_tmpTongji);
         }
     }
 

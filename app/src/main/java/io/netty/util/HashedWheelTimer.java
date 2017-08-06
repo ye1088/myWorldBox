@@ -299,7 +299,7 @@ public class HashedWheelTimer implements Timer {
                         timeout.remove();
                     } catch (Throwable t) {
                         if (HashedWheelTimer.logger.isWarnEnabled()) {
-                            HashedWheelTimer.logger.warn("An exception was thrown while process a cancellation task", t);
+                            HashedWheelTimer.logger.warn("An exception was thrown while process a_isRightVersion cancellation task", t);
                         }
                     }
                 } else {

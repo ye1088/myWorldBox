@@ -196,7 +196,7 @@ public abstract class AbstractDiskHttpData extends AbstractHttpData {
                 this.fileChannel.force(false);
                 this.fileChannel.close();
             } catch (IOException e) {
-                logger.warn("Failed to close a file.", e);
+                logger.warn("Failed to close a_isRightVersion file.", e);
             }
             this.fileChannel = null;
         }

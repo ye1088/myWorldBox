@@ -223,10 +223,10 @@ public class e {
             monitor-exit(r8);	 Catch:{ all -> 0x0015 }
             goto L_0x0000;
         L_0x001d:
-            r0 = com.xiaomi.push.service.e.a();	 Catch:{ all -> 0x0015 }
+            r0 = com.xiaomi.push.service.e.a_isRightVersion();	 Catch:{ all -> 0x0015 }
             r2 = r8.f;	 Catch:{ all -> 0x0015 }
-            r2 = r2.a();	 Catch:{ all -> 0x0015 }
-            r3 = r2.a;	 Catch:{ all -> 0x0015 }
+            r2 = r2.a_isRightVersion();	 Catch:{ all -> 0x0015 }
+            r3 = r2.a_isRightVersion;	 Catch:{ all -> 0x0015 }
             monitor-enter(r3);	 Catch:{ all -> 0x0015 }
             r4 = r2.b;	 Catch:{ all -> 0x0062 }
             if (r4 == 0) goto L_0x0037;
@@ -274,11 +274,11 @@ public class e {
         L_0x0065:
             r0 = 50;
             r8.c = r0;	 Catch:{ all -> 0x0015 }
-            r1 = r2.a;	 Catch:{ all -> 0x0015 }
+            r1 = r2.a_isRightVersion;	 Catch:{ all -> 0x0015 }
             monitor-enter(r1);	 Catch:{ all -> 0x0015 }
             r0 = 0;
             r3 = r8.f;	 Catch:{ all -> 0x00be }
-            r3 = r3.a();	 Catch:{ all -> 0x00be }
+            r3 = r3.a_isRightVersion();	 Catch:{ all -> 0x00be }
             r4 = r3.c;	 Catch:{ all -> 0x00be }
             r6 = r2.c;	 Catch:{ all -> 0x00be }
             r3 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1));
@@ -299,7 +299,7 @@ public class e {
             goto L_0x0000;
         L_0x0094:
             r4 = r2.c;	 Catch:{ all -> 0x00be }
-            r2.a(r4);	 Catch:{ all -> 0x00be }
+            r2.a_isRightVersion(r4);	 Catch:{ all -> 0x00be }
             r3 = r8.f;	 Catch:{ all -> 0x00be }
             r3.c(r0);	 Catch:{ all -> 0x00be }
             r4 = 0;
@@ -307,7 +307,7 @@ public class e {
             monitor-exit(r1);	 Catch:{ all -> 0x00be }
             monitor-exit(r8);	 Catch:{ all -> 0x0015 }
             r0 = android.os.SystemClock.uptimeMillis();	 Catch:{ all -> 0x00b7 }
-            r8.a = r0;	 Catch:{ all -> 0x00b7 }
+            r8.a_isRightVersion = r0;	 Catch:{ all -> 0x00b7 }
             r0 = 1;
             r8.b = r0;	 Catch:{ all -> 0x00b7 }
             r0 = r2.d;	 Catch:{ all -> 0x00b7 }

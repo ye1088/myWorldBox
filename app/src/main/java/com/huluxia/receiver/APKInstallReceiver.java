@@ -24,7 +24,7 @@ public class APKInstallReceiver extends BroadcastReceiver {
             if (data != null && data.length() > 8) {
                 String packageName = data.substring(8);
                 if (packageName.equals(DownloadDialog.bu().bt())) {
-                    r.ck().K(a.lz);
+                    r.ck().K_umengEvent(a.lz);
                 } else {
                     hlx.ui.recommendapp.statisticsrecord.a.VI().b(packageName, true, true);
                 }
@@ -33,17 +33,17 @@ public class APKInstallReceiver extends BroadcastReceiver {
                     if (tmpVersionName == null) {
                         return;
                     }
-                    if (tmpVersionName.equals(e.ahL)) {
+                    if (tmpVersionName.equals(e.ahL_v01540)) {
                         if (hlx.recorddata.a.TW()) {
                             c.Sg().setStartGameVersion(7);
                             EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                         }
-                    } else if (tmpVersionName.equals(e.ahM)) {
+                    } else if (tmpVersionName.equals(e.ahM_v01410)) {
                         if (hlx.recorddata.a.TV()) {
                             c.Sg().setStartGameVersion(8);
                             EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                         }
-                    } else if (tmpVersionName.equals(e.ahK) && hlx.recorddata.a.TX()) {
+                    } else if (tmpVersionName.equals(e.ahK_v0141) && hlx.recorddata.a.TX()) {
                         c.Sg().setStartGameVersion(5);
                         EventNotifyCenter.notifyEvent(n.class, n.awQ, new Object[0]);
                     }

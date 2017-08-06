@@ -265,7 +265,7 @@ public final class TypeAdapters {
                 out.nullValue();
                 return;
             }
-            throw new UnsupportedOperationException("Attempted to serialize java.lang.Class: " + value.getName() + ". Forgot to register a type adapter?");
+            throw new UnsupportedOperationException("Attempted to serialize java.lang.Class: " + value.getName() + ". Forgot to register a_isRightVersion type adapter?");
         }
 
         public Class read(JsonReader in) throws IOException {
@@ -273,7 +273,7 @@ public final class TypeAdapters {
                 in.nextNull();
                 return null;
             }
-            throw new UnsupportedOperationException("Attempted to deserialize a java.lang.Class. Forgot to register a type adapter?");
+            throw new UnsupportedOperationException("Attempted to deserialize a_isRightVersion java.lang.Class. Forgot to register a_isRightVersion type adapter?");
         }
     };
     public static final TypeAdapterFactory CLASS_FACTORY = newFactory(Class.class, CLASS);

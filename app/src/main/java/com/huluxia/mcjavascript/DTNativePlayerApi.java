@@ -78,7 +78,7 @@ public class DTNativePlayerApi extends ScriptableObject {
         if (isPlayer(paramObject)) {
             return n.al(paramObject);
         }
-        return "Not a player";
+        return "Not a_isRightVersion player";
     }
 
     @JSStaticFunction

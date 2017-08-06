@@ -131,18 +131,18 @@ public final class NioEventLoop extends SingleThreadEventLoop {
                     });
                     if (maybeException instanceof Exception) {
                         this.selectedKeys = null;
-                        logger.trace("failed to instrument a special java.util.Set into: {}", selector, (Exception) maybeException);
+                        logger.trace("failed to instrument a_isRightVersion special java.util.Set into: {}", selector, (Exception) maybeException);
                     } else {
                         this.selectedKeys = selectedKeySet;
-                        logger.trace("instrumented a special java.util.Set into: {}", selector);
+                        logger.trace("instrumented a_isRightVersion special java.util.Set into: {}", selector);
                     }
                 } else if (maybeSelectorImplClass instanceof Exception) {
-                    logger.trace("failed to instrument a special java.util.Set into: {}", selector, maybeSelectorImplClass);
+                    logger.trace("failed to instrument a_isRightVersion special java.util.Set into: {}", selector, maybeSelectorImplClass);
                 }
             }
             return selector;
         } catch (IOException e) {
-            throw new ChannelException("failed to open a new selector", e);
+            throw new ChannelException("failed to open a_isRightVersion new selector", e);
         }
     }
 
@@ -176,7 +176,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
             try {
                 ch.register(this.selector, interestOps, task);
             } catch (Exception e) {
-                throw new EventLoopException("failed to register a channel", e);
+                throw new EventLoopException("failed to register a_isRightVersion channel", e);
             }
         }
     }
@@ -215,7 +215,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
                                 }
                             } catch (Exception e) {
                                 try {
-                                    logger.warn("Failed to re-register a Channel to the new Selector.", e);
+                                    logger.warn("Failed to re-register a_isRightVersion Channel to the new Selector.", e);
                                     if (a instanceof AbstractNioChannel) {
                                         AbstractNioChannel ch = (AbstractNioChannel) a;
                                         ch.unsafe().close(ch.unsafe().voidPromise());
@@ -239,7 +239,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
                     logger.info("Migrated " + nChannels + " channel(s) to the new Selector.");
                     return;
                 } catch (Exception e3) {
-                    logger.warn("Failed to create a new Selector.", e3);
+                    logger.warn("Failed to create a_isRightVersion new Selector.", e3);
                     return;
                 }
             }
@@ -307,7 +307,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
         try {
             this.selector.close();
         } catch (IOException e) {
-            logger.warn("Failed to close a selector.", e);
+            logger.warn("Failed to close a_isRightVersion selector.", e);
         }
     }
 
@@ -549,7 +549,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
         if (r14 == 0) goto L_0x0044;
     L_0x0034:
         r14 = logger;	 Catch:{ CancelledKeyException -> 0x00cc }
-        r15 = "Selector.select() returned prematurely {} times in a row for Selector {}.";
+        r15 = "Selector.select() returned prematurely {} times in a_isRightVersion row for Selector {}.";
         r16 = r5 + -1;
         r16 = java.lang.Integer.valueOf(r16);	 Catch:{ CancelledKeyException -> 0x00cc }
         r0 = r16;
@@ -621,7 +621,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
         if (r5 < r14) goto L_0x00a6;
     L_0x00b1:
         r14 = logger;	 Catch:{ CancelledKeyException -> 0x00cc }
-        r15 = "Selector.select() returned prematurely {} times in a row; rebuilding Selector {}.";
+        r15 = "Selector.select() returned prematurely {} times in a_isRightVersion row; rebuilding Selector {}.";
         r16 = java.lang.Integer.valueOf(r5);	 Catch:{ CancelledKeyException -> 0x00cc }
         r0 = r16;
         r14.warn(r15, r0, r9);	 Catch:{ CancelledKeyException -> 0x00cc }
@@ -643,7 +643,7 @@ public final class NioEventLoop extends SingleThreadEventLoop {
         r16 = java.nio.channels.CancelledKeyException.class;
         r16 = r16.getSimpleName();
         r15 = r15.append(r16);
-        r16 = " raised by a Selector {} - JDK bug?";
+        r16 = " raised by a_isRightVersion Selector {} - JDK bug?";
         r15 = r15.append(r16);
         r15 = r15.toString();
         r14.debug(r15, r9, r4);

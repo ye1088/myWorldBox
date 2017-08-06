@@ -145,7 +145,7 @@ public class PushMessageHandler extends IntentService {
                     b.d("cannot find the receiver to handler this message, check your manifest");
                 }
             } else if (b()) {
-                b.d("receive a message before application calling initialize");
+                b.d("receive a_isRightVersion message before application calling initialize");
             } else {
                 a a = i.a((Context) this).a(intent);
                 if (a != null) {

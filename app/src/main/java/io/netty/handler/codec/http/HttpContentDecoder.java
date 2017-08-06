@@ -63,7 +63,7 @@ public abstract class HttpContentDecoder extends MessageToMessageDecoder<HttpObj
                         HttpResponse r2 = (HttpResponse) message;
                         copy = new DefaultHttpResponse(r2.protocolVersion(), r2.status());
                     } else {
-                        throw new CodecException("Object of class " + message.getClass().getName() + " is not a HttpRequest or HttpResponse");
+                        throw new CodecException("Object of class " + message.getClass().getName() + " is not a_isRightVersion HttpRequest or HttpResponse");
                     }
                     copy.headers().set(message.headers());
                     copy.setDecoderResult(message.decoderResult());

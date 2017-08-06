@@ -22,7 +22,7 @@ public abstract class ChannelInitializer<C extends Channel> extends ChannelInbou
     }
 
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        logger.warn("Failed to initialize a channel. Closing: " + ctx.channel(), cause);
+        logger.warn("Failed to initialize a_isRightVersion channel. Closing: " + ctx.channel(), cause);
         ctx.close();
     }
 

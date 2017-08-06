@@ -19,15 +19,17 @@ class HomeFragment$5 implements OnItemClickListener {
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         a bannerItem = (a) parent.getAdapter().getItem(position);
-        r.ck().K(hlx.data.tongji.a.bLU);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bLU);
         switch (bannerItem.opentype) {
             case 1:
                 t.a(HomeFragment.a(this.bQl), bannerItem.recommentid, false);
                 return;
             case 2:
                 if (bannerItem.recommenturl.endsWith(".apk")) {
-                    DownloadDialog.bu().a(bannerItem.recommenturl, bannerItem.versionCode, bannerItem.apptitle, bannerItem.md5, bannerItem.packname);
-                    DownloadDialog.bu().show(((FragmentActivity) HomeFragment.a(this.bQl)).getSupportFragmentManager(), null);
+                    DownloadDialog.bu().a(bannerItem.recommenturl, bannerItem.versionCode,
+                            bannerItem.apptitle, bannerItem.md5, bannerItem.packname);
+                    DownloadDialog.bu().show(((FragmentActivity) HomeFragment.a(this.bQl)).
+                            getSupportFragmentManager(), null);
                     return;
                 }
                 t.a(HomeFragment.a(this.bQl), bannerItem.recommenturl);

@@ -181,7 +181,7 @@ public class DefaultHttp2ConnectionEncoder implements Http2ConnectionEncoder {
             if (this.connection.isServer() || !pushEnabled.booleanValue()) {
                 this.connection.remote().allowPushTo(pushEnabled.booleanValue());
             } else {
-                throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Client received a value of ENABLE_PUSH specified to other than 0", new Object[0]);
+                throw Http2Exception.connectionError(Http2Error.PROTOCOL_ERROR, "Client received a_isRightVersion value of ENABLE_PUSH specified to other than 0", new Object[0]);
             }
         }
         Long maxConcurrentStreams = settings.maxConcurrentStreams();

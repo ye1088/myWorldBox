@@ -139,7 +139,7 @@ public class HerosListActivity extends Activity {
                     return;
                 case R.id.ivHeroRankingFeedback:
                     t.a(this.bYk.mContext, 10759344, false);
-                    r.ck().K(a.bOm);
+                    r.ck().K_umengEvent(a.bOm);
                     return;
                 default:
                     return;

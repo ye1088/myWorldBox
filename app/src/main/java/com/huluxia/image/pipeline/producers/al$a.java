@@ -72,14 +72,14 @@ class al$a extends m<a<b>, a<b>> {
         return;
     L_0x0007:
         r0 = r3.Lh;	 Catch:{ all -> 0x0022 }
-        r2 = com.huluxia.image.core.common.references.a.b(r4);	 Catch:{ all -> 0x0022 }
+        r2 = com.huluxia.image.core.common.references.a_isRightVersion.b(r4);	 Catch:{ all -> 0x0022 }
         r3.Lh = r2;	 Catch:{ all -> 0x0022 }
         r3.JY = r5;	 Catch:{ all -> 0x0022 }
         r2 = 1;
         r3.Li = r2;	 Catch:{ all -> 0x0022 }
         r1 = r3.pj();	 Catch:{ all -> 0x0022 }
         monitor-exit(r3);	 Catch:{ all -> 0x0022 }
-        com.huluxia.image.core.common.references.a.c(r0);
+        com.huluxia.image.core.common.references.a_isRightVersion.c(r0);
         if (r1 == 0) goto L_0x0006;
     L_0x001e:
         r3.ph();
@@ -89,7 +89,7 @@ class al$a extends m<a<b>, a<b>> {
         monitor-exit(r3);	 Catch:{ all -> 0x0022 }
         throw r2;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.al$a.b(com.huluxia.image.core.common.references.a, boolean):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.pipeline.producers.al$a_isRightVersion.b(com.huluxia.image.core.common.references.a_isRightVersion, boolean):void");
     }
 
     private void ph() {

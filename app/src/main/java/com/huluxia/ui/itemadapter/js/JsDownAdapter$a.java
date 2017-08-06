@@ -30,7 +30,7 @@ class JsDownAdapter$a implements OnClickListener {
         if (j.isExist(j.cT(true) + this.info.name + hlx.data.localstore.a.bJY)) {
             ai.f("js", this.info.name, ai.bmi, "1");
             d.f(this.aTi.aTg, this.info.version, 2);
-            r.ck().K(hlx.data.tongji.a.bMB);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bMB);
             return;
         }
         MapItem item = a.convertMapItem(this.info);

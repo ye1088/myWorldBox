@@ -48,15 +48,15 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Incorrect nodes count fo
         if (r3 == 0) goto L_0x005f;	 Catch:{ all -> 0x0045 }
     L_0x0027:
         r1 = r4.next();	 Catch:{ all -> 0x0045 }
-        r1 = (com.huluxia.image.core.common.references.a) r1;	 Catch:{ all -> 0x0045 }
+        r1 = (com.huluxia.image.core.common.references.a_isRightVersion) r1;	 Catch:{ all -> 0x0045 }
         if (r1 == 0) goto L_0x005a;	 Catch:{ all -> 0x0045 }
     L_0x002f:
         r3 = r1.get();	 Catch:{ all -> 0x0045 }
-        r3 = r3 instanceof com.huluxia.image.base.imagepipeline.image.a;	 Catch:{ all -> 0x0045 }
+        r3 = r3 instanceof com.huluxia.image.base.imagepipeline.image.a_isRightVersion;	 Catch:{ all -> 0x0045 }
         if (r3 == 0) goto L_0x005a;	 Catch:{ all -> 0x0045 }
     L_0x0037:
         r3 = r1.get();	 Catch:{ all -> 0x0045 }
-        r3 = (com.huluxia.image.base.imagepipeline.image.a) r3;	 Catch:{ all -> 0x0045 }
+        r3 = (com.huluxia.image.base.imagepipeline.image.a_isRightVersion) r3;	 Catch:{ all -> 0x0045 }
         r3 = r3.hM();	 Catch:{ all -> 0x0045 }
         r0.add(r3);	 Catch:{ all -> 0x0045 }
         goto L_0x0021;
@@ -68,8 +68,8 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Incorrect nodes count fo
         if (r5 == 0) goto L_0x0076;
     L_0x0050:
         r1 = r4.next();
-        r1 = (com.huluxia.image.core.common.references.a) r1;
-        com.huluxia.image.core.common.references.a.c(r1);
+        r1 = (com.huluxia.image.core.common.references.a_isRightVersion) r1;
+        com.huluxia.image.core.common.references.a_isRightVersion.c(r1);
         goto L_0x004a;
     L_0x005a:
         r3 = 0;
@@ -83,8 +83,8 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Incorrect nodes count fo
         if (r4 == 0) goto L_0x0007;
     L_0x006c:
         r1 = r3.next();
-        r1 = (com.huluxia.image.core.common.references.a) r1;
-        com.huluxia.image.core.common.references.a.c(r1);
+        r1 = (com.huluxia.image.core.common.references.a_isRightVersion) r1;
+        com.huluxia.image.core.common.references.a_isRightVersion.c(r1);
         goto L_0x0066;
     L_0x0076:
         throw r3;

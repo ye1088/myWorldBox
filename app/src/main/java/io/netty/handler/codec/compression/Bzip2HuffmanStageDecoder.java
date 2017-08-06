@@ -113,6 +113,6 @@ final class Bzip2HuffmanStageDecoder {
             codeBits = (codeBits << 1) | reader.readBits(1);
             codeLength++;
         }
-        throw new DecompressionException("a valid code was not recognised");
+        throw new DecompressionException("a_isRightVersion valid code was not recognised");
     }
 }

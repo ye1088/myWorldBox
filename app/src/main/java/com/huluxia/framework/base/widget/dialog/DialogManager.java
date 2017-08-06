@@ -280,7 +280,7 @@ public class DialogManager {
         customContainer.addView(customView, new LayoutParams(-1, -2));
         TextView ok = (TextView) window.findViewById(R.id.btn_ok);
         if (!isOk) {
-            ok.setText(a.bKB);
+            ok.setText(a.bKB_bt_cancel);
             ok.setTextColor(-16777216);
         }
         ok.setOnClickListener(new 7(this, l));
@@ -313,7 +313,7 @@ public class DialogManager {
         if (optionStr != null) {
             ok.setText(optionStr);
         } else {
-            ok.setText(a.bKC);
+            ok.setText(a.bKC_bt_ok);
         }
         ok.setOnClickListener(new 8(this, l));
     }
@@ -444,7 +444,7 @@ public class DialogManager {
     }
 
     public void showOkCancelDialog(String message, boolean cancelable, OkCancelDialogListener l) {
-        showOkCancelDialog(null, (CharSequence) message, a.bKC, a.bKB, cancelable, l);
+        showOkCancelDialog(null, (CharSequence) message, a.bKC_bt_ok, a.bKB_bt_cancel, cancelable, l);
     }
 
     public void showOkCancelDialog(String message, String okLabel, String cancelLabel, OkCancelDialogListener l) {
@@ -452,7 +452,7 @@ public class DialogManager {
     }
 
     public void showOkCancelDialog(String title, CharSequence message, boolean cancelable, OkCancelDialogListener l) {
-        showOkCancelDialog(title, message, a.bKC, a.bKB, cancelable, l);
+        showOkCancelDialog(title, message, a.bKC_bt_ok, a.bKB_bt_cancel, cancelable, l);
     }
 
     public void showOkCancelDialog(String title, CharSequence message, CharSequence okLabel, CharSequence cancelLabel, boolean cancelable, OkCancelDialogListener l) {
@@ -811,7 +811,7 @@ public class DialogManager {
     }
 
     public void showSelectGenderDialog(boolean selectedGender, boolean cancelable, boolean canceledOnTouchOutside, SelectGenderDialogListener l) {
-        showSelectGenderDialog(selectedGender, a.bKC, a.bKB, cancelable, canceledOnTouchOutside, l);
+        showSelectGenderDialog(selectedGender, a.bKC_bt_ok, a.bKB_bt_cancel, cancelable, canceledOnTouchOutside, l);
     }
 
     public void showSelectGenderDialog(boolean selectedGender, String okLabel, String cancelLabel, boolean cancelable, boolean canceledOnTouchOutside, SelectGenderDialogListener l) {

@@ -21,7 +21,7 @@ public class ReflectionDatabaseConnectionProxyFactory implements DatabaseConnect
         try {
             return (DatabaseConnection) this.constructor.newInstance(new Object[]{realConnection});
         } catch (Exception e) {
-            throw SqlExceptionUtil.create("Could not create a new instance of " + this.proxyClass, e);
+            throw SqlExceptionUtil.create("Could not create a_isRightVersion new instance of " + this.proxyClass, e);
         }
     }
 }

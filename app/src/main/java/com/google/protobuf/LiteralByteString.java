@@ -136,7 +136,7 @@ class LiteralByteString extends ByteString {
         if (other instanceof RopeByteString) {
             return other.equals(this);
         }
-        throw new IllegalArgumentException("Has a new type of ByteString been created? Found " + other.getClass());
+        throw new IllegalArgumentException("Has a_isRightVersion new type of ByteString been created? Found " + other.getClass());
     }
 
     boolean equalsRange(LiteralByteString other, int offset, int length) {

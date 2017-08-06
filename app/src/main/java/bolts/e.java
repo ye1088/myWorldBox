@@ -100,7 +100,7 @@ public class e implements Closeable {
         monitor-exit(r1);	 Catch:{ all -> 0x0022 }
         goto L_0x0018;
         */
-        throw new UnsupportedOperationException("Method not decompiled: bolts.e.a(long, java.util.concurrent.TimeUnit):void");
+        throw new UnsupportedOperationException("Method not decompiled: bolts.e.a_isRightVersion(long, java.util.concurrent.TimeUnit):void");
     }
 
     public void close() {

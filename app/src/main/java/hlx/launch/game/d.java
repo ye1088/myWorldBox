@@ -96,7 +96,7 @@ public class d {
     }
 
     private static void Su() {
-        r.ck().K(hlx.data.tongji.a.bNT);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bNT);
         u.C("com.mojang.minecraftpe");
     }
 
@@ -105,13 +105,13 @@ public class d {
     }
 
     private static void c(Context context, String versions, boolean isStoryMode) {
-        r.ck().K(hlx.data.tongji.a.bNQ);
+        r.ck().K_umengEvent(hlx.data.tongji.a.bNQ);
         g dia = new g((Activity) context, new 1(isStoryMode, context));
         if (isStoryMode) {
-            dia.az(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKG, new Object[]{hlx.data.localstore.a.bJA, versions}));
-            dia.u(hlx.data.localstore.a.bKE, null, hlx.data.localstore.a.bKB);
+            dia.az(hlx.data.localstore.a.bKA_TIPS, String.format(hlx.data.localstore.a.bKG, new Object[]{hlx.data.localstore.a.bJA, versions}));
+            dia.u(hlx.data.localstore.a.bKE, null, hlx.data.localstore.a.bKB_bt_cancel);
         } else {
-            dia.az(hlx.data.localstore.a.bKA, String.format(hlx.data.localstore.a.bKG, new Object[]{c.Sg().getMCVersion(true), versions}));
+            dia.az(hlx.data.localstore.a.bKA_TIPS, String.format(hlx.data.localstore.a.bKG, new Object[]{c.Sg().getMCVersion(true), versions}));
             dia.u(hlx.data.localstore.a.bKE, null, hlx.data.localstore.a.bKD);
         }
         dia.showDialog();
@@ -123,7 +123,7 @@ public class d {
         String _MD5;
         switch (version) {
             case 0:
-                zipPath = UtilsFile.getRootPath() + Constants.bsu + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsu + ".zip";
                 _MD5 = e.ajc;
                 if (j.isExist(zipPath) && j.getFileMD5(zipPath).equalsIgnoreCase(_MD5)) {
                     _tmpFlag = true;
@@ -132,7 +132,7 @@ public class d {
                 }
                 break;
             case 1:
-                zipPath = UtilsFile.getRootPath() + Constants.bsv + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsv + ".zip";
                 _MD5 = e.ajd;
                 if (j.isExist(zipPath) && j.getFileMD5(zipPath).equalsIgnoreCase(_MD5)) {
                     _tmpFlag = true;
@@ -141,7 +141,7 @@ public class d {
                 }
                 break;
             case 2:
-                zipPath = UtilsFile.getRootPath() + Constants.bsw + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsw + ".zip";
                 if (VERSION.SDK_INT < 11) {
                     _MD5 = e.aiY;
                 } else {
@@ -154,7 +154,7 @@ public class d {
                 }
                 break;
             case 3:
-                zipPath = UtilsFile.getRootPath() + Constants.bsx + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsx + ".zip";
                 if (VERSION.SDK_INT < 11) {
                     _MD5 = e.aiZ;
                 } else {
@@ -167,7 +167,7 @@ public class d {
                 }
                 break;
             case 4:
-                zipPath = UtilsFile.getRootPath() + Constants.bsy + ".zip";
+                zipPath = UtilsFile.get_mctool_path() + Constants.bsy + ".zip";
                 if (VERSION.SDK_INT < 11) {
                     _MD5 = e.aiZ;
                 } else {
@@ -180,14 +180,14 @@ public class d {
                 }
                 break;
             case 5:
-                _tmpFlag = b.a(u.getPackageManager(), "com.mojang.minecraftpe", e.ahK);
+                _tmpFlag = b.a_isRightVersion(u.getPackageManager(), "com.mojang.minecraftpe", e.ahK_v0141);
                 if (UtilsFile.fe(hlx.data.localstore.a.bJP) < hlx.data.localstore.a.bJQ || UtilsFile.fe(hlx.data.localstore.a.bJP) > hlx.data.localstore.a.bJR) {
                     UtilsFile.deleteFile(hlx.data.localstore.a.bJP);
                     HLog.error("TAG", "DTPrint 14 check so size error!", new Object[0]);
                     break;
                 }
             case 7:
-                _tmpFlag = b.a(u.getPackageManager(), "com.mojang.minecraftpe", e.ahL);
+                _tmpFlag = b.a_isRightVersion(u.getPackageManager(), "com.mojang.minecraftpe", e.ahL_v01540);
                 _MD5 = hlx.data.localstore.a.bJW;
                 if (j.isExist(hlx.data.localstore.a.bJP)) {
                     if (!j.getFileMD5(hlx.data.localstore.a.bJP).equalsIgnoreCase(_MD5)) {
@@ -204,7 +204,7 @@ public class d {
                     break;
                 }
             case 8:
-                _tmpFlag = b.a(u.getPackageManager(), "com.mojang.minecraftpe", e.ahM);
+                _tmpFlag = b.a_isRightVersion(u.getPackageManager(), "com.mojang.minecraftpe", e.ahM_v01410);
                 String mcOptionsPath = j.Kz();
                 if (j.isExist(mcOptionsPath)) {
                     UtilsFile.deleteFile(mcOptionsPath);
@@ -216,7 +216,7 @@ public class d {
     }
 
     private static void bS(Context context) {
-        r.ck().K(hlx.data.tongji.a.bNP);
-        new DialogManager(context).showOkCancelDialog(hlx.data.localstore.a.bKA, (CharSequence) "当前版本没有检测到资源包，请下载或切换版本", hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, true, new 2(context));
+        r.ck().K_umengEvent(hlx.data.tongji.a.bNP);
+        new DialogManager(context).showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, (CharSequence) "当前版本没有检测到资源包，请下载或切换版本", hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, true, new 2(context));
     }
 }

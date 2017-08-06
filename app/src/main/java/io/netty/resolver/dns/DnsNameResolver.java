@@ -88,7 +88,7 @@ public class DnsNameResolver extends InetNameResolver {
                 }
                 DnsQueryContext qCtx = DnsNameResolver.this.queryContextManager.get(res.sender(), queryId);
                 if (qCtx == null) {
-                    DnsNameResolver.logger.warn("{} Received a DNS response with an unknown ID: {}", DnsNameResolver.this.ch, Integer.valueOf(queryId));
+                    DnsNameResolver.logger.warn("{} Received a_isRightVersion DNS response with an unknown ID: {}", DnsNameResolver.this.ch, Integer.valueOf(queryId));
                     return;
                 }
                 qCtx.finish(res);
@@ -349,7 +349,7 @@ public class DnsNameResolver extends InetNameResolver {
             return false;
         } else {
             if (!promise.tryFailure(cause)) {
-                logger.warn("Failed to notify failure to a promise: {}", promise, cause);
+                logger.warn("Failed to notify failure to a_isRightVersion promise: {}", promise, cause);
             }
         }
         return true;
@@ -357,7 +357,7 @@ public class DnsNameResolver extends InetNameResolver {
 
     private static void setSuccess(Promise<InetAddress> promise, InetAddress result) {
         if (!promise.trySuccess(result)) {
-            logger.warn("Failed to notify success ({}) to a promise: {}", result, promise);
+            logger.warn("Failed to notify success ({}) to a_isRightVersion promise: {}", result, promise);
         }
     }
 

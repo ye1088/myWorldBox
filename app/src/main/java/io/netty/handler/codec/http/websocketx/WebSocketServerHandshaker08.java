@@ -32,7 +32,7 @@ public class WebSocketServerHandshaker08 extends WebSocketServerHandshaker {
         }
         CharSequence key = req.headers().get(HttpHeaderNames.SEC_WEBSOCKET_KEY);
         if (key == null) {
-            throw new WebSocketHandshakeException("not a WebSocket request: missing key");
+            throw new WebSocketHandshakeException("not a_isRightVersion WebSocket request: missing key");
         }
         String accept = WebSocketUtil.base64(WebSocketUtil.sha1((key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").getBytes(CharsetUtil.US_ASCII)));
         if (logger.isDebugEnabled()) {

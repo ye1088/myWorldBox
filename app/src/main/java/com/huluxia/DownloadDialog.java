@@ -127,7 +127,7 @@ public class DownloadDialog extends DialogFragment {
                 } else {
                     this.eZ.view.setVisibility(0);
                     DownloadDialog.eV = true;
-                    r.ck().K(a.ly);
+                    r.ck().K_umengEvent(a.ly);
                     UtilsApkPackage.runInstallApp(this.eZ.eS.getActivity(), apkFile.getAbsolutePath());
                     return;
                 }
@@ -148,7 +148,7 @@ public class DownloadDialog extends DialogFragment {
         public void onFinish(String url) {
             if (this.eZ.mUrl.equals(url)) {
                 this.eZ.eO.setText("下载完成");
-                r.ck().K(a.lx);
+                r.ck().K_umengEvent(a.lx);
                 this.eZ.dismissAllowingStateLoss();
             }
         }
@@ -248,18 +248,18 @@ public class DownloadDialog extends DialogFragment {
             t.n(getActivity(), getActivity().getResources().getString(m.no_network));
             dismissAllowingStateLoss();
         } else if (UtilsNetwork.isWifiConnected(getActivity())) {
-            new DialogManager(getActivity()).showOkCancelColorDialog(hlx.data.localstore.a.bKA, 0, LayoutInflater.from(getActivity()).inflate(i.textview_text_center, null, false), hlx.data.localstore.a.bKC, 0, hlx.data.localstore.a.bKB, 0, false, new 5(this, apkFile, nouse));
+            new DialogManager(getActivity()).showOkCancelColorDialog(hlx.data.localstore.a.bKA_TIPS, 0, LayoutInflater.from(getActivity()).inflate(i.textview_text_center, null, false), hlx.data.localstore.a.bKC_bt_ok, 0, hlx.data.localstore.a.bKB_bt_cancel, 0, false, new 5(this, apkFile, nouse));
         } else {
-            new DialogManager(getActivity()).showOkCancelDialog(null, (CharSequence) "非wifi环境下载需要消耗较多手机流量,确定下载吗?", hlx.data.localstore.a.bKC, hlx.data.localstore.a.bKB, false, new 6(this, apkFile, nouse));
+            new DialogManager(getActivity()).showOkCancelDialog(null, (CharSequence) "非wifi环境下载需要消耗较多手机流量,确定下载吗?", hlx.data.localstore.a.bKC_bt_ok, hlx.data.localstore.a.bKB_bt_cancel, false, new 6(this, apkFile, nouse));
         }
     }
 
-    private void b(File apkFile, GameInfo nouse) {
-        if (nouse.downloadingUrl != null) {
+    private void b(File apkFile, GameInfo nouse_gameInfo) {
+        if (nouse_gameInfo.downloadingUrl != null) {
             this.view.setVisibility(0);
-            this.eN.setText(nouse.getAppTitle());
+            this.eN.setText(nouse_gameInfo.getAppTitle());
             this.eO.setText("准备下载...");
-            this.mUrl = nouse.downloadingUrl;
+            this.mUrl = nouse_gameInfo.downloadingUrl;
             if (apkFile.exists()) {
                 apkFile.delete();
             }
@@ -267,13 +267,13 @@ public class DownloadDialog extends DialogFragment {
             info.filename = mFileName;
             info.url = this.mUrl;
             info.dir = mDir;
-            info.mS = nouse.getAppTitle();
-            info.mV = info.filename;
+            info.mS_appTitle = nouse_gameInfo.getAppTitle();
+            info.mV_fileName = info.filename;
             info.na = true;
             info.nb = false;
             ResourceCtrl.getInstance().addTask(info);
-            r.ck().K(a.lw);
-            s.ae(HTApplication.getAppContext()).a(this.mUrl, nouse);
+            r.ck().K_umengEvent(a.lw_homebanner_download_apk_start_string);
+            s.ae(HTApplication.getAppContext()).a(this.mUrl, nouse_gameInfo);
             return;
         }
         dismissAllowingStateLoss();

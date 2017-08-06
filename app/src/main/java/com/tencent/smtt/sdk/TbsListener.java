@@ -90,7 +90,7 @@ public interface TbsListener {
         public static final int INFO_FORCE_SYSTEM_WEBVIEW_OUTER = 402;
         public static final int INFO_MISS_SDKEXTENSION_JAR = 403;
         public static final String INFO_SDKENGINE_CANLOADTBS = "if the errocode is the only first time so ignore it. take care the other codes beside it. The first time of open appwebview,it is nomal because it takes some time to share X5.if always happen then make sure app current web process restart or look up other errcodes ^_^";
-        public static final String INFO_THROWABLE_LOAD_TBS = "throw a exception when load x5,try to restart your app or anlysis other errcodes";
+        public static final String INFO_THROWABLE_LOAD_TBS = "throw a_isRightVersion exception when load x5,try to restart your app or anlysis other errcodes";
         public static final String METHOD_MISS_SDKEXTENSION_JAR = "miss tbs_sdk_extension_dex.jar make sure X5 is normal in wechat/qq/qzone ";
         public static final int NETWORK_NOT_WIFI_ERROR = 111;
         public static final int NETWORK_UNAVAILABLE = 101;

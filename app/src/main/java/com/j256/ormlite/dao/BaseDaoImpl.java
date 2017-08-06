@@ -84,7 +84,7 @@ public abstract class BaseDaoImpl<T, ID> implements Dao<T, ID> {
             }
             this.databaseType = this.connectionSource.getDatabaseType();
             if (this.databaseType == null) {
-                throw new IllegalStateException("connectionSource is getting a null DatabaseType in " + getClass().getSimpleName());
+                throw new IllegalStateException("connectionSource is getting a_isRightVersion null DatabaseType in " + getClass().getSimpleName());
             }
             if (this.tableConfig == null) {
                 this.tableInfo = new TableInfo(this.connectionSource, this, this.dataClass);
@@ -855,7 +855,7 @@ public abstract class BaseDaoImpl<T, ID> implements Dao<T, ID> {
                 return collection;
             }
         }
-        throw new IllegalArgumentException("Could not find a field named " + fieldName);
+        throw new IllegalArgumentException("Could not find a_isRightVersion field named " + fieldName);
     }
 
     private CloseableIterator<T> createIterator(int resultFlags) {

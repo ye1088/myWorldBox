@@ -42,7 +42,7 @@ public class NewsImageTitle extends FrameLayout implements c {
                     case 1:
                         if (headerImage.recommentid == 1) {
                             hlx.ui.a.ck(this.cbZ.getContext());
-                            r.ck().K(hlx.data.tongji.a.bOu);
+                            r.ck().K_umengEvent(hlx.data.tongji.a.bOu);
                             return;
                         }
                         t.a(this.cbZ.getContext(), headerImage.recommentid, false);
@@ -55,7 +55,7 @@ public class NewsImageTitle extends FrameLayout implements c {
                     case 3:
                         if (headerImage.recommenturl != null && headerImage.recommenturl.endsWith("heroslist")) {
                             hlx.ui.a.cd(this.cbZ.mContext);
-                            r.ck().K(hlx.data.tongji.a.bOn);
+                            r.ck().K_umengEvent(hlx.data.tongji.a.bOn);
                             return;
                         }
                         return;

@@ -185,7 +185,7 @@ public class d extends a {
 
     private void a(Context context, o oVar) {
         if (oVar == null) {
-            com.huawei.android.pushagent.c.a.e.d("PushLogAC2705", "responseRegisterToken have a wrong parm");
+            com.huawei.android.pushagent.c.a.e.d("PushLogAC2705", "responseRegisterToken have a_isRightVersion wrong parm");
             return;
         }
         h hVar = new h(context, "pclient_request_info");
@@ -200,7 +200,7 @@ public class d extends a {
         String e = oVar.e();
         com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "pushSrv response register token to " + e);
         if (TextUtils.isEmpty(e) || TextUtils.isEmpty(d)) {
-            com.huawei.android.pushagent.c.a.e.d("PushLogAC2705", "pushSrv response registerToken a invalid message ");
+            com.huawei.android.pushagent.c.a.e.d("PushLogAC2705", "pushSrv response registerToken a_isRightVersion invalid message ");
             return;
         }
         if (e.c()) {
@@ -397,7 +397,7 @@ public class d extends a {
             try {
                 JSONObject jSONObject = new JSONObject(str);
                 if (jSONObject.has(PushConstants.EXTRA_APP)) {
-                    com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "jsonStr has a mapping for app");
+                    com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "jsonStr has a_isRightVersion mapping for app");
                     try {
                         int i = jSONObject.getInt(PushConstants.EXTRA_APP);
                         if (1 == i) {
@@ -411,7 +411,7 @@ public class d extends a {
                         com.huawei.android.pushagent.c.a.e.c("PushLogAC2705", e.toString(), e);
                     }
                 } else {
-                    com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "jsonStr does not  have a mapping for app");
+                    com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "jsonStr does not  have a_isRightVersion mapping for app");
                     com.huawei.android.pushagent.c.a.e.a("PushLogAC2705", "send selfShow message");
                     a(context, bArr, bArr2);
                 }

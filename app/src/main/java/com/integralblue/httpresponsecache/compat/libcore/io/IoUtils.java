@@ -32,7 +32,7 @@ public final class IoUtils {
     public static void deleteContents(File dir) throws IOException {
         File[] files = dir.listFiles();
         if (files == null) {
-            throw new IllegalArgumentException("not a directory: " + dir);
+            throw new IllegalArgumentException("not a_isRightVersion directory: " + dir);
         }
         File[] arr$ = files;
         int len$ = arr$.length;

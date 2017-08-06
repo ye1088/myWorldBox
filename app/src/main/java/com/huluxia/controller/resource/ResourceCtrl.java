@@ -82,7 +82,7 @@ public class ResourceCtrl implements a {
         }
         Context context = AppConfig.getInstance().getAppContext();
         long when = System.currentTimeMillis();
-        this.mNotificationWhen.put(Integer.valueOf(task.mS.hashCode()), Long.valueOf(when));
+        this.mNotificationWhen.put(Integer.valueOf(task.mS_appTitle.hashCode()), Long.valueOf(when));
         String className;
         if (UtilsApkPackage.getAppPackageName(AppConfig.getInstance().getAppContext()).equals("com.huati")) {
             className = "com.huluxia.ui.home.HomeActivity";
@@ -93,12 +93,12 @@ public class ResourceCtrl implements a {
         notifyIntent.setClassName(context.getPackageName(), UtilsFunction.empty(task.mT) ? "com.huluxia.ui.home.ToolHomeActivity" : task.mT);
         notifyIntent.setFlags(avformat.AVFMT_SEEK_TO_PTS);
         notifyIntent.putExtra(NOTIFICATION_REDIRECT, true);
-        Notification notification = new NotificationCompat$Builder(context).setSmallIcon(task.mK > 0 ? task.mK : e.ic_launcher).setContentTitle(task.mS).setContentText("准备下载....").setProgress(100, 0, false).setOngoing(false).setWhen(when).setDefaults(96).setPriority(0).setContentIntent(PendingIntent.getActivity(context, 0, notifyIntent, avutil.AV_CPU_FLAG_AVXSLOW)).build();
+        Notification notification = new NotificationCompat$Builder(context).setSmallIcon(task.mK > 0 ? task.mK : e.ic_launcher).setContentTitle(task.mS_appTitle).setContentText("准备下载....").setProgress(100, 0, false).setOngoing(false).setWhen(when).setDefaults(96).setPriority(0).setContentIntent(PendingIntent.getActivity(context, 0, notifyIntent, avutil.AV_CPU_FLAG_AVXSLOW)).build();
         this.mForeground = true;
         if (this.mForeground) {
-            ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).notify(task.mS.hashCode(), notification);
+            ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).notify(task.mS_appTitle.hashCode(), notification);
         } else {
-            this.mService.startForeground(task.mS.hashCode(), notification);
+            this.mService.startForeground(task.mS_appTitle.hashCode(), notification);
         }
     }
 
@@ -107,8 +107,8 @@ public class ResourceCtrl implements a {
             HLog.error(TAG, "stop mForeground service null", new Object[0]);
             return;
         }
-        this.mNotificationWhen.remove(Integer.valueOf(task.mS.hashCode()));
-        ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).cancel(task.mS.hashCode());
+        this.mNotificationWhen.remove(Integer.valueOf(task.mS_appTitle.hashCode()));
+        ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).cancel(task.mS_appTitle.hashCode());
         boolean running = false;
         for (TaskDispatcher dispatcher : this.mDispatchers) {
             if (running || dispatcher.isRunning()) {
@@ -130,8 +130,8 @@ public class ResourceCtrl implements a {
                 if (task.state == State.DOWNLOAD_PROGRESS.ordinal()) {
                     long when;
                     Context context = AppConfig.getInstance().getAppContext();
-                    if (this.mNotificationWhen.containsKey(Integer.valueOf(task.mS.hashCode()))) {
-                        when = ((Long) this.mNotificationWhen.get(Integer.valueOf(task.mS.hashCode()))).longValue();
+                    if (this.mNotificationWhen.containsKey(Integer.valueOf(task.mS_appTitle.hashCode()))) {
+                        when = ((Long) this.mNotificationWhen.get(Integer.valueOf(task.mS_appTitle.hashCode()))).longValue();
                     } else {
                         when = System.currentTimeMillis();
                     }
@@ -140,7 +140,7 @@ public class ResourceCtrl implements a {
                     notifyIntent.setClassName(context.getPackageName(), UtilsFunction.empty((CharSequence) task.mT) ? className : task.mT);
                     notifyIntent.setFlags(avformat.AVFMT_SEEK_TO_PTS);
                     notifyIntent.putExtra(NOTIFICATION_REDIRECT, true);
-                    ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).notify(task.mS.hashCode(), new NotificationCompat$Builder(context).setSmallIcon(task.mK > 0 ? task.mK : e.ic_launcher).setContentTitle(task.mS).setContentText(String.format("正在下载(%d", new Object[]{Integer.valueOf((int) ((((float) task.mN.progress) / ((float) task.mN.total)) * 100.0f))}) + "%)").setProgress((int) task.mN.total, (int) task.mN.progress, false).setOngoing(false).setWhen(when).setDefaults(96).setPriority(0).setContentIntent(PendingIntent.getActivity(context, 0, notifyIntent, avutil.AV_CPU_FLAG_AVXSLOW)).build());
+                    ((NotificationManager) AppConfig.getInstance().getAppContext().getSystemService("notification")).notify(task.mS_appTitle.hashCode(), new NotificationCompat$Builder(context).setSmallIcon(task.mK > 0 ? task.mK : e.ic_launcher).setContentTitle(task.mS_appTitle).setContentText(String.format("正在下载(%d", new Object[]{Integer.valueOf((int) ((((float) task.mN.progress) / ((float) task.mN.total)) * 100.0f))}) + "%)").setProgress((int) task.mN.total, (int) task.mN.progress, false).setOngoing(false).setWhen(when).setDefaults(96).setPriority(0).setContentIntent(PendingIntent.getActivity(context, 0, notifyIntent, avutil.AV_CPU_FLAG_AVXSLOW)).build());
                 }
             }
         }
@@ -274,8 +274,8 @@ public class ResourceCtrl implements a {
             HLog.warn(TAG, "task is deleting " + info, new Object[0]);
         } else {
             info.state = State.WAITING.ordinal();
-            if (UtilsFunction.empty(info.mS)) {
-                info.mS = info.filename;
+            if (UtilsFunction.empty(info.mS_appTitle)) {
+                info.mS_appTitle = info.filename;
             }
             this.mTaskQ.add(info);
             EventNotifyCenter.notifyEventUiThread(com.huluxia.controller.c.class, 257, info.url);

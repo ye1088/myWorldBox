@@ -154,7 +154,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Can't find block by offs
         r16 = r0.getBucket(r1);	 Catch:{ Exception -> 0x0151, all -> 0x016a }
         if (r16 != 0) goto L_0x0148;	 Catch:{ Exception -> 0x0151, all -> 0x016a }
     L_0x012a:
-        r16 = new com.huluxia.module.picture.a;	 Catch:{ Exception -> 0x0151, all -> 0x016a }
+        r16 = new com.huluxia.module.picture.a_isRightVersion;	 Catch:{ Exception -> 0x0151, all -> 0x016a }
         r16.<init>();	 Catch:{ Exception -> 0x0151, all -> 0x016a }
         r0 = r17;	 Catch:{ Exception -> 0x0151, all -> 0x016a }
         r1 = r16;	 Catch:{ Exception -> 0x0151, all -> 0x016a }

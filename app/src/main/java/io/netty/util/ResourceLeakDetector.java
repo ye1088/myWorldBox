@@ -177,7 +177,7 @@ public class ResourceLeakDetector<T> {
     }
 
     protected void reportInstancesLeak(String resourceType) {
-        logger.error("LEAK: You are creating too many " + resourceType + " instances.  " + resourceType + " is a shared resource that must be reused across the JVM," + "so that only a few instances are created.");
+        logger.error("LEAK: You are creating too many " + resourceType + " instances.  " + resourceType + " is a_isRightVersion shared resource that must be reused across the JVM," + "so that only a_isRightVersion few instances are created.");
     }
 
     static String newRecord(Object hint, int recordsToSkip) {

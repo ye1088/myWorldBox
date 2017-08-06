@@ -60,7 +60,7 @@ public abstract class MultithreadEventExecutorGroup extends AbstractEventExecuto
                 }
                 i++;
             } catch (Exception e3) {
-                throw new IllegalStateException("failed to create a child event loop", e3);
+                throw new IllegalStateException("failed to create a_isRightVersion child event loop", e3);
             } catch (Throwable th) {
                 if (!false) {
                     for (j = 0; j < i; j++) {

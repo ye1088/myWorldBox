@@ -404,7 +404,7 @@ public final class AnimatorSet extends Animator {
 
     public AnimatorSet setDuration(long duration) {
         if (duration < 0) {
-            throw new IllegalArgumentException("duration must be a value of zero or greater");
+            throw new IllegalArgumentException("duration must be a_isRightVersion value of zero or greater");
         }
         Iterator i$ = this.mNodes.iterator();
         while (i$.hasNext()) {

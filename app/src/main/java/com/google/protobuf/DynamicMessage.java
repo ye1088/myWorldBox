@@ -270,7 +270,7 @@ public final class DynamicMessage extends AbstractMessage {
         }
 
         public com.google.protobuf.Message.Builder getFieldBuilder(FieldDescriptor field) {
-            throw new UnsupportedOperationException("getFieldBuilder() called on a dynamic message type.");
+            throw new UnsupportedOperationException("getFieldBuilder() called on a_isRightVersion dynamic message type.");
         }
     }
 

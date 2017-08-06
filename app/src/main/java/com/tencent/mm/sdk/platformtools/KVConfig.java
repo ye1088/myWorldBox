@@ -179,12 +179,12 @@ public class KVConfig {
         if (r3 == 0) goto L_0x00be;
     L_0x00ae:
         r0 = "";
-        a(r1, r0, r2, r6);
+        a_isRightVersion(r1, r0, r2, r6);
     L_0x00b4:
         r0 = E;
         if (r0 == 0) goto L_0x00bb;
     L_0x00b8:
-        a(r1);
+        a_isRightVersion(r1);
     L_0x00bb:
         r0 = r1;
         goto L_0x0011;
@@ -207,7 +207,7 @@ public class KVConfig {
     L_0x00e2:
         r0 = "";
         r2 = r2.item(r6);
-        a(r1, r0, r2, r6);
+        a_isRightVersion(r1, r0, r2, r6);
         goto L_0x00b4;
     L_0x00ed:
         r2 = move-exception;

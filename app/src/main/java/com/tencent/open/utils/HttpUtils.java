@@ -228,7 +228,7 @@ public class HttpUtils {
         /*
         r4 = "openSDK_LOG.HttpUtils";
         r5 = "OpenApi request";
-        com.tencent.open.a.f.a(r4, r5);
+        com.tencent.open.a_isRightVersion.f.a_isRightVersion(r4, r5);
         r4 = r22.toLowerCase();
         r5 = "http";
         r4 = r4.startsWith(r5);
@@ -258,7 +258,7 @@ public class HttpUtils {
         r0 = r21;
         r1 = r20;
         r2 = r22;
-        a(r0, r1, r2);
+        a_isRightVersion(r0, r1, r2);
         r10 = 0;
         r8 = android.os.SystemClock.elapsedRealtime();
         r7 = 0;
@@ -281,7 +281,7 @@ public class HttpUtils {
         r12 = r12.append(r13);
         r12 = r12.append(r5);
         r12 = r12.toString();
-        com.tencent.open.a.f.a(r11, r12);
+        com.tencent.open.a_isRightVersion.f.a_isRightVersion(r11, r12);
         if (r6 != 0) goto L_0x010e;
     L_0x00ac:
         r6 = 3;
@@ -301,7 +301,7 @@ public class HttpUtils {
         r11 = r11.append(r12);
         r11 = r11.append(r5);
         r11 = r11.toString();
-        com.tencent.open.a.f.a(r6, r11);
+        com.tencent.open.a_isRightVersion.f.a_isRightVersion(r6, r11);
         r18 = r7;
         r6 = r8;
         r8 = r18;
@@ -321,8 +321,8 @@ public class HttpUtils {
         r10 = r10.rspSize;	 Catch:{ ConnectTimeoutException -> 0x0113, SocketTimeoutException -> 0x0139, HttpStatusException -> 0x015a, NetworkUnavailableException -> 0x0184, MalformedURLException -> 0x0189, IOException -> 0x019b, JSONException -> 0x01b0 }
         r13 = r15;
     L_0x0106:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         return r13;
     L_0x010e:
         r13 = r6;
@@ -353,8 +353,8 @@ public class HttpUtils {
         r8 = r16;
         goto L_0x0106;
     L_0x0131:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r15;
     L_0x0139:
         r8 = move-exception;
@@ -373,8 +373,8 @@ public class HttpUtils {
         r16 = r18;
         goto L_0x012b;
     L_0x0152:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r15;
     L_0x015a:
         r4 = move-exception;
@@ -388,8 +388,8 @@ public class HttpUtils {
     L_0x0171:
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x017d:
         r4 = move-exception;
@@ -407,8 +407,8 @@ public class HttpUtils {
         r12 = -3;
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x019b:
         r4 = move-exception;
@@ -417,8 +417,8 @@ public class HttpUtils {
         r12 = getErrorCodeFromException(r13);
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x01b0:
         r4 = move-exception;
@@ -427,8 +427,8 @@ public class HttpUtils {
         r12 = -4;
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x01c2:
         r8 = move-exception;
@@ -962,7 +962,7 @@ public class HttpUtils {
         r0 = r21;
         r1 = r20;
         r2 = r22;
-        a(r0, r1, r2);
+        a_isRightVersion(r0, r1, r2);
         r10 = 0;
         r8 = android.os.SystemClock.elapsedRealtime();
         r7 = 0;
@@ -985,7 +985,7 @@ public class HttpUtils {
         r12 = r12.append(r13);
         r12 = r12.append(r5);
         r12 = r12.toString();
-        com.tencent.open.a.f.a(r11, r12);
+        com.tencent.open.a_isRightVersion.f.a_isRightVersion(r11, r12);
         if (r6 != 0) goto L_0x0103;
     L_0x00a3:
         r6 = 3;
@@ -1005,7 +1005,7 @@ public class HttpUtils {
         r11 = r11.append(r12);
         r11 = r11.append(r5);
         r11 = r11.toString();
-        com.tencent.open.a.f.a(r6, r11);
+        com.tencent.open.a_isRightVersion.f.a_isRightVersion(r6, r11);
         r18 = r7;
         r6 = r8;
         r8 = r18;
@@ -1024,8 +1024,8 @@ public class HttpUtils {
         r10 = r10.rspSize;	 Catch:{ ConnectTimeoutException -> 0x0108, SocketTimeoutException -> 0x012e, HttpStatusException -> 0x014f, NetworkUnavailableException -> 0x0179, MalformedURLException -> 0x017e, IOException -> 0x0190, JSONException -> 0x01a5 }
         r13 = r15;
     L_0x00fb:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         return r13;
     L_0x0103:
         r13 = r6;
@@ -1056,8 +1056,8 @@ public class HttpUtils {
         r8 = r16;
         goto L_0x00fb;
     L_0x0126:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r15;
     L_0x012e:
         r8 = move-exception;
@@ -1076,8 +1076,8 @@ public class HttpUtils {
         r16 = r18;
         goto L_0x0120;
     L_0x0147:
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r15;
     L_0x014f:
         r4 = move-exception;
@@ -1091,8 +1091,8 @@ public class HttpUtils {
     L_0x0166:
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x0172:
         r4 = move-exception;
@@ -1110,8 +1110,8 @@ public class HttpUtils {
         r12 = -3;
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x0190:
         r4 = move-exception;
@@ -1120,8 +1120,8 @@ public class HttpUtils {
         r12 = getErrorCodeFromException(r13);
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x01a5:
         r4 = move-exception;
@@ -1130,8 +1130,8 @@ public class HttpUtils {
         r12 = -4;
         r8 = 0;
         r10 = 0;
-        r4 = com.tencent.open.b.g.a();
-        r4.a(r5, r6, r8, r10, r12);
+        r4 = com.tencent.open.b.g.a_isRightVersion();
+        r4.a_isRightVersion(r5, r6, r8, r10, r12);
         throw r13;
     L_0x01b7:
         r8 = move-exception;

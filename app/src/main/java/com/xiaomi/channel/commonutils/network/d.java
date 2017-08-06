@@ -120,13 +120,13 @@ public class d {
         r4 = r2;
     L_0x0071:
         r0 = r6.getResponseCode();	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
-        r5.a = r0;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
+        r5.a_isRightVersion = r0;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r0 = "com.xiaomi.common.Network";
         r1 = new java.lang.StringBuilder;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r1.<init>();	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r7 = "Http POST Response Code: ";
         r1 = r1.append(r7);	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
-        r7 = r5.a;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
+        r7 = r5.a_isRightVersion;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r1 = r1.append(r7);	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r1 = r1.toString();	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         android.util.Log.d(r0, r1);	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
@@ -140,7 +140,7 @@ public class d {
     L_0x00a0:
         r1 = new java.io.BufferedReader;	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
         r0 = new java.io.InputStreamReader;	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
-        r3 = new com.xiaomi.channel.commonutils.network.d$a;	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
+        r3 = new com.xiaomi.channel.commonutils.network.d$a_isRightVersion;	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
         r7 = r6.getInputStream();	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
         r3.<init>(r7);	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
         r0.<init>(r3);	 Catch:{ IOException -> 0x00da, Throwable -> 0x00ef, all -> 0x012a }
@@ -168,7 +168,7 @@ public class d {
         r0 = move-exception;
         r1 = new java.io.BufferedReader;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r0 = new java.io.InputStreamReader;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
-        r3 = new com.xiaomi.channel.commonutils.network.d$a;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
+        r3 = new com.xiaomi.channel.commonutils.network.d$a_isRightVersion;	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r6 = r6.getErrorStream();	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r3.<init>(r6);	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
         r0.<init>(r3);	 Catch:{ IOException -> 0x0041, Throwable -> 0x00ef, all -> 0x012a }
@@ -243,7 +243,7 @@ public class d {
         r4 = r2;
         goto L_0x0071;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.channel.commonutils.network.d.a(android.content.Context, java.lang.String, java.lang.String, java.util.Map, java.lang.String):com.xiaomi.channel.commonutils.network.b");
+        throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.channel.commonutils.network.d.a_isRightVersion(android.content.Context, java.lang.String, java.lang.String, java.util.Map, java.lang.String):com.xiaomi.channel.commonutils.network.b");
     }
 
     public static b a(Context context, String str, Map<String, String> map) {

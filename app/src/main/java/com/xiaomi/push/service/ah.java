@@ -16,7 +16,7 @@ class ah extends b {
 
     public void b() {
         try {
-            a b = a.b(Base64.decode(HttpUtils.a(h.a(), "http://resolver.msg.xiaomi.net/psc/?t=a", null), 10));
+            a b = a.b(Base64.decode(HttpUtils.a(h.a(), "http://resolver.msg.xiaomi.net/psc/?t=a_isRightVersion", null), 10));
             if (b != null) {
                 ag.a(this.b, b);
                 this.a = true;

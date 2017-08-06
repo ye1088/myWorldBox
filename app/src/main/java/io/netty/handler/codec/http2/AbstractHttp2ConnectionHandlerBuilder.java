@@ -184,7 +184,7 @@ public abstract class AbstractHttp2ConnectionHandlerBuilder<T extends Http2Conne
         } catch (Throwable t) {
             encoder.close();
             decoder.close();
-            IllegalStateException illegalStateException = new IllegalStateException("failed to build a Http2ConnectionHandler", t);
+            IllegalStateException illegalStateException = new IllegalStateException("failed to build a_isRightVersion Http2ConnectionHandler", t);
         }
     }
 

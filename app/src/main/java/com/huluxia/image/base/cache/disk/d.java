@@ -279,7 +279,7 @@ public class d implements h, com.huluxia.image.core.common.disk.a {
             try {
                 cacheEvent.a(ioe);
                 this.uf.f(cacheEvent);
-                HLog.error(tF, "Failed inserting a file into the cache", ioe, new Object[0]);
+                HLog.error(tF, "Failed inserting a_isRightVersion file into the cache", ioe, new Object[0]);
                 throw ioe;
             } catch (Throwable th) {
                 cacheEvent.recycle();
@@ -576,7 +576,7 @@ public class d implements h, com.huluxia.image.core.common.disk.a {
                 }
             }
             if (foundFutureTimestamp) {
-                this.tN.a(CacheErrorCategory.READ_INVALID_ENTRY, tF, "Future timestamp found in " + numFutureFiles + " files , with a total size of " + sizeFutureFiles + " bytes, and a maximum time delta of " + maxTimeDelta + LocaleUtil.MALAY, null);
+                this.tN.a(CacheErrorCategory.READ_INVALID_ENTRY, tF, "Future timestamp found in " + numFutureFiles + " files , with a_isRightVersion total size of " + sizeFutureFiles + " bytes, and a_isRightVersion maximum time delta of " + maxTimeDelta + LocaleUtil.MALAY, null);
             }
             if (!(this.uE.getCount() == ((long) count) && this.uE.getSize() == size)) {
                 if (this.uh && this.uz != tempResourceIndex) {

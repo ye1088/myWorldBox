@@ -34,7 +34,7 @@ public class MappedPreparedStmt<T, ID> extends BaseMappedQuery<T, ID> implements
 
     public CompiledStatement compile(DatabaseConnection databaseConnection, StatementType type, int resultFlags) throws SQLException {
         if (this.type != type) {
-            throw new SQLException("Could not compile this " + this.type + " statement since the caller is expecting a " + type + " statement.  Check your QueryBuilder methods.");
+            throw new SQLException("Could not compile this " + this.type + " statement since the caller is expecting a_isRightVersion " + type + " statement.  Check your QueryBuilder methods.");
         }
         return assignStatementArguments(databaseConnection.compileStatement(this.statement, type, this.argFieldTypes, resultFlags, this.cacheStore));
     }

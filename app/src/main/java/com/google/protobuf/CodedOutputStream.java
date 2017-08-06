@@ -505,7 +505,7 @@ public final class CodedOutputStream {
         if (this.output == null) {
             return this.limit - this.position;
         }
-        throw new UnsupportedOperationException("spaceLeft() can only be called on CodedOutputStreams that are writing to a flat array.");
+        throw new UnsupportedOperationException("spaceLeft() can only be called on CodedOutputStreams that are writing to a_isRightVersion flat array.");
     }
 
     public void checkNoSpaceLeft() {

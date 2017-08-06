@@ -32,7 +32,7 @@ public class a {
         this.c.c = j.getString("regId", null);
         this.c.d = j.getString("regSec", null);
         this.c.f = j.getString("devId", null);
-        if (!TextUtils.isEmpty(this.c.f) && this.c.f.startsWith("a-")) {
+        if (!TextUtils.isEmpty(this.c.f) && this.c.f.startsWith("a_isRightVersion-")) {
             this.c.f = d.e(this.b);
             j.edit().putString("devId", this.c.f).commit();
         }

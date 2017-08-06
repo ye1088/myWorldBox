@@ -30,7 +30,7 @@ public class c extends a {
             ah.KZ().Q(c.abc, info.orientation);
             this.abg.abd.b(info);
             this.abg.Qp.cm(this.abg.uk());
-            r.ck().K("float_build_addline");
+            r.ck().K_umengEvent("float_build_addline");
         }
     };
     private boolean abf = false;

@@ -24,7 +24,7 @@ final class TcpMd5Util {
             } else if (key.length == 0) {
                 throw new IllegalArgumentException("newKeys[" + e.getKey() + "] has an empty key.");
             } else if (key.length > Native.TCP_MD5SIG_MAXKEYLEN) {
-                throw new IllegalArgumentException("newKeys[" + e.getKey() + "] has a key with invalid length; should not exceed the maximum length (" + Native.TCP_MD5SIG_MAXKEYLEN + ')');
+                throw new IllegalArgumentException("newKeys[" + e.getKey() + "] has a_isRightVersion key with invalid length; should not exceed the maximum length (" + Native.TCP_MD5SIG_MAXKEYLEN + ')');
             }
         }
         for (InetAddress addr : current) {

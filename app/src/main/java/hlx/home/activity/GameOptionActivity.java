@@ -139,7 +139,7 @@ public class GameOptionActivity extends HTBaseActivity {
 
             public void onClick(View v) {
                 hlx.ui.a.e(this.bPm, false);
-                r.ck().K(hlx.data.tongji.a.bMe);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bMe);
             }
         });
         this.bPj.setOnCheckedChangeListener(this.QH);

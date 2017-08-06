@@ -89,7 +89,7 @@ Error: java.util.NoSuchElementException
         if (in == null) {
             throw new NullPointerException("in");
         } else if (chunkSize <= 0) {
-            throw new IllegalArgumentException("chunkSize: " + chunkSize + " (expected: a positive integer)");
+            throw new IllegalArgumentException("chunkSize: " + chunkSize + " (expected: a_isRightVersion positive integer)");
         } else {
             this.in = in;
             this.offset = 0;

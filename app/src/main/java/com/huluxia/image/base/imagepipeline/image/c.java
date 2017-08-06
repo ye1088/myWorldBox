@@ -45,7 +45,7 @@ public class c extends a {
     }
 
     public synchronized a<Bitmap> hP() {
-        Preconditions.checkNotNull(this.wL, "Cannot convert a closed static bitmap");
+        Preconditions.checkNotNull(this.wL, "Cannot convert a_isRightVersion closed static bitmap");
         return hO();
     }
 

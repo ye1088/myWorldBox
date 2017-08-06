@@ -107,12 +107,12 @@ public class ProfileSpaceAdapter extends BaseAdapter implements com.simple.color
                         }
                     case 6:
                         if (d.isDayMode()) {
-                            r.ck().K(a.bMk);
+                            r.ck().K_umengEvent(a.bMk);
                         }
                         d.RC();
                         break;
                     case 7:
-                        r.ck().K(a.bMm);
+                        r.ck().K_umengEvent(a.bMm);
                         t.b(this.aVV.mContext, this.aVV.aKG);
                         break;
                     case 8:

@@ -24,7 +24,7 @@ public class b {
     private static float a(android.content.Context r4) {
         /*
         r0 = 1111490560; // 0x42400000 float:48.0 double:5.491493014E-315;
-        r0 = com.huawei.android.pushselfshow.utils.a.a(r4, r0);
+        r0 = com.huawei.android.pushselfshow.utils.a_isRightVersion.a_isRightVersion(r4, r0);
         r1 = (float) r0;
         r0 = r4.getResources();	 Catch:{ Exception -> 0x0036 }
         r2 = 17104901; // 0x1050005 float:2.4428256E-38 double:8.450944E-317;
@@ -43,18 +43,18 @@ public class b {
         r2 = r2.append(r3);
         r2 = r2.append(r0);
         r2 = r2.toString();
-        com.huawei.android.pushagent.c.a.e.a(r1, r2);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.a_isRightVersion(r1, r2);
         return r0;
     L_0x0036:
         r0 = move-exception;
         r2 = "PushSelfShowLog";
         r0 = r0.toString();
-        com.huawei.android.pushagent.c.a.e.c(r2, r0);
+        com.huawei.android.pushagent.c.a_isRightVersion.e.c(r2, r0);
     L_0x0041:
         r0 = r1;
         goto L_0x001b;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.c.b.a(android.content.Context):float");
+        throw new UnsupportedOperationException("Method not decompiled: com.huawei.android.pushselfshow.c.b.a_isRightVersion(android.content.Context):float");
     }
 
     public static int a(Context context, String str, String str2, Object obj) {

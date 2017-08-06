@@ -26,7 +26,7 @@ class w {
         /*
         r5 = this;
         r1 = 0;
-        r3 = r5.a();	 Catch:{ Exception -> 0x0022, all -> 0x0035 }
+        r3 = r5.a_isRightVersion();	 Catch:{ Exception -> 0x0022, all -> 0x0035 }
         r2 = new java.util.Properties;	 Catch:{ Exception -> 0x0022, all -> 0x0035 }
         r2.<init>();	 Catch:{ Exception -> 0x0022, all -> 0x0035 }
         if (r3 == 0) goto L_0x0054;

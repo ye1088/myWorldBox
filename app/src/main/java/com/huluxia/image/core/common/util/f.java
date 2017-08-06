@@ -86,7 +86,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Can't find block by offs
         r8 = r10.getPath();
         goto L_0x002d;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.common.util.f.a(android.content.ContentResolver, android.net.Uri):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.common.util.f.a_isRightVersion(android.content.ContentResolver, android.net.Uri):java.lang.String");
     }
 
     public static boolean isNetworkUri(@Nullable Uri uri) {

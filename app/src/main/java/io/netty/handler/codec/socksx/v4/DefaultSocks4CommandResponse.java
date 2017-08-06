@@ -17,7 +17,7 @@ public class DefaultSocks4CommandResponse extends AbstractSocks4Message implemen
         if (status == null) {
             throw new NullPointerException("cmdStatus");
         } else if (dstAddr != null && !NetUtil.isValidIpV4Address(dstAddr)) {
-            throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a valid IPv4 address)");
+            throw new IllegalArgumentException("dstAddr: " + dstAddr + " (expected: a_isRightVersion valid IPv4 address)");
         } else if (dstPort < 0 || dstPort > 65535) {
             throw new IllegalArgumentException("dstPort: " + dstPort + " (expected: 0~65535)");
         } else {

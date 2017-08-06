@@ -55,7 +55,7 @@ public abstract class AbstractInboundHttp2ToHttpAdapterBuilder<T extends Inbound
             this.connection.addListener(instance);
             return instance;
         } catch (Throwable t) {
-            IllegalStateException illegalStateException = new IllegalStateException("failed to create a new InboundHttp2ToHttpAdapter", t);
+            IllegalStateException illegalStateException = new IllegalStateException("failed to create a_isRightVersion new InboundHttp2ToHttpAdapter", t);
         }
     }
 }

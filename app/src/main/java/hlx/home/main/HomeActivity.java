@@ -264,7 +264,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
 
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (isChecked) {
-                r.ck().K(hlx.data.tongji.a.bMj);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bMj);
             }
             d.RC();
         }
@@ -369,15 +369,15 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
                             this.bQP.bQF.notifyDataSetChanged();
                             EventNotifyCenter.notifyEvent(n.class, n.axm, Integer.valueOf(0));
                         }
-                        r.ck().K(hlx.data.tongji.a.bMg);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bMg);
                         k.h(this.bQP.bQJ);
                         return;
                     case 2:
-                        r.ck().K(hlx.data.tongji.a.bMh);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bMh);
                         t.ar(this.bQP.bQJ);
                         return;
                     case 3:
-                        r.ck().K(hlx.data.tongji.a.bMi);
+                        r.ck().K_umengEvent(hlx.data.tongji.a.bMi);
                         t.f(this.bQP.bQJ, 0);
                         return;
                     default:
@@ -530,7 +530,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
 
             public void c(View v) {
                 hlx.launch.game.d.bR(this.bQP);
-                r.ck().K(hlx.data.tongji.a.bLQ);
+                r.ck().K_umengEvent(hlx.data.tongji.a.bLQ);
             }
         });
         findViewById(R.id.rly_home_tab).setOnClickListener(this.aEK);
@@ -545,13 +545,13 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
             this.bQA.setChecked(false);
             this.bQB.setChecked(false);
             this.bQC.setChecked(false);
-            r.ck().K(hlx.data.tongji.a.bLO);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bLO);
         } else if (id == R.id.rly_community_tab) {
             this.bQz.setChecked(false);
             this.bQA.setChecked(true);
             this.bQB.setChecked(false);
             this.bQC.setChecked(false);
-            r.ck().K(hlx.data.tongji.a.bLP);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bLP);
         } else if (id == R.id.rly_news_tab) {
             this.bQz.setChecked(false);
             this.bQA.setChecked(false);
@@ -560,13 +560,13 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
             if (HTApplication.bN() > 0) {
                 i.h(HTApplication.bN(), 0);
             }
-            r.ck().K(hlx.data.tongji.a.bLS);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bLS);
         } else if (id == R.id.rly_space_tab) {
             this.bQz.setChecked(false);
             this.bQA.setChecked(false);
             this.bQB.setChecked(false);
             this.bQC.setChecked(true);
-            r.ck().K(hlx.data.tongji.a.bLT);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bLT);
         }
     }
 
@@ -626,7 +626,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
         super.onStop();
         int drawerState = this.aPB.getDrawerState();
         if (drawerState == 8 || drawerState == 4) {
-            r.ck().K(hlx.data.tongji.a.bMf);
+            r.ck().K_umengEvent(hlx.data.tongji.a.bMf);
             this.aPB.Pv();
         }
     }

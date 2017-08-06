@@ -56,19 +56,19 @@ public class LengthFieldPrepender extends MessageToMessageEncoder<ByteBuf> {
                     out.add(ctx.alloc().buffer(1).order(this.byteOrder).writeByte((byte) length));
                     break;
                 }
-                throw new IllegalArgumentException("length does not fit into a byte: " + length);
+                throw new IllegalArgumentException("length does not fit into a_isRightVersion byte: " + length);
             case 2:
                 if (length < 65536) {
                     out.add(ctx.alloc().buffer(2).order(this.byteOrder).writeShort((short) length));
                     break;
                 }
-                throw new IllegalArgumentException("length does not fit into a short integer: " + length);
+                throw new IllegalArgumentException("length does not fit into a_isRightVersion short integer: " + length);
             case 3:
                 if (length < 16777216) {
                     out.add(ctx.alloc().buffer(3).order(this.byteOrder).writeMedium(length));
                     break;
                 }
-                throw new IllegalArgumentException("length does not fit into a medium integer: " + length);
+                throw new IllegalArgumentException("length does not fit into a_isRightVersion medium integer: " + length);
             case 4:
                 out.add(ctx.alloc().buffer(4).order(this.byteOrder).writeInt(length));
                 break;

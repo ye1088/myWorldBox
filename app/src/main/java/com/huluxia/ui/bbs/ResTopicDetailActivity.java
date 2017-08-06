@@ -648,16 +648,16 @@ public class ResTopicDetailActivity extends HTBaseThemeActivity implements OnCli
         public void onDownloadSucc(String url, String path) {
             if (true == this.aNS.aNo) {
                 if (this.aNS.aNp.equals(this.aNS.FT()) || this.aNS.aNq.equals(this.aNS.FU())) {
-                    r.ck().K(hlx.data.tongji.a.bMI);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bMI);
                     com.huluxia.mctool.e.Dk().iQ(1);
                 } else if (this.aNS.aNr.equals(this.aNS.FT()) || this.aNS.aNs.equals(this.aNS.FU())) {
-                    r.ck().K(hlx.data.tongji.a.bMJ);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bMJ);
                     com.huluxia.mctool.e.Dk().iR(1);
                 } else if (this.aNS.aNt.equals(this.aNS.FT()) || this.aNS.aNu.equals(this.aNS.FU())) {
-                    r.ck().K(hlx.data.tongji.a.bML);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bML);
                     com.huluxia.mctool.e.Dk().iS(1);
                 } else if (this.aNS.aNv.equals(this.aNS.FT()) || this.aNS.aNw.equals(this.aNS.FU())) {
-                    r.ck().K(hlx.data.tongji.a.bMK);
+                    r.ck().K_umengEvent(hlx.data.tongji.a.bMK);
                     com.huluxia.mctool.e.Dk().iT(1);
                 }
             }

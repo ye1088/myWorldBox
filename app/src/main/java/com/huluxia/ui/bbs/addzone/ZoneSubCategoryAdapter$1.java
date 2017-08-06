@@ -32,7 +32,7 @@ class ZoneSubCategoryAdapter$1 implements OnClickListener {
             return;
         }
         final DialogManager dialogManager = new DialogManager(ZoneSubCategoryAdapter.a(this.aRd));
-        dialogManager.showOkCancelDialog("需要登录以后才能进行操作", "登录", a.bKB, new OkCancelDialogListener(this) {
+        dialogManager.showOkCancelDialog("需要登录以后才能进行操作", "登录", a.bKB_bt_cancel, new OkCancelDialogListener(this) {
             final /* synthetic */ ZoneSubCategoryAdapter$1 aRf;
 
             public void onCancel() {

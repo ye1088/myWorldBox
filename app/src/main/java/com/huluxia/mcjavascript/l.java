@@ -36,7 +36,7 @@ public class l {
 
     public static void g(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
         if (DTSDKManagerEx.C(paramInt1, paramInt2, paramInt3) != 52) {
-            throw new RuntimeException("Block at " + paramInt1 + ":" + paramInt2 + ":" + paramInt3 + " is not a mob spawner!");
+            throw new RuntimeException("Block at " + paramInt1 + ":" + paramInt2 + ":" + paramInt3 + " is not a_isRightVersion mob spawner!");
         }
         ScriptManager.nativeSpawnerSetEntityType(paramInt1, paramInt2, paramInt3, paramInt4);
     }

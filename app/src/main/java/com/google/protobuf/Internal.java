@@ -22,7 +22,7 @@ public class Internal {
         try {
             return new String(bytes.getBytes("ISO-8859-1"), "UTF-8");
         } catch (UnsupportedEncodingException e) {
-            throw new IllegalStateException("Java VM does not support a standard character set.", e);
+            throw new IllegalStateException("Java VM does not support a_isRightVersion standard character set.", e);
         }
     }
 
@@ -30,7 +30,7 @@ public class Internal {
         try {
             return ByteString.copyFrom(bytes.getBytes("ISO-8859-1"));
         } catch (UnsupportedEncodingException e) {
-            throw new IllegalStateException("Java VM does not support a standard character set.", e);
+            throw new IllegalStateException("Java VM does not support a_isRightVersion standard character set.", e);
         }
     }
 
@@ -38,7 +38,7 @@ public class Internal {
         try {
             return bytes.getBytes("ISO-8859-1");
         } catch (UnsupportedEncodingException e) {
-            throw new IllegalStateException("Java VM does not support a standard character set.", e);
+            throw new IllegalStateException("Java VM does not support a_isRightVersion standard character set.", e);
         }
     }
 

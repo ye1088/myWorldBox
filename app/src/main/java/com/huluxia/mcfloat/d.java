@@ -20,7 +20,7 @@ import com.huluxia.utils.j;
 import com.huluxia.utils.p;
 import com.huluxia.widget.Constants;
 import com.huluxia.widget.dialog.g;
-import com.huluxia.widget.dialog.k;
+import com.huluxia.widget.dialog.k_dialog_class;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class d implements com.huluxia.mcfloat.p.a {
     public static final String PR = "Save3.png";
     public static final String PS = "Save4.png";
     private Activity PD = null;
-    private k PE;
+    private k_dialog_class PE;
     private String PF = null;
     private hlx.utils.b.a PT = new hlx.utils.b.a(this) {
         final /* synthetic */ d Qo;
@@ -302,8 +302,8 @@ public class d implements com.huluxia.mcfloat.p.a {
                 new b().execute(new String[]{j.Kq() + com.huluxia.mcinterface.h.zs(), this.PF, tmpBackupViewItem.uB(), tmpBackupViewItem.uC(), Integer.toString(inputIndex)});
             } else if (tmpBackupViewItem.uH().getText() == "删除") {
                 g dia = new g(this.PD, new a(this, inputIndex));
-                dia.az(hlx.data.localstore.a.bKA, "删除备份地图将无法恢复,确定要删除吗？");
-                dia.u(hlx.data.localstore.a.bKB, null, hlx.data.localstore.a.bKC);
+                dia.az(hlx.data.localstore.a.bKA_TIPS, "删除备份地图将无法恢复,确定要删除吗？");
+                dia.u(hlx.data.localstore.a.bKB_bt_cancel, null, hlx.data.localstore.a.bKC_bt_ok);
                 dia.showDialog();
             }
         }
@@ -357,7 +357,7 @@ public class d implements com.huluxia.mcfloat.p.a {
         this.Qk.setOnClickListener(this.mClickListener);
         this.Ql.setOnClickListener(this.mClickListener);
         qV();
-        this.PE = new k(view.getContext());
+        this.PE = new k_dialog_class(view.getContext());
         this.PE.gL("地图正在保存中,请稍后...");
     }
 

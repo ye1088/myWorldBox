@@ -19,7 +19,7 @@ public final class j {
         r1 = 330000; // 0x50910 float:4.62428E-40 double:1.630417E-318;
         r8 = 1;
         r0 = 5000; // 0x1388 float:7.006E-42 double:2.4703E-320;
-        a = r0;
+        a_isRightVersion = r0;
         b = r1;
         r0 = 300000; // 0x493e0 float:4.2039E-40 double:1.482197E-318;
         c = r0;
@@ -62,7 +62,7 @@ public final class j {
         r0 = r0.equals(r7);	 Catch:{ Exception -> 0x0089 }
         if (r0 == 0) goto L_0x0073;
     L_0x0064:
-        a(r6);	 Catch:{ Exception -> 0x0089 }
+        a_isRightVersion(r6);	 Catch:{ Exception -> 0x0089 }
     L_0x0067:
         r0 = r6.next();	 Catch:{ Exception -> 0x0089 }
         if (r0 != r8) goto L_0x0054;
@@ -78,9 +78,9 @@ public final class j {
         r0 = r0.equals(r7);	 Catch:{ Exception -> 0x0089 }
         if (r0 == 0) goto L_0x0093;
     L_0x0080:
-        r0 = a;	 Catch:{ Exception -> 0x0089 }
-        r0 = a(r6, r0);	 Catch:{ Exception -> 0x0089 }
-        a = r0;	 Catch:{ Exception -> 0x0089 }
+        r0 = a_isRightVersion;	 Catch:{ Exception -> 0x0089 }
+        r0 = a_isRightVersion(r6, r0);	 Catch:{ Exception -> 0x0089 }
+        a_isRightVersion = r0;	 Catch:{ Exception -> 0x0089 }
         goto L_0x0067;
     L_0x0089:
         r0 = move-exception;
@@ -97,7 +97,7 @@ public final class j {
         if (r0 == 0) goto L_0x00b3;
     L_0x00a0:
         r0 = b;	 Catch:{ Exception -> 0x0089 }
-        r0 = a(r6, r0);	 Catch:{ Exception -> 0x0089 }
+        r0 = a_isRightVersion(r6, r0);	 Catch:{ Exception -> 0x0089 }
         b = r0;	 Catch:{ Exception -> 0x0089 }
         goto L_0x0067;
     L_0x00a9:

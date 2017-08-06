@@ -23,7 +23,7 @@ class SslHandler$1 implements Runnable {
             this.this$0.flush(this.val$ctx);
         } catch (Exception e) {
             if (!this.val$future.tryFailure(e)) {
-                SslHandler.access$300().warn("{} flush() raised a masked exception.", this.val$ctx.channel(), e);
+                SslHandler.access$300().warn("{} flush() raised a_isRightVersion masked exception.", this.val$ctx.channel(), e);
             }
         }
     }

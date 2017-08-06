@@ -77,7 +77,7 @@ public class ConcurrentHashMapV8<K, V> implements Serializable, ConcurrentMap<K,
             ABASE = (long) U.arrayBaseOffset(ak);
             int scale = U.arrayIndexScale(ak);
             if (((scale - 1) & scale) != 0) {
-                throw new Error("data type scale not a power of two");
+                throw new Error("data type scale not a_isRightVersion power of two");
             }
             ASHIFT = 31 - Integer.numberOfLeadingZeros(scale);
         } catch (Exception e) {

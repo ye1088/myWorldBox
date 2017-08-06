@@ -100,7 +100,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
             ((ViewGroup) refreshableView).addView(child, index, params);
             return;
         }
-        throw new UnsupportedOperationException("Refreshable View is not a ViewGroup so can't addView");
+        throw new UnsupportedOperationException("Refreshable View is not a_isRightVersion ViewGroup so can't addView");
     }
 
     public final boolean demo() {

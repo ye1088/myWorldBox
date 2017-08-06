@@ -240,10 +240,10 @@ public class DefaultHttpHeaders extends HttpHeaders {
             case (byte) 58:
             case (byte) 59:
             case (byte) 61:
-                throw new IllegalArgumentException("a header name cannot contain the following prohibited characters: =,;: \\t\\r\\n\\v\\f: " + value);
+                throw new IllegalArgumentException("a_isRightVersion header name cannot contain the following prohibited characters: =,;: \\t\\r\\n\\v\\f: " + value);
             default:
                 if (value < (byte) 0) {
-                    throw new IllegalArgumentException("a header name cannot contain non-ASCII character: " + value);
+                    throw new IllegalArgumentException("a_isRightVersion header name cannot contain non-ASCII character: " + value);
                 }
                 return;
         }
@@ -262,10 +262,10 @@ public class DefaultHttpHeaders extends HttpHeaders {
             case ':':
             case ';':
             case '=':
-                throw new IllegalArgumentException("a header name cannot contain the following prohibited characters: =,;: \\t\\r\\n\\v\\f: " + value);
+                throw new IllegalArgumentException("a_isRightVersion header name cannot contain the following prohibited characters: =,;: \\t\\r\\n\\v\\f: " + value);
             default:
                 if (value > '') {
-                    throw new IllegalArgumentException("a header name cannot contain non-ASCII character: " + value);
+                    throw new IllegalArgumentException("a_isRightVersion header name cannot contain non-ASCII character: " + value);
                 }
                 return;
         }

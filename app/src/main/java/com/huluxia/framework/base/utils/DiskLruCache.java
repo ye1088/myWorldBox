@@ -328,7 +328,7 @@ public final class DiskLruCache implements Closeable {
     public static void deleteContents(File dir) throws IOException {
         File[] files = dir.listFiles();
         if (files == null) {
-            throw new IOException("not a directory: " + dir);
+            throw new IOException("not a_isRightVersion directory: " + dir);
         }
         int length = files.length;
         int i = 0;

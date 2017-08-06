@@ -350,7 +350,7 @@ public abstract class AbsHListView extends AdapterView<ListAdapter> implements O
         if (this.mChoiceMode != 0) {
             if (VERSION.SDK_INT >= 11 && value && this.mChoiceMode == 3 && this.mChoiceActionMode == null) {
                 if (this.mMultiChoiceModeCallback == null || !((MultiChoiceModeWrapper) this.mMultiChoiceModeCallback).hasWrappedCallback()) {
-                    throw new IllegalStateException("AbsListView: attempted to start selection mode for CHOICE_MODE_MULTIPLE_MODAL but no choice mode callback was supplied. Call setMultiChoiceModeListener to set a callback.");
+                    throw new IllegalStateException("AbsListView: attempted to start selection mode for CHOICE_MODE_MULTIPLE_MODAL but no choice mode callback was supplied. Call setMultiChoiceModeListener to set a_isRightVersion callback.");
                 }
                 this.mChoiceActionMode = startActionMode((MultiChoiceModeWrapper) this.mMultiChoiceModeCallback);
             }

@@ -23,7 +23,7 @@ public abstract class AddressResolverGroup<T extends SocketAddress> implements C
         if (executor == null) {
             throw new NullPointerException("executor");
         } else if (executor.isShuttingDown()) {
-            throw new IllegalStateException("executor not accepting a task");
+            throw new IllegalStateException("executor not accepting a_isRightVersion task");
         } else {
             AddressResolver<T> r;
             synchronized (this.resolvers) {
@@ -42,7 +42,7 @@ public abstract class AddressResolverGroup<T extends SocketAddress> implements C
                         });
                         r = newResolver;
                     } catch (Exception e) {
-                        throw new IllegalStateException("failed to create a new resolver", e);
+                        throw new IllegalStateException("failed to create a_isRightVersion new resolver", e);
                     }
                 }
             }
@@ -59,7 +59,7 @@ public abstract class AddressResolverGroup<T extends SocketAddress> implements C
             try {
                 r.close();
             } catch (Throwable t) {
-                logger.warn("Failed to close a resolver:", t);
+                logger.warn("Failed to close a_isRightVersion resolver:", t);
             }
         }
     }

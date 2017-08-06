@@ -94,7 +94,7 @@ public final class DefaultChannelId implements ChannelId {
         }
         bestMacAddr = new byte[8];
         ThreadLocalRandom.current().nextBytes(bestMacAddr);
-        logger.warn("Failed to find a usable hardware address from the network interfaces; using random bytes: {}", MacAddressUtil.formatAddress(bestMacAddr));
+        logger.warn("Failed to find a_isRightVersion usable hardware address from the network interfaces; using random bytes: {}", MacAddressUtil.formatAddress(bestMacAddr));
         return bestMacAddr;
     }
 
@@ -128,7 +128,7 @@ public final class DefaultChannelId implements ChannelId {
             return pid;
         }
         pid = ThreadLocalRandom.current().nextInt(4194305);
-        logger.warn("Failed to find the current process ID from '{}'; using a random value: {}", value, Integer.valueOf(pid));
+        logger.warn("Failed to find the current process ID from '{}'; using a_isRightVersion random value: {}", value, Integer.valueOf(pid));
         return pid;
     }
 

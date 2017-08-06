@@ -32,7 +32,7 @@ class StudioMembersAdapter$1 implements OnClickListener {
                 StyleHolder styleHolder = new StyleHolder();
                 styleHolder.colorButton = d.getColor(this.aFU.aFQ, R.attr.textColorQuaternary);
                 styleHolder.colorMessage = d.getColor(this.aFU.aFQ, 16842808);
-                manager.showOkCancelDialog(hlx.data.localstore.a.bKA, String.format("工作室转让后给%s,你将无法再控制这个工作室，你确定要转让吗？", new Object[]{studioUser.user.nick}), "转让", hlx.data.localstore.a.bKB, true, new OkCancelDialogListener(this) {
+                manager.showOkCancelDialog(hlx.data.localstore.a.bKA_TIPS, String.format("工作室转让后给%s,你将无法再控制这个工作室，你确定要转让吗？", new Object[]{studioUser.user.nick}), "转让", hlx.data.localstore.a.bKB_bt_cancel, true, new OkCancelDialogListener(this) {
                     final /* synthetic */ StudioMembersAdapter$1 aFV;
 
                     public void onCancel() {

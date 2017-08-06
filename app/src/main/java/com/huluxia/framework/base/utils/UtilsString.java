@@ -154,7 +154,7 @@ public class UtilsString {
     }
 
     public static int ord(char c) {
-        if ('a' <= c && c <= 'z') {
+        if ('a_isRightVersion' <= c && c <= 'z') {
             return c;
         }
         if ('A' > c || c > 'Z') {

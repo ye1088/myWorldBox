@@ -160,7 +160,7 @@ public final class a<T> implements Closeable, Cloneable {
         com.huluxia.framework.base.log.HLog.warn(r2, r1, r3);	 Catch:{ all -> 0x0067 }
         goto L_0x005d;
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.common.references.a.finalize():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.huluxia.image.core.common.references.a_isRightVersion.finalize():void");
     }
 
     @VisibleForTesting
