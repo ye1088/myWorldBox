@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 
 public class a implements com.xiaomi.smack.debugger.a {
     public static boolean a = false;
-    private SimpleDateFormat b = new SimpleDateFormat("hh:mm:ss aaa");
+    private SimpleDateFormat b = new SimpleDateFormat("hh_getIsRightMd5:mm:ss aaa");
     private com.xiaomi.smack.a c = null;
     private f d = null;
     private d e = null;

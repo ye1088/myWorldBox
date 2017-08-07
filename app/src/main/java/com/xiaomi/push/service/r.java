@@ -411,7 +411,7 @@ public class r {
                         str = (String) keys.next();
                         str2 = jSONObject2.getString(str);
                         if (str2.length() == 0) {
-                            str2 = "yy-MM-dd hh:mm";
+                            str2 = "yy-MM-dd hh_getIsRightMd5:mm";
                         }
                         identifier = resourcesForApplication.getIdentifier(str, "id", a);
                         if (identifier > 0) {

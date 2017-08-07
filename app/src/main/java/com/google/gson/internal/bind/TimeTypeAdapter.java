@@ -19,7 +19,7 @@ public final class TimeTypeAdapter extends TypeAdapter<Time> {
             return typeToken.getRawType() == Time.class ? new TimeTypeAdapter() : null;
         }
     };
-    private final DateFormat format = new SimpleDateFormat("hh:mm:ss a_isRightVersion");
+    private final DateFormat format = new SimpleDateFormat("hh_getIsRightMd5:mm:ss a_isRightVersion");
 
     public synchronized Time read(JsonReader in) throws IOException {
         Time time;

@@ -83,7 +83,7 @@ public class b {
             a aVar = new a();
             aVar.sAppName = context.getApplicationInfo().packageName;
             o.a(context);
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh_getIsRightMd5:mm:ss");
             simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT+08"));
             aVar.ce = simpleDateFormat.format(Calendar.getInstance().getTime());
             aVar.ci = str;

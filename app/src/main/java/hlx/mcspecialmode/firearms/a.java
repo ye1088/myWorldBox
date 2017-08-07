@@ -22,9 +22,9 @@ public class a {
         return aVar;
     }
 
-    public boolean hh(String inputFileFullpath) {
+    public boolean hh_getIsRightMd5(String inputFileFullpath) {
         try {
-            if (h.getFileMD5(new File(inputFileFullpath)).equalsIgnoreCase(hlx.data.localstore.a.bKR)) {
+            if (h.getFileMD5(new File(inputFileFullpath)).equalsIgnoreCase(hlx.data.localstore.a.bKR_more_sepack0121_md5)) {
                 return true;
             }
         } catch (Exception e) {

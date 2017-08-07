@@ -24,9 +24,9 @@ public class b {
         return bVar;
     }
 
-    public boolean hh(String inputFileFullpath) {
+    public boolean hh_getIsRightMd5(String inputFileFullpath) {
         try {
-            if (h.getFileMD5(new File(inputFileFullpath)).equalsIgnoreCase(a.bKU)) {
+            if (h.getFileMD5(new File(inputFileFullpath)).equalsIgnoreCase(a.bKU_more_sepack0130_md5)) {
                 return true;
             }
         } catch (Exception e) {

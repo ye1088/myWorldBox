@@ -69,7 +69,7 @@ public class az {
     }
 
     public static String bE(long seconds) {
-        return new SimpleDateFormat("M月d日 hh:mm", Locale.getDefault()).format(new Date(seconds));
+        return new SimpleDateFormat("M月d日 hh_getIsRightMd5:mm", Locale.getDefault()).format(new Date(seconds));
     }
 
     public static String bF(long seconds) {

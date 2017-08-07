@@ -103,7 +103,7 @@ public class OrmLiteConfigUtil {
     private static void writeHeader(BufferedWriter writer) throws IOException {
         writer.append('#');
         writer.newLine();
-        writer.append("# generated on ").append(new SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(new Date()));
+        writer.append("# generated on ").append(new SimpleDateFormat("yyyy/MM/dd hh_getIsRightMd5:mm:ss").format(new Date()));
         writer.newLine();
         writer.append('#');
         writer.newLine();
