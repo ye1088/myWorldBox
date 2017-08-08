@@ -33,48 +33,48 @@ import android.widget.TextView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.HTApplication;
-import com.huluxia.data.PageList;
-import com.huluxia.data.UserBaseInfo;
-import com.huluxia.data.g;
-import com.huluxia.data.map.f.a;
-import com.huluxia.data.topic.CommentItem;
-import com.huluxia.data.topic.TopicItem;
-import com.huluxia.data.topic.e;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.http.base.f;
-import com.huluxia.http.bbs.topic.q;
-import com.huluxia.jni.UtilsEncrypt;
-import com.huluxia.login.LoginError.LoginErrCode;
-import com.huluxia.module.h;
-import com.huluxia.module.n;
-import com.huluxia.module.topic.TopicModule;
-import com.huluxia.module.topic.j;
-import com.huluxia.module.topic.k;
-import com.huluxia.module.u;
-import com.huluxia.t;
-import com.huluxia.ui.base.HTBaseLoadingActivity;
-import com.huluxia.ui.bbs.ResTopicDetailTitle;
-import com.huluxia.ui.bbs.TopicDetailPageTurnLayout;
-import com.huluxia.ui.itemadapter.topic.ResTopicDetailItemAdapter;
-import com.huluxia.ui.itemadapter.topic.ResTopicDetailItemAdapter.c;
-import com.huluxia.utils.UtilsMenu;
-import com.huluxia.utils.UtilsMenu.MENU_VALUE;
-import com.huluxia.utils.ab;
-import com.huluxia.utils.ad;
-import com.huluxia.utils.at;
-import com.huluxia.utils.au;
-import com.huluxia.utils.aw;
-import com.huluxia.utils.o;
-import com.huluxia.widget.viewpager.PagerSlidingTabStrip;
-import com.huluxia.widget.viewpager.WrapContentHeightViewPager;
+import com.MCWorld.HTApplication;
+import com.MCWorld.data.PageList;
+import com.MCWorld.data.UserBaseInfo;
+import com.MCWorld.data.g;
+import com.MCWorld.data.map.f.a;
+import com.MCWorld.data.topic.CommentItem;
+import com.MCWorld.data.topic.TopicItem;
+import com.MCWorld.data.topic.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.http.base.f;
+import com.MCWorld.http.bbs.topic.q;
+import com.MCWorld.jni.UtilsEncrypt;
+import com.MCWorld.login.LoginError.LoginErrCode;
+import com.MCWorld.module.h;
+import com.MCWorld.module.n;
+import com.MCWorld.module.topic.TopicModule;
+import com.MCWorld.module.topic.j;
+import com.MCWorld.module.topic.k;
+import com.MCWorld.module.u;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.HTBaseLoadingActivity;
+import com.MCWorld.ui.bbs.ResTopicDetailTitle;
+import com.MCWorld.ui.bbs.TopicDetailPageTurnLayout;
+import com.MCWorld.ui.itemadapter.topic.ResTopicDetailItemAdapter;
+import com.MCWorld.ui.itemadapter.topic.ResTopicDetailItemAdapter.c;
+import com.MCWorld.utils.UtilsMenu;
+import com.MCWorld.utils.UtilsMenu.MENU_VALUE;
+import com.MCWorld.utils.ab;
+import com.MCWorld.utils.ad;
+import com.MCWorld.utils.at;
+import com.MCWorld.utils.au;
+import com.MCWorld.utils.aw;
+import com.MCWorld.utils.o;
+import com.MCWorld.widget.viewpager.PagerSlidingTabStrip;
+import com.MCWorld.widget.viewpager.WrapContentHeightViewPager;
 import hlx.gameoperator.b;
 import hlx.launch.game.d;
 import java.util.ArrayList;
@@ -87,7 +87,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
     private static final int aNc = 1;
     private static final int aNd = 2;
     private final int PAGE_SIZE = 20;
-    private com.huluxia.utils.c aEV;
+    private com.MCWorld.utils.c aEV;
     private PullToRefreshListView aEq;
     private CommonMenuDialog aHI = null;
     private int aIE = 1;
@@ -446,7 +446,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
         }
 
         @MessageHandler(message = 2306)
-        public void onCreditTransfer(boolean succ, com.huluxia.data.topic.b info) {
+        public void onCreditTransfer(boolean succ, com.MCWorld.data.topic.b info) {
             if (!succ || info == null) {
                 t.n(this.cbr.aMn, "赠送葫芦失败\n网络问题");
                 return;
@@ -524,7 +524,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_res_topic);
         EventNotifyCenter.add(n.class, this.mCallback);
-        EventNotifyCenter.add(com.huluxia.login.e.class, this.pl);
+        EventNotifyCenter.add(com.MCWorld.login.e.class, this.pl);
         EventNotifyCenter.add(h.class, this.aky);
         this.aMn = this;
         this.aSB = new DialogManager(this);
@@ -537,10 +537,10 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                 this.cbr = this$0;
             }
 
-            public void a(com.huluxia.http.base.d response) {
+            public void a(com.MCWorld.http.base.d response) {
             }
 
-            public void b(com.huluxia.http.base.d response) {
+            public void b(com.MCWorld.http.base.d response) {
                 this.cbr.aSB.hideProgressDialog();
                 if (response.fe() == 6) {
                     t.o(this.cbr.aMn, "锁定话题成功");
@@ -551,7 +551,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                 }
             }
 
-            public void c(com.huluxia.http.base.d response) {
+            public void c(com.MCWorld.http.base.d response) {
                 this.cbr.aSB.hideProgressDialog();
                 if (response.fe() == 6) {
                     t.n(this.cbr.aMn, "锁定话题失败");
@@ -612,8 +612,8 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                 this.cbr.Gz();
             }
         });
-        this.aEV = new com.huluxia.utils.c((ListView) this.aEq.getRefreshableView());
-        this.aEV.a(new com.huluxia.utils.c.a(this) {
+        this.aEV = new com.MCWorld.utils.c((ListView) this.aEq.getRefreshableView());
+        this.aEV.a(new com.MCWorld.utils.c.a(this) {
             final /* synthetic */ MapSeedDetatilActivity cbr;
 
             {
@@ -731,13 +731,13 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
     }
 
     private void Gt() {
-        if (com.huluxia.data.j.ep().ey()) {
+        if (com.MCWorld.data.j.ep().ey()) {
             TopicModule.Ef().aY(this.aMR);
         }
     }
 
     private void Gu() {
-        if (com.huluxia.data.j.ep().ey()) {
+        if (com.MCWorld.data.j.ep().ey()) {
             ek("请求处理中..");
             TopicModule.Ef().c(this.aMR, !this.st);
             return;
@@ -1071,7 +1071,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                         if (inIndex == MENU_VALUE.COMMENT.ordinal()) {
                             this.cbr.a(item, true);
                         } else if (inIndex == MENU_VALUE.SEND_HULU.ordinal()) {
-                            if (com.huluxia.data.j.ep().ey()) {
+                            if (com.MCWorld.data.j.ep().ey()) {
                                 this.cbr.a(isFloor, item, this.cbr.aMR);
                             } else {
                                 t.an(this.cbr.aMn);
@@ -1181,8 +1181,8 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
         this.aNN = (EditText) layout.findViewById(R.id.other_num);
         this.aNN.setVisibility(8);
         GF();
-        if (com.huluxia.data.j.ep().ey()) {
-            g info = com.huluxia.data.j.ep().ew();
+        if (com.MCWorld.data.j.ep().ey()) {
+            g info = com.MCWorld.data.j.ep().ew();
             HLog.info(TAG, "isgold %d", Integer.valueOf(info.isgold));
             if (info != null && info.isgold == 1) {
                 this.aNN.setVisibility(0);
@@ -1317,11 +1317,11 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
                 this.cbr.aNG.dismissDialog();
                 if (comment == null) {
                     this.cbr.aSB.showProgressDialog(this.cbr.aMn, "正在提交举报");
-                    com.huluxia.module.profile.g.Eb().m(topic.getPostID(), inIndex);
+                    com.MCWorld.module.profile.g.Eb().m(topic.getPostID(), inIndex);
                     return;
                 }
                 this.cbr.aSB.showProgressDialog(this.cbr.aMn, "正在提交举报");
-                com.huluxia.module.profile.g.Eb().n(comment.getCommentID(), inIndex);
+                com.MCWorld.module.profile.g.Eb().n(comment.getCommentID(), inIndex);
             }
         });
         this.aNG.updateCurFocusIndex(-1);
@@ -1370,7 +1370,7 @@ public class MapSeedDetatilActivity extends HTBaseLoadingActivity implements OnC
     private void a(CommentItem clickItem, boolean isReplyTopic) {
         if (this.aMT == null) {
             t.show_toast(this.aMn, "数据为空，请先下拉刷新本页面");
-        } else if (!com.huluxia.data.j.ep().ey()) {
+        } else if (!com.MCWorld.data.j.ep().ey()) {
             t.an(this.aMn);
         } else if (this.aMT.state != 1) {
             t.show_toast(this.aMn, "帖子已经被删除，无法评论");

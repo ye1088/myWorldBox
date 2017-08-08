@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import java.util.HashMap;
 
 public class CreateRoomAdapter extends BaseAdapter {

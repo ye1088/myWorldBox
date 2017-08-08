@@ -1,6 +1,6 @@
 package hlx.gameoperator;
 
-import com.huluxia.mcinterface.j;
+import com.MCWorld.mcinterface.j;
 import java.util.List;
 
 /* compiled from: BuildOperator */

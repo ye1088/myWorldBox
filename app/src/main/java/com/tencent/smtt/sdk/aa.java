@@ -2,7 +2,7 @@ package com.tencent.smtt.sdk;
 
 import android.content.Context;
 import android.os.Handler;
-import com.huluxia.module.s;
+import com.MCWorld.module.s;
 import com.tencent.smtt.utils.TbsLog;
 import java.io.File;
 import java.io.FileInputStream;

@@ -164,7 +164,7 @@ public class d {
         Exception exception;
         long j = -1000;
         try {
-            List queryBroadcastReceivers = context.getPackageManager().queryBroadcastReceivers(new Intent("com.huawei.android.push.intent.REGISTER").setPackage("com.huawei.android.pushagent"), com.huluxia.module.h.arA);
+            List queryBroadcastReceivers = context.getPackageManager().queryBroadcastReceivers(new Intent("com.huawei.android.push.intent.REGISTER").setPackage("com.huawei.android.pushagent"), com.MCWorld.module.h.arA);
             if (!(queryBroadcastReceivers == null || queryBroadcastReceivers.size() == 0)) {
                 try {
                     String str = ((ResolveInfo) queryBroadcastReceivers.get(0)).serviceInfo != null ? ((ResolveInfo) queryBroadcastReceivers.get(0)).serviceInfo.packageName : ((ResolveInfo) queryBroadcastReceivers.get(0)).activityInfo.packageName;

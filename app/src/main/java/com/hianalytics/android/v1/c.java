@@ -8,9 +8,8 @@ import android.os.Build;
 import android.os.Build.VERSION;
 import android.telephony.TelephonyManager;
 import android.util.Base64;
-import com.hianalytics.android.a.a.a;
-import com.hianalytics.android.a.a.b;
-import com.huluxia.framework.base.utils.UtilsRSA;
+
+import com.MCWorld.framework.base.utils.UtilsRSA;
 import com.xiaomi.mipush.sdk.MiPushClient;
 import java.io.UnsupportedEncodingException;
 import java.security.KeyFactory;
@@ -100,7 +99,7 @@ public final class c implements Runnable {
                 boolean z = this.a;
                 StringBuffer stringBuffer = new StringBuffer("1.0");
                 String a = a.a(context);
-                TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+                TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
                 if (telephonyManager == null) {
                     a.h();
                     obj = null;

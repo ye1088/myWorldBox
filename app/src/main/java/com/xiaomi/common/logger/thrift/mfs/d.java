@@ -22,7 +22,7 @@ public class d implements Serializable, Cloneable, b<d, a> {
     private static final c d = new c("failed_count", (byte) 8, (short) 2);
     private static final c e = new c("success_count", (byte) 8, (short) 3);
     private static final c f = new c("duration", (byte) 10, (short) 4);
-    private static final c g = new c(com.huluxia.version.d.SIZE, (byte) 8, (short) 5);
+    private static final c g = new c(com.MCWorld.version.d.SIZE, (byte) 8, (short) 5);
     private static final c h = new c("exp_info", (byte) 13, (short) 6);
     private static final c i = new c("http_info", (byte) 13, (short) 7);
     private String j;
@@ -40,7 +40,7 @@ public class d implements Serializable, Cloneable, b<d, a> {
         enumMap.put(a.b, new org.apache.thrift.meta_data.b("failed_count", (byte) 1, new org.apache.thrift.meta_data.c((byte) 8)));
         enumMap.put(a.c, new org.apache.thrift.meta_data.b("success_count", (byte) 1, new org.apache.thrift.meta_data.c((byte) 8)));
         enumMap.put(a.d, new org.apache.thrift.meta_data.b("duration", (byte) 1, new org.apache.thrift.meta_data.c((byte) 10)));
-        enumMap.put(a.e, new org.apache.thrift.meta_data.b(com.huluxia.version.d.SIZE, (byte) 1, new org.apache.thrift.meta_data.c((byte) 8)));
+        enumMap.put(a.e, new org.apache.thrift.meta_data.b(com.MCWorld.version.d.SIZE, (byte) 1, new org.apache.thrift.meta_data.c((byte) 8)));
         enumMap.put(a.f, new org.apache.thrift.meta_data.b("exp_info", (byte) 2, new e((byte) 13, new org.apache.thrift.meta_data.c((byte) 11), new org.apache.thrift.meta_data.c((byte) 8))));
         enumMap.put(a.g, new org.apache.thrift.meta_data.b("http_info", (byte) 2, new e((byte) 13, new org.apache.thrift.meta_data.c((byte) 8), new org.apache.thrift.meta_data.c((byte) 8))));
         a = Collections.unmodifiableMap(enumMap);

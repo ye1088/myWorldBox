@@ -2,18 +2,26 @@
 <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:id="@id/layout_header" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
     </FrameLayout>
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rly_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/layout_header" android:layout_alignTop="@id/layout_header">
-        <com.huluxia.widget.textview.EmojiTextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是土豪" android:singleLine="true" />
+        <com.MCWorld.widget.textview.EmojiTextView
+            android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是土豪" android:singleLine="true" />
         <ImageView android:id="@id/iv_role" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:src="?drawableRoleVip" android:contentDescription="@null" />
         <LinearLayout android:orientation="horizontal" android:id="@id/ly_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal0" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@null" android:contentDescription="@null" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal1" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal2" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal3" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal4" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:src="@null" android:contentDescription="@null" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_medal5" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal0" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal1" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal2" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal3" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal4" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:src="@null" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_medal5" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:src="@null" android:contentDescription="@null" />
         </LinearLayout>
         <TextView android:textSize="10.0dip" android:textColor="?android:textColorSecondary" android:id="@id/tv_level" android:background="?backgroundUserLevel" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="LV 10" />
         <TextView android:textSize="11.0dip" android:textColor="?textColorProfileTitle" android:id="@id/integral_title" android:background="?backgroundIntegralTitle" android:paddingLeft="2.0dip" android:paddingTop="1.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="江湖小虾" />

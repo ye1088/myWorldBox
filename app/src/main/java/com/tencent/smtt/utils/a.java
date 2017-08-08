@@ -124,7 +124,7 @@ public class a {
             return a;
         }
         try {
-            return ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getDeviceId();
+            return ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getDeviceId();
         } catch (Exception e) {
             e.printStackTrace();
             return str;
@@ -137,7 +137,7 @@ public class a {
             return b;
         }
         try {
-            return ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getSubscriberId();
+            return ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getSubscriberId();
         } catch (Exception e) {
             e.printStackTrace();
             return str;

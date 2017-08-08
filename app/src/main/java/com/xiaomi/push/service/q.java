@@ -1,7 +1,6 @@
 package com.xiaomi.push.service;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
-import com.xiaomi.channel.commonutils.logger.b;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.push.service.XMPushService.g;
 import com.xiaomi.xmpush.thrift.o;
 

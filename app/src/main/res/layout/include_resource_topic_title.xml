@@ -5,7 +5,8 @@
     <View android:id="@id/split_item" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
     <LinearLayout android:orientation="vertical" android:id="@id/ll_map_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:scrollbarStyle="outsideInset" android:orientation="vertical" android:id="@id/linear_list_view" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="-12.0dip" android:paddingBottom="12.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-            <com.huluxia.framework.base.widget.hlistview.HListView android:id="@id/photoWall" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="100.0dip" android:fadeScrollbars="true" app:hlv_dividerWidth="0.0dip" />
+            <com.MCWorld.framework.base.widget.hlistview.HListView
+                android:id="@id/photoWall" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="100.0dip" android:fadeScrollbars="true" app:hlv_dividerWidth="0.0dip" />
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/ll_map_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <View android:id="@id/split_item1" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="12.0dip" />

@@ -20,7 +20,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import com.baidu.mapapi.d.a;
-import com.huluxia.module.p;
 import com.tencent.open.SocialConstants;
 import com.tencent.smtt.sdk.WebView;
 import java.io.IOException;

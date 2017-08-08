@@ -1,9 +1,8 @@
 package com.xiaomi.push.log;
 
 import android.content.SharedPreferences;
-import com.huluxia.module.p;
+import com.MCWorld.module.p;
 import com.xiaomi.channel.commonutils.logger.b;
-import com.xiaomi.channel.commonutils.network.d;
 import com.xiaomi.push.service.ag;
 import java.io.File;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package org.mozilla.javascript;
 
-import com.huluxia.module.h$a;
+import com.MCWorld.module.h$a;
 import java.io.Serializable;
 import org.bytedeco.javacpp.avformat;
 import org.mozilla.javascript.TopLevel.Builtins;

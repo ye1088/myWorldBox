@@ -1,6 +1,6 @@
 package io.netty.handler.codec.http2.internal.hpack;
 
-import com.huluxia.framework.base.image.Config;
+import com.MCWorld.framework.base.image.Config;
 import io.netty.handler.codec.memcache.binary.BinaryMemcacheOpcodes;
 import io.netty.util.AsciiString;
 import io.netty.util.internal.ConstantTimeUtils;

@@ -12,7 +12,8 @@
                 <TextView android:textColor="@color/red" android:id="@id/value_button_top_level" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="顶级" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
             </LinearLayout>
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/floatLayoutItemEnchantType17" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <com.huluxia.widget.DrawableCenterTextView android:textColor="@color/green" android:gravity="center_vertical" android:id="@id/value_button_create" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="制作" android:drawableLeft="@drawable/hammer" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+                <com.MCWorld.widget.DrawableCenterTextView
+                    android:textColor="@color/green" android:gravity="center_vertical" android:id="@id/value_button_create" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="制作" android:drawableLeft="@drawable/hammer" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

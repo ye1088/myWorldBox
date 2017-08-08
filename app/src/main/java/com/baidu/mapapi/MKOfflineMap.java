@@ -2,8 +2,8 @@ package com.baidu.mapapi;
 
 import android.os.Bundle;
 import android.util.Log;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
-import com.huluxia.version.d;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.version.d;
 import com.tencent.open.SocialConstants;
 import java.net.ServerSocket;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package io.netty.handler.codec.http2;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import io.netty.util.internal.ObjectUtil;
 
 public final class DefaultHttp2ResetFrame extends AbstractHttp2StreamFrame implements Http2ResetFrame {

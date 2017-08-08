@@ -1,8 +1,8 @@
 package hlx.ui.news;
 
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.t;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.t;
 import hlx.module.news.a;
 import hlx.module.news.b;
 import hlx.module.news.c;

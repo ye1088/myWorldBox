@@ -10,7 +10,7 @@ import com.huawei.android.pushselfshow.richpush.html.a.h;
 import com.huawei.android.pushselfshow.richpush.html.a.i;
 import com.huawei.android.pushselfshow.richpush.html.a.j;
 import com.huawei.android.pushselfshow.richpush.html.a.k;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import org.json.JSONException;

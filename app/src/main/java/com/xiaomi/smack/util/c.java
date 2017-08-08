@@ -1,7 +1,7 @@
 package com.xiaomi.smack.util;
 
 import android.text.TextUtils;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.tencent.connect.common.Constants;
 import com.xiaomi.push.service.ad;
 import com.xiaomi.push.service.x;

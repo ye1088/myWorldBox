@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@id/root_view" android:background="?backgroundDefault" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
-    <com.huluxia.widget.PullToRefreshScrollableLayout android:id="@id/scroll_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip">
+    <com.MCWorld.widget.PullToRefreshScrollableLayout
+        android:id="@id/scroll_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip">
         <hlx.ui.personalstudio.PersonalStudioHeaderLayout android:id="@id/studio_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/pager_sliding_tab_studio" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <com.MCWorld.widget.viewpager.PagerSlidingTabStrip
+                android:id="@id/pager_sliding_tab_studio" android:layout_width="fill_parent" android:layout_height="40.0dip" />
             <android.support.v4.view.ViewPager android:id="@id/view_pager_studio" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pager_sliding_tab_studio" />
         </RelativeLayout>
-    </com.huluxia.widget.PullToRefreshScrollableLayout>
+    </com.MCWorld.widget.PullToRefreshScrollableLayout>
 </RelativeLayout>

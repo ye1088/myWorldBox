@@ -9,12 +9,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.r;
-import com.huluxia.t;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.r;
+import com.MCWorld.t;
 import com.simple.colorful.b;
 import com.simple.colorful.d;
 import com.simple.colorful.setter.j;
@@ -115,7 +115,7 @@ public class SubjectListAdapter extends BaseAdapter implements b {
                 if (!UtilsFunction.empty(className)) {
                     r.ck().K_umengEvent(tongjiEvent + String.valueOf(item.id));
                     HLog.verbose(toString(), tongjiEvent + String.valueOf(item.id), new Object[0]);
-                    com.huluxia.ui.mctool.d.b(this.bYM.context, className, item.id, item.name);
+                    com.MCWorld.ui.mctool.d.b(this.bYM.context, className, item.id, item.name);
                 }
             }
         });

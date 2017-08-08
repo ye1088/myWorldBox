@@ -1,16 +1,16 @@
 package hlx.gameoperator;
 
 import android.content.Context;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.module.u;
-import com.huluxia.mojang.Mojang;
-import com.huluxia.mojang.MojangMessage;
-import com.huluxia.r;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.j;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.module.u;
+import com.MCWorld.mojang.Mojang;
+import com.MCWorld.mojang.MojangMessage;
+import com.MCWorld.r;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.j;
 import hlx.data.tongji.a;
 import io.netty.handler.codec.http.HttpConstants;
 import io.netty.handler.codec.memcache.binary.BinaryMemcacheOpcodes;

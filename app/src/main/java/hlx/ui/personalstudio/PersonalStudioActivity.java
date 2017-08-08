@@ -14,39 +14,39 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.huluxia.data.UserBaseInfo;
-import com.huluxia.data.j;
-import com.huluxia.data.profile.c;
-import com.huluxia.data.profile.d;
-import com.huluxia.data.profile.e;
-import com.huluxia.data.profile.e.a;
-import com.huluxia.data.studio.b;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.framework.base.widget.PagerSlidingIndicator.IndicatorTextSizeChange;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.framework.base.widget.pager.PagerFragment;
-import com.huluxia.http.base.f;
-import com.huluxia.http.profile.l;
-import com.huluxia.k;
-import com.huluxia.module.h;
-import com.huluxia.module.w;
-import com.huluxia.module.z;
-import com.huluxia.studio.fragment.StudioResourceFragment;
-import com.huluxia.t;
-import com.huluxia.ui.base.HTBaseLoadingActivity;
-import com.huluxia.utils.ah;
-import com.huluxia.widget.PullToRefreshScrollableLayout;
-import com.huluxia.widget.textview.EmojiTextView;
-import com.huluxia.widget.viewpager.PagerSlidingTabStrip;
+import com.MCWorld.data.UserBaseInfo;
+import com.MCWorld.data.j;
+import com.MCWorld.data.profile.c;
+import com.MCWorld.data.profile.d;
+import com.MCWorld.data.profile.e;
+import com.MCWorld.data.profile.e.a;
+import com.MCWorld.data.studio.b;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.base.widget.PagerSlidingIndicator.IndicatorTextSizeChange;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.framework.base.widget.pager.PagerFragment;
+import com.MCWorld.http.base.f;
+import com.MCWorld.http.profile.l;
+import com.MCWorld.k;
+import com.MCWorld.module.h;
+import com.MCWorld.module.w;
+import com.MCWorld.module.z;
+import com.MCWorld.studio.fragment.StudioResourceFragment;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.HTBaseLoadingActivity;
+import com.MCWorld.utils.ah;
+import com.MCWorld.widget.PullToRefreshScrollableLayout;
+import com.MCWorld.widget.textview.EmojiTextView;
+import com.MCWorld.widget.viewpager.PagerSlidingTabStrip;
 import hlx.home.fragment.ScrollableFragment;
 import hlx.home.fragment.ScrollablePageAdapter;
 import java.text.SimpleDateFormat;
@@ -203,7 +203,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
     private PersonalStudioHeaderLayout cdm;
     private TextView cdn;
     private TextView cdo;
-    private com.huluxia.http.profile.a cdp = new com.huluxia.http.profile.a();
+    private com.MCWorld.http.profile.a cdp = new com.MCWorld.http.profile.a();
     private l cdq = new l();
     private final int cdr = 257;
     private final int cds = 258;
@@ -502,7 +502,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
         z.DO();
         z.v(0, 10, this.aDX, 257);
         this.cdp.execute();
-        z.DO().ap(this.aDX, com.huluxia.pref.b.Em().getInt(cdt + this.aDX, 0));
+        z.DO().ap(this.aDX, com.MCWorld.pref.b.Em().getInt(cdt + this.aDX, 0));
     }
 
     protected void EX() {
@@ -553,13 +553,13 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
         }
     }
 
-    public void a(com.huluxia.http.base.d response) {
+    public void a(com.MCWorld.http.base.d response) {
     }
 
-    public void b(com.huluxia.http.base.d response) {
+    public void b(com.MCWorld.http.base.d response) {
     }
 
-    public void c(com.huluxia.http.base.d response) {
+    public void c(com.MCWorld.http.base.d response) {
         switch (response.fe()) {
             case 257:
                 this.tk = this.cdp.fR();
@@ -648,7 +648,7 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
             tvAnnouncer.setText(item.announcer);
             tvIssueTime.setText(new SimpleDateFormat("MM月dd日 HH:mm").format(new Date(item.createTime)));
             tvContent.setText(item.content);
-            com.huluxia.pref.b.Em().putInt(cdt + this.aDX, item.id);
+            com.MCWorld.pref.b.Em().putInt(cdt + this.aDX, item.id);
             dialog.showDefaultViewPopupDialog(view);
         }
     }

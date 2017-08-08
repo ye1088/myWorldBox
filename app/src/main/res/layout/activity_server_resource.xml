@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/server_sliding_tab" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+    <com.MCWorld.widget.viewpager.PagerSlidingTabStrip
+        android:id="@id/server_sliding_tab" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="36.0dip" />
     <android.support.v4.view.ViewPager android:id="@id/server_resource_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

@@ -1,7 +1,7 @@
 package com.mojang.android.net;
 
 import android.text.TextUtils;
-import com.huluxia.mcsdk.dtlib.h;
+import com.MCWorld.mcsdk.dtlib.h;
 import com.xiaomi.mipush.sdk.MiPushClient;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;

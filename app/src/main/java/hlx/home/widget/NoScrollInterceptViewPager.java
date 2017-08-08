@@ -3,7 +3,7 @@ package hlx.home.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import com.huluxia.widget.InterceptViewPager;
+import com.MCWorld.widget.InterceptViewPager;
 
 public class NoScrollInterceptViewPager extends InterceptViewPager {
     public NoScrollInterceptViewPager(Context context) {

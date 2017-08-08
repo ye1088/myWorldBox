@@ -14,7 +14,8 @@
                 </RadioGroup>
                 <EditText android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorHint" android:id="@id/title_Text" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_title" android:singleLine="true" android:maxLength="32" android:textCursorDrawable="@null" />
                 <include android:id="@id/user_info" android:visibility="gone" layout="@layout/include_topic_user" />
-                <com.huluxia.widget.textview.EmojiTextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:id="@id/quote_text" android:paddingLeft="10.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="内容" android:maxLines="3" />
+                <com.MCWorld.widget.textview.EmojiTextView
+                    android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:id="@id/quote_text" android:paddingLeft="10.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="内容" android:maxLines="3" />
                 <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:id="@id/tip_media" android:paddingLeft="10.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【图片】" />
                 <View android:id="@id/split_title" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
                 <LinearLayout android:orientation="horizontal" android:id="@id/ly_contact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -54,7 +55,8 @@
         </RelativeLayout>
     </ScrollView>
     <RelativeLayout android:id="@id/rly_patcha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/hint_text">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/iv_patch" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:contentDescription="@null" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/iv_patch" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:contentDescription="@null" />
         <EditText android:textSize="14.0sp" android:textColor="#ff000000" android:textColorHint="#ffb3b3b3" android:id="@id/tv_patch" android:background="@color/transparent" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="请输入验证码" android:singleLine="true" android:layout_toRightOf="@id/iv_patch" android:layout_centerVertical="true" android:textCursorDrawable="@null" />
         <ImageView android:background="@drawable/input_box_cutoff_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_patch" android:contentDescription="@null" />
     </RelativeLayout>
@@ -62,7 +64,8 @@
     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ly_media" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_alignParentBottom="true">
         <LinearLayout android:orientation="vertical" android:id="@id/ly_remind" android:background="?backgroundDefault" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
             <View android:id="@id/split_remind" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-            <com.huluxia.framework.base.widget.hlistview.HListView android:id="@id/list_reminds" android:fadingEdge="none" android:fadingEdgeLength="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@color/transparent" app:hlv_dividerWidth="6.0dip" />
+            <com.MCWorld.framework.base.widget.hlistview.HListView
+                android:id="@id/list_reminds" android:fadingEdge="none" android:fadingEdgeLength="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:listSelector="@color/transparent" app:hlv_dividerWidth="6.0dip" />
         </LinearLayout>
         <View android:id="@id/split_footer" android:background="?splitColorDim" android:layout_width="fill_parent" android:layout_height="0.5dip" />
         <RelativeLayout android:id="@id/rly_selector" android:background="?backgroundDim4" android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -75,15 +78,18 @@
             <Button android:textSize="14.0sp" android:textColor="?textColorGray" android:id="@id/btn_select" android:background="?backgroundButtonGrayTag" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:text="分类" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
         </RelativeLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/ly_photo_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <com.huluxia.widget.photowall.PhotoWall2 android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxSelection="9" app:photoWidth="81.0dip" app:photoHeight="122.0dip" />
+            <com.MCWorld.widget.photowall.PhotoWall2
+                android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxSelection="9" app:photoWidth="81.0dip" app:photoHeight="122.0dip" />
         </LinearLayout>
-        <com.huluxia.widget.emoInput.ThemedFacePanelView android:id="@id/facepanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="195.0dip" />
+        <com.MCWorld.widget.emoInput.ThemedFacePanelView
+            android:id="@id/facepanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="195.0dip" />
         <RelativeLayout android:id="@id/rl_voice_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="你刚点击了声音" />
         </RelativeLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/ly_video_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         <RelativeLayout android:id="@id/rl_tag_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <com.huluxia.widget.listview.GridViewNotScroll android:id="@id/grid_tag" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:overScrollMode="never" />
+            <com.MCWorld.widget.listview.GridViewNotScroll
+                android:id="@id/grid_tag" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:overScrollMode="never" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

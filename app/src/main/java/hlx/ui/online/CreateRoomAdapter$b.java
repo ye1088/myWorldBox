@@ -2,7 +2,7 @@ package hlx.ui.online;
 
 import android.view.View;
 import android.widget.TextView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 public class CreateRoomAdapter$b {
     public TextView aUm;

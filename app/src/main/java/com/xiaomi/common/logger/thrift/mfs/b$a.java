@@ -1,6 +1,6 @@
 package com.xiaomi.common.logger.thrift.mfs;
 
-import com.huluxia.framework.BaseHttpMgr;
+import com.MCWorld.framework.BaseHttpMgr;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Iterator;

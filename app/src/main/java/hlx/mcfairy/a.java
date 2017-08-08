@@ -2,7 +2,7 @@ package hlx.mcfairy;
 
 import android.content.Context;
 import android.view.View.OnClickListener;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 /* compiled from: FairyLogo */
 public class a extends h {

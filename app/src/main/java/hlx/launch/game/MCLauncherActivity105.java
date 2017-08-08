@@ -6,16 +6,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Process;
-import com.huluxia.HTApplication;
-import com.huluxia.mcfloat.enchant.e;
-import com.huluxia.mcfloat.q;
-import com.huluxia.mcinterface.h;
-import com.huluxia.r;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.ai;
-import com.huluxia.utils.aj;
-import com.huluxia.utils.j;
-import com.huluxia.utils.o;
+import com.MCWorld.HTApplication;
+import com.MCWorld.mcfloat.enchant.e;
+import com.MCWorld.mcfloat.q;
+import com.MCWorld.mcinterface.h;
+import com.MCWorld.r;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.ai;
+import com.MCWorld.utils.aj;
+import com.MCWorld.utils.j;
+import com.MCWorld.utils.o;
 import com.mojang.minecraftpe.MainActivity;
 import hlx.data.tongji.a;
 import hlx.home.main.HomeActivity;
@@ -58,13 +58,13 @@ public class MCLauncherActivity105 extends MainActivity {
     }
 
     public static void So() {
-        String md5 = com.huluxia.utils.h.getMD5String(o.getDeviceId());
+        String md5 = com.MCWorld.utils.h.getMD5String(o.getDeviceId());
         h.cX(String.format("%x", new Object[]{Integer.valueOf(md5.hashCode())}));
     }
 
     private void Sp() {
         if (h.zq()) {
-            com.huluxia.mcfloat.a.aN(this);
+            com.MCWorld.mcfloat.a.aN(this);
             this.bRb = new q(this, getWindow().getDecorView());
         }
         this.bRc = new b(this, ah.KZ().j(hlx.data.localstore.a.bLv, true));
@@ -133,13 +133,13 @@ public class MCLauncherActivity105 extends MainActivity {
         int i;
         int i2 = 1;
         if (c.Sg().Sh() == 4) {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(1);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(1);
             h.hq(3);
         } else if (c.Sg().Sh() == 5) {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(0);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(0);
             h.hq(7);
         } else {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(0);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(0);
             h.hq(c.Sg().Sh());
         }
         if (c.Sg().Si()) {

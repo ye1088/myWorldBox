@@ -5,7 +5,6 @@ import android.annotation.TargetApi;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -35,8 +34,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.tencent.connect.auth.AuthMap.Auth;
 import com.tencent.connect.common.Constants;
-import com.tencent.open.a.f;
-import com.tencent.open.b.g;
 import com.tencent.open.c.c;
 import com.tencent.open.utils.Global;
 import com.tencent.open.utils.ServerSetting;
@@ -72,7 +69,7 @@ public class AuthDialog extends Dialog {
     private String o;
     private String p;
     private long q = 0;
-    private long r = com.huluxia.video.recorder.b.bpg;
+    private long r = com.MCWorld.video.recorder.b.bpg;
     private HashMap<String, Runnable> s;
 
     /* compiled from: ProGuard */

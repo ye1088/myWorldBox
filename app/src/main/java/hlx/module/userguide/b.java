@@ -1,7 +1,7 @@
 package hlx.module.userguide;
 
-import com.huluxia.framework.http.HttpMgr;
-import com.huluxia.module.ab;
+import com.MCWorld.framework.http.HttpMgr;
+import com.MCWorld.module.ab;
 import java.util.HashMap;
 
 /* compiled from: UserGuideModule */

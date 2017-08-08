@@ -2,9 +2,9 @@ package hlx.mcfairy.messgenerator;
 
 import android.os.Handler;
 import android.os.Message;
-import com.huluxia.mcinterface.c;
-import com.huluxia.mcinterface.f;
-import com.huluxia.mcinterface.h;
+import com.MCWorld.mcinterface.c;
+import com.MCWorld.mcinterface.f;
+import com.MCWorld.mcinterface.h;
 import hlx.mcfairy.i;
 import java.util.List;
 

@@ -6,7 +6,8 @@
         <View android:id="@id/title_div" android:background="#f2dcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
     </LinearLayout>
     <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="" />
-    <com.huluxia.framework.base.image.PaintView android:layout_gravity="center" android:id="@id/iv_avatar" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="20.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <com.MCWorld.framework.base.image.PaintView
+        android:layout_gravity="center" android:id="@id/iv_avatar" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="20.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
     <TextView android:textSize="12.0sp" android:textColor="#ffff8900" android:layout_gravity="center_horizontal" android:id="@id/tv_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="007" />
     <View android:gravity="center" android:orientation="horizontal" android:id="@id/v1" android:background="#f2dcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/btn_ok" />
     <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">

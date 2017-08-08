@@ -1,6 +1,6 @@
 package io.netty.handler.timeout;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import io.netty.util.internal.ObjectUtil;
 
 public class IdleStateEvent {

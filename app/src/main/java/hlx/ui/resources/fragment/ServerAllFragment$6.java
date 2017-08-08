@@ -1,8 +1,8 @@
 package hlx.ui.resources.fragment;
 
 import android.widget.CompoundButton;
-import com.huluxia.framework.R;
-import com.huluxia.widget.a.a;
+import com.MCWorld.framework.R;
+import com.MCWorld.widget.a.a;
 import hlx.module.resources.f;
 
 class ServerAllFragment$6 implements a {

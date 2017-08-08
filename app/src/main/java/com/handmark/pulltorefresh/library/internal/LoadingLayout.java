@@ -13,16 +13,15 @@ import android.view.LayoutInflater;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
-import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.handmark.pulltorefresh.library.ILoadingLayout;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Orientation;
-import com.huluxia.framework.R;
-import com.huluxia.framework.R$string;
-import com.huluxia.framework.R$styleable;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.R$string;
+import com.MCWorld.framework.R$styleable;
 
 @SuppressLint({"ViewConstructor"})
 public abstract class LoadingLayout extends FrameLayout implements ILoadingLayout {

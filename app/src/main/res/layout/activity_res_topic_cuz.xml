@@ -5,12 +5,14 @@
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <RelativeLayout android:id="@id/empty_48" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" />
             <RelativeLayout android:id="@id/empty_96" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="96.0dip" />
-            <com.huluxia.ui.base.BaseLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.MCWorld.ui.base.BaseLoadingLayout
+                android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
                 <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" android:id="@id/restopiclistview" android:background="@color/transparent" android:focusableInTouchMode="true" android:fadingEdge="none" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" PullToRefresh:ptrHeaderBackground="@color/transparent" PullToRefresh:ptrShowIndicator="false" PullToRefresh:ptrAnimationStyle="flip" />
-            </com.huluxia.ui.base.BaseLoadingLayout>
+            </com.MCWorld.ui.base.BaseLoadingLayout>
         </LinearLayout>
         <View android:background="@drawable/bg_half_transparent" android:layout_width="fill_parent" android:layout_height="48.0dip" />
-        <com.huluxia.framework.base.widget.title.TitleBar android:id="@id/title_bar" android:background="?backgroundTitleBar" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <com.MCWorld.framework.base.widget.title.TitleBar
+            android:id="@id/title_bar" android:background="?backgroundTitleBar" android:layout_width="fill_parent" android:layout_height="48.0dip" />
         <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" layout="@layout/include_resource_topic_common_header" />
         <RelativeLayout android:id="@id/rly_float_header" android:background="?backgroundDim6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="48.0dip">
             <TextView android:textSize="17.0sp" android:textColor="?android:textColorSecondary" android:id="@id/tv_map_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="梦幻城市V0.1版" android:layout_centerVertical="true" />

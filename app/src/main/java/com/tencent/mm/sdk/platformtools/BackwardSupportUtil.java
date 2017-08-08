@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.widget.ListView;
-import com.huluxia.framework.base.http.toolbox.retrypolicy.DefaultRetryPolicy;
+import com.MCWorld.framework.base.http.toolbox.retrypolicy.DefaultRetryPolicy;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;

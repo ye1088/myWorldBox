@@ -1,13 +1,13 @@
 package hlx.ui.localresmgr.cache;
 
-import com.huluxia.data.map.b;
-import com.huluxia.framework.base.async.AsyncTaskCenter;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.ai;
-import com.huluxia.utils.bc;
-import com.huluxia.utils.j;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.data.map.b;
+import com.MCWorld.framework.base.async.AsyncTaskCenter;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.ai;
+import com.MCWorld.utils.bc;
+import com.MCWorld.utils.j;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
 import hlx.data.localstore.a;
 import java.io.File;
 import java.io.FileWriter;

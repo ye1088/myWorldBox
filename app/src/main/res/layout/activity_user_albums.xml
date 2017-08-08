@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:id="@id/ly_photo_ctx" android:paddingLeft="6.0dip" android:paddingTop="12.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.huluxia.widget.photowall.PhotoWall2 android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:maxSelection="8" app:enableAdd="false" app:showPhotoText="false" app:gridMode="true" app:gridRatio="1.66" app:gridColumnsCount="3" />
+    <com.MCWorld.widget.photowall.PhotoWall2
+        android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:maxSelection="8" app:enableAdd="false" app:showPhotoText="false" app:gridMode="true" app:gridRatio="1.66" app:gridColumnsCount="3" />
 </LinearLayout>

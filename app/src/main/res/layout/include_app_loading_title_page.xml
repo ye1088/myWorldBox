@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.huluxia.framework.base.widget.title.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="?backgroundTitleBar" />
+    <com.MCWorld.framework.base.widget.title.TitleBar
+        android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="?backgroundTitleBar" />
     <View android:id="@id/split_top" android:background="?splitColorDim" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/title_bar" />
-    <com.huluxia.ui.base.BaseLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_top" />
+    <com.MCWorld.ui.base.BaseLoadingLayout
+        android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_top" />
     <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_loading" />
 </RelativeLayout>

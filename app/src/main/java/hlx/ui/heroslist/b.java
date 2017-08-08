@@ -1,6 +1,6 @@
 package hlx.ui.heroslist;
 
-import com.huluxia.data.j;
+import com.MCWorld.data.j;
 
 /* compiled from: HeroInterface */
 public class b {

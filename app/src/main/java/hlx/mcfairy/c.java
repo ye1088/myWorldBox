@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.PopupWindow;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.utils.UtilsScreen;
 
 /* compiled from: FairyMenuPop */
 public class c {

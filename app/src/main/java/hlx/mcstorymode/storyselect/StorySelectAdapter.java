@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import hlx.mcstorymode.e;
 import java.util.List;
 

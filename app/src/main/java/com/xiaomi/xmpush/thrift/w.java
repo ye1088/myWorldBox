@@ -1,6 +1,5 @@
 package com.xiaomi.xmpush.thrift;
 
-import com.huluxia.r;
 import java.io.Serializable;
 import java.util.BitSet;
 import java.util.Collections;

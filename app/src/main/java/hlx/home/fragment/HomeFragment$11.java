@@ -2,8 +2,8 @@ package hlx.home.fragment;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.HTApplication;
-import com.huluxia.t;
+import com.MCWorld.HTApplication;
+import com.MCWorld.t;
 
 class HomeFragment$11 implements OnClickListener {
     final /* synthetic */ HomeFragment bQl;

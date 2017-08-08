@@ -1,6 +1,6 @@
 package hlx.mcstorymode;
 
-import com.huluxia.HTApplication;
+import com.MCWorld.HTApplication;
 
 /* compiled from: MCStoryConstant */
 public class c {

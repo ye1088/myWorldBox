@@ -5,7 +5,7 @@ import android.app.ActivityManager.RunningAppProcessInfo;
 import android.content.Context;
 import android.os.Process;
 import android.util.Log;
-import com.huluxia.framework.base.utils.UtilsRSA;
+import com.MCWorld.framework.base.utils.UtilsRSA;
 import com.tencent.mm.sdk.platformtools.LocaleUtil;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

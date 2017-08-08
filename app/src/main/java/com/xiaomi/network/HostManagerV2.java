@@ -4,12 +4,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.net.Uri.Builder;
 import android.text.TextUtils;
-import com.huluxia.video.recorder.b;
+
 import com.xiaomi.channel.commonutils.network.a;
 import com.xiaomi.channel.commonutils.network.c;
 import com.xiaomi.channel.commonutils.network.d;
 import com.xiaomi.mipush.sdk.MiPushClient;
-import com.xiaomi.network.HostManager.HttpGet;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;

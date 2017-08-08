@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
-import com.huawei.android.pushagent.c.a.e;
+
 import com.huawei.android.pushselfshow.richpush.html.a.a.a;
 import com.huawei.android.pushselfshow.richpush.html.a.a.b;
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
 import com.huawei.android.pushselfshow.richpush.html.api.d;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import org.apache.tools.ant.util.FileUtils;
 import org.json.JSONException;
 import org.json.JSONObject;

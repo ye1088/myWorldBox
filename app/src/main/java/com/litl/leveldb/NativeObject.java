@@ -2,7 +2,7 @@ package com.litl.leveldb;
 
 import android.text.TextUtils;
 import android.util.Log;
-import com.huluxia.framework.base.log.HLog;
+import com.MCWorld.framework.base.log.HLog;
 import java.io.Closeable;
 
 abstract class NativeObject implements Closeable {

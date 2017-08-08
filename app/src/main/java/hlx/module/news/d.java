@@ -1,13 +1,13 @@
 package hlx.module.news;
 
-import com.huluxia.framework.base.http.io.Response.ErrorListener;
-import com.huluxia.framework.base.http.io.Response.Listener;
-import com.huluxia.framework.base.http.toolbox.error.VolleyError;
-import com.huluxia.framework.base.json.Json;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.http.HttpMgr;
-import com.huluxia.module.ab;
-import com.huluxia.module.n;
+import com.MCWorld.framework.base.http.io.Response.ErrorListener;
+import com.MCWorld.framework.base.http.io.Response.Listener;
+import com.MCWorld.framework.base.http.toolbox.error.VolleyError;
+import com.MCWorld.framework.base.json.Json;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.http.HttpMgr;
+import com.MCWorld.module.ab;
+import com.MCWorld.module.n;
 import java.util.HashMap;
 
 /* compiled from: NewsModule */

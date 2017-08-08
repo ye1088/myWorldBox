@@ -9,7 +9,7 @@ import com.j256.ormlite.stmt.query.SimpleComparison;
 import com.tencent.smtt.sdk.WebView;
 
 public class a {
-    private static final String[] a = new String[]{com.huluxia.data.profile.a.qe, "url", "email", PushConstants.EXTRA_APP, "cosa", "rp"};
+    private static final String[] a = new String[]{com.MCWorld.data.profile.a.qe, "url", "email", PushConstants.EXTRA_APP, "cosa", "rp"};
     private Context b;
     private com.huawei.android.pushselfshow.b.a c;
 
@@ -253,7 +253,7 @@ public class a {
             f();
         } else if ("email".equals(this.c.o)) {
             d();
-        } else if (com.huluxia.data.profile.a.qe.equals(this.c.o)) {
+        } else if (com.MCWorld.data.profile.a.qe.equals(this.c.o)) {
             c();
         } else if ("rp".equals(this.c.o)) {
             g();

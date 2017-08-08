@@ -1,6 +1,6 @@
 package com.xiaomi.xmpush.thrift;
 
-import com.huluxia.r;
+import com.MCWorld.r;
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.EnumMap;

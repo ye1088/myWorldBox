@@ -3,9 +3,8 @@ package hlx.utils;
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 /* compiled from: DoubleBtnDialog */
 public class c extends Dialog {

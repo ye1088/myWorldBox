@@ -2,7 +2,7 @@ package com.huawei.android.pushselfshow.b;
 
 import android.text.TextUtils;
 import com.baidu.android.pushservice.PushConstants;
-import com.huawei.android.pushagent.c.a.e;
+
 import java.io.Serializable;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -97,7 +97,7 @@ public class a implements Serializable {
                     e.a("PushSelfShowLog", "emailAddr or emailSubject is null");
                     return false;
                 }
-            } else if (com.huluxia.data.profile.a.qe.equals(this.o)) {
+            } else if (com.MCWorld.data.profile.a.qe.equals(this.o)) {
                 if (jSONObject2.has("phoneNum")) {
                     this.v = jSONObject2.getString("phoneNum");
                 } else {

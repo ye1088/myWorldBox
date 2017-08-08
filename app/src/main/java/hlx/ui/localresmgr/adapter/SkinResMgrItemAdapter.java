@@ -13,17 +13,17 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.k;
-import com.huluxia.t;
-import com.huluxia.utils.ah;
-import com.huluxia.widget.dialog.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.k;
+import com.MCWorld.t;
+import com.MCWorld.utils.ah;
+import com.MCWorld.widget.dialog.e;
 import com.simple.colorful.d;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,7 +33,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
     private List<Object> akJ = null;
     private DialogManager akK;
     private boolean bYS = false;
-    private com.huluxia.data.map.b bYT;
+    private com.MCWorld.data.map.b bYT;
     private OnCheckedChangeListener bYW = new OnCheckedChangeListener(this) {
         final /* synthetic */ SkinResMgrItemAdapter bZk;
 
@@ -43,9 +43,9 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
 
         public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
             int id = compoundButton.getId();
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) compoundButton.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) compoundButton.getTag();
             if (b) {
-                for (com.huluxia.data.map.b si : this.bZk.mObjects) {
+                for (com.MCWorld.data.map.b si : this.bZk.mObjects) {
                     if (b && si.path.equals(item.path)) {
                         si.state = 1;
                         ah.KZ().gb(item.path);
@@ -55,7 +55,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
                 }
             } else {
                 ah.KZ().gb(null);
-                for (com.huluxia.data.map.b si2 : this.bZk.mObjects) {
+                for (com.MCWorld.data.map.b si2 : this.bZk.mObjects) {
                     si2.state = 0;
                 }
             }
@@ -76,7 +76,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         }
 
         public void onClick(View v) {
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) ((c) v.getTag()).bZc.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) ((c) v.getTag()).bZc.getTag();
             if (this.bZk.bYS) {
                 if (this.bZk.akJ.contains(item)) {
                     this.bZk.akJ.remove(item);
@@ -97,7 +97,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         void dK(boolean z);
     }
 
-    private class b implements com.huluxia.widget.dialog.e.a {
+    private class b implements com.MCWorld.widget.dialog.e.a {
         final /* synthetic */ SkinResMgrItemAdapter bZk;
 
         private b(SkinResMgrItemAdapter skinResMgrItemAdapter) {
@@ -183,7 +183,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         } else {
             holder = (c) convertView.getTag();
         }
-        com.huluxia.data.map.b item = (com.huluxia.data.map.b) getItem(position);
+        com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) getItem(position);
         holder.name.setText(item.name);
         if (holder.aWl != null) {
             if (item.size == 0) {
@@ -239,7 +239,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         this.akJ = checkList;
     }
 
-    public void i(com.huluxia.data.map.b item) {
+    public void i(com.MCWorld.data.map.b item) {
         hlx.ui.localresmgr.cache.b.Us().n(item);
         String usingSkin = ah.KZ().LI();
         if (usingSkin != null && usingSkin.equalsIgnoreCase(item.path)) {
@@ -257,7 +257,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         dialog.showDialog();
     }
 
-    private void j(final com.huluxia.data.map.b item) {
+    private void j(final com.MCWorld.data.map.b item) {
         int colorMsg = d.getColor(this.bns, R.attr.dialog_msg_label_color);
         int colorRed = this.bns.getResources().getColor(R.color.dialog_ok_btn_color);
         int colorGray = d.getColor(this.bns, 16842808);
@@ -276,7 +276,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
             public void onOk() {
                 Iterator it = this.bZk.mObjects.iterator();
                 while (it.hasNext()) {
-                    com.huluxia.data.map.b fileItem = (com.huluxia.data.map.b) it.next();
+                    com.MCWorld.data.map.b fileItem = (com.MCWorld.data.map.b) it.next();
                     if (fileItem.path.equals(item.path)) {
                         this.bZk.i(fileItem);
                         it.remove();
@@ -297,7 +297,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
             }
 
             public void pressMenuById(int inIndex, Object object) {
-                com.huluxia.data.map.b item = (com.huluxia.data.map.b) object;
+                com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) object;
                 switch (inIndex) {
                     case 1:
                         k.d(this.bZk.bns, item.mapId, item.pQ);
@@ -323,7 +323,7 @@ public class SkinResMgrItemAdapter extends BaseAdapter {
         this.bZi = new CommonMenuDialog(this.bns, this.mMenuItemArrayList, mSkinMenuListener, d.RB());
     }
 
-    private void k(com.huluxia.data.map.b item) {
+    private void k(com.MCWorld.data.map.b item) {
         this.bZi.showMenu(item, item.name);
     }
 }

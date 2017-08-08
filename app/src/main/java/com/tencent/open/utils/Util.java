@@ -21,11 +21,9 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import com.baidu.android.pushservice.PushConstants;
-import com.huluxia.r;
-import com.huluxia.video.recorder.b;
+import com.MCWorld.r;
 import com.j256.ormlite.stmt.query.SimpleComparison;
 import com.tencent.connect.common.Constants;
-import com.tencent.open.a.f;
 import com.tencent.open.utils.HttpUtils.HttpStatusException;
 import com.tencent.open.utils.HttpUtils.NetworkUnavailableException;
 import com.tencent.smtt.sdk.TbsConfig;
@@ -775,7 +773,7 @@ public class Util {
             sqrt = d;
         }
         try {
-            if (((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getPhoneType() == 0) {
+            if (((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getPhoneType() == 0) {
                 z = false;
                 if (sqrt > 6.5d || r0) {
                     return false;

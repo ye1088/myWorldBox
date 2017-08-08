@@ -13,15 +13,15 @@ import android.widget.RadioButton;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.module.n;
-import com.huluxia.r;
-import com.huluxia.t;
-import com.huluxia.utils.c;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.module.n;
+import com.MCWorld.r;
+import com.MCWorld.t;
+import com.MCWorld.utils.c;
 import hlx.data.tongji.a;
 
 public class HerosListActivity extends Activity {

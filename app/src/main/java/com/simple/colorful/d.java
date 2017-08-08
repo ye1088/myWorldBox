@@ -7,11 +7,11 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build.VERSION;
 import android.support.v4.content.ContextCompat;
-import com.huluxia.bbs.b.n;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.pref.a;
-import com.huluxia.utils.ah;
+import com.MCWorld.bbs.b.n;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.pref.a;
+import com.MCWorld.utils.ah;
 
 /* compiled from: UtilsTheme */
 public class d {

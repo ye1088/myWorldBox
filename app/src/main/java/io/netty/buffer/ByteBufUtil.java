@@ -1,7 +1,7 @@
 package io.netty.buffer;
 
 import android.support.v4.view.MotionEventCompat;
-import com.huluxia.video.recorder.b;
+import com.MCWorld.video.recorder.b;
 import io.netty.handler.codec.http.HttpConstants;
 import io.netty.util.AsciiString;
 import io.netty.util.ByteProcessor;

@@ -14,16 +14,16 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.t;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.t;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
 
 public class StoryListViewAdapter extends BaseAdapter {
-    private List<com.huluxia.data.storymode.a> aab;
+    private List<com.MCWorld.data.storymode.a> aab;
     private a bWE;
     private boolean bWI;
     private String bWJ;
@@ -36,15 +36,15 @@ public class StoryListViewAdapter extends BaseAdapter {
         }
 
         public void onCheckedChanged(RadioGroup group, int checkedId) {
-            com.huluxia.data.storymode.a _tmpItem = (com.huluxia.data.storymode.a) group.getTag();
+            com.MCWorld.data.storymode.a _tmpItem = (com.MCWorld.data.storymode.a) group.getTag();
             this.bWM.bWI = false;
             for (int i = 0; i < group.getChildCount(); i++) {
                 if (group.getChildAt(i).getId() == checkedId) {
-                    ((com.huluxia.data.storymode.b) _tmpItem.qj.get(i)).qD = true;
+                    ((com.MCWorld.data.storymode.b) _tmpItem.qj.get(i)).qD = true;
                     if (_tmpItem.qm != null) {
-                        this.bWM.bWk.put(_tmpItem.qm, this.bWM.ho(((com.huluxia.data.storymode.b) _tmpItem.qj.get(i)).mValue));
+                        this.bWM.bWk.put(_tmpItem.qm, this.bWM.ho(((com.MCWorld.data.storymode.b) _tmpItem.qj.get(i)).mValue));
                     }
-                    this.bWM.bWE.k(((com.huluxia.data.storymode.b) _tmpItem.qj.get(i)).qC, hlx.mcstorymode.storyutils.b.ad(_tmpItem.qk, 1));
+                    this.bWM.bWE.k(((com.MCWorld.data.storymode.b) _tmpItem.qj.get(i)).qC, hlx.mcstorymode.storyutils.b.ad(_tmpItem.qk, 1));
                 }
                 group.getChildAt(i).setEnabled(false);
             }
@@ -83,13 +83,13 @@ public class StoryListViewAdapter extends BaseAdapter {
         this.bWK = canReadLocalImg;
     }
 
-    public void a(List<com.huluxia.data.storymode.a> data, Map<String, String> map) {
+    public void a(List<com.MCWorld.data.storymode.a> data, Map<String, String> map) {
         this.aab = data;
         this.bWk = map;
         this.bWI = true;
     }
 
-    public void a(com.huluxia.data.storymode.a data) {
+    public void a(com.MCWorld.data.storymode.a data) {
         this.aab.add(data);
         this.bWI = true;
         notifyDataSetChanged();
@@ -126,11 +126,11 @@ public class StoryListViewAdapter extends BaseAdapter {
         } else {
             holder = (b) convertView.getTag();
         }
-        a(holder, position, (com.huluxia.data.storymode.a) this.aab.get(position));
+        a(holder, position, (com.MCWorld.data.storymode.a) this.aab.get(position));
         return convertView;
     }
 
-    public void a(b viewHolder, int position, com.huluxia.data.storymode.a item) {
+    public void a(b viewHolder, int position, com.MCWorld.data.storymode.a item) {
         viewHolder.bWN.setVisibility(8);
         viewHolder.bWO.setVisibility(8);
         viewHolder.bWT.setVisibility(8);
@@ -170,13 +170,13 @@ public class StoryListViewAdapter extends BaseAdapter {
                 String _tempCtrlValue;
                 viewHolder.bWN.setVisibility(0);
                 if (item.qn == null) {
-                    _tempCtrlValue = ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue;
+                    _tempCtrlValue = ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue;
                 } else {
-                    _tempCtrlValue = ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue.replace("#-" + item.qn + "-#", (CharSequence) this.bWk.get(item.qn));
-                    ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue = _tempCtrlValue;
+                    _tempCtrlValue = ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue.replace("#-" + item.qn + "-#", (CharSequence) this.bWk.get(item.qn));
+                    ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue = _tempCtrlValue;
                 }
-                if (((com.huluxia.data.storymode.b) item.qj.get(0)).qE != null) {
-                    viewHolder.bWN.setTextColor(Color.parseColor(((com.huluxia.data.storymode.b) item.qj.get(0)).qE));
+                if (((com.MCWorld.data.storymode.b) item.qj.get(0)).qE != null) {
+                    viewHolder.bWN.setTextColor(Color.parseColor(((com.MCWorld.data.storymode.b) item.qj.get(0)).qE));
                 } else {
                     viewHolder.bWN.setTextColor(-11612160);
                 }
@@ -185,8 +185,8 @@ public class StoryListViewAdapter extends BaseAdapter {
             case 1:
                 String _tempMesValue;
                 viewHolder.bWO.setVisibility(0);
-                viewHolder.bWP.setText(((com.huluxia.data.storymode.b) item.qj.get(0)).mName + "：");
-                String _tmpRoleAvatarPath = a((com.huluxia.data.storymode.b) item.qj.get(0));
+                viewHolder.bWP.setText(((com.MCWorld.data.storymode.b) item.qj.get(0)).mName + "：");
+                String _tmpRoleAvatarPath = a((com.MCWorld.data.storymode.b) item.qj.get(0));
                 if (_tmpRoleAvatarPath != null) {
                     if (_tmpRoleAvatarPath.contains("#")) {
                         _localPath = _tmpRoleAvatarPath.substring(0, _tmpRoleAvatarPath.indexOf("#"));
@@ -197,7 +197,7 @@ public class StoryListViewAdapter extends BaseAdapter {
                     }
                     Bitmap _tmpAvatarBitmap = hn(_localPath);
                     if (_tmpAvatarBitmap != null) {
-                        if (a(((com.huluxia.data.storymode.b) item.qj.get(0)).mName, (com.huluxia.data.storymode.b) item.qj.get(0))) {
+                        if (a(((com.MCWorld.data.storymode.b) item.qj.get(0)).mName, (com.MCWorld.data.storymode.b) item.qj.get(0))) {
                             viewHolder.bWQ.setVisibility(0);
                             viewHolder.bWQ.setImageBitmap(_tmpAvatarBitmap);
                             viewHolder.bWR.setVisibility(8);
@@ -208,7 +208,7 @@ public class StoryListViewAdapter extends BaseAdapter {
                         }
                     } else if (_netPath != null) {
                         HLog.verbose("TAG", "LSPrint netPath [%s]", _netPath);
-                        if (a(((com.huluxia.data.storymode.b) item.qj.get(0)).mName, (com.huluxia.data.storymode.b) item.qj.get(0))) {
+                        if (a(((com.MCWorld.data.storymode.b) item.qj.get(0)).mName, (com.MCWorld.data.storymode.b) item.qj.get(0))) {
                             viewHolder.bWQ.setVisibility(0);
                             viewHolder.bWR.setVisibility(8);
                             t.b(viewHolder.bWQ, _netPath, 0.0f);
@@ -223,13 +223,13 @@ public class StoryListViewAdapter extends BaseAdapter {
                     viewHolder.bWR.setVisibility(8);
                 }
                 if (item.qn == null) {
-                    _tempMesValue = ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue;
+                    _tempMesValue = ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue;
                 } else {
-                    _tempMesValue = ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue.replace("#-" + item.qn + "-#", (CharSequence) this.bWk.get(item.qn));
-                    ((com.huluxia.data.storymode.b) item.qj.get(0)).mValue = _tempMesValue;
+                    _tempMesValue = ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue.replace("#-" + item.qn + "-#", (CharSequence) this.bWk.get(item.qn));
+                    ((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue = _tempMesValue;
                 }
-                if (((com.huluxia.data.storymode.b) item.qj.get(0)).qE != null) {
-                    viewHolder.bWN.setTextColor(Color.parseColor(((com.huluxia.data.storymode.b) item.qj.get(0)).qE));
+                if (((com.MCWorld.data.storymode.b) item.qj.get(0)).qE != null) {
+                    viewHolder.bWN.setTextColor(Color.parseColor(((com.MCWorld.data.storymode.b) item.qj.get(0)).qE));
                 } else {
                     viewHolder.bWN.setTextColor(-1);
                 }
@@ -250,15 +250,15 @@ public class StoryListViewAdapter extends BaseAdapter {
                 for (i = 0; i < _sentenceSize && _sentenceSize <= _radbtnSize; i++) {
                     RadioButton _rdobtn = (RadioButton) viewHolder.bWT.getChildAt(i);
                     _rdobtn.setVisibility(0);
-                    _rdobtn.setChecked(((com.huluxia.data.storymode.b) item.qj.get(i)).qD);
+                    _rdobtn.setChecked(((com.MCWorld.data.storymode.b) item.qj.get(i)).qD);
                     _rdobtn.setEnabled(_canClick);
-                    String _tmpStr = ((com.huluxia.data.storymode.b) item.qj.get(i)).mValue;
+                    String _tmpStr = ((com.MCWorld.data.storymode.b) item.qj.get(i)).mValue;
                     if (item.qm != null) {
                         _tmpStr = hp(_tmpStr);
                     }
                     _rdobtn.setText(_tmpStr);
-                    if (((com.huluxia.data.storymode.b) item.qj.get(i)).qE != null) {
-                        _rdobtn.setTextColor(Color.parseColor(((com.huluxia.data.storymode.b) item.qj.get(i)).qE));
+                    if (((com.MCWorld.data.storymode.b) item.qj.get(i)).qE != null) {
+                        _rdobtn.setTextColor(Color.parseColor(((com.MCWorld.data.storymode.b) item.qj.get(i)).qE));
                     } else {
                         viewHolder.bWN.setTextColor(-1);
                     }
@@ -289,12 +289,12 @@ public class StoryListViewAdapter extends BaseAdapter {
                 } else {
                     viewHolder.bWV.setVisibility(8);
                 }
-                if (((com.huluxia.data.storymode.b) item.qj.get(0)).qE != null) {
-                    viewHolder.bWW.setTextColor(Color.parseColor(((com.huluxia.data.storymode.b) item.qj.get(0)).qE));
+                if (((com.MCWorld.data.storymode.b) item.qj.get(0)).qE != null) {
+                    viewHolder.bWW.setTextColor(Color.parseColor(((com.MCWorld.data.storymode.b) item.qj.get(0)).qE));
                 } else {
                     viewHolder.bWN.setTextColor(-11612160);
                 }
-                viewHolder.bWW.setText(((com.huluxia.data.storymode.b) item.qj.get(0)).mValue);
+                viewHolder.bWW.setText(((com.MCWorld.data.storymode.b) item.qj.get(0)).mValue);
                 return;
             default:
                 HLog.verbose("StoryListViewAdapter", "出现了新类型", new Object[0]);
@@ -302,14 +302,14 @@ public class StoryListViewAdapter extends BaseAdapter {
         }
     }
 
-    private String a(com.huluxia.data.storymode.b sentence) {
+    private String a(com.MCWorld.data.storymode.b sentence) {
         if (this.bWk.containsKey(sentence.mName + "_avatarPath")) {
             return (String) this.bWk.get(sentence.mName + "_avatarPath");
         }
         return null;
     }
 
-    private boolean a(String roleName, com.huluxia.data.storymode.b sentence) {
+    private boolean a(String roleName, com.MCWorld.data.storymode.b sentence) {
         if (this.bWk.containsKey(roleName + "_isLeadingRole")) {
             return ((String) this.bWk.get(roleName + "_isLeadingRole")).equals("true");
         }

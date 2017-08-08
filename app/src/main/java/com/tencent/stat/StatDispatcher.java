@@ -3,7 +3,7 @@ package com.tencent.stat;
 import android.content.Context;
 import android.os.Handler;
 import android.os.HandlerThread;
-import com.huluxia.module.p;
+import com.MCWorld.module.p;
 import com.tencent.stat.common.RC4;
 import com.tencent.stat.common.StatCommonHelper;
 import com.tencent.stat.common.StatConstants;

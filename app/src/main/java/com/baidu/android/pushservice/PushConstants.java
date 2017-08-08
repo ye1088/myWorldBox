@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import com.baidu.android.pushservice.apiproxy.BridgePushConstants;
 import com.baidu.frontia.base.util.Base64;
-import com.huluxia.framework.base.utils.UtilsRSA;
+import com.MCWorld.framework.base.utils.UtilsRSA;
 import java.io.UnsupportedEncodingException;
 import java.security.Key;
 import java.security.KeyFactory;

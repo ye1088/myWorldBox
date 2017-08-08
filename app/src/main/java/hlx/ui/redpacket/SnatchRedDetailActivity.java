@@ -6,8 +6,8 @@ import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.r;
+import com.MCWorld.framework.R;
+import com.MCWorld.r;
 import hlx.data.tongji.a;
 
 public class SnatchRedDetailActivity extends Activity {

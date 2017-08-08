@@ -2,8 +2,10 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_container_top" android:background="?listSelector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.huluxia.widget.HtImageView android:id="@id/iv_tag" android:background="@drawable/ic_notice" android:layout_width="@dimen/topiclist_tag" android:layout_height="@dimen/topiclist_tag" android:contentDescription="@null" />
-        <com.huluxia.widget.textview.EmojiTextView android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/app_name" android:singleLine="true" />
+        <com.MCWorld.widget.HtImageView
+            android:id="@id/iv_tag" android:background="@drawable/ic_notice" android:layout_width="@dimen/topiclist_tag" android:layout_height="@dimen/topiclist_tag" android:contentDescription="@null" />
+        <com.MCWorld.widget.textview.EmojiTextView
+            android:textSize="@dimen/topiclist_title" android:textColor="?android:textColorSecondary" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/app_name" android:singleLine="true" />
     </LinearLayout>
     <View android:id="@id/item_split_top" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
 </LinearLayout>

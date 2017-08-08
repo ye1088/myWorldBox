@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" />
     <FrameLayout android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="5.0dip">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/video_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/video_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
         <TextView android:textSize="12.0sp" android:textColor="?android:textColorPrimaryInverse" android:layout_gravity="bottom|center|right" android:id="@id/img_counts" android:background="#88000000" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0图" />
         <ImageView android:layout_gravity="center" android:id="@id/iv_video_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_news_video_big" />
     </FrameLayout>

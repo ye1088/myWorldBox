@@ -1,9 +1,8 @@
 package com.huawei.android.pushagent.plugin.a;
 
-import com.huawei.android.pushagent.c.a.b;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushagent.plugin.tools.BLocation;
-import com.huluxia.ui.profile.ProfileScoreActivity;
+import com.MCWorld.ui.profile.ProfileScoreActivity;
 import org.json.JSONObject;
 
 public class h {

@@ -7,7 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import com.xiaomi.channel.commonutils.logger.b;
+
 import com.xiaomi.channel.commonutils.misc.f;
 import com.xiaomi.push.providers.a;
 import com.xiaomi.push.service.XMPushService;
@@ -118,7 +118,7 @@ public class k {
         synchronized (k.class) {
             if (TextUtils.isEmpty(e)) {
                 try {
-                    TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+                    TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
                     if (telephonyManager != null) {
                         e = telephonyManager.getSubscriberId();
                     }

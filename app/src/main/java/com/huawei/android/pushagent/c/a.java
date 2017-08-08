@@ -20,8 +20,8 @@ import com.huawei.android.microkernel.MKService;
 import com.huawei.android.pushagent.b.b.c;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushagent.c.a.f;
-import com.huluxia.module.h;
-import com.huluxia.video.recorder.b;
+import com.MCWorld.module.h;
+import com.MCWorld.video.recorder.b;
 import java.io.File;
 import java.io.FileDescriptor;
 import java.lang.reflect.InvocationTargetException;
@@ -367,7 +367,7 @@ public class a {
             e.a("PushLogAC2705", "multicard device");
             a = com.huawei.android.pushagent.c.b.b.a().a(0);
         } else {
-            TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+            TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
             a = telephonyManager != null ? telephonyManager.getDeviceId() : str;
         }
         if (TextUtils.isEmpty(a) || a.matches("[0]+")) {
@@ -508,7 +508,7 @@ public class a {
     }
 
     public static String h(Context context) {
-        String simOperator = ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getSimOperator();
+        String simOperator = ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getSimOperator();
         if (simOperator == null) {
             return "";
         }

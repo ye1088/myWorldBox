@@ -9,9 +9,7 @@ import com.huawei.android.pushagent.c.a.a.h;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushagent.c.a.f;
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
-import com.huawei.android.pushselfshow.richpush.html.api.d;
-import com.huawei.android.pushselfshow.utils.a;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import org.json.JSONObject;
 
 public class i implements h {

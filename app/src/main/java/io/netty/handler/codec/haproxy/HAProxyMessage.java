@@ -1,6 +1,6 @@
 package io.netty.handler.codec.haproxy;
 
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import io.netty.buffer.ByteBuf;
 import io.netty.handler.codec.haproxy.HAProxyProxiedProtocol.AddressFamily;
 import io.netty.util.ByteProcessor;

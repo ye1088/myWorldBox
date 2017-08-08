@@ -7,10 +7,9 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.os.Handler;
-import com.huawei.android.pushagent.c.a.e;
+
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
-import com.huawei.android.pushselfshow.richpush.html.api.b;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

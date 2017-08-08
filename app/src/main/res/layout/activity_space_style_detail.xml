@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.huluxia.framework.base.widget.title.TitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="?backgroundTitleBar" />
-    <com.huluxia.framework.base.widget.pager.SelectedViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.MCWorld.framework.base.widget.title.TitleBar
+        android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="?backgroundTitleBar" />
+    <com.MCWorld.framework.base.widget.pager.SelectedViewPager
+        android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

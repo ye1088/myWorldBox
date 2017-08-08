@@ -2,7 +2,8 @@
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="196.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/iv_title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?backgroundDarenTitle" android:scaleType="centerCrop" />
-    <com.huluxia.framework.base.image.PaintView android:layout_gravity="center" android:id="@id/iv_daren_avatar" android:background="@color/transparent" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="-8.0dip" android:scaleType="centerCrop" android:layout_above="@id/iv_daren_ranking" android:layout_centerHorizontal="true" />
+    <com.MCWorld.framework.base.image.PaintView
+        android:layout_gravity="center" android:id="@id/iv_daren_avatar" android:background="@color/transparent" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="-8.0dip" android:scaleType="centerCrop" android:layout_above="@id/iv_daren_ranking" android:layout_centerHorizontal="true" />
     <ImageView android:id="@id/iv_daren_ranking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:src="?backgroundDarenRanking" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
     <ViewSwitcher android:id="@id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" android:layout_alignBottom="@id/iv_daren_ranking" android:layout_centerHorizontal="true">
         <TextView android:textSize="18.0dip" android:textColor="?textColorDarenRanking" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_ranking" />

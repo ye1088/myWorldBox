@@ -8,8 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
-import com.huawei.android.pushselfshow.richpush.html.api.d.a;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import org.json.JSONException;
 import org.json.JSONObject;
 

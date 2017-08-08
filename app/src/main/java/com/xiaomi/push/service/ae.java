@@ -1,8 +1,6 @@
 package com.xiaomi.push.service;
 
-import com.huluxia.image.core.common.util.e;
 import com.tencent.mm.sdk.platformtools.LocaleUtil;
-import com.xiaomi.channel.commonutils.logger.b;
 import com.xiaomi.push.service.XMPushService.c;
 
 class ae {

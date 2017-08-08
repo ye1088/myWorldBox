@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.CheckBox;
-import com.huluxia.framework.R;
-import com.huluxia.ui.base.HTBaseActivity;
+import com.MCWorld.framework.R;
+import com.MCWorld.ui.base.HTBaseActivity;
 
 public class CreateRoomActivity extends HTBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {

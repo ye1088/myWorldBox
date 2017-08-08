@@ -1,7 +1,7 @@
 package com.xiaomi.smack.packet;
 
 import android.os.Bundle;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.smack.util.g;
 import java.util.HashMap;
 import java.util.Map;

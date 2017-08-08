@@ -2,7 +2,7 @@ package hlx.utils;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 /* compiled from: DoubleBtnDialog */
 class c$1 implements OnClickListener {

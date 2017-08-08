@@ -2,7 +2,7 @@ package com.baidu.mapapi;
 
 import android.os.Bundle;
 import android.util.Log;
-import com.huluxia.module.p;
+import com.MCWorld.module.p;
 import com.tencent.mm.sdk.plugin.BaseProfile;
 import com.tencent.open.SocialConstants;
 import java.io.UnsupportedEncodingException;

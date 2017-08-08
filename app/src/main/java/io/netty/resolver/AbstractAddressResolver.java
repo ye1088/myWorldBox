@@ -1,6 +1,6 @@
 package io.netty.resolver;
 
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import io.netty.util.concurrent.EventExecutor;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.Promise;

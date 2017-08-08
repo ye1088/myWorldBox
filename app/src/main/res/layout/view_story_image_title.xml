@@ -4,17 +4,23 @@
     <LinearLayout android:orientation="horizontal" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="120.0dip"
       xmlns:android="http://schemas.android.com/apk/res/android">
         <hlx.widget.news.FlipperView android:id="@id/flipper1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_weight="23.0">
-            <com.huluxia.framework.base.image.PaintView android:id="@id/flipper1_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
-            <com.huluxia.framework.base.image.PaintView android:id="@id/flipper1_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/flipper1_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/flipper1_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
         </hlx.widget.news.FlipperView>
         <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="11.0">
             <hlx.widget.news.FlipperView android:id="@id/flipper2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0">
-                <com.huluxia.framework.base.image.PaintView android:id="@id/flipper2_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
-                <com.huluxia.framework.base.image.PaintView android:id="@id/flipper2_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+                <com.MCWorld.framework.base.image.PaintView
+                    android:id="@id/flipper2_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+                <com.MCWorld.framework.base.image.PaintView
+                    android:id="@id/flipper2_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
             </hlx.widget.news.FlipperView>
             <hlx.widget.news.FlipperView android:id="@id/flipper3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
-                <com.huluxia.framework.base.image.PaintView android:id="@id/flipper3_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
-                <com.huluxia.framework.base.image.PaintView android:id="@id/flipper3_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+                <com.MCWorld.framework.base.image.PaintView
+                    android:id="@id/flipper3_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
+                <com.MCWorld.framework.base.image.PaintView
+                    android:id="@id/flipper3_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_placeholder_small" android:scaleType="centerCrop" />
             </hlx.widget.news.FlipperView>
         </LinearLayout>
     </LinearLayout>

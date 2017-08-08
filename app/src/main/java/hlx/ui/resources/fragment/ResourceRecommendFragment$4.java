@@ -1,7 +1,7 @@
 package hlx.ui.resources.fragment;
 
 import android.view.View;
-import com.huluxia.ui.base.BaseLoadingLayout.b;
+import com.MCWorld.ui.base.BaseLoadingLayout.b;
 
 class ResourceRecommendFragment$4 implements b {
     final /* synthetic */ ResourceRecommendFragment cgl;

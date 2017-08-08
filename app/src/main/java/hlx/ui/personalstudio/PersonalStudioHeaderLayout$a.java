@@ -9,14 +9,14 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
-import com.huluxia.data.UserBaseInfo;
-import com.huluxia.data.j;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.t;
-import com.huluxia.widget.textview.EmojiTextView;
+import com.MCWorld.data.UserBaseInfo;
+import com.MCWorld.data.j;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.t;
+import com.MCWorld.widget.textview.EmojiTextView;
 import com.simple.colorful.b;
 import com.simple.colorful.d;
 import java.util.List;
@@ -30,14 +30,14 @@ class PersonalStudioHeaderLayout$a extends BaseAdapter implements b {
         }
 
         public void onClick(View v) {
-            com.huluxia.data.profile.e.a info = (com.huluxia.data.profile.e.a) v.getTag();
+            com.MCWorld.data.profile.e.a info = (com.MCWorld.data.profile.e.a) v.getTag();
             if (info != null) {
                 t.a(this.cdT.mContext, info.user.userID, info.user);
             }
         }
     };
     private int aJU = 0;
-    private List<com.huluxia.data.profile.e.a> aab;
+    private List<com.MCWorld.data.profile.e.a> aab;
     final /* synthetic */ PersonalStudioHeaderLayout cdR;
     private int cdS = 5;
     private Context mContext;
@@ -62,7 +62,7 @@ class PersonalStudioHeaderLayout$a extends BaseAdapter implements b {
         this.aJU = ((UtilsScreen.getScreenWidth(this.mContext) - UtilsScreen.dipToPx(this.mContext, 16)) / 5) - UtilsScreen.dipToPx(this.mContext, 16);
     }
 
-    public void setData(List<com.huluxia.data.profile.e.a> data) {
+    public void setData(List<com.MCWorld.data.profile.e.a> data) {
         this.aab = data;
         notifyDataSetChanged();
     }
@@ -75,7 +75,7 @@ class PersonalStudioHeaderLayout$a extends BaseAdapter implements b {
     }
 
     public Object getItem(int position) {
-        return UtilsFunction.empty(this.aab) ? null : (com.huluxia.data.profile.e.a) this.aab.get(position);
+        return UtilsFunction.empty(this.aab) ? null : (com.MCWorld.data.profile.e.a) this.aab.get(position);
     }
 
     public long getItemId(int position) {
@@ -95,7 +95,7 @@ class PersonalStudioHeaderLayout$a extends BaseAdapter implements b {
         } else {
             holder = (a) convertView.getTag();
         }
-        com.huluxia.data.profile.e.a studio = (com.huluxia.data.profile.e.a) getItem(position);
+        com.MCWorld.data.profile.e.a studio = (com.MCWorld.data.profile.e.a) getItem(position);
         if (studio != null) {
             UserBaseInfo item = studio.user;
             if (item.userID == j.ep().getUserid()) {

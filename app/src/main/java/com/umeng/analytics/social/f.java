@@ -6,7 +6,7 @@ import android.net.wifi.WifiManager;
 import android.provider.Settings.Secure;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import com.huluxia.r;
+import com.MCWorld.r;
 import com.umeng.analytics.a;
 import com.umeng.analytics.social.UMPlatformData.GENDER;
 import com.xiaomi.mipush.sdk.MiPushClient;
@@ -173,7 +173,7 @@ public abstract class f {
         CharSequence d;
         CharSequence string;
         Map<String, String> hashMap = new HashMap();
-        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
         if (telephonyManager == null) {
             b.e(a.e, "No IMEI.");
         }

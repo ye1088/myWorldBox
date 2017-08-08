@@ -782,7 +782,7 @@ public class XMPushService extends Service implements com.xiaomi.smack.d {
     }
 
     private boolean l() {
-        return System.currentTimeMillis() - this.e >= com.huluxia.video.recorder.b.bpg;
+        return System.currentTimeMillis() - this.e >= com.MCWorld.video.recorder.b.bpg;
     }
 
     private void m() {

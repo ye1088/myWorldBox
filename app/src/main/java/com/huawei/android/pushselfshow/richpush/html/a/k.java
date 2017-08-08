@@ -4,8 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
-import com.huawei.android.pushselfshow.richpush.html.api.d.a;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import org.json.JSONObject;
 
 public class k implements h {

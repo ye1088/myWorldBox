@@ -7,8 +7,6 @@ import android.os.Build;
 import android.os.Build.VERSION;
 import android.provider.Settings.Secure;
 import android.telephony.TelephonyManager;
-import com.xiaomi.channel.commonutils.logger.b;
-import com.xiaomi.channel.commonutils.reflect.a;
 
 public class d {
     private static String a = null;
@@ -52,7 +50,7 @@ public class d {
             return a;
         }
         try {
-            TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+            TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
             String deviceId = telephonyManager.getDeviceId();
             int i = 10;
             while (deviceId == null) {
@@ -82,7 +80,7 @@ public class d {
             return a;
         }
         try {
-            String deviceId = ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getDeviceId();
+            String deviceId = ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getDeviceId();
             if (deviceId == null) {
                 return deviceId;
             }
@@ -109,7 +107,7 @@ public class d {
     }
 
     public static String f(Context context) {
-        return ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getSimOperatorName();
+        return ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getSimOperatorName();
     }
 
     public static String g(Context context) {

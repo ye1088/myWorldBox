@@ -1,10 +1,10 @@
 package hlx.launch.game;
 
 import android.os.Build.VERSION;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.ah;
-import com.huluxia.widget.Constants;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.ah;
+import com.MCWorld.widget.Constants;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
 import hlx.data.localstore.a;
 
 /* compiled from: MCLaunchGame */

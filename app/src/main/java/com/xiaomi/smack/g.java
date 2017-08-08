@@ -1,10 +1,10 @@
 package com.xiaomi.smack;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.smack.packet.b;
 import com.xiaomi.smack.packet.b.a;
 import com.xiaomi.smack.packet.d;
-import com.xiaomi.smack.util.c;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 

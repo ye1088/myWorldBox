@@ -8,7 +8,7 @@ import com.google.protobuf.Descriptors.FileDescriptor;
 import com.google.protobuf.Descriptors.OneofDescriptor;
 import com.google.protobuf.Internal.EnumLite;
 import com.google.protobuf.WireFormat.FieldType;
-import com.huluxia.service.i;
+import com.MCWorld.service.i;
 import java.io.IOException;
 import java.io.ObjectStreamException;
 import java.io.Serializable;

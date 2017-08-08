@@ -1,9 +1,9 @@
 package hlx.module.userguide;
 
-import com.huluxia.framework.base.http.io.Response.Listener;
-import com.huluxia.framework.base.json.Json;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.module.n;
+import com.MCWorld.framework.base.http.io.Response.Listener;
+import com.MCWorld.framework.base.json.Json;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.module.n;
 
 /* compiled from: UserGuideModule */
 class b$1 implements Listener<String> {

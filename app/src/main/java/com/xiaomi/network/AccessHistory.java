@@ -1,6 +1,5 @@
 package com.xiaomi.network;
 
-import com.huluxia.version.d;
 import org.json.JSONObject;
 
 public class AccessHistory {

@@ -2,7 +2,8 @@
 <ScrollView android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/icon" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_margin="12.0dip" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/icon" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_margin="12.0dip" />
         <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:layout_toRightOf="@id/icon" android:layout_alignTop="@id/icon" />
         <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/forum_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类别" android:layout_toRightOf="@id/icon" android:layout_alignBottom="@id/icon" />
         <include android:id="@id/split_header" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/icon" layout="@layout/include_split" />
@@ -14,13 +15,15 @@
             <View android:id="@id/block_split_bottom" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_alignParentBottom="true" />
         </RelativeLayout>
         <TextView android:textSize="15.0sp" android:textColor="?textColorGreen" android:id="@id/moderator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="@string/moderator" android:layout_below="@id/view_divider" />
-        <com.huluxia.widget.listview.GridViewNotScroll android:id="@id/moderator_grid" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="4" android:layout_below="@id/moderator_text" android:overScrollMode="never" />
+        <com.MCWorld.widget.listview.GridViewNotScroll
+            android:id="@id/moderator_grid" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="4" android:layout_below="@id/moderator_text" android:overScrollMode="never" />
         <RelativeLayout android:id="@id/view_divider2" android:background="?splitColorDim" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/moderator_grid"
           xmlns:android="http://schemas.android.com/apk/res/android">
             <View android:id="@id/block_split_top2" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
             <View android:id="@id/block_split_bottom2" android:background="?splitColor" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_alignParentBottom="true" />
         </RelativeLayout>
         <TextView android:textSize="15.0sp" android:textColor="?textColorGreen" android:id="@id/rule_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="@string/cate_rule" android:layout_below="@id/view_divider2" />
-        <com.huluxia.widget.textview.EmojiTextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/rules" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="版块规定内容" android:layout_below="@id/rule_text" android:lineSpacingExtra="3.0dip" style="@style/sys_header_font" />
+        <com.MCWorld.widget.textview.EmojiTextView
+            android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/rules" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="版块规定内容" android:layout_below="@id/rule_text" android:lineSpacingExtra="3.0dip" style="@style/sys_header_font" />
     </RelativeLayout>
 </ScrollView>

@@ -1,7 +1,7 @@
 package hlx.home.fragment;
 
 import android.view.View;
-import com.huluxia.ui.base.BaseLoadingLayout.b;
+import com.MCWorld.ui.base.BaseLoadingLayout.b;
 
 class HomeFragment$14 implements b {
     final /* synthetic */ HomeFragment bQl;

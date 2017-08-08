@@ -1,9 +1,9 @@
 package hlx.ui.heroslist;
 
-import com.huluxia.framework.base.http.io.Response.ErrorListener;
-import com.huluxia.framework.base.http.toolbox.error.VolleyError;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.module.n;
+import com.MCWorld.framework.base.http.io.Response.ErrorListener;
+import com.MCWorld.framework.base.http.toolbox.error.VolleyError;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.module.n;
 
 /* compiled from: RankingModuleWrapper */
 class d$4 implements ErrorListener {

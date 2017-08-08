@@ -1,6 +1,6 @@
 package io.netty.handler.codec.dns;
 
-import com.huluxia.framework.base.image.Config;
+import com.MCWorld.framework.base.image.Config;
 import io.netty.util.collection.IntObjectHashMap;
 import java.util.HashMap;
 import java.util.Map;

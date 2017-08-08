@@ -9,15 +9,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.r;
-import com.huluxia.t;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.r;
+import com.MCWorld.t;
 import com.simple.colorful.d;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -40,7 +40,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
         }
 
         public void onClick(View v) {
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) ((b) v.getTag()).name.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) ((b) v.getTag()).name.getTag();
             this.bZg.akF.aI(item.pP, item.path);
         }
     };
@@ -53,7 +53,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
 
         public void onClick(View v) {
             b holder = (b) v.getTag();
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) holder.name.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) holder.name.getTag();
             if (this.bZg.akI == 0) {
                 this.bZg.k(item);
                 return;
@@ -86,9 +86,9 @@ public class MapResMgrItemAdapter extends BaseAdapter {
 
         void l(long j, long j2);
 
-        void l(com.huluxia.data.map.b bVar);
+        void l(com.MCWorld.data.map.b bVar);
 
-        void m(com.huluxia.data.map.b bVar);
+        void m(com.MCWorld.data.map.b bVar);
     }
 
     static class b {
@@ -148,11 +148,11 @@ public class MapResMgrItemAdapter extends BaseAdapter {
         } else {
             holder = (b) convertView.getTag();
         }
-        a(convertView, holder, (com.huluxia.data.map.b) getItem(position));
+        a(convertView, holder, (com.MCWorld.data.map.b) getItem(position));
         return convertView;
     }
 
-    public void a(View view, b holder, com.huluxia.data.map.b item) {
+    public void a(View view, b holder, com.MCWorld.data.map.b item) {
         if (this.akG == 0) {
             holder.name.setText(item.pP == null ? item.name : item.pP);
             view.setOnClickListener(this.mClickListener);
@@ -204,11 +204,11 @@ public class MapResMgrItemAdapter extends BaseAdapter {
         this.akF = mLoadMapListener;
     }
 
-    private void i(com.huluxia.data.map.b fileItem) {
+    private void i(com.MCWorld.data.map.b fileItem) {
         hlx.ui.localresmgr.cache.b.Us().q(fileItem);
         Iterator it = this.mObjects.iterator();
         while (it.hasNext()) {
-            if (fileItem.name.equals(((com.huluxia.data.map.b) it.next()).name)) {
+            if (fileItem.name.equals(((com.MCWorld.data.map.b) it.next()).name)) {
                 it.remove();
             }
         }
@@ -218,7 +218,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    private void j(final com.huluxia.data.map.b item) {
+    private void j(final com.MCWorld.data.map.b item) {
         int colorMsg = d.getColor(this.mCtx, R.attr.dialog_msg_label_color);
         int colorRed = this.mCtx.getResources().getColor(R.color.dialog_ok_btn_color);
         int colorGray = d.getColor(this.mCtx, 16842808);
@@ -250,7 +250,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
             }
 
             public void pressMenuById(int inIndex, Object object) {
-                com.huluxia.data.map.b item = (com.huluxia.data.map.b) object;
+                com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) object;
                 switch (inIndex) {
                     case 1:
                         if (this.bZg.akF != null) {
@@ -305,7 +305,7 @@ public class MapResMgrItemAdapter extends BaseAdapter {
         this.akL = new CommonMenuDialog(this.mCtx, this.mMenuItemArrayList, mMapMenuListener, d.RB());
     }
 
-    private void k(com.huluxia.data.map.b item) {
+    private void k(com.MCWorld.data.map.b item) {
         this.akL.showMenu(item, item.name);
     }
 }

@@ -1,11 +1,11 @@
 package hlx.home.fragment;
 
 import android.widget.ImageView.ScaleType;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.utils.UtilUri;
-import com.huluxia.l;
-import com.huluxia.widget.banner.SimpleImageAdapter.a;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.utils.UtilUri;
+import com.MCWorld.l;
+import com.MCWorld.widget.banner.SimpleImageAdapter.a;
 
 class HomeFragment$4 implements a {
     final /* synthetic */ HomeFragment bQl;

@@ -4,11 +4,11 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import com.huluxia.DownloadDialog;
-import com.huluxia.data.banner.a.a;
-import com.huluxia.k;
-import com.huluxia.r;
-import com.huluxia.t;
+import com.MCWorld.DownloadDialog;
+import com.MCWorld.data.banner.a.a;
+import com.MCWorld.k;
+import com.MCWorld.r;
+import com.MCWorld.t;
 
 class HomeFragment$5 implements OnItemClickListener {
     final /* synthetic */ HomeFragment bQl;

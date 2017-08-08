@@ -1,6 +1,6 @@
 package io.netty.handler.ssl;
 
-import com.huluxia.framework.base.utils.UtilsRSA;
+import com.MCWorld.framework.base.utils.UtilsRSA;
 import io.netty.util.internal.PlatformDependent;
 import io.netty.util.internal.logging.InternalLogger;
 import io.netty.util.internal.logging.InternalLoggerFactory;

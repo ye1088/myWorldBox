@@ -1,7 +1,7 @@
 package hlx.home.fragment;
 
 import android.support.v4.app.FragmentManager;
-import com.huluxia.framework.base.widget.pager.PagerSelectedAdapter;
+import com.MCWorld.framework.base.widget.pager.PagerSelectedAdapter;
 
 public abstract class ScrollablePageAdapter extends PagerSelectedAdapter<ScrollableFragment> {
     public ScrollablePageAdapter(FragmentManager fm) {

@@ -6,8 +6,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
-import com.huluxia.t;
-import com.huluxia.utils.u;
+import com.MCWorld.t;
+import com.MCWorld.utils.u;
 
 /* compiled from: UtilsApkManager */
 public class g {

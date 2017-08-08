@@ -14,9 +14,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Mode;
-import com.huluxia.framework.R;
-import com.huluxia.framework.R$anim;
-import com.huluxia.framework.R$dimen;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.R$anim;
+import com.MCWorld.framework.R$dimen;
 
 @SuppressLint({"ViewConstructor"})
 public class IndicatorLayout extends FrameLayout implements AnimationListener {

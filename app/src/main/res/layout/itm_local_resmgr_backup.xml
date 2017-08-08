@@ -2,7 +2,8 @@
 <RelativeLayout android:id="@id/rlyLocalResMgrMapItem" android:background="?itemBackground" android:paddingRight="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout android:id="@id/rlyLocalResMgrMapItemImgContainer" android:layout_width="100.0dip" android:layout_height="60.0dip" android:layout_margin="10.0dip" android:layout_centerVertical="true">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/rlyLocalResMgrMapItemImg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/rlyLocalResMgrMapItemImg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
         <TextView android:textSize="10.0sp" android:textColor="?version" android:gravity="center" android:id="@id/tvResVersion" android:background="@color/text_half_transparent" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.14" />
     </RelativeLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/rlyLocalResMgrMapItemImgContainer" android:layout_centerVertical="true">

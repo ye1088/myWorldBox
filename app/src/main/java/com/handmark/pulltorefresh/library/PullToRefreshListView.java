@@ -5,7 +5,6 @@ import android.content.res.TypedArray;
 import android.os.Build.VERSION;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
-import android.widget.FrameLayout.LayoutParams;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.AnimationStyle;
@@ -13,7 +12,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Orientation;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
 import com.handmark.pulltorefresh.library.internal.LoadingLayout;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView> {
     private LoadingLayout mFooterLoadingView;

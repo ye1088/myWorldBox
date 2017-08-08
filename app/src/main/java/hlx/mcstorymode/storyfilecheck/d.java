@@ -1,6 +1,6 @@
 package hlx.mcstorymode.storyfilecheck;
 
-import com.huluxia.mcgame.h;
+import com.MCWorld.mcgame.h;
 import hlx.mcstorymode.c;
 import java.io.File;
 
@@ -40,7 +40,7 @@ public class d {
         while (i < bUj) {
             try {
                 tmp_path = path + File.separator + bUk[i][0];
-                if (!com.huluxia.mcsdk.dtlib.c.getFileMD5(tmp_path).equalsIgnoreCase(bUk[i][1])) {
+                if (!com.MCWorld.mcsdk.dtlib.c.getFileMD5(tmp_path).equalsIgnoreCase(bUk[i][1])) {
                     return false;
                 }
                 i++;

@@ -9,11 +9,10 @@ import android.hardware.SensorManager;
 import android.media.SoundPool;
 import android.os.Handler;
 import android.os.Looper;
-import com.huawei.android.pushagent.c.a.e;
+
 import com.huawei.android.pushselfshow.richpush.html.api.NativeToJsMessageQueue;
-import com.huawei.android.pushselfshow.richpush.html.api.d;
 import com.huawei.android.pushselfshow.utils.b.b;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import java.io.File;
 import java.util.List;
 import org.apache.tools.ant.util.FileUtils;

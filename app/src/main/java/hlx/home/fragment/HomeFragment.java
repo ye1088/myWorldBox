@@ -12,30 +12,30 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
-import com.huluxia.HTApplication;
-import com.huluxia.data.cdn.a;
-import com.huluxia.data.map.MapResCountInfo;
-import com.huluxia.data.message.MsgCounts;
-import com.huluxia.data.server.ServerResCountInfo;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.framework.base.widget.pager.SelectedViewPager;
-import com.huluxia.module.k;
-import com.huluxia.module.n;
-import com.huluxia.module.v;
-import com.huluxia.service.i;
-import com.huluxia.ui.base.BaseLoadingLayout;
-import com.huluxia.ui.base.BaseThemeFragment;
-import com.huluxia.utils.ah;
-import com.huluxia.widget.Constants;
-import com.huluxia.widget.PullToRefreshScrollableLayout;
-import com.huluxia.widget.banner.BannerGallery;
-import com.huluxia.widget.menudrawer.MenuDrawer;
-import com.huluxia.widget.title.TitleBar;
-import com.huluxia.widget.viewpager.PagerSlidingTabStrip;
+import com.MCWorld.HTApplication;
+import com.MCWorld.data.cdn.a;
+import com.MCWorld.data.map.MapResCountInfo;
+import com.MCWorld.data.message.MsgCounts;
+import com.MCWorld.data.server.ServerResCountInfo;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.base.widget.pager.SelectedViewPager;
+import com.MCWorld.module.k;
+import com.MCWorld.module.n;
+import com.MCWorld.module.v;
+import com.MCWorld.service.i;
+import com.MCWorld.ui.base.BaseLoadingLayout;
+import com.MCWorld.ui.base.BaseThemeFragment;
+import com.MCWorld.utils.ah;
+import com.MCWorld.widget.Constants;
+import com.MCWorld.widget.PullToRefreshScrollableLayout;
+import com.MCWorld.widget.banner.BannerGallery;
+import com.MCWorld.widget.menudrawer.MenuDrawer;
+import com.MCWorld.widget.title.TitleBar;
+import com.MCWorld.widget.viewpager.PagerSlidingTabStrip;
 import com.simple.colorful.d;
 import hlx.mcstorymode.c;
 import java.util.ArrayList;
@@ -114,7 +114,7 @@ public class HomeFragment extends BaseThemeFragment {
         }
 
         @MessageHandler(message = 529)
-        public void onRecvResHomeBannerInfo(com.huluxia.data.banner.a info) {
+        public void onRecvResHomeBannerInfo(com.MCWorld.data.banner.a info) {
             this.bQl.bPv.onRefreshComplete();
             if (info != null) {
                 this.bQl.J(info.mcCarousellist);
@@ -441,13 +441,13 @@ public class HomeFragment extends BaseThemeFragment {
         }
     }
 
-    private void J(List<com.huluxia.data.banner.a.a> banners) {
+    private void J(List<com.MCWorld.data.banner.a.a> banners) {
         RP();
         if (banners.isEmpty()) {
             this.bPV.setVisibility(8);
             return;
         }
-        List<com.huluxia.widget.banner.a> info = new ArrayList();
+        List<com.MCWorld.widget.banner.a> info = new ArrayList();
         info.addAll(banners);
         this.bPV.setVisibility(0);
         if (this.bPW != null) {

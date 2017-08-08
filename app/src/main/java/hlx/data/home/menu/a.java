@@ -1,6 +1,6 @@
 package hlx.data.home.menu;
 
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import java.util.ArrayList;
 import java.util.List;
 

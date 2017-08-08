@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.huluxia.widget.pulltorefresh.PullToRefreshListView android:id="@id/listViewData" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/classifylayout" />
+    <com.MCWorld.widget.pulltorefresh.PullToRefreshListView
+        android:id="@id/listViewData" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/classifylayout" />
     <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_filter" android:background="@color/transparent_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="按贴子创建时间排序" />
-    <com.huluxia.widget.TagClassifyLayout android:id="@id/classifylayout" android:background="@color/light_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
+    <com.MCWorld.widget.TagClassifyLayout
+        android:id="@id/classifylayout" android:background="@color/light_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
 </RelativeLayout>

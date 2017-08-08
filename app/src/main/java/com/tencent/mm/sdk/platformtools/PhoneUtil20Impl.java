@@ -7,7 +7,7 @@ import android.telephony.SignalStrength;
 import android.telephony.TelephonyManager;
 import android.telephony.cdma.CdmaCellLocation;
 import android.telephony.gsm.GsmCellLocation;
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import com.tencent.mm.sdk.platformtools.PhoneUtil.CellInfo;
 import java.util.LinkedList;
 import java.util.List;

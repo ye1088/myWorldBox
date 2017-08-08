@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.huluxia.framework.R;
+
+import com.MCWorld.framework.R;
 
 public class PullToRefreshWebView extends PullToRefreshBase<WebView> {
     private static final OnRefreshListener<WebView> defaultOnRefreshListener = new OnRefreshListener<WebView>() {

@@ -16,7 +16,8 @@
                     <LinearLayout android:orientation="vertical" android:id="@id/llyStrengthen" android:layout_width="fill_parent" android:layout_height="wrap_content">
                         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
                             <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="生物改名" android:singleLine="true" />
-                            <com.huluxia.widget.EditTextWithDelete android:id="@id/etStrengthenAnimalName" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:layout_weight="1.0" style="@style/value_edit_normal_float" />
+                            <com.MCWorld.widget.EditTextWithDelete
+                                android:id="@id/etStrengthenAnimalName" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:layout_weight="1.0" style="@style/value_edit_normal_float" />
                         </LinearLayout>
                         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
                             <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="名称颜色" android:singleLine="true" />
@@ -25,7 +26,8 @@
                         <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llyColorList" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
                             <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="血量" android:singleLine="true" />
-                            <com.huluxia.widget.EditTextWithDelete android:id="@id/etStrengthenBloodValue" android:padding="5.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:maxLength="6" android:inputType="numberDecimal" style="@style/value_edit_normal_float" />
+                            <com.MCWorld.widget.EditTextWithDelete
+                                android:id="@id/etStrengthenBloodValue" android:padding="5.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:hint="默认" android:cursorVisible="false" android:maxLength="6" android:inputType="numberDecimal" style="@style/value_edit_normal_float" />
                         </LinearLayout>
                         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
                             <TextView android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="数量" android:singleLine="true" />

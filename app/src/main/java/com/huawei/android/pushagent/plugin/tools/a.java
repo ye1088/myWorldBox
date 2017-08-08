@@ -46,7 +46,7 @@ public class a {
     }
 
     private static int b(Context context) {
-        return ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getPhoneType();
+        return ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getPhoneType();
     }
 
     private static ArrayList b(ArrayList arrayList, CellLocation cellLocation, TelephonyManager telephonyManager) throws Exception {
@@ -81,13 +81,13 @@ public class a {
     }
 
     private static String c(Context context) {
-        return ((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getNetworkOperator();
+        return ((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getNetworkOperator();
     }
 
     private static ArrayList d(Context context) throws Exception {
         e.a(BLocation.TAG, " enter getNetInfo");
         ArrayList arrayList = new ArrayList();
-        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
         CellLocation cellLocation = telephonyManager.getCellLocation();
         if (cellLocation == null) {
             throw new Exception("CellInfo is null");

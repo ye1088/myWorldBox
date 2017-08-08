@@ -2,9 +2,9 @@ package com.tencent.smtt.sdk.b;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import com.huluxia.video.recorder.b;
+
 import com.j256.ormlite.stmt.query.SimpleComparison;
-import com.tencent.smtt.sdk.a.a;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 

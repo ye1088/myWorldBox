@@ -1,7 +1,7 @@
 package hlx.ui.localresmgr.backupmanager;
 
 import android.widget.TextView;
-import com.huluxia.framework.base.image.PaintView;
+import com.MCWorld.framework.base.image.PaintView;
 
 public class SpecifyMapBackupManagerListAdapter$a {
     public TextView aOj;

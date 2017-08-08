@@ -12,17 +12,17 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.k;
-import com.huluxia.t;
-import com.huluxia.utils.ai;
-import com.huluxia.widget.dialog.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.k;
+import com.MCWorld.t;
+import com.MCWorld.utils.ai;
+import com.MCWorld.widget.dialog.e;
 import com.simple.colorful.d;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,7 +32,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
     private List<Object> akJ = null;
     private DialogManager akK;
     private boolean bYS = false;
-    private com.huluxia.data.map.b bYT;
+    private com.MCWorld.data.map.b bYT;
     private CommonMenuDialog bYU;
     private a bYV;
     private OnCheckedChangeListener bYW = new OnCheckedChangeListener(this) {
@@ -43,7 +43,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         }
 
         public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) compoundButton.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) compoundButton.getTag();
             item.state = b ? 1 : 0;
             ai.f("js", item.name, ai.bmi, String.valueOf(item.state));
             if (this.bYX.bYV != null) {
@@ -60,7 +60,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         }
 
         public void onClick(View v) {
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) ((c) v.getTag()).bZc.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) ((c) v.getTag()).bZc.getTag();
             if (this.bYX.bYS) {
                 if (this.bYX.akJ.contains(item)) {
                     this.bYX.akJ.remove(item);
@@ -81,7 +81,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         void dJ(boolean z);
     }
 
-    private class b implements com.huluxia.widget.dialog.e.a {
+    private class b implements com.MCWorld.widget.dialog.e.a {
         final /* synthetic */ JsResMgrItemAdapter bYX;
 
         private b(JsResMgrItemAdapter jsResMgrItemAdapter) {
@@ -168,7 +168,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         } else {
             holder = (c) convertView.getTag();
         }
-        com.huluxia.data.map.b item = (com.huluxia.data.map.b) getItem(position);
+        com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) getItem(position);
         holder.name.setText(item.name);
         if (holder.aWl != null) {
             if (item.size == 0) {
@@ -229,7 +229,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         this.akJ = checkList;
     }
 
-    public void i(com.huluxia.data.map.b item) {
+    public void i(com.MCWorld.data.map.b item) {
         hlx.ui.localresmgr.cache.b.Us().p(item);
         if (this.bYV != null) {
             this.bYV.dJ(false);
@@ -243,7 +243,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         dialog.showDialog();
     }
 
-    private void j(final com.huluxia.data.map.b item) {
+    private void j(final com.MCWorld.data.map.b item) {
         int colorMsg = d.getColor(this.bns, R.attr.dialog_msg_label_color);
         int colorRed = this.bns.getResources().getColor(R.color.dialog_ok_btn_color);
         int colorGray = d.getColor(this.bns, 16842808);
@@ -262,7 +262,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
             public void onOk() {
                 Iterator it = this.bYX.mObjects.iterator();
                 while (it.hasNext()) {
-                    com.huluxia.data.map.b fileItem = (com.huluxia.data.map.b) it.next();
+                    com.MCWorld.data.map.b fileItem = (com.MCWorld.data.map.b) it.next();
                     if (fileItem.path.equals(item.path)) {
                         this.bYX.i(fileItem);
                         it.remove();
@@ -283,7 +283,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
             }
 
             public void pressMenuById(int inIndex, Object object) {
-                com.huluxia.data.map.b item = (com.huluxia.data.map.b) object;
+                com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) object;
                 switch (inIndex) {
                     case 1:
                         k.c(this.bYX.bns, item.mapId, item.pQ);
@@ -309,7 +309,7 @@ public class JsResMgrItemAdapter extends BaseAdapter {
         this.bYU = new CommonMenuDialog(this.bns, this.mMenuItemArrayList, mJSMenuListener, d.RB());
     }
 
-    private void k(com.huluxia.data.map.b item) {
+    private void k(com.MCWorld.data.map.b item) {
         this.bYU.showMenu(item, item.name);
     }
 }

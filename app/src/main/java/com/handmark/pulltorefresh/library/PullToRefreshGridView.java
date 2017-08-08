@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.GridView;
 import com.handmark.pulltorefresh.library.internal.EmptyViewMethodAccessor;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 public class PullToRefreshGridView extends PullToRefreshAdapterViewBase<GridView> {
 

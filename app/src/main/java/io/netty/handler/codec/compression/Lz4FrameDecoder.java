@@ -1,6 +1,6 @@
 package io.netty.handler.codec.compression;
 
-import com.huluxia.video.recorder.b;
+import com.MCWorld.video.recorder.b;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;

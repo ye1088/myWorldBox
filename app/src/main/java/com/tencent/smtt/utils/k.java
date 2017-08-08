@@ -1,8 +1,8 @@
 package com.tencent.smtt.utils;
 
 import android.util.Base64;
-import com.huluxia.framework.base.utils.UtilsRSA;
-import com.huluxia.video.recorder.b;
+import com.MCWorld.framework.base.utils.UtilsRSA;
+
 import java.security.Key;
 import java.security.KeyFactory;
 import java.security.spec.X509EncodedKeySpec;

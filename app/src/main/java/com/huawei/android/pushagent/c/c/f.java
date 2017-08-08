@@ -9,7 +9,7 @@ import com.huawei.android.pushagent.c.a;
 import com.huawei.android.pushagent.c.a.b;
 import com.huawei.android.pushagent.c.a.g;
 import com.huawei.android.pushagent.c.a.i;
-import com.huluxia.ui.profile.ProfileScoreActivity;
+import com.MCWorld.ui.profile.ProfileScoreActivity;
 import io.netty.handler.codec.rtsp.RtspHeaders.Values;
 import java.io.BufferedReader;
 import java.io.IOException;

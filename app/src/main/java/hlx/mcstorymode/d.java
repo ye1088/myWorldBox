@@ -1,6 +1,6 @@
 package hlx.mcstorymode;
 
-import com.huluxia.data.storymode.c;
+import com.MCWorld.data.storymode.c;
 import hlx.mcstorymode.storyutils.a;
 import hlx.mcstorymode.storyutils.b;
 import java.io.File;
@@ -110,7 +110,7 @@ public class d {
         return this.bWH.hq(storyChapterName);
     }
 
-    public com.huluxia.data.storymode.a hm(String id) {
+    public com.MCWorld.data.storymode.a hm(String id) {
         this.bWH.hr(id);
         return this.bWH.TQ();
     }

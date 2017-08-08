@@ -1,12 +1,12 @@
 package hlx.home.fragment;
 
-import com.huluxia.data.map.f;
-import com.huluxia.data.server.a;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.module.n;
+import com.MCWorld.data.map.f;
+import com.MCWorld.data.server.a;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.module.n;
 import hlx.ui.mapseed.b;
 
 class MapJsWoodSkinFragment$2 extends CallbackHandler {

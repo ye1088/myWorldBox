@@ -8,22 +8,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.data.map.f;
-import com.huluxia.data.server.a;
-import com.huluxia.framework.BaseEvent;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.module.n;
-import com.huluxia.module.o;
-import com.huluxia.module.q;
-import com.huluxia.module.u;
-import com.huluxia.ui.itemadapter.js.JsDownAdapter;
-import com.huluxia.ui.itemadapter.map.DownAdapter;
-import com.huluxia.ui.itemadapter.server.ServerListAdapter;
-import com.huluxia.ui.itemadapter.skin.SkinDownAdapter;
-import com.huluxia.ui.itemadapter.wood.WoodDownAdapter;
-import com.huluxia.utils.c;
+import com.MCWorld.data.map.f;
+import com.MCWorld.data.server.a;
+import com.MCWorld.framework.BaseEvent;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.module.n;
+import com.MCWorld.module.o;
+import com.MCWorld.module.q;
+import com.MCWorld.module.u;
+import com.MCWorld.ui.itemadapter.js.JsDownAdapter;
+import com.MCWorld.ui.itemadapter.map.DownAdapter;
+import com.MCWorld.ui.itemadapter.server.ServerListAdapter;
+import com.MCWorld.ui.itemadapter.skin.SkinDownAdapter;
+import com.MCWorld.ui.itemadapter.wood.WoodDownAdapter;
+import com.MCWorld.utils.c;
 import com.simple.colorful.d;
 import com.simple.colorful.setter.j;
 import hlx.ui.mapseed.SeedAdapter;
@@ -72,7 +72,7 @@ public class MapJsWoodSkinFragment extends ScrollableFragment {
         this.mContext = getActivity();
         EventNotifyCenter.add(n.class, this.mCallback);
         EventNotifyCenter.add(BaseEvent.class, this.aGM);
-        EventNotifyCenter.add(com.huluxia.controller.c.class, this.aGO);
+        EventNotifyCenter.add(com.MCWorld.controller.c.class, this.aGO);
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

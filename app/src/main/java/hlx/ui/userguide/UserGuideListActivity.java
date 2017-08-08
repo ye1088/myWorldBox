@@ -3,11 +3,11 @@ package hlx.ui.userguide;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.bbs.b.g;
-import com.huluxia.bbs.b.i;
-import com.huluxia.r;
-import com.huluxia.t;
-import com.huluxia.ui.base.BaseActivity;
+import com.MCWorld.bbs.b.g;
+import com.MCWorld.bbs.b.i;
+import com.MCWorld.r;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.BaseActivity;
 import hlx.data.tongji.a;
 
 public class UserGuideListActivity extends BaseActivity {

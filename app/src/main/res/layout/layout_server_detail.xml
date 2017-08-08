@@ -2,9 +2,11 @@
 <LinearLayout android:orientation="vertical" android:background="?itemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.huluxia.widget.banner.BannerGallery android:id="@id/banner_gallery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <com.MCWorld.widget.banner.BannerGallery
+            android:id="@id/banner_gallery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
         <View android:background="@drawable/bg_half_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sys_header_title_height" />
-        <com.huluxia.widget.title.TitleBar android:id="@id/title_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sys_header_title_height" />
+        <com.MCWorld.widget.title.TitleBar
+            android:id="@id/title_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sys_header_title_height" />
     </RelativeLayout>
     <LinearLayout android:orientation="vertical" android:id="@id/container" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -21,6 +23,8 @@
         </RelativeLayout>
     </LinearLayout>
     <include layout="@layout/view_res_block_divider" />
-    <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/map_detail_tab" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" />
-    <com.huluxia.widget.InterceptViewPager android:id="@id/map_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.MCWorld.widget.viewpager.PagerSlidingTabStrip
+        android:id="@id/map_detail_tab" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <com.MCWorld.widget.InterceptViewPager
+        android:id="@id/map_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

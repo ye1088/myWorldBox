@@ -10,29 +10,29 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.RadioButton;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.http.toolbox.entity.utils.TextUtils;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.k;
-import com.huluxia.module.aa;
-import com.huluxia.module.n;
-import com.huluxia.module.r;
-import com.huluxia.mojang.Mojang;
-import com.huluxia.mojang.MojangMessage;
-import com.huluxia.t;
-import com.huluxia.ui.itemadapter.MyMapCateItem;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.aw;
-import com.huluxia.utils.j;
-import com.huluxia.utils.q;
-import com.huluxia.widget.dialog.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.http.toolbox.entity.utils.TextUtils;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.k;
+import com.MCWorld.module.aa;
+import com.MCWorld.module.n;
+import com.MCWorld.module.r;
+import com.MCWorld.mojang.Mojang;
+import com.MCWorld.mojang.MojangMessage;
+import com.MCWorld.t;
+import com.MCWorld.ui.itemadapter.MyMapCateItem;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.aw;
+import com.MCWorld.utils.j;
+import com.MCWorld.utils.q;
+import com.MCWorld.widget.dialog.e;
 import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -61,11 +61,11 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
             switch (v.getId()) {
                 case R.id.tvPublishResTopic1:
                     t.a(this.ced.cdV, 6877897, false);
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNJ);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNJ);
                     return;
                 case R.id.tvPublishResTopic2:
                     t.a(this.ced.cdV, 12817312, false);
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNK);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNK);
                     return;
                 case R.id.tvPublishRes:
                     if (this.ced.mDrawerLayout.isDrawerOpen(8388611)) {
@@ -201,7 +201,7 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
             } else {
                 activity.a(msg, false, false);
             }
-            com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNz);
+            com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNz);
         }
 
         @MessageHandler(message = 2321)
@@ -214,14 +214,14 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                 activity.cdX.url = fileUrl;
                 activity.cdX.md5 = md5;
                 activity.cdX.size = size;
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNB);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNB);
                 activity.ks(0);
             } else {
                 activity.cs(false);
                 activity.dN(true);
                 activity.cer = false;
                 t.n(activity, msg);
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNC);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNC);
             }
         }
 
@@ -242,14 +242,14 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                 activity.cer = false;
                 if (success) {
                     t.o(activity, activity.getString(R.string.res_upload_success));
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNE);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNE);
                     ah.KZ().LW();
                     activity.cdY = true;
                     activity.finish();
                     return;
                 }
                 activity.a(msg, false, false);
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNF);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNF);
             }
         }
 
@@ -262,18 +262,18 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                 activity.cer = false;
                 if (success) {
                     t.o(activity, activity.getString(R.string.res_update_success));
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNH);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNH);
                     ah.KZ().LW();
                     activity.finish();
                     return;
                 }
                 activity.a(msg, false, false);
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNI);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNI);
             }
         }
     }
 
-    private class c implements com.huluxia.widget.dialog.e.a {
+    private class c implements com.MCWorld.widget.dialog.e.a {
         final /* synthetic */ PublishResourceActivity ced;
 
         private c(PublishResourceActivity publishResourceActivity) {
@@ -456,11 +456,11 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
     }
 
     public boolean Vq() {
-        if (!com.huluxia.data.j.ep().ey()) {
+        if (!com.MCWorld.data.j.ep().ey()) {
             t.an(this.cdV);
             return false;
         } else if (UtilsFunction.empty(this.ceq)) {
-            com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNw);
+            com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNw);
             VC();
             return false;
         } else if (this.sH == 0) {
@@ -479,14 +479,14 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                     t.n(this.cdV, this.cdV.getString(R.string.please_upload_res_file));
                     return false;
                 } else if (this.cem == 1) {
-                    if (com.huluxia.framework.base.utils.UtilsFile.getFileSizes(file) > aa.axI) {
+                    if (com.MCWorld.framework.base.utils.UtilsFile.getFileSizes(file) > aa.axI) {
                         t.n(this.cdV, this.cdV.getString(R.string.file_too_large_tips));
-                        com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNy);
+                        com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNy);
                         return false;
                     }
                 } else if (file.length() > aa.axI) {
                     t.n(this.cdV, this.cdV.getString(R.string.file_too_large_tips));
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNy);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNy);
                     return false;
                 }
             }
@@ -501,21 +501,21 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
             }
             if (((RadioButton) this.ceE.NP()) == null) {
                 t.n(this.cdV, this.cdV.getString(R.string.please_choose_version));
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNx);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNx);
                 return false;
             } else if (this.ceo.endsWith(" ") || this.ceo.startsWith(" ")) {
                 t.n(this.cdV, "抱歉！资源文件不能以空格开头或结尾，请重新命名！");
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
                 Vu();
                 return false;
             } else if (this.ceo.trim().length() < 2) {
                 t.n(this.cdV, this.cdV.getString(R.string.title_noless_tips));
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
                 Vu();
                 return false;
             } else if (this.ceo.trim().length() > 15) {
                 t.n(this.cdV, this.cdV.getString(R.string.title_nomore_tips));
-                com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
+                com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNs);
                 Vu();
                 return false;
             } else {
@@ -523,29 +523,29 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                 this.ceL.setText(author);
                 if (author.trim().length() < 2) {
                     t.n(this.cdV, this.cdV.getString(R.string.author_noless_tips));
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNt);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNt);
                     return false;
                 } else if (author.trim().length() > 8) {
                     t.n(this.cdV, this.cdV.getString(R.string.author_nomore_tips));
-                    com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNt);
+                    com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNt);
                     return false;
                 } else {
                     String source = aw.gw(this.ceM.getText().toString());
                     this.ceM.setText(source);
                     if (source.trim().length() < 2) {
                         t.n(this.cdV, this.cdV.getString(R.string.source_noless_tips));
-                        com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNu);
+                        com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNu);
                         return false;
                     } else if (source.trim().length() > 8) {
                         t.n(this.cdV, this.cdV.getString(R.string.source_nomore_tips));
-                        com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNu);
+                        com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNu);
                         return false;
                     } else {
                         String detail = aw.gw(this.ceN.getText().toString());
                         this.ceN.setText(detail);
                         if (detail.trim().length() < 5) {
                             t.n(this.cdV, this.cdV.getString(R.string.detail_noless_five));
-                            com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNv);
+                            com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNv);
                             return false;
                         } else if (this.bhm.getPhotos().size() < 4) {
                             t.n(this.cdV, this.cdV.getString(R.string.upload_images_tips));
@@ -587,7 +587,7 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
                 fileName = fileName.substring(0, fileName.lastIndexOf("."));
                 break;
         }
-        com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNA);
+        com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNA);
         aa.DQ().N(path, fileName);
     }
 
@@ -599,13 +599,13 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
         String detail = this.ceN.getText().toString();
         String patcha = this.ceO.getText().toString();
         this.cdX.images.clear();
-        List<com.huluxia.module.picture.b> photos = this.bhm.getPhotos();
+        List<com.MCWorld.module.picture.b> photos = this.bhm.getPhotos();
         if (photos.size() < 4) {
             this.cer = false;
             t.n(this.cdV, "提交图片少于4张，请重新提交");
             return;
         }
-        for (com.huluxia.module.picture.b photo : photos) {
+        for (com.MCWorld.module.picture.b photo : photos) {
             if (photo.fid != null) {
                 this.cdX.images.add(photo.fid);
             } else {
@@ -628,11 +628,11 @@ public class PublishResourceActivity extends PublishResourceBaseActivity {
         HLog.info(TAG, "1.%s;2.%s;3.%d.", title, this.cdX.sX, tmp);
         this.cdX.axr = this.cem;
         if (this.cen == 0) {
-            com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bND);
+            com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bND);
             aa.DQ().c(this.cdX);
             return;
         }
-        com.huluxia.r.ck().K_umengEvent(hlx.data.tongji.a.bNG);
+        com.MCWorld.r.ck().K_umengEvent(hlx.data.tongji.a.bNG);
         aa.DQ().d(this.cdX);
         aa.DQ().aN(this.cdX.id);
     }

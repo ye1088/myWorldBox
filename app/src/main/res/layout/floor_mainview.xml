@@ -5,26 +5,40 @@
         <LinearLayout android:orientation="vertical" android:id="@id/floatLayoutMenuView" android:background="@drawable/float_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="3.0dip">
             <ImageView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_float_logo" android:contentDescription="@null" />
             <RadioGroup android:orientation="vertical" android:id="@id/floatBtnMenus" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuRole" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="角色" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuFunc" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="游戏" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuNetPlayer" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="伙伴" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuInsZones" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="副本" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuEnchant" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="附魔" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuPotion" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="药水" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuPack" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="背包" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuDeliver" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="传送" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuAnimal" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="生物" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuBuilder" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="建造" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuBackup" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="备份" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMenuCapshot" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="截图" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuRole" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="角色" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuFunc" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="游戏" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuNetPlayer" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="伙伴" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuInsZones" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="副本" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuEnchant" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="附魔" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuPotion" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="药水" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuPack" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="背包" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuDeliver" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="传送" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuAnimal" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="生物" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuBuilder" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="建造" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuBackup" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="备份" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMenuCapshot" android:layout_width="fill_parent" android:layout_height="@dimen/float_tab_high" android:text="截图" style="@style/value_button_float_radio_exex" />
             </RadioGroup>
         </LinearLayout>
     </ScrollView>
     <ScrollView android:id="@id/floatLayoutFuncView" android:background="@drawable/float_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:layout_width="270.0dip" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMainLiveMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="生存" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
-                <com.huluxia.widget.ButtonImageRadio android:id="@id/floatBtnMainCreateMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="创造" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMainLiveMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="生存" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
+                <com.MCWorld.widget.ButtonImageRadio
+                    android:id="@id/floatBtnMainCreateMode" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="创造" android:layout_weight="1.0" style="@style/value_button_float_radio_exex" />
             </RadioGroup>
             <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
             <CheckBox android:id="@id/floatChkMainLockTime" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:text="锁定时间" style="@style/value_checkbox_switch4" />

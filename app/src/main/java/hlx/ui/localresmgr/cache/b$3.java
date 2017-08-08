@@ -1,6 +1,6 @@
 package hlx.ui.localresmgr.cache;
 
-import com.huluxia.framework.base.async.AsyncTaskCenter.RunnableCallback;
+import com.MCWorld.framework.base.async.AsyncTaskCenter.RunnableCallback;
 
 /* compiled from: LocResCacheManager */
 class b$3 implements RunnableCallback {

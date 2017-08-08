@@ -8,20 +8,20 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build.VERSION;
 import android.util.DisplayMetrics;
-import com.huluxia.aa.mcspirit;
-import com.huluxia.mcgame.af;
-import com.huluxia.mcgame.e;
-import com.huluxia.mcgame.g;
-import com.huluxia.mcgame.k;
-import com.huluxia.mcgame.v;
-import com.huluxia.mcgame.z;
-import com.huluxia.mcsdk.DTSDKManager;
-import com.huluxia.mcsdk.DTSDKManagerEx;
-import com.huluxia.mcsdk.crypto.c;
-import com.huluxia.mcsdk.crypto.d;
-import com.huluxia.mcsdk.dtlib.DTThread;
-import com.huluxia.mcsdk.dtlib.h;
-import com.huluxia.utils.ah;
+import com.MCWorld.aa.mcspirit;
+import com.MCWorld.mcgame.af;
+import com.MCWorld.mcgame.e;
+import com.MCWorld.mcgame.g;
+import com.MCWorld.mcgame.k;
+import com.MCWorld.mcgame.v;
+import com.MCWorld.mcgame.z;
+import com.MCWorld.mcsdk.DTSDKManager;
+import com.MCWorld.mcsdk.DTSDKManagerEx;
+import com.MCWorld.mcsdk.crypto.c;
+import com.MCWorld.mcsdk.crypto.d;
+import com.MCWorld.mcsdk.dtlib.DTThread;
+import com.MCWorld.mcsdk.dtlib.h;
+import com.MCWorld.utils.ah;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -367,38 +367,38 @@ public class a {
 
     public static boolean bO(Context in_context) {
         try {
-            com.huluxia.mcgame.options.a.yZ();
-            com.huluxia.mcjavascript.f.init();
+            com.MCWorld.mcgame.options.a.yZ();
+            com.MCWorld.mcjavascript.f.init();
             DTSDKManagerEx.ch(false);
             g.bd(false);
             bHX = in_context;
-            com.huluxia.mcmod.a.init(bHX);
-            com.huluxia.mcmod.a.aT(bHX);
-            com.huluxia.mcinterface.h.bQ(false);
-            com.huluxia.mcso.a.init(bHX);
+            com.MCWorld.mcmod.a.init(bHX);
+            com.MCWorld.mcmod.a.aT(bHX);
+            com.MCWorld.mcinterface.h.bQ(false);
+            com.MCWorld.mcso.a.init(bHX);
             v.init();
             if (h.CW().CX() == 0) {
-                com.huluxia.mcgame.options.b.init();
+                com.MCWorld.mcgame.options.b.init();
             } else if (h.CW().CX() == 1) {
-                com.huluxia.mcgame.options.c.init();
+                com.MCWorld.mcgame.options.c.init();
             } else if (h.CW().CX() == 2) {
-                com.huluxia.mcgame.options.d.init();
+                com.MCWorld.mcgame.options.d.init();
             } else if (h.CW().CX() == 3) {
-                com.huluxia.mcgame.options.d.init();
+                com.MCWorld.mcgame.options.d.init();
             } else if (h.CW().CX() == 5) {
-                com.huluxia.mcgame.options.d.init();
+                com.MCWorld.mcgame.options.d.init();
             } else if (h.CW().CX() == 7) {
-                com.huluxia.mcgame.options.e.init();
+                com.MCWorld.mcgame.options.e.init();
             }
             bHZ = new d("sg5.w36yhews");
             bHZ.aX(in_context);
             bIa = new c();
             bIa.aX(in_context);
             bHY = new e();
-            com.huluxia.mcjsmanager.b.hD(0);
-            com.huluxia.mcjavascript.h.init();
-            com.huluxia.mcgame.d.vi();
-            com.huluxia.mcjsmanager.b.init(in_context, com.huluxia.mcgame.h.wo().wp());
+            com.MCWorld.mcjsmanager.b.hD(0);
+            com.MCWorld.mcjavascript.h.init();
+            com.MCWorld.mcgame.d.vi();
+            com.MCWorld.mcjsmanager.b.init(in_context, com.MCWorld.mcgame.h.wo().wp());
             g.gk(0);
             g.gm(0);
             d.setContext(in_context);
@@ -419,8 +419,8 @@ public class a {
     }
 
     private static boolean Rh() {
-        com.huluxia.mcjavascript.f.bX(true);
-        com.huluxia.mcjavascript.f.bY(true);
+        com.MCWorld.mcjavascript.f.bX(true);
+        com.MCWorld.mcjavascript.f.bY(true);
         return true;
     }
 
@@ -470,7 +470,7 @@ public class a {
     }
 
     public static void Rl() throws Exception {
-        if (!com.huluxia.mcsdk.g.aC(Rj())) {
+        if (!com.MCWorld.mcsdk.g.aC(Rj())) {
             Rk();
         }
     }
@@ -480,7 +480,7 @@ public class a {
 
     public static boolean a(MainActivity paramMainActivity) {
         try {
-            String soPath = com.huluxia.mcgame.h.wo().ws();
+            String soPath = com.MCWorld.mcgame.h.wo().ws();
             String soFullPath;
             if (h.CW().CX() == 0) {
                 System.loadLibrary("gnustl_shared");
@@ -493,7 +493,7 @@ public class a {
                 }
             } else if (h.CW().CX() == 1) {
                 System.loadLibrary("gnustl_shared");
-                soFullPath = soPath + File.separator + com.huluxia.mcinterface.e.aiU;
+                soFullPath = soPath + File.separator + com.MCWorld.mcinterface.e.aiU;
                 bHW = soFullPath;
                 System.load(soFullPath);
                 if (bHR) {
@@ -600,7 +600,7 @@ public class a {
                 MainActivity.getAppContext().getResources().getAssets().open("images/gui/gui.png").close();
                 return false;
             }
-            com.huluxia.mcgame.h.wo().cK("images/gui/gui.png").close();
+            com.MCWorld.mcgame.h.wo().cK("images/gui/gui.png").close();
             return false;
         } catch (Exception e2) {
             e2.printStackTrace();
@@ -625,7 +625,7 @@ public class a {
                 if (MainActivity.isUseInstalledMode()) {
                     localObject = MainActivity.getAppContext().getResources().getAssets().open(paramString);
                 } else {
-                    localObject = com.huluxia.mcgame.h.wo().cK(paramString);
+                    localObject = com.MCWorld.mcgame.h.wo().cK(paramString);
                 }
             } catch (Exception e) {
                 if (MainActivity.isUseInstalledMode()) {

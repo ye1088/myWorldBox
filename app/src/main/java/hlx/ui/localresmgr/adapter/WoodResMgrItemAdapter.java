@@ -12,19 +12,19 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.k;
-import com.huluxia.t;
-import com.huluxia.utils.ah;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
-import com.huluxia.widget.dialog.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.k;
+import com.MCWorld.t;
+import com.MCWorld.utils.ah;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.widget.dialog.e;
 import com.simple.colorful.d;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -35,7 +35,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
     private List<Object> akJ = null;
     private DialogManager akK;
     private boolean bYS = false;
-    private com.huluxia.data.map.b bYT;
+    private com.MCWorld.data.map.b bYT;
     private OnCheckedChangeListener bYW = new OnCheckedChangeListener(this) {
         final /* synthetic */ WoodResMgrItemAdapter bZn;
 
@@ -45,9 +45,9 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
 
         public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
             int id = compoundButton.getId();
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) compoundButton.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) compoundButton.getTag();
             if (b) {
-                for (com.huluxia.data.map.b si : this.bZn.mObjects) {
+                for (com.MCWorld.data.map.b si : this.bZn.mObjects) {
                     if (b && si.path.equals(item.path)) {
                         si.state = 1;
                         ah.KZ().gc(item.path);
@@ -58,7 +58,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
                 }
             } else {
                 ah.KZ().gc(null);
-                for (com.huluxia.data.map.b si2 : this.bZn.mObjects) {
+                for (com.MCWorld.data.map.b si2 : this.bZn.mObjects) {
                     si2.state = 0;
                     hlx.ui.localresmgr.cache.a.Un().hA(item.pU);
                 }
@@ -80,7 +80,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         }
 
         public void onClick(View v) {
-            com.huluxia.data.map.b item = (com.huluxia.data.map.b) ((c) v.getTag()).bZc.getTag();
+            com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) ((c) v.getTag()).bZc.getTag();
             if (this.bZn.bYS) {
                 if (this.bZn.akJ.contains(item)) {
                     this.bZn.akJ.remove(item);
@@ -101,7 +101,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         void dL(boolean z);
     }
 
-    private class b implements com.huluxia.widget.dialog.e.a {
+    private class b implements com.MCWorld.widget.dialog.e.a {
         final /* synthetic */ WoodResMgrItemAdapter bZn;
 
         private b(WoodResMgrItemAdapter woodResMgrItemAdapter) {
@@ -144,7 +144,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
     private void T(List<Object> objects) {
         if (!UtilsFunction.empty(objects)) {
             for (int i = objects.size() - 1; i >= 0; i--) {
-                if (((com.huluxia.data.map.b) objects.get(i)).ver.contains(String.valueOf(ReStartSoftFlag.MC_RESTART_V0150.Value()))) {
+                if (((com.MCWorld.data.map.b) objects.get(i)).ver.contains(String.valueOf(ReStartSoftFlag.MC_RESTART_V0150.Value()))) {
                     objects.remove(i);
                 }
             }
@@ -198,7 +198,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         } else {
             holder = (c) convertView.getTag();
         }
-        com.huluxia.data.map.b item = (com.huluxia.data.map.b) getItem(position);
+        com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) getItem(position);
         holder.name.setText(item.name);
         if (holder.aWl != null) {
             if (item.size == 0) {
@@ -259,7 +259,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         this.akJ = checkList;
     }
 
-    public void i(com.huluxia.data.map.b item) {
+    public void i(com.MCWorld.data.map.b item) {
         hlx.ui.localresmgr.cache.b.Us().o(item);
         String usingWood = ah.KZ().LJ();
         if (usingWood != null && usingWood.equalsIgnoreCase(item.path)) {
@@ -277,7 +277,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         dialog.showDialog();
     }
 
-    private void j(final com.huluxia.data.map.b item) {
+    private void j(final com.MCWorld.data.map.b item) {
         int colorMsg = d.getColor(this.bns, R.attr.dialog_msg_label_color);
         int colorRed = this.bns.getResources().getColor(R.color.dialog_ok_btn_color);
         int colorGray = d.getColor(this.bns, 16842808);
@@ -296,7 +296,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
             public void onOk() {
                 Iterator it = this.bZn.mObjects.iterator();
                 while (it.hasNext()) {
-                    com.huluxia.data.map.b fileItem = (com.huluxia.data.map.b) it.next();
+                    com.MCWorld.data.map.b fileItem = (com.MCWorld.data.map.b) it.next();
                     if (fileItem.path.equals(item.path)) {
                         this.bZn.i(fileItem);
                         it.remove();
@@ -320,7 +320,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
             }
 
             public void pressMenuById(int inIndex, Object inObject) {
-                com.huluxia.data.map.b item = (com.huluxia.data.map.b) inObject;
+                com.MCWorld.data.map.b item = (com.MCWorld.data.map.b) inObject;
                 switch (inIndex) {
                     case 1:
                         k.e(this.bZn.bns, item.mapId, item.pQ);
@@ -342,7 +342,7 @@ public class WoodResMgrItemAdapter extends BaseAdapter {
         }, d.RB());
     }
 
-    private void k(com.huluxia.data.map.b item) {
+    private void k(com.MCWorld.data.map.b item) {
         this.bZl.showMenu(item, item.name);
     }
 }

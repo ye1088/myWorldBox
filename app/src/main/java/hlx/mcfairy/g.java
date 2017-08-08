@@ -1,7 +1,7 @@
 package hlx.mcfairy;
 
-import com.huluxia.HTApplication;
-import com.huluxia.framework.base.log.HLog;
+import com.MCWorld.HTApplication;
+import com.MCWorld.framework.base.log.HLog;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

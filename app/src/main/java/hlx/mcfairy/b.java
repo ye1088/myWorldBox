@@ -3,9 +3,9 @@ package hlx.mcfairy;
 import android.app.Activity;
 import android.os.Handler;
 import android.view.View;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.mcfloat.q;
-import com.huluxia.mcinterface.h;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.mcfloat.q;
+import com.MCWorld.mcinterface.h;
 import hlx.mcfairy.messgenerator.a;
 import hlx.mcfairy.messgenerator.a$a;
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:gravity="center_vertical" android:background="?listSelector" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.huluxia.framework.base.image.PaintView android:id="@id/member_image" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="8.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <com.MCWorld.framework.base.image.PaintView
+        android:id="@id/member_image" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="8.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
     <TextView android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/tv_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:maxEms="4" android:singleLine="true" android:layout_below="@id/member_image" android:layout_centerHorizontal="true" />
     <TextView android:textSize="13.0sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_member_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="室长" android:maxEms="4" android:singleLine="true" android:layout_below="@id/tv_member_name" android:layout_centerHorizontal="true" />
 </RelativeLayout>

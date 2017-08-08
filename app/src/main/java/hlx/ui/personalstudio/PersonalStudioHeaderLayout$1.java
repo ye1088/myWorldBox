@@ -2,7 +2,7 @@ package hlx.ui.personalstudio;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.k;
+import com.MCWorld.k;
 
 class PersonalStudioHeaderLayout$1 implements OnClickListener {
     final /* synthetic */ PersonalStudioHeaderLayout cdR;

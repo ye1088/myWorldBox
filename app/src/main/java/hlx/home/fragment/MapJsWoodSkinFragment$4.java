@@ -1,9 +1,9 @@
 package hlx.home.fragment;
 
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.module.q;
-import com.huluxia.r;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.module.q;
+import com.MCWorld.r;
 import hlx.ui.recommendapp.a.a;
 import java.util.Iterator;
 

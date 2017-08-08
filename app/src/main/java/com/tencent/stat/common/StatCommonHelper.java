@@ -11,7 +11,7 @@ import android.os.StatFs;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;

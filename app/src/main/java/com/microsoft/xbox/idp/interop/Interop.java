@@ -2,8 +2,8 @@ package com.microsoft.xbox.idp.interop;
 
 import android.app.Activity;
 import android.util.Log;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.widget.x5web.a;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.widget.x5web.a;
 import org.mozilla.javascript.Context;
 
 public class Interop {

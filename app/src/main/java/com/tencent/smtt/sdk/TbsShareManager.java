@@ -2,11 +2,10 @@ package com.tencent.smtt.sdk;
 
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
-import com.huluxia.framework.BaseHttpMgr;
+import com.MCWorld.framework.BaseHttpMgr;
 import com.tencent.smtt.sdk.TbsListener.ErrorCode;
 import com.tencent.smtt.utils.TbsLog;
-import com.tencent.smtt.utils.a;
-import com.tencent.smtt.utils.h;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

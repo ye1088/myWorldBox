@@ -2,8 +2,8 @@ package hlx.mcstorymode.storyselect;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.framework.R;
-import com.huluxia.k;
+import com.MCWorld.framework.R;
+import com.MCWorld.k;
 import hlx.data.localstore.a;
 
 class StoryPageFragment$2 implements OnClickListener {

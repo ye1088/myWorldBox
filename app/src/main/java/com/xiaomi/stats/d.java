@@ -2,7 +2,7 @@ package com.xiaomi.stats;
 
 import android.os.SystemClock;
 import android.text.TextUtils;
-import com.xiaomi.channel.commonutils.logger.b;
+
 import com.xiaomi.push.service.XMPushService;
 import com.xiaomi.smack.a;
 import com.xiaomi.smack.j;
@@ -97,7 +97,7 @@ public class d implements com.xiaomi.smack.d {
                 this.h = 0;
             }
             if (d) {
-                if ((!TextUtils.equals(this.e, f) && this.g > com.huluxia.video.recorder.b.bpg) || this.g > 5400000) {
+                if ((!TextUtils.equals(this.e, f) && this.g > com.MCWorld.video.recorder.b.bpg) || this.g > 5400000) {
                     d();
                 }
                 this.e = f;

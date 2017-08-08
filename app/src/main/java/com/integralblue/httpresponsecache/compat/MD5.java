@@ -1,7 +1,7 @@
 package com.integralblue.httpresponsecache.compat;
 
 import android.os.FileUtils;
-import com.huluxia.image.pipeline.memory.b;
+import com.MCWorld.image.pipeline.memory.b;
 import java.security.DigestException;
 import java.security.MessageDigest;
 

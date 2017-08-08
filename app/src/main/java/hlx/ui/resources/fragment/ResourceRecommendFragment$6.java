@@ -2,9 +2,9 @@ package hlx.ui.resources.fragment;
 
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.r;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.r;
 import hlx.data.tongji.a;
 
 class ResourceRecommendFragment$6 implements OnCheckedChangeListener {

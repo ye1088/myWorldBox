@@ -1,7 +1,7 @@
 package com.tencent.connect.common;
 
 import android.content.Intent;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.tencent.open.a.f;
 import com.tencent.open.utils.SystemUtils;
 import com.tencent.open.utils.Util;

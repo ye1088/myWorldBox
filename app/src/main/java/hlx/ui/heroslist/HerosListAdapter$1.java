@@ -2,7 +2,7 @@ package hlx.ui.heroslist;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.t;
+import com.MCWorld.t;
 
 class HerosListAdapter$1 implements OnClickListener {
     final /* synthetic */ c$a bYm;

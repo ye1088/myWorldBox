@@ -5,13 +5,12 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Matrix;
 import android.graphics.drawable.Drawable;
-import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Orientation;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 @SuppressLint({"ViewConstructor"})
 public class FlipLoadingLayout extends LoadingLayout {

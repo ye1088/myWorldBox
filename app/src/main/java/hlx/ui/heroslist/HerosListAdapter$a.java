@@ -3,7 +3,7 @@ package hlx.ui.heroslist;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.huluxia.framework.base.image.PaintView;
+import com.MCWorld.framework.base.image.PaintView;
 
 public class HerosListAdapter$a {
     public ImageView bYo;

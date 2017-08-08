@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
-import com.huluxia.module.p;
+import com.MCWorld.module.p;
 import com.tencent.mm.sdk.plugin.BaseProfile;
 import java.util.ArrayList;
 

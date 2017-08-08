@@ -1,6 +1,6 @@
 package hlx.mcstorymode.storyselect;
 
-import com.huluxia.utils.UtilsDownloadFile.a;
+import com.MCWorld.utils.UtilsDownloadFile.a;
 
 class StoryPageFragment$a implements a {
     final /* synthetic */ StoryPageFragment bXx;

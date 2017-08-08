@@ -1,6 +1,6 @@
 package io.netty.channel.unix;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import io.netty.channel.unix.Errors.NativeIoException;
 import io.netty.util.internal.ObjectUtil;
 import io.netty.util.internal.PlatformDependent;

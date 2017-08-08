@@ -1,13 +1,13 @@
 package hlx.ui.recommendapp.downloadmanager;
 
 import android.content.Context;
-import com.huluxia.controller.resource.ResourceCtrl;
-import com.huluxia.controller.resource.bean.ResTaskInfo;
-import com.huluxia.controller.resource.bean.ResTaskInfo.State;
-import com.huluxia.controller.resource.handler.impl.a;
-import com.huluxia.module.q;
-import com.huluxia.r;
-import com.huluxia.utils.j;
+import com.MCWorld.controller.resource.ResourceCtrl;
+import com.MCWorld.controller.resource.bean.ResTaskInfo;
+import com.MCWorld.controller.resource.bean.ResTaskInfo.State;
+import com.MCWorld.controller.resource.handler.impl.a;
+import com.MCWorld.module.q;
+import com.MCWorld.r;
+import com.MCWorld.utils.j;
 
 /* compiled from: RecomAppDownManager */
 public class b {

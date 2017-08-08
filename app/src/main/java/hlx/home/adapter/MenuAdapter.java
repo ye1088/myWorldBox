@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import hlx.data.home.menu.a.a;
 import java.util.List;
 

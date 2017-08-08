@@ -1,6 +1,6 @@
 package hlx.ui.recommendapp;
 
-import com.huluxia.controller.resource.bean.ResTaskInfo;
+import com.MCWorld.controller.resource.bean.ResTaskInfo;
 
 class RecommendAppAdapter$1 implements Runnable {
     final /* synthetic */ ResTaskInfo aTr;

@@ -1,7 +1,7 @@
 package hlx.ui.recommendapp.statisticsrecord;
 
-import com.huluxia.module.q;
-import com.huluxia.r;
+import com.MCWorld.module.q;
+import com.MCWorld.r;
 import java.util.LinkedList;
 import java.util.List;
 

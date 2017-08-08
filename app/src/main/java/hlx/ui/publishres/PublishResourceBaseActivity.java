@@ -21,40 +21,40 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.data.HTUploadInfo;
-import com.huluxia.data.j;
-import com.huluxia.data.map.MapProfileInfo.MapProfileItem;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.json.Json;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsBitmap;
-import com.huluxia.framework.base.utils.UtilsFile;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.module.aa;
-import com.huluxia.module.h;
-import com.huluxia.module.o;
-import com.huluxia.module.topic.k;
-import com.huluxia.module.topic.l;
-import com.huluxia.t;
-import com.huluxia.ui.base.HTBaseActivity;
-import com.huluxia.ui.itemadapter.MyMapCateItem;
-import com.huluxia.ui.itemadapter.TagAdapter;
-import com.huluxia.ui.itemadapter.TagAdapter.a;
-import com.huluxia.utils.ad;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.at;
-import com.huluxia.utils.aw;
-import com.huluxia.utils.y;
-import com.huluxia.widget.listview.GridViewNotScroll;
-import com.huluxia.widget.photowall.PhotoWall2;
-import com.huluxia.widget.photowall.PhotoWall2.b;
+import com.MCWorld.data.HTUploadInfo;
+import com.MCWorld.data.j;
+import com.MCWorld.data.map.MapProfileInfo.MapProfileItem;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.json.Json;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsBitmap;
+import com.MCWorld.framework.base.utils.UtilsFile;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.module.aa;
+import com.MCWorld.module.h;
+import com.MCWorld.module.o;
+import com.MCWorld.module.topic.k;
+import com.MCWorld.module.topic.l;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.HTBaseActivity;
+import com.MCWorld.ui.itemadapter.MyMapCateItem;
+import com.MCWorld.ui.itemadapter.TagAdapter;
+import com.MCWorld.ui.itemadapter.TagAdapter.a;
+import com.MCWorld.utils.ad;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.at;
+import com.MCWorld.utils.aw;
+import com.MCWorld.utils.y;
+import com.MCWorld.widget.listview.GridViewNotScroll;
+import com.MCWorld.widget.photowall.PhotoWall2;
+import com.MCWorld.widget.photowall.PhotoWall2.b;
 import com.simple.colorful.d;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -82,7 +82,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
     protected RadioButton ceB;
     protected RadioButton ceC;
     protected RadioButton ceD;
-    protected com.huluxia.widget.a ceE;
+    protected com.MCWorld.widget.a ceE;
     protected RadioGroup ceF;
     protected TextView ceG;
     protected RelativeLayout ceH;
@@ -376,7 +376,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
         }
         this.ceF = (RadioGroup) findViewById(R.id.rdogrpPublishResType);
         this.ceF.setOnCheckedChangeListener(this.ceW);
-        this.ceE = new com.huluxia.widget.a(new com.huluxia.widget.a.a(this) {
+        this.ceE = new com.MCWorld.widget.a(new com.MCWorld.widget.a.a(this) {
             final /* synthetic */ PublishResourceBaseActivity ceZ;
 
             {
@@ -416,7 +416,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
                 this.ceZ = this$0;
             }
 
-            public void a(com.huluxia.module.picture.b unit, int position) {
+            public void a(com.MCWorld.module.picture.b unit, int position) {
                 if (this.ceZ.aIT.isEnabled()) {
                     this.ceZ.bhm.d(unit, position);
                 }
@@ -613,7 +613,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
         Iterator it = this.cep.resourceList.iterator();
         while (it.hasNext()) {
             String szUrl = (String) it.next();
-            com.huluxia.module.picture.b pn = new com.huluxia.module.picture.b();
+            com.MCWorld.module.picture.b pn = new com.MCWorld.module.picture.b();
             pn.url = szUrl;
             try {
                 String path = new URL(szUrl).getPath();
@@ -631,7 +631,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
     private void en(String url) {
         if (!TextUtils.isEmpty(url)) {
             this.ceH.setVisibility(0);
-            this.ceP.setUri(Uri.parse(url)).placeHolder(d.isDayMode() ? R.drawable.place_holder_normal : R.drawable.place_holder_night_normal).setImageLoader(com.huluxia.l.cb().getImageLoader());
+            this.ceP.setUri(Uri.parse(url)).placeHolder(d.isDayMode() ? R.drawable.place_holder_normal : R.drawable.place_holder_night_normal).setImageLoader(com.MCWorld.l.cb().getImageLoader());
         }
     }
 
@@ -699,10 +699,10 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
 
     protected void ks(int index) {
         HLog.debug("ETPrint", "submitImage index is " + index, new Object[0]);
-        List<com.huluxia.module.picture.b> photos = this.bhm.getPhotos();
+        List<com.MCWorld.module.picture.b> photos = this.bhm.getPhotos();
         boolean isPass = true;
         if (index < photos.size()) {
-            com.huluxia.module.picture.b photo = (com.huluxia.module.picture.b) photos.get(index);
+            com.MCWorld.module.picture.b photo = (com.MCWorld.module.picture.b) photos.get(index);
             String path = UtilsBitmap.compressFileBitmapToDisk(photo.localPath, null, 300000);
             if (photo.id != -1 && UtilsFunction.empty(photo.url) && UtilsFile.isExist(path)) {
                 ek(String.format("提交第%s张图片", new Object[]{Integer.valueOf(index + 1)}));
@@ -722,9 +722,9 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
     }
 
     protected void a(int index, HTUploadInfo info) {
-        List<com.huluxia.module.picture.b> photos = this.bhm.getPhotos();
-        ((com.huluxia.module.picture.b) photos.get(index)).url = info.getUrl();
-        ((com.huluxia.module.picture.b) photos.get(index)).fid = info.getFid();
+        List<com.MCWorld.module.picture.b> photos = this.bhm.getPhotos();
+        ((com.MCWorld.module.picture.b) photos.get(index)).url = info.getUrl();
+        ((com.MCWorld.module.picture.b) photos.get(index)).fid = info.getFid();
     }
 
     protected void VC() {
@@ -748,26 +748,26 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
             String author = this.ceL.getText().toString();
             String source = this.ceM.getText().toString();
             String detail = this.ceN.getText().toString();
-            List<com.huluxia.module.picture.b> images = new ArrayList();
+            List<com.MCWorld.module.picture.b> images = new ArrayList();
             Collection photos = this.bhm.getPhotos();
             if (!ad.empty(photos)) {
                 images = photos;
             }
-            ah.KZ().a(new com.huluxia.data.map.j(userId, author, source, detail, images));
+            ah.KZ().a(new com.MCWorld.data.map.j(userId, author, source, detail, images));
         }
     }
 
     protected void ER() {
         if (j.ep().ey()) {
             long userId = j.ep().getUserid();
-            com.huluxia.data.map.j draft = ah.KZ().LV();
+            com.MCWorld.data.map.j draft = ah.KZ().LV();
             if (draft != null && draft.pW == userId) {
                 this.ceL.setText(draft.author);
                 this.ceM.setText(draft.source);
                 this.ceN.setText(draft.detail);
                 if (!ad.empty(draft.images)) {
-                    for (com.huluxia.module.picture.b unit : draft.images) {
-                        if (!TextUtils.isEmpty(unit.localPath) && com.huluxia.utils.UtilsFile.isExist(unit.localPath)) {
+                    for (com.MCWorld.module.picture.b unit : draft.images) {
+                        if (!TextUtils.isEmpty(unit.localPath) && com.MCWorld.utils.UtilsFile.isExist(unit.localPath)) {
                             this.bhm.e(unit);
                         }
                     }
@@ -779,7 +779,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
     protected void ET() {
         if (j.ep().ey()) {
             long userId = j.ep().getUserid();
-            com.huluxia.data.map.j draft = ah.KZ().LV();
+            com.MCWorld.data.map.j draft = ah.KZ().LV();
             if (draft != null && draft.pW == userId) {
                 ah.KZ().LW();
             }
@@ -790,7 +790,7 @@ public abstract class PublishResourceBaseActivity extends HTBaseActivity impleme
         ek(getString(R.string.is_loading));
         Iterator it = this.bhm.getPhotos().iterator();
         while (it.hasNext()) {
-            com.huluxia.module.picture.b photo = (com.huluxia.module.picture.b) it.next();
+            com.MCWorld.module.picture.b photo = (com.MCWorld.module.picture.b) it.next();
             photo.fid = null;
             photo.url = null;
         }

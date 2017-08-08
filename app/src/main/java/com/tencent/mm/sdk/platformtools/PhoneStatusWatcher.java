@@ -3,7 +3,7 @@ package com.tencent.mm.sdk.platformtools;
 import android.content.Context;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import java.util.LinkedList;
 import java.util.List;
 

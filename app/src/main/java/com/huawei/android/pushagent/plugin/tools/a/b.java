@@ -38,7 +38,7 @@ public class b {
         char[] cArr2 = new char[(length << 1)];
         for (int i2 = 0; i2 < length; i2++) {
             int i3 = i + 1;
-            cArr2[i] = cArr[(bArr[i2] & com.huluxia.video.recorder.b.bpd) >>> 4];
+            cArr2[i] = cArr[(bArr[i2] & com.MCWorld.video.recorder.b.bpd) >>> 4];
             i = i3 + 1;
             cArr2[i3] = cArr[bArr[i2] & 15];
         }

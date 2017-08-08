@@ -1,8 +1,8 @@
 package hlx.mcstorymode.storyutils;
 
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.mcinterface.h;
-import com.huluxia.utils.j;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.mcinterface.h;
+import com.MCWorld.utils.j;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;

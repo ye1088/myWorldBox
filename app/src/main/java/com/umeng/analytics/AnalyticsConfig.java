@@ -1,7 +1,7 @@
 package com.umeng.analytics;
 
 import android.content.Context;
-import com.huluxia.video.recorder.b;
+
 import u.aly.bi;
 
 public class AnalyticsConfig {

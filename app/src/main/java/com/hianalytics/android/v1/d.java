@@ -6,9 +6,9 @@ import android.content.SharedPreferences.Editor;
 import android.os.Handler;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import com.hianalytics.android.a.a.a;
+
 import com.hianalytics.android.a.a.c;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.mipush.sdk.MiPushClient;
 import io.netty.util.internal.StringUtil;
 import java.text.SimpleDateFormat;
@@ -30,7 +30,7 @@ public final class d implements Runnable {
 
     private static void a(Context context, SharedPreferences sharedPreferences, long j) {
         Editor edit = sharedPreferences.edit();
-        String valueOf = String.valueOf(new StringBuilder(String.valueOf(j)).append(a.b(((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getDeviceId())).toString());
+        String valueOf = String.valueOf(new StringBuilder(String.valueOf(j)).append(a.b(((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getDeviceId())).toString());
         edit.remove("session_id");
         edit.remove("refer_id");
         edit.putString("session_id", valueOf);
@@ -52,7 +52,7 @@ public final class d implements Runnable {
         SharedPreferences a = c.a(context, "sessioncontext");
         String string = a.getString("session_id", "");
         if ("".equals(string)) {
-            string = a.b(((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getDeviceId());
+            string = a.b(((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getDeviceId());
             long currentTimeMillis = System.currentTimeMillis();
             string = String.valueOf(new StringBuilder(String.valueOf(currentTimeMillis)).append(string).toString());
             Editor edit = a.edit();
@@ -62,7 +62,7 @@ public final class d implements Runnable {
         }
         String str = string;
         String string2 = a.getString("refer_id", "");
-        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
         if (telephonyManager == null) {
             a.h();
             Object obj = null;

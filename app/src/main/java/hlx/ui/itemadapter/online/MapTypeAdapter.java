@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import java.util.ArrayList;
 
 public class MapTypeAdapter extends BaseAdapter {

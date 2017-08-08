@@ -40,7 +40,8 @@
                     </RelativeLayout>
                 </ScrollView>
                 <RelativeLayout android:id="@id/rly_patcha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ly_media">
-                    <com.huluxia.framework.base.image.PaintView android:id="@id/iv_patch" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:contentDescription="@null" />
+                    <com.MCWorld.framework.base.image.PaintView
+                        android:id="@id/iv_patch" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:contentDescription="@null" />
                     <EditText android:textSize="14.0sp" android:textColor="#ff000000" android:textColorHint="#ffb3b3b3" android:id="@id/tv_patch" android:background="@color/transparent" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="请输入验证码" android:singleLine="true" android:layout_toRightOf="@id/iv_patch" android:layout_centerVertical="true" android:textCursorDrawable="@null" />
                     <ImageView android:background="@drawable/input_box_cutoff_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_patch" android:contentDescription="@null" />
                 </RelativeLayout>
@@ -53,10 +54,12 @@
                         </LinearLayout>
                     </RelativeLayout>
                     <LinearLayout android:orientation="vertical" android:id="@id/ly_photo_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                        <com.huluxia.widget.photowall.PhotoWall2 android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxSelection="8" app:photoWidth="81.0dip" app:photoHeight="81.0dip" app:customerPhotoText="@string/customerPhotoTxt" app:showCoverFlag="true" />
+                        <com.MCWorld.widget.photowall.PhotoWall2
+                            android:id="@id/photowall2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxSelection="8" app:photoWidth="81.0dip" app:photoHeight="81.0dip" app:customerPhotoText="@string/customerPhotoTxt" app:showCoverFlag="true" />
                     </LinearLayout>
                     <RelativeLayout android:id="@id/rl_tag_ctx" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                        <com.huluxia.widget.listview.GridViewNotScroll android:id="@id/grid_tag" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:overScrollMode="never" />
+                        <com.MCWorld.widget.listview.GridViewNotScroll
+                            android:id="@id/grid_tag" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:overScrollMode="never" />
                     </RelativeLayout>
                 </LinearLayout>
             </RelativeLayout>

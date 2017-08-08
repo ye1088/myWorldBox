@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="vertical" android:id="@id/scroll_header_container" android:layout_width="fill_parent" android:layout_height="@dimen/home_header_height">
-            <com.huluxia.widget.banner.BannerGallery android:id="@id/iv_mainpage_banner" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+            <com.MCWorld.widget.banner.BannerGallery
+                android:id="@id/iv_mainpage_banner" android:layout_width="fill_parent" android:layout_height="150.0dip" />
             <View android:id="@id/home_split_line_mode_bg_1" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/home_sticky_height">
@@ -75,9 +76,11 @@
             <View android:id="@id/home_split_line_mode_bg_2" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
             <View android:id="@id/home_interval_bg" android:background="?home_interval_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
             <View android:id="@id/home_split_line_mode_bg_3" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-            <com.huluxia.widget.viewpager.PagerSlidingTabStrip android:id="@id/pager_sliding_tab_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+            <com.MCWorld.widget.viewpager.PagerSlidingTabStrip
+                android:id="@id/pager_sliding_tab_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" />
             <View android:id="@id/split_top" android:background="?home_split_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
         </LinearLayout>
     </LinearLayout>
-    <com.huluxia.framework.base.widget.pager.SelectedViewPager android:id="@id/home_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/home_sticky_height" />
+    <com.MCWorld.framework.base.widget.pager.SelectedViewPager
+        android:id="@id/home_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/home_sticky_height" />
 </merge>

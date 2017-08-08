@@ -17,26 +17,26 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.async.AsyncTaskCenter;
-import com.huluxia.framework.base.async.AsyncTaskCenter.RunnableCallback;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
-import com.huluxia.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
-import com.huluxia.mojang.Mojang;
-import com.huluxia.mojang.MojangMessage;
-import com.huluxia.r;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.ui.base.BaseLoadingFragment;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.ai;
-import com.huluxia.widget.Constants.DownFileType;
-import com.huluxia.widget.dialog.e;
-import com.huluxia.widget.dialog.g;
-import com.huluxia.widget.dialog.k_dialog_class;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.async.AsyncTaskCenter;
+import com.MCWorld.framework.base.async.AsyncTaskCenter.RunnableCallback;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.CommonMenuDialogListener;
+import com.MCWorld.framework.base.widget.dialog.CommonMenuDialog.CommonMenuDialogAdapter.ResMenuItem;
+import com.MCWorld.mojang.Mojang;
+import com.MCWorld.mojang.MojangMessage;
+import com.MCWorld.r;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.BaseLoadingFragment;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.ai;
+import com.MCWorld.widget.Constants.DownFileType;
+import com.MCWorld.widget.dialog.e;
+import com.MCWorld.widget.dialog.g;
+import com.MCWorld.widget.dialog.k_dialog_class;
 import com.simple.colorful.d;
 import hlx.ui.localresmgr.adapter.MapResMgrItemAdapter;
 import java.util.ArrayList;
@@ -65,7 +65,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     private int akI = 0;
     private List<Object> akJ = new ArrayList();
     private ArrayList<Object> akW = new ArrayList();
-    private List<com.huluxia.data.map.b> ako;
+    private List<com.MCWorld.data.map.b> ako;
     private k_dialog_class bSg;
     private ArrayList<Object> bbA = new ArrayList();
     private LinearLayout caA;
@@ -85,7 +85,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     private MapResMgrItemAdapter caJ = null;
     private k_dialog_class caK;
     private a caL;
-    private com.huluxia.data.map.b caM;
+    private com.MCWorld.data.map.b caM;
     private CommonMenuDialog caN;
     private int cak = 1;
     private TextView cam;
@@ -209,7 +209,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
             super.show();
         }
 
-        public void U(List<com.huluxia.data.map.b> items) {
+        public void U(List<com.MCWorld.data.map.b> items) {
             View layout = ((LayoutInflater) this.context.getSystemService("layout_inflater")).inflate(R.layout.dialog_menu_img, (ViewGroup) findViewById(R.id.dialog_layout_root));
             setContentView(layout);
             ((TextView) layout.findViewById(R.id.dialog_menu_title)).setText(this.title);
@@ -235,7 +235,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         }
     }
 
-    private class b implements com.huluxia.widget.dialog.e.a {
+    private class b implements com.MCWorld.widget.dialog.e.a {
         final /* synthetic */ LocResMapFragment caO;
 
         private b(LocResMapFragment locResMapFragment) {
@@ -353,7 +353,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         G(this.ako);
     }
 
-    public void G(List<com.huluxia.data.map.b> data) {
+    public void G(List<com.MCWorld.data.map.b> data) {
         if (data == null || data.size() == 0) {
             this.can.setVisibility(0);
             this.mListView.setVisibility(8);
@@ -464,7 +464,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     }
 
     private void UF() {
-        for (com.huluxia.data.map.b item : this.akJ) {
+        for (com.MCWorld.data.map.b item : this.akJ) {
             hlx.ui.localresmgr.cache.b.Us().q(item);
         }
         this.akI = 0;
@@ -484,7 +484,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         AL();
     }
 
-    public void l(com.huluxia.data.map.b item) {
+    public void l(com.MCWorld.data.map.b item) {
         v(item);
     }
 
@@ -492,9 +492,9 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         AL();
     }
 
-    public void m(final com.huluxia.data.map.b item) {
+    public void m(final com.MCWorld.data.map.b item) {
         String srcName = item.name;
-        e dialog = new e(this.mActivity, new com.huluxia.widget.dialog.e.a(this) {
+        e dialog = new e(this.mActivity, new com.MCWorld.widget.dialog.e.a(this) {
             final /* synthetic */ LocResMapFragment caO;
 
             public void rb() {
@@ -520,17 +520,17 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     }
 
     public void ht(String name) {
-        com.huluxia.k.d(this.mActivity, UtilsFile.Kq() + name, name);
+        com.MCWorld.k.d(this.mActivity, UtilsFile.Kq() + name, name);
     }
 
     public void aH(String name, String mapGameDir) {
-        ArrayList<com.huluxia.data.map.b> fmList = ai.l(name, true);
+        ArrayList<com.MCWorld.data.map.b> fmList = ai.l(name, true);
         if (fmList.size() < 1) {
             t.show_toast(this.mActivity, this.mActivity.getString(R.string.local_resmgr_backup_onfloatwindows_tips));
             return;
         }
         for (int i = 0; i < fmList.size(); i++) {
-            com.huluxia.data.map.b fm = (com.huluxia.data.map.b) fmList.get(i);
+            com.MCWorld.data.map.b fm = (com.MCWorld.data.map.b) fmList.get(i);
             fm.pP = mapGameDir;
             fmList.set(i, fm);
         }
@@ -547,7 +547,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
     }
 
     public void l(long topic_id, long map_id) {
-        com.huluxia.k.b(this.mActivity, map_id, topic_id);
+        com.MCWorld.k.b(this.mActivity, map_id, topic_id);
     }
 
     public int hu(String name) {
@@ -560,7 +560,7 @@ public class LocResMapFragment extends BaseLoadingFragment implements hlx.ui.loc
         dia.u(null, null, this.mActivity.getString(R.string.confirm));
     }
 
-    private boolean v(com.huluxia.data.map.b item) {
+    private boolean v(com.MCWorld.data.map.b item) {
         if (UtilsFile.isExist(UtilsFile.eQ(item.name)) || UtilsFile.isExist(UtilsFile.fS(item.name))) {
             this.bSg.gM_setText(this.mActivity.getString(R.string.map_reading));
             if (!this.mActivity.isFinishing()) {

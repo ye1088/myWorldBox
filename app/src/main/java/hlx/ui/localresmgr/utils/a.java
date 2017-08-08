@@ -1,6 +1,6 @@
 package hlx.ui.localresmgr.utils;
 
-import com.huluxia.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
 
 /* compiled from: ResUtils */
 public class a {

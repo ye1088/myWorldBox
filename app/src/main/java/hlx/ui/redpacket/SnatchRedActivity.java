@@ -14,9 +14,9 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.huluxia.framework.R;
-import com.huluxia.r;
-import com.huluxia.utils.ah;
+import com.MCWorld.framework.R;
+import com.MCWorld.r;
+import com.MCWorld.utils.ah;
 import hlx.data.localstore.a;
 import java.util.List;
 

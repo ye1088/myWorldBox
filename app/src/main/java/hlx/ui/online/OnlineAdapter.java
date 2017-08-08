@@ -11,17 +11,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsString;
-import com.huluxia.k;
-import com.huluxia.l;
-import com.huluxia.mconline.gameloc.http.g;
-import com.huluxia.module.n;
-import com.huluxia.utils.y;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsString;
+import com.MCWorld.k;
+import com.MCWorld.l;
+import com.MCWorld.mconline.gameloc.http.g;
+import com.MCWorld.module.n;
+import com.MCWorld.utils.y;
 import com.simple.colorful.b;
 import com.simple.colorful.d;
 import com.simple.colorful.setter.j;
@@ -49,7 +49,7 @@ public class OnlineAdapter extends BaseAdapter implements b {
             HLog.verbose("TAG", "DTPrint onItemClick " + data.online_ip + ":" + data.online_port, new Object[0]);
             HLog.verbose("TAG", "DTPrint onItemClick " + data.server_ip + ":" + data.server_port, new Object[0]);
             EventNotifyCenter.notifyEvent(n.class, n.axj, new Object[]{Boolean.valueOf(true)});
-            com.huluxia.mconline.gamerole.a.Bf().a(this.ccy.mContext, data.online_ip, data.online_port, data.server_ip, data.server_port, data.room_no);
+            com.MCWorld.mconline.gamerole.a.Bf().a(this.ccy.mContext, data.online_ip, data.online_port, data.server_ip, data.server_port, data.room_no);
         }
     };
     private OnClickListener ccx = new OnClickListener(this) {

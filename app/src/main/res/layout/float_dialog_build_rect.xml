@@ -11,15 +11,18 @@
     <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="5.0dip" />
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip">
         <TextView android:gravity="center|left" android:id="@id/tvBuildX" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="输入边长x:" android:layout_weight="1.0" />
-        <com.huluxia.widget.EditTextWithDelete android:id="@id/floatDlgbuildEditRectLineX" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
+        <com.MCWorld.widget.EditTextWithDelete
+            android:id="@id/floatDlgbuildEditRectLineX" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip">
         <TextView android:gravity="center|left" android:id="@id/tvBuildZ" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="输入边长z:" android:layout_weight="1.0" />
-        <com.huluxia.widget.EditTextWithDelete android:id="@id/floatDlgbuildEditRectLineZ" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
+        <com.MCWorld.widget.EditTextWithDelete
+            android:id="@id/floatDlgbuildEditRectLineZ" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip">
         <TextView android:gravity="center|left" android:id="@id/tvBuildY" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="输入高度y:" android:layout_weight="1.0" />
-        <com.huluxia.widget.EditTextWithDelete android:id="@id/floatDlgbuildEditRectLineY" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
+        <com.MCWorld.widget.EditTextWithDelete
+            android:id="@id/floatDlgbuildEditRectLineY" android:layout_width="85.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:hint="输入数字" android:maxLength="3" android:numeric="integer" style="@style/value_edit_normal_float" />
     </LinearLayout>
     <TextView android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="10.0dip">

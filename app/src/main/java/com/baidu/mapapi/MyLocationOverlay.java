@@ -15,7 +15,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.location.Location;
 import com.baidu.mapapi.Overlay.Snappable;
-import com.huluxia.mcfloat.InstanceZones.e;
+
 import java.io.InputStream;
 
 public class MyLocationOverlay extends Overlay implements SensorEventListener, LocationListener, Snappable {

@@ -135,7 +135,7 @@ public class b extends com.huawei.android.pushagent.b.a.a.b {
         if (this.f) {
             return j;
         }
-        j = z ? this.e : this.e + com.huluxia.video.recorder.b.bpg;
+        j = z ? this.e : this.e + com.MCWorld.video.recorder.b.bpg;
         return j <= this.g ? this.g : j >= this.h ? this.h : j;
     }
 

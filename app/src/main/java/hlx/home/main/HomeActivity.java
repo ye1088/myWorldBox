@@ -22,49 +22,49 @@ import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
-import com.huluxia.HTApplication;
-import com.huluxia.McApplication;
-import com.huluxia.data.message.MsgCounts;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsApkPackage;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsVersion;
-import com.huluxia.framework.base.widget.pager.PagerFragment;
-import com.huluxia.framework.base.widget.pager.PagerSelectedAdapter;
-import com.huluxia.framework.base.widget.pager.SelectedViewPager;
-import com.huluxia.http.base.f;
-import com.huluxia.http.other.j;
-import com.huluxia.k;
-import com.huluxia.login.LoginError.LoginErrCode;
-import com.huluxia.mcgame.g;
-import com.huluxia.module.n;
-import com.huluxia.module.topic.TopicModule;
-import com.huluxia.r;
-import com.huluxia.service.HlxPushService;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.ui.area.news.ResourceNewsFragment;
-import com.huluxia.ui.base.BaseFragment;
-import com.huluxia.ui.base.HTBaseThemeActivity;
-import com.huluxia.ui.bbs.TopicDetailActivity;
-import com.huluxia.ui.home.BbsFragment;
-import com.huluxia.ui.home.ProfileMeFragment;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.ax;
-import com.huluxia.utils.u;
-import com.huluxia.version.VersionDialog;
-import com.huluxia.version.e;
-import com.huluxia.version.h;
-import com.huluxia.widget.Constants;
-import com.huluxia.widget.Constants.Model;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
-import com.huluxia.widget.menudrawer.MenuDrawer;
-import com.huluxia.widget.menudrawer.MenuDrawer.Type;
-import com.huluxia.widget.menudrawer.Position;
+import com.MCWorld.HTApplication;
+import com.MCWorld.McApplication;
+import com.MCWorld.data.message.MsgCounts;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsApkPackage;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsVersion;
+import com.MCWorld.framework.base.widget.pager.PagerFragment;
+import com.MCWorld.framework.base.widget.pager.PagerSelectedAdapter;
+import com.MCWorld.framework.base.widget.pager.SelectedViewPager;
+import com.MCWorld.http.base.f;
+import com.MCWorld.http.other.j;
+import com.MCWorld.k;
+import com.MCWorld.login.LoginError.LoginErrCode;
+import com.MCWorld.mcgame.g;
+import com.MCWorld.module.n;
+import com.MCWorld.module.topic.TopicModule;
+import com.MCWorld.r;
+import com.MCWorld.service.HlxPushService;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.ui.area.news.ResourceNewsFragment;
+import com.MCWorld.ui.base.BaseFragment;
+import com.MCWorld.ui.base.HTBaseThemeActivity;
+import com.MCWorld.ui.bbs.TopicDetailActivity;
+import com.MCWorld.ui.home.BbsFragment;
+import com.MCWorld.ui.home.ProfileMeFragment;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.ax;
+import com.MCWorld.utils.u;
+import com.MCWorld.version.VersionDialog;
+import com.MCWorld.version.e;
+import com.MCWorld.version.h;
+import com.MCWorld.widget.Constants;
+import com.MCWorld.widget.Constants.Model;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.widget.menudrawer.MenuDrawer;
+import com.MCWorld.widget.menudrawer.MenuDrawer.Type;
+import com.MCWorld.widget.menudrawer.Position;
 import com.simple.colorful.d;
 import hlx.home.adapter.MenuAdapter;
 import hlx.home.fragment.HomeFragment;
@@ -215,7 +215,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
         }
 
         @MessageHandler(message = 774)
-        public void onRecConf(boolean succ, com.huluxia.version.a info) {
+        public void onRecConf(boolean succ, com.MCWorld.version.a info) {
             boolean z = true;
             String str = HomeActivity.TAG;
             String str2 = "isSucc %s";
@@ -253,7 +253,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     protected BroadcastReceiver bQI;
     private HomeActivity bQJ;
     private String bQK = null;
-    private com.huluxia.http.studio.b bQL = new com.huluxia.http.studio.b();
+    private com.MCWorld.http.studio.b bQL = new com.MCWorld.http.studio.b();
     private int bQM = 257;
     private OnCheckedChangeListener bQN = new OnCheckedChangeListener(this) {
         final /* synthetic */ HomeActivity bQP;
@@ -313,14 +313,14 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
             }
             TopicModule.Ef().Eh();
             HTApplication.bR();
-            com.huluxia.module.account.a.DU().DY();
+            com.MCWorld.module.account.a.DU().DY();
         }
     }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.bQJ = this;
-        com.huluxia.controller.d.dJ();
+        com.MCWorld.controller.d.dJ();
         this.pl = new b(this);
         RT();
         sJ();
@@ -336,8 +336,8 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
         i.b(this.bQI);
         this.aKb = new a();
         i.c(this.aKb);
-        EventNotifyCenter.add(com.huluxia.login.e.class, this.pl);
-        EventNotifyCenter.add(com.huluxia.module.h.class, this.aky);
+        EventNotifyCenter.add(com.MCWorld.login.e.class, this.pl);
+        EventNotifyCenter.add(com.MCWorld.module.h.class, this.aky);
         RY();
         c(getIntent());
     }
@@ -388,16 +388,16 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     }
 
     private void RU() {
-        long userid = com.huluxia.data.j.ep().getUserid();
+        long userid = com.MCWorld.data.j.ep().getUserid();
         if (userid > 0) {
             SimpleDateFormat _sdf = new SimpleDateFormat(DateUtils.ISO8601_DATE_PATTERN);
             String _curDate = _sdf.format(new Date());
             Calendar cal = Calendar.getInstance();
             cal.add(5, -1);
             String _yesterday = _sdf.format(cal.getTime());
-            com.huluxia.mctool.structure.a _ContunuousLogonDay = com.huluxia.mctool.e.Dk().Dl();
+            com.MCWorld.mctool.structure.a _ContunuousLogonDay = com.MCWorld.mctool.e.Dk().Dl();
             if (_ContunuousLogonDay == null) {
-                _ContunuousLogonDay = new com.huluxia.mctool.structure.a();
+                _ContunuousLogonDay = new com.MCWorld.mctool.structure.a();
                 _ContunuousLogonDay.pM = userid;
                 _ContunuousLogonDay.apJ = 1;
                 _ContunuousLogonDay.apH = _curDate;
@@ -412,7 +412,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
                     _ContunuousLogonDay.apI = _curDate;
                 }
             }
-            com.huluxia.mctool.e.Dk().a(_ContunuousLogonDay);
+            com.MCWorld.mctool.e.Dk().a(_ContunuousLogonDay);
         }
     }
 
@@ -449,19 +449,19 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     }
 
     private void RV() {
-        if (com.huluxia.data.j.ep().ey()) {
-            EventNotifyCenter.notifyEventUiThread(com.huluxia.login.e.class, 1026, Boolean.valueOf(true), "", LoginErrCode.AUTO_LOGIN_NONE);
+        if (com.MCWorld.data.j.ep().ey()) {
+            EventNotifyCenter.notifyEventUiThread(com.MCWorld.login.e.class, 1026, Boolean.valueOf(true), "", LoginErrCode.AUTO_LOGIN_NONE);
             return;
         }
         CharSequence historyAccount = ah.KZ().pZ();
         CharSequence historyPwd = ah.KZ().getPassword();
         if (!UtilsFunction.empty(historyAccount) && !UtilsFunction.empty(historyPwd)) {
-            com.huluxia.login.d.pR().aL(this);
+            com.MCWorld.login.d.pR().aL(this);
         }
     }
 
     protected void RW() {
-        if (!com.huluxia.g.bx()) {
+        if (!com.MCWorld.g.bx()) {
             ax.a(this, MCStartActivity.class, R.string.app_name, R.drawable.app_icon);
         }
     }
@@ -474,21 +474,21 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
         }
     }
 
-    public void a(com.huluxia.http.base.d response) {
+    public void a(com.MCWorld.http.base.d response) {
     }
 
-    public void b(com.huluxia.http.base.d response) {
+    public void b(com.MCWorld.http.base.d response) {
     }
 
     protected void U(String szMessage, String szUrl) {
         if (!isFinishing()) {
-            com.huluxia.widget.dialog.r dialog = new com.huluxia.widget.dialog.r(this, szMessage, szUrl, "mctool.apk");
+            com.MCWorld.widget.dialog.r dialog = new com.MCWorld.widget.dialog.r(this, szMessage, szUrl, "mctool.apk");
         }
     }
 
-    public void c(com.huluxia.http.base.d response) {
+    public void c(com.MCWorld.http.base.d response) {
         if (response.getStatus() == 1) {
-            com.huluxia.data.n verInfo = (com.huluxia.data.n) response.getData();
+            com.MCWorld.data.n verInfo = (com.MCWorld.data.n) response.getData();
             if (verInfo == null || verInfo.getVersionCode() <= UtilsVersion.getVersionCode(this)) {
                 if (response.fe() == 2) {
                     t.show_toast(this, "当前已是最新版本(" + UtilsVersion.getVersionString(this) + ")。");
@@ -578,7 +578,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     }
 
     protected void RZ() {
-        com.huluxia.http.message.a messageCountRequest = new com.huluxia.http.message.a();
+        com.MCWorld.http.message.a messageCountRequest = new com.MCWorld.http.message.a();
         messageCountRequest.a(new f(this) {
             final /* synthetic */ HomeActivity bQP;
 
@@ -586,13 +586,13 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
                 this.bQP = this$0;
             }
 
-            public void a(com.huluxia.http.base.d response) {
+            public void a(com.MCWorld.http.base.d response) {
             }
 
-            public void b(com.huluxia.http.base.d response) {
+            public void b(com.MCWorld.http.base.d response) {
             }
 
-            public void c(com.huluxia.http.base.d response) {
+            public void c(com.MCWorld.http.base.d response) {
                 if (response.getStatus() == 1) {
                     MsgCounts msgCounts = (MsgCounts) response.getData();
                     long allCount = msgCounts == null ? 0 : msgCounts.getAll();
@@ -609,7 +609,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     protected void b(MsgCounts msgCounts) {
         if (msgCounts != null && 0 != msgCounts.getAll()) {
             HTApplication.a(msgCounts);
-            com.huluxia.service.h.EC().a("消息提醒", String.format(Locale.getDefault(), "你有%d条新消息", new Object[]{Long.valueOf(msgCounts.getAll())}), msgCounts);
+            com.MCWorld.service.h.EC().a("消息提醒", String.format(Locale.getDefault(), "你有%d条新消息", new Object[]{Long.valueOf(msgCounts.getAll())}), msgCounts);
             i.EH();
         }
     }
@@ -617,7 +617,7 @@ public class HomeActivity extends HTBaseThemeActivity implements f {
     protected void onResume() {
         super.onResume();
         HlxPushService.az(HTApplication.getAppContext());
-        if (com.huluxia.data.j.ep().ey()) {
+        if (com.MCWorld.data.j.ep().ey()) {
             this.bQL.execute();
         }
     }

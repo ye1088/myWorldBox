@@ -1,7 +1,7 @@
 package hlx.ui.localresmgr.fragment;
 
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
 
 class LocResMapFragment$2 extends CallbackHandler {
     final /* synthetic */ LocResMapFragment caO;

@@ -1,9 +1,9 @@
 package hlx.ui.resources.fragment;
 
 import android.widget.CompoundButton;
-import com.huluxia.framework.R;
-import com.huluxia.r;
-import com.huluxia.widget.a.a;
+import com.MCWorld.framework.R;
+import com.MCWorld.r;
+import com.MCWorld.widget.a.a;
 
 class ResourceAllFragment$6 implements a {
     final /* synthetic */ ResourceAllFragment cgj;

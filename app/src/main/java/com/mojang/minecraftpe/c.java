@@ -3,8 +3,8 @@ package com.mojang.minecraftpe;
 import android.content.ComponentName;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import com.huluxia.mcsdk.h;
+
+import com.MCWorld.mcsdk.h;
 
 /* compiled from: RedirectPackageManager */
 public class c extends h {

@@ -1,7 +1,7 @@
 package hlx.mcspecialmode.firearms;
 
-import com.huluxia.mcgame.h;
-import com.huluxia.mcsdk.dtlib.c;
+import com.MCWorld.mcgame.h;
+import com.MCWorld.mcsdk.dtlib.c;
 import java.io.File;
 
 /* compiled from: MCFirearmsFile */

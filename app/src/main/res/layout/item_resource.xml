@@ -2,7 +2,8 @@
 <RelativeLayout android:id="@id/root_view" android:background="?itemBackground" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/img_rank" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/rank_01" android:layout_alignParentRight="true" />
-    <com.huluxia.framework.base.image.PaintView android:id="@id/item_image" android:background="?discover" android:layout_width="105.0dip" android:layout_height="66.0dip" android:layout_marginTop="12.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <com.MCWorld.framework.base.image.PaintView
+        android:id="@id/item_image" android:background="?discover" android:layout_width="105.0dip" android:layout_height="66.0dip" android:layout_marginTop="12.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
     <TextView android:textSize="10.0sp" android:textColor="?version" android:id="@id/text_time" android:background="@color/text_half_transparent" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昨天" android:layout_alignRight="@id/item_image" android:layout_alignBottom="@id/item_image" />
     <TextView android:textSize="10.0sp" android:textColor="?version" android:gravity="center" android:id="@id/version" android:background="@color/text_half_transparent" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="0.14" />
     <TextView android:textSize="16.0sp" android:textColor="?mapName" android:gravity="center_vertical" android:id="@id/map_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip" android:text="海上空军基地" android:singleLine="true" android:layout_toRightOf="@id/item_image" android:layout_alignTop="@id/item_image" />
@@ -15,18 +16,21 @@
     <View android:id="@id/dividing_line" android:background="?dividingLine" android:layout_width="0.5dip" android:layout_height="48.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="60.0dip" android:layout_alignTop="@id/item_image" android:layout_alignParentRight="true" />
     <RelativeLayout android:id="@id/rly_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
         <ImageView android:id="@id/image_download" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_download_normal_day" android:layout_centerInParent="true" />
-        <com.huluxia.widget.RoundProgress android:id="@id/progress" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_centerInParent="true" />
+        <com.MCWorld.widget.RoundProgress
+            android:id="@id/progress" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_centerInParent="true" />
     </RelativeLayout>
     <TextView android:textSize="13.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/text_progress" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="0kb" android:layout_below="@id/rly_container" android:layout_alignParentRight="true" />
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/normal_line_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dip">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/pv_studio_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:scaleType="centerCrop" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/pv_studio_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:scaleType="centerCrop" />
         <TextView android:textSize="14.0sp" android:textColor="?progressText" android:gravity="center_vertical" android:id="@id/studio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="非凡工作室出品" android:maxEms="10" android:singleLine="true" />
         <View android:id="@id/studio_dividing_line" android:background="?dividingLine" android:layout_width="0.5dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" />
         <TextView android:textSize="14.0sp" android:textColor="?progressText" android:id="@id/studio_author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="樱桃小丸子" android:maxEms="10" android:singleLine="true" />
         <TextView android:textSize="8.0sp" android:textColor="?label" android:gravity="center" android:id="@id/tv_normal_label" android:background="@drawable/bg_label" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:text="技术大师" android:singleLine="true" />
     </LinearLayout>
     <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/spectial_layout_bg" android:background="?studioBg" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="90.0dip" android:layout_marginRight="12.0dip">
-        <com.huluxia.framework.base.image.PaintView android:layout_gravity="center_vertical" android:id="@id/pv_studio_icon_indivi" android:layout_width="17.0dip" android:layout_height="17.0dip" android:scaleType="centerCrop" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:layout_gravity="center_vertical" android:id="@id/pv_studio_icon_indivi" android:layout_width="17.0dip" android:layout_height="17.0dip" android:scaleType="centerCrop" />
         <TextView android:textSize="14.0sp" android:textColor="?studioText" android:layout_gravity="center_vertical" android:id="@id/spectial_studio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="十年工作室" />
         <TextView android:textSize="@dimen/common_text_size_14sp" android:textColor="?studio_hot_text_color" android:layout_gravity="center_vertical" android:id="@id/tv_studio_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:drawableLeft="?studio_hot_icon" android:drawablePadding="6.0dip" />
     </LinearLayout>

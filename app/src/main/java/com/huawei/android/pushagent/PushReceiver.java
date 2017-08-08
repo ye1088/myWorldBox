@@ -10,7 +10,7 @@ import com.huawei.android.pushagent.c.a;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushagent.c.a.f;
 import com.huawei.android.pushagent.c.a.h;
-import com.huluxia.ui.profile.FriendListActivity;
+import com.MCWorld.ui.profile.FriendListActivity;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 

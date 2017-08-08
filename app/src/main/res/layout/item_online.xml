@@ -4,7 +4,8 @@
     <TextView android:textSize="13.0sp" android:textColor="?progressText" android:gravity="center" android:id="@id/recent_join" android:background="?recent_join" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="最近加入" />
     <View android:id="@id/join_dividing_line" android:background="?dividingLine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
     <RelativeLayout android:id="@id/rly_root_view" android:background="?itemBackground" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="82.0dip">
-        <com.huluxia.framework.base.image.PaintView android:id="@id/avatar" android:background="@drawable/default_ptr_flip" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="12.0dip" android:scaleType="centerCrop" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/avatar" android:background="@drawable/default_ptr_flip" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="12.0dip" android:scaleType="centerCrop" />
         <RelativeLayout android:id="@id/rly_studio" android:background="@drawable/style_bg_oval" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="42.0dip" android:layout_alignLeft="@id/avatar">
             <TextView android:textSize="10.0dip" android:textColor="?label" android:gravity="center" android:id="@id/studio" android:background="@drawable/style_bg_oval" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的工作室" />
         </RelativeLayout>

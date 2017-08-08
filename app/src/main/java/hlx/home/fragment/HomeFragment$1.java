@@ -1,7 +1,7 @@
 package hlx.home.fragment;
 
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.framework.base.widget.PagerSlidingIndicator.IndicatorTextSizeChange;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.base.widget.PagerSlidingIndicator.IndicatorTextSizeChange;
 
 class HomeFragment$1 implements IndicatorTextSizeChange {
     final /* synthetic */ HomeFragment bQl;

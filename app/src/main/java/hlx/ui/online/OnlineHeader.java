@@ -13,7 +13,7 @@ import android.widget.PopupWindow.OnDismissListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 import com.simple.colorful.c;
 import com.simple.colorful.d;
 import com.simple.colorful.setter.j;

@@ -7,7 +7,7 @@ import android.net.NetworkInfo.State;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import com.huawei.android.pushagent.plugin.tools.BLocation;
-import com.huluxia.data.profile.a;
+
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import org.json.JSONArray;
@@ -113,7 +113,7 @@ public class b {
         char[] cArr = new char[(bArr.length * 2)];
         for (int i = 0; i < bArr.length; i++) {
             byte b = bArr[i];
-            cArr[i * 2] = a[(b & com.huluxia.video.recorder.b.bpd) >> 4];
+            cArr[i * 2] = a[(b & com.MCWorld.video.recorder.b.bpd) >> 4];
             cArr[(i * 2) + 1] = a[b & 15];
         }
         return new String(cArr);

@@ -2,12 +2,12 @@ package hlx.home.fragment;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.huluxia.HTApplication;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.utils.UtilsTime;
-import com.huluxia.k;
-import com.huluxia.r;
-import com.huluxia.utils.ah;
+import com.MCWorld.HTApplication;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.utils.UtilsTime;
+import com.MCWorld.k;
+import com.MCWorld.r;
+import com.MCWorld.utils.ah;
 import hlx.data.tongji.a;
 
 class HomeFragment$7 implements OnClickListener {

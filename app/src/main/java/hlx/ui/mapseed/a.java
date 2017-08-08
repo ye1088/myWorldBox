@@ -1,10 +1,9 @@
 package hlx.ui.mapseed;
 
 import android.os.Parcel;
-import android.os.Parcelable.Creator;
 
 /* compiled from: SeedDetatilMoreInfo */
-public class a extends com.huluxia.module.a {
+public class a extends com.MCWorld.module.a {
     public static final Creator<a> CREATOR = new Creator<a>() {
         public /* synthetic */ Object createFromParcel(Parcel parcel) {
             return bR(parcel);

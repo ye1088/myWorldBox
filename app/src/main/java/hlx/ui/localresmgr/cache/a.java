@@ -1,9 +1,9 @@
 package hlx.ui.localresmgr.cache;
 
-import com.huluxia.framework.base.async.AsyncTaskCenter;
-import com.huluxia.framework.base.async.AsyncTaskCenter.RunnableCallback;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.utils.j;
+import com.MCWorld.framework.base.async.AsyncTaskCenter;
+import com.MCWorld.framework.base.async.AsyncTaskCenter.RunnableCallback;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.utils.j;
 import com.tencent.mm.sdk.platformtools.SpecilApiUtil;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

@@ -1,11 +1,11 @@
 package hlx.ui.online;
 
-import com.huluxia.HTApplication;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.mconline.gameloc.http.d;
-import com.huluxia.mconline.gameloc.http.h;
+import com.MCWorld.HTApplication;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.mconline.gameloc.http.d;
+import com.MCWorld.mconline.gameloc.http.h;
 import hlx.module.resources.a;
 import java.util.ArrayList;
 import java.util.Collection;

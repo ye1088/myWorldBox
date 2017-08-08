@@ -6,9 +6,9 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import com.j256.ormlite.stmt.query.SimpleComparison;
-import com.xiaomi.channel.commonutils.string.c;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;

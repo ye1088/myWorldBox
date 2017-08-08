@@ -18,7 +18,7 @@ import android.widget.TextView;
 import com.huawei.android.pushagent.c.a.a.g;
 import com.huawei.android.pushagent.c.a.b;
 import com.huawei.android.pushagent.c.a.e;
-import com.huluxia.module.h;
+import com.MCWorld.module.h;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -587,7 +587,7 @@ public class a {
     }
 
     public static String b(Context context) {
-        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe);
+        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe);
         return telephonyManager != null ? telephonyManager.getDeviceId() : "";
     }
 

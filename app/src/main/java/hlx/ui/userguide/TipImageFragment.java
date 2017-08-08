@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView.ScaleType;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.t;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.t;
 
 public class TipImageFragment extends Fragment {
     private static final String cgt = "ARG_IMAGE";

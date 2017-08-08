@@ -15,22 +15,22 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsNetwork;
-import com.huluxia.module.n;
-import com.huluxia.module.o;
-import com.huluxia.t;
-import com.huluxia.ui.base.BaseLoadingLayout;
-import com.huluxia.ui.base.BaseLoadingLayout.a;
-import com.huluxia.ui.base.BaseThemeFragment;
-import com.huluxia.ui.itemadapter.server.ServerListAdapter;
-import com.huluxia.ui.mctool.e;
-import com.huluxia.utils.c;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsNetwork;
+import com.MCWorld.module.n;
+import com.MCWorld.module.o;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.BaseLoadingLayout;
+import com.MCWorld.ui.base.BaseLoadingLayout.a;
+import com.MCWorld.ui.base.BaseThemeFragment;
+import com.MCWorld.ui.itemadapter.server.ServerListAdapter;
+import com.MCWorld.ui.mctool.e;
+import com.MCWorld.utils.c;
 import com.simple.colorful.setter.j;
 import com.simple.colorful.setter.k;
 import hlx.module.resources.f;
@@ -45,11 +45,11 @@ public class ServerAllFragment extends BaseThemeFragment implements a {
     private PullToRefreshListView aEq;
     private BaseLoadingLayout aIy;
     private ServerListAdapter bcs;
-    private com.huluxia.data.server.a bct;
+    private com.MCWorld.data.server.a bct;
     private LinearLayout cbB;
     public int cbD = 0;
     private long cbE;
-    com.huluxia.widget.a cbF = new com.huluxia.widget.a(new 6(this));
+    com.MCWorld.widget.a cbF = new com.MCWorld.widget.a(new 6(this));
     private View cbw;
     private HorizontalScrollView cbx;
     private HorizontalScrollView cby;
@@ -78,7 +78,7 @@ public class ServerAllFragment extends BaseThemeFragment implements a {
         }
 
         @MessageHandler(message = 3077)
-        public void onRecvMapListInfo(boolean succ, int tag, com.huluxia.data.server.a info) {
+        public void onRecvMapListInfo(boolean succ, int tag, com.MCWorld.data.server.a info) {
             this.cgo.aEq.onRefreshComplete();
             this.cgo.aEV.onLoadComplete();
             if (tag != this.cgo.mRequestCode) {

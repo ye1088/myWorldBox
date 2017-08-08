@@ -1,8 +1,8 @@
 package hlx.mcstorymode.storyutils;
 
 import android.util.Xml;
-import com.huluxia.data.storymode.b;
-import com.huluxia.data.storymode.c;
+import com.MCWorld.data.storymode.b;
+import com.MCWorld.data.storymode.c;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -57,8 +57,8 @@ public class a {
         this.qC = nextId;
     }
 
-    public com.huluxia.data.storymode.a TQ() {
-        com.huluxia.data.storymode.a tmpItem = null;
+    public com.MCWorld.data.storymode.a TQ() {
+        com.MCWorld.data.storymode.a tmpItem = null;
         try {
             int eventType = this.bXJ.next();
             while (eventType != 1) {
@@ -70,7 +70,7 @@ public class a {
                 String tmpName = this.bXJ.getName();
                 if (tmpName.equals(hlx.mcstorymode.c.bVI)) {
                     if (this.qC != null && this.qC.equals(this.bXJ.getAttributeValue("", "id"))) {
-                        tmpItem = new com.huluxia.data.storymode.a();
+                        tmpItem = new com.MCWorld.data.storymode.a();
                         tmpItem.mId = this.qC;
                         tmpItem.qi = this.bXJ.getAttributeValue("", "type");
                         tmpItem.qk = this.bXJ.getAttributeValue("", "time");
@@ -83,7 +83,7 @@ public class a {
                         tmpItem.qs = this.bXJ.getAttributeValue("", hlx.mcstorymode.c.bVS);
                         tmpItem.qt = this.bXJ.getAttributeValue("", hlx.mcstorymode.c.bVT);
                     } else if (this.qC == null) {
-                        tmpItem = new com.huluxia.data.storymode.a();
+                        tmpItem = new com.MCWorld.data.storymode.a();
                         tmpItem.mId = this.bXJ.getAttributeValue("", "id");
                         tmpItem.qi = this.bXJ.getAttributeValue("", "type");
                         tmpItem.qk = this.bXJ.getAttributeValue("", "time");

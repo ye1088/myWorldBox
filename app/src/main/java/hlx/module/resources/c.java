@@ -1,14 +1,14 @@
 package hlx.module.resources;
 
-import com.huluxia.framework.base.http.io.Response.ErrorListener;
-import com.huluxia.framework.base.http.io.Response.Listener;
-import com.huluxia.framework.base.http.toolbox.error.VolleyError;
-import com.huluxia.framework.base.json.Json;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.http.HttpMgr;
-import com.huluxia.module.m;
-import com.huluxia.module.n;
-import com.huluxia.module.o;
+import com.MCWorld.framework.base.http.io.Response.ErrorListener;
+import com.MCWorld.framework.base.http.io.Response.Listener;
+import com.MCWorld.framework.base.http.toolbox.error.VolleyError;
+import com.MCWorld.framework.base.json.Json;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.http.HttpMgr;
+import com.MCWorld.module.m;
+import com.MCWorld.module.n;
+import com.MCWorld.module.o;
 import java.util.ArrayList;
 import java.util.HashMap;
 

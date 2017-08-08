@@ -2,8 +2,8 @@ package hlx.module.resources;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.Parcelable.Creator;
-import com.huluxia.module.a;
+
+import com.MCWorld.module.a;
 import java.util.ArrayList;
 
 /* compiled from: ResourceCateInfo */

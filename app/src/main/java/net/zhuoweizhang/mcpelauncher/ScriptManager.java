@@ -2,11 +2,11 @@ package net.zhuoweizhang.mcpelauncher;
 
 import android.content.Context;
 import android.os.Environment;
-import com.huluxia.mcjavascript.f;
-import com.huluxia.mcsdk.DTGameCallBack;
-import com.huluxia.mcsdk.DTSDKManager;
-import com.huluxia.mcsdk.DTSDKManager.c;
-import com.huluxia.mcsdk.b;
+import com.MCWorld.mcjavascript.f;
+import com.MCWorld.mcsdk.DTGameCallBack;
+import com.MCWorld.mcsdk.DTSDKManager;
+import com.MCWorld.mcsdk.DTSDKManager.c;
+import com.MCWorld.mcsdk.b;
 import com.mojang.minecraftpe.MainActivity;
 import com.mojang.minecraftpe.a;
 import com.tencent.mm.sdk.platformtools.SpecilApiUtil;

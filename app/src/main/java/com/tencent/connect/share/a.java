@@ -12,7 +12,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
-import com.huluxia.module.h;
+import com.MCWorld.module.h;
 import com.tencent.open.a.f;
 import com.tencent.open.utils.AsynLoadImgBack;
 import com.tencent.open.utils.Util;

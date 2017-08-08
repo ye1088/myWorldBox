@@ -5,14 +5,14 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.huluxia.data.profile.e;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.t;
-import com.huluxia.utils.y;
-import com.huluxia.widget.listview.GridViewNotScroll;
-import com.huluxia.widget.textview.EmojiTextView;
+import com.MCWorld.data.profile.e;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.t;
+import com.MCWorld.utils.y;
+import com.MCWorld.widget.listview.GridViewNotScroll;
+import com.MCWorld.widget.textview.EmojiTextView;
 import com.simple.colorful.c;
 import com.simple.colorful.setter.j;
 import com.simple.colorful.setter.k;
@@ -34,7 +34,7 @@ public class PersonalStudioHeaderLayout extends LinearLayout implements c {
     private TextView cdN;
     private GridViewNotScroll cdO;
     private a cdP;
-    private com.huluxia.data.profile.c cdQ;
+    private com.MCWorld.data.profile.c cdQ;
     private Context mContext;
 
     public PersonalStudioHeaderLayout(Context context) {
@@ -72,7 +72,7 @@ public class PersonalStudioHeaderLayout extends LinearLayout implements c {
         this.cdN.setOnClickListener(new 1(this));
     }
 
-    public void setmStudio(com.huluxia.data.profile.c mStudio) {
+    public void setmStudio(com.MCWorld.data.profile.c mStudio) {
         this.cdQ = mStudio;
         Vn();
     }

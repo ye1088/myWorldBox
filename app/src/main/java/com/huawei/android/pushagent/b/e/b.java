@@ -7,7 +7,6 @@ import android.content.pm.ResolveInfo;
 import android.text.TextUtils;
 import com.huawei.android.pushagent.a.b.n;
 import com.huawei.android.pushagent.a.b.p;
-import com.huawei.android.pushagent.c.a;
 import com.huawei.android.pushagent.c.a.e;
 import com.huawei.android.pushagent.c.a.f;
 import com.huawei.android.pushagent.c.a.h;
@@ -99,7 +98,7 @@ public class b {
     public static ArrayList b(Context context) {
         h hVar = new h(context, "pclient_info_v2");
         ArrayList arrayList = new ArrayList();
-        List queryBroadcastReceivers = context.getPackageManager().queryBroadcastReceivers(new Intent("com.huawei.android.push.intent.RECEIVE"), com.huluxia.module.h.arA);
+        List queryBroadcastReceivers = context.getPackageManager().queryBroadcastReceivers(new Intent("com.huawei.android.push.intent.RECEIVE"), com.MCWorld.module.h.arA);
         int size = queryBroadcastReceivers == null ? 0 : queryBroadcastReceivers.size();
         if (size == 0) {
             e.a("PushLogAC2705", "we have no push client");

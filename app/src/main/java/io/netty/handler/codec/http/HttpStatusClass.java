@@ -1,6 +1,6 @@
 package io.netty.handler.codec.http;
 
-import com.huluxia.module.h;
+import com.MCWorld.module.h;
 import io.netty.util.AsciiString;
 
 public enum HttpStatusClass {

@@ -264,7 +264,7 @@ public class Mj {
                 x = filesDir.getAbsolutePath();
             }
             if (this.y == null) {
-                this.y = (TelephonyManager) e.getSystemService(com.huluxia.data.profile.a.qe);
+                this.y = (TelephonyManager) e.getSystemService(com.MCWorld.data.profile.a.qe);
             }
             if (this.y != null) {
                 k = this.y.getDeviceId();
@@ -565,7 +565,7 @@ public class Mj {
         }
         if (e != null) {
             if (this.y == null) {
-                this.y = (TelephonyManager) e.getSystemService(com.huluxia.data.profile.a.qe);
+                this.y = (TelephonyManager) e.getSystemService(com.MCWorld.data.profile.a.qe);
             }
             if (this.z == null) {
                 this.z = (WifiManager) e.getSystemService("wifi");
@@ -633,7 +633,7 @@ public class Mj {
         String str;
         String str2;
         if (this.y == null) {
-            this.y = (TelephonyManager) e.getSystemService(com.huluxia.data.profile.a.qe);
+            this.y = (TelephonyManager) e.getSystemService(com.MCWorld.data.profile.a.qe);
         }
         if (this.y != null) {
             long currentTimeMillis = System.currentTimeMillis() / 1000;

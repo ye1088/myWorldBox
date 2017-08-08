@@ -2,7 +2,8 @@
 <RelativeLayout android:background="?backgroundSpaceStyleDetail" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:id="@id/container_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="16.0dip" android:layout_above="@id/condition" android:layout_centerHorizontal="true">
-        <com.huluxia.framework.base.image.PipelineView android:id="@id/iv_space_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_profile" android:scaleType="centerCrop" />
+        <com.MCWorld.framework.base.image.PipelineView
+            android:id="@id/iv_space_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_profile" android:scaleType="centerCrop" />
         <ImageView android:id="@id/iv_space_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_space_profile" android:scaleType="centerCrop" />
         <TextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_progress" android:background="@drawable/bg_translucent_black" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
     </FrameLayout>

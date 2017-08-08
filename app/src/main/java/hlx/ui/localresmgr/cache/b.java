@@ -1,16 +1,16 @@
 package hlx.ui.localresmgr.cache;
 
-import com.huluxia.controller.c;
-import com.huluxia.data.map.MapItem;
-import com.huluxia.data.map.b.d;
-import com.huluxia.framework.base.async.AsyncTaskCenter;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.module.n;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.j;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.controller.c;
+import com.MCWorld.data.map.MapItem;
+import com.MCWorld.data.map.b.d;
+import com.MCWorld.framework.base.async.AsyncTaskCenter;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.module.n;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.j;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
 import hlx.data.localstore.a;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -43,10 +43,10 @@ public class b {
             this.bZZ.bZS.add(url);
         }
     };
-    private List<com.huluxia.data.map.b> bZO = new ArrayList();
-    private List<com.huluxia.data.map.b> bZP = new ArrayList();
-    private List<com.huluxia.data.map.b> bZQ = new ArrayList();
-    private List<com.huluxia.data.map.b> bZR = new ArrayList();
+    private List<com.MCWorld.data.map.b> bZO = new ArrayList();
+    private List<com.MCWorld.data.map.b> bZP = new ArrayList();
+    private List<com.MCWorld.data.map.b> bZQ = new ArrayList();
+    private List<com.MCWorld.data.map.b> bZR = new ArrayList();
     private List<String> bZS = new ArrayList();
     private volatile int bZT = 1;
     private volatile int bZU = 1;
@@ -70,7 +70,7 @@ public class b {
                     }
                 }
                 synchronized (this.bZZ.bZO) {
-                    com.huluxia.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.aN(filePath, zipFullPath);
+                    com.MCWorld.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.aN(filePath, zipFullPath);
                     if (_tmpItem != null) {
                         this.bZZ.bZO.add(_tmpItem);
                     }
@@ -89,7 +89,7 @@ public class b {
                     }
                 }
                 synchronized (this.bZZ.bZP) {
-                    com.huluxia.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.a(filePath, itemInfo);
+                    com.MCWorld.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.a(filePath, itemInfo);
                     if (_tmpItem != null) {
                         this.bZZ.bZP.add(_tmpItem);
                     }
@@ -108,7 +108,7 @@ public class b {
                     }
                 }
                 synchronized (this.bZZ.bZQ) {
-                    com.huluxia.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.b(filePath, itemInfo);
+                    com.MCWorld.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.b(filePath, itemInfo);
                     if (_tmpItem != null) {
                         this.bZZ.bZQ.add(_tmpItem);
                         if (itemInfo == null && _tmpItem.pU.length() > 1) {
@@ -130,7 +130,7 @@ public class b {
                     }
                 }
                 synchronized (this.bZZ.bZR) {
-                    com.huluxia.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.c(filePath, itemInfo);
+                    com.MCWorld.data.map.b _tmpItem = hlx.ui.localresmgr.module.b.c(filePath, itemInfo);
                     if (_tmpItem != null) {
                         this.bZZ.bZR.add(_tmpItem);
                     }
@@ -191,7 +191,7 @@ public class b {
         }
     }
 
-    public void n(com.huluxia.data.map.b item) {
+    public void n(com.MCWorld.data.map.b item) {
         if (item != null && this.loadReocrd) {
             synchronized (this.bZR) {
                 this.bZR.remove(item);
@@ -200,7 +200,7 @@ public class b {
         }
     }
 
-    public void a(com.huluxia.data.map.b item, String srcPath, String srcName, String dstName) {
+    public void a(com.MCWorld.data.map.b item, String srcPath, String srcName, String dstName) {
         if (this.loadReocrd) {
             synchronized (this.bZR) {
                 a(this.bZR, item, dstName);
@@ -209,8 +209,8 @@ public class b {
         }
     }
 
-    private void a(List<com.huluxia.data.map.b> inList, com.huluxia.data.map.b curItem, String dstname) {
-        for (com.huluxia.data.map.b tmpItem : inList) {
+    private void a(List<com.MCWorld.data.map.b> inList, com.MCWorld.data.map.b curItem, String dstname) {
+        for (com.MCWorld.data.map.b tmpItem : inList) {
             if (tmpItem.path.equals(curItem.path)) {
                 tmpItem.setName(dstname);
                 tmpItem.aB(dstname);
@@ -220,7 +220,7 @@ public class b {
         }
     }
 
-    public List<com.huluxia.data.map.b> nC(int order) {
+    public List<com.MCWorld.data.map.b> nC(int order) {
         if (!this.loadReocrd) {
             return null;
         }
@@ -229,9 +229,9 @@ public class b {
                 if (order == 2) {
                     Collections.sort(this.bZR, new d());
                 } else if (order == 1) {
-                    Collections.sort(this.bZR, new com.huluxia.data.map.b.a());
+                    Collections.sort(this.bZR, new com.MCWorld.data.map.b.a());
                 } else {
-                    Collections.sort(this.bZR, new com.huluxia.data.map.b.c());
+                    Collections.sort(this.bZR, new com.MCWorld.data.map.b.c());
                 }
                 this.bZW = order;
             }
@@ -239,7 +239,7 @@ public class b {
         return this.bZR;
     }
 
-    public void o(com.huluxia.data.map.b item) {
+    public void o(com.MCWorld.data.map.b item) {
         if (item != null && this.loadReocrd) {
             synchronized (this.bZQ) {
                 this.bZQ.remove(item);
@@ -248,7 +248,7 @@ public class b {
         }
     }
 
-    public void b(com.huluxia.data.map.b item, String srcPath, String srcName, String dstName) {
+    public void b(com.MCWorld.data.map.b item, String srcPath, String srcName, String dstName) {
         if (this.loadReocrd) {
             synchronized (this.bZQ) {
                 b(this.bZQ, item, dstName);
@@ -257,8 +257,8 @@ public class b {
         }
     }
 
-    private void b(List<com.huluxia.data.map.b> inList, com.huluxia.data.map.b curItem, String dstname) {
-        for (com.huluxia.data.map.b tmpItem : inList) {
+    private void b(List<com.MCWorld.data.map.b> inList, com.MCWorld.data.map.b curItem, String dstname) {
+        for (com.MCWorld.data.map.b tmpItem : inList) {
             if (tmpItem.path.equals(curItem.path)) {
                 tmpItem.setName(dstname);
                 tmpItem.aB(dstname);
@@ -268,7 +268,7 @@ public class b {
         }
     }
 
-    public List<com.huluxia.data.map.b> nD(int order) {
+    public List<com.MCWorld.data.map.b> nD(int order) {
         if (!this.loadReocrd) {
             return null;
         }
@@ -277,9 +277,9 @@ public class b {
                 if (order == 2) {
                     Collections.sort(this.bZQ, new d());
                 } else if (order == 1) {
-                    Collections.sort(this.bZQ, new com.huluxia.data.map.b.a());
+                    Collections.sort(this.bZQ, new com.MCWorld.data.map.b.a());
                 } else {
-                    Collections.sort(this.bZQ, new com.huluxia.data.map.b.c());
+                    Collections.sort(this.bZQ, new com.MCWorld.data.map.b.c());
                 }
             }
             this.bZV = order;
@@ -290,7 +290,7 @@ public class b {
     public void Ut() {
         if (this.loadReocrd) {
             synchronized (this.bZQ) {
-                for (com.huluxia.data.map.b _tmpFileItem : this.bZQ) {
+                for (com.MCWorld.data.map.b _tmpFileItem : this.bZQ) {
                     if (_tmpFileItem != null && _tmpFileItem.state == 1) {
                         if ((_tmpFileItem.ver.contains(String.valueOf(ReStartSoftFlag.MC_RESTART_V0150.Value())) || _tmpFileItem.ver.contains(String.valueOf(ReStartSoftFlag.MC_RESTART_NORMAL.Value()))) && _tmpFileItem.pU != null && _tmpFileItem.pU.length() > 1) {
                             a.Un().hx(_tmpFileItem.pU);
@@ -301,7 +301,7 @@ public class b {
         }
     }
 
-    public void p(com.huluxia.data.map.b item) {
+    public void p(com.MCWorld.data.map.b item) {
         if (this.loadReocrd) {
             synchronized (this.bZP) {
                 this.bZP.remove(item);
@@ -310,7 +310,7 @@ public class b {
         }
     }
 
-    public void c(com.huluxia.data.map.b item, String srcPath, String srcName, String dstName) {
+    public void c(com.MCWorld.data.map.b item, String srcPath, String srcName, String dstName) {
         if (this.loadReocrd) {
             synchronized (this.bZP) {
                 c(this.bZP, item, dstName);
@@ -319,8 +319,8 @@ public class b {
         }
     }
 
-    private void c(List<com.huluxia.data.map.b> inList, com.huluxia.data.map.b curItem, String dstname) {
-        for (com.huluxia.data.map.b tmpItem : inList) {
+    private void c(List<com.MCWorld.data.map.b> inList, com.MCWorld.data.map.b curItem, String dstname) {
+        for (com.MCWorld.data.map.b tmpItem : inList) {
             if (tmpItem.path.equals(curItem.path)) {
                 tmpItem.setName(dstname);
                 tmpItem.aB(dstname);
@@ -330,7 +330,7 @@ public class b {
         }
     }
 
-    public List<com.huluxia.data.map.b> nE(int order) {
+    public List<com.MCWorld.data.map.b> nE(int order) {
         if (!this.loadReocrd) {
             return null;
         }
@@ -339,9 +339,9 @@ public class b {
                 if (order == 2) {
                     Collections.sort(this.bZP, new d());
                 } else if (order == 1) {
-                    Collections.sort(this.bZP, new com.huluxia.data.map.b.a());
+                    Collections.sort(this.bZP, new com.MCWorld.data.map.b.a());
                 } else {
-                    Collections.sort(this.bZP, new com.huluxia.data.map.b.c());
+                    Collections.sort(this.bZP, new com.MCWorld.data.map.b.c());
                 }
                 this.bZU = order;
             }
@@ -349,7 +349,7 @@ public class b {
         return this.bZP;
     }
 
-    public void q(com.huluxia.data.map.b item) {
+    public void q(com.MCWorld.data.map.b item) {
         if (this.loadReocrd) {
             synchronized (this.bZO) {
                 this.bZO.remove(item);
@@ -358,10 +358,10 @@ public class b {
         }
     }
 
-    public void a(com.huluxia.data.map.b item, String dstMapName) {
+    public void a(com.MCWorld.data.map.b item, String dstMapName) {
         if (this.loadReocrd) {
             synchronized (this.bZO) {
-                com.huluxia.data.map.b newItem = new com.huluxia.data.map.b(item);
+                com.MCWorld.data.map.b newItem = new com.MCWorld.data.map.b(item);
                 newItem.aB(dstMapName);
                 newItem.setName(dstMapName);
                 this.bZO.add(newItem);
@@ -370,7 +370,7 @@ public class b {
         }
     }
 
-    public void a(com.huluxia.data.map.b item, String srcMapPath, String dstMapName) {
+    public void a(com.MCWorld.data.map.b item, String srcMapPath, String dstMapName) {
         if (this.loadReocrd) {
             synchronized (this.bZO) {
                 d(this.bZO, item, dstMapName);
@@ -379,7 +379,7 @@ public class b {
         }
     }
 
-    public List<com.huluxia.data.map.b> nF(int order) {
+    public List<com.MCWorld.data.map.b> nF(int order) {
         if (!this.loadReocrd) {
             return null;
         }
@@ -388,11 +388,11 @@ public class b {
                 if (order == 2) {
                     Collections.sort(this.bZO, new d());
                 } else if (order == 1) {
-                    Collections.sort(this.bZO, new com.huluxia.data.map.b.a());
+                    Collections.sort(this.bZO, new com.MCWorld.data.map.b.a());
                 } else if (order == 3) {
-                    Collections.sort(this.bZO, new com.huluxia.data.map.b.b());
+                    Collections.sort(this.bZO, new com.MCWorld.data.map.b.b());
                 } else if (order == 0) {
-                    Collections.sort(this.bZO, new com.huluxia.data.map.b.c());
+                    Collections.sort(this.bZO, new com.MCWorld.data.map.b.c());
                 }
                 this.bZT = order;
             }
@@ -400,8 +400,8 @@ public class b {
         return this.bZO;
     }
 
-    private void d(List<com.huluxia.data.map.b> inList, com.huluxia.data.map.b curItem, String dstname) {
-        for (com.huluxia.data.map.b tmpItem : inList) {
+    private void d(List<com.MCWorld.data.map.b> inList, com.MCWorld.data.map.b curItem, String dstname) {
+        for (com.MCWorld.data.map.b tmpItem : inList) {
             if (tmpItem.path.equals(curItem.path)) {
                 tmpItem.setName(dstname);
                 tmpItem.aB(dstname);

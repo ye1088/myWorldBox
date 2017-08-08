@@ -2,7 +2,8 @@
 <ScrollView android:id="@id/root_view" android:background="?backgroundDefault" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.huluxia.framework.base.image.PaintView android:layout_gravity="center_horizontal" android:id="@id/image" android:layout_width="95.0dip" android:layout_height="95.0dip" android:layout_marginTop="37.0dip" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:layout_gravity="center_horizontal" android:id="@id/image" android:layout_width="95.0dip" android:layout_height="95.0dip" android:layout_marginTop="37.0dip" />
         <RelativeLayout android:id="@id/rly_studio" android:background="?studio_edit_bg" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="12.0dip">
             <TextView android:textSize="15.0sp" android:textColor="?android:textColorTertiary" android:gravity="center" android:id="@id/tv_studio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="工作室 :" android:layout_centerVertical="true" />
             <EditText android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/studio" android:background="@null" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:maxLines="1" android:maxLength="13" android:layout_centerInParent="true" />
@@ -17,7 +18,8 @@
         </RelativeLayout>
         <EditText android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:textColorHint="?studio_introduce_hint" android:ellipsize="end" android:gravity="left" android:id="@id/studio_description" android:background="?studio_edit_bg" android:padding="12.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="151.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:hint="工作室介绍(100字)" android:maxLength="150" />
         <FrameLayout android:id="@id/fl_studio_cover" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:foreground="@drawable/sl_foreground_image_default_radius">
-            <com.huluxia.framework.base.image.PaintView android:id="@id/iv_studio_cover" android:background="?studio_edit_bg" android:layout_width="fill_parent" android:layout_height="150.0dip" android:src="?ic_picture_plus" android:scaleType="centerInside" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/iv_studio_cover" android:background="?studio_edit_bg" android:layout_width="fill_parent" android:layout_height="150.0dip" android:src="?ic_picture_plus" android:scaleType="centerInside" />
         </FrameLayout>
         <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/tv_studio_cover_explain" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="12.0dip" android:text="工作室封面为400*200" />
         <include layout="@layout/include_split_short" />
@@ -28,7 +30,8 @@
             <TextView android:textSize="@dimen/common_text_size_16sp" android:textColor="?android:textColorTertiary" android:id="@id/tv_resource_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="地图" android:drawableRight="?choice_arrow" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
         </RelativeLayout>
         <include layout="@layout/include_split_short" />
-        <com.huluxia.widget.listview.GridViewNotScroll android:id="@id/gv_resource_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="12.0dip" android:verticalSpacing="9.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+        <com.MCWorld.widget.listview.GridViewNotScroll
+            android:id="@id/gv_resource_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="12.0dip" android:verticalSpacing="9.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
         <TextView android:textSize="@dimen/common_text_size_14sp" android:textColor="?android:textColorSecondary" android:id="@id/tv_resource_cate_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="35.0dip" android:text="分类为多选，最多可选择4个分类" />
     </LinearLayout>
 </ScrollView>

@@ -1,6 +1,6 @@
 package io.netty.resolver.dns;
 
-import com.huluxia.data.profile.a;
+import com.MCWorld.data.profile.a;
 import io.netty.util.internal.InternalThreadLocalMap;
 import io.netty.util.internal.logging.InternalLogger;
 import io.netty.util.internal.logging.InternalLoggerFactory;

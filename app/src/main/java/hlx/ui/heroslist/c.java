@@ -1,8 +1,8 @@
 package hlx.ui.heroslist;
 
 import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import com.huluxia.module.b;
+
+import com.MCWorld.module.b;
 import java.util.ArrayList;
 
 /* compiled from: HeroRankInfo */

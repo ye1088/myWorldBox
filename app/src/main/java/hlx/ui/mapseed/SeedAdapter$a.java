@@ -2,7 +2,7 @@ package hlx.ui.mapseed;
 
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.huluxia.framework.base.image.PaintView;
+import com.MCWorld.framework.base.image.PaintView;
 
 public class SeedAdapter$a {
     ViewGroup cbK;

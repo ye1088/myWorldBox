@@ -2,13 +2,19 @@
 <LinearLayout android:orientation="vertical" android:id="@id/class_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:gravity="center_vertical" android:id="@id/topic_top" android:background="?splitColorDim" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.huluxia.widget.textview.EmojiTextView android:textSize="19.0sp" android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="敏搞，我们追剧的那些好音乐,敏搞我爱你，我们追剧的好音乐" android:maxLines="4" android:layout_toLeftOf="@id/topic_flag" android:layout_alignParentLeft="true" />
+        <com.MCWorld.widget.textview.EmojiTextView
+            android:textSize="19.0sp" android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="敏搞，我们追剧的那些好音乐,敏搞我爱你，我们追剧的好音乐" android:maxLines="4" android:layout_toLeftOf="@id/topic_flag" android:layout_alignParentLeft="true" />
         <LinearLayout android:id="@id/topic_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true">
-            <com.huluxia.widget.HtImageView android:id="@id/iv_tu" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_tu" android:contentDescription="@null" />
-            <com.huluxia.widget.HtImageView android:id="@id/iv_video" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_video" android:contentDescription="@null" />
-            <com.huluxia.widget.HtImageView android:id="@id/iv_digest" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_digest" android:contentDescription="@null" />
-            <com.huluxia.widget.HtImageView android:id="@id/iv_new" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_new" android:contentDescription="@null" />
-            <com.huluxia.widget.HtImageView android:id="@id/iv_hot" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_hot" android:contentDescription="@null" />
+            <com.MCWorld.widget.HtImageView
+                android:id="@id/iv_tu" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_tu" android:contentDescription="@null" />
+            <com.MCWorld.widget.HtImageView
+                android:id="@id/iv_video" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_video" android:contentDescription="@null" />
+            <com.MCWorld.widget.HtImageView
+                android:id="@id/iv_digest" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_digest" android:contentDescription="@null" />
+            <com.MCWorld.widget.HtImageView
+                android:id="@id/iv_new" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_new" android:contentDescription="@null" />
+            <com.MCWorld.widget.HtImageView
+                android:id="@id/iv_hot" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_hot" android:contentDescription="@null" />
         </LinearLayout>
         <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/title">
             <TextView android:textSize="17.0sp" android:textColor="?textColorTopicClass" android:id="@id/tv_class" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="意见反馈" android:drawableRight="?drawableClassArrowNext" android:drawablePadding="3.0dip" />

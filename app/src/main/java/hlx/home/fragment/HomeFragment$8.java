@@ -2,8 +2,8 @@ package hlx.home.fragment;
 
 import android.os.Parcelable;
 import android.support.v4.app.FragmentManager;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.widget.pager.PagerFragment;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.widget.pager.PagerFragment;
 
 class HomeFragment$8 extends ScrollablePageAdapter {
     final /* synthetic */ HomeFragment bQl;

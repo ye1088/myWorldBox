@@ -3,8 +3,8 @@ package com.hianalytics.android.v1;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import com.hianalytics.android.a.a.c;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.mipush.sdk.MiPushClient;
 import java.text.SimpleDateFormat;
 import java.util.Date;

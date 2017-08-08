@@ -2,8 +2,8 @@ package hlx.ui.recommendapp;
 
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.widget.RoundProgress;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.widget.RoundProgress;
 
 public class RecommendAppAdapter$b {
     PaintView cfe;

@@ -1,6 +1,6 @@
 package com.tencent.smtt.sdk;
 
-import com.huluxia.module.h;
+import com.MCWorld.module.h;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

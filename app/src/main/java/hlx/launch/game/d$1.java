@@ -1,8 +1,8 @@
 package hlx.launch.game;
 
 import android.content.Context;
-import com.huluxia.r;
-import com.huluxia.widget.dialog.g.a;
+import com.MCWorld.r;
+import com.MCWorld.widget.dialog.g.a;
 
 /* compiled from: MCPreLaunchCheck */
 class d$1 implements a {

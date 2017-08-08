@@ -1,7 +1,7 @@
 package io.netty.handler.codec.compression;
 
-import com.huluxia.mcfloat.InstanceZones.e;
-import com.huluxia.module.h;
+import com.MCWorld.mcfloat.InstanceZones.e;
+import com.MCWorld.module.h;
 import io.netty.buffer.ByteBuf;
 import java.lang.reflect.Array;
 import java.util.Arrays;

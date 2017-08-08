@@ -11,7 +11,7 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
-import com.huluxia.video.recorder.b;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;

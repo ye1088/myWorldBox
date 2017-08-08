@@ -3,17 +3,17 @@ package hlx.launch.game;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Build.VERSION;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.utils.UtilsVersion;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.mcinterface.e;
-import com.huluxia.mcinterface.h;
-import com.huluxia.r;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.j;
-import com.huluxia.utils.u;
-import com.huluxia.widget.Constants;
-import com.huluxia.widget.dialog.g;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.utils.UtilsVersion;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.mcinterface.e;
+import com.MCWorld.mcinterface.h;
+import com.MCWorld.r;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.j;
+import com.MCWorld.utils.u;
+import com.MCWorld.widget.Constants;
+import com.MCWorld.widget.dialog.g;
 import hlx.ui.a;
 
 /* compiled from: MCPreLaunchCheck */
@@ -78,7 +78,7 @@ public class d {
         }
     }
 
-    public static void b(Context context, com.huluxia.data.server.a.a info) {
+    public static void b(Context context, com.MCWorld.data.server.a.a info) {
         boolean z = true;
         int _tmpVersion = c.Sg().Sh();
         if (!mK(_tmpVersion)) {

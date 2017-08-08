@@ -1,7 +1,7 @@
 package hlx.launch.game;
 
 import android.content.Context;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
 import hlx.ui.a;
 
 /* compiled from: MCPreLaunchCheck */

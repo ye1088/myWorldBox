@@ -5,7 +5,7 @@ import com.google.protobuf.Descriptors.FieldDescriptor.JavaType;
 import com.google.protobuf.Descriptors.FieldDescriptor.Type;
 import com.google.protobuf.Descriptors.OneofDescriptor;
 import com.google.protobuf.Internal.EnumLite;
-import com.huluxia.module.h$a;
+import com.MCWorld.module.h$a;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;

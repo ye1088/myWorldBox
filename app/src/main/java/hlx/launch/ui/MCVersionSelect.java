@@ -16,36 +16,36 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.huluxia.controller.download.handler.impl.DownloadHandler;
-import com.huluxia.controller.resource.ResourceCtrl;
-import com.huluxia.controller.resource.bean.ResTaskInfo;
-import com.huluxia.data.map.h;
-import com.huluxia.framework.BaseEvent;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.async.AsyncTaskCenter;
-import com.huluxia.framework.base.async.AsyncTaskCenter.RunnableCallback;
-import com.huluxia.framework.base.http.module.ProgressInfo;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsApkPackage;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.framework.base.utils.UtilsVersion;
-import com.huluxia.framework.base.widget.dialog.DialogManager;
-import com.huluxia.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
-import com.huluxia.framework.base.widget.dialog.DialogManager.StyleHolder;
-import com.huluxia.module.n;
-import com.huluxia.r;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.ui.base.HTBaseActivity;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.u;
-import com.huluxia.widget.Constants;
-import com.huluxia.widget.Constants.ReStartSoftFlag;
-import com.huluxia.widget.dialog.j;
-import com.huluxia.widget.dialog.k_dialog_class;
+import com.MCWorld.controller.download.handler.impl.DownloadHandler;
+import com.MCWorld.controller.resource.ResourceCtrl;
+import com.MCWorld.controller.resource.bean.ResTaskInfo;
+import com.MCWorld.data.map.h;
+import com.MCWorld.framework.BaseEvent;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.async.AsyncTaskCenter;
+import com.MCWorld.framework.base.async.AsyncTaskCenter.RunnableCallback;
+import com.MCWorld.framework.base.http.module.ProgressInfo;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsApkPackage;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.base.utils.UtilsVersion;
+import com.MCWorld.framework.base.widget.dialog.DialogManager;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.OkCancelDialogListener;
+import com.MCWorld.framework.base.widget.dialog.DialogManager.StyleHolder;
+import com.MCWorld.module.n;
+import com.MCWorld.r;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.HTBaseActivity;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.u;
+import com.MCWorld.widget.Constants;
+import com.MCWorld.widget.Constants.ReStartSoftFlag;
+import com.MCWorld.widget.dialog.j;
+import com.MCWorld.widget.dialog.k_dialog_class;
 
 import hlx.launch.game.MCLauncherActivity105;
 import java.io.File;
@@ -611,7 +611,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private class c implements com.huluxia.widget.dialog.j.a {
+    private class c implements com.MCWorld.widget.dialog.j.a {
         final /* synthetic */ MCVersionSelect bTk;
 
         private c(MCVersionSelect mCVersionSelect) {
@@ -622,13 +622,13 @@ public class MCVersionSelect extends HTBaseActivity {
             if (position == 0) {
                 r.ck().K_umengEvent(hlx.data.tongji.a.bNn);
                 if (VERSION.SDK_INT < 11) {
-                    com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSd, hlx.data.localstore.a.bKL);
+                    com.MCWorld.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSd, hlx.data.localstore.a.bKL);
                 } else {
-                    com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSe, hlx.data.localstore.a.bKL);
+                    com.MCWorld.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSe, hlx.data.localstore.a.bKL);
                 }
             } else if (position == 1) {
                 r.ck().K_umengEvent(hlx.data.tongji.a.bNo);
-                com.huluxia.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSf, hlx.data.localstore.a.bKM);
+                com.MCWorld.k.e(this.bTk.this_MCVersionSelect, MCVersionSelect.bSf, hlx.data.localstore.a.bKM);
             }
         }
     }
@@ -981,47 +981,48 @@ public class MCVersionSelect extends HTBaseActivity {
     }
 
     private boolean mK(int version) {
+
         String zipPath;
         String _MD5;
         switch (version) {
             case 0:
                 zipPath = UtilsFile.get_mctool_path() + Constants.bsu + ".zip";
-                _MD5 = com.huluxia.mcinterface.e.ajc;
+                _MD5 = com.MCWorld.mcinterface.e.ajc;
                 break;
             case 1:
                 zipPath = UtilsFile.get_mctool_path() + Constants.bsv + ".zip";
-                _MD5 = com.huluxia.mcinterface.e.ajd;
+                _MD5 = com.MCWorld.mcinterface.e.ajd;
                 break;
             case 2:
                 zipPath = UtilsFile.get_mctool_path() + Constants.bsw + ".zip";
                 if (VERSION.SDK_INT >= 11) {
-                    _MD5 = com.huluxia.mcinterface.e.aja;
+                    _MD5 = com.MCWorld.mcinterface.e.aja;
                     break;
                 }
-                _MD5 = com.huluxia.mcinterface.e.aiY;
+                _MD5 = com.MCWorld.mcinterface.e.aiY;
                 break;
             case 3:
                 zipPath = UtilsFile.get_mctool_path() + Constants.bsx + ".zip";
                 if (VERSION.SDK_INT >= 11) {
-                    _MD5 = com.huluxia.mcinterface.e.ajb;
+                    _MD5 = com.MCWorld.mcinterface.e.ajb;
                     break;
                 }
-                _MD5 = com.huluxia.mcinterface.e.aiZ;
+                _MD5 = com.MCWorld.mcinterface.e.aiZ;
                 break;
             case 4:
                 zipPath = UtilsFile.get_mctool_path() + Constants.bsy + ".zip";
                 if (VERSION.SDK_INT >= 11) {
-                    _MD5 = com.huluxia.mcinterface.e.aje;
+                    _MD5 = com.MCWorld.mcinterface.e.aje;
                     break;
                 }
-                _MD5 = com.huluxia.mcinterface.e.aiZ;
+                _MD5 = com.MCWorld.mcinterface.e.aiZ;
                 break;
             default:
                 zipPath = "";
                 _MD5 = "";
                 break;
         }
-        if (com.huluxia.utils.j.isExist(zipPath) && com.huluxia.utils.j.getFileMD5(zipPath).equalsIgnoreCase(_MD5)) {
+        if (com.MCWorld.utils.j.isExist(zipPath) && com.MCWorld.utils.j.getFileMD5(zipPath).equalsIgnoreCase(_MD5)) {
             return true;
         }
         return false;
@@ -1113,7 +1114,7 @@ public class MCVersionSelect extends HTBaseActivity {
             case 0:
             case 1:
                 _prompt = this.this_MCVersionSelect.getResources().getString(R.string.TipMCOldVerDown);
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 14680064) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 14680064) {
                     _prompt = _prompt + hlx.data.localstore.a.bKx;
                     break;
                 }
@@ -1121,14 +1122,14 @@ public class MCVersionSelect extends HTBaseActivity {
             case 2:
             case 3:
                 _prompt = hlx.data.localstore.a.bKO;
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 15728640) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 15728640) {
                     _prompt = _prompt + hlx.data.localstore.a.bKy;
                     break;
                 }
                 break;
             case 4:
                 _prompt = hlx.data.localstore.a.bKP;
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 17825792) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 17825792) {
                     _prompt = _prompt + hlx.data.localstore.a.bKz;
                     break;
                 }
@@ -1282,9 +1283,9 @@ public class MCVersionSelect extends HTBaseActivity {
                 return hlx.mcspecialmode.firearms.b.Tq().hh_getIsRightMd5(UtilsFile.get_mctool_path() +
                         hlx.data.localstore.a.bKT_more_sepack0130_string + ".zip");
             case 4:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                tmpPackMD5Value = com.MCWorld.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
                         + hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() +
+                if (com.MCWorld.utils.j.isExist(UtilsFile.get_mctool_path() +
                         hlx.data.localstore.a.bKX_MC_0_14_1_huluxia_string + "" + ".apk") &&
                         hlx.data.localstore.a.bLa_MC_0_14_1_huluxia_md5.equalsIgnoreCase(tmpPackMD5Value)) {
                     _tmpFlag = true;
@@ -1292,32 +1293,32 @@ public class MCVersionSelect extends HTBaseActivity {
                     _tmpFlag = false;
                 }
                 if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141)) {
+                        "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahK_v0141)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
                 return _tmpFlag;
             case 5:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                tmpPackMD5Value = com.MCWorld.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
                         + hlx.data.localstore.a.bKY_MC_0_15_1_2_string + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKY_MC_0_15_1_2_string +
+                if (com.MCWorld.utils.j.isExist(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKY_MC_0_15_1_2_string +
                         "" + ".apk") && hlx.data.localstore.a.bLb_MC_0_15_1_2_md5.equalsIgnoreCase(tmpPackMD5Value)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
                 if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540)) {
+                        "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahL_v01540)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
                 }
                 return _tmpFlag;
             case 6:
-                tmpPackMD5Value = com.huluxia.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
+                tmpPackMD5Value = com.MCWorld.mcgame.h.getFileMD5(new File(UtilsFile.get_mctool_path()
                         + hlx.data.localstore.a.bKZ + ".apk"));
-                if (com.huluxia.utils.j.isExist(UtilsFile.get_mctool_path() +
+                if (com.MCWorld.utils.j.isExist(UtilsFile.get_mctool_path() +
                         hlx.data.localstore.a.bKZ + "" + ".apk") && hlx.data.localstore.a.bLc.equalsIgnoreCase(
                                 tmpPackMD5Value)) {
                     _tmpFlag = true;
@@ -1325,7 +1326,7 @@ public class MCVersionSelect extends HTBaseActivity {
                     _tmpFlag = false;
                 }
                 if (_tmpFlag || hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                        "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410)) {
+                        "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahM_v01410)) {
                     _tmpFlag = true;
                 } else {
                     _tmpFlag = false;
@@ -1343,11 +1344,11 @@ public class MCVersionSelect extends HTBaseActivity {
             case 2:
                 return hlx.mcspecialmode.firearms.b.Tq().hi(UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW + "枪械js音效包13");
             case 4:
-                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahK_v0141);
             case 5:
-                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahL_v01540);
             case 6:
-                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410);
+                return hlx.launch.game.b.a_isRightVersion(getPackageManager(), "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahM_v01410);
             default:
                 return false;
         }
@@ -1359,14 +1360,14 @@ public class MCVersionSelect extends HTBaseActivity {
         switch (moreIndex) {
             case 1:
                 tips_content = "将为您下载插件(2.2MB)以支持最新功能";
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
                     tips_content = tips_content + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 2:
                 tips_content = "将为您下载插件(2.2MB)以支持最新功能";
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 2099200) {
                     tips_content = tips_content + ", (手机剩余空间不足2.2M，请清理后重新下载)";
                     break;
                 }
@@ -1374,21 +1375,21 @@ public class MCVersionSelect extends HTBaseActivity {
             case 4:
                 tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能",
                         new Object[]{hlx.data.localstore.a.version_0141});
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 19922944) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 19922944) {
                     tips_content = tips_content + ", (手机剩余空间不足19M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 5:
                 tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0154});
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 20971520) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 20971520) {
                     tips_content = tips_content + ", (手机剩余空间不足20M，请清理后重新下载)";
                     break;
                 }
                 break;
             case 6:
                 tips_content = String.format(Locale.getDefault(), "将为您下载%s版本以支持最新功能", new Object[]{hlx.data.localstore.a.version_0161});
-                if (com.huluxia.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 44040192) {
+                if (com.MCWorld.utils.j.getSdcardAvailableSize(UtilsFile.getSdCardPath()) < 44040192) {
                     tips_content = tips_content + ", (手机剩余空间不足42M，请清理后重新下载)";
                     break;
                 }
@@ -1470,11 +1471,11 @@ public class MCVersionSelect extends HTBaseActivity {
             switch (moreResIndex) {
                 case 1:
                     i.i(this.aDe);
-                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKQ_more_sepack0121_string + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
+                    com.MCWorld.widget.h.NV().t("unzipMoreResFirearms", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKQ_more_sepack0121_string + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
                     return;
                 case 2:
                     i.i(this.aDe);
-                    com.huluxia.widget.h.NV().t("unzipMoreResFirearms13", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKT_more_sepack0130_string + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
+                    com.MCWorld.widget.h.NV().t("unzipMoreResFirearms13", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKT_more_sepack0130_string + ".zip", UtilsFile.get_mctool_path() + hlx.data.localstore.a.bKW);
                     return;
                 case 4:
                     if (hlx.launch.game.b.isInstalled(u.getPackageManager(), "com.mojang.minecraftpe")) {
@@ -1591,7 +1592,7 @@ public class MCVersionSelect extends HTBaseActivity {
 
     private void SS_setSelectFlag() {
         if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahL_v01540)) {
+                "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahL_v01540)) {
             bTf = 1;
         } else if (mO_getIsRightMd5OrVersion(5)) {
             bTf = 2;
@@ -1599,7 +1600,7 @@ public class MCVersionSelect extends HTBaseActivity {
             bTf = 3;
         }
         if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahM_v01410)) {
+                "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahM_v01410)) {
             bTg = 1;
         } else if (mO_getIsRightMd5OrVersion(6)) {
             bTg = 2;
@@ -1607,7 +1608,7 @@ public class MCVersionSelect extends HTBaseActivity {
             bTg = 3;
         }
         if (hlx.launch.game.b.a_isRightVersion(getPackageManager(),
-                "com.mojang.minecraftpe", com.huluxia.mcinterface.e.ahK_v0141)) {
+                "com.mojang.minecraftpe", com.MCWorld.mcinterface.e.ahK_v0141)) {
             bTh = 1;
         } else if (mO_getIsRightMd5OrVersion(4)) {
             bTh = 2;

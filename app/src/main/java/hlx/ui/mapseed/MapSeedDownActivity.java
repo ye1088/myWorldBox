@@ -17,22 +17,22 @@ import android.widget.RadioGroup;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
-import com.huluxia.framework.base.utils.UtilsFunction;
-import com.huluxia.framework.base.utils.UtilsNetwork;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.module.n;
-import com.huluxia.module.u;
-import com.huluxia.t;
-import com.huluxia.ui.base.BaseLoadingLayout;
-import com.huluxia.ui.base.BaseLoadingLayout.a;
-import com.huluxia.ui.base.BaseLoadingLayout.b;
-import com.huluxia.ui.base.HTBaseLoadingActivity;
-import com.huluxia.utils.c;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.utils.UtilsFunction;
+import com.MCWorld.framework.base.utils.UtilsNetwork;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.module.n;
+import com.MCWorld.module.u;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.BaseLoadingLayout;
+import com.MCWorld.ui.base.BaseLoadingLayout.a;
+import com.MCWorld.ui.base.BaseLoadingLayout.b;
+import com.MCWorld.ui.base.HTBaseLoadingActivity;
+import com.MCWorld.utils.c;
 import com.simple.colorful.setter.j;
 import com.simple.colorful.setter.k;
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class MapSeedDownActivity extends HTBaseLoadingActivity implements a {
     private LinearLayout cbB;
     public int cbD = 0;
     private long cbE;
-    com.huluxia.widget.a cbF = new com.huluxia.widget.a(new com.huluxia.widget.a.a(this) {
+    com.MCWorld.widget.a cbF = new com.MCWorld.widget.a(new com.MCWorld.widget.a.a(this) {
         final /* synthetic */ MapSeedDownActivity cbG;
 
         {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.huluxia.ui.base.BaseLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<com.MCWorld.ui.base.BaseLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
@@ -13,10 +13,11 @@
                 <TextView android:textSize="12.0sp" android:textColor="?android:textColorHint" android:id="@id/slice_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/space_slices_hint" android:layout_below="@id/split1" />
                 <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/photo" android:layout_below="@id/slice_hint" />
                 <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/photo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format_photo_count" android:layout_toRightOf="@id/photo" android:layout_alignTop="@id/photo" />
-                <com.huluxia.widget.photowall.PhotoWall2 android:id="@id/photowall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/photo" app:maxSelection="8" app:enableAdd="true" app:showPhotoText="false" app:gridMode="true" app:gridRatio="1.0" app:gridColumnsCount="4" />
+                <com.MCWorld.widget.photowall.PhotoWall2
+                    android:id="@id/photowall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/photo" app:maxSelection="8" app:enableAdd="true" app:showPhotoText="false" app:gridMode="true" app:gridRatio="1.0" app:gridColumnsCount="4" />
                 <TextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/tv_use" android:background="?backgroundButtonSolidGreen" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/use" android:layout_below="@id/photowall" />
             </RelativeLayout>
         </ScrollView>
         <include android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/layout_loading" />
     </RelativeLayout>
-</com.huluxia.ui.base.BaseLoadingLayout>
+</com.MCWorld.ui.base.BaseLoadingLayout>

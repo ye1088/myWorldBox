@@ -1,6 +1,6 @@
 package hlx.ui.resources.fragment;
 
-import com.huluxia.utils.c.a;
+import com.MCWorld.utils.c.a;
 
 class ResourceRecommendFragment$2 implements a {
     final /* synthetic */ ResourceRecommendFragment cgl;

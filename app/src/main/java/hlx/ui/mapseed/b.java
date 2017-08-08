@@ -2,12 +2,12 @@ package hlx.ui.mapseed;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.Parcelable.Creator;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /* compiled from: SeedMoreInfo */
-public class b extends com.huluxia.module.b {
+public class b extends com.MCWorld.module.b {
     public static final Creator<b> CREATOR = new 1();
     public List<a> seedList;
 

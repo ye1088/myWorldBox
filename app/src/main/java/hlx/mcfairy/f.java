@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.utils.UtilsScreen;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.utils.UtilsScreen;
 
 /* compiled from: FairyTipsDlgPop */
 public class f {

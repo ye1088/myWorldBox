@@ -6,7 +6,7 @@ import android.os.Build.VERSION;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.HorizontalScrollView;
-import com.huluxia.framework.R;
+import com.MCWorld.framework.R;
 
 public class PullToRefreshHorizontalScrollView extends PullToRefreshBase<HorizontalScrollView> {
 

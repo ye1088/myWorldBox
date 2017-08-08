@@ -30,7 +30,7 @@ public class e {
     }
 
     private static String L(Context context) {
-        return String.valueOf(System.currentTimeMillis() + a.b(((TelephonyManager) context.getSystemService(com.huluxia.data.profile.a.qe)).getDeviceId()));
+        return String.valueOf(System.currentTimeMillis() + a.b(((TelephonyManager) context.getSystemService(com.MCWorld.data.profile.a.qe)).getDeviceId()));
     }
 
     public static void i(Context context, String str) {

@@ -2,9 +2,9 @@ package com.baidu.mapapi.cloud;
 
 import android.os.Bundle;
 import com.baidu.mapapi.Mj;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
-import com.huluxia.module.p;
-import com.huluxia.version.d;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.module.p;
+import com.MCWorld.version.d;
 import com.tencent.mm.sdk.plugin.BaseProfile;
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -9,8 +9,8 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase$Orientation;
-import com.huluxia.framework.R;
-import com.huluxia.framework.R$styleable;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.R$styleable;
 
 public class RotateLoadingLayout extends LoadingLayout {
     static final int ROTATION_ANIMATION_DURATION = 1200;

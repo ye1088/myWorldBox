@@ -17,17 +17,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.huluxia.data.storymode.b;
-import com.huluxia.data.storymode.c;
-import com.huluxia.data.storymode.d;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.mctool.e;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.j;
-import com.huluxia.widget.h;
+import com.MCWorld.data.storymode.b;
+import com.MCWorld.data.storymode.c;
+import com.MCWorld.data.storymode.d;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.mctool.e;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.j;
+import com.MCWorld.widget.h;
 import com.j256.ormlite.stmt.query.SimpleComparison;
 import java.io.File;
 import java.util.ArrayList;
@@ -113,7 +113,7 @@ public class MCStoryModeActivity extends Activity {
         }
     };
     private Activity aMn;
-    private List<com.huluxia.data.storymode.a> aab;
+    private List<com.MCWorld.data.storymode.a> aab;
     private boolean bRk = true;
     private TextView bWA;
     private hlx.utils.e bWD = new hlx.utils.e(this) {
@@ -215,7 +215,7 @@ public class MCStoryModeActivity extends Activity {
 
         protected String c(String... params) {
             String retVal = "success";
-            com.huluxia.mcinterface.h.t(this.bWF.aMn.getApplicationContext(), this.bWF.aMn.getApplicationContext().getFilesDir().getAbsolutePath());
+            com.MCWorld.mcinterface.h.t(this.bWF.aMn.getApplicationContext(), this.bWF.aMn.getApplicationContext().getFilesDir().getAbsolutePath());
             if (e.nf(this.bWF.bWw)) {
                 this.bWF.Vo.sendEmptyMessage(3);
             } else {
@@ -332,7 +332,7 @@ public class MCStoryModeActivity extends Activity {
             _tmpMessage.obj = this.bWr;
             if (this.bWp && (this.bWr == null || !this.bWr.equals("原始标志"))) {
                 this.Vo.sendMessage(_tmpMessage);
-            } else if (this.bWp && this.bWr.equals("原始标志") && this.aab.size() > 0 && !((com.huluxia.data.storymode.a) this.aab.get(this.aab.size() - 1)).equals(c.bVA)) {
+            } else if (this.bWp && this.bWr.equals("原始标志") && this.aab.size() > 0 && !((com.MCWorld.data.storymode.a) this.aab.get(this.aab.size() - 1)).equals(c.bVA)) {
                 this.Vo.sendMessage(_tmpMessage);
             }
             this.bWq = false;
@@ -363,12 +363,12 @@ public class MCStoryModeActivity extends Activity {
             this.bWk = new HashMap();
             this.bWm.a(this.aab, this.bWk);
             hk(this.bWj.qI);
-        } else if (((com.huluxia.data.storymode.a) this.aab.get(this.aab.size() - 1)).mId.equals(this.bWj.qK)) {
+        } else if (((com.MCWorld.data.storymode.a) this.aab.get(this.aab.size() - 1)).mId.equals(this.bWj.qK)) {
             this.bWm.a(this.aab, this.bWk);
             Tz();
             Ty();
-        } else if (this.bWj.qJ == null || ((b) ((com.huluxia.data.storymode.a) this.aab.get(this.aab.size() - 1)).qj.get(0)).qC == null || !((b) ((com.huluxia.data.storymode.a) this.aab.get(this.aab.size() - 1)).qj.get(0)).qC.equals(this.bWj.qJ)) {
-            String _tmpId = ((com.huluxia.data.storymode.a) this.aab.get(this.aab.size() - 1)).mId;
+        } else if (this.bWj.qJ == null || ((b) ((com.MCWorld.data.storymode.a) this.aab.get(this.aab.size() - 1)).qj.get(0)).qC == null || !((b) ((com.MCWorld.data.storymode.a) this.aab.get(this.aab.size() - 1)).qj.get(0)).qC.equals(this.bWj.qJ)) {
+            String _tmpId = ((com.MCWorld.data.storymode.a) this.aab.get(this.aab.size() - 1)).mId;
             this.aab.remove(this.aab.size() - 1);
             this.bWm.a(this.aab, this.bWk);
             Tz();
@@ -449,7 +449,7 @@ public class MCStoryModeActivity extends Activity {
     }
 
     private void hk(String nextId) {
-        com.huluxia.data.storymode.a _ItemStructure = d.TC().hm(nextId);
+        com.MCWorld.data.storymode.a _ItemStructure = d.TC().hm(nextId);
         if (_ItemStructure == null || _ItemStructure.qi == null) {
             HLog.verbose(TAG, "LSPrint 无法读取下一节点！", new Object[0]);
         } else if (_ItemStructure.qi.equals(c.bVB)) {

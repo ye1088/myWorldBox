@@ -1,7 +1,7 @@
 package hlx.tips;
 
 import android.app.Activity;
-import com.huluxia.framework.base.log.HLog;
+import com.MCWorld.framework.base.log.HLog;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;

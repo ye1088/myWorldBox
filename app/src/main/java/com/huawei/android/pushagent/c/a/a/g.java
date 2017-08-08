@@ -1,7 +1,7 @@
 package com.huawei.android.pushagent.c.a.a;
 
 import android.util.Base64;
-import com.huluxia.framework.base.utils.UtilsRSA;
+import com.MCWorld.framework.base.utils.UtilsRSA;
 import java.security.KeyFactory;
 import java.security.PublicKey;
 import java.security.spec.X509EncodedKeySpec;

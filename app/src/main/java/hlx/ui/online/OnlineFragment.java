@@ -23,22 +23,22 @@ import android.widget.TextView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.huluxia.HTApplication;
-import com.huluxia.data.message.MsgCounts;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.framework.base.widget.title.TitleBar;
-import com.huluxia.k;
-import com.huluxia.mconline.gameloc.http.g;
-import com.huluxia.mconline.gameloc.http.h;
-import com.huluxia.module.n;
-import com.huluxia.module.o;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.ui.base.BaseLoadingFragment;
-import com.huluxia.utils.c;
+import com.MCWorld.HTApplication;
+import com.MCWorld.data.message.MsgCounts;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.framework.base.widget.title.TitleBar;
+import com.MCWorld.k;
+import com.MCWorld.mconline.gameloc.http.g;
+import com.MCWorld.mconline.gameloc.http.h;
+import com.MCWorld.module.n;
+import com.MCWorld.module.o;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.ui.base.BaseLoadingFragment;
+import com.MCWorld.utils.c;
 import com.simple.colorful.d;
 import com.simple.colorful.setter.j;
 import hlx.module.resources.a;
@@ -142,7 +142,7 @@ public class OnlineFragment extends BaseLoadingFragment implements OnClickListen
         super.onCreate(savedInstanceState);
         EventNotifyCenter.add(n.class, this.mCallback);
         this.mContext = getActivity();
-        com.huluxia.mconline.utils.a.aN(this.mContext);
+        com.MCWorld.mconline.utils.a.aN(this.mContext);
         this.cdb = new MsgtipReciver(this);
         this.cdc = new ClearMsgReciver(this);
         i.e(this.cdb);
@@ -348,7 +348,7 @@ public class OnlineFragment extends BaseLoadingFragment implements OnClickListen
         });
         this.aEq.setOnScrollListener(this.aET);
         if (savedInstanceState == null) {
-            com.huluxia.mconline.module.a.Bl().c(0, 20);
+            com.MCWorld.mconline.module.a.Bl().c(0, 20);
             Fy();
             return;
         }
@@ -359,13 +359,13 @@ public class OnlineFragment extends BaseLoadingFragment implements OnClickListen
     }
 
     private void Fc() {
-        com.huluxia.mconline.module.a.Bl().c(this.ccM == null ? 0 : this.ccM.start, 20);
+        com.MCWorld.mconline.module.a.Bl().c(this.ccM == null ? 0 : this.ccM.start, 20);
     }
 
     private void reload() {
         o.DI();
-        com.huluxia.mconline.module.a.Bl().c(0, 20);
-        com.huluxia.mconline.module.a.Bl().Bm();
+        com.MCWorld.mconline.module.a.Bl().c(0, 20);
+        com.MCWorld.mconline.module.a.Bl().Bm();
     }
 
     protected void a(TitleBar titleBar) {
@@ -402,7 +402,7 @@ public class OnlineFragment extends BaseLoadingFragment implements OnClickListen
         List<g> refreshList = new ArrayList();
         refreshList.addAll(this.ccN.Vd());
         HLog.verbose(TAG, "refreshData size " + refreshList.size(), new Object[0]);
-        com.huluxia.mconline.module.a.Bl().H(refreshList);
+        com.MCWorld.mconline.module.a.Bl().H(refreshList);
     }
 
     protected void Fr() {

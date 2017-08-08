@@ -1,10 +1,10 @@
 package hlx.ui.heroslist;
 
-import com.huluxia.framework.AppConfig;
-import com.huluxia.framework.BaseHttpMgr;
-import com.huluxia.framework.base.utils.UtilsVersion;
-import com.huluxia.framework.http.HttpMgr;
-import com.huluxia.module.ab;
+import com.MCWorld.framework.AppConfig;
+import com.MCWorld.framework.BaseHttpMgr;
+import com.MCWorld.framework.base.utils.UtilsVersion;
+import com.MCWorld.framework.http.HttpMgr;
+import com.MCWorld.module.ab;
 import hlx.ui.heroslist.c.a;
 import java.util.ArrayList;
 import java.util.HashMap;

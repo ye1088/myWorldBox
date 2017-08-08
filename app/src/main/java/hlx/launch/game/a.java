@@ -1,8 +1,8 @@
 package hlx.launch.game;
 
 import android.app.Activity;
-import com.huluxia.h;
-import com.huluxia.r;
+import com.MCWorld.h;
+import com.MCWorld.r;
 
 /* compiled from: GotoMCPreLaunchFromBbs */
 public class a implements h {

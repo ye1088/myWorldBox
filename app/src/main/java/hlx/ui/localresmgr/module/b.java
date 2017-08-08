@@ -1,14 +1,14 @@
 package hlx.ui.localresmgr.module;
 
-import com.huluxia.data.map.MapItem;
-import com.huluxia.data.map.b$a;
-import com.huluxia.data.map.b$c;
-import com.huluxia.data.map.b$d;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.utils.UtilsFile;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.ai;
-import com.huluxia.utils.j;
+import com.MCWorld.data.map.MapItem;
+import com.MCWorld.data.map.b$a;
+import com.MCWorld.data.map.b$c;
+import com.MCWorld.data.map.b$d;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.utils.UtilsFile;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.ai;
+import com.MCWorld.utils.j;
 import hlx.data.localstore.a;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -28,10 +28,10 @@ import java.util.zip.ZipInputStream;
 public class b {
     private static final String TAG = "ResManageInterface";
 
-    public static List<com.huluxia.data.map.b> nF(int order) {
+    public static List<com.MCWorld.data.map.b> nF(int order) {
         Long lastModified = Long.valueOf(0);
         File[] files = new File(UtilsFile.Kq()).listFiles();
-        ArrayList<com.huluxia.data.map.b> fileItems = new ArrayList();
+        ArrayList<com.MCWorld.data.map.b> fileItems = new ArrayList();
         if (!(files == null || files.length == 0)) {
             for (File file : files) {
                 String realLevelName = null;
@@ -60,7 +60,7 @@ public class b {
                     if (null == null) {
                         _date = new SimpleDateFormat(a.bKc).format(new Date(file.lastModified()));
                     }
-                    com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), file.getName(), _date, j.getFileSizes(file));
+                    com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), file.getName(), _date, j.getFileSizes(file));
                     item.eC();
                     item.eD();
                     item.setLastModified(lastModified.longValue());
@@ -114,7 +114,7 @@ public class b {
         return _tmpName;
     }
 
-    public static com.huluxia.data.map.b aN(String mapPath, String zipFullPath) {
+    public static com.MCWorld.data.map.b aN(String mapPath, String zipFullPath) {
         Exception e;
         String realLevelName = null;
         File file = new File(mapPath);
@@ -158,7 +158,7 @@ public class b {
                 long modifyTime = file.lastModified();
                 _date = new SimpleDateFormat(a.bKc).format(new Date(modifyTime));
             }
-            com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), file.getName(), _date, j.getFileSizes(file));
+            com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), file.getName(), _date, j.getFileSizes(file));
             item.eC();
             item.eD();
             if (realLevelName != null) {
@@ -183,7 +183,7 @@ public class b {
         return null;
     }
 
-    public static com.huluxia.data.map.b a(String jsPath, MapItem itemInfo) {
+    public static com.MCWorld.data.map.b a(String jsPath, MapItem itemInfo) {
         if (!jsPath.endsWith(a.bJY)) {
             return null;
         }
@@ -194,7 +194,7 @@ public class b {
         String str = jsPath;
         String res_name = str.substring(jsPath.lastIndexOf("/") + 1, jsPath.indexOf(a.bJY));
         long modifyTime = file.lastModified();
-        com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
+        com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
         item.eC();
         item.eD();
         String[] valList = ai.b("js", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi});
@@ -222,15 +222,15 @@ public class b {
         return item;
     }
 
-    public static List<com.huluxia.data.map.b> nE(int order) {
-        ArrayList<com.huluxia.data.map.b> fileItems = new ArrayList();
+    public static List<com.MCWorld.data.map.b> nE(int order) {
+        ArrayList<com.MCWorld.data.map.b> fileItems = new ArrayList();
         File[] files = new File(j.cT(true)).listFiles();
         if (!(files == null || files.length == 0)) {
             for (File file : files) {
                 String temp = file.getName().toLowerCase();
                 if (temp.endsWith(a.bJY)) {
                     String res_name = temp.substring(0, temp.indexOf(a.bJY));
-                    com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
+                    com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
                     item.eC();
                     item.eD();
                     String[] valList = ai.b("js", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi});
@@ -270,7 +270,7 @@ public class b {
         return fileItems;
     }
 
-    public static com.huluxia.data.map.b b(String woodPath, MapItem itemInfo) {
+    public static com.MCWorld.data.map.b b(String woodPath, MapItem itemInfo) {
         if (!woodPath.endsWith(".zip")) {
             return null;
         }
@@ -281,7 +281,7 @@ public class b {
         String str = woodPath;
         String res_name = str.substring(woodPath.lastIndexOf("/") + 1, woodPath.indexOf(".zip"));
         long modifyTime = file.lastModified();
-        com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
+        com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
         item.eC();
         item.eD();
         String[] valList = ai.b("wood", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi, ai.pU});
@@ -320,8 +320,8 @@ public class b {
         return item;
     }
 
-    public static List<com.huluxia.data.map.b> nD(int order) {
-        ArrayList<com.huluxia.data.map.b> fileItems = new ArrayList();
+    public static List<com.MCWorld.data.map.b> nD(int order) {
+        ArrayList<com.MCWorld.data.map.b> fileItems = new ArrayList();
         File[] files = new File(j.Kv()).listFiles();
         if (!(files == null || files.length == 0)) {
             String using_wood = ah.KZ().LJ();
@@ -332,7 +332,7 @@ public class b {
                 String temp = file.getName().toLowerCase();
                 if (temp.endsWith(".zip")) {
                     String res_name = temp.substring(0, temp.indexOf(".zip"));
-                    com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
+                    com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
                     item.eC();
                     item.eD();
                     String[] valList = ai.b("wood", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi, ai.pU});
@@ -383,7 +383,7 @@ public class b {
         return fileItems;
     }
 
-    public static com.huluxia.data.map.b c(String skinPath, MapItem itemInfo) {
+    public static com.MCWorld.data.map.b c(String skinPath, MapItem itemInfo) {
         if (!skinPath.endsWith(a.bKa)) {
             return null;
         }
@@ -394,7 +394,7 @@ public class b {
         String str = skinPath;
         String res_name = str.substring(skinPath.lastIndexOf("/") + 1, skinPath.indexOf(a.bKa));
         long modifyTime = file.lastModified();
-        com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
+        com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(modifyTime)), j.w(file));
         item.eC();
         item.eD();
         String[] valList = ai.b("skin", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi});
@@ -418,8 +418,8 @@ public class b {
         return item;
     }
 
-    public static List<com.huluxia.data.map.b> nC(int order) {
-        ArrayList<com.huluxia.data.map.b> fileItems = new ArrayList();
+    public static List<com.MCWorld.data.map.b> nC(int order) {
+        ArrayList<com.MCWorld.data.map.b> fileItems = new ArrayList();
         File[] files = new File(j.cU(true)).listFiles();
         if (!(files == null || files.length == 0)) {
             String using_skin = ah.KZ().LI();
@@ -430,7 +430,7 @@ public class b {
                 String temp = file.getName().toLowerCase();
                 if (temp.endsWith(a.bKa)) {
                     String res_name = temp.substring(0, temp.indexOf(a.bKa));
-                    com.huluxia.data.map.b item = new com.huluxia.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
+                    com.MCWorld.data.map.b item = new com.MCWorld.data.map.b(file.getPath(), res_name, new SimpleDateFormat(a.bKc).format(new Date(file.lastModified())), j.w(file));
                     item.eC();
                     item.eD();
                     String[] valList = ai.b("skin", res_name, new String[]{ai.version, ai.bmh, ai.bmg, ai.imgUrl, ai.bmi});

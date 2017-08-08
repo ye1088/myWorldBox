@@ -1,6 +1,6 @@
 package hlx.home.fragment;
 
-import com.huluxia.ui.base.BaseThemeFragment;
+import com.MCWorld.ui.base.BaseThemeFragment;
 import ru.noties.scrollable.b;
 import ru.noties.scrollable.j;
 

@@ -12,16 +12,16 @@ import android.os.Message;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.mcgame.g;
-import com.huluxia.mcinterface.h;
-import com.huluxia.r;
-import com.huluxia.service.i;
-import com.huluxia.t;
-import com.huluxia.utils.ah;
-import com.huluxia.utils.j;
-import com.huluxia.utils.u;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.mcgame.g;
+import com.MCWorld.mcinterface.h;
+import com.MCWorld.r;
+import com.MCWorld.service.i;
+import com.MCWorld.t;
+import com.MCWorld.utils.ah;
+import com.MCWorld.utils.j;
+import com.MCWorld.utils.u;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -101,7 +101,7 @@ public class MCPreLauncherActivity extends Activity {
                             if (activity.bRk) {
                                 activity.bRk = false;
                                 i.i(activity.aDe);
-                                com.huluxia.widget.h.NV().t("unzipGameZip", c.Sg().Sn(), activity.bRh + File.separator);
+                                com.MCWorld.widget.h.NV().t("unzipGameZip", c.Sg().Sn(), activity.bRh + File.separator);
                                 return;
                             }
                             t.n(activity, "抱歉，请切换版本重试.");
@@ -186,18 +186,18 @@ public class MCPreLauncherActivity extends Activity {
         Sy();
         mL(c.Sg().Sh());
         if (c.Sg().Sh() == 4) {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(1);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(1);
             h.hq(3);
         } else if (c.Sg().Sh() == 5) {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(0);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(0);
             h.hq(5);
             h.hp(1);
         } else if (c.Sg().Sh() == 7) {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(3);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(3);
             h.hq(7);
             h.hp(1);
         } else {
-            com.huluxia.mcsdk.dtlib.h.CW().iG(0);
+            com.MCWorld.mcsdk.dtlib.h.CW().iG(0);
             h.hq(c.Sg().Sh());
         }
         if (c.Sg().Sj()) {
@@ -288,7 +288,7 @@ public class MCPreLauncherActivity extends Activity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        com.huluxia.mcsdk.dtlib.h.aY(this.aMn.getApplicationContext());
+        com.MCWorld.mcsdk.dtlib.h.aY(this.aMn.getApplicationContext());
     }
 
     protected void onDestroy() {

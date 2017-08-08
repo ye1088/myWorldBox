@@ -2,8 +2,10 @@
 <RelativeLayout android:id="@id/topic_video" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="240.0dip">
-        <com.huluxia.video.views.VideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scalableType="fitCenter" />
-        <com.huluxia.framework.base.image.PaintView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" android:scaleType="fitCenter" />
+        <com.MCWorld.video.views.VideoView
+            android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scalableType="fitCenter" />
+        <com.MCWorld.framework.base.image.PaintView
+            android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" android:scaleType="fitCenter" />
         <ImageView android:id="@id/play_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?drawableTopicVideoPlay" android:scaleType="centerInside" />
         <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="?drawableTopicVideoLoading" style="@android:style/Widget.ProgressBar.Inverse" />
         <RelativeLayout android:id="@id/rly_play_end" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">

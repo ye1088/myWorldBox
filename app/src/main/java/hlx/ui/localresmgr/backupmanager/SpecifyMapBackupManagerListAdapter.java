@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import com.huluxia.data.map.b;
-import com.huluxia.framework.R;
-import com.huluxia.framework.base.image.PaintView;
-import com.huluxia.t;
-import com.huluxia.utils.aw;
+import com.MCWorld.data.map.b;
+import com.MCWorld.framework.R;
+import com.MCWorld.framework.base.image.PaintView;
+import com.MCWorld.t;
+import com.MCWorld.utils.aw;
 import java.util.List;
 
 public class SpecifyMapBackupManagerListAdapter extends BaseAdapter {

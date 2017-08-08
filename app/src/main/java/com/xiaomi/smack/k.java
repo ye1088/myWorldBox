@@ -1,6 +1,6 @@
 package com.xiaomi.smack;
 
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.xiaomi.smack.packet.d;
 import com.xiaomi.smack.packet.h;
 import com.xiaomi.smack.util.g;

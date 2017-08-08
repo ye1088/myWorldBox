@@ -1,11 +1,11 @@
 package hlx.ui.heroslist;
 
-import com.huluxia.framework.base.http.io.Response.Listener;
-import com.huluxia.framework.base.json.Json;
-import com.huluxia.framework.base.notification.EventNotifyCenter;
-import com.huluxia.module.n;
-import com.huluxia.module.w;
-import com.huluxia.r;
+import com.MCWorld.framework.base.http.io.Response.Listener;
+import com.MCWorld.framework.base.json.Json;
+import com.MCWorld.framework.base.notification.EventNotifyCenter;
+import com.MCWorld.module.n;
+import com.MCWorld.module.w;
+import com.MCWorld.r;
 import hlx.data.tongji.a;
 
 /* compiled from: RankingModuleWrapper */

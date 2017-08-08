@@ -3,7 +3,7 @@ package hlx.mcstorymode;
 import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-import com.huluxia.framework.base.log.HLog;
+import com.MCWorld.framework.base.log.HLog;
 
 /* compiled from: BgMusicOperator */
 public class a {

@@ -9,9 +9,9 @@ import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.ImageView;
-import com.huluxia.framework.R;
-import com.huluxia.mcfloat.a;
-import com.huluxia.utils.ah;
+import com.MCWorld.framework.R;
+import com.MCWorld.mcfloat.a;
+import com.MCWorld.utils.ah;
 
 /* compiled from: FloatLogoBase */
 public class h {

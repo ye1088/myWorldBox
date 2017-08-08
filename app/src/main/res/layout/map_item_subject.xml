@@ -5,6 +5,7 @@
         <ImageView android:id="@id/guide_line_image" android:background="?guideLine" android:layout_width="6.0dip" android:layout_height="17.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
         <TextView android:textSize="16.0sp" android:textColor="?tabText" android:ellipsize="end" android:gravity="center" android:id="@id/topic_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="工作室" android:maxLines="1" android:maxLength="20" android:layout_toRightOf="@id/guide_line_image" />
     </RelativeLayout>
-    <com.huluxia.framework.base.image.PaintView android:id="@id/topic_item_image" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginBottom="12.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <com.MCWorld.framework.base.image.PaintView
+        android:id="@id/topic_item_image" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginBottom="12.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
     <include layout="@layout/view_divider_block" />
 </LinearLayout>

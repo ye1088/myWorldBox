@@ -1,6 +1,6 @@
 package io.netty.handler.traffic;
 
-import com.huluxia.module.n;
+import com.MCWorld.module.n;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufHolder;
 import io.netty.channel.ChannelConfig;

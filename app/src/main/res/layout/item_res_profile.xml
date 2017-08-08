@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
         <RelativeLayout android:id="@id/image_container" android:layout_width="100.0dip" android:layout_height="85.0dip">
-            <com.huluxia.framework.base.image.PaintView android:id="@id/map_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/discover_pic" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <com.MCWorld.framework.base.image.PaintView
+                android:id="@id/map_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/discover_pic" android:scaleType="centerCrop" android:contentDescription="@null" />
         </RelativeLayout>
         <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/image_container">
             <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">

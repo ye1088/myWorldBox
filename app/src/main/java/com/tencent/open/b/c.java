@@ -11,7 +11,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-import com.huluxia.data.profile.a;
+
 import com.tencent.open.a.f;
 import com.tencent.open.utils.Global;
 import java.util.Locale;

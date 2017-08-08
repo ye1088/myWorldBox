@@ -1,7 +1,7 @@
 package hlx.ui.heroslist;
 
-import com.huluxia.module.h;
-import com.huluxia.video.recorder.b;
+import com.MCWorld.module.h;
+import com.MCWorld.video.recorder.b;
 import com.j256.ormlite.stmt.query.SimpleComparison;
 import com.tencent.smtt.sdk.TbsListener.ErrorCode;
 import io.netty.handler.codec.http.HttpConstants;

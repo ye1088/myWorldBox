@@ -1,7 +1,7 @@
 package io.netty.handler.codec.rtsp;
 
-import com.huluxia.framework.base.image.Config;
-import com.huluxia.module.h;
+import com.MCWorld.framework.base.image.Config;
+import com.MCWorld.module.h;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import org.apache.http.HttpStatus;
 

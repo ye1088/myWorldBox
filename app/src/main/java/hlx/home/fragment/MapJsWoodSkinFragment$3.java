@@ -1,8 +1,8 @@
 package hlx.home.fragment;
 
-import com.huluxia.framework.base.http.module.ProgressInfo;
-import com.huluxia.framework.base.notification.CallbackHandler;
-import com.huluxia.framework.base.notification.EventNotifyCenter.MessageHandler;
+import com.MCWorld.framework.base.http.module.ProgressInfo;
+import com.MCWorld.framework.base.notification.CallbackHandler;
+import com.MCWorld.framework.base.notification.EventNotifyCenter.MessageHandler;
 
 class MapJsWoodSkinFragment$3 extends CallbackHandler {
     final /* synthetic */ MapJsWoodSkinFragment bQy;

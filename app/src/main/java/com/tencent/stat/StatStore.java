@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Handler;
 import android.os.HandlerThread;
-import com.huluxia.module.p;
+import com.MCWorld.module.p;
 import com.tencent.stat.common.StatCommonHelper;
 import com.tencent.stat.common.StatLogger;
 import com.tencent.stat.common.User;

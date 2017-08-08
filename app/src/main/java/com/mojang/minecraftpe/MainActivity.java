@@ -51,13 +51,13 @@ import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
-import com.huluxia.framework.base.log.HLog;
-import com.huluxia.framework.base.utils.UtilsScreen;
-import com.huluxia.mcgame.g;
-import com.huluxia.mcgame.k;
-import com.huluxia.mclauncher010.b.i;
-import com.huluxia.mclauncher010.b.n;
-import com.huluxia.utils.ah;
+import com.MCWorld.framework.base.log.HLog;
+import com.MCWorld.framework.base.utils.UtilsScreen;
+import com.MCWorld.mcgame.g;
+import com.MCWorld.mcgame.k;
+import com.MCWorld.mclauncher010.b.i;
+import com.MCWorld.mclauncher010.b.n;
+import com.MCWorld.utils.ah;
 import com.tencent.mm.sdk.plugin.MMPluginProviderConstants.OAuth;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -392,7 +392,7 @@ public class MainActivity extends NativeActivity {
         a.Ra();
         nativeUnregisterThis();
         super.onDestroy();
-        com.huluxia.mcsdk.dtlib.h.aY(getApplicationContext());
+        com.MCWorld.mcsdk.dtlib.h.aY(getApplicationContext());
     }
 
     public static Context getAppContext() {
@@ -406,7 +406,7 @@ public class MainActivity extends NativeActivity {
             if (isUseInstalledMode()) {
                 bbc = "/data/data/com.huluxia.mctool/app_patched";
             } else {
-                bbc = com.huluxia.mcgame.h.wo().ws();
+                bbc = com.MCWorld.mcgame.h.wo().ws();
             }
             bbb(bbc);
             return true;
@@ -460,11 +460,11 @@ public class MainActivity extends NativeActivity {
 
     public void onBackPressed() {
         try {
-            if (com.huluxia.mcsdk.dtlib.h.CW().CX() == 7) {
+            if (com.MCWorld.mcsdk.dtlib.h.CW().CX() == 7) {
                 nativeBackPressed();
             }
         } catch (Exception e) {
-            com.huluxia.mcsdk.log.a.verbose(com.huluxia.mcsdk.log.a.aoP, "DTPrint is " + e, new Object[0]);
+            com.MCWorld.mcsdk.log.a.verbose(com.MCWorld.mcsdk.log.a.aoP, "DTPrint is " + e, new Object[0]);
         }
     }
 
@@ -839,11 +839,11 @@ public class MainActivity extends NativeActivity {
 
     public void forceTextureReload() {
         try {
-            if (com.huluxia.mcsdk.dtlib.h.CW().CX() == 3 || com.huluxia.mcsdk.dtlib.h.CW().CX() == 5 || com.huluxia.mcsdk.dtlib.h.CW().CX() == 7) {
+            if (com.MCWorld.mcsdk.dtlib.h.CW().CX() == 3 || com.MCWorld.mcsdk.dtlib.h.CW().CX() == 5 || com.MCWorld.mcsdk.dtlib.h.CW().CX() == 7) {
                 ScriptManager.nativeOnGraphicsReset();
             }
         } catch (Exception e) {
-            com.huluxia.mcsdk.log.a.verbose(com.huluxia.mcsdk.log.a.aoP, "DTPrint is " + e, new Object[0]);
+            com.MCWorld.mcsdk.log.a.verbose(com.MCWorld.mcsdk.log.a.aoP, "DTPrint is " + e, new Object[0]);
         }
     }
 
@@ -1068,7 +1068,7 @@ public class MainActivity extends NativeActivity {
     }
 
     public int getMaxNumPatches() {
-        return getResources().getInteger(com.huluxia.mclauncher010.b.h.max_num_patches);
+        return getResources().getInteger(com.MCWorld.mclauncher010.b.h.max_num_patches);
     }
 
     public String[] getOptionStrings() {
@@ -1341,7 +1341,7 @@ public class MainActivity extends NativeActivity {
         if (this.hiddenTextWindow == null) {
             this.hiddenTextDismissAfterOneLine = dismissAfterOneLine;
             this.commandHistoryView = getLayoutInflater().inflate(i.chat_history_popup, null);
-            this.hiddenTextView = (TextView) this.commandHistoryView.findViewById(com.huluxia.mclauncher010.b.g.hidden_text_view);
+            this.hiddenTextView = (TextView) this.commandHistoryView.findViewById(com.MCWorld.mclauncher010.b.g.hidden_text_view);
             c localPopupTextWatcher = new c();
             this.hiddenTextView.addTextChangedListener(localPopupTextWatcher);
             this.hiddenTextView.setOnEditorActionListener(localPopupTextWatcher);
@@ -1529,7 +1529,7 @@ public class MainActivity extends NativeActivity {
 
             public void run() {
                 View view = LayoutInflater.from(this.bIh).inflate(i.toast_view1, null);
-                ((TextView) view.findViewById(com.huluxia.mclauncher010.b.g.toast_msg)).setText(paramString2 + paramString1);
+                ((TextView) view.findViewById(com.MCWorld.mclauncher010.b.g.toast_msg)).setText(paramString2 + paramString1);
                 Toast toast = new Toast(this.bIh);
                 toast.setGravity(17, 0, (int) (((double) (this.bIh.getResources().getDisplayMetrics().widthPixels < this.bIh.getResources().getDisplayMetrics().heightPixels ? this.bIh.getResources().getDisplayMetrics().widthPixels : this.bIh.getResources().getDisplayMetrics().heightPixels)) * 0.32d));
                 toast.setDuration(700);

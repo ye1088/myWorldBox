@@ -2,7 +2,7 @@ package hlx.mcstorymode.storyselect;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import com.huluxia.ui.base.HTBaseThemeActivity;
+import com.MCWorld.ui.base.HTBaseThemeActivity;
 
 public class StoryListActivity extends HTBaseThemeActivity {
     protected void onCreate(Bundle savedInstanceState) {

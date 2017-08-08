@@ -2,9 +2,8 @@ package com.xiaomi.smack.packet;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import com.huluxia.framework.base.http.toolbox.download.DownloadRecord;
+import com.MCWorld.framework.base.http.toolbox.download.DownloadRecord;
 import com.j256.ormlite.stmt.query.SimpleComparison;
-import com.xiaomi.smack.util.g;
 
 public class c extends d {
     private String c = null;
