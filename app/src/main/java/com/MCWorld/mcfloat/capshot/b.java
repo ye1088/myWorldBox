@@ -120,7 +120,7 @@ public class b extends Dialog {
     }
 
     private File co(String prefix) {
-        String picturesFolder = j.KV();
+        String picturesFolder = j.KV_saveCapDir();
         c.dP(picturesFolder);
         String currentTime = new SimpleDateFormat("yyyy-MM-dd-HH-mm", Locale.US).format(new Date());
         File retFile = new File(picturesFolder, prefix + "-" + currentTime + hlx.data.localstore.a.bKa);

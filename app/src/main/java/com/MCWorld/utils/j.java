@@ -43,7 +43,7 @@ public class j extends UtilsFile {
         UtilsFile.mkdir(Ks());
         UtilsFile.mkdir(Kr());
         UtilsFile.mkdir(UtilsFile.KW());
-        UtilsFile.mkdir(UtilsFile.KV());
+        UtilsFile.mkdir(UtilsFile.KV_saveCapDir());
     }
 
     public static String Kq() {

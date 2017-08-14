@@ -3,7 +3,6 @@
     android:id="@id/rlGameVersionSelect"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="?game_option_bg"
     android:scrollbars="none">
 
     <LinearLayout
@@ -87,7 +86,7 @@
             android:layout_height="55.0dip"
             android:background="?tabBackground"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0159"
@@ -99,7 +98,7 @@
             <TextView
                 android:id="@id/tvMoreV0159"
                 style="@style/versionSelectTv"
-                android:text="@string/versionselect_01509" />
+                android:text="最新(不支持修改)" />
 
             <LinearLayout
                 android:id="@id/llyMoreV0159"
@@ -156,7 +155,7 @@
             android:layout_height="55.0dip"
             android:background="?tabBackground"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0150"
@@ -224,7 +223,8 @@
             android:layout_width="fill_parent"
             android:layout_height="55.0dip"
             android:background="?tabBackground"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0131"
@@ -345,7 +345,8 @@
             android:layout_width="fill_parent"
             android:layout_height="55.0dip"
             android:background="?tabBackground"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0121"
@@ -404,7 +405,8 @@
             android:layout_width="fill_parent"
             android:layout_height="55.0dip"
             android:background="?tabBackground"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0111"
@@ -463,7 +465,8 @@
             android:layout_width="fill_parent"
             android:layout_height="55.0dip"
             android:background="?tabBackground"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <View
                 android:id="@id/left_view_0105"
@@ -519,7 +522,7 @@
             android:layout_height="55.0dip"
             android:background="?tabBackground"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:id="@id/tvMoreFirearms0130"
@@ -581,7 +584,7 @@
             android:layout_height="55.0dip"
             android:background="?tabBackground"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:id="@id/tvMoreFirearms0121"

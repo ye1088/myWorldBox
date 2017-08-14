@@ -689,20 +689,20 @@ public class MCVersionSelect extends HTBaseActivity {
         sJ();
         SD();
         this.beM = com.simple.colorful.d.isDayMode();
-        SK();
-        SL();
+        SK_init_install_btn();
+        SL_init_version_txtView();
         this.bTi = new a(this.this_MCVersionSelect);
         EventNotifyCenter.add(BaseEvent.class, this.bTi);
         this.bTj = new d(this.this_MCVersionSelect);
         EventNotifyCenter.add(n.class, this.bTj);
         ResourceCtrl.getInstance().registerHandler(1000006, DownloadHandler.class);
         SE();
-        SC();
-        SB();
-        SA();
+        SC_menu_btn();
+        SB_downloading_btn();
+        SA_version_textView();
     }
 
-    private void SA() {
+    private void SA_version_textView() {
         this.bSQ = (RelativeLayout) findViewById(R.id.rlyMoreV0141);
         this.bSR = (RelativeLayout) findViewById(R.id.rlyMoreV0150);
         this.bSS = (RelativeLayout) findViewById(R.id.rlyMoreV0159);
@@ -850,7 +850,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private void SB() {
+    private void SB_downloading_btn() {
         this.bSI = (Button) findViewById(R.id.btnSelectGameMoreFirearms0130);
         this.bSJ = (Button) findViewById(R.id.btnSelectGameMoreFirearms0121);
         this.bSK = (Button) findViewById(R.id.btnDownGameVersion0131);
@@ -888,7 +888,7 @@ public class MCVersionSelect extends HTBaseActivity {
         }
     }
 
-    private void SC() {
+    private void SC_menu_btn() {
         boolean dayMode = com.simple.colorful.d.isDayMode();
         this.aIs.setVisibility(8);
         final ImageButton view = (ImageButton) findViewById(R.id.sys_header_right_img);
@@ -1210,7 +1210,7 @@ public class MCVersionSelect extends HTBaseActivity {
         });
     }
 
-    private void SK() {
+    private void SK_init_install_btn() {
         this.bSi = (Button) findViewById(R.id.btnInstallMoreFirearms0121);
         this.bSi.setOnClickListener(this.bTd_version_select_clickListener);
         this.bSj = (Button) findViewById(R.id.btnDownMoreFirearms0121);
@@ -1246,7 +1246,7 @@ public class MCVersionSelect extends HTBaseActivity {
         this.bSv_bt_downloading_v0141 = (Button) findViewById(R.id.btnSelectGameVersion0141);
     }
 
-    private void SL() {
+    private void SL_init_version_txtView() {
         if (VERSION.SDK_INT < 11) {
             findViewById(R.id.rlyMoreV0150).setVisibility(8);
             findViewById(R.id.rlyMoreV0159).setVisibility(8);

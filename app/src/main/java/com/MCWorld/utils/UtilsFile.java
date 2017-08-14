@@ -186,7 +186,7 @@ public class UtilsFile {
         return get_mctool_path() + "SaveImage" + File.separator;
     }
 
-    public static String KV() {
+    public static String KV_saveCapDir() {
         return getSdCardPath() + File.separator + "Pictures" + File.separator + "huluxia";
     }
 

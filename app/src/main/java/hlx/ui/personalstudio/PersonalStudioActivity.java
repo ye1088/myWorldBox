@@ -666,7 +666,8 @@ public class PersonalStudioActivity extends HTBaseLoadingActivity implements f {
 
     protected void a(com.simple.colorful.a.a builder) {
         super.a(builder);
-        builder.a(this.cdm).c(this.aIQ, R.attr.ic_more_option).a(this.aIR, R.attr.backText).a(this.aIR, R.attr.back, 1).aY(R.id.root_view, R.attr.backgroundDefault).bc(R.id.sys_header_right_second_img, R.attr.ic_studio_announce);
+        builder.a(this.cdm).c(this.aIQ, R.attr.ic_more_option).
+                a(this.aIR, R.attr.backText).a(this.aIR, R.attr.back, 1).aY(R.id.root_view, R.attr.backgroundDefault).bc(R.id.sys_header_right_second_img, R.attr.ic_studio_announce);
     }
 
     protected void kj(int themeId) {

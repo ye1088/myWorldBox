@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import com.MCWorld.McApplication;
+
 import com.MCWorld.framework.R;
 import com.MCWorld.mcinterface.h;
 import com.MCWorld.utils.UtilsFile;

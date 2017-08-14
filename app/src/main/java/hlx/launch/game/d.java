@@ -28,7 +28,7 @@ public class d {
 
     public static void bR(Context context) {
         int _tmpVersion = c.Sg().Sh();
-        if (mK(_tmpVersion)) {
+        if (mK(_tmpVersion)) { // 检测版本
             d(_tmpVersion, context);
         } else {
             bS(context);
